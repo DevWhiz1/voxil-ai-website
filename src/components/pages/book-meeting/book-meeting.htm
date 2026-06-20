@@ -1,0 +1,122 @@
+<!-- =========================
+Book a Meeting Component
+===========================-->
+<section class="pt-32 pb-14 sm:pt-36 md:pt-42 md:pb-16 lg:pb-20 xl:pt-[180px] xl:pb-[100px] bg-background-3 dark:bg-background-7 relative overflow-hidden" aria-label="Book a Meeting Scheduler">
+  <!-- Background glow animations/elements matching Voxil AI styling -->
+  <div class="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1440px] h-full select-none overflow-hidden">
+    <div class="absolute -top-[20%] left-[10%] w-[350px] h-[350px] rounded-full bg-primary-500/10 blur-[120px] dark:bg-primary-500/5"></div>
+    <div class="absolute top-[40%] -right-[10%] w-[450px] h-[450px] rounded-full bg-ns-cyan/10 blur-[130px] dark:bg-ns-cyan/5"></div>
+  </div>
+
+  <div class="main-container relative z-10">
+    <div class="space-y-[50px] md:space-y-[70px]">
+      
+      <!-- Heading & Copywriting Section -->
+      <div class="mx-auto max-w-[720px] space-y-4 text-center">
+        <span data-ns-animate data-delay="0.2" class="badge badge-cyan">Schedule Call</span>
+        <h2 data-ns-animate data-delay="0.3" class="text-secondary dark:text-accent text-heading-3 sm:text-heading-2 md:text-heading-1 font-semibold tracking-tight">
+          Book a Strategy Session
+        </h2>
+        <p data-ns-animate data-delay="0.4" class="text-secondary/70 dark:text-accent/60 text-tagline-2 sm:text-tagline-1 max-w-[620px] mx-auto leading-relaxed">
+          Ready to automate your workflows, deploy custom AI agents, or build intelligent SaaS platforms? Choose a convenient time below to discuss your project with our engineering team.
+        </p>
+      </div>
+
+      <!-- Glassmorphic Card Container for Calendly Widget (Single Layer) -->
+      <div data-ns-animate data-delay="0.5" 
+           class="mx-auto w-full max-w-[1200px] rounded-[24px] sm:rounded-4xl bg-white dark:bg-background-6 shadow-3 border border-stroke-2 dark:border-stroke-6 overflow-hidden">
+        
+        <!-- Calendly Embed Container -->
+        <div id="calendly-embed-container" style="min-width:320px;height:700px;" class="w-full">
+          <!-- Fallback loading indicator -->
+          <div class="flex flex-col items-center justify-center h-full min-h-[700px] text-secondary/60 dark:text-accent/60 space-y-4">
+            <div class="size-10 border-4 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
+            <p class="text-tagline-2">Loading Scheduler...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Include Calendly Widget Scripts -->
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<!-- Embedded Script to dynamically style & retheme Calendly depending on light/dark mode -->
+<script type="text/javascript">
+  (function() {
+    let calendlyInitialized = false;
+    let currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+
+    function getThemeColors(theme) {
+      if (theme === 'dark') {
+        return {
+          backgroundColor: '0f1217', // bg-background-6
+          textColor: 'fcfcfc',       // text-accent
+          primaryColor: '864ffe'     // primary-500
+        };
+      } else {
+        return {
+          backgroundColor: 'ffffff', // white
+          textColor: '1a1a1c',       // text-secondary
+          primaryColor: '864ffe'     // primary-500
+        };
+      }
+    }
+
+    function initOrUpdateCalendly() {
+      if (typeof Calendly === 'undefined') {
+        // Retry shortly if widget script hasn't finished loading yet
+        setTimeout(initOrUpdateCalendly, 100);
+        return;
+      }
+
+      const container = document.getElementById('calendly-embed-container');
+      if (!container) return;
+
+      // Clear current content
+      container.innerHTML = '';
+
+      const colors = getThemeColors(currentTheme);
+      
+      Calendly.initInlineWidget({
+        url: 'https://calendly.com/ahmadbajwa3095?hide_landing_page_details=1&hide_gdpr_banner=1',
+        parentElement: container,
+        prefill: {},
+        pageSettings: {
+          backgroundColor: colors.backgroundColor,
+          primaryColor: colors.primaryColor,
+          textColor: colors.textColor
+        }
+      });
+      
+      calendlyInitialized = true;
+    }
+
+    // Run once DOM is fully loaded or active
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      initOrUpdateCalendly();
+    } else {
+      window.addEventListener('DOMContentLoaded', initOrUpdateCalendly);
+    }
+
+    // Monitor for HTML element class changes (theme switching) and re-render Calendly dynamically
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'class' && calendlyInitialized) {
+          const newTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+          if (newTheme !== currentTheme) {
+            currentTheme = newTheme;
+            initOrUpdateCalendly();
+          }
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+  })();
+</script>
