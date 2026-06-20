@@ -23,6 +23,7 @@ import './js/animation/voice-waveform';
 import './js/animation/wave-animation';
 import './js/common/button';
 import './js/common/common';
+import './js/common/contact-form';
 import './js/common/mobile-menu';
 import './js/common/navigation-menu';
 import './js/common/parallax-effect';
