@@ -10,8 +10,8 @@ Mobile Menu
       <a href="./">
         <span class="sr-only">Home</span>
         <figure class="max-w-[44px]">
-          <img src="./images/shared/logo.svg" alt="Nexsas" class="block w-full dark:hidden" />
-          <img src="./images/shared/logo-dark.svg" alt="Nexsas" class="hidden w-full dark:block" />
+          <img src="./images/shared/logo.svg" alt="Voxil AI" class="block w-full dark:hidden" />
+          <img src="./images/shared/logo-dark.svg" alt="Voxil AI" class="hidden w-full dark:block" />
         </figure>
       </a>
       <button
@@ -24,42 +24,42 @@ Mobile Menu
     </div>
     <div class="scroll-bar h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">
       <ul>
-        <!-- home menu  -->
-        <Component src="src/components/shared/mobile-menu/home-menu.htm" />
+        <!-- Company menu -->
+        <Component src="src/components/shared/mobile-menu/company-menu.htm" />
 
-        <!-- about us menu  -->
-        <Component src="src/components/shared/mobile-menu/about-us-menu.htm" />
-
-        <!-- blog menu  -->
-        <Component src="src/components/shared/mobile-menu/blog-menu.htm" />
-
-        <!-- services menu  -->
+        <!-- Services menu -->
         <Component src="src/components/shared/mobile-menu/services-menu.htm" />
 
-        <!-- integration menu  -->
-        <Component src="src/components/shared/mobile-menu/integration-menu.htm" />
+        <!-- Resources menu -->
+        <Component src="src/components/shared/mobile-menu/resources-menu.htm" />
 
-        <!-- features menu  -->
-        <Component src="src/components/shared/mobile-menu/features-menu.htm" />
+        <!-- Pricing link -->
+        <li class="relative space-y-0">
+          <a
+            href="./pricing.html"
+            class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block"
+          >
+            Pricing
+          </a>
+        </li>
 
-        <!-- process menu  -->
-        <Component src="src/components/shared/mobile-menu/process-menu.htm" />
-
-        <!-- testimonial menu  -->
-        <Component src="src/components/shared/mobile-menu/testimonial-menu.htm" />
-
-        <!-- teams menu  -->
-        <Component src="src/components/shared/mobile-menu/teams-menu.htm" />
-
-        <!-- pricing menu  -->
-        <Component src="src/components/shared/mobile-menu/pricing-menu.htm" />
-
-        <!-- login menu  -->
-        <Component src="src/components/shared/mobile-menu/login-menu.htm" />
-
-        <!-- sign up menu  -->
-        <Component src="src/components/shared/mobile-menu/sign-up-menu.htm" />
+        <!-- Contact Us link -->
+        <li class="relative space-y-0">
+          <a
+            href="./contact.html"
+            class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block"
+          >
+            Contact Us
+          </a>
+        </li>
       </ul>
+
+      <div class="mt-6">
+        <a href="./signup.html" class="btn btn-md btn-secondary hover:btn-primary dark:btn-accent w-full flex justify-center text-center">
+          <span>Get started</span>
+        </a>
+      </div>
     </div>
   </div>
 </aside>
+
