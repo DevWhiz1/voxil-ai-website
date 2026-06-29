@@ -1,9 +1,9 @@
 const aiVoiceSampleAnimation = {
   init() {
     const voiceSampleItems = document.querySelectorAll('.voice-sample-item');
-    const audioPath = './audio/ai-voice-generator-voice-sample.mp3';
 
     voiceSampleItems.forEach((item) => {
+      const audioPath = item.getAttribute('data-audio-path');
       const audio = new Audio(audioPath);
       item.audio = audio;
       item.waveformTimelines = []; // Store GSAP timelines for this item
