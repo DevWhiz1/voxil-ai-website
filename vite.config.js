@@ -161,6 +161,22 @@ const seoData = {
   'blog': {
     title: 'AI Automation Insights, Tutorials & Agency Updates – Voxil AI',
     description: 'Stay ahead of the curve with our latest insights, tutorials, and guides on custom AI agent development, n8n workflows, and business automation.'
+  },
+  'case-study-healthcare': {
+    title: 'AI Patient Triage Agent Case Study: 60% Wait Time Reduction – Voxil AI',
+    description: 'See how Voxil AI designed and deployed a HIPAA-compliant custom AI Agent for clinical triage and automated EHR patient intake.'
+  },
+  'case-study-ecommerce': {
+    title: 'AI Demand Forecasting Case Study: 35% Stockout Reduction – Voxil AI',
+    description: 'Explore our predictive AI SaaS platform for DTC fashion inventory planning, integrated with Shopify and NetSuite ERP.'
+  },
+  'case-study-finance': {
+    title: 'AI Financial Compliance Case Study: 80% Manual Labor Cut – Voxil AI',
+    description: 'Learn how we automated regulatory compliance reporting and trade anomaly detection for an asset management firm.'
+  },
+  'case-study-real-estate': {
+    title: 'AI Real Estate Lead Qualification Case Study: 3x Conversions – Voxil AI',
+    description: 'Discover how Voxil AI built an instant NLP lead qualification and scoring workflow integrated with HubSpot CRM.'
   }
 };
 
