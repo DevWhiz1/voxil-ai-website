@@ -2,6 +2,10 @@
 Initialized all js files here
 =========================== */
 
+import { inject } from '@vercel/analytics';
+
+inject();
+
 import './js/animation/accordion';
 import './js/animation/ai-voice-sample';
 import './js/animation/card-spin';
