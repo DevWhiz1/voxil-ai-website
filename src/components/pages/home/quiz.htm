@@ -1,0 +1,261 @@
+<!-- =========================
+Interactive AI Project Scoping Quiz
+===========================-->
+<section id="scoping-quiz" class="py-16 md:py-20 lg:py-[100px] bg-background-2 dark:bg-background-6 relative overflow-hidden">
+  <div class="main-container">
+    <div class="mx-auto max-w-[800px] text-center mb-12 space-y-4">
+      <span class="badge badge-cyan">Interactive Planner</span>
+      <h2>Calculate Your AI Project Scope</h2>
+      <p class="text-secondary/70 dark:text-accent/70 max-w-[600px] mx-auto">
+        Answer 3 quick questions to instantly estimate your project timeline, match it to a budget, and get a custom scoping document.
+      </p>
+    </div>
+
+    <!-- Quiz Wizard Card -->
+    <div class="mx-auto max-w-[650px] bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-[24px] p-6 md:p-10 shadow-lg relative z-10">
+      
+      <!-- Progress Bar -->
+      <div class="w-full bg-stroke-4 dark:bg-stroke-7 h-2 rounded-full mb-8 overflow-hidden">
+        <div id="quiz-progress" class="bg-primary-500 h-full w-[25%] transition-all duration-300"></div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="quiz-step" id="step-1">
+        <h3 class="text-heading-5 mb-6 text-center sm:text-left font-normal text-secondary dark:text-accent">
+          1. What is your primary automation goal?
+        </h3>
+        <div class="space-y-4">
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="goal" value="AI Agent" class="mt-1 accent-primary-500 scale-110" checked />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Custom AI Agent / Chatbot</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Automate customer support, sales qualification, or voice booking.</p>
+            </div>
+          </label>
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="goal" value="Workflow Automation" class="mt-1 accent-primary-500 scale-110" />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Intelligent Workflow Automation</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Connect HubSpot, Slack, n8n, databases, or Make to automate back-office tasks.</p>
+            </div>
+          </label>
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="goal" value="AI SaaS Product" class="mt-1 accent-primary-500 scale-110" />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">End-to-End AI SaaS / Product</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Build a custom software portal, LLM wrapper, or specialized client dashboard.</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="quiz-step hidden" id="step-2">
+        <h3 class="text-heading-5 mb-6 text-center sm:text-left font-normal text-secondary dark:text-accent">
+          2. What is your estimated project budget?
+        </h3>
+        <div class="space-y-4">
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="budget" value="Starter ($2,500 - $5,000)" class="mt-1 accent-primary-500 scale-110" checked />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Starter Package ($2,500 - $5,000)</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Best for single voice agents, simple CRM integrations, or workflow automations.</p>
+            </div>
+          </label>
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="budget" value="Growth ($5,000 - $12,000)" class="mt-1 accent-primary-500 scale-110" />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Custom Growth Solution ($5,000 - $12,000)</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Best for multi-system integrations, customized AI routing, or advanced custom dashboards.</p>
+            </div>
+          </label>
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="budget" value="Enterprise ($12,000+)" class="mt-1 accent-primary-500 scale-110" />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Enterprise Architecture ($12,000+)</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Best for fully custom LLM models, private cloud deployments, and unlimited revisions.</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="quiz-step hidden" id="step-3">
+        <h3 class="text-heading-5 mb-6 text-center sm:text-left font-normal text-secondary dark:text-accent">
+          3. What is your target launch timeline?
+        </h3>
+        <div class="space-y-4">
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="timeline" value="ASAP (Under 3 weeks)" class="mt-1 accent-primary-500 scale-110" checked />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">ASAP (Under 3 weeks)</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Accelerated development for immediate operations impact.</p>
+            </div>
+          </label>
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="timeline" value="Standard (4-8 weeks)" class="mt-1 accent-primary-500 scale-110" />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Standard (4-8 weeks)</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Comprehensive testing, workflow integration, and launch support.</p>
+            </div>
+          </label>
+          <label class="quiz-option flex items-start gap-4 p-4 border border-stroke-4 dark:border-stroke-7 rounded-xl hover:border-primary-500 dark:hover:border-accent cursor-pointer transition-all bg-background-3/50 dark:bg-background-6/50">
+            <input type="radio" name="timeline" value="Flexible" class="mt-1 accent-primary-500 scale-110" />
+            <div>
+              <p class="font-medium text-secondary dark:text-accent">Flexible / Strategy & Discovery first</p>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mt-0.5">Perform deep-dive analysis of operations before finalizing code.</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="quiz-step hidden" id="step-4">
+        <h3 class="text-heading-5 mb-6 text-center sm:text-left font-normal text-secondary dark:text-accent">
+          4. Get Your AI Scoping Document
+        </h3>
+        <div class="space-y-5">
+          <div>
+            <label class="block text-tagline-1 font-medium text-secondary/70 dark:text-accent/70 mb-2">Describe what you want to automate (Optional)</label>
+            <textarea id="quiz-desc" placeholder="e.g. Integrate lead qualification in HubSpot with custom WhatsApp chatbot..." class="w-full px-4 py-3 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none h-24 resize-none"></textarea>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-tagline-1 font-medium text-secondary/70 dark:text-accent/70 mb-2">Name</label>
+              <input type="text" id="quiz-name" placeholder="John Doe" required class="w-full px-4 py-3 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none" />
+            </div>
+            <div>
+              <label class="block text-tagline-1 font-medium text-secondary/70 dark:text-accent/70 mb-2">Work Email</label>
+              <input type="email" id="quiz-email" placeholder="john@company.com" required class="w-full px-4 py-3 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Success Screen -->
+      <div class="quiz-step hidden text-center space-y-6" id="step-success">
+        <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto text-green-500">
+          <svg class="w-8 h-8 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-heading-5 font-normal text-secondary dark:text-accent">Scope Proposal Scored!</h3>
+          <p class="text-secondary/70 dark:text-accent/70 max-w-[450px] mx-auto">
+            Thanks <span id="summary-name" class="font-semibold text-secondary dark:text-accent"></span>. We've compiled a scoping draft matching <span id="summary-goal" class="font-semibold text-secondary dark:text-accent"></span> automations for a <span id="summary-budget" class="font-semibold text-secondary dark:text-accent"></span> budget.
+          </p>
+        </div>
+        <div class="bg-background-3 dark:bg-background-6 p-4 rounded-xl max-w-[450px] mx-auto border border-stroke-4 dark:border-stroke-7 text-tagline-2 text-secondary/60 dark:text-accent/60">
+          🔥 We prefilled these criteria for your strategy call. Lock in your session below.
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="./book-meeting.html?source=quiz" class="btn btn-primary btn-md hover:btn-secondary dark:hover:btn-accent">
+            <span>Book Free 30-Min Strategy Call</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div id="quiz-nav" class="flex justify-between items-center mt-8 pt-6 border-t border-stroke-4 dark:border-stroke-7">
+        <button id="quiz-btn-prev" class="btn border border-stroke-4 dark:border-stroke-7 text-secondary dark:text-accent hover:bg-background-3 dark:hover:bg-background-6 btn-md opacity-50 cursor-not-allowed" disabled>
+          <span>Back</span>
+        </button>
+        <button id="quiz-btn-next" class="btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-md">
+          <span>Next Step</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Script to handle dynamic scoping quiz navigation -->
+<script>
+  (function() {
+    let currentStep = 1;
+    const totalSteps = 4;
+    
+    const prevBtn = document.getElementById('quiz-btn-prev');
+    const nextBtn = document.getElementById('quiz-btn-next');
+    const progressBar = document.getElementById('quiz-progress');
+    const quizNav = document.getElementById('quiz-nav');
+
+    function updateProgress() {
+      const percentage = (currentStep / totalSteps) * 100;
+      progressBar.style.width = percentage + '%';
+    }
+
+    function showStep(step) {
+      document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
+      document.getElementById('step-' + step).classList.remove('hidden');
+
+      // Update Back Button State
+      if (step === 1) {
+        prevBtn.disabled = true;
+        prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        prevBtn.disabled = false;
+        prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+
+      // Update Next/Submit Button Text
+      if (step === totalSteps) {
+        nextBtn.innerHTML = '<span>Generate My Scope</span>';
+      } else {
+        nextBtn.innerHTML = '<span>Next Step</span>';
+      }
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+        updateProgress();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentStep < totalSteps) {
+        currentStep++;
+        showStep(currentStep);
+        updateProgress();
+      } else if (currentStep === totalSteps) {
+        // Form Submission
+        const nameInput = document.getElementById('quiz-name');
+        const emailInput = document.getElementById('quiz-email');
+
+        if (!nameInput.value || !emailInput.value) {
+          alert('Please enter your name and work email.');
+          return;
+        }
+
+        // Collect radio values
+        const goal = document.querySelector('input[name="goal"]:checked')?.value || 'AI Agent';
+        const budget = document.querySelector('input[name="budget"]:checked')?.value || 'Starter';
+        const timeline = document.querySelector('input[name="timeline"]:checked')?.value || 'ASAP';
+        const desc = document.getElementById('quiz-desc').value;
+
+        // Store scoping data in sessionStorage to pre-fill the Calendly pre-qual form
+        const scopingData = {
+          name: nameInput.value,
+          email: emailInput.value,
+          goal: goal,
+          budget: budget,
+          timeline: timeline,
+          desc: desc
+        };
+        sessionStorage.setItem('voxil_scoping_quiz', JSON.stringify(scopingData));
+
+        // Populate Success Screen
+        document.getElementById('summary-name').innerText = scopingData.name;
+        document.getElementById('summary-goal').innerText = scopingData.goal;
+        document.getElementById('summary-budget').innerText = scopingData.budget.split(' ')[0]; // Show Starter/Growth
+
+        // Transition to success screen
+        currentStep = 'success';
+        document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
+        document.getElementById('step-success').classList.remove('hidden');
+        quizNav.classList.add('hidden');
+        progressBar.parentElement.classList.add('hidden');
+      }
+    });
+  })();
+</script>
