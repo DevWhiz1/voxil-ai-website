@@ -2,15 +2,9 @@
 Footer v4
 ===========================-->
 <footer
-  class="footer bg-secondary dark:bg-background-8 relative z-0 overflow-hidden border-t border-t-[#303032] max-sm:z-11 dark:border-t-0"
->
-  <figure
-    data-ns-animate
-    data-delay="0.3"
-    data-direction="up"
-    data-offset="50"
-    class="pointer-events-none absolute -top-[1320px] left-1/2 -z-1 size-[1635px] -translate-x-1/2 select-none"
-  >
+  class="footer bg-secondary dark:bg-background-8 relative z-0 overflow-hidden border-t border-t-[#303032] max-sm:z-11 dark:border-t-0">
+  <figure data-ns-animate data-delay="0.3" data-direction="up" data-offset="50"
+    class="pointer-events-none absolute -top-[1320px] left-1/2 -z-1 size-[1635px] -translate-x-1/2 select-none">
     <img src="./images/ns-img-532.png" alt="footer-four-gradient" class="size-full object-cover" />
   </figure>
   <div class="main-container px-5">
@@ -21,7 +15,8 @@ Footer v4
             <img src="./images/shared/dark-logo.svg" alt="Voxil Ai  Logo" />
           </figure>
           <p class="text-accent/60 text-tagline-1 mt-4 mb-7 font-normal">
-            Voxil Ai  builds intelligent automation, custom AI agents, and SaaS solutions that help businesses scale faster and work smarter.
+            Voxil Ai builds intelligent automation, custom AI agents, and SaaS solutions that help businesses scale
+            faster and work smarter.
           </p>
           <div class="flex items-center gap-3">
             <a href="#">
@@ -124,15 +119,10 @@ Footer v4
     </div>
     <div class="relative pt-[26px] pb-[42px] text-center">
       <div
-        class="footer-divider bg-accent/10 dark:bg-stroke-6 absolute top-0 right-0 left-0 mx-auto h-px w-0 origin-center"
-      ></div>
-      <p
-        data-ns-animate
-        data-delay="0.7"
-        data-offset="10"
-        data-start="top 105%"
-        class="text-tagline-1 text-primary-50 font-normal"
-      >
+        class="footer-divider bg-accent/10 dark:bg-stroke-6 absolute top-0 right-0 left-0 mx-auto h-px w-0 origin-center">
+      </div>
+      <p data-ns-animate data-delay="0.7" data-offset="10" data-start="top 105%"
+        class="text-tagline-1 text-primary-50 font-normal">
         Copyright &copy; 2026 Voxil Ai . All rights reserved. Built for the future of automation.
       </p>
     </div>
@@ -140,26 +130,36 @@ Footer v4
   <Component src="src/components/shared/theme-toggle.htm" />
   <Component src="src/components/shared/package-link.htm" />
 
-  <!-- ==========================================
-       Interactive AI Chatbot
-       ========================================== -->
 
   <!-- Floating Chatbot Widget -->
   <div id="ai-chat-widget" class="fixed bottom-6 right-6 z-[99999] font-sans">
     <!-- Chat Button -->
-    <button id="ai-chat-btn" class="flex items-center justify-center size-14 rounded-full bg-primary-500 hover:bg-primary-600 text-white shadow-2xl transition-transform hover:scale-105 active:scale-95 focus:outline-none relative group" aria-label="Open AI Assistant">
-      <span class="absolute inline-flex h-full w-full rounded-full bg-primary-500/30 animate-ping group-hover:hidden"></span>
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+    <button id="ai-chat-btn"
+      class="flex items-center justify-center size-14 rounded-full bg-primary-500 hover:bg-primary-600 text-white shadow-2xl transition-transform hover:scale-105 active:scale-95 focus:outline-none relative group"
+      aria-label="Open AI Assistant">
+      <span
+        class="absolute inline-flex h-full w-full rounded-full bg-primary-500/30 animate-ping group-hover:hidden"></span>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+      </svg>
     </button>
 
     <!-- Chat Drawer -->
-    <div id="ai-chat-window" class="hidden absolute bottom-20 right-0 w-[380px] sm:w-[400px] max-w-[calc(100vw-32px)] h-[480px] max-h-[calc(100vh-140px)] bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-[24px] shadow-2xl flex-col overflow-hidden transition-all duration-300 z-[99999]">
+    <div id="ai-chat-window"
+      class="hidden absolute bottom-20 right-0 w-[380px] sm:w-[400px] max-w-[calc(100vw-32px)] h-[480px] max-h-[calc(100vh-140px)] bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-[24px] shadow-2xl flex-col overflow-hidden transition-all duration-300 z-[99999]">
       <!-- Chat Header (Light matching website design system) -->
-      <div class="bg-white dark:bg-background-9 text-secondary dark:text-accent p-4 flex items-center justify-between border-b border-stroke-4 dark:border-stroke-7 shrink-0">
+      <div
+        class="bg-white dark:bg-background-9 text-secondary dark:text-accent p-4 flex items-center justify-between border-b border-stroke-4 dark:border-stroke-7 shrink-0">
         <div class="flex items-center gap-3">
-          <div class="relative size-10 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-500 flex items-center justify-center shrink-0">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white dark:border-background-9 rounded-full"></span>
+          <div
+            class="relative size-10 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-500 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span
+              class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white dark:border-background-9 rounded-full"></span>
           </div>
           <div>
             <div class="flex items-center gap-1.5">
@@ -169,32 +169,53 @@ Footer v4
           </div>
         </div>
         <div class="flex items-center gap-1.5">
-          <button id="ai-chat-reset" class="p-2 rounded-xl text-secondary/50 dark:text-accent/50 hover:text-secondary dark:hover:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors" title="Start New Session" aria-label="Start New Session">
-            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <button id="ai-chat-reset"
+            class="p-2 rounded-xl text-secondary/50 dark:text-accent/50 hover:text-secondary dark:hover:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors"
+            title="Start New Session" aria-label="Start New Session">
+            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
           </button>
-          <button id="ai-chat-close" class="p-2 rounded-xl text-secondary/50 dark:text-accent/50 hover:text-secondary dark:hover:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors" aria-label="Close Chat">
-            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          <button id="ai-chat-close"
+            class="p-2 rounded-xl text-secondary/50 dark:text-accent/50 hover:text-secondary dark:hover:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors"
+            aria-label="Close Chat">
+            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
         </div>
       </div>
 
       <!-- Chat Messages Container -->
-      <div id="ai-chat-messages" class="flex-1 p-4.5 overflow-y-auto space-y-4 bg-background-3/30 dark:bg-background-6/40 text-secondary dark:text-accent scrollbar-thin">
+      <div id="ai-chat-messages"
+        class="flex-1 p-4.5 overflow-y-auto space-y-4 bg-background-3/30 dark:bg-background-6/40 text-secondary dark:text-accent scrollbar-thin">
         <!-- AI Greeting -->
         <div class="flex items-start gap-2.5 max-w-[88%]">
-          <div class="size-7 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-500 flex items-center justify-center shrink-0 mt-0.5">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div
+            class="size-7 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-500 flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
           </div>
-          <div class="bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-2xl rounded-tl-none p-3.5 shadow-sm text-sm text-secondary dark:text-accent leading-relaxed">
-            Hello! I am the Voxil AI Assistant. How can I help you scope your AI agent or workflow automation project today?
+          <div
+            class="bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-2xl rounded-tl-none p-3.5 shadow-sm text-sm text-secondary dark:text-accent leading-relaxed">
+            Hello! I am the Voxil AI Assistant. How can I help you scope your AI agent or workflow automation project
+            today?
           </div>
         </div>
 
         <!-- Sample Question Pill (Only 1 Question) -->
         <div id="ai-chat-pills" class="flex flex-col gap-2 pt-1">
-          <button class="chat-pill flex items-center gap-2.5 border border-stroke-4 dark:border-stroke-7 bg-white dark:bg-background-9 p-3 rounded-xl text-xs font-medium text-left hover:border-primary-500 hover:bg-primary-500/5 transition-all text-secondary dark:text-accent group shadow-xs">
-            <div class="p-1.5 rounded-lg bg-primary-500/10 text-primary-500 shrink-0 group-hover:bg-primary-500 group-hover:text-white transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <button
+            class="chat-pill flex items-center gap-2.5 border border-stroke-4 dark:border-stroke-7 bg-white dark:bg-background-9 p-3 rounded-xl text-xs font-medium text-left hover:border-primary-500 hover:bg-primary-500/5 transition-all text-secondary dark:text-accent group shadow-xs">
+            <div
+              class="p-1.5 rounded-lg bg-primary-500/10 text-primary-500 shrink-0 group-hover:bg-primary-500 group-hover:text-white transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
             </div>
             <span>How do Voxil custom AI agents automate workflows?</span>
           </button>
@@ -202,10 +223,16 @@ Footer v4
       </div>
 
       <!-- Chat Input -->
-      <div id="ai-chat-input-block" class="p-3.5 border-t border-stroke-4 dark:border-stroke-7 bg-white dark:bg-background-9 flex items-center gap-2 shrink-0">
-        <input type="text" id="ai-chat-text" placeholder="Type your message..." class="flex-1 px-4 py-2.5 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none text-sm placeholder:text-secondary/40 dark:placeholder:text-accent/40" />
-        <button id="ai-chat-send" class="btn btn-primary p-2.5 px-4 rounded-xl text-sm flex items-center justify-center shrink-0 hover:btn-secondary dark:hover:btn-accent transition-all" aria-label="Send Message">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3 21l18-9L3 3l3 9zm0 0h7.5"/></svg>
+      <div id="ai-chat-input-block"
+        class="p-3.5 border-t border-stroke-4 dark:border-stroke-7 bg-white dark:bg-background-9 flex items-center gap-2 shrink-0">
+        <input type="text" id="ai-chat-text" placeholder="Type your message..."
+          class="flex-1 px-4 py-2.5 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none text-sm placeholder:text-secondary/40 dark:placeholder:text-accent/40" />
+        <button id="ai-chat-send"
+          class="btn btn-primary p-2.5 px-4 rounded-xl text-sm flex items-center justify-center shrink-0 hover:btn-secondary dark:hover:btn-accent transition-all"
+          aria-label="Send Message">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3 21l18-9L3 3l3 9zm0 0h7.5" />
+          </svg>
         </button>
       </div>
     </div>
