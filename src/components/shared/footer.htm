@@ -141,7 +141,7 @@ Footer v4
   <Component src="src/components/shared/package-link.htm" />
 
   <!-- ==========================================
-       Interactive AI Chatbot & Exit-Intent Popup
+       Interactive AI Chatbot
        ========================================== -->
 
   <!-- Floating Chatbot Widget -->
@@ -211,88 +211,7 @@ Footer v4
     </div>
   </div>
 
-  <!-- Exit-Intent Lead Capture Popup Modal -->
-  <div id="exit-intent-modal" class="fixed inset-0 z-[1000] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 font-sans">
-    <div class="w-full max-w-[500px] bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-[24px] p-6 md:p-8 shadow-2xl relative text-secondary dark:text-accent animate-fade-in">
-      
-      <!-- Close button -->
-      <button id="exit-close" class="absolute top-4 right-4 text-secondary/40 dark:text-accent/40 hover:text-secondary dark:hover:text-accent transition-colors" aria-label="Close modal">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-
-      <!-- Content -->
-      <div class="text-center space-y-4">
-        <div class="size-14 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto text-primary-500">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        </div>
-        <h3 class="text-heading-5 font-normal">Not ready to book a strategy call?</h3>
-        <p class="text-tagline-2 text-secondary/70 dark:text-accent/70 max-w-[380px] mx-auto">
-          Download our **Free AI Automation Checklist** detailing 15 high-impact workflows you can deploy today to save 20+ hours per week.
-        </p>
-      </div>
-
-      <!-- Form -->
-      <form id="exit-form" class="mt-6 space-y-4">
-        <input type="email" id="exit-email" required placeholder="Enter your work email" class="w-full px-4 py-3 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none" />
-        <button type="submit" class="btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-md w-full text-center">
-          <span>Get Free Checklist</span>
-        </button>
-      </form>
-
-      <!-- Success Screen -->
-      <div id="exit-success" class="hidden text-center py-6 space-y-4">
-        <div class="size-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto text-green-500">
-          <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-        </div>
-        <h4 class="text-heading-6 font-semibold">Checklist on its way!</h4>
-        <p class="text-tagline-2 text-secondary/60 dark:text-accent/60">We sent the download link to your email. Check your inbox shortly.</p>
-      </div>
-
-    </div>
-  </div>
-
   <script type="text/javascript">
-    // --- Exit-Intent Popup Logic ---
-    (function() {
-      const modal = document.getElementById('exit-intent-modal');
-      const closeBtn = document.getElementById('exit-close');
-      const form = document.getElementById('exit-form');
-      const successDiv = document.getElementById('exit-success');
-
-      if (!modal) return;
-
-      function showModal() {
-        modal.style.display = 'flex';
-        localStorage.setItem('voxil_exit_intent_shown', 'true');
-      }
-
-      function hideModal() {
-        modal.style.display = 'none';
-      }
-
-      closeBtn.addEventListener('click', hideModal);
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) hideModal();
-      });
-
-      // Track cursor exit viewport
-      document.addEventListener('mouseleave', (e) => {
-        if (e.clientY < 30 && !localStorage.getItem('voxil_exit_intent_shown')) {
-          showModal();
-        }
-      });
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = document.getElementById('exit-email').value;
-        if (email) {
-          form.classList.add('hidden');
-          successDiv.classList.remove('hidden');
-          setTimeout(hideModal, 3000);
-        }
-      });
-    })();
-
     // --- Interactive AI Chatbot Logic & Backend API Integration ---
     (function() {
       const chatBtn = document.getElementById('ai-chat-btn');
@@ -575,7 +494,6 @@ Footer v4
       });
 
     })();
-  </script>
   </script>
 
   <!-- SCRIPT -->
