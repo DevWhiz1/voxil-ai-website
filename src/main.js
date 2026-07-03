@@ -22,6 +22,7 @@ import './js/animation/typewriter';
 import './js/animation/voice-waveform';
 import './js/animation/wave-animation';
 import './js/common/button';
+import './js/common/chatbot';
 import './js/common/common';
 import './js/common/contact-form';
 import './js/common/mobile-menu';
