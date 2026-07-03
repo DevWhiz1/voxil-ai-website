@@ -211,7 +211,7 @@ Footer v4
     </div>
   </div>
 
-  <script type="text/javascript">
+  <script type="module">
     // --- Interactive AI Chatbot Logic & Backend API Integration ---
     (function() {
       const chatBtn = document.getElementById('ai-chat-btn');
@@ -224,7 +224,8 @@ Footer v4
 
       if (!chatBtn || !chatWindow) return;
 
-      const API_BASE = 'http://localhost:5000/api/chat';
+      const rawApiUrl = import.meta.env.VITE_API_URL || '';
+      const API_BASE = `${rawApiUrl.replace(/\/$/, '')}/api/chat`;
       let currentSessionId = localStorage.getItem('voxil_chat_session_id') || null;
       let isTyping = false;
       let sessionInitialized = false;
