@@ -5,7 +5,7 @@
 const link = (href, text) => `<a href="${href}" class="font-semibold text-primary-700 underline underline-offset-4">${text}</a>`;
 
 export const hub = {
-  title: 'White Label Fulfillment for Agencies | GoHighLevel & AI Partner | Voxil AI',
+  title: 'White Label Fulfillment for Agencies | GHL & AI | Voxil AI',
   description:
     'Voxil AI is a white label fulfillment partner for marketing agencies: GoHighLevel builds, AI voice agents, chatbots, funnels, websites and automations delivered under your brand, inside your accounts. Month to month.',
   h1: 'Your agency’s <span class="text-gradient-teal">white label fulfillment partner</span>',
@@ -97,7 +97,7 @@ export const hub = {
 
 export const models = {
   'white-label-fulfillment': {
-    title: 'White Label GoHighLevel & AI Fulfillment for Agencies | Voxil AI',
+    title: 'Done-for-You White Label GHL & AI Fulfillment | Voxil AI',
     description: 'Done-for-you white label fulfillment for agencies: we build GoHighLevel systems, funnels, AI agents and automations under your brand, inside your client’s account, with a Loom handover you present as your own.',
     h1: 'Done-for-you <span class="text-gradient-teal">white label fulfillment</span>',
     lead: 'You sell it, we build it. GoHighLevel systems, funnels, automations, websites and AI agents delivered under your brand, inside your client’s account.',
@@ -142,7 +142,7 @@ export const models = {
   },
 
   'dedicated-ghl-va': {
-    title: 'Dedicated GoHighLevel Virtual Assistant for Agencies (White Label) | Voxil AI',
+    title: 'Dedicated GHL Virtual Assistant for Agencies | Voxil AI',
     description: 'Hire a dedicated, GoHighLevel-trained virtual assistant for your agency: daily GHL builds, edits, imports and reporting inside your accounts, reviewed by senior engineers. Month-to-month plans.',
     h1: 'A dedicated <span class="text-gradient-sky">GoHighLevel assistant</span> for your agency',
     lead: 'A GHL-trained assistant working only your accounts, in your tools and on your schedule, with senior engineers reviewing anything complex.',
@@ -180,7 +180,7 @@ export const models = {
   },
 
   'white-label-support-desk': {
-    title: 'White Label GoHighLevel Support Desk for Agencies | Voxil AI',
+    title: 'White Label GoHighLevel Support Desk | Voxil AI',
     description: 'A white label support desk for agencies: we handle your clients’ GoHighLevel, funnel, calendar and automation tickets in your name, fix root causes and report back in your channel.',
     h1: 'A white label <span class="text-gradient-warm">support desk</span> for your clients',
     lead: 'We take the tickets your clients raise about their CRM, funnels, calendars and automations, so your team stops firefighting and gets back to billable work.',
@@ -218,7 +218,7 @@ export const models = {
   },
 
   'per-project-overflow': {
-    title: 'Per-Project Overflow Fulfillment for Agencies | White Label Builds | Voxil AI',
+    title: 'Overflow Fulfillment for Agencies | White Label | Voxil AI',
     description: 'Overflow fulfillment for agencies: one white label build, one fixed price, no retainer. GoHighLevel, WordPress, Shopify, CRM migrations and AI agents delivered under your brand.',
     h1: 'Per-project <span class="text-gradient-teal">overflow fulfillment</span>',
     lead: 'One build, one fixed price, no retainer. For the month you sold more than you can staff, or a project outside your team’s usual stack.',
@@ -256,7 +256,7 @@ export const models = {
   },
 
   'white-label-ai-agents': {
-    title: 'White Label AI Voice Agents & Chatbots for Agencies | Voxil AI',
+    title: 'White Label AI Voice Agents for Agencies | Voxil AI',
     description: 'Resell custom AI voice agents and chatbots under your agency’s brand. Voxil AI builds white label Vapi and Retell AI voice agents, WhatsApp bots and chatbots connected to your clients’ GoHighLevel accounts.',
     h1: 'White label <span class="text-gradient-teal">AI voice agents & chatbots</span> for agencies',
     lead: 'Add AI receptionists, calling bots and chatbots to your offer without building a team. We build them custom, under your brand, connected to your clients’ GoHighLevel accounts.',

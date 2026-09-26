@@ -1,5 +1,5 @@
 import { ALL_SERVICES, EXTRA_SERVICES, INDUSTRIES, LOCATION_GROUPS, SERVICE_GROUPS, SITE, industryUrl, locationUrl, serviceUrl } from '../../content/site.js';
-import { arrow, breadcrumbSchema, crumbsNav, eyebrow, faqBlock, faqSchema, icon, linkCard, page, sectionHead, webPageSchema } from '../lib/ui.js';
+import { arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, faqBlock, faqSchema, icon, linkCard, page, sectionHead, webPageSchema } from '../lib/ui.js';
 
 const hubHero = ({ crumbs, eyebrowText, h1, lead, chips = '' }) => `
     <section class="page-hero">
@@ -14,6 +14,20 @@ const hubHero = ({ crumbs, eyebrowText, h1, lead, chips = '' }) => `
           <p data-reveal class="text-tagline-1 mx-auto mt-5 max-w-2xl text-secondary/60 md:text-lg">${lead}</p>
           ${chips ? `<div data-reveal class="mt-8 flex flex-wrap justify-center gap-2">${chips}</div>` : ''}
         </div>
+      </div>
+    </section>`;
+
+
+// Short explanatory copy for hub pages, so each hub says what it covers
+// instead of being a grid of links only.
+const hubIntro = (title, paras, points) => `
+    <section class="section-base section-pad-sm section-seam">
+      <div class="main-container relative z-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-14">
+        <div>
+          <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">${title}</h2>
+          ${paras.map((p) => `<p data-reveal class="text-tagline-1 mt-4 text-secondary/70">${p}</p>`).join('')}
+        </div>
+        <div data-reveal class="glass-card glass-card-topline self-start" style="--accent: #0f9f93">${checkList(points, '#0f9f93')}</div>
       </div>
     </section>`;
 
@@ -32,7 +46,7 @@ export const renderServicesHub = () => {
     { name: 'Home', url: '/' },
     { name: 'Services', url: path },
   ];
-  const title = 'AI Automation Services: Voice Agents, Chatbots, GoHighLevel & CRM | Voxil AI';
+  const title = 'AI Automation Services: Voice, Chat & GHL | Voxil AI';
   const description = `Explore ${ALL_SERVICES.length} AI automation services, AI voice agents and receptionists, chatbots and WhatsApp bots, GoHighLevel setup and automation, CRM, funnels, websites and custom integrations.`;
   const faqs = [
     { q: 'Which service should I start with?', a: 'Start where revenue leaks most. For most service businesses that’s answering calls (AI receptionist) or responding to leads instantly (AI follow-up or SDR). We’ll recommend one on a free 30-minute call.' },
@@ -58,6 +72,10 @@ export const renderServicesHub = () => {
       </div>
     </section>`
     ).join('')}
+    ${hubIntro('How our AI automation services <span class="text-gradient-teal">fit together</span>', [
+      'Every service on this page solves one part of the same problem: customers reach out, and the business needs to answer, qualify, book and follow up without losing anyone along the way. Voice agents and AI receptionists cover the phone. Chatbots and WhatsApp automation cover messaging. GoHighLevel and CRM automation keep every lead and appointment in one pipeline, and funnels and websites bring new leads in.',
+      'Most clients start with the service that fixes their biggest leak, usually missed calls or slow lead response, then connect the rest over time. Everything is built inside the tools you already use, priced as a fixed project, and owned by you when it goes live.',
+    ], ['Fixed-price projects with a written scope', 'Built on your existing CRM, calendar and phone system', 'Supervised pilot before full launch', 'You own the code, prompts and configuration'])}
     ${faqBlock({ faqs, title: 'Services <span class="text-gradient-teal">FAQ</span>' })}`;
   return page({
     path,
@@ -76,7 +94,7 @@ export const renderLocationsHub = () => {
     { name: 'Locations', url: path },
   ];
   const all = LOCATION_GROUPS.flatMap((g) => g.locations);
-  const title = 'Locations We Serve: AI Automation Agency for the US, UK, Europe, Canada & Australia | Voxil AI';
+  const title = 'AI Automation Agency Locations: US, UK & EU | Voxil AI';
   const description = `Voxil AI serves businesses in ${all.length} markets, New York, Los Angeles, Chicago, Houston, Dallas, Miami and more across the US, plus the UK, Dubai/UAE, Canada, Australia and Pakistan.`;
   const faqs = [
     { q: 'Do you work with businesses outside these locations?', a: 'Yes. We’re remote-first and work with businesses anywhere; these pages cover markets where we have the most clients and local context.' },
@@ -94,6 +112,13 @@ export const renderLocationsHub = () => {
             <span class="icon-tile" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#2fc4b6'}">${icon(!g.key.startsWith('us-') ? 'globe' : 'pin')}</span>
             <h2 class="text-heading-6 font-semibold text-secondary">${g.title}</h2>
           </div>
+          <p class="text-tagline-2 mt-3 text-secondary/65">${{
+            'us-east': 'New York to Miami: finance, healthcare, legal and real-estate teams across the Eastern time zone.',
+            'us-central': 'Chicago and Texas: operations-heavy businesses, home services and fast-growing metros in Central Time.',
+            'us-west': 'California to Colorado: tech companies, med spas, clinics and service businesses in Pacific and Mountain Time.',
+            'uk-europe': 'UK GDPR, PECR, the EU GDPR and the EU AI Act built in, with agents in English, German, Dutch and more.',
+            international: 'Canada and Australia, plus the Gulf and Pakistan, with multilingual agents and local compliance.',
+          }[g.key] ?? ''}</p>
           <ul class="mt-5 grid grid-cols-2 gap-2">
             ${g.locations.map((l) => `<li><a href="${locationUrl(l.slug)}" class="group flex items-center justify-between rounded-xl border border-secondary/[0.07] bg-secondary/[0.03] px-4 py-3 text-tagline-2 text-secondary/75 transition hover:border-secondary/20 hover:bg-secondary/[0.07] hover:text-secondary">${l.name}${arrow('size-3.5 opacity-40 transition group-hover:translate-x-0.5 group-hover:opacity-80')}</a></li>`).join('')}
           </ul>
@@ -101,6 +126,10 @@ export const renderLocationsHub = () => {
         ).join('')}
       </div>
     </section>
+    ${hubIntro('One remote team, <span class="text-gradient-teal">local knowledge for every market</span>', [
+      'Voxil AI is a remote-first agency, so we can serve businesses in the United States, the United Kingdom, Europe, Canada, Australia, the UAE and Pakistan with the same senior team. Each location page explains the local market, the industries we work with most there, the languages our AI agents speak for that audience, and the privacy and calling rules that shape how we build.',
+      'Compliance differs by region. US outbound calling follows the TCPA, the UK uses UK GDPR and PECR, the EU adds GDPR and the AI Act, Canada has PIPEDA and CASL, and Australia has the Privacy Act and Spam Act. We design consent, disclosures and data handling for your market before anything goes live.',
+    ], ['Working sessions scheduled in your time zone', 'Voice agents in English, Spanish, French, German, Dutch, Arabic, Urdu and more', 'Consent and disclosure rules built in per region', 'Live in two to four weeks for most builds'])}
     ${faqBlock({ faqs, title: 'Locations <span class="text-gradient-teal">FAQ</span>' })}`;
   return page({
     path,
@@ -118,7 +147,7 @@ export const renderIndustriesHub = () => {
     { name: 'Home', url: '/' },
     { name: 'Industries', url: path },
   ];
-  const title = 'Industries We Serve: AI Automation for Service Businesses | Voxil AI';
+  const title = 'AI Automation by Industry | Voxil AI';
   const description = 'AI automation built for real estate, gyms, insurance, law firms, home services, clinics, med spas, roofing, solar, salons, HVAC and chiropractic businesses.';
   const blurbs = {
     'real-estate': 'Instant lead response, AI ISA calls and showing booking.',
@@ -140,7 +169,11 @@ export const renderIndustriesHub = () => {
       <div class="main-container relative z-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         ${INDUSTRIES.map((i) => linkCard({ href: industryUrl(i.slug), title: i.name, desc: blurbs[i.slug], icon: i.icon, accent: i.accent, cta: 'Explore' })).join('')}
       </div>
-    </section>`;
+    </section>
+    ${hubIntro('Why industry matters in <span class="text-gradient-teal">AI automation</span>', [
+      'A med spa loses revenue to slow Instagram replies. A roofing company loses it when storm-season calls go unanswered. A law firm loses it when a prospect calls three firms and reaches voicemail twice. The technology is similar, but the leak, the conversation and the systems it connects to are different in every industry.',
+      'Each industry page shows where businesses in that field typically lose leads and time, the AI systems we build to fix it, an example workflow, and the tools we integrate with, from Jobber and ServiceTitan to Clio and practice management systems.',
+    ], ['Conversation design based on real call and chat patterns', 'Integrations with industry software where an API exists', 'Guardrails for regulated topics like medical or legal advice', 'Proven workflows adapted to your business'])}`;
   return page({
     path,
     title,

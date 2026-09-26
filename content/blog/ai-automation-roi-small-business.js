@@ -3,7 +3,7 @@ import { callout, cite, link, statGrid, table } from '../../scripts/lib/content-
 export default {
   slug: 'ai-automation-roi-small-business',
   title: 'How to Calculate AI Automation ROI for a Small Business (With Examples)',
-  metaTitle: 'AI Automation ROI: How to Calculate It (With Examples) | Voxil AI',
+  metaTitle: 'How to Calculate AI Automation ROI | Voxil AI',
   description: 'A practical method to calculate the ROI of AI automation for small businesses, revenue recovered, hours saved, costs and payback period, with worked examples and a free calculator.',
   category: 'Guides',
   date: '2026-05-27',

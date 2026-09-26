@@ -166,6 +166,21 @@ written.forEach((u) => checkFile(path.join(ROOT, u, 'index.html')));
 fs.readdirSync(partialDir).forEach((f) => checkFile(path.join(partialDir, f)));
 ['header.htm', 'footer.htm', 'mobile-menu.htm', 'cta.htm'].forEach((f) => checkFile(path.join(ROOT, 'src/components/shared', f)));
 
+// ---------------------------------------------------------------------------
+// Title length check: Google truncates titles past ~60 characters, and SEO
+// audits (Semrush, Ahrefs) flag them. Root-page titles live in src/seo-data.js.
+const MAX_TITLE = 60;
+const decode = (t) => t.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+const longTitles = written
+  .map((u) => [u, decode(fs.readFileSync(path.join(ROOT, u, 'index.html'), 'utf8').match(/<title>([\s\S]*?)<\/title>/)[1])])
+  .filter(([, t]) => t.length > MAX_TITLE);
+const { seoData } = await import(path.join(ROOT, 'src/seo-data.js'));
+Object.entries(seoData).forEach(([k, v]) => v.title.length > MAX_TITLE && longTitles.push([`${k}.html`, v.title]));
+if (longTitles.length) {
+  console.error(`\n✗ ${longTitles.length} title(s) longer than ${MAX_TITLE} characters:\n  ${longTitles.map(([u, t]) => `${t.length}  ${u}  ${t}`).join('\n  ')}`);
+  process.exit(1);
+}
+
 console.log(`Generated ${written.length} pages, 5 partials and public/llms.txt.`);
 if (broken.size) {
   console.error(`\n✗ ${broken.size} broken internal link(s):\n  ${[...broken].join('\n  ')}`);

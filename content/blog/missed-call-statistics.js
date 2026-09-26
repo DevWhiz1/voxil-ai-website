@@ -3,7 +3,7 @@ import { callout, cite, link, statGrid, table } from '../../scripts/lib/content-
 export default {
   slug: 'missed-call-statistics',
   title: 'Missed Call Statistics: What Unanswered Calls Really Cost Small Businesses',
-  metaTitle: 'Missed Call Statistics 2026: The Cost of Unanswered Calls | Voxil AI',
+  metaTitle: 'Missed Call Statistics 2026: Cost of Missed Calls | Voxil AI',
   description: 'Missed call statistics for small businesses, how many calls go unanswered, why speed matters, and a simple formula to calculate what missed calls cost you each month.',
   category: 'Statistics',
   date: '2026-01-20',

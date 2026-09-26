@@ -80,7 +80,7 @@ export default {
   },
 
   'ai-voice-agents': {
-    title: 'AI Voice Agent Development Services | Custom Phone Agents | Voxil AI',
+    title: 'AI Voice Agent Development Services | Voxil AI',
     description:
       'Custom AI voice agents that answer calls, qualify leads, book appointments and resolve support requests 24/7. Built on Vapi & Retell, integrated with your CRM.',
     h1: 'AI voice agents that <span class="text-gradient-warm">sound human</span> and do real work',
@@ -142,7 +142,7 @@ export default {
   },
 
   'ai-receptionist': {
-    title: 'AI Receptionist for Small Business | 24/7 Virtual Receptionist | Voxil AI',
+    title: 'AI Receptionist for Small Business | 24/7 | Voxil AI',
     description:
       'An AI receptionist that answers every call, books appointments, answers FAQs and routes urgent calls 24/7. Custom-built for your business and integrated with your calendar and CRM.',
     h1: 'An AI receptionist that <span class="text-gradient-warm">never misses a call</span>',
@@ -217,7 +217,7 @@ export default {
   },
 
   'ai-phone-answering': {
-    title: 'AI Phone Answering Service | Answer Every Call 24/7 | Voxil AI',
+    title: 'AI Phone Answering Service | 24/7 Answering | Voxil AI',
     description:
       'AI phone answering that picks up every call in one ring, 24/7. Captures leads, answers FAQs, books jobs and texts you summaries. Stop losing customers to voicemail.',
     h1: 'AI phone answering: <span class="text-gradient-warm">every call, first ring</span>',
@@ -279,7 +279,7 @@ export default {
   },
 
   'ai-appointment-booking': {
-    title: 'AI Appointment Booking & Scheduling Agent | Voice + Chat | Voxil AI',
+    title: 'AI Appointment Booking Agent | Voice & Chat | Voxil AI',
     description:
       'AI appointment booking agents that schedule, reschedule and confirm appointments by phone, SMS, WhatsApp and web chat, synced with your calendar and CRM to cut no-shows.',
     h1: 'AI appointment booking that <span class="text-gradient-warm">fills your calendar</span>',
@@ -341,7 +341,7 @@ export default {
   },
 
   'ai-sdr-system': {
-    title: 'AI SDR System | AI Sales Development Rep that Books Meetings | Voxil AI',
+    title: 'AI SDR System | AI Sales Rep That Books Meetings | Voxil AI',
     description:
       'An AI SDR system that responds to inbound leads in seconds, qualifies them over voice, SMS and email, follows up persistently and books meetings on your closers’ calendars.',
     h1: 'An AI SDR that <span class="text-gradient-warm">books meetings</span> while you sleep',
@@ -403,7 +403,7 @@ export default {
   },
 
   'vapi-ai-integration': {
-    title: 'Vapi AI Integration & Development Agency | Vapi Experts | Voxil AI',
+    title: 'Vapi AI Integration & Development Agency | Voxil AI',
     description:
       'Vapi AI developers who build production voice assistants: custom tools, function calling, squads, CRM and calendar integrations, telephony and monitoring. Fixed-price builds.',
     h1: 'Vapi AI integration by <span class="text-gradient-warm">production voice engineers</span>',
@@ -465,7 +465,7 @@ export default {
   },
 
   'retell-ai-setup': {
-    title: 'Retell AI Setup & Integration Experts | Retell AI Agency | Voxil AI',
+    title: 'Retell AI Setup & Integration Experts | Voxil AI',
     description:
       'Retell AI setup by specialists: agent design, conversation flows, knowledge bases, custom functions, phone numbers and CRM integrations. Launch reliable Retell voice agents fast.',
     h1: 'Retell AI setup that’s <span class="text-gradient-warm">ready for real callers</span>',
@@ -527,7 +527,7 @@ export default {
   },
 
   'ai-customer-support': {
-    title: 'AI Customer Support Automation | Voice & Chat Support Agents | Voxil AI',
+    title: 'AI Customer Support Automation | Voice & Chat | Voxil AI',
     description:
       'AI customer support agents that resolve routine tickets over chat, email and phone, integrate with Zendesk, Intercom and Gorgias, and escalate to humans with full context.',
     h1: 'AI customer support that <span class="text-gradient-warm">resolves, not deflects</span>',

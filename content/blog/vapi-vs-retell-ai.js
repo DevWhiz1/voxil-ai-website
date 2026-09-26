@@ -3,7 +3,7 @@ import { callout, link, table } from '../../scripts/lib/content-helpers.js';
 export default {
   slug: 'vapi-vs-retell-ai',
   title: 'Vapi vs Retell AI (2026): Which Voice AI Platform Should You Build On?',
-  metaTitle: 'Vapi vs Retell AI 2026: Honest Comparison from Builders | Voxil AI',
+  metaTitle: 'Vapi vs Retell AI (2026): Honest Comparison | Voxil AI',
   description: 'Vapi vs Retell AI compared by a team that builds on both, flexibility, conversation design, latency, integrations, compliance, pricing model and which to choose for your use case.',
   category: 'Comparisons',
   date: '2026-03-18',

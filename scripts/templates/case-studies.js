@@ -98,7 +98,7 @@ export const renderCaseStudy = (cs, all) => {
     </section>`,
   ].join('\n');
 
-  const title = `${cs.title} | Case Study | Voxil AI`;
+  const title = cs.seoTitle ?? `${cs.title} | Voxil AI`;
   const description = `${cs.summary} ${cs.outcome}`.slice(0, 300);
   const article = {
     '@context': 'https://schema.org',
@@ -125,7 +125,7 @@ export const renderCaseStudiesHub = (all) => {
     { name: 'Home', url: '/' },
     { name: 'Case Studies', url: path },
   ];
-  const title = 'AI Automation Case Studies | Voice Agents, Chatbots & CRM | Voxil AI';
+  const title = 'AI Automation Case Studies | Voxil AI';
   const description = 'Case studies of AI voice agents, chatbots, lead qualification and CRM automation Voxil AI has built for clinics, ecommerce, finance and real-estate teams.';
   const body = `
     <section class="page-hero">
@@ -143,6 +143,10 @@ export const renderCaseStudiesHub = (all) => {
     <section class="section-soft section-pad-sm">
       <div class="main-container relative z-10">
         <div class="grid gap-5 md:grid-cols-2">${all.map(card).join('')}</div>
+        <div data-reveal class="mt-10 max-w-3xl">
+          <h2 class="text-heading-6 font-semibold text-secondary">How we write case studies</h2>
+          <p class="text-tagline-1 mt-3 text-secondary/70">Each case study explains the business problem, what we built, which tools it connects to, and what changed afterwards. We only publish figures a client has confirmed, and some clients are described rather than named to protect their privacy. If you want to talk to a client in your industry before starting a project, ask us on a call.</p>
+        </div>
         <div data-reveal class="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl border border-stroke-2 bg-white p-6 shadow-1 sm:flex-row sm:items-center md:p-8">
           <div>
             <p class="text-heading-6 font-semibold text-secondary">Want to be our next case study?</p>

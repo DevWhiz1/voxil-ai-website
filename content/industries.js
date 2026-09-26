@@ -5,7 +5,7 @@ const link = (href, text) => `<a href="${href}" class="text-primary-600 underlin
 export default {
   'real-estate': {
     noun: 'real-estate teams',
-    title: 'AI for Real Estate | AI Voice Agents, Chatbots & Lead Follow-Up for Realtors | Voxil AI',
+    title: 'AI for Real Estate | Voice Agents & Follow-Up | Voxil AI',
     description: 'AI automation for real-estate agents, brokerages and property managers: instant lead response, AI ISA calls, showing booking, WhatsApp bots and CRM follow-up that converts more leads.',
     h1: 'AI for real estate that <span class="text-gradient-teal">answers every lead</span>',
     lead: 'Instant response to portal and ad leads, AI ISA calls, showing booking and long-term nurture, so agents spend time with serious buyers and sellers, not chasing cold inquiries.',
@@ -54,7 +54,7 @@ export default {
 
   'fitness-gyms': {
     noun: 'gyms and studios',
-    title: 'AI for Gyms & Fitness Studios | Lead Follow-Up, Booking & Retention | Voxil AI',
+    title: 'AI for Gyms & Fitness Studios | Lead Follow-Up | Voxil AI',
     description: 'AI automation for gyms, fitness studios and personal trainers: instant lead response, trial and class booking, no-show recovery, membership retention and review automation.',
     h1: 'AI for gyms that <span class="text-gradient-teal">turns inquiries into members</span>',
     lead: 'Reply to every trial inquiry instantly, book classes and consults automatically, rescue no-shows, and keep members engaged so they don’t quietly cancel.',
@@ -102,7 +102,7 @@ export default {
 
   insurance: {
     noun: 'insurance agencies',
-    title: 'AI for Insurance Agencies | Quote Follow-Up, AI Calling & Renewals | Voxil AI',
+    title: 'AI for Insurance Agencies | Quote Follow-Up | Voxil AI',
     description: 'AI automation for insurance agencies: instant quote-request response, AI qualification calls, renewal and cross-sell reminders, document collection and CRM/AMS integration.',
     h1: 'AI for insurance agencies that <span class="text-gradient-teal">quotes faster</span>',
     lead: 'Respond to quote requests in seconds, collect the details underwriting needs, follow up relentlessly on open quotes and automate renewals, without adding producers.',
@@ -151,7 +151,7 @@ export default {
 
   'law-firms': {
     noun: 'law firms',
-    title: 'AI for Law Firms | AI Legal Intake, Receptionist & Client Follow-Up | Voxil AI',
+    title: 'AI for Law Firms | Legal Intake & Receptionist | Voxil AI',
     description: 'AI automation for law firms: 24/7 AI legal intake and receptionist, conflict-check prep, consultation booking, document collection and client updates, integrated with Clio and your CRM.',
     h1: 'AI for law firms that <span class="text-gradient-teal">never misses an intake</span>',
     lead: '24/7 AI intake and reception that captures case details, screens for fit, books consultations and keeps clients updated, while your attorneys practice law.',
@@ -199,7 +199,7 @@ export default {
 
   'home-services': {
     noun: 'home-service businesses',
-    title: 'AI for Home Service Businesses | AI Receptionist, Booking & Quote Follow-Up | Voxil AI',
+    title: 'AI for Home Service Businesses | Receptionist | Voxil AI',
     description: 'AI automation for plumbers, electricians, cleaners, landscapers and home-service businesses: 24/7 AI receptionist, job booking, missed-call text-back, quote follow-up and review requests.',
     h1: 'AI for home services that <span class="text-gradient-teal">books jobs while you work</span>',
     lead: 'Answer every call while you’re on the tools, book jobs into your field-service software, chase every quote and collect five-star reviews, automatically.',
@@ -247,7 +247,7 @@ export default {
 
   'medical-clinics': {
     noun: 'medical practices',
-    title: 'AI for Medical Clinics | AI Receptionist, Patient Scheduling & Reminders | Voxil AI',
+    title: 'AI for Medical Clinics | Patient Scheduling | Voxil AI',
     description: 'AI automation for medical clinics and practices: AI receptionist, patient scheduling, reminders, intake forms, FAQ handling and recall campaigns, HIPAA-aware and integrated with your practice software.',
     h1: 'AI for medical clinics that <span class="text-gradient-teal">frees the front desk</span>',
     lead: 'An AI receptionist that answers every patient call, books and reschedules, sends reminders and handles routine questions, with HIPAA-aware architecture and a clear path to staff.',
@@ -296,7 +296,7 @@ export default {
 
   'med-spas': {
     noun: 'med spas',
-    title: 'AI for Med Spas | Consultation Booking, Instagram DMs & Follow-Up | Voxil AI',
+    title: 'AI for Med Spas | Consult Booking & DM Replies | Voxil AI',
     description: 'AI automation for med spas and aesthetic clinics: instant replies to Instagram and ad leads, consultation booking with deposits, treatment reminders, rebooking and membership campaigns.',
     h1: 'AI for med spas that <span class="text-gradient-teal">books consultations 24/7</span>',
     lead: 'Reply to Instagram DMs and ad leads instantly, book consultations with deposits, remind clients when treatments are due and fill your calendar, without adding front-desk staff.',
@@ -344,7 +344,7 @@ export default {
 
   roofing: {
     noun: 'roofing companies',
-    title: 'AI for Roofing Companies | Storm Lead Response, Inspection Booking & Follow-Up | Voxil AI',
+    title: 'AI for Roofing Companies | Storm Lead Response | Voxil AI',
     description: 'AI automation for roofing contractors: instant storm-lead response, AI calls that qualify damage and insurance claims, inspection booking, estimate follow-up and review automation.',
     h1: 'AI for roofing companies that <span class="text-gradient-teal">wins the storm rush</span>',
     lead: 'When a storm hits, calls spike overnight. AI answers and calls back every lead in seconds, qualifies damage and insurance, books inspections and chases every estimate.',
@@ -392,7 +392,7 @@ export default {
 
   solar: {
     noun: 'solar companies',
-    title: 'AI for Solar Companies | Lead Qualification, Appointment Setting & Follow-Up | Voxil AI',
+    title: 'AI for Solar Companies | Appointment Setting | Voxil AI',
     description: 'AI automation for solar installers and sales teams: instant lead response, AI qualification of homeownership, roof and utility bill, consultation booking and long-cycle follow-up.',
     h1: 'AI for solar companies that <span class="text-gradient-teal">qualifies before you roll a truck</span>',
     lead: 'Respond to every solar lead instantly, qualify homeownership, roof and bill automatically, book consultations for serious homeowners and nurture the rest through a long buying cycle.',
@@ -440,7 +440,7 @@ export default {
 
   'salons-beauty': {
     noun: 'salons and beauty businesses',
-    title: 'AI for Salons & Beauty Businesses | AI Booking, Reminders & Rebooking | Voxil AI',
+    title: 'AI for Salons & Beauty | Booking & Reminders | Voxil AI',
     description: 'AI automation for hair salons, barbers, nail and beauty studios: AI booking by phone, text and Instagram, reminders, rebooking prompts, gap filling and review requests.',
     h1: 'AI for salons that <span class="text-gradient-teal">keeps every chair full</span>',
     lead: 'Book appointments by phone, text and Instagram while stylists work, cut no-shows, prompt rebooking at the right time and fill last-minute gaps automatically.',
@@ -488,7 +488,7 @@ export default {
 
   hvac: {
     noun: 'HVAC companies',
-    title: 'AI for HVAC Companies | AI Receptionist, Dispatch Booking & Maintenance Plans | Voxil AI',
+    title: 'AI for HVAC Companies | Receptionist & Dispatch | Voxil AI',
     description: 'AI automation for HVAC contractors: 24/7 AI receptionist: emergency triage, job booking, estimate follow-up, maintenance-plan renewals and seasonal tune-up campaigns.',
     h1: 'AI for HVAC companies that <span class="text-gradient-teal">answers every no-heat call</span>',
     lead: 'A 24/7 AI receptionist that triages emergencies, books service calls into your dispatch board, follows up on replacement estimates and fills quiet weeks with maintenance campaigns.',
@@ -536,7 +536,7 @@ export default {
 
   chiropractic: {
     noun: 'chiropractic clinics',
-    title: 'AI for Chiropractors | AI Receptionist, New Patient Booking & Reactivation | Voxil AI',
+    title: 'AI for Chiropractors | Receptionist & Booking | Voxil AI',
     description: 'AI automation for chiropractic clinics: AI receptionist, new-patient booking, reminders, care-plan follow-up, reactivation campaigns and review requests.',
     h1: 'AI for chiropractors that <span class="text-gradient-teal">keeps care plans on track</span>',
     lead: 'Answer every call, book new patients, reduce missed visits, follow up on care plans and reactivate inactive patients, without adding front-desk hours.',

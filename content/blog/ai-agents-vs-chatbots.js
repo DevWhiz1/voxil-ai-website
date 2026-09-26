@@ -3,7 +3,7 @@ import { callout, cite, link, statGrid, table } from '../../scripts/lib/content-
 export default {
   slug: 'ai-agents-vs-chatbots',
   title: 'AI Agents vs Chatbots: What’s the Difference and Which Do You Need?',
-  metaTitle: 'AI Agents vs Chatbots: Key Differences Explained (2026) | Voxil AI',
+  metaTitle: 'AI Agents vs Chatbots: Key Differences (2026) | Voxil AI',
   description: 'AI agents vs chatbots explained: how they differ in autonomy, tools and memory, real business examples, risks, costs and how to decide which your business needs.',
   category: 'Guides',
   date: '2026-07-08',

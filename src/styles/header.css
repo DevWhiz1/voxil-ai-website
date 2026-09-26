@@ -139,6 +139,12 @@ Dark premium nav
   @apply text-tagline-2 flex items-center gap-2.5 py-2.5 pl-3 font-normal text-secondary/65 transition-colors hover:text-secondary;
 }
 
+.site-mobile-sublink::before {
+  content: '';
+  @apply size-1.5 shrink-0 rounded-full;
+  background: var(--dot, var(--color-primary-400));
+}
+
 /* Menu states */
 .active-menu {
   @apply text-secondary dark:text-accent font-medium;

@@ -103,34 +103,35 @@ export const navDesktop = () => `${HEADER_NOTE}
 `;
 
 // ---------------------------------------------------------------------------
-const mobileGroup = (title, inner) => `
-<details class="mobile-group">
+const mobileGroup = (title, inner, dot = '#2fc4b6') => `
+<details class="mobile-group" style="--dot: ${dot}">
   <summary>${title}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-secondary/50 transition-transform duration-300" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></summary>
   <div class="pb-3">${inner}</div>
 </details>`;
 
-const sub = (href, label, dot = 'bg-primary-400') =>
-  `<a href="${href}" class="site-mobile-sublink"><span class="size-1.5 rounded-full ${dot}"></span>${label}</a>`;
+// The colored dot before each link is drawn in CSS (.site-mobile-sublink::before).
+const sub = (href, label) => `<a href="${href}" class="site-mobile-sublink">${label}</a>`;
 
 export const navMobile = () => `${HEADER_NOTE}
 ${mobileGroup(
   'Services',
   SERVICE_GROUPS.map((g) => `<p class="mobile-group__title">${g.title}</p>${g.services.map((s) => sub(serviceUrl(s.slug), s.name)).join('')}`).join('') +
-    sub('/services/', 'All services', 'bg-primary-300/50')
+    sub('/services/', 'All services')
 )}
 ${mobileGroup(
   'Locations',
-  LOCATION_GROUPS.map((g) => `<p class="mobile-group__title">${g.title}</p>${g.locations.map((l) => sub(locationUrl(l.slug), l.name, 'bg-sky-400')).join('')}`).join('') +
-    sub('/locations/', 'All locations', 'bg-primary-300/50')
+  LOCATION_GROUPS.map((g) => `<p class="mobile-group__title">${g.title}</p>${g.locations.map((l) => sub(locationUrl(l.slug), l.name)).join('')}`).join('') +
+    sub('/locations/', 'All locations'),
+  '#38bdf8'
 )}
-${mobileGroup('Industries', INDUSTRIES.map((i) => sub(industryUrl(i.slug), i.name, 'bg-coral-400')).join('') + sub('/industries/', 'All industries', 'bg-primary-300/50'))}
-${mobileGroup('For Agencies', sub(agencyUrl(), 'Partner program overview', 'bg-primary-300/50') + AGENCY_PAGES.map((a) => sub(agencyUrl(a.slug), a.name)).join(''))}
-${mobileGroup('Resources', RESOURCES.map((r) => sub(resourceUrl(r.slug), r.name)).join('') + sub('/blog/', 'Blog') + sub('/resources/', 'All free tools', 'bg-primary-300/50'))}
+${mobileGroup('Industries', INDUSTRIES.map((i) => sub(industryUrl(i.slug), i.name)).join('') + sub('/industries/', 'All industries'), '#ff7a3d')}
+${mobileGroup('For Agencies', sub(agencyUrl(), 'Partner program overview') + AGENCY_PAGES.map((a) => sub(agencyUrl(a.slug), a.name)).join(''))}
+${mobileGroup('Resources', RESOURCES.map((r) => sub(resourceUrl(r.slug), r.name)).join('') + sub('/blog/', 'Blog') + sub('/resources/', 'All free tools'))}
 `;
 
 // ---------------------------------------------------------------------------
 const footLink = (href, label) =>
-  `<li><a href="${href}" class="text-tagline-2 text-secondary/60 transition-colors hover:text-secondary">${label}</a></li>`;
+  `<li><a href="${href}" class="footer-link">${label}</a></li>`;
 
 const footCol = (title, links) => `
         <div>
@@ -177,10 +178,10 @@ export const footerLinks = () => `${HEADER_NOTE}
 export const footerLocations = () => `${HEADER_NOTE}
 <div class="mt-12 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.025] p-5 md:p-6">
   <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/40 uppercase">Locations we serve</p>
-  <p class="text-tagline-3 leading-relaxed text-secondary/45">
+  <p class="loc-strip">
     ${LOCATION_GROUPS.flatMap((g) => g.locations)
-      .map((l) => `<a href="${locationUrl(l.slug)}" class="transition-colors hover:text-secondary">${l.name}</a>`)
-      .join(' <span class="text-secondary/20">·</span> ')}
+      .map((l) => `<a href="${locationUrl(l.slug)}">${l.name}</a>`)
+      .join(' ')}
   </p>
 </div>
 `;

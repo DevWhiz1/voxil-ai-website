@@ -519,7 +519,7 @@ export default {
   // -------------------------------------------------------- INTERNATIONAL
   'united-kingdom': {
     shortName: 'the UK',
-    title: 'AI Automation Agency UK | AI Voice Agents, Chatbots & WhatsApp | Voxil AI',
+    title: 'AI Automation Agency UK | Voice Agents & Chatbots | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">the United Kingdom</span>',
     description: 'AI automation for UK businesses: AI voice agents, receptionists, WhatsApp chatbots, GoHighLevel and CRM automation, built for UK GDPR and PECR. Serving London, Manchester, Birmingham and beyond.',
     lead: 'AI receptionists, voice agents, WhatsApp bots and CRM automation for UK businesses, UK GDPR- and PECR-aware, with British voices and working sessions in UK hours.',
@@ -550,7 +550,7 @@ export default {
 
   'dubai-uae': {
     shortName: 'Dubai & the UAE',
-    title: 'AI Automation Agency Dubai & UAE | Arabic AI Voice Agents & WhatsApp Bots | Voxil AI',
+    title: 'AI Automation Agency Dubai & UAE | Arabic AI | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Dubai & the UAE</span>',
     description: 'AI automation for Dubai and UAE businesses: Arabic and English AI voice agents, WhatsApp chatbots, CRM and GoHighLevel automation for real estate, clinics, hospitality and retail.',
     lead: 'Arabic and English voice agents, WhatsApp chatbots and CRM automation for real-estate, healthcare, hospitality and retail businesses in Dubai, Abu Dhabi and across the Emirates.',
@@ -581,7 +581,7 @@ export default {
 
   canada: {
     shortName: 'Canada',
-    title: 'AI Automation Agency Canada | AI Voice Agents, Chatbots & CRM Automation | Voxil AI',
+    title: 'AI Automation Agency Canada | AI Voice Agents | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Canada</span>',
     description: 'AI automation for Canadian businesses: English and French AI voice agents, receptionists, chatbots and CRM automation, built for PIPEDA, Quebec Law 25 and CASL. Toronto, Vancouver, Montreal and more.',
     lead: 'English and French voice agents, AI receptionists, chatbots and CRM automation for Canadian businesses, designed around PIPEDA, Quebec’s Law 25 and CASL.',
@@ -612,7 +612,7 @@ export default {
 
   australia: {
     shortName: 'Australia',
-    title: 'AI Automation Agency Australia | AI Voice Agents & Receptionists | Voxil AI',
+    title: 'AI Automation Agency Australia | AI Receptionists | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Australia</span>',
     description: 'AI automation for Australian businesses: AI receptionists, voice agents, chatbots, GoHighLevel and CRM automation built for the Privacy Act, Spam Act and Do Not Call Register. Sydney, Melbourne, Brisbane, Perth.',
     lead: 'AI receptionists, voice agents, chatbots and GoHighLevel automation for Australian tradies, clinics, real-estate agencies and service businesses, with Australian voices and compliance built in.',
@@ -643,7 +643,7 @@ export default {
 
   pakistan: {
     shortName: 'Pakistan',
-    title: 'AI Automation Agency Pakistan | Urdu AI Chatbots, WhatsApp & Voice Agents | Voxil AI',
+    title: 'AI Automation Agency Pakistan | Urdu AI Chatbots | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Pakistan</span>',
     description: 'AI automation for Pakistani businesses: Urdu and English WhatsApp chatbots, AI voice agents, CRM and workflow automation for real estate, education, healthcare, ecommerce and exporters in Karachi, Lahore and Islamabad.',
     lead: 'Urdu-English WhatsApp chatbots, voice agents and CRM automation for Pakistan’s real-estate, education, healthcare, ecommerce and export businesses.',
@@ -730,7 +730,7 @@ export default {
 
   europe: {
     shortName: 'Europe',
-    title: 'AI Automation Agency for Europe (EU) | GDPR-Ready AI Voice Agents & Chatbots | Voxil AI',
+    title: 'AI Automation Agency Europe | GDPR-Ready AI | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Europe</span>',
     description: 'GDPR-ready AI automation for European businesses: multilingual AI voice agents, receptionists, WhatsApp chatbots and CRM automation, designed around GDPR and the EU AI Act. Serving Ireland, the Netherlands, Germany and across the EU.',
     lead: 'Multilingual AI voice agents, receptionists, WhatsApp chatbots and CRM automation for European businesses, designed around GDPR and the EU AI Act from day one.',
@@ -761,7 +761,7 @@ export default {
 
   ireland: {
     shortName: 'Ireland',
-    title: 'AI Automation Agency Ireland | AI Voice Agents & Chatbots | Voxil AI',
+    title: 'AI Automation Agency Ireland | AI Voice Agents | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Ireland</span>',
     description: 'AI automation for Irish businesses: AI receptionists, voice agents, WhatsApp chatbots, GoHighLevel and CRM automation, GDPR-ready and serving Dublin, Cork, Galway and Limerick.',
     lead: 'AI receptionists, voice agents, WhatsApp chatbots and CRM automation for Irish businesses, GDPR-ready and built for customers who expect a fast, friendly reply.',
@@ -792,7 +792,7 @@ export default {
 
   netherlands: {
     shortName: 'the Netherlands',
-    title: 'AI Automation Agency Netherlands | Dutch & English AI Agents | Voxil AI',
+    title: 'AI Automation Agency Netherlands | Dutch AI | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">the Netherlands</span>',
     description: 'AI automation for Dutch businesses: Dutch and English AI voice agents, WhatsApp chatbots, receptionists and CRM automation, GDPR-ready. Serving Amsterdam, Rotterdam, The Hague, Utrecht and Eindhoven.',
     lead: 'Dutch and English voice agents, WhatsApp chatbots and CRM automation for businesses in the Netherlands, GDPR-ready and built for WhatsApp-first customers.',
@@ -823,7 +823,7 @@ export default {
 
   germany: {
     shortName: 'Germany',
-    title: 'AI Automation Agency Germany | German & English AI Voice Agents | Voxil AI',
+    title: 'AI Automation Agency Germany | German AI Agents | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Germany</span>',
     description: 'GDPR-ready AI automation for German businesses: German and English AI voice agents, chatbots, receptionists and CRM automation built for strict data protection. Serving Berlin, Munich, Hamburg, Frankfurt and Cologne.',
     lead: 'German and English AI voice agents, chatbots and CRM automation for businesses in Germany, built for strict data protection and clear consent from the start.',

@@ -5,7 +5,7 @@ const GHL_STACK = ['GoHighLevel', 'LeadConnector', 'Stripe', 'Twilio / LC Phone'
 
 export default {
   'ghl-expert': {
-    title: 'GoHighLevel Expert for Hire | GHL Builds, Fixes & Automation | Voxil AI',
+    title: 'GoHighLevel Expert for Hire | GHL Builds & Fixes | Voxil AI',
     description:
       'Hire a GoHighLevel expert to build pipelines, workflows, funnels, calendars and AI automations, or fix a messy GHL account. Fast turnaround, clean builds, full documentation.',
     h1: 'The GoHighLevel expert your account <span class="text-gradient-sky">has been waiting for</span>',
@@ -67,7 +67,7 @@ export default {
   },
 
   'ghl-consultant': {
-    title: 'GoHighLevel Consultant | GHL Strategy for Agencies & Businesses | Voxil AI',
+    title: 'GoHighLevel Consultant | GHL Strategy | Voxil AI',
     description:
       'A GoHighLevel consultant for strategy and architecture: plan your GHL setup, agency offer, SaaS pricing, sub-account structure, automations and AI, before you build.',
     h1: 'A GoHighLevel consultant for <span class="text-gradient-sky">decisions that matter</span>',
@@ -129,7 +129,7 @@ export default {
   },
 
   'ghl-setup': {
-    title: 'GoHighLevel Setup Service | Complete GHL Account Setup | Voxil AI',
+    title: 'GoHighLevel Setup Service | Full GHL Setup | Voxil AI',
     description:
       'Done-for-you GoHighLevel setup: domains, email and phone, A2P, pipelines, calendars, forms, workflows, funnels, reputation and AI, launched correctly the first time.',
     h1: 'GoHighLevel setup, <span class="text-gradient-sky">done right the first time</span>',
@@ -191,7 +191,7 @@ export default {
   },
 
   'ghl-support': {
-    title: 'GoHighLevel Support & Maintenance | Monthly GHL Help | Voxil AI',
+    title: 'GoHighLevel Support & Maintenance | Voxil AI',
     description:
       'Ongoing GoHighLevel support: fixes, new workflows, funnel edits, A2P and deliverability issues, reporting and monthly improvements, from a team that knows GHL inside out.',
     h1: 'GoHighLevel support that <span class="text-gradient-sky">actually fixes things</span>',
@@ -253,7 +253,7 @@ export default {
   },
 
   'ghl-migration': {
-    title: 'GoHighLevel Migration Service | Move to GHL Without Losing Data | Voxil AI',
+    title: 'GoHighLevel Migration Service | Move to GHL | Voxil AI',
     description:
       'Migrate to GoHighLevel from HubSpot, ClickFunnels, Kajabi, Keap, ActiveCampaign, Mailchimp, Pipedrive and more, contacts, pipelines, funnels, automations and courses moved safely.',
     h1: 'Migrate to GoHighLevel <span class="text-gradient-sky">without losing a thing</span>',
@@ -328,7 +328,7 @@ export default {
   },
 
   'ghl-integration': {
-    title: 'GoHighLevel Integrations | Connect GHL to Any Tool via API | Voxil AI',
+    title: 'GoHighLevel Integrations | Connect GHL via API | Voxil AI',
     description:
       'GoHighLevel integration services: connect GHL to accounting, scheduling, ecommerce, field-service, AI voice agents and custom apps using the GHL API, webhooks, Zapier, Make.com or n8n.',
     h1: 'GoHighLevel integrations that <span class="text-gradient-sky">keep data flowing</span>',
@@ -390,7 +390,7 @@ export default {
   },
 
   'ghl-snapshot': {
-    title: 'Custom GoHighLevel Snapshots | GHL Snapshot Builder | Voxil AI',
+    title: 'Custom GoHighLevel Snapshot Builder | Voxil AI',
     description:
       'Custom GoHighLevel snapshots for agencies and niches, pipelines, workflows, funnels, calendars, templates and AI packaged for one-click deployment to new sub-accounts.',
     h1: 'Custom GoHighLevel snapshots that <span class="text-gradient-sky">deploy in one click</span>',
@@ -452,7 +452,7 @@ export default {
   },
 
   'ghl-white-label-saas': {
-    title: 'GoHighLevel White Label SaaS Setup | Launch Your Own SaaS | Voxil AI',
+    title: 'GoHighLevel White Label SaaS Setup | Voxil AI',
     description:
       'Launch your own branded SaaS on GoHighLevel SaaS mode: white-label domain and app, plans and pricing, Stripe rebilling, snapshots, onboarding automation and support workflows.',
     h1: 'Launch your own SaaS on <span class="text-gradient-sky">GoHighLevel white label</span>',
@@ -514,7 +514,7 @@ export default {
   },
 
   'ghl-courses-onboarding': {
-    title: 'GoHighLevel Courses, Memberships & Client Onboarding | Voxil AI',
+    title: 'GoHighLevel Courses & Client Onboarding | Voxil AI',
     description:
       'Build courses, memberships and communities in GoHighLevel, plus automated client onboarding, payment, contracts, forms, tasks and welcome sequences, that turns new buyers into active users.',
     h1: 'GoHighLevel courses and onboarding that <span class="text-gradient-sky">get people started</span>',
@@ -638,7 +638,7 @@ export default {
   },
 
   'gohighlevel-automation': {
-    title: 'GoHighLevel Automation Services | GHL Workflow Experts | Voxil AI',
+    title: 'GoHighLevel Automation Services | GHL Workflows | Voxil AI',
     description:
       'GoHighLevel automation services: speed-to-lead, missed-call text-back, nurture, reminders, reviews, reactivation and AI workflows built in GHL to convert more leads with less manual work.',
     h1: 'GoHighLevel automation that <span class="text-gradient-sky">runs your pipeline</span>',

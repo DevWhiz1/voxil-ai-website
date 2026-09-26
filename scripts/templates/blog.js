@@ -242,7 +242,7 @@ export const renderBlogHub = (posts) => {
       })
       .join('')}`;
 
-  const title = 'AI Automation Blog: Statistics, Guides & Comparisons | Voxil AI';
+  const title = 'AI Automation Blog: Stats, Guides & Reviews | Voxil AI';
   const description = 'Research-backed articles on AI voice agents, chatbots, automation, GoHighLevel and AI statistics for 2026, every figure sourced.';
   return page({
     path,

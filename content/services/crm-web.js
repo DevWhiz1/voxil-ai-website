@@ -5,7 +5,7 @@ const CRM_STACK = ['HubSpot', 'Salesforce', 'GoHighLevel', 'Pipedrive', 'Zoho CR
 
 export default {
   'crm-setup': {
-    title: 'CRM Setup Services | HubSpot, Salesforce, GHL & Pipedrive Setup | Voxil AI',
+    title: 'CRM Setup Services | HubSpot, Salesforce & GHL | Voxil AI',
     description:
       'CRM setup services that fit how your team sells: pipelines, fields, lead routing, email and calendar sync, dashboards and training, in HubSpot, Salesforce, GoHighLevel, Pipedrive or Zoho.',
     h1: 'CRM setup built around <span class="text-gradient-teal">how you actually sell</span>',
@@ -79,7 +79,7 @@ export default {
   },
 
   'crm-automation': {
-    title: 'CRM Automation Services | Automate Your Sales Pipeline | Voxil AI',
+    title: 'CRM Automation Services | Automate Your Pipeline | Voxil AI',
     description:
       'CRM automation that assigns leads, creates tasks, sends follow-ups, updates deal stages and reports automatically, in HubSpot, Salesforce, GoHighLevel, Pipedrive and Zoho, with AI where it helps.',
     h1: 'CRM automation that <span class="text-gradient-teal">keeps deals moving</span>',
@@ -141,7 +141,7 @@ export default {
   },
 
   'crm-migration': {
-    title: 'CRM Migration Services | Zero-Loss CRM Data Migration | Voxil AI',
+    title: 'CRM Migration Services | Zero Data Loss | Voxil AI',
     description:
       'CRM migration between HubSpot, Salesforce, GoHighLevel, Pipedrive, Zoho and more, data mapping, cleaning, history, attachments, automations and cut-over with zero data loss.',
     h1: 'CRM migration with <span class="text-gradient-teal">zero data loss</span>',
@@ -203,7 +203,7 @@ export default {
   },
 
   'make-automation': {
-    title: 'Make.com Automation Experts | Make Scenario Development | Voxil AI',
+    title: 'Make.com Automation Experts | Scenario Builds | Voxil AI',
     description:
       'Make.com (formerly Integromat) experts: robust multi-step scenarios with error handling, data stores, AI modules and custom API calls, documented, monitored and cost-efficient.',
     h1: 'Make.com automation that’s <span class="text-gradient-teal">built to last</span>',
@@ -265,7 +265,7 @@ export default {
   },
 
   'zapier-automation': {
-    title: 'Zapier Automation Experts | Zapier Consultant & Zap Builder | Voxil AI',
+    title: 'Zapier Automation Experts | Zap Builder | Voxil AI',
     description:
       'Zapier experts who build reliable, documented Zaps, multi-step workflows, paths, filters, formatter, AI steps and webhooks, plus audits to cut task usage and fix broken automations.',
     h1: 'Zapier automation that’s <span class="text-gradient-teal">reliable and lean</span>',
@@ -327,7 +327,7 @@ export default {
   },
 
   'n8n-automation': {
-    title: 'n8n Automation Experts | Self-Hosted n8n Workflows & AI Agents | Voxil AI',
+    title: 'n8n Automation Experts | Self-Hosted Workflows | Voxil AI',
     description:
       'n8n automation experts: self-hosted or cloud n8n workflows, AI agents with tool calling, custom code nodes, queue mode scaling and secure deployment, automation you fully own.',
     h1: 'n8n automation and AI agents <span class="text-gradient-teal">you fully own</span>',
@@ -389,7 +389,7 @@ export default {
   },
 
   'api-integration': {
-    title: 'Custom API Integration Services | Connect Any System | Voxil AI',
+    title: 'Custom API Integration Services | Voxil AI',
     description:
       'Custom API integration services: connect CRMs, ERPs, payment, scheduling and AI systems with secure, monitored integrations, REST, GraphQL, webhooks and middleware built by engineers.',
     h1: 'Custom API integrations for <span class="text-gradient-teal">when no-code stops</span>',
@@ -451,7 +451,7 @@ export default {
   },
 
   'sales-funnel-builder': {
-    title: 'Sales Funnel Builder Services | High-Converting Funnels | Voxil AI',
+    title: 'Sales Funnel Builder Services | Voxil AI',
     description:
       'Done-for-you sales funnels: landing pages, offers, checkout, upsells, booking and automated follow-up, built in GoHighLevel, ClickFunnels, WordPress or custom, and optimized for conversion.',
     h1: 'Sales funnels that <span class="text-gradient-teal">convert and follow up</span>',
@@ -513,7 +513,7 @@ export default {
   },
 
   'lead-generation-funnel': {
-    title: 'Lead Generation Funnel Services | Lead Magnets, Quizzes & Booking | Voxil AI',
+    title: 'Lead Generation Funnel Services | Quiz Funnels | Voxil AI',
     description:
       'Lead generation funnels that fill your pipeline: lead magnets, quizzes, calculators and booking funnels connected to instant AI follow-up and your CRM.',
     h1: 'Lead generation funnels that <span class="text-gradient-teal">fill the calendar</span>',
@@ -575,7 +575,7 @@ export default {
   },
 
   'website-design': {
-    title: 'Website Design & Development for Service Businesses | Voxil AI',
+    title: 'Website Design for Service Businesses | Voxil AI',
     description:
       'Fast, SEO-ready website design for service businesses, conversion-focused pages, AI chat, booking, schema markup and CRM integration. Built to rank in Google and AI search.',
     h1: 'Websites designed to <span class="text-gradient-teal">rank, convert and automate</span>',
@@ -637,7 +637,7 @@ export default {
   },
 
   'ai-saas-development': {
-    title: 'AI SaaS Development Agency | Build Your AI Product | Voxil AI',
+    title: 'AI SaaS Development Agency | Build AI Products | Voxil AI',
     description:
       'AI SaaS development from MVP to production: product design, LLM features, RAG, auth, billing, multi-tenancy and cloud infrastructure, built by engineers, owned by you.',
     h1: 'AI SaaS development, <span class="text-gradient-sky">MVP to production</span>',

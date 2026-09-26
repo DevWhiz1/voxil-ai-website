@@ -952,6 +952,24 @@
   background: linear-gradient(to right, var(--color-primary-500), var(--color-coral-400));
 }
 
+/* Footer link lists and the "Locations we serve" strip */
+.footer-link {
+  @apply text-tagline-2 text-secondary/60 transition-colors hover:text-secondary;
+}
+
+.loc-strip {
+  @apply text-tagline-3 leading-relaxed text-secondary/45;
+}
+
+.loc-strip a {
+  @apply transition-colors hover:text-secondary;
+}
+
+.loc-strip a + a::before {
+  content: '·';
+  @apply mx-1.5 text-secondary/20;
+}
+
 /* Team / founder portraits */
 .portrait {
   @apply relative overflow-hidden rounded-3xl border border-stroke-2 bg-background-1;

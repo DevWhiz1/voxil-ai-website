@@ -156,7 +156,9 @@ export const renderLocation = (slug, l) => {
     </section>`,
   ].join('\n');
 
-  const title = l.title ?? `AI Automation Agency in ${meta.name} | AI Voice Agents & Chatbots | Voxil AI`;
+  // Keep titles within ~60 characters so Google shows them in full.
+  const longTitle = `AI Automation Agency in ${meta.name} | AI Voice Agents | Voxil AI`;
+  const title = l.title ?? (longTitle.length <= 60 ? longTitle : `AI Automation Agency in ${meta.name} | Voxil AI`);
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',

@@ -9,6 +9,7 @@
 // {
 //   slug: 'dental-clinic-ai-receptionist',          // URL: /case-studies/<slug>/
 //   title: 'AI receptionist for a 3-location dental group',
+//   seoTitle: 'Dental AI Receptionist | Case Study | Voxil AI', // max 60 chars
 //   client: 'Bright Smile Dental',                  // or a description: 'A 3-location dental group'
 //   industry: 'medical-clinics',                    // slug from INDUSTRIES in site.js, or null
 //   industryLabel: 'Healthcare',                    // label shown on the card
@@ -32,6 +33,7 @@
 export default [
   {
     slug: 'healthcare-patient-intake',
+    seoTitle: 'Clinic Patient Intake Automation | Case Study | Voxil AI',
     title: 'Patient intake automation for a multi-location clinic',
     client: 'A multi-location clinic group',
     industry: 'medical-clinics',
@@ -56,6 +58,7 @@ export default [
   },
   {
     slug: 'ecommerce-support-chatbot',
+    seoTitle: 'DTC Ecommerce Support Chatbot | Case Study | Voxil AI',
     title: 'Support deflection chatbot for a DTC ecommerce brand',
     client: 'A growing direct-to-consumer brand',
     industry: null,
@@ -79,6 +82,7 @@ export default [
   },
   {
     slug: 'finance-lead-qualification',
+    seoTitle: 'Lending Lead Qualification | Case Study | Voxil AI',
     title: 'Automated lead qualification for a lending team',
     client: 'A lending sales team',
     industry: 'insurance',
@@ -102,6 +106,7 @@ export default [
   },
   {
     slug: 'real-estate-listing-agent',
+    seoTitle: 'Real Estate Listing AI Agent | Case Study | Voxil AI',
     title: '24/7 listing inquiry agent for a real-estate brokerage',
     client: 'A residential brokerage',
     industry: 'real-estate',

@@ -162,6 +162,15 @@ const seoOptimizer = () => {
       html = upsertTag(html, 'name', 'description', `<meta name="description" content="${description}" />`);
       html = upsertTag(html, 'rel', 'canonical', `<link rel="canonical" href="${canonicalUrl}" />`);
 
+      // International SEO: one English version serves every market, so each page
+      // declares itself as the English and default (x-default) version. Add
+      // per-country alternates here only if separate country URLs are created.
+      html = html.replace(/\s*<link rel="alternate" hreflang="[^"]*"[^>]*>/g, '');
+      html = html.replace(
+        '</head>',
+        `  <link rel="alternate" hreflang="en" href="${canonicalUrl}" />\n  <link rel="alternate" hreflang="x-default" href="${canonicalUrl}" />\n</head>`
+      );
+
       const og = {
         'og:url': canonicalUrl,
         'og:title': escapeAttr(title),
@@ -204,9 +213,10 @@ export default defineConfig({
     rollupOptions: {
       input: getHtmlEntries(),
     },
-    minify: false,
+    // Minified JS/CSS for production (flagged by SEO audits when disabled).
+    minify: 'esbuild',
     modulePreload: false,
-    cssMinify: false,
+    cssMinify: true,
     assetsDir: 'assets',
   },
 });

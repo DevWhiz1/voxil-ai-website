@@ -3,7 +3,7 @@ import { callout, cite, link, statGrid, table } from '../../scripts/lib/content-
 export default {
   slug: 'ai-small-business-statistics',
   title: 'AI in Small Business: 2026 Adoption Statistics and What They Mean',
-  metaTitle: 'AI Small Business Statistics 2026: Adoption & Impact | Voxil AI',
+  metaTitle: 'AI Small Business Statistics 2026 | Voxil AI',
   description: 'AI adoption statistics for small and medium businesses in 2026, who uses generative AI, time savings, productivity, and where small businesses see the fastest return.',
   category: 'Statistics',
   date: '2026-05-12',

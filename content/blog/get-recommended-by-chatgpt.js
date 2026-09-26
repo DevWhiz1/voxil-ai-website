@@ -3,7 +3,7 @@ import { callout, link, statGrid, table } from '../../scripts/lib/content-helper
 export default {
   slug: 'get-recommended-by-chatgpt',
   title: 'How to Get Your Business Recommended by ChatGPT, Perplexity & Google AI Overviews (AEO & GEO Guide)',
-  metaTitle: 'AEO & GEO Guide: Get Recommended by ChatGPT & AI Overviews | Voxil AI',
+  metaTitle: 'AEO & GEO Guide: Get Recommended by ChatGPT | Voxil AI',
   description: 'A practical AEO and GEO guide for service businesses: how AI answer engines choose which businesses to mention, and the content, schema, entity and review signals that improve your chances.',
   category: 'Guides',
   date: '2026-08-12',
