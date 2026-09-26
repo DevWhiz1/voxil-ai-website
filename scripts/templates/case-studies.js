@@ -1,5 +1,5 @@
 import { ALL_LOCATIONS, INDUSTRIES, SITE, findService, industryUrl, serviceUrl } from '../../content/site.js';
-import { ORG_ID, arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, hero, icon, linkCard, page, sectionHead, updatedLine, webPageSchema } from '../lib/ui.js';
+import { ORG_ID, arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, hero, icon, linkCard, page, sectionHead, stepsBlock, updatedLine, webPageSchema } from '../lib/ui.js';
 
 const ACCENTS = ['#0f9f93', '#ff6b35', '#0284c7', '#2fc4b6'];
 export const caseStudyUrl = (slug) => (slug ? `/case-studies/${slug}/` : '/case-studies/');
@@ -75,6 +75,28 @@ export const renderCaseStudy = (cs, all) => {
         </figure>`
             : ''
         }
+      </div>
+    </section>`,
+
+    // Delivery process: describes how every Voxil AI project runs, so it stays
+    // accurate without claiming client-specific details we can't publish.
+    `
+    <section class="section-base section-pad section-seam">
+      <span class="grid-field" aria-hidden="true"></span>
+      <div class="main-container relative z-10">
+        ${sectionHead({ eyebrowText: 'How we delivered it', dot: accent, title: 'From first call to <span class="text-gradient-warm">live system</span>', lead: `The ${cs.industryLabel.toLowerCase()} project followed the same four stages as every Voxil AI build, so the team could see progress every week and nothing went live untested.`, center: true })}
+        ${stepsBlock({
+          accent,
+          steps: [
+            { title: 'Scope the problem', desc: 'A short call to map where inquiries were being lost, which systems were involved and what a good outcome looked like.' },
+            { title: 'Build & integrate', desc: 'The agent was trained on approved business information and connected to the existing calendar, CRM and messaging tools.' },
+            { title: 'Supervised pilot', desc: 'It ran on a slice of real traffic first, with transcripts reviewed so answers, tone and hand-offs could be tuned.' },
+            { title: 'Launch & improve', desc: 'Full rollout with documentation for the team, followed by tuning based on real conversations.' },
+          ],
+        })}
+        <div data-reveal class="mx-auto mt-10 max-w-3xl text-center">
+          <p class="text-tagline-1 text-secondary/70">Could the same approach work for your business? If your team answers the same questions every day, misses calls or leads after hours, or re-types data between tools, the answer is usually yes. We’ll tell you honestly on a free 30-minute call, including when a simpler fix would do.</p>
+        </div>
       </div>
     </section>`,
 
