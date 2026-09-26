@@ -1,37 +1,67 @@
 /* =========================
-All the varaiables are added here
+Design tokens, quiet agency
 =========================== */
 @theme {
   /* =============== FONTS =============== */
-  --font-inter-tight: 'Inter Tight', sans-serif;
+  --font-inter-tight: 'Sora', sans-serif;
+  --font-sora: 'Sora', sans-serif;
+
   /* =============== COLORS =============== */
-  --color-primary-50: #f4f2fe;
-  --color-primary-100: #ece8ff;
-  --color-primary-200: #dcd4ff;
-  --color-primary-300: #c3b1ff;
-  --color-primary-400: #a585ff;
-  --color-primary-500: #864ffe;
-  --color-primary-600: #7c31f6;
-  --color-primary-700: #6d1fe2;
-  --color-primary-800: #5a19be;
-  --color-secondary: #1a1a1c;
-  --color-accent: #fcfcfc;
-  --color-split-text: #1a1a1c;
-  --color-background-1: #fcfcfd;
-  --color-background-2: #f9fafb;
-  --color-background-3: #f4f5f8;
-  --color-background-4: #f0f2f6;
-  --color-background-5: #13171e;
+  /* Teal primary + coral energy (Growth Guild–inspired warmth, Voxil identity) */
+  --color-primary-50: #ecfdfb;
+  --color-primary-100: #d0f7f2;
+  --color-primary-200: #a3efe6;
+  --color-primary-300: #6adfd3;
+  --color-primary-400: #2fc4b6;
+  --color-primary-500: #0f9f93;
+  --color-primary-600: #0d7f76;
+  --color-primary-700: #0f6560;
+  --color-primary-800: #11514e;
+
+  --color-coral-50: #fff4ef;
+  --color-coral-100: #ffe4d6;
+  --color-coral-200: #ffc4a8;
+  --color-coral-300: #ff9b6b;
+  --color-coral-400: #ff7a3d;
+  --color-coral-500: #ff6b35;
+  --color-coral-600: #e84e1a;
+
+  --color-sky-400: #38bdf8;
+  --color-sky-500: #0ea5e9;
+  --color-sky-300: #7dd3fc;
+  --color-sky-600: #0284c7;
+  --color-sky-700: #0369a1;
+
+  /* =============== DARK PREMIUM SURFACES =============== */
+  --color-ink-950: #05080f;
+  --color-ink-900: #080d18;
+  --color-ink-850: #0c1220;
+  --color-ink-800: #111a2c;
+  --color-ink-750: #16213a;
+  --color-ink-700: #1c2942;
+  --color-ink-600: #25355280;
+  --color-ink-line: #1b2740;
+
+  --color-secondary: #0c1220;
+  --color-accent: #fafbfc;
+  --color-split-text: #0c1220;
+
+  --color-background-1: #f4f7fb;
+  --color-background-2: #e8eef6;
+  --color-background-3: #dde6f0;
+  --color-background-4: #d2dde9;
+  --color-background-5: #14181f;
   --color-background-6: #0f1217;
-  --color-background-7: #181d26;
-  --color-background-8: #070b10;
-  --color-background-9: #1f252f;
+  --color-background-7: #1a1f28;
+  --color-background-8: #0a0c10;
+  --color-background-9: #222831;
   --color-background-10: #ebebeb;
   --color-background-11: #b5b5b9;
-  --color-background-12: #eaeceb;
-  --color-stroke-1: #dfe4eb;
-  --color-stroke-2: #e3e7ed;
-  --color-stroke-3: #d7dde5;
+  --color-background-12: #e8ebe9;
+
+  --color-stroke-1: #d5dbe3;
+  --color-stroke-2: #e1e5eb;
+  --color-stroke-3: #cfd5de;
   --color-stroke-4: #eceff4;
   --color-stroke-5: #1b232f;
   --color-stroke-6: #202731;
@@ -50,10 +80,10 @@ All the varaiables are added here
   --color-ns-ivory: #f4efe7;
   --color-ns-linen: #beab9a;
 
-  --color-gradient-1: linear-gradient(135deg, #a585ff 0%, #ffc2ad 100%);
+  --color-gradient-1: linear-gradient(135deg, #3bb8b0 0%, #e8ebe9 100%);
   --color-gradient-2: linear-gradient(135deg, #f9eb57 0%, #f99988 100%);
   --color-gradient-3: linear-gradient(135deg, #83e7ee 0%, #f9eb57 100%);
-  --color-gradient-4: linear-gradient(135deg, #864ffe 0%, #23eed6 100%);
+  --color-gradient-4: linear-gradient(135deg, #0f766e 0%, #23eed6 100%);
   --color-gradient-5: linear-gradient(
     165deg,
     rgba(255, 255, 255, 0.5) 0.51%,
@@ -61,19 +91,24 @@ All the varaiables are added here
   );
   --color-gradient-6: linear-gradient(#83e7ee 0%, #c6f56f 100%);
   --color-gradient-7: linear-gradient(#ffffff 0%, #83e7ee 100%);
-  --color-gradient-8: linear-gradient(156deg, #ffffff 32.92%, #a585ff 91%);
-  --color-gradient-9: linear-gradient(156deg, #dfb0ff 32.92%, #fdbedc 91%);
+  --color-gradient-8: linear-gradient(156deg, #ffffff 32.92%, #3bb8b0 91%);
+  --color-gradient-9: linear-gradient(156deg, #aae9e3 32.92%, #d5f5f2 91%);
   --color-gradient-10: linear-gradient(135deg, #83e7ee 0%, #c6f56f 100%);
   --color-gradient-11: linear-gradient(179deg, rgba(255, 255, 255, 0) 0.68%, #fff 79.47%);
   --color-gradient-12: radial-gradient(
     73.01% 80.77% at 19.23% 47.79%,
     #83e7ee 0%,
-    rgba(134, 79, 254, 0) 100%
+    rgba(15, 118, 110, 0) 100%
   );
-
   --color-gradient-13: linear-gradient(156deg, #fff 32.92%, #ecc5a2 91%);
 
   /* =============== TYPOGRAPHY =============== */
+  --text-display-1: 5.75rem;
+  --text-display-1--line-height: 100%;
+  --text-display-1--letter-spacing: -0.035em;
+  --text-display-2: 4.75rem;
+  --text-display-2--line-height: 104%;
+  --text-display-2--letter-spacing: -0.03em;
   --text-heading-1: 4.25rem;
   --text-heading-1--line-height: 110%;
   --text-heading-2: 3.25rem;
@@ -93,10 +128,8 @@ All the varaiables are added here
   --text-tagline-3: 0.75rem;
   --text-tagline-3--line-height: 150%;
 
-  /* blur  */
   --blur-ns-badge-blur: 17.228288650512695px;
 
-  /* =============== ease =============== */
   --team-ease-1: cubic-bezier(10.34, 10.56, 0.64, 40);
 
   /* ==========BREAKPOINTS========== */
@@ -113,7 +146,7 @@ All the varaiables are added here
   --shadow-8: 0px 12.5px 40px -6px rgba(28, 34, 43, 0.1);
   --shadow-9: 0px 1px 2px 0px rgba(28, 34, 43, 0.05);
   --shadow-10: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  --shadow-11: 0px 12px 20px rgba(185, 166, 241, 0.16);
+  --shadow-11: 0px 12px 20px rgba(15, 118, 110, 0.16);
   --shadow-12: 0px 1px 2px 0px rgba(16, 24, 40, 0.26);
   --shadow-13:
     0 7.818px 15.637px -3.909px rgba(28, 34, 43, 0.05),
@@ -121,6 +154,16 @@ All the varaiables are added here
   --shadow-14: 0 1px 2px 0 rgba(16, 24, 40, 0.06);
   --shadow-15: 40px 28px 80px 0 rgba(0, 0, 0, 0.08);
   --stack-cards-gap: 2rem;
+
+  /* ==========Dark premium easing + glow shadows========== */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-glow-teal: 0 0 0 1px rgba(47, 196, 182, 0.18), 0 18px 60px -18px rgba(15, 159, 147, 0.55);
+  --shadow-glow-coral: 0 0 0 1px rgba(255, 107, 53, 0.2), 0 18px 60px -18px rgba(255, 107, 53, 0.5);
+  --shadow-glow-sky: 0 0 0 1px rgba(56, 189, 248, 0.2), 0 18px 60px -18px rgba(14, 165, 233, 0.5);
+  --shadow-ink-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-ink-2: 0 18px 50px -12px rgba(0, 0, 0, 0.7);
+  --shadow-ink-3: 0 40px 90px -24px rgba(0, 0, 0, 0.85);
 }
 
 .dark {

@@ -1,55 +1,59 @@
 <!-- =========================
-CTA v1 section
+Closing CTA band
 ===========================-->
-<section class="py-[50px] md:py-20 lg:py-28 {=$class}" aria-label="Use Case Overview">
-  <div class="main-container">
-    <div class="flex items-center flex-col lg:flex-row justify-between">
-      <div
-        class="xl:max-w-[650px] lg:max-w-[476px] max-[400px]:max-w-[300px] w-full space-y-5 text-center lg:text-left"
-      >
-        <span data-ns-animate data-delay="0.3" class="badge badge-green {=$badge-class}"
-          >{=$badge-text}</span
-        >
-        <div class="space-y-3">
-          <h2
-            data-ns-animate
-            data-delay="0.4"
-            class="text-secondary dark:text-accent text-heading-5 sm:text-heading-4 lg:text-heading-2"
-          >
-            {=$cta-heading}
-            <span class="text-primary-500 {=$span-class}">{=$span-text}</span>
-          </h2>
-          <p data-ns-animate data-delay="0.5">{=$description}</p>
-        </div>
+<section class="section-base section-pad">
+  <span class="top-glow" aria-hidden="true"></span>
+  <span class="grid-field" aria-hidden="true"></span>
+  <span class="orb top-1/2 left-[8%] size-[380px] -translate-y-1/2 animate-drift" style="--orb: #0f9f93; --orb-opacity: 0.3" aria-hidden="true"></span>
+  <span class="orb top-1/3 right-[6%] size-[340px] animate-drift-slow" style="--orb: #ff6b35; --orb-opacity: 0.26" aria-hidden="true"></span>
+
+  <div class="main-container relative z-10">
+    <div class="mx-auto max-w-4xl text-center">
+      <p data-reveal class="eyebrow-chip mb-6">
+        <span class="pulse-dot" style="--dot: #2fc4b6"></span>
+        Taking projects for next month
+      </p>
+
+      <h2 data-reveal class="text-heading-4 sm:text-heading-3 lg:text-heading-2 font-semibold tracking-tight text-secondary">
+        Let's start something
+        <span class="text-gradient-teal">new together</span>
+      </h2>
+
+      <p data-reveal class="text-tagline-1 mx-auto mt-5 max-w-xl text-secondary/60 md:text-lg">
+        Book a free 30-minute strategy call. We'll map the agents, automations and
+        integrations worth building first, and tell you honestly what isn't.
+      </p>
+
+      <div data-reveal class="mt-9 flex flex-wrap items-center justify-center gap-3">
+        <a href="/book-meeting.html" class="cta cta-lg cta-coral">
+          Book a Free Call
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="/contact.html" class="cta cta-lg cta-ghost">Send us a brief</a>
       </div>
 
-      <div
-        class="lg:basis-[466px] space-y-6 md:ml-0 xl:ml-[100px] pt-[40px] lg:pt-[67px] w-full sm:w-[80%] md:w-[60%]"
-      >
-        <form
-          data-ns-animate
-          data-delay="0.6"
-          action="#"
-          method="post"
-          class="flex items-center flex-col gap-5 sm:flex-row justify-start lg:gap-3"
-        >
-          <input
-            type="email"
-            name="email"
-            id="userEmail-cta-v1"
-            placeholder="Enter your email"
-            required
-            class="px-[18px] shadow-1 h-12 py-3 placeholder:text-secondary/50 rounded-full border border-stroke-1 lg:max-w-[340px] md:w-[71%] w-full max-[376px]:w-full dark:border-stroke-7 dark:placeholder:text-accent/60 focus:outline-none focus:border-primary-600 dark:focus:border-primary-400 dark:text-accent placeholder:font-normal font-normal"
-          />
-
-          <button
-            type="submit"
-            class="btn btn-md btn-primary h-12 w-full sm:w-[28%] lg:w-auto {=$btn-class}"
-          >
-            <span>{=$cta-btn-text}</span>
-          </button>
-        </form>
-        <!-- Trial copy removed for agency model -->
+      <!-- Reassurance row -->
+      <div data-reveal class="mx-auto mt-10 flex max-w-2xl flex-wrap items-center justify-center gap-x-7 gap-y-3">
+        <span class="text-tagline-3 inline-flex items-center gap-2 text-secondary/45">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-primary-600" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L4.3 10.7a1 1 0 0 1 1.4-1.4l2.8 2.8 6.8-6.8a1 1 0 0 1 1.4 0Z" clip-rule="evenodd" />
+          </svg>
+          No obligation
+        </span>
+        <span class="text-tagline-3 inline-flex items-center gap-2 text-secondary/45">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-primary-600" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L4.3 10.7a1 1 0 0 1 1.4-1.4l2.8 2.8 6.8-6.8a1 1 0 0 1 1.4 0Z" clip-rule="evenodd" />
+          </svg>
+          Fixed-scope proposal
+        </span>
+        <span class="text-tagline-3 inline-flex items-center gap-2 text-secondary/45">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-primary-600" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L4.3 10.7a1 1 0 0 1 1.4-1.4l2.8 2.8 6.8-6.8a1 1 0 0 1 1.4 0Z" clip-rule="evenodd" />
+          </svg>
+          You own the code
+        </span>
       </div>
     </div>
   </div>

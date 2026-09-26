@@ -2,24 +2,9 @@
 Voxil Ai  Buttons Styles
 =========================== */
 @utility btn {
-  @apply relative inline-block cursor-pointer overflow-hidden rounded-full border text-center font-normal text-nowrap lowercase transition-all duration-500 ease-in-out hover:scale-102;
+  @apply relative inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border text-center font-medium text-nowrap transition-colors duration-200;
   span {
-    @apply inline-block transition-transform duration-300 ease-in-out first-letter:uppercase;
-  }
-  &::before {
-    content: '';
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    @apply absolute top-1/2 right-0 h-0 w-0 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out;
-  }
-  &:hover {
-    &::before {
-      @apply size-3 -translate-x-4 opacity-100;
-    }
-    span {
-      @apply -translate-x-2;
-    }
+    @apply inline-block first-letter:uppercase;
   }
 }
 

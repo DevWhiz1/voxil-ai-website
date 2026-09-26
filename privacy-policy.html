@@ -2,23 +2,19 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Privacy Policy - AI Agency || Voxil Ai </title>
+    <title>Privacy Policy | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/privacy-policy/privacy.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Ready to start earning with Voxil Ai ?"
-        description="If you have any questions, feel free to reach out to our team."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/shared/page-hero.htm"
+        accent="#0f9f93"
+        eyebrow="Legal"
+        title="Privacy <span class='text-gradient-teal'>policy</span>"
+        lead="How Voxil AI collects and uses information on this website."
       />
+      <Component src="src/components/pages/privacy-policy/content.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

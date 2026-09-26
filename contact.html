@@ -2,24 +2,19 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Contact - AI Agency || Voxil Ai </title>
+    <title>Contact | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/contact-us/contact.htm" />
-      <Component src="src/components/pages/contact-us/contact-map.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build custom AI workflows and agents"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/shared/page-hero.htm"
+        accent="#0f9f93"
+        eyebrow="Contact"
+        title="Tell us what you want <span class='text-gradient-teal'>to automate</span>"
+        lead="Send a short brief and we'll reply within one business day, or book a free 30-minute call if you'd rather talk it through."
       />
+      <Component src="src/components/pages/contact-us/content.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

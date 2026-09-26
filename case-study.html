@@ -2,26 +2,20 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Case Study - AI Agency || Voxil Ai </title>
+    <title>AI Case Studies | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/case-study/case-study.htm" />
-      <Component src="src/components/pages/case-study/testimonial.htm" />
-      <Component src="src/components/pages/case-study/success.htm" />
-      <Component src="src/components/pages/case-study/feature.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build custom AI workflows and agents"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/shared/page-hero.htm"
+        accent="#0f9f93"
+        eyebrow="Case studies"
+        title="Work that <span class='text-gradient-teal'>moved the numbers</span>"
+        lead="Selected engagements across healthcare, ecommerce, finance and real estate."
       />
+      <Component src="src/components/pages/case-study/content.htm" />
+      <Component src="src/components/shared/cta.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

@@ -2,24 +2,21 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Faq - AI Agency || Voxil Ai </title>
+    <title>FAQ | Voxil AI</title>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Voxil AI do?", "acceptedAnswer": {"@type": "Answer", "text": "We build AI voice agents, AI receptionists, chatbots, WhatsApp automation, GoHighLevel and CRM automation, websites and funnels for service businesses. Everything is built around the tools you already use."}}, {"@type": "Question", "name": "Who will I work with?", "acceptedAnswer": {"@type": "Answer", "text": "You work directly with the people building your system: Abdul Moeez, our AI automation expert, and Ahmad Ali, our GoHighLevel specialist. There's no hand-off to a junior account manager."}}, {"@type": "Question", "name": "Do you work with businesses outside the US?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We're remote-first and work with clients across the US, UK, Canada, Australia, the UAE and Pakistan, scheduling calls in your time zone."}}, {"@type": "Question", "name": "Which industries do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly service businesses: real estate, clinics, med spas, law firms, home services, HVAC, roofing, solar, insurance, gyms, salons and chiropractic. If your customers call, message or book, we can help."}}, {"@type": "Question", "name": "How much does a project cost?", "acceptedAnswer": {"@type": "Answer", "text": "Every build is a fixed-price project agreed before work starts. Projects typically start from $2,500; larger multi-system builds cost more. Usage costs such as AI, telephony or messaging are passed through at cost."}}, {"@type": "Question", "name": "How long does a typical project take?", "acceptedAnswer": {"@type": "Answer", "text": "Most voice agent, chatbot and automation builds go live in 2-6 weeks depending on integrations. SaaS products typically take 6-12 weeks to a first production release."}}, {"@type": "Question", "name": "Are there monthly fees?", "acceptedAnswer": {"@type": "Answer", "text": "Only usage costs from the providers your system runs on, plus optional monthly support if you want us to keep tuning and improving it. There's no licence fee to us."}}, {"@type": "Question", "name": "Do you offer a free consultation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Book a free 30-minute call and we'll map what's worth automating first, whether or not you hire us."}}, {"@type": "Question", "name": "Do we have to change our CRM or phone system?", "acceptedAnswer": {"@type": "Answer", "text": "No. We build around your stack: GoHighLevel, HubSpot, Salesforce, Pipedrive, Zendesk, Twilio, Google Calendar, Calendly, Jobber, ServiceTitan and most tools with an API."}}, {"@type": "Question", "name": "What if the AI says something wrong?", "acceptedAnswer": {"@type": "Answer", "text": "We restrict agents to your approved content, define which actions they may take, and make handing off to a person the default when confidence is low. Every conversation is logged, and launches start with a supervised pilot."}}, {"@type": "Question", "name": "Can AI agents speak other languages?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, including Spanish, French, Arabic, Urdu and many more, with voices that suit your market."}}, {"@type": "Question", "name": "Is our customer data safe?", "acceptedAnswer": {"@type": "Answer", "text": "We scope data handling up front: what's stored, where, for how long and which providers process it. For healthcare we design HIPAA-aware setups using vendors that sign BAAs."}}, {"@type": "Question", "name": "Who owns the code and prompts?", "acceptedAnswer": {"@type": "Answer", "text": "You do: repository, prompts, configuration and documentation. You can take it in-house or move it to another team at any time."}}, {"@type": "Question", "name": "What happens after launch?", "acceptedAnswer": {"@type": "Answer", "text": "Thirty days of tuning are included. After that, you can run it yourself or keep us on a monthly plan for monitoring, improvements and new workflows."}}, {"@type": "Question", "name": "Will you maintain the system?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you want us to. We offer ongoing support so your agents stay accurate as your offers, prices and policies change."}}, {"@type": "Question", "name": "Can you improve a system someone else built?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly audit and fix existing GoHighLevel accounts, Vapi or Retell agents and automations."}}]}</script>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/faq/faq.htm" />
-      <Component src="src/components/pages/faq/contact.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-6 bg-white"
-        badge-class="badge-cyan"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build custom AI workflows and agents"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/shared/page-hero.htm"
+        accent="#0f9f93"
+        eyebrow="FAQ"
+        title="Questions, <span class='text-gradient-teal'>answered honestly</span>"
+        lead="Pricing, timelines, integrations, data and support. If your question isn't here, ask us on a free call."
       />
+      <Component src="src/components/pages/faq/content.htm" />
+      <Component src="src/components/shared/cta.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

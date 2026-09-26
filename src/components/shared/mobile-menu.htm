@@ -1,59 +1,45 @@
 <!-- =========================
-Mobile Menu
+Mobile sidebar, toggled by src/js/common/mobile-nav.js
 ===========================-->
-
 <aside
-  class="sidebar dark:bg-background-7 scroll-bar fixed top-0 right-0 z-999 h-screen w-full translate-x-full bg-white transition-all duration-300 sm:w-1/2 xl:hidden">
-  <div class="space-y-4 p-5 sm:p-8 lg:p-9">
-    <div class="flex items-center justify-between">
-      <a href="./">
-        <span class="sr-only">Home</span>
-        <figure class="max-w-[44px]">
-          <img src="./images/shared/logo.svg" alt="Voxil Ai " class="block w-full dark:hidden" />
-          <img src="./images/shared/logo-dark.svg" alt="Voxil Ai " class="hidden w-full dark:block" />
-        </figure>
-      </a>
+  class="sidebar fixed top-0 right-0 z-[999] h-screen w-full translate-x-full overflow-y-auto border-l border-secondary/[0.08] bg-white transition-transform duration-400 sm:w-[380px] lg:hidden"
+  style="transition-timing-function: var(--ease-out-expo)"
+>
+  <div class="orb -top-24 -right-20 size-72" style="--orb: #0f9f93; --orb-opacity: 0.3" aria-hidden="true"></div>
+
+  <div class="relative flex min-h-full flex-col p-6">
+    <div class="mb-8 flex items-center justify-between">
+      <Component src="src/components/shared/brand.htm" />
       <button
-        class="nav-hamburger-close bg-background-4 dark:bg-background-9 relative flex size-10 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full">
-        <span class="sr-only">Close Menu</span>
-        <span class="bg-stroke-9/60 dark:bg-stroke-1 absolute block h-0.5 w-4 rotate-45"></span>
-        <span class="bg-stroke-9/60 dark:bg-stroke-1 absolute block h-0.5 w-4 -rotate-45"></span>
+        type="button"
+        class="nav-hamburger-close flex size-11 items-center justify-center rounded-xl border border-secondary/12 bg-secondary/[0.06] text-secondary transition-colors hover:bg-secondary/[0.12]"
+        aria-label="Close menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="size-5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </button>
     </div>
-    <div class="scroll-bar h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">
-      <ul>
-        <!-- Company menu -->
-        <Component src="src/components/shared/mobile-menu/company-menu.htm" />
 
-        <!-- Services menu -->
-        <Component src="src/components/shared/mobile-menu/services-menu.htm" />
+    <nav class="flex flex-1 flex-col" aria-label="Mobile">
+      <Component src="src/components/shared/generated/nav-mobile.htm" />
+      <a href="/about.html" class="site-mobile-link">About</a>
+      <a href="/case-study.html" class="site-mobile-link">Case Studies</a>
+      <a href="/testimonial.html" class="site-mobile-link">Testimonials</a>
+      <a href="/faq.html" class="site-mobile-link">FAQ</a>
+      <a href="/contact.html" class="site-mobile-link">Contact</a>
+    </nav>
 
-        <!-- Resources menu -->
-        <!-- <Component src="src/components/shared/mobile-menu/resources-menu.htm" /> -->
-
-        <!-- Pricing link -->
-        <li class="relative space-y-0">
-          <a href="./pricing.html"
-            class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
-            Pricing
-          </a>
-        </li>
-
-        <!-- Contact Us link -->
-        <li class="relative space-y-0">
-          <a href="./contact.html"
-            class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
-            Contact Us
-          </a>
-        </li>
-      </ul>
-
-      <div class="mt-6">
-        <a href="./book-meeting.html"
-          class="btn btn-md btn-secondary hover:btn-primary dark:btn-accent w-full flex justify-center text-center">
-          <span>Book a Free Call</span>
-        </a>
-      </div>
+    <div class="mt-8 space-y-3">
+      <a href="/book-meeting.html" class="cta cta-md cta-coral w-full">
+        Book a Free Call
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="mailto:info@voxilai.tech" class="text-tagline-2 block text-center text-secondary/45 transition-colors hover:text-secondary/75">
+        info@voxilai.tech
+      </a>
     </div>
   </div>
 </aside>

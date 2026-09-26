@@ -6,16 +6,28 @@ import { minify } from 'terser';
 import { defineConfig } from 'vite';
 import injectHTML from 'vite-plugin-html-inject';
 
-const getHtmlEntries = () => {
-  const pagesDir = path.resolve(__dirname, '');
-  const entries = {};
-  const files = fs.readdirSync(pagesDir);
-  const htmlFiles = files.filter((file) => file.endsWith('.html'));
-  htmlFiles.forEach((file) => {
-    const name = path.basename(file, '.html');
-    entries[name] = path.resolve(pagesDir, file);
-  });
+import { seoData } from './src/seo-data.js';
 
+// Every .html file is a Vite entry: the hand-written pages at the root plus the
+// generated sections (services/, locations/, …) written by scripts/build-pages.js.
+const PAGE_DIRS = ['', 'services', 'locations', 'industries', 'blog', 'resources', 'for-agencies'];
+
+const collectHtml = (dir, out) => {
+  const abs = path.resolve(__dirname, dir);
+  if (!fs.existsSync(abs)) return;
+  for (const item of fs.readdirSync(abs, { withFileTypes: true })) {
+    const rel = dir ? `${dir}/${item.name}` : item.name;
+    if (item.isFile() && item.name.endsWith('.html')) {
+      out[rel.replace(/\.html$/, '').replace(/\//g, '__')] = path.resolve(__dirname, rel);
+    } else if (item.isDirectory() && dir) {
+      collectHtml(rel, out);
+    }
+  }
+};
+
+const getHtmlEntries = () => {
+  const entries = {};
+  PAGE_DIRS.forEach((dir) => collectHtml(dir, entries));
   return entries;
 };
 const jsToBottomNoModule = () => {
@@ -23,9 +35,11 @@ const jsToBottomNoModule = () => {
     name: 'no-attribute',
     transformIndexHtml(html) {
       html = html.replace(`type="module" crossorigin`, '');
-      let scriptTag = html.match(/<script[^>]*>(.*?)<\/script[^>]*>/)[0];
-      html = html.replace(scriptTag, '');
-      html = html.replace('<!-- SCRIPT -->', scriptTag);
+      // Only move the bundled entry script — JSON-LD blocks must stay in <head>.
+      const match = html.match(/<script[^>]*src="[^"]*\/assets\/[^"]*"[^>]*><\/script>/);
+      if (!match) return html;
+      html = html.replace(match[0], '');
+      html = html.replace('<!-- SCRIPT -->', match[0]);
       return html;
     },
   };
@@ -105,156 +119,69 @@ const vendorMinifier = () => {
   };
 };
 
-const seoData = {
-  'index': {
-    title: 'Custom AI Agent Development & Automation Agency – Voxil AI',
-    description: 'Build and deploy custom AI agents, intelligent workflows, and AI SaaS products with Voxil AI — your end-to-end AI automation agency. From $2,500. Book a free consultation.'
-  },
-  'about': {
-    title: 'About Us – Enterprise AI Experts & Automation Specialists – Voxil AI',
-    description: 'Meet the team behind Voxil AI, a premier custom AI agent development and process automation agency helping businesses leverage generative AI for ROI.'
-  },
-  'services': {
-    title: 'Custom AI Agent Development & Workflow Automation Services – Voxil AI',
-    description: 'Discover our full suite of AI development services: custom AI chatbot development, custom workflow automation solutions, and AI SaaS development agency.'
-  },
-  'ai-voice-agents': {
-    title: 'AI Voice Agent Development & Integration Services - Voxil AI',
-    description: 'Voxil AI builds custom AI voice agents for customer support, lead qualification, appointment booking, and outbound sales with sub-100ms latency.'
-  },
-  'ai-chatbot-development': {
-    title: 'AI Chatbot Development Services & Customer Support Automation – Voxil AI',
-    description: 'Build custom AI chatbots and intelligent virtual assistants integrated with your database, CRM, and API. Boost customer satisfaction and cut support costs.'
-  },
-  'ai-saas-development': {
-    title: 'Custom AI SaaS Development Agency & AI Product Engineering – Voxil AI',
-    description: 'Turn your AI ideas into profitable SaaS platforms. We build end-to-end custom AI SaaS products, LLM integrations, and robust cloud architectures.'
-  },
-  'pricing': {
-    title: 'Transparent AI Development & Automation Pricing – Voxil AI',
-    description: 'Explore our custom AI agent development and workflow automation packages. Use our interactive ROI calculator to find the perfect plan starting from $2,500.'
-  },
-  'contact': {
-    title: 'Book a Free 30-Min AI Strategy Call & Contact Us – Voxil AI',
-    description: 'Ready to automate your operations? Contact Voxil AI to book your free AI strategy session, discuss your project requirements, and get a custom quote.'
-  },
-  'process': {
-    title: 'Our 4-Step AI Development & Workflow Automation Process – Voxil AI',
-    description: 'From initial discovery and rapid prototyping to seamless production deployment and active optimization. See how we deliver enterprise-ready AI solutions.'
-  },
-  'case-study': {
-    title: 'AI Success Stories, Case Studies & ROI Solutions – Voxil AI',
-    description: 'See how Voxil AI designs, deploys, and integrates custom AI agents and workflow automation to drive measurable business growth and ROI.'
-  },
-  'case-study-details': {
-    title: 'Detailed AI Automation Case Study & Results – Voxil AI',
-    description: 'Explore details, challenges, solutions, and metrics of our client success stories with custom AI agents and automated workflows.'
-  },
-  'testimonial': {
-    title: 'Verified Client Reviews, Testimonials & Clutch Ratings – Voxil AI',
-    description: 'Read verified client feedback and ratings from business leaders who automated their operations, reduced overhead, and scaled with Voxil AI solutions.'
-  },
-  'faq': {
-    title: 'AI Automation & Custom Agent Development FAQ – Voxil AI',
-    description: 'Find answers to common questions about custom AI agent pricing, workflow automation, LLM selection, data privacy, and CRM integrations.'
-  },
-  'blog': {
-    title: 'AI Automation Insights, Tutorials & Agency Updates – Voxil AI',
-    description: 'Stay ahead of the curve with our latest insights, tutorials, and guides on custom AI agent development, n8n workflows, and business automation.'
-  },
-  'case-study-healthcare': {
-    title: 'AI Patient Triage Agent Case Study: 60% Wait Time Reduction – Voxil AI',
-    description: 'See how Voxil AI designed and deployed a HIPAA-compliant custom AI Agent for clinical triage and automated EHR patient intake.'
-  },
-  'case-study-ecommerce': {
-    title: 'AI Demand Forecasting Case Study: 35% Stockout Reduction – Voxil AI',
-    description: 'Explore our predictive AI SaaS platform for DTC fashion inventory planning, integrated with Shopify and NetSuite ERP.'
-  },
-  'case-study-finance': {
-    title: 'AI Financial Compliance Case Study: 80% Manual Labor Cut – Voxil AI',
-    description: 'Learn how we automated regulatory compliance reporting and trade anomaly detection for an asset management firm.'
-  },
-  'case-study-real-estate': {
-    title: 'AI Real Estate Lead Qualification Case Study: 3x Conversions – Voxil AI',
-    description: 'Discover how Voxil AI built an instant NLP lead qualification and scoring workflow integrated with HubSpot CRM.'
-  }
+
+const SITE_URL = 'https://voxilai.tech';
+
+const escapeAttr = (value) => String(value).replace(/"/g, '&quot;');
+
+// Upserts one <meta>/<link> tag, matched on its identifying attribute.
+const upsertTag = (html, attr, key, tag) => {
+  const regex = new RegExp(`<(meta|link)\\s+${attr}="${key}"[^>]*>`, 'i');
+  return regex.test(html) ? html.replace(regex, tag) : html.replace('</head>', `  ${tag}\n</head>`);
 };
+
+const readTag = (html, regex) => html.match(regex)?.[1];
+
+// "/services/ai-receptionist/index.html" -> "/services/ai-receptionist/"
+const publicPath = (ctxPath = '/') => ctxPath.replace(/index\.html$/, '');
 
 const seoOptimizer = () => {
   return {
     name: 'seo-optimizer',
     transformIndexHtml(html, ctx) {
       let pageName = path.basename(ctx.path || '', '.html');
-      if (!pageName || pageName === '/' || pageName === 'index') {
-        pageName = 'index';
-      }
+      if (!pageName || pageName === '/' || pageName === 'index') pageName = 'index';
+      const isRootPage = !ctx.path || ctx.path.split('/').filter(Boolean).length <= 1;
 
-      const data = seoData[pageName] || {
-        title: 'Voxil AI - Custom AI Agent Development & Automation Agency',
-        description: 'Voxil AI builds custom AI agents, intelligent workflows, and custom AI SaaS solutions to streamline operations, cut costs, and scale your business.'
+      // Root pages take their copy from seo-data.js; generated pages carry their
+      // own <title>/description/canonical, which are kept as written.
+      const data = (isRootPage && seoData[pageName]) || {
+        title: readTag(html, /<title>([\s\S]*?)<\/title>/i) || 'Voxil AI',
+        description: readTag(html, /<meta\s+name="description"\s+content="([^"]*)"/i) || '',
       };
+      const title = data.title;
+      const description = escapeAttr(data.description);
+      const canonicalUrl =
+        readTag(html, /<link\s+rel="canonical"\s+href="([^"]*)"/i) ||
+        `${SITE_URL}${ctx.path === '/index.html' ? '/' : publicPath(ctx.path)}`;
 
-      const canonicalUrl = `https://voxilai.tech${ctx.path === '/index.html' ? '/' : ctx.path}`;
+      html = /<title>/i.test(html)
+        ? html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${title}</title>`)
+        : html.replace('</head>', `  <title>${title}</title>\n</head>`);
 
-      // 1. Process <title>
-      if (html.includes('<title>')) {
-        html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${data.title}</title>`);
-      } else {
-        html = html.replace('</head>', `  <title>${data.title}</title>\n</head>`);
-      }
+      html = upsertTag(html, 'name', 'description', `<meta name="description" content="${description}" />`);
+      html = upsertTag(html, 'rel', 'canonical', `<link rel="canonical" href="${canonicalUrl}" />`);
 
-      // 2. Process meta description
-      const descTag = `<meta name="description" content="${data.description}" />`;
-      if (html.match(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i)) {
-        html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, descTag);
-      } else {
-        html = html.replace('</head>', `  ${descTag}\n</head>`);
-      }
-
-      // 3. Process canonical
-      const canonicalTag = `<link rel="canonical" href="${canonicalUrl}" />`;
-      if (html.match(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i)) {
-        html = html.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, canonicalTag);
-      } else {
-        html = html.replace('</head>', `  ${canonicalTag}\n</head>`);
-      }
-
-      // 4. Process Open Graph tags
-      const ogTags = [
-        `<meta property="og:url" content="${canonicalUrl}" />`,
-        `<meta property="og:title" content="${data.title}" />`,
-        `<meta property="og:description" content="${data.description}" />`
-      ];
-      
-      ogTags.forEach(tag => {
-        const propMatch = tag.match(/property="([^"]+)"/)[1];
-        const regex = new RegExp(`<meta\\s+property="${propMatch}"\\s+content="[^"]*"\\s*\\/?>`, 'i');
-        if (html.match(regex)) {
-          html = html.replace(regex, tag);
-        } else {
-          html = html.replace('</head>', `  ${tag}\n</head>`);
-        }
+      const og = {
+        'og:url': canonicalUrl,
+        'og:title': escapeAttr(title),
+        'og:description': description,
+      };
+      Object.entries(og).forEach(([key, value]) => {
+        html = upsertTag(html, 'property', key, `<meta property="${key}" content="${value}" />`);
       });
 
-      // 5. Process Twitter tags
-      const twitterTags = [
-        `<meta name="twitter:url" content="${canonicalUrl}" />`,
-        `<meta name="twitter:title" content="${data.title}" />`,
-        `<meta name="twitter:description" content="${data.description}" />`
-      ];
-
-      twitterTags.forEach(tag => {
-        const nameMatch = tag.match(/name="([^"]+)"/)[1];
-        const regex = new RegExp(`<meta\\s+name="${nameMatch}"\\s+content="[^"]*"\\s*\\/?>`, 'i');
-        if (html.match(regex)) {
-          html = html.replace(regex, tag);
-        } else {
-          html = html.replace('</head>', `  ${tag}\n</head>`);
-        }
+      const twitter = {
+        'twitter:url': canonicalUrl,
+        'twitter:title': escapeAttr(title),
+        'twitter:description': description,
+      };
+      Object.entries(twitter).forEach(([key, value]) => {
+        html = upsertTag(html, 'name', key, `<meta name="${key}" content="${value}" />`);
       });
 
       return html;
-    }
+    },
   };
 };
 

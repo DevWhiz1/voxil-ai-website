@@ -5,9 +5,7 @@ Common Styles all over the sites
   @apply box-border;
 }
 
-[data-ns-animate] {
-  opacity: 0;
-}
+/* Reveal animations removed, keep content visible */
 
 /* ==========Container========== */
 

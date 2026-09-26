@@ -2,23 +2,22 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>AI Real Estate Lead Generation Case Study - Voxil AI</title>
+    <title>Real estate listing inquiry agent | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/case-study-details/case-study-real-estate.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build custom AI workflows and agents"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/pages/case-study/detail.htm"
+        industry="Real Estate"
+        accent="#2fc4b6"
+        title="Real estate listing inquiry agent"
+        summary="A brokerage wanted 24/7 answers on listings without burning agents out."
+        challenge="Night and weekend inquiries went cold before an agent could reply."
+        solution="We launched a property Q&amp;A agent that answered listing questions and booked showing requests into the CRM."
+        result="More inquiries converted to booked showings with less manual follow-up."
       />
+      <Component src="src/components/shared/cta.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

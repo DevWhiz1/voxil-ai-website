@@ -50,17 +50,11 @@ function fixJavaScriptFile() {
       // Replace the old filename with main.js
       content = content.replace(new RegExp(jsFile, 'g'), 'main.js');
 
-      // Inject the main.js script tag if it's missing
-      if (content.includes('<!-- SCRIPT -->') && !content.includes('src="./assets/main.js"')) {
-        content = content.replace('<!-- SCRIPT -->', '<script src="./assets/main.js"></script>');
-      }
-
-      // Add CSS link if it's missing
-      if (!content.includes('href="./assets/main.css"')) {
-        content = content.replace(
-          /(<link\s+href="https:\/\/fonts\.googleapis\.com\/css2[^>]*>\s*)/,
-          '$1<link rel="stylesheet" href="./assets/main.css" />\n'
-        );
+      // Inject the main.js script tag if it's missing. Root-absolute so pages in
+      // nested folders (/services/…/) resolve it too. The stylesheet needs no help:
+      // Vite already links the hashed CSS bundle from every page.
+      if (content.includes('<!-- SCRIPT -->') && !content.includes('/assets/main.js"')) {
+        content = content.replace('<!-- SCRIPT -->', '<script src="/assets/main.js"></script>');
       }
 
       fs.writeFileSync(filePath, content, 'utf8');

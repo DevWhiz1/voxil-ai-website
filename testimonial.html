@@ -2,26 +2,20 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Testimonial - AI Agency || Voxil Ai </title>
+    <title>Client Testimonials | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/testimonial/testimonial.htm" />
-      <Component src="src/components/pages/testimonial/testimonial-marquee.htm" />
-      <Component src="src/components/pages/testimonial/experience.htm" />
-      <Component src="src/components/pages/testimonial/integration.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-6 bg-white"
-        badge-class="badge-cyan"
-        badge-text="Get started"
-        cta-heading="Build custom AI workflows and agents"
-        span-class="hidden"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/shared/page-hero.htm"
+        accent="#ff6b35"
+        eyebrow="Testimonials"
+        title="What clients say <span class='text-gradient-warm'>after launch</span>"
+        lead="Feedback from founders and operators who shipped AI systems with Voxil AI."
       />
+      <Component src="src/components/pages/testimonial/content.htm" />
+      <Component src="src/components/shared/cta.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

@@ -1,0 +1,84 @@
+<!-- =========================
+Book a meeting | Calendly inline scheduler
+Calendly's widget.js appends the booking iframe to .calendly-inline-widget,
+so the element must stay empty.
+Colours match the site: white background, ink text, teal accents.
+===========================-->
+<section class="section-soft section-pad-sm">
+  <div class="main-container relative z-10">
+    <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-10">
+      <!-- What to expect -->
+      <aside class="space-y-5 lg:sticky lg:top-28 lg:self-start">
+        <div data-reveal class="glass-card glass-card-topline" style="--accent: #0f9f93">
+          <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">On the call</p>
+          <ol class="mt-5 space-y-5">
+            <li class="flex gap-4">
+              <span class="step-num size-10 shrink-0 text-tagline-2" style="--accent: #0f9f93">01</span>
+              <div>
+                <p class="text-tagline-1 font-semibold text-secondary">Your workflow</p>
+                <p class="text-tagline-2 mt-1 text-secondary/65">Tell us what you want to automate and where leads, calls or hours are slipping.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="step-num size-10 shrink-0 text-tagline-2" style="--accent: #ff6b35">02</span>
+              <div>
+                <p class="text-tagline-1 font-semibold text-secondary">The right build</p>
+                <p class="text-tagline-2 mt-1 text-secondary/65">We map the tools, integrations and rough scope worth building first.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="step-num size-10 shrink-0 text-tagline-2" style="--accent: #0284c7">03</span>
+              <div>
+                <p class="text-tagline-1 font-semibold text-secondary">A clear next step</p>
+                <p class="text-tagline-2 mt-1 text-secondary/65">You leave with an honest recommendation and a fixed-price proposal if it's a fit. No pressure.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div data-reveal class="glass-card">
+          <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">You'll speak with</p>
+          <div class="mt-4 space-y-4">
+            <div class="flex items-center gap-3">
+              <img src="/abdulmoeez.jpeg" alt="Abdul Moeez" width="48" height="48" class="size-12 rounded-xl object-cover object-top" />
+              <div>
+                <p class="text-tagline-2 font-semibold text-secondary">Abdul Moeez</p>
+                <p class="text-tagline-3 text-primary-700">AI Automation Expert</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="/ahmadali.jpeg" alt="Ahmad Ali" width="48" height="48" class="size-12 rounded-xl object-cover object-top" />
+              <div>
+                <p class="text-tagline-2 font-semibold text-secondary">Ahmad Ali</p>
+                <p class="text-tagline-3 text-sky-700">GoHighLevel Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="hairline my-5"></div>
+          <ul class="check-list" style="--accent: #0f9f93">
+            <li class="text-tagline-2">30 minutes, free, no obligation</li>
+            <li class="text-tagline-2">Video call at a time that suits you</li>
+            <li class="text-tagline-2">Prefer email? <a href="mailto:info@voxilai.tech" class="font-semibold text-primary-700 underline underline-offset-4">info@voxilai.tech</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Scheduler -->
+      <div data-reveal>
+      <div class="calendly-frame">
+        <div
+          class="calendly-inline-widget w-full"
+          data-url="https://calendly.com/ahmadbajwa3095?hide_gdpr_banner=1&background_color=ffffff&text_color=0c1220&primary_color=0f9f93"
+          style="min-width: 320px; height: 760px"
+        ></div>
+      </div>
+      <p class="text-tagline-3 mt-4 text-center text-secondary/55">
+        Calendar not loading?
+        <a href="https://calendly.com/ahmadbajwa3095" target="_blank" rel="noopener" class="font-semibold text-primary-700 underline underline-offset-4">Open it in a new tab</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>

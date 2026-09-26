@@ -1,0 +1,201 @@
+<!-- =========================
+Home, capability showcase with tabs (src/js/common/tabs.js)
+===========================-->
+<section class="section-tint section-pad section-seam">
+  <span class="orb top-0 left-1/2 size-[420px] -translate-x-1/2" style="--orb: #0f9f93; --orb-opacity: 0.16" aria-hidden="true"></span>
+
+  <div class="main-container relative z-10" data-tabs>
+    <div class="mx-auto mb-10 max-w-2xl text-center">
+      <p data-reveal class="eyebrow-chip mb-5">
+        <span class="pulse-dot" style="--dot: #38bdf8"></span>
+        See it work
+      </p>
+      <h2 data-reveal class="text-heading-5 sm:text-heading-4 lg:text-heading-3 font-semibold tracking-tight text-secondary">
+        Three ways your customers
+        <span class="text-gradient-sky">get an answer</span>
+      </h2>
+      <p data-reveal class="text-tagline-1 mt-4 text-secondary/60">
+        Same knowledge base, same CRM, three front doors. Pick one to start, add the
+        others when the first is paying for itself.
+      </p>
+    </div>
+
+    <!-- Tab buttons -->
+    <div data-reveal class="mb-8 flex flex-wrap items-center justify-center gap-2.5" role="tablist" aria-label="Capability examples">
+      <button type="button" data-tab="chat" class="tab-btn is-active">Web chat</button>
+      <button type="button" data-tab="voice" class="tab-btn">Phone call</button>
+      <button type="button" data-tab="flow" class="tab-btn">Behind the scenes</button>
+    </div>
+
+    <!-- Chat panel -->
+    <div data-tab-panel="chat" class="tab-panel" role="tabpanel">
+      <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-2 lg:gap-12">
+        <div class="mock-window">
+          <div class="mock-bar">
+            <span class="mock-dot bg-primary-400/80"></span>
+            <span class="mock-dot bg-secondary/25"></span>
+            <span class="text-tagline-3 ml-2 text-secondary/45">Support assistant</span>
+          </div>
+          <div class="space-y-3 p-4 md:p-5">
+            <p class="bubble-in">My order #4417 hasn't shipped yet, it's been 5 days.</p>
+            <p class="bubble-out">
+              I see #4417, it's held because the billing ZIP didn't match. I can
+              release it if you confirm the ZIP.
+            </p>
+            <p class="bubble-in">It's 90210.</p>
+            <p class="bubble-out">Confirmed and released. It ships tonight, tracking by email.</p>
+            <p class="text-tagline-3 pt-1 text-center text-secondary/30">Resolved without a human · 38 seconds</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-heading-6 font-semibold text-secondary">It reads your systems, not just your FAQ</h3>
+          <p class="text-tagline-2 mt-3 text-secondary/60">
+            A chatbot that can only recite help-centre text deflects nothing. Ours
+            connect to order, booking and account data, so they can actually resolve
+            the request instead of describing how to resolve it.
+          </p>
+          <ul class="check-list mt-6" style="--accent: #2fc4b6">
+            <li>Live lookups against your order or booking system</li>
+            <li>Takes action: release, reschedule, refund, escalate</li>
+            <li>Hands to a human with the full transcript attached</li>
+            <li>Says "I don't know" instead of inventing an answer</li>
+          </ul>
+          <a href="/services/ai-chatbots/" class="cta cta-md cta-ghost mt-7">
+            How we build chatbots
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Voice panel -->
+    <div data-tab-panel="voice" class="tab-panel" role="tabpanel" hidden>
+      <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-2 lg:gap-12">
+        <div class="mock-window p-5 md:p-6">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="flex size-10 items-center justify-center rounded-xl bg-coral-500/18 text-coral-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+              </span>
+              <div>
+                <p class="text-tagline-2 font-semibold text-secondary">Inbound call</p>
+                <p class="text-tagline-3 text-secondary/40">Tuesday, 9:12pm</p>
+              </div>
+            </div>
+            <span class="pill-accent" style="--accent: #ff7a3d">After hours</span>
+          </div>
+
+          <div class="wave mt-5 h-12" aria-hidden="true">
+            <i style="--h: 28%; --d: 0s"></i><i style="--h: 58%; --d: 0.08s"></i>
+            <i style="--h: 88%; --d: 0.16s"></i><i style="--h: 44%; --d: 0.24s"></i>
+            <i style="--h: 72%; --d: 0.32s"></i><i style="--h: 96%; --d: 0.1s"></i>
+            <i style="--h: 36%; --d: 0.2s"></i><i style="--h: 64%; --d: 0.28s"></i>
+            <i style="--h: 84%; --d: 0.06s"></i><i style="--h: 48%; --d: 0.34s"></i>
+            <i style="--h: 76%; --d: 0.14s"></i><i style="--h: 32%; --d: 0.22s"></i>
+            <i style="--h: 92%; --d: 0.3s"></i><i style="--h: 52%; --d: 0.12s"></i>
+            <i style="--h: 68%; --d: 0.26s"></i><i style="--h: 40%; --d: 0.18s"></i>
+          </div>
+
+          <div class="mt-5 space-y-3 border-t border-secondary/[0.09] pt-4">
+            <p class="text-tagline-2 text-secondary/45"><span class="font-semibold text-secondary/70">Caller:</span> Do you have anything Thursday? My tooth is killing me.</p>
+            <p class="text-tagline-2 text-secondary/45"><span class="font-semibold text-coral-600">Agent:</span> That sounds urgent, we keep two emergency slots. I can do Thursday 8:30am. Shall I hold it?</p>
+            <p class="text-tagline-2 text-secondary/45"><span class="font-semibold text-secondary/70">Caller:</span> Yes please.</p>
+            <p class="text-tagline-2 text-secondary/45"><span class="font-semibold text-coral-600">Agent:</span> Held under your name. You'll get a text confirmation in a moment.</p>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="pill">Appointment created</span>
+            <span class="pill">SMS sent</span>
+            <span class="pill">Logged to CRM</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-heading-6 font-semibold text-secondary">The call you'd otherwise have missed</h3>
+          <p class="text-tagline-2 mt-3 text-secondary/60">
+            Most service businesses lose more revenue to unanswered phones than to
+            bad marketing. A voice agent answers on the first ring, at any hour,
+            and never sounds like it's reading a script.
+          </p>
+          <ul class="check-list mt-6" style="--accent: #ff7a3d">
+            <li>Inbound reception, triage and booking</li>
+            <li>Outbound reminders, confirmations and follow-ups</li>
+            <li>Warm transfer to a human when the caller asks</li>
+            <li>Transcript, summary and recording on every call</li>
+          </ul>
+          <a href="/services/ai-voice-agents/" class="cta cta-md cta-ghost mt-7">
+            How we build voice agents
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flow panel -->
+    <div data-tab-panel="flow" class="tab-panel" role="tabpanel" hidden>
+      <div class="mx-auto max-w-5xl">
+        <div class="grid gap-4 md:grid-cols-4">
+          <div class="glass-card glass-card-topline" style="--accent: #2fc4b6">
+            <p class="text-tagline-3 font-semibold tracking-[0.12em] text-primary-600 uppercase">01 · Capture</p>
+            <h3 class="text-tagline-1 mt-3 font-semibold text-secondary">Anything comes in</h3>
+            <p class="text-tagline-2 mt-2 text-secondary/55">
+              Chat, call, form or WhatsApp. One intake path, no matter the channel.
+            </p>
+          </div>
+          <div class="glass-card glass-card-topline" style="--accent: #38bdf8">
+            <p class="text-tagline-3 font-semibold tracking-[0.12em] text-sky-600 uppercase">02 · Understand</p>
+            <h3 class="text-tagline-1 mt-3 font-semibold text-secondary">Intent + context</h3>
+            <p class="text-tagline-2 mt-2 text-secondary/55">
+              Identify who it is, what they want, and whether they're worth a call back today.
+            </p>
+          </div>
+          <div class="glass-card glass-card-topline" style="--accent: #ff7a3d">
+            <p class="text-tagline-3 font-semibold tracking-[0.12em] text-coral-600 uppercase">03 · Act</p>
+            <h3 class="text-tagline-1 mt-3 font-semibold text-secondary">Do the thing</h3>
+            <p class="text-tagline-2 mt-2 text-secondary/55">
+              Book, quote, release, reschedule or escalate, with guardrails on what it may do alone.
+            </p>
+          </div>
+          <div class="glass-card glass-card-topline" style="--accent: #6adfd3">
+            <p class="text-tagline-3 font-semibold tracking-[0.12em] text-primary-700 uppercase">04 · Record</p>
+            <h3 class="text-tagline-1 mt-3 font-semibold text-secondary">Nothing is lost</h3>
+            <p class="text-tagline-2 mt-2 text-secondary/55">
+              CRM updated, owner assigned, transcript attached, dashboard refreshed.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card mt-4">
+          <h3 class="text-heading-6 font-semibold text-secondary">It plugs into what you already run</h3>
+          <p class="text-tagline-2 mt-2.5 max-w-2xl text-secondary/60">
+            We don't ask you to migrate. The agent talks to your existing stack through
+            its API, and where there's no API, we build the bridge.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="pill">HubSpot</span>
+            <span class="pill">Salesforce</span>
+            <span class="pill">GoHighLevel</span>
+            <span class="pill">Google Calendar</span>
+            <span class="pill">Calendly</span>
+            <span class="pill">Twilio</span>
+            <span class="pill">Zendesk</span>
+            <span class="pill">Intercom</span>
+            <span class="pill">Stripe</span>
+            <span class="pill">Shopify</span>
+            <span class="pill">Slack</span>
+            <span class="pill">Zapier &amp; Make</span>
+            <span class="pill">Airtable</span>
+            <span class="pill">Your internal API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

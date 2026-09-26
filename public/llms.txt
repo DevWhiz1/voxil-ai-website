@@ -1,0 +1,129 @@
+# Voxil AI
+
+> Voxil AI is a remote-first AI automation agency that builds custom AI voice agents, AI receptionists, chatbots, WhatsApp automation, GoHighLevel and CRM automation for service businesses in the US, UK, Canada, Australia, the UAE and Pakistan. Projects are fixed-price; clients own the code and configuration.
+
+Contact: info@voxilai.tech · Book a call: https://voxilai.tech/book-meeting.html
+
+## Core pages
+- [Home](https://voxilai.tech/): Overview of Voxil AI services and approach
+- [For Agencies](https://voxilai.tech/for-agencies/): White label fulfillment partner program
+- [All services](https://voxilai.tech/services/): 43 AI automation services
+- [About](https://voxilai.tech/about.html)
+- [Case studies](https://voxilai.tech/case-study.html)
+- [FAQ](https://voxilai.tech/faq.html)
+
+## Services: AI Voice & Calls
+- [AI Calling Bots](https://voxilai.tech/services/ai-calling-bots/): Outbound and inbound calling bots built on Vapi and Retell AI.
+- [AI Voice Agents](https://voxilai.tech/services/ai-voice-agents/): Natural phone agents that answer, qualify and book around the clock.
+- [AI Receptionist](https://voxilai.tech/services/ai-receptionist/): A front desk that never misses a call, books and routes like your best hire.
+- [AI Phone Answering](https://voxilai.tech/services/ai-phone-answering/): Every call answered in one ring, after hours, weekends and peaks.
+- [AI Appointment Booking](https://voxilai.tech/services/ai-appointment-booking/): Voice and chat agents that book straight into your live calendar.
+- [AI SDR System](https://voxilai.tech/services/ai-sdr-system/): An AI sales development rep that qualifies and books meetings for closers.
+- [Vapi AI Integration](https://voxilai.tech/services/vapi-ai-integration/): Production Vapi assistants wired to your CRM, calendar and tools.
+- [Retell AI Setup](https://voxilai.tech/services/retell-ai-setup/): Retell AI agents configured, tested and connected to your stack.
+- [AI Customer Support](https://voxilai.tech/services/ai-customer-support/): Voice and chat support that resolves routine tickets and escalates cleanly.
+
+## Services: AI & Automation
+- [AI Chatbots](https://voxilai.tech/services/ai-chatbots/): Website, WhatsApp and in-app chatbots trained on your business.
+- [AI Chatbot Developer](https://voxilai.tech/services/ai-chatbot-developer/): Hire a dedicated chatbot developer for custom LLM builds.
+- [WhatsApp Automation](https://voxilai.tech/services/whatsapp-automation/): WhatsApp Business API bots for leads, bookings and support.
+- [GoHighLevel AI](https://voxilai.tech/services/gohighlevel-ai/): Conversation AI, Voice AI and AI workflows inside GoHighLevel.
+- [AI Lead Generation](https://voxilai.tech/services/ai-lead-generation/): AI systems that find, enrich, contact and qualify new leads.
+- [AI Follow-Up System](https://voxilai.tech/services/ai-follow-up-system/): Multi-channel follow-up that never forgets a lead or a quote.
+- [AI Automation Consultant](https://voxilai.tech/services/ai-automation-consultant/): Strategy, audits and a roadmap for automating your operations.
+- [Workflow Automation](https://voxilai.tech/services/workflow-automation/): Remove repetitive work across sales, ops, finance and support.
+- [Marketing Automation](https://voxilai.tech/services/marketing-automation/): Campaigns, nurture and attribution that run themselves.
+- [Email & SMS Marketing](https://voxilai.tech/services/email-sms-marketing/): Compliant email and SMS sequences that convert and re-engage.
+
+## Services: GoHighLevel
+- [GHL Expert](https://voxilai.tech/services/ghl-expert/): Certified-level GoHighLevel builds, fixes and automation.
+- [GHL Consultant](https://voxilai.tech/services/ghl-consultant/): Strategy and architecture for agencies and businesses on GHL.
+- [GHL Setup](https://voxilai.tech/services/ghl-setup/): Complete GoHighLevel account setup, done right the first time.
+- [GHL Support](https://voxilai.tech/services/ghl-support/): Ongoing GoHighLevel support, fixes and monthly improvements.
+- [GHL Migration](https://voxilai.tech/services/ghl-migration/): Move from HubSpot, ClickFunnels, Kajabi and more into GHL.
+- [GHL Integration](https://voxilai.tech/services/ghl-integration/): Connect GoHighLevel to any tool via API, webhooks or middleware.
+- [GHL Snapshot](https://voxilai.tech/services/ghl-snapshot/): Custom, reusable GoHighLevel snapshots for any niche.
+- [GHL White Label SaaS](https://voxilai.tech/services/ghl-white-label-saas/): Launch your own branded SaaS on GoHighLevel SaaS mode.
+- [GHL Courses & Onboarding](https://voxilai.tech/services/ghl-courses-onboarding/): Memberships, courses and client onboarding built in GHL.
+- [GHL Virtual Assistant](https://voxilai.tech/services/ghl-virtual-assistant/): A dedicated GHL assistant for daily builds and admin.
+
+## Services: CRM, Funnels & Web
+- [CRM Setup](https://voxilai.tech/services/crm-setup/): A CRM configured around how your team actually sells.
+- [CRM Automation](https://voxilai.tech/services/crm-automation/): Pipelines that update, assign and follow up on their own.
+- [CRM Migration](https://voxilai.tech/services/crm-migration/): Clean, zero-loss migration between CRMs.
+- [Make.com Automation](https://voxilai.tech/services/make-automation/): Robust Make.com scenarios with error handling built in.
+- [Zapier Automation](https://voxilai.tech/services/zapier-automation/): Zapier workflows that are documented, monitored and cheap to run.
+- [N8N Automation](https://voxilai.tech/services/n8n-automation/): Self-hosted n8n workflows and AI agents you fully own.
+- [API Integration](https://voxilai.tech/services/api-integration/): Custom API integrations where no-code tools stop.
+- [Sales Funnel Builder](https://voxilai.tech/services/sales-funnel-builder/): High-converting sales funnels with automation behind them.
+- [Lead Generation Funnel](https://voxilai.tech/services/lead-generation-funnel/): Lead magnets, quizzes and booking funnels that fill pipelines.
+- [Website Design](https://voxilai.tech/services/website-design/): Fast, SEO-ready websites designed to convert visitors.
+
+## For agencies (white label partner)
+- [For Agencies](https://voxilai.tech/for-agencies/): White label fulfillment partner for marketing agencies: GoHighLevel, AI agents, funnels, websites and automations under your brand
+- [Done-for-you fulfillment](https://voxilai.tech/for-agencies/white-label-fulfillment/): You sell it, we build it under your brand, inside your client’s account.
+- [Dedicated GHL assistant](https://voxilai.tech/for-agencies/dedicated-ghl-va/): A GoHighLevel-trained assistant working only your accounts, on your schedule.
+- [White label support desk](https://voxilai.tech/for-agencies/white-label-support-desk/): We handle your clients’ CRM, funnel and automation tickets in your name.
+- [Per-project overflow](https://voxilai.tech/for-agencies/per-project-overflow/): One build, one fixed price, no retainer. For the month you sold too much.
+- [White label AI agents](https://voxilai.tech/for-agencies/white-label-ai-agents/): Custom AI voice and chat agents your agency resells as its own.
+
+## Industries
+- [Real Estate](https://voxilai.tech/industries/real-estate/)
+- [Fitness & Gym](https://voxilai.tech/industries/fitness-gyms/)
+- [Insurance](https://voxilai.tech/industries/insurance/)
+- [Legal / Law Firm](https://voxilai.tech/industries/law-firms/)
+- [Home Services](https://voxilai.tech/industries/home-services/)
+- [Medical / Clinics](https://voxilai.tech/industries/medical-clinics/)
+- [Med Spa](https://voxilai.tech/industries/med-spas/)
+- [Roofing](https://voxilai.tech/industries/roofing/)
+- [Solar](https://voxilai.tech/industries/solar/)
+- [Salon & Beauty](https://voxilai.tech/industries/salons-beauty/)
+- [HVAC](https://voxilai.tech/industries/hvac/)
+- [Chiropractic](https://voxilai.tech/industries/chiropractic/)
+
+## Locations
+- [New York](https://voxilai.tech/locations/new-york/) (US East)
+- [Philadelphia](https://voxilai.tech/locations/philadelphia/) (US East)
+- [Charlotte](https://voxilai.tech/locations/charlotte/) (US East)
+- [Atlanta](https://voxilai.tech/locations/atlanta/) (US East)
+- [Miami](https://voxilai.tech/locations/miami/) (US East)
+- [Nashville](https://voxilai.tech/locations/nashville/) (US East)
+- [Chicago](https://voxilai.tech/locations/chicago/) (US Central)
+- [Dallas](https://voxilai.tech/locations/dallas/) (US Central)
+- [Houston](https://voxilai.tech/locations/houston/) (US Central)
+- [San Antonio](https://voxilai.tech/locations/san-antonio/) (US Central)
+- [Austin](https://voxilai.tech/locations/austin/) (US Central)
+- [Los Angeles](https://voxilai.tech/locations/los-angeles/) (US West)
+- [San Francisco](https://voxilai.tech/locations/san-francisco/) (US West)
+- [San Jose](https://voxilai.tech/locations/san-jose/) (US West)
+- [San Diego](https://voxilai.tech/locations/san-diego/) (US West)
+- [Seattle](https://voxilai.tech/locations/seattle/) (US West)
+- [Phoenix](https://voxilai.tech/locations/phoenix/) (US West)
+- [Denver](https://voxilai.tech/locations/denver/) (US West)
+- [United Kingdom](https://voxilai.tech/locations/united-kingdom/) (International)
+- [Dubai / UAE](https://voxilai.tech/locations/dubai-uae/) (International)
+- [Canada](https://voxilai.tech/locations/canada/) (International)
+- [Australia](https://voxilai.tech/locations/australia/) (International)
+- [Pakistan](https://voxilai.tech/locations/pakistan/) (International)
+
+## Free resources
+- [Lead Loss Calculator](https://voxilai.tech/resources/lead-loss-calculator/): See how much revenue missed calls and slow follow-up cost you each month.
+- [AI Statistics 2026](https://voxilai.tech/resources/ai-statistics-2026/): Sourced AI adoption, customer-service, agent and speed-to-lead statistics.
+- [GHL Setup Checklist](https://voxilai.tech/resources/ghl-setup-checklist/): The interactive checklist we use to launch every GoHighLevel account.
+- [Media Kit](https://voxilai.tech/resources/media-kit/): Brand assets, boilerplate and facts for press and partners.
+
+## Blog
+- [How to Get Your Business Recommended by ChatGPT, Perplexity & Google AI Overviews (AEO & GEO Guide)](https://voxilai.tech/blog/get-recommended-by-chatgpt/): A practical AEO and GEO guide for service businesses: how AI answer engines choose which businesses to mention, and the content, schema, entity and review signals that improve your chances.
+- [AI Agents vs Chatbots: What’s the Difference and Which Do You Need?](https://voxilai.tech/blog/ai-agents-vs-chatbots/): AI agents vs chatbots explained: how they differ in autonomy, tools and memory, real business examples, risks, costs and how to decide which your business needs.
+- [GoHighLevel AI Guide (2026): Conversation AI, Voice AI & AI Workflows Explained](https://voxilai.tech/blog/gohighlevel-ai-guide/): A practical guide to GoHighLevel AI: Conversation AI, Voice AI, AI workflow steps and when to extend GHL with external voice agents like Vapi or Retell, plus setup tips that actually get bookings.
+- [How to Calculate AI Automation ROI for a Small Business (With Examples)](https://voxilai.tech/blog/ai-automation-roi-small-business/): A practical method to calculate the ROI of AI automation for small businesses, revenue recovered, hours saved, costs and payback period, with worked examples and a free calculator.
+- [AI in Small Business: 2026 Adoption Statistics and What They Mean](https://voxilai.tech/blog/ai-small-business-statistics/): AI adoption statistics for small and medium businesses in 2026, who uses generative AI, time savings, productivity, and where small businesses see the fastest return.
+- [n8n vs Make vs Zapier (2026): Which Automation Platform Should You Use?](https://voxilai.tech/blog/n8n-vs-make-vs-zapier/): n8n vs Make.com vs Zapier compared by automation engineers: ease of use, pricing models, AI agent capabilities, self-hosting, scalability and which to choose for your business.
+- [AI in Customer Service Statistics 2026: Automation, Agents & Customer Sentiment](https://voxilai.tech/blog/ai-customer-service-statistics/): AI customer service statistics for 2026: Gartner forecasts, contact-centre productivity research, real deployment results and customer sentiment. Sourced and explained.
+- [Vapi vs Retell AI (2026): Which Voice AI Platform Should You Build On?](https://voxilai.tech/blog/vapi-vs-retell-ai/): Vapi vs Retell AI compared by a team that builds on both, flexibility, conversation design, latency, integrations, compliance, pricing model and which to choose for your use case.
+- [AI Chatbot Statistics 2026: Usage, Adoption & Business Impact](https://voxilai.tech/blog/ai-chatbot-statistics/): Key AI chatbot statistics for 2026: consumer usage, business adoption, customer-service impact, productivity research and the risks. Every figure sourced and explained.
+- [How Much Does an AI Voice Agent Cost? Build Fees, Per-Minute Costs & ROI (2026)](https://voxilai.tech/blog/how-much-does-an-ai-voice-agent-cost/): AI voice agent pricing explained: one-time build costs, per-minute usage (platform, LLM, voice, telephony), monthly running costs by call volume, and how to calculate ROI.
+- [AI Voice Agent Statistics 2026: Adoption, Market Size, Costs & ROI](https://voxilai.tech/blog/ai-voice-agent-statistics/): The most important AI voice agent and conversational AI statistics for 2026: adoption, market size, customer-service impact, speed-to-lead, costs and regulation. Every source cited.
+- [Speed-to-Lead Statistics: Why the First 5 Minutes Decide the Deal](https://voxilai.tech/blog/speed-to-lead-statistics/): Speed-to-lead and lead response time statistics from Harvard Business Review, the Lead Response Management study and more, plus how to respond to every lead in under a minute.
+- [Missed Call Statistics: What Unanswered Calls Really Cost Small Businesses](https://voxilai.tech/blog/missed-call-statistics/): Missed call statistics for small businesses, how many calls go unanswered, why speed matters, and a simple formula to calculate what missed calls cost you each month.
+- [What Is an AI Receptionist? How It Works, Costs and When to Use One](https://voxilai.tech/blog/what-is-an-ai-receptionist/): What an AI receptionist is, how it works, what it can and can’t do, what it costs, and how to set one up for your business, with examples for clinics, law firms and home services.

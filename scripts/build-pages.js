@@ -1,0 +1,164 @@
+// Generates every data-driven page (services, locations, industries, blog,
+// resources and their hubs) from the files in content/, plus the navigation
+// partials and llms.txt. Run with `npm run pages`; `npm run build` runs it first.
+//
+// Output folders (services/, locations/, …) are fully owned by this script and
+// are wiped on each run, edit content/, never the generated HTML.
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { hub as agencyHub, models as agencyModels } from '../content/agencies.js';
+import industries from '../content/industries.js';
+import locations from '../content/locations.js';
+import { AGENCY_PAGES, ALL_LOCATIONS, ALL_SERVICES, INDUSTRIES, LOCATION_GROUPS, RESOURCES, SERVICE_GROUPS, SITE } from '../content/site.js';
+import { renderAgencyHub, renderAgencyModel } from './templates/agencies.js';
+import { renderBlogHub, renderPost } from './templates/blog.js';
+import { renderIndustriesHub, renderLocationsHub, renderServicesHub } from './templates/hubs.js';
+import { footerLinks, footerLocations, homeExplore, navDesktop, navMobile } from './templates/nav.js';
+import { renderCalculator, renderChecklist, renderMediaKit, renderResourcesHub, renderStatsHub } from './templates/resources.js';
+import { renderIndustry } from './templates/industry.js';
+import { renderLocation } from './templates/location.js';
+import { renderService } from './templates/service.js';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
+const loadDir = async (dir) => {
+  const abs = path.join(ROOT, dir);
+  const merged = {};
+  for (const file of fs.readdirSync(abs).filter((f) => f.endsWith('.js')).sort()) {
+    const mod = await import(path.join(abs, file));
+    Object.assign(merged, mod.default);
+  }
+  return merged;
+};
+
+const written = [];
+const write = (urlPath, html) => {
+  const file = path.join(ROOT, urlPath, 'index.html');
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, html);
+  written.push(urlPath);
+};
+
+const resetDir = (dir) => fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
+
+// ---------------------------------------------------------------------------
+const services = await loadDir('content/services');
+
+resetDir('services');
+write('/services/', renderServicesHub());
+for (const s of ALL_SERVICES) {
+  if (!services[s.slug]) throw new Error(`No content for service: ${s.slug}`);
+  write(`/services/${s.slug}/`, renderService(s.slug, services[s.slug]));
+}
+
+resetDir('locations');
+write('/locations/', renderLocationsHub());
+for (const l of ALL_LOCATIONS) {
+  if (!locations[l.slug]) throw new Error(`No content for location: ${l.slug}`);
+  write(`/locations/${l.slug}/`, renderLocation(l.slug, locations[l.slug]));
+}
+
+resetDir('industries');
+write('/industries/', renderIndustriesHub());
+for (const i of INDUSTRIES) {
+  if (!industries[i.slug]) throw new Error(`No content for industry: ${i.slug}`);
+  write(`/industries/${i.slug}/`, renderIndustry(i.slug, industries[i.slug]));
+}
+
+// Each blog file default-exports one post object.
+const posts = [];
+for (const file of fs.readdirSync(path.join(ROOT, 'content/blog')).filter((f) => f.endsWith('.js')).sort()) {
+  posts.push((await import(path.join(ROOT, 'content/blog', file))).default);
+}
+resetDir('blog');
+write('/blog/', renderBlogHub(posts));
+posts.forEach((post) => write(`/blog/${post.slug}/`, renderPost(post, posts)));
+
+resetDir('for-agencies');
+write('/for-agencies/', renderAgencyHub(agencyHub));
+for (const a of AGENCY_PAGES) {
+  if (!agencyModels[a.slug]) throw new Error(`No content for agency page: ${a.slug}`);
+  write(`/for-agencies/${a.slug}/`, renderAgencyModel(a.slug, agencyModels[a.slug]));
+}
+
+resetDir('resources');
+write('/resources/', renderResourcesHub(posts));
+write('/resources/lead-loss-calculator/', renderCalculator());
+write('/resources/ai-statistics-2026/', renderStatsHub());
+write('/resources/ghl-setup-checklist/', renderChecklist());
+write('/resources/media-kit/', renderMediaKit());
+
+// ---------------------------------------------------------------------------
+// Navigation partials
+const partialDir = path.join(ROOT, 'src/components/shared/generated');
+fs.mkdirSync(partialDir, { recursive: true });
+fs.writeFileSync(path.join(partialDir, 'nav-desktop.htm'), navDesktop());
+fs.writeFileSync(path.join(partialDir, 'nav-mobile.htm'), navMobile());
+fs.writeFileSync(path.join(partialDir, 'footer-links.htm'), footerLinks());
+fs.writeFileSync(path.join(partialDir, 'footer-locations.htm'), footerLocations());
+const featuredPosts = posts.filter((p) => p.featured).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 2);
+fs.writeFileSync(path.join(partialDir, 'home-explore.htm'), homeExplore(featuredPosts));
+
+// ---------------------------------------------------------------------------
+// llms.txt, a plain-text map of the site for AI assistants and crawlers.
+const sortedPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+const llms = [
+  `# ${SITE.name}`,
+  '',
+  '> Voxil AI is a remote-first AI automation agency that builds custom AI voice agents, AI receptionists, chatbots, WhatsApp automation, GoHighLevel and CRM automation for service businesses in the US, UK, Canada, Australia, the UAE and Pakistan. Projects are fixed-price; clients own the code and configuration.',
+  '',
+  `Contact: ${SITE.email} · Book a call: ${SITE.url}/book-meeting.html`,
+  '',
+  '## Core pages',
+  `- [Home](${SITE.url}/): Overview of Voxil AI services and approach`,
+  `- [For Agencies](${SITE.url}/for-agencies/): White label fulfillment partner program`,
+  `- [All services](${SITE.url}/services/): ${ALL_SERVICES.length} AI automation services`,
+  `- [About](${SITE.url}/about.html)`,
+  `- [Case studies](${SITE.url}/case-study.html)`,
+  `- [FAQ](${SITE.url}/faq.html)`,
+  '',
+  ...SERVICE_GROUPS.flatMap((g) => [`## Services: ${g.title}`, ...g.services.map((sv) => `- [${sv.name}](${SITE.url}/services/${sv.slug}/): ${sv.short}`), '']),
+  '## For agencies (white label partner)',
+  `- [For Agencies](${SITE.url}/for-agencies/): White label fulfillment partner for marketing agencies: GoHighLevel, AI agents, funnels, websites and automations under your brand`,
+  ...AGENCY_PAGES.map((a) => `- [${a.name}](${SITE.url}/for-agencies/${a.slug}/): ${a.short}`),
+  '',
+  '## Industries',
+  ...INDUSTRIES.map((i) => `- [${i.name}](${SITE.url}/industries/${i.slug}/)`),
+  '',
+  '## Locations',
+  ...LOCATION_GROUPS.flatMap((g) => g.locations.map((l) => `- [${l.name}](${SITE.url}/locations/${l.slug}/) (${g.title})`)),
+  '',
+  '## Free resources',
+  ...RESOURCES.map((r) => `- [${r.name}](${SITE.url}/resources/${r.slug}/): ${r.short}`),
+  '',
+  '## Blog',
+  ...sortedPosts.map((p) => `- [${p.title}](${SITE.url}/blog/${p.slug}/): ${p.description}`),
+  '',
+].join('\n');
+fs.writeFileSync(path.join(ROOT, 'public/llms.txt'), llms);
+
+// ---------------------------------------------------------------------------
+// Internal link check: every root-relative href in generated pages and
+// partials must resolve to a page, a public file or a root .html file.
+const exists = (href) => {
+  const clean = href.split('#')[0].split('?')[0];
+  if (!clean || clean === '/') return true;
+  if (clean.endsWith('/')) return fs.existsSync(path.join(ROOT, clean, 'index.html'));
+  return fs.existsSync(path.join(ROOT, clean)) || fs.existsSync(path.join(ROOT, 'public', clean));
+};
+const broken = new Set();
+const checkFile = (file) => {
+  const html = fs.readFileSync(file, 'utf8');
+  for (const m of html.matchAll(/(?:href|src)="(\/[^"]*)"/g)) if (!m[1].startsWith('//') && !exists(m[1])) broken.add(`${m[1]}  ←  ${path.relative(ROOT, file)}`);
+};
+written.forEach((u) => checkFile(path.join(ROOT, u, 'index.html')));
+fs.readdirSync(partialDir).forEach((f) => checkFile(path.join(partialDir, f)));
+['header.htm', 'footer.htm', 'mobile-menu.htm', 'cta.htm'].forEach((f) => checkFile(path.join(ROOT, 'src/components/shared', f)));
+
+console.log(`Generated ${written.length} pages, 5 partials and public/llms.txt.`);
+if (broken.size) {
+  console.error(`\n✗ ${broken.size} broken internal link(s):\n  ${[...broken].join('\n  ')}`);
+  process.exit(1);
+}

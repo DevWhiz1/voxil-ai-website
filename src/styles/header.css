@@ -24,11 +24,119 @@ Sidebar and header animations
 
 /* Sidebar states */
 .show-sidebar {
-  @apply translate-x-0;
+  @apply !translate-x-0;
 }
 
 .hide-sidebar {
   @apply translate-x-full;
+}
+
+/* =========================
+Dark premium nav
+=========================== */
+
+/* Transparent over the hero, solid + blurred once scrolled. */
+.site-header {
+  @apply transition-all duration-400;
+  transition-timing-function: var(--ease-out-expo);
+  background: transparent;
+  border-bottom-color: transparent;
+}
+
+.site-header.is-scrolled {
+  @apply border-b border-stroke-2 bg-white/85 backdrop-blur-xl;
+  box-shadow: 0 10px 30px -18px rgba(12, 18, 32, 0.25);
+}
+
+/* Reading-progress sliver pinned to the header's bottom edge. */
+.scroll-progress {
+  @apply pointer-events-none absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0;
+  background: linear-gradient(
+    to right,
+    var(--color-primary-400),
+    var(--color-coral-400),
+    var(--color-sky-400)
+  );
+}
+
+.site-nav-link {
+  @apply text-tagline-2 relative rounded-lg px-2.5 py-2 font-medium whitespace-nowrap text-secondary/70 transition-colors duration-300 hover:text-secondary xl:px-3.5;
+}
+
+/* Underline grows from the centre on hover / current page. */
+.site-nav-link::after {
+  content: '';
+  @apply pointer-events-none absolute bottom-1 left-1/2 h-px w-0 -translate-x-1/2 bg-primary-500 transition-all duration-300;
+}
+
+.site-nav-link:hover::after {
+  @apply w-1/2;
+}
+
+.site-nav-link.is-current {
+  @apply text-secondary;
+}
+
+.site-nav-link.is-current::after {
+  @apply w-1/2;
+}
+
+/* Services mega-panel */
+.mega-panel {
+  /* Horizontal centring lives in `transform` only, adding Tailwind's
+     -translate-x-1/2 too would shift the panel by its full width. */
+  @apply invisible absolute top-full left-1/2 z-50 pt-3 opacity-0 transition-all duration-300;
+  transform: translate(-50%, 6px);
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.group:hover > .mega-panel,
+.mega-panel:focus-within {
+  @apply visible opacity-100;
+  transform: translate(-50%, 0);
+}
+
+.mega-inner {
+  @apply overflow-hidden rounded-2xl border border-stroke-2 bg-white p-2;
+  box-shadow: 0 30px 80px -24px rgba(12, 18, 32, 0.28);
+}
+
+.mega-link {
+  @apply flex items-start gap-3 rounded-xl px-3 py-3 transition-colors duration-250;
+}
+
+.mega-link:hover {
+  @apply bg-background-1;
+}
+
+.mega-link__icon {
+  @apply mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg border border-stroke-2;
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 72%, #0c1220);
+}
+
+.mega-link__title {
+  @apply block text-tagline-2 font-semibold text-secondary;
+}
+
+.mega-link__desc {
+  @apply mt-0.5 block text-tagline-3 text-secondary/55;
+}
+
+/* Wide mega panels: the trigger group is not positioned, so the panel
+   anchors to the fixed header and centres on the page instead of the link.
+   The group fills the header height so hover survives the gap below it. */
+.mega-wide > .mega-panel {
+  @apply pt-2;
+}
+
+/* Mobile sidebar */
+.site-mobile-link {
+  @apply text-tagline-1 flex items-center justify-between border-b border-stroke-2 py-3.5 font-medium text-secondary transition-colors hover:text-primary-700;
+}
+
+.site-mobile-sublink {
+  @apply text-tagline-2 flex items-center gap-2.5 py-2.5 pl-3 font-normal text-secondary/65 transition-colors hover:text-secondary;
 }
 
 /* Menu states */

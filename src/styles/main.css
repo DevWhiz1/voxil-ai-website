@@ -13,5 +13,7 @@
 @import './vendor/leaflet.min.css';
 @import './custom-swiper';
 @import './number-animation';
+@import './motion';
+@import './ui';
 
 @custom-variant dark (&:where(.dark, .dark *));

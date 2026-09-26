@@ -23,73 +23,42 @@ const EXCLUDED = new Set([
 ]);
 
 // changefreq + priority by tier. Anything unlisted falls back to DEFAULT_TIER.
+// Root pages are keyed by filename; generated sections by URL prefix.
 const TIERS = [
   {
     changefreq: 'weekly',
     priority: '0.9',
-    pages: [
-      'services.html',
-      'pricing.html',
-      'ai-voice-agents.html',
-      'ai-chatbot-development.html',
-      'ai-saas-development.html',
-      'contact.html',
-      'book-meeting.html',
-    ],
-  },
-  {
-    changefreq: 'monthly',
-    priority: '0.8',
-    pages: [
-      'about.html',
-      'process.html',
-      'why-choose-us.html',
-      'features.html',
-      'use-case.html',
-      'integration.html',
-      'lead-capture-system.html',
-      'case-study.html',
-      'case-study-ecommerce.html',
-      'case-study-finance.html',
-      'case-study-healthcare.html',
-      'case-study-real-estate.html',
-      'success-stories.html',
-      'testimonial.html',
-      'customers.html',
-    ],
+    match: (url) => url.startsWith('/services/') || url.startsWith('/for-agencies/') || ['/contact.html', '/book-meeting.html'].includes(url),
   },
   {
     changefreq: 'weekly',
+    priority: '0.8',
+    match: (url) => url.startsWith('/locations/') || url.startsWith('/industries/') || url.startsWith('/resources/'),
+  },
+  {
+    changefreq: 'monthly',
     priority: '0.7',
-    pages: [
-      'blog.html',
-      'glossary.html',
-      'whitepaper.html',
-      'documentation.html',
-      'tutorial.html',
-      'faq.html',
-      'changelog.html',
-    ],
+    match: (url) =>
+      url.startsWith('/blog/') ||
+      ['/about.html', '/case-study.html', '/case-study-ecommerce.html', '/case-study-finance.html', '/case-study-healthcare.html', '/case-study-real-estate.html', '/testimonial.html', '/faq.html'].includes(url),
   },
   {
     changefreq: 'yearly',
     priority: '0.3',
-    pages: [
-      'privacy-policy.html',
-      'terms-conditions.html',
-      'gdpr.html',
-      'legal.html',
-      'refund-policy.html',
-      'affiliate-policy.html',
-      'security.html',
-    ],
+    match: (url) => ['/privacy-policy.html', '/terms-conditions.html'].includes(url),
   },
 ];
 
 const DEFAULT_TIER = { changefreq: 'monthly', priority: '0.6' };
 const ROOT_TIER = { changefreq: 'daily', priority: '1.0' };
 
-const tierFor = (page) => TIERS.find((t) => t.pages.includes(page)) ?? DEFAULT_TIER;
+const tierFor = (url) => {
+  const { changefreq, priority } = TIERS.find((t) => t.match(url)) ?? DEFAULT_TIER;
+  return { changefreq, priority };
+};
+
+// Folders written by scripts/build-pages.js; each page is <dir>/index.html.
+const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies'];
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -120,18 +89,41 @@ function lastmodFor(page) {
   return dates.length ? dates.sort().at(-1) : today;
 }
 
-const pages = fs
+const rootPages = fs
   .readdirSync(__dirname)
   .filter((f) => f.endsWith('.html') && !EXCLUDED.has(f))
   .sort();
 
+const generatedPages = [];
+const walk = (dir) => {
+  for (const item of fs.readdirSync(path.join(__dirname, dir), { withFileTypes: true })) {
+    const rel = `${dir}/${item.name}`;
+    if (item.isDirectory()) walk(rel);
+    else if (item.name === 'index.html') generatedPages.push(rel);
+  }
+};
+GENERATED_DIRS.filter((d) => fs.existsSync(path.join(__dirname, d))).forEach(walk);
+
+// Generated pages are dated by their content source (content/ + templates),
+// which git tracks; the HTML itself is build output.
+const generatedLastmod = (file) => {
+  const section = file.split('/')[0];
+  const sources = ['content/site.js', `scripts/templates/${{ blog: 'blog', resources: 'resources', 'for-agencies': 'agencies' }[section] ?? 'service'}.js`];
+  if (section === 'blog') {
+    const slug = file.split('/')[1];
+    if (slug !== 'index.html') sources.push(`content/blog/${slug}.js`);
+  }
+  const dates = sources.map(gitDate).filter(Boolean);
+  return dates.length ? dates.sort().at(-1) : today;
+};
+
 const entries = [
   { loc: `${SITE_URL}/`, lastmod: lastmodFor('index.html'), ...ROOT_TIER },
-  ...pages.map((page) => ({
-    loc: `${SITE_URL}/${page}`,
-    lastmod: lastmodFor(page),
-    ...tierFor(page),
-  })),
+  ...rootPages.map((page) => ({ loc: `${SITE_URL}/${page}`, lastmod: lastmodFor(page), ...tierFor(`/${page}`) })),
+  ...generatedPages.map((file) => {
+    const url = `/${file.replace(/index\.html$/, '')}`;
+    return { loc: `${SITE_URL}${url}`, lastmod: generatedLastmod(file), ...tierFor(url) };
+  }),
 ];
 
 // Highest priority first so the important URLs lead the file.
@@ -159,6 +151,5 @@ fs.writeFileSync(outPath, xml, 'utf8');
 
 console.log(
   `Wrote ${entries.length} URLs to public/sitemap.xml ` +
-    `(${pages.length + EXCLUDED.size} pages on disk, ${EXCLUDED.size} excluded, ` +
-    `"/" standing in for index.html)`
+    `(${rootPages.length} root pages, ${generatedPages.length} generated pages, "/" standing in for index.html)`
 );

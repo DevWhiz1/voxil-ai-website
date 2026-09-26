@@ -1,0 +1,130 @@
+<!-- =========================
+Contact | details + brief form
+Field names match src/js/common/contact-form.js.
+===========================-->
+<section class="section-soft section-pad-sm">
+  <div class="main-container relative z-10">
+    <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-10">
+      <!-- Details -->
+      <aside class="space-y-5 lg:sticky lg:top-28 lg:self-start">
+        <div data-reveal class="glass-card glass-card-topline" style="--accent: #0f9f93">
+          <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">Talk to a person</p>
+          <div class="mt-5 space-y-4">
+            <a href="mailto:info@voxilai.tech" class="group flex items-center gap-4">
+              <span class="icon-tile" style="--accent: #0f9f93">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+              </span>
+              <span>
+                <span class="block text-tagline-3 text-secondary/50">Email</span>
+                <span class="block text-tagline-1 font-semibold text-secondary group-hover:text-primary-700">info@voxilai.tech</span>
+              </span>
+            </a>
+            <a href="/book-meeting.html" class="group flex items-center gap-4">
+              <span class="icon-tile" style="--accent: #ff6b35">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+              </span>
+              <span>
+                <span class="block text-tagline-3 text-secondary/50">Prefer to talk?</span>
+                <span class="block text-tagline-1 font-semibold text-secondary group-hover:text-coral-600">Book a free 30-minute call</span>
+              </span>
+            </a>
+            <div class="flex items-center gap-4">
+              <span class="icon-tile" style="--accent: #0284c7">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              </span>
+              <span>
+                <span class="block text-tagline-3 text-secondary/50">Response time</span>
+                <span class="block text-tagline-1 font-semibold text-secondary">Within one business day</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal class="glass-card">
+          <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">What happens next</p>
+          <ol class="mt-4 space-y-3">
+            <li class="flex gap-3 text-tagline-2 text-secondary/75"><span class="font-semibold text-primary-700">1.</span>We read your brief and reply within one business day.</li>
+            <li class="flex gap-3 text-tagline-2 text-secondary/75"><span class="font-semibold text-primary-700">2.</span>A short call to confirm scope, tools and goals.</li>
+            <li class="flex gap-3 text-tagline-2 text-secondary/75"><span class="font-semibold text-primary-700">3.</span>A fixed-price proposal with a timeline, usually within two days.</li>
+          </ol>
+          <div class="hairline my-5"></div>
+          <div class="flex items-center gap-3">
+            <div class="flex -space-x-3">
+              <img src="/abdulmoeez.jpeg" alt="Abdul Moeez" width="40" height="40" class="size-10 rounded-full object-cover object-top ring-2 ring-white" />
+              <img src="/ahmadali.jpeg" alt="Ahmad Ali" width="40" height="40" class="size-10 rounded-full object-cover object-top ring-2 ring-white" />
+            </div>
+            <p class="text-tagline-3 text-secondary/60">You'll hear back from Abdul or Ahmad directly.</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Form -->
+      <div data-reveal class="glass-card md:p-9">
+        <h2 class="text-heading-6 font-semibold text-secondary">Send us a brief</h2>
+        <p class="text-tagline-2 mt-1 text-secondary/60">A few details help us come back with something useful.</p>
+
+        <form id="contact-form" class="mt-7 grid gap-5 sm:grid-cols-2" novalidate>
+          <div>
+            <label for="fullname" class="field-label">Full name</label>
+            <input id="fullname" name="fullname" type="text" autocomplete="name" required class="field-input" placeholder="Jane Smith" />
+            <p class="field-error hidden"></p>
+          </div>
+          <div>
+            <label for="company" class="field-label">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required class="field-input" placeholder="Acme Services" />
+            <p class="field-error hidden"></p>
+          </div>
+          <div>
+            <label for="email" class="field-label">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required class="field-input" placeholder="jane@acme.com" />
+            <p class="field-error hidden"></p>
+          </div>
+          <div>
+            <label for="phone" class="field-label">Phone <span class="text-secondary/40">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" class="field-input" placeholder="+1 555 000 0000" />
+            <p class="field-error hidden"></p>
+          </div>
+          <div>
+            <label for="service" class="field-label">What do you need?</label>
+            <select id="service" name="service" required class="field-input">
+              <option value="">Select one</option>
+              <option>AI voice agent or receptionist</option>
+              <option>AI chatbot or WhatsApp automation</option>
+              <option>GoHighLevel setup or automation</option>
+              <option>CRM, workflow or API automation</option>
+              <option>Website or sales funnel</option>
+              <option>SEO and paid ads</option>
+              <option>AI SaaS development</option>
+              <option>Not sure yet</option>
+            </select>
+            <p class="field-error hidden"></p>
+          </div>
+          <div>
+            <label for="timeline" class="field-label">Timeline <span class="text-secondary/40">(optional)</span></label>
+            <select id="timeline" name="timeline" class="field-input">
+              <option value="">Select one</option>
+              <option>As soon as possible</option>
+              <option>Within a month</option>
+              <option>In the next quarter</option>
+              <option>Just exploring</option>
+            </select>
+            <p class="field-error hidden"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="field-label">Tell us about the project</label>
+            <textarea id="message" name="message" rows="5" required class="field-input" placeholder="What do you want to automate, and which tools do you use today?"></textarea>
+            <p class="field-error hidden"></p>
+          </div>
+          <label class="flex items-start gap-3 text-tagline-3 text-secondary/65 sm:col-span-2">
+            <input id="terms" type="checkbox" class="mt-0.5 size-4 shrink-0 rounded accent-primary-500" />
+            <span>I agree to the <a href="/privacy-policy.html" class="font-semibold text-primary-700 underline underline-offset-4">privacy policy</a> and <a href="/terms-conditions.html" class="font-semibold text-primary-700 underline underline-offset-4">terms</a>.</span>
+          </label>
+          <div class="sm:col-span-2">
+            <button type="submit" class="cta cta-lg cta-coral w-full">Send message</button>
+            <p id="form-status-message" class="text-tagline-2 mt-4 hidden rounded-xl border px-4 py-3 text-center" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,224 +1,69 @@
 <!-- =========================
-Footer v4
+Footer
 ===========================-->
-<footer
-  class="footer bg-[#FDFFFF] dark:bg-[#FDFFFF] border-t-stroke-1 dark:border-t-stroke-1 relative z-0 overflow-hidden border-t max-sm:z-11">
-  <figure data-ns-animate data-delay="0.3" data-direction="up" data-offset="50"
-    class="pointer-events-none absolute -top-[1320px] left-1/2 -z-1 size-[1635px] -translate-x-1/2 opacity-30 select-none">
-    <img src="./images/ns-img-532.png" alt="footer-four-gradient" class="size-full object-cover" />
-  </figure>
-  <div class="main-container px-5">
-    <div class="grid grid-cols-12 justify-between gap-x-0 gap-y-16 pt-16 pb-12 xl:pt-[90px]">
-      <div data-ns-animate data-delay="0.1" class="col-span-12 xl:col-span-4">
-        <div class="max-w-[306px]">
-          <figure class="max-w-[198px]">
-            <img src="./images/shared/main-logo-light.svg" alt="Voxil Ai Logo" class="w-full" />
-          </figure>
-          <p class="text-secondary/60 text-tagline-1 mt-4 mb-7 font-normal">
-            Voxil Ai builds intelligent automation, custom AI agents, and SaaS solutions that help businesses scale
-            faster and work smarter.
+<footer class="relative overflow-hidden border-t border-secondary/[0.08] bg-white text-secondary">
+  <span class="orb -bottom-32 left-1/4 size-[420px]" style="--orb: #0f9f93; --orb-opacity: 0.16" aria-hidden="true"></span>
+
+  <div class="main-container relative z-10 pt-16 pb-8 md:pt-20">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
+      <!-- Brand column -->
+      <div class="lg:col-span-4">
+        <Component src="src/components/shared/brand.htm" />
+        <p class="text-tagline-2 mt-5 max-w-sm text-secondary/55">
+          Custom AI agents, voice automation and workflow systems that help teams
+          scale output without adding headcount.
+        </p>
+
+        <div class="mt-6 space-y-2.5">
+          <a href="mailto:info@voxilai.tech" class="text-tagline-2 flex items-center gap-2.5 text-secondary/60 transition-colors hover:text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-4 text-primary-600" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            info@voxilai.tech
+          </a>
+          <p class="text-tagline-2 flex items-center gap-2.5 text-secondary/60">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-4 text-primary-600" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            Replies within one business day
           </p>
-          <div class="flex items-center gap-3">
-            <a href="https://www.facebook.com/share/1Ec6E4n7f7/" target="_blank" rel="noopener noreferrer">
-              <span class="sr-only">Facebook</span>
-              <img class="size-6" src="./images/icons/facebook-dark.svg" alt="Facebook" />
-            </a>
-            <div class="bg-stroke-1 h-6 w-px"></div>
-            <a href="https://www.instagram.com/voxilai/" target="_blank" rel="noopener noreferrer">
-              <span class="sr-only">Instagram</span>
-              <img class="size-6" src="./images/icons/instagram-dark.svg" alt="Instagram" />
-            </a>
-            <div class="bg-stroke-1 h-6 w-px"></div>
-            <a href="https://www.linkedin.com/company/voxilai/" target="_blank" rel="noopener noreferrer">
-              <span class="sr-only">LinkedIn</span>
-              <img class="size-6" src="./images/icons/linkedin-dark.svg" alt="LinkedIn" />
-            </a>
-          </div>
+        </div>
+
+        <div class="mt-6 flex items-center gap-2.5">
+          <a href="https://www.facebook.com/share/1Ec6E4n7f7/" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-secondary/10 bg-secondary/[0.05] transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary/25 hover:bg-secondary/[0.1]">
+            <span class="sr-only">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-secondary/70" aria-hidden="true">
+              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.45 2.91h-2.33V22c4.78-.76 8.45-4.92 8.45-9.94Z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/voxilai/" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-secondary/10 bg-secondary/[0.05] transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary/25 hover:bg-secondary/[0.1]">
+            <span class="sr-only">Instagram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-secondary/70" aria-hidden="true">
+              <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 5.68a4.16 4.16 0 1 0 0 8.32 4.16 4.16 0 0 0 0-8.32Zm0 6.86a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4Zm5.3-7.03a.97.97 0 1 1-1.94 0 .97.97 0 0 1 1.94 0Z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/voxilai/" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-secondary/10 bg-secondary/[0.05] transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary/25 hover:bg-secondary/[0.1]">
+            <span class="sr-only">LinkedIn</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-secondary/70" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="col-span-12 grid grid-cols-12 gap-x-0 gap-y-8 xl:col-span-8">
-        <div class="col-span-12 md:col-span-4">
-          <div data-ns-animate data-delay="0.2" class="space-y-8">
-            <p class="sm:text-heading-6 text-tagline-1 text-secondary font-normal">Company</p>
-            <ul class="space-y-5">
-              <li>
-                <a href="./about.html" class="footer-link"> About Us </a>
-              </li>
-              <li>
-                <a href="./services.html" class="footer-link"> Services </a>
-              </li>
-              <li>
-                <a href="./projects.html" class="footer-link"> Our Work </a>
-              </li>
-              <li>
-                <a href="./process.html" class="footer-link"> Our Process </a>
-              </li>
-              <li>
-                <a href="./contact.html" class="footer-link"> Contact Us </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-12 md:col-span-4">
-          <div data-ns-animate data-delay="0.3" class="space-y-8">
-            <p class="sm:text-heading-6 text-tagline-1 text-secondary font-normal">Services</p>
-            <ul class="space-y-5">
-              <li>
-                <a href="./services.html" class="footer-link"> AI Automation </a>
-              </li>
-              <li>
-                <a href="./services.html" class="footer-link"> AI Agents </a>
-              </li>
-              <li>
-                <a href="./ai-saas-development.html" class="footer-link"> AI SaaS Development </a>
-              </li>
-              <li>
-                <a href="./services.html" class="footer-link"> Web Development </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-12 md:col-span-4">
-          <div data-ns-animate data-delay="0.4" class="space-y-8">
-            <p class="sm:text-heading-6 text-tagline-1 text-secondary font-normal">Resources</p>
-            <ul class="space-y-5">
-              <li>
-                <a href="./testimonial.html" class="footer-link"> Testimonials </a>
-              </li>
-              <li>
-                <a href="./faq.html" class="footer-link"> FAQ </a>
-              </li>
-              <li>
-                <a href="./terms-conditions.html" class="footer-link"> Terms & Conditions </a>
-              </li>
-              <li>
-                <a href="./privacy-policy.html" class="footer-link"> Privacy Policy </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
+      <!-- Link columns (generated from content/site.js) -->
+      <Component src="src/components/shared/generated/footer-links.htm" />
     </div>
-    <div class="relative pt-[26px] pb-[42px] text-center">
-      <div
-        class="footer-divider bg-stroke-1 dark:bg-stroke-1 absolute top-0 right-0 left-0 mx-auto h-px w-0 origin-center">
-      </div>
-      <p data-ns-animate data-delay="0.7" data-offset="10" data-start="top 105%"
-        class="text-tagline-1 text-secondary/60 font-normal">
-        Copyright &copy; 2026 Voxil Ai . All rights reserved. Built for the future of automation.
-      </p>
+
+    <Component src="src/components/shared/generated/footer-locations.htm" />
+
+    <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-secondary/[0.08] pt-6 sm:flex-row">
+      <p class="text-tagline-3 text-secondary/40">© 2026 Voxil AI. All rights reserved.</p>
+      <p class="text-tagline-3 text-secondary/40">Built for teams that would rather ship than hire.</p>
     </div>
   </div>
-  <Component src="src/components/shared/theme-toggle.htm" />
+
   <Component src="src/components/shared/package-link.htm" />
-
-
-  <!-- Floating Chatbot Widget -->
-  <div id="ai-chat-widget" class="fixed bottom-6 right-6 z-[99999] font-sans">
-    <!-- Chat Button -->
-    <button id="ai-chat-btn"
-      class="flex items-center justify-center size-14 rounded-full bg-primary-500 hover:bg-primary-600 text-white shadow-2xl transition-transform hover:scale-105 active:scale-95 focus:outline-none relative group"
-      aria-label="Open AI Assistant">
-      <span
-        class="absolute inline-flex h-full w-full rounded-full bg-primary-500/30 animate-ping group-hover:hidden"></span>
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-      </svg>
-    </button>
-
-    <!-- Chat Drawer -->
-    <div id="ai-chat-window"
-      class="hidden absolute bottom-20 right-0 w-[380px] sm:w-[400px] max-w-[calc(100vw-32px)] h-[480px] max-h-[calc(100vh-140px)] bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-[24px] shadow-2xl flex-col overflow-hidden transition-all duration-300 z-[99999]">
-      <!-- Chat Header (Light matching website design system) -->
-      <div
-        class="bg-white dark:bg-background-9 text-secondary dark:text-accent p-4 flex items-center justify-between border-b border-stroke-4 dark:border-stroke-7 shrink-0">
-        <div class="flex items-center gap-3">
-          <div
-            class="relative size-10 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-500 flex items-center justify-center shrink-0">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span
-              class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white dark:border-background-9 rounded-full"></span>
-          </div>
-          <div>
-            <div class="flex items-center gap-1.5">
-              <h4 class="font-semibold text-sm tracking-tight text-secondary dark:text-accent">Voxil AI Assistant</h4>
-            </div>
-            <p class="text-[11px] text-secondary/60 dark:text-accent/60 font-medium">AI Solution Engine</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-1.5">
-          <button id="ai-chat-reset"
-            class="p-2 rounded-xl text-secondary/50 dark:text-accent/50 hover:text-secondary dark:hover:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors"
-            title="Start New Session" aria-label="Start New Session">
-            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-          </button>
-          <button id="ai-chat-close"
-            class="p-2 rounded-xl text-secondary/50 dark:text-accent/50 hover:text-secondary dark:hover:text-accent hover:bg-background-3 dark:hover:bg-background-7 transition-colors"
-            aria-label="Close Chat">
-            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Chat Messages Container -->
-      <div id="ai-chat-messages"
-        class="flex-1 p-4.5 overflow-y-auto space-y-4 bg-background-3/30 dark:bg-background-6/40 text-secondary dark:text-accent scrollbar-thin">
-        <!-- AI Greeting -->
-        <div class="flex items-start gap-2.5 max-w-[88%]">
-          <div
-            class="size-7 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-500 flex items-center justify-center shrink-0 mt-0.5">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <div
-            class="bg-white dark:bg-background-9 border border-stroke-4 dark:border-stroke-7 rounded-2xl rounded-tl-none p-3.5 shadow-sm text-sm text-secondary dark:text-accent leading-relaxed">
-            Hello! I am the Voxil AI Assistant. How can I help you scope your AI agent or workflow automation project
-            today?
-          </div>
-        </div>
-
-        <!-- Sample Question Pill (Only 1 Question) -->
-        <div id="ai-chat-pills" class="flex flex-col gap-2 pt-1">
-          <button
-            class="chat-pill flex items-center gap-2.5 border border-stroke-4 dark:border-stroke-7 bg-white dark:bg-background-9 p-3 rounded-xl text-xs font-medium text-left hover:border-primary-500 hover:bg-primary-500/5 transition-all text-secondary dark:text-accent group shadow-xs">
-            <div
-              class="p-1.5 rounded-lg bg-primary-500/10 text-primary-500 shrink-0 group-hover:bg-primary-500 group-hover:text-white transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <span>How do Voxil custom AI agents automate workflows?</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Chat Input -->
-      <div id="ai-chat-input-block"
-        class="p-3.5 border-t border-stroke-4 dark:border-stroke-7 bg-white dark:bg-background-9 flex items-center gap-2 shrink-0">
-        <input type="text" id="ai-chat-text" placeholder="Type your message..."
-          class="flex-1 px-4 py-2.5 border border-stroke-4 dark:border-stroke-7 rounded-xl bg-background-3/50 dark:bg-background-6/50 text-secondary dark:text-accent focus:border-primary-500 dark:focus:border-accent focus:ring-1 focus:ring-primary-500 outline-none text-sm placeholder:text-secondary/40 dark:placeholder:text-accent/40" />
-        <button id="ai-chat-send"
-          class="btn btn-primary p-2.5 px-4 rounded-xl text-sm flex items-center justify-center shrink-0 hover:btn-secondary dark:hover:btn-accent transition-all"
-          aria-label="Send Message">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3 21l18-9L3 3l3 9zm0 0h7.5" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
   <!-- SCRIPT -->
-  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </footer>

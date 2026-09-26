@@ -2,23 +2,22 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>AI Patient Triage Agent Case Study - Voxil AI</title>
+    <title>Healthcare patient intake automation | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/case-study-details/case-study-healthcare.htm" />
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build custom AI workflows and agents"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/pages/case-study/detail.htm"
+        industry="Healthcare"
+        accent="#0f9f93"
+        title="Healthcare patient intake automation"
+        summary="A multi-location clinic needed after-hours coverage without hiring a night desk."
+        challenge="Missed calls outside business hours and slow triage for routine questions."
+        solution="We deployed chat and voice agents that answered FAQs, collected intake data, and booked appointments into their calendar stack."
+        result="After-hours bookings increased and staff spent less time on repetitive phone work."
       />
+      <Component src="src/components/shared/cta.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>About - AI Agency || Voxilai</title>
+    <title>About Voxil AI | AI Automation Agency</title>
   </head>
-  <body class="bg-background-2 dark:bg-background-5 overflow-x-hidden">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
     <main>
-      <Component src="src/components/pages/about/about-hero.htm" />
-      <Component src="src/components/pages/about/our-mission.htm" />
-      <Component src="src/components/pages/about/our-vision.htm" />
+      <Component
+        src="src/components/shared/page-hero.htm"
+        accent="#0f9f93"
+        eyebrow="About Voxil AI"
+        title="We build the systems, <span class='text-gradient-teal'>not the slide deck</span>"
+        lead="An AI automation agency for operators who need something working in production: chat, voice and workflow systems wired into the tools their team already uses."
+      />
+      <Component src="src/components/pages/about/content.htm" />
+      <Component src="src/components/shared/cta.htm" />
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>

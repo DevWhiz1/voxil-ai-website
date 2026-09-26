@@ -1,91 +1,173 @@
 <!-- =========================
-Services section
+Home, services bento
 ===========================-->
-<section
-  class="pt-16 md:pt-20 lg:pt-[90px] xl:pt-[100px] pb-16 md:pb-20 lg:pb-[90px] xl:pb-[100px] bg-[url('/images/ns-img-169.png')] bg-no-repeat bg-cover bg-top"
->
-  <div class="main-container">
-    <div class="text-center space-y-5 max-w-[750px] mx-auto mb-14">
-      <span data-ns-animate data-delay="0.2" class="badge badge-green">Services</span>
-      <div>
-        <h2 data-ns-animate data-delay="0.3" class="mb-3">
-          AI Chatbot & Assistant Development Services
+<section class="section-soft section-pad">
+  <span class="top-glow" aria-hidden="true"></span>
+  <span class="dot-field" aria-hidden="true"></span>
+  <span class="orb top-1/4 -left-24 size-[380px]" style="--orb: #0f9f93; --orb-opacity: 0.22" aria-hidden="true"></span>
+  <span class="orb bottom-0 -right-20 size-[340px]" style="--orb: #ff6b35; --orb-opacity: 0.18" aria-hidden="true"></span>
+
+  <div class="main-container relative z-10">
+    <div class="mb-12 flex flex-col items-start justify-between gap-6 md:mb-14 md:flex-row md:items-end">
+      <div class="max-w-2xl">
+        <p data-reveal class="eyebrow-chip mb-5">
+          <span class="pulse-dot" style="--dot: #2fc4b6"></span>
+          What we build
+        </p>
+        <h2 data-reveal class="text-heading-5 sm:text-heading-4 lg:text-heading-3 font-semibold tracking-tight text-secondary">
+          Four systems that
+          <span class="text-gradient-teal">do the work</span>
         </h2>
-        <p data-ns-animate data-delay="0.4" class="max-w-[650px] mx-auto">
-          We develop custom AI agents and automate workflow pipelines using advanced tools like LangChain, n8n, and Make.com. From lead qualification and appointment booking to patient triage, we build solutions tailored for healthcare, e-commerce, real estate, and finance teams.
+        <p data-reveal class="text-tagline-1 mt-4 text-secondary/60">
+          Not chatbots bolted onto a website. Production systems wired into your
+          calendar, CRM and helpdesk, with a human escape hatch at every step.
         </p>
       </div>
+      <a data-reveal href="/services/" class="cta cta-md cta-ghost shrink-0">
+        All services
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+        </svg>
+      </a>
     </div>
-    <!-- feature Items -->
-    <div
-      class="grid grid-cols-12 space-y-8 md:space-y-0 md:gap-8 mb-10 lg:mb-18 max-w-[1010px] mx-auto"
-    >
-      <div
-        data-ns-animate
-        data-delay="0.5"
-        class="col-span-12 md:col-span-6 lg:col-span-7 p-8 rounded-[20px] bg-white dark:bg-background-6 space-y-6 sm:min-h-[288px]"
+
+    <div class="bento">
+      <!-- Chatbots, wide feature card -->
+      <a
+        href="/services/ai-chatbots/"
+        data-reveal
+        class="group glass-card glass-card-rail glass-card-bloom bento-wide flex flex-col"
+        style="--accent: #2fc4b6"
       >
-        <div class="w-full">
-          <span class="ns-shape-8 text-[52px] text-secondary dark:text-accent"></span>
-        </div>
-        <div class="space-y-2">
-          <h5 class="max-sm:text-heading-6">Custom AI Chatbot Development.</h5>
-          <p class="max-w-[430px]">
-            Build branded, secure AI chatbots that integrate with your data to automate customer service, qualify leads, and capture sales 24/7.
-          </p>
-        </div>
-      </div>
-      <div
-        data-ns-animate
-        data-delay="0.4"
-        class="col-span-12 md:col-span-6 lg:col-span-5 p-8 rounded-[20px] bg-white dark:bg-background-6 space-y-6 sm:min-h-[288px]"
-      >
-        <div class="w-full">
-          <span class="ns-shape-35 text-[52px] text-secondary dark:text-accent"></span>
+        <div class="flex items-start justify-between gap-4">
+          <span class="icon-tile" style="--accent: #2fc4b6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3h6m-9.75 5.25 2.25-2.25H15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 15 4.5H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5Z" />
+            </svg>
+          </span>
+          <span class="pill-accent" style="--accent: #2fc4b6">Most requested</span>
         </div>
 
-        <div class="space-y-2">
-          <h5 class="max-sm:text-heading-6">Custom AI Agent Development.</h5>
-          <p class=" ">Deploy autonomous AI agents to automate complex operations like lead qualification, automated data entry, and business workflows without supervision.</p>
+        <h3 class="text-heading-6 mt-5 font-semibold text-secondary">AI Chatbot Development</h3>
+        <p class="text-tagline-2 mt-2.5 max-w-lg text-secondary/60">
+          Assistants trained on your docs, pricing and policies. They answer in your
+          brand voice, qualify the visitor, and hand to a human the moment it matters.
+        </p>
+
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="pill">Website &amp; in-app</span>
+          <span class="pill">WhatsApp</span>
+          <span class="pill">Slack &amp; Teams</span>
+          <span class="pill">Knowledge-base trained</span>
         </div>
-      </div>
-      <div
-        data-ns-animate
-        data-delay="0.5"
-        class="col-span-12 md:col-span-6 lg:col-span-5 p-8 rounded-[20px] bg-white dark:bg-background-6 space-y-6 sm:min-h-[288px]"
-      >
-        <div class="w-full">
-          <span class="ns-shape-41 text-[52px] text-secondary dark:text-accent"></span>
-        </div>
-        <div class="space-y-2">
-          <h5 class="max-sm:text-heading-6">AI-Powered SaaS & MVP Development.</h5>
-          <p class="max-w-[430px]">
-            Turn your AI SaaS idea into a market-ready product. We handle everything from UI/UX design and LLM integration to full-scale SaaS development.
-          </p>
-        </div>
-      </div>
-      <div
-        data-ns-animate
-        data-delay="0.6"
-        class="col-span-12 md:col-span-6 lg:col-span-7 p-8 rounded-[20px] bg-white dark:bg-background-6 space-y-6 sm:min-h-[288px]"
-      >
-        <div class="w-full">
-          <span class="ns-shape-19 text-[52px] text-secondary dark:text-accent"></span>
-        </div>
-        <div class="space-y-2">
-          <h5 class="max-sm:text-heading-6">AI Web Development & API Integration.</h5>
-          <p class="max-w-[430px]">
-            Build high-performance web applications with seamless AI integrations. We connect custom AI agents to your CRM, databases, and third-party APIs.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div data-ns-animate data-delay="0.7" class="flex items-center justify-center">
+
+        <span class="link-arrow mt-6 text-primary-600">
+          Explore chatbots
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </a>
+
+      <!-- Voice, narrow card -->
       <a
-        href="./contact.html"
-        class="btn btn-secondary hover:btn-primary dark:btn-transparent dark:border-primary-50 btn-md w-[85%] md:w-auto mx-auto"
+        href="/services/ai-voice-agents/"
+        data-reveal
+        class="group glass-card glass-card-rail glass-card-bloom bento-narrow flex flex-col"
+        style="--accent: #ff7a3d"
       >
-        <span>Book a free consultation</span>
+        <span class="icon-tile" style="--accent: #ff7a3d">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
+          </svg>
+        </span>
+
+        <h3 class="text-heading-6 mt-5 font-semibold text-secondary">AI Voice Agents</h3>
+        <p class="text-tagline-2 mt-2.5 text-secondary/60">
+          Natural-sounding phone agents for inbound support, booking and outbound
+          follow-up, latency-tuned so the pauses don't feel robotic.
+        </p>
+
+        <div class="wave mt-auto h-10 pt-5" aria-hidden="true">
+          <i style="--h: 34%; --d: 0s"></i><i style="--h: 70%; --d: 0.12s"></i>
+          <i style="--h: 100%; --d: 0.24s"></i><i style="--h: 52%; --d: 0.3s"></i>
+          <i style="--h: 80%; --d: 0.18s"></i><i style="--h: 42%; --d: 0.36s"></i>
+          <i style="--h: 66%; --d: 0.06s"></i><i style="--h: 92%; --d: 0.28s"></i>
+          <i style="--h: 38%; --d: 0.15s"></i><i style="--h: 74%; --d: 0.33s"></i>
+        </div>
+
+        <span class="link-arrow mt-5 text-coral-600">
+          Explore voice
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </a>
+
+      <!-- Lead capture -->
+      <a
+        href="/services/lead-capture-system/"
+        data-reveal
+        class="group glass-card glass-card-rail glass-card-bloom bento-half flex flex-col"
+        style="--accent: #6adfd3"
+      >
+        <span class="icon-tile" style="--accent: #6adfd3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 10.5 3.75 12 10.5h6.75L9.75 21 12 13.5H3.75Z" />
+          </svg>
+        </span>
+
+        <h3 class="text-heading-6 mt-5 font-semibold text-secondary">Lead Capture Systems</h3>
+        <p class="text-tagline-2 mt-2.5 text-secondary/60">
+          Every enquiry captured, scored against your criteria, routed to the right
+          rep, and logged, so the pipeline reflects reality.
+        </p>
+
+        <ul class="check-list mt-5 text-tagline-2" style="--accent: #6adfd3">
+          <li>Instant acknowledgement, every channel</li>
+          <li>Scoring rules you can actually read</li>
+          <li>Round-robin or owner-based routing</li>
+        </ul>
+
+        <span class="link-arrow mt-6 text-primary-600">
+          Explore lead capture
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </a>
+
+      <!-- SaaS -->
+      <a
+        href="/services/ai-saas-development/"
+        data-reveal
+        class="group glass-card glass-card-rail glass-card-bloom bento-half flex flex-col"
+        style="--accent: #38bdf8"
+      >
+        <span class="icon-tile" style="--accent: #38bdf8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L12 12.75 6.429 9.75m11.142 0L21.75 12l-4.179 2.25M6.429 14.25 12 17.25l5.571-3" />
+          </svg>
+        </span>
+
+        <h3 class="text-heading-6 mt-5 font-semibold text-secondary">AI SaaS Development</h3>
+        <p class="text-tagline-2 mt-2.5 text-secondary/60">
+          When the AI <em class="text-secondary/80 not-italic font-medium">is</em> the product. Full builds, interface, model layer, auth,
+          billing and cloud infrastructure, shipped to production.
+        </p>
+
+        <ul class="check-list mt-5 text-tagline-2" style="--accent: #38bdf8">
+          <li>MVP in weeks, not quarters</li>
+          <li>Auth, billing and usage metering</li>
+          <li>You own the repo and the roadmap</li>
+        </ul>
+
+        <span class="link-arrow mt-6 text-sky-600">
+          Explore SaaS builds
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+          </svg>
+        </span>
       </a>
     </div>
   </div>

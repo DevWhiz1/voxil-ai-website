@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <Component src="src/components/shared/head-links.htm" />
-  <title>Voxil AI || Custom AI Agents & Business Automation Agency</title>
-</head>
-
-<body class="bg-background-2 dark:bg-background-5 overflow-x-hidden">
-  <Component src="src/components/shared/header.htm" />
-
-  <main>
-    <Component src="src/components/pages/home/hero.htm" />
-    <Component src="src/components/pages/home/services.htm" />
-    <Component src="src/components/pages/home/integration.htm" />
-    <Component src="src/components/pages/home/feature.htm" />
-    <Component src="src/components/pages/home/projects.htm" />
-    <Component src="src/components/pages/home/counter.htm" />
-    <Component src="src/components/pages/home/reviews.htm" />
-    <Component src="src/components/pages/home/quiz.htm" />
-    <Component src="src/components/pages/home/pricing.htm" />
-    <Component src="src/components/pages/home/newsletter.htm" />
-  </main>
-  <Component src="src/components/shared/footer.htm" />
-</body>
-
+  <head>
+    <Component src="src/components/shared/head-links.htm" />
+    <title>Voxil AI, Custom AI Agents & Business Automation</title>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://voxilai.tech/#abdul-moeez", "name": "Abdul Moeez", "jobTitle": "AI Automation Expert", "image": "https://voxilai.tech/abdulmoeez.jpeg", "worksFor": {"@id": "https://voxilai.tech/#organization"}, "knowsAbout": ["AI voice agents", "AI chatbots", "Vapi", "Retell AI", "Workflow automation", "n8n"]}, {"@type": "Person", "@id": "https://voxilai.tech/#ahmad-ali", "name": "Ahmad Ali", "jobTitle": "GoHighLevel Specialist", "image": "https://voxilai.tech/ahmadali.jpeg", "worksFor": {"@id": "https://voxilai.tech/#organization"}, "knowsAbout": ["GoHighLevel", "CRM automation", "Funnels"]}]}</script>
+    <!-- FAQ rich-result data; keep in sync with src/components/pages/home/faq.htm -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a build cost?", "acceptedAnswer": {"@type": "Answer", "text": "Most single-channel builds, one chatbot or one voice agent, properly integrated, land between a few thousand and the low five figures. Full SaaS products are scoped separately. You get a fixed price before any work starts, so there's no hourly meter running."}}, {"@type": "Question", "name": "What if the AI says something wrong to a customer?", "acceptedAnswer": {"@type": "Answer", "text": "This is the right question to ask. We constrain agents to your approved source material, define exactly which actions they may take unsupervised, and make \"I'll get a human\" the default when confidence is low. Every conversation is logged so you can audit what was said. The first weeks run as a supervised pilot for precisely this reason."}}, {"@type": "Question", "name": "Do we have to change our CRM or phone system?", "acceptedAnswer": {"@type": "Answer", "text": "No. We build around your stack, not the other way round. We work with HubSpot, Salesforce, GoHighLevel, Zendesk, Intercom, Twilio, Google Calendar, Stripe, Shopify and most tools with an API. Where there's no API, we build the bridge."}}, {"@type": "Question", "name": "Who owns the code and the prompts?", "acceptedAnswer": {"@type": "Answer", "text": "You do, repository, prompts, configuration and documentation. We don't hold your system hostage in a platform you can only rent. If you want to take it in-house or hand it to another team later, you can."}}, {"@type": "Question", "name": "How long until it's actually live?", "acceptedAnswer": {"@type": "Answer", "text": "Two to six weeks for most agent builds, depending on how many integrations are involved and how quickly we can get access to your systems and content. SaaS products typically run six to twelve weeks to first production release."}}, {"@type": "Question", "name": "What happens after launch?", "acceptedAnswer": {"@type": "Answer", "text": "Thirty days of tuning are included, real conversations always surface edge cases the scope didn't. After that you can take it fully in-house, or keep us on a monthly retainer for monitoring, tuning and new workflows. There's no lock-in either way."}}, {"@type": "Question", "name": "Is our customer data safe?", "acceptedAnswer": {"@type": "Answer", "text": "We scope data handling explicitly at the start: what's stored, where it lives, how long it's retained, and which providers process it. For regulated work, health or financial data, we'll tell you upfront what the architecture needs to look like and what we can and can't commit to."}}]}</script>
+  </head>
+  <body class="overflow-x-hidden bg-white">
+    <Component src="src/components/shared/header.htm" />
+    <main>
+      <Component src="src/components/pages/home/hero.htm" />
+      <Component src="src/components/shared/logo-marquee.htm" />
+      <Component src="src/components/pages/home/team.htm" />
+      <Component src="src/components/pages/home/problem.htm" />
+      <Component src="src/components/pages/home/services.htm" />
+      <Component src="src/components/pages/home/tools.htm" />
+      <Component src="src/components/pages/home/capabilities.htm" />
+      <Component src="src/components/pages/home/process.htm" />
+      <Component src="src/components/pages/home/stats.htm" />
+      <Component src="src/components/pages/home/industries.htm" />
+      <Component src="src/components/pages/home/reviews.htm" />
+      <Component src="src/components/pages/home/faq.htm" />
+      <Component src="src/components/shared/generated/home-explore.htm" />
+      <Component src="src/components/shared/cta.htm" />
+    </main>
+    <Component src="src/components/shared/footer.htm" />
+  </body>
 </html>

@@ -1,44 +1,14 @@
-/* =========================
-Initialized all js files here
-=========================== */
-
 import { inject } from '@vercel/analytics';
 
 inject();
 
-import './js/animation/accordion';
-import './js/animation/ai-voice-sample';
-import './js/animation/card-spin';
-import './js/animation/customer-success-stories';
-import './js/animation/glossary';
-import './js/animation/gradient-path';
-import './js/animation/header';
-import './js/animation/marquee';
-import './js/animation/modal';
-import './js/animation/sidebar';
-import './js/animation/slider';
-import './js/animation/svg-draw';
-import './js/animation/swiper';
-import './js/animation/tab';
-import './js/animation/tab-filter';
-import './js/animation/tab-v2';
-import './js/animation/typewriter';
-import './js/animation/voice-waveform';
-import './js/animation/wave-animation';
-import './js/common/button';
-import './js/common/chatbot';
-import './js/common/common';
+import './js/common/header';
+import './js/common/mobile-nav';
 import './js/common/contact-form';
-import './js/common/mobile-menu';
-import './js/common/navigation-menu';
-import './js/common/parallax-effect';
-import './js/common/price-switcher';
-import './js/common/progress';
-import './js/common/reveal-elements';
-import './js/common/smooth-scrolling';
-import './js/utils/cookie';
-import './js/utils/counter';
-import './js/utils/force-theme-switcher';
-import './js/utils/img-before-after-slider';
-import './js/utils/leaflet';
-import './js/utils/theme-switcher';
+import './js/common/reveal';
+import './js/common/counters';
+import './js/common/accordion';
+import './js/common/tabs';
+import './js/common/lead-loss-calculator';
+import './js/common/checklist';
+import './js/common/toc';

@@ -1,0 +1,1075 @@
+/* =========================================================
+   Voxil AI | light UI layer
+   Surfaces, cards, decorative fields and interaction states.
+   Imported after tailwindcss so @apply is available.
+
+   Colour language: white and soft blue-grey surfaces, ink
+   (#0c1220) text at varying opacity, teal as the primary accent
+   and coral for calls to action. Accents are deepened with
+   color-mix(... #0c1220) wherever they sit on light surfaces so
+   text and icons keep their contrast.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. SECTION SURFACES
+   Alternate section-base (white) and section-soft (blue-grey)
+   so neighbouring bands read as distinct.
+   --------------------------------------------------------- */
+
+.section-base,
+.section-white {
+  @apply relative overflow-hidden bg-white text-secondary;
+}
+
+.section-soft,
+.section-light {
+  @apply relative overflow-hidden bg-background-1 text-secondary;
+}
+
+.section-tint {
+  @apply relative overflow-hidden text-secondary;
+  background: linear-gradient(180deg, #eef6f7 0%, #f4f7fb 100%);
+}
+
+/* Inner-page hero: soft teal wash with room for the fixed header */
+.page-hero {
+  @apply relative overflow-hidden pt-32 pb-16 text-secondary md:pt-40 md:pb-24;
+  background:
+    radial-gradient(120% 80% at 10% 0%, rgba(47, 196, 182, 0.14) 0%, transparent 55%),
+    radial-gradient(90% 70% at 100% 20%, rgba(255, 107, 53, 0.08) 0%, transparent 60%),
+    linear-gradient(180deg, #f3faf9 0%, #ffffff 100%);
+}
+
+/* Standard vertical rhythm for every band */
+.section-pad {
+  @apply py-16 md:py-24 lg:py-28;
+}
+
+.section-pad-sm {
+  @apply py-14 md:py-20;
+}
+
+/* Hairline seam between two bands */
+.section-seam {
+  @apply border-t border-stroke-2;
+}
+
+/* ---------------------------------------------------------
+   2. DECORATIVE FIELDS
+   Purely visual, always pointer-events-none + aria-hidden.
+   --------------------------------------------------------- */
+
+/* Soft colour orb. Size/placement set per use; colour via --orb.
+   Opacity is scaled down so orbs tint white surfaces gently. */
+.orb {
+  @apply pointer-events-none absolute rounded-full;
+  background: var(--orb, var(--color-primary-500));
+  opacity: calc(var(--orb-opacity, 0.3) * 0.5);
+  filter: blur(var(--orb-blur, 110px));
+}
+
+/* Faint engineering grid */
+.grid-field,
+.grid-field-light {
+  @apply pointer-events-none absolute inset-0;
+  background-image:
+    linear-gradient(to right, rgba(12, 18, 32, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(12, 18, 32, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 20%, transparent 78%);
+}
+
+/* Dot matrix */
+.dot-field {
+  @apply pointer-events-none absolute inset-0;
+  background-image: radial-gradient(rgba(12, 18, 32, 0.1) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 70% 55% at 50% 45%, #000 10%, transparent 72%);
+}
+
+.ink-vignette {
+  @apply pointer-events-none absolute inset-0;
+  background: radial-gradient(ellipse at center, transparent 0%, var(--color-background-1) 74%);
+}
+
+/* Hairline that fades out at both ends */
+.hairline {
+  @apply pointer-events-none h-px w-full;
+  background: linear-gradient(to right, transparent, rgba(12, 18, 32, 0.12) 18%, rgba(12, 18, 32, 0.12) 82%, transparent);
+}
+
+/* Accent arc at the very top of a band */
+.top-glow {
+  @apply pointer-events-none absolute -top-px left-1/2 h-px w-[62%] -translate-x-1/2;
+  background: linear-gradient(to right, transparent, var(--color-primary-400) 30%, var(--color-coral-400) 70%, transparent);
+  opacity: 0.6;
+}
+
+/* ---------------------------------------------------------
+   3. TYPE HELPERS
+   --------------------------------------------------------- */
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 text-tagline-2 font-semibold tracking-[0.14em] uppercase;
+}
+
+.eyebrow-chip,
+.eyebrow-chip-light {
+  @apply inline-flex items-center gap-2 rounded-full border border-stroke-2 bg-white px-3.5 py-1.5 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/65 uppercase shadow-1;
+}
+
+.pulse-dot {
+  @apply relative inline-flex size-1.5 shrink-0 rounded-full;
+  background: var(--dot, var(--color-coral-400));
+}
+
+.pulse-dot::after {
+  content: '';
+  @apply absolute inset-0 rounded-full;
+  background: inherit;
+  animation: dot-ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(105deg, #14b8a6 0%, #0f9f93 45%, #0d7f76 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-warm {
+  background: linear-gradient(105deg, #ff8a4c 0%, #ff6b35 50%, #e84e1a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-sky {
+  background: linear-gradient(105deg, #0ea5e9 0%, #0284c7 55%, #0369a1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Numerals in stat blocks, tabular so counters don't jitter */
+.stat-num {
+  font-variant-numeric: tabular-nums;
+  @apply font-semibold tracking-tight;
+}
+
+/* ---------------------------------------------------------
+   4. CARDS
+   --------------------------------------------------------- */
+
+/* Base card. Accent rail colour via --accent. */
+.glass-card {
+  @apply relative overflow-hidden rounded-2xl border border-stroke-2 bg-white p-6 shadow-1 transition duration-400 md:p-7;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.glass-card:hover {
+  @apply -translate-y-1 border-stroke-1;
+  box-shadow: var(--shadow-3);
+}
+
+.glass-card-rail::before {
+  content: '';
+  @apply pointer-events-none absolute inset-x-0 top-0 h-[2px] origin-left scale-x-0 transition-transform duration-500;
+  background: linear-gradient(to right, var(--accent, var(--color-primary-400)), transparent 85%);
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.glass-card-rail:hover::before {
+  @apply scale-x-100;
+}
+
+.glass-card-topline::before,
+.lite-card-topline::before {
+  content: '';
+  @apply pointer-events-none absolute inset-x-0 top-0 h-[3px];
+  background: linear-gradient(to right, var(--accent, var(--color-primary-400)), transparent 92%);
+}
+
+.glass-card-bloom::after {
+  content: '';
+  @apply pointer-events-none absolute -top-16 -right-16 size-44 rounded-full opacity-0 transition-opacity duration-500;
+  background: radial-gradient(circle, var(--accent, var(--color-primary-400)) 0%, transparent 68%);
+  filter: blur(46px);
+}
+
+.glass-card-bloom:hover::after {
+  @apply opacity-20;
+}
+
+.lite-card {
+  @apply relative overflow-hidden rounded-2xl border border-stroke-2 bg-white p-6 shadow-1 transition duration-400 md:p-7;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.lite-card:hover {
+  @apply -translate-y-1 border-stroke-1;
+  box-shadow: var(--shadow-3);
+}
+
+/* Gradient-border card: 1px teal-to-coral edge, white fill */
+.edge-card {
+  @apply relative overflow-hidden rounded-2xl p-px transition duration-400;
+  background: linear-gradient(150deg, rgba(47, 196, 182, 0.55) 0%, rgba(12, 18, 32, 0.06) 40%, rgba(12, 18, 32, 0.06) 62%, rgba(255, 107, 53, 0.45) 100%);
+  box-shadow: var(--shadow-2);
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.edge-card > * {
+  @apply relative rounded-[15px] bg-white;
+}
+
+.edge-card:hover {
+  @apply -translate-y-1;
+  box-shadow: var(--shadow-3);
+}
+
+/* Icon tile inside a card */
+.icon-tile,
+.icon-tile-light {
+  @apply flex size-12 shrink-0 items-center justify-center rounded-xl border transition duration-400;
+  border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 22%, transparent);
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 72%, #0c1220);
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.group:hover .icon-tile,
+.group:hover .icon-tile-light {
+  @apply scale-105;
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 20%, white);
+}
+
+/* ---------------------------------------------------------
+   5. BENTO GRID
+   --------------------------------------------------------- */
+
+.bento {
+  @apply grid gap-4 sm:grid-cols-2 lg:grid-cols-6;
+}
+
+.bento-wide {
+  @apply lg:col-span-4;
+}
+
+.bento-narrow {
+  @apply lg:col-span-2;
+}
+
+.bento-half {
+  @apply lg:col-span-3;
+}
+
+.bento-third {
+  @apply lg:col-span-2;
+}
+
+/* ---------------------------------------------------------
+   6. STATS
+   --------------------------------------------------------- */
+
+.stat-block {
+  @apply relative;
+}
+
+.stat-divided {
+  @apply border-stroke-2 sm:border-l sm:pl-6 sm:first:border-l-0 sm:first:pl-0;
+}
+
+.stat-card-ink {
+  @apply relative overflow-hidden rounded-2xl border border-stroke-2 bg-white px-6 py-7 text-center shadow-1 transition duration-400;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.stat-card-ink:hover {
+  @apply border-stroke-1;
+  box-shadow: var(--shadow-2);
+}
+
+/* ---------------------------------------------------------
+   7. PROCESS / TIMELINE
+   --------------------------------------------------------- */
+
+.step-rail {
+  @apply relative;
+}
+
+.step-rail::before {
+  content: '';
+  @apply pointer-events-none absolute top-[26px] right-0 left-0 hidden h-px lg:block;
+  background: linear-gradient(to right, transparent, rgba(12, 18, 32, 0.12) 8%, rgba(12, 18, 32, 0.12) 92%, transparent);
+}
+
+.step-num {
+  @apply relative z-10 flex size-13 items-center justify-center rounded-full border text-tagline-1 font-semibold transition duration-400;
+  border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 40%, transparent);
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 72%, #0c1220);
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.group:hover .step-num {
+  @apply scale-110;
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, transparent);
+}
+
+.vrail,
+.vrail-light {
+  @apply relative border-l border-stroke-1 pb-10 pl-8 last:border-transparent last:pb-0;
+}
+
+.vrail::before,
+.vrail-light::before {
+  content: '';
+  @apply absolute top-1 -left-[7px] size-3.5 rounded-full border-2 bg-white;
+  border-color: var(--accent, var(--color-primary-500));
+}
+
+/* ---------------------------------------------------------
+   8. LISTS
+   --------------------------------------------------------- */
+
+.check-list,
+.check-list-light {
+  @apply space-y-3;
+}
+
+.check-list > li,
+.check-list-light > li {
+  @apply flex gap-3 text-tagline-1 text-secondary/75;
+}
+
+.check-list > li::before,
+.check-list-light > li::before {
+  content: '';
+  @apply mt-0.5 size-5 shrink-0 rounded-full bg-center bg-no-repeat;
+  background-color: color-mix(in srgb, var(--accent, var(--color-primary-500)) 18%, white);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%230d7f76'%3E%3Cpath fill-rule='evenodd' d='M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L4.3 10.7a1 1 0 0 1 1.4-1.4l2.8 2.8 6.8-6.8a1 1 0 0 1 1.4 0Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   9. LINKS & PILLS
+   --------------------------------------------------------- */
+
+.link-arrow {
+  @apply inline-flex items-center gap-1.5 text-tagline-2 font-semibold transition-all duration-300;
+}
+
+.link-arrow svg {
+  @apply transition-transform duration-300;
+}
+
+.group:hover .link-arrow svg,
+.link-arrow:hover svg {
+  @apply translate-x-1;
+}
+
+.pill,
+.pill-light {
+  @apply inline-flex items-center gap-1.5 rounded-full border border-stroke-2 bg-white px-3 py-1 text-tagline-3 font-medium text-secondary/70;
+}
+
+.pill-accent {
+  @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-tagline-3 font-semibold;
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 70%, #0c1220);
+  border: 1px solid color-mix(in srgb, var(--accent, var(--color-primary-400)) 28%, transparent);
+}
+
+/* ---------------------------------------------------------
+   10. MARQUEE (CSS only, no vendor lib)
+   --------------------------------------------------------- */
+
+.marquee {
+  @apply flex w-full overflow-hidden;
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.marquee__track {
+  @apply flex shrink-0 items-center gap-12 pr-12;
+  animation: marquee-slide var(--marquee-duration, 38s) linear infinite;
+  min-width: max-content;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+.marquee--reverse .marquee__track {
+  animation-direction: reverse;
+}
+
+/* Tool chips (home integrations marquee): tighter rhythm than text logos */
+.marquee--chips .marquee__track {
+  @apply gap-3 py-1 pr-3;
+}
+
+.tool-chip {
+  @apply flex shrink-0 items-center gap-3 rounded-2xl border border-stroke-2 bg-white px-5 py-3.5 text-tagline-1 font-semibold whitespace-nowrap text-secondary/80 shadow-1 transition duration-300;
+}
+
+.tool-chip:hover {
+  @apply -translate-y-0.5 border-stroke-1 text-secondary;
+  box-shadow: var(--shadow-2);
+}
+
+/* ---------------------------------------------------------
+   11. ACCORDION (FAQ)
+   --------------------------------------------------------- */
+
+.faq-item,
+.faq-item-light {
+  @apply overflow-hidden rounded-2xl border border-stroke-2 bg-white transition duration-300;
+}
+
+.faq-item.is-open,
+.faq-item-light.is-open {
+  @apply border-stroke-1;
+  box-shadow: var(--shadow-2);
+}
+
+.faq-trigger,
+.faq-trigger-light {
+  @apply flex w-full items-start justify-between gap-5 px-5 py-5 text-left text-tagline-1 font-medium text-secondary transition-colors md:px-6;
+}
+
+.faq-icon {
+  @apply mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border border-stroke-1 text-secondary/55 transition duration-400;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.faq-item.is-open .faq-icon,
+.faq-item-light.is-open .faq-icon {
+  @apply rotate-45 border-primary-500/40 bg-primary-50 text-primary-600;
+}
+
+/* Height is animated from JS via max-height */
+.faq-panel {
+  @apply max-h-0 overflow-hidden transition-[max-height] duration-500;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.faq-panel-inner {
+  @apply px-5 pb-5 text-tagline-1 text-secondary/70 md:px-6;
+}
+
+/* ---------------------------------------------------------
+   12. TABS
+   --------------------------------------------------------- */
+
+.tab-btn {
+  @apply rounded-full border border-stroke-2 bg-white px-4 py-2 text-tagline-2 font-medium text-secondary/65 transition duration-300 hover:border-stroke-1 hover:text-secondary;
+}
+
+.tab-btn.is-active {
+  @apply border-primary-500/40 bg-primary-50 text-primary-700;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+/* ---------------------------------------------------------
+   13. TESTIMONIALS
+   --------------------------------------------------------- */
+
+.quote-card {
+  @apply relative flex h-full flex-col overflow-hidden rounded-2xl border border-stroke-2 bg-white p-6 shadow-1 transition duration-400 md:p-7;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.quote-card:hover {
+  @apply -translate-y-1 border-stroke-1;
+  box-shadow: var(--shadow-3);
+}
+
+.quote-card::before {
+  content: '”';
+  @apply pointer-events-none absolute -top-6 right-4 font-sora text-[7rem] leading-none;
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 22%, transparent);
+}
+
+.avatar-ring {
+  @apply size-11 shrink-0 rounded-full border-2 object-cover;
+  border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 55%, transparent);
+}
+
+.avatar-initial {
+  @apply flex size-11 shrink-0 items-center justify-center rounded-full border-2 text-tagline-1 font-semibold;
+  border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 45%, transparent);
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 70%, #0c1220);
+}
+
+.stars {
+  @apply flex items-center gap-0.5 text-coral-500;
+}
+
+/* ---------------------------------------------------------
+   14. FORMS
+   --------------------------------------------------------- */
+
+.field-label,
+.field-label-light {
+  @apply mb-2 block text-tagline-2 font-medium text-secondary/80;
+}
+
+.field-input,
+.field-input-light {
+  @apply w-full rounded-xl border border-stroke-1 bg-white px-4 py-3 text-tagline-1 text-secondary transition duration-300 outline-none placeholder:text-secondary/35;
+}
+
+.field-input:focus,
+.field-input-light:focus {
+  @apply border-primary-500/60;
+  box-shadow: 0 0 0 4px rgba(15, 159, 147, 0.12);
+}
+
+.field-error {
+  @apply mt-1.5 text-tagline-3 text-coral-600;
+}
+
+/* ---------------------------------------------------------
+   15. CHAT / VOICE MOCKUPS
+   Static UI props used in heroes and service pages.
+   --------------------------------------------------------- */
+
+.mock-window {
+  @apply relative overflow-hidden rounded-2xl border border-stroke-2 bg-white;
+  box-shadow: 0 30px 80px -24px rgba(12, 18, 32, 0.22);
+}
+
+.mock-bar {
+  @apply flex items-center gap-2 border-b border-stroke-2 bg-background-1 px-4 py-3;
+}
+
+.mock-dot {
+  @apply size-2.5 rounded-full;
+}
+
+.bubble-in {
+  @apply max-w-[80%] rounded-2xl rounded-tl-sm border border-stroke-2 bg-background-1 px-3.5 py-2.5 text-tagline-2 text-secondary/80;
+}
+
+.bubble-out {
+  @apply ml-auto max-w-[80%] rounded-2xl rounded-tr-sm px-3.5 py-2.5 text-tagline-2 text-white;
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-600));
+}
+
+.typing {
+  @apply inline-flex items-center gap-1;
+}
+
+.typing span {
+  @apply size-1.5 rounded-full bg-secondary/40;
+  animation: typing-bounce 1.3s ease-in-out infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.typing span:nth-child(3) {
+  animation-delay: 0.32s;
+}
+
+/* Audio waveform: bar heights come from --h on each bar */
+.wave {
+  @apply flex items-end gap-[3px];
+}
+
+.wave i {
+  @apply block w-[3px] rounded-full;
+  height: var(--h, 40%);
+  background: linear-gradient(to top, var(--color-primary-600), var(--color-primary-400));
+  animation: wave-pulse 1.4s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+
+/* ---------------------------------------------------------
+   16. LOGO PLATE (placeholder client logos)
+   --------------------------------------------------------- */
+
+.logo-plate {
+  @apply flex h-11 shrink-0 items-center gap-2.5 text-tagline-1 font-semibold whitespace-nowrap text-secondary/40 transition-colors duration-300;
+}
+
+.marquee:hover .logo-plate,
+.logo-plate:hover {
+  @apply text-secondary/70;
+}
+
+/* ---------------------------------------------------------
+   16b. BUTTONS
+   --------------------------------------------------------- */
+
+.cta {
+  @apply relative inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl border text-tagline-2 font-semibold whitespace-nowrap transition duration-300;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.cta svg {
+  @apply size-4 shrink-0 transition-transform duration-300;
+}
+
+.cta:hover svg {
+  @apply translate-x-0.5;
+}
+
+.cta-sm {
+  @apply px-4 py-2.5;
+}
+
+.cta-md {
+  @apply px-5 py-3;
+}
+
+.cta-lg {
+  @apply text-tagline-1 px-6 py-3.5;
+}
+
+.cta-coral {
+  @apply border-coral-500 bg-coral-500 text-white;
+  box-shadow: 0 10px 26px -10px rgba(255, 107, 53, 0.6);
+}
+
+.cta-coral:hover {
+  @apply -translate-y-0.5 border-coral-600 bg-coral-600;
+  box-shadow: 0 16px 36px -12px rgba(255, 107, 53, 0.7);
+}
+
+.cta-teal {
+  @apply border-primary-500 bg-primary-500 text-white;
+  box-shadow: 0 10px 26px -10px rgba(15, 159, 147, 0.55);
+}
+
+.cta-teal:hover {
+  @apply -translate-y-0.5 border-primary-600 bg-primary-600;
+  box-shadow: 0 16px 36px -12px rgba(15, 159, 147, 0.7);
+}
+
+/* Outline button on light surfaces */
+.cta-ghost,
+.cta-outline {
+  @apply border-stroke-1 bg-white text-secondary shadow-1;
+}
+
+.cta-ghost:hover,
+.cta-outline:hover {
+  @apply -translate-y-0.5 border-secondary/25;
+  box-shadow: var(--shadow-2);
+}
+
+.cta-white {
+  @apply border-white bg-white text-secondary;
+  box-shadow: 0 10px 30px -12px rgba(12, 18, 32, 0.3);
+}
+
+.cta-white:hover {
+  @apply -translate-y-0.5 bg-coral-50;
+}
+
+.cta-ink {
+  @apply border-secondary bg-secondary text-white;
+  box-shadow: 0 10px 30px -12px rgba(12, 18, 32, 0.5);
+}
+
+.cta-ink:hover {
+  @apply -translate-y-0.5 border-ink-800 bg-ink-800;
+}
+
+.cta[disabled],
+.cta.is-loading {
+  @apply pointer-events-none translate-y-0 opacity-60;
+}
+
+/* ---------------------------------------------------------
+   16c. GENERATED-PAGE PRIMITIVES
+   Breadcrumbs, answer card, chip links, data tables, article
+   prose and tool widgets used across the site.
+   --------------------------------------------------------- */
+
+.crumbs ol {
+  @apply flex flex-wrap items-center gap-x-2 gap-y-1 text-tagline-3 text-secondary/50;
+}
+
+.crumbs li {
+  @apply inline-flex items-center gap-2;
+}
+
+.crumbs li + li::before {
+  content: '/';
+  @apply text-secondary/25;
+}
+
+.crumbs a {
+  @apply transition-colors hover:text-secondary;
+}
+
+.crumbs [aria-current='page'] {
+  @apply text-secondary/80;
+}
+
+.answer-card strong {
+  @apply font-semibold text-secondary;
+}
+
+.chip-link {
+  @apply inline-flex items-center gap-2 rounded-full border border-stroke-2 bg-white px-3.5 py-2 text-tagline-3 font-medium text-secondary/75 shadow-1 transition duration-300;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.chip-link:hover {
+  @apply -translate-y-0.5 border-primary-500/40 text-secondary;
+}
+
+.chip-link__arrow {
+  @apply -ml-0.5 opacity-0 transition-all duration-300;
+}
+
+.chip-link:hover .chip-link__arrow {
+  @apply ml-0 opacity-70;
+}
+
+.chip-link--accent {
+  @apply border-primary-500/35 bg-primary-50 text-primary-700;
+}
+
+.data-table-wrap {
+  @apply overflow-x-auto rounded-2xl border border-stroke-2 bg-white shadow-1;
+}
+
+.data-table {
+  @apply w-full min-w-[640px] border-collapse text-left text-tagline-2;
+}
+
+.data-table th,
+.data-table td {
+  @apply border-b border-stroke-2 px-5 py-4 align-top;
+}
+
+.data-table thead th {
+  @apply bg-background-1 text-tagline-3 font-semibold tracking-[0.1em] text-secondary/55 uppercase;
+}
+
+.data-table thead th:nth-child(2) {
+  @apply text-primary-700;
+}
+
+.data-table tbody th {
+  @apply font-medium text-secondary;
+}
+
+.data-table td {
+  @apply text-secondary/70;
+}
+
+.data-table tbody td:nth-child(2) {
+  @apply bg-primary-50/60 font-medium text-secondary;
+}
+
+.data-table tbody tr:last-child th,
+.data-table tbody tr:last-child td {
+  @apply border-b-0;
+}
+
+.data-table a {
+  @apply text-primary-700 underline decoration-primary-500/40 underline-offset-4 hover:text-primary-800;
+}
+
+/* Long-form article typography */
+.prose-ink {
+  @apply text-tagline-1 text-secondary/75;
+}
+
+.prose-ink > * + * {
+  @apply mt-5;
+}
+
+.prose-ink h2 {
+  @apply mt-14 scroll-mt-28 text-heading-6 font-semibold tracking-tight text-secondary sm:text-heading-5;
+}
+
+.prose-ink h3 {
+  @apply mt-10 scroll-mt-28 text-tagline-1 font-semibold text-secondary sm:text-heading-6;
+}
+
+.prose-ink p {
+  @apply text-tagline-1 leading-[1.75] text-secondary/75;
+}
+
+.prose-ink a {
+  @apply font-medium text-primary-700 underline decoration-primary-500/40 underline-offset-4 transition-colors hover:text-primary-800;
+}
+
+.prose-ink strong {
+  @apply font-semibold text-secondary;
+}
+
+.prose-ink code {
+  @apply rounded bg-background-1 px-1.5 py-0.5 text-tagline-2 text-secondary;
+}
+
+.prose-ink ul,
+.prose-ink ol {
+  @apply space-y-2.5 pl-6;
+}
+
+.prose-ink ul {
+  @apply list-disc marker:text-primary-500;
+}
+
+.prose-ink ol {
+  @apply list-decimal marker:font-semibold marker:text-primary-600;
+}
+
+.prose-ink li {
+  @apply pl-1.5 leading-[1.7];
+}
+
+.prose-ink blockquote {
+  @apply rounded-r-xl border-l-2 border-coral-400 bg-coral-50 py-4 pr-5 pl-5 text-secondary/80;
+}
+
+.prose-ink .data-table-wrap {
+  @apply my-8;
+}
+
+.prose-ink hr {
+  @apply my-12 border-stroke-2;
+}
+
+.callout {
+  @apply rounded-2xl border p-5 md:p-6;
+  border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 25%, transparent);
+  background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 7%, white);
+}
+
+.callout-title {
+  @apply mb-2 text-tagline-3 font-semibold tracking-[0.14em] uppercase;
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 70%, #0c1220);
+}
+
+.stat-tile {
+  @apply rounded-2xl border border-stroke-2 bg-white p-5 shadow-1 transition duration-400;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+.stat-tile:hover {
+  @apply border-stroke-1;
+  box-shadow: var(--shadow-2);
+}
+
+.stat-tile__value {
+  font-variant-numeric: tabular-nums;
+  @apply text-heading-5 leading-none font-semibold tracking-tight;
+}
+
+.stat-tile__label {
+  @apply mt-3 text-tagline-2 text-secondary/75;
+}
+
+.stat-tile__source,
+.prose-ink .stat-tile__source {
+  @apply mt-3 block text-tagline-3 font-normal text-secondary/45 no-underline transition-colors hover:text-primary-700;
+}
+
+.toc-link {
+  @apply block border-l border-stroke-1 py-1.5 pl-4 text-tagline-3 text-secondary/55 transition-colors hover:border-primary-500/60 hover:text-secondary;
+}
+
+.toc-link.is-active {
+  @apply border-primary-500 font-medium text-secondary;
+}
+
+/* Multi-column mega menus */
+.mega-col-title {
+  @apply mb-2 flex items-center gap-2 px-2 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase;
+}
+
+.mega-mini-link {
+  @apply block rounded-lg px-2 py-1.5 text-tagline-3 text-secondary/70 transition-colors duration-200;
+}
+
+.mega-mini-link:hover {
+  @apply bg-background-1 text-primary-700;
+}
+
+.mobile-group > summary {
+  @apply flex cursor-pointer list-none items-center justify-between border-b border-stroke-2 py-3.5 text-tagline-1 font-medium text-secondary;
+}
+
+.mobile-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-group[open] > summary svg {
+  @apply rotate-180;
+}
+
+.mobile-group__title {
+  @apply pt-3 pb-1 pl-3 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/40 uppercase;
+}
+
+/* Tool widgets (calculator, checklist) */
+.range-input {
+  @apply h-1.5 w-full cursor-pointer appearance-none rounded-full bg-secondary/10;
+  accent-color: var(--color-primary-500);
+}
+
+.range-input::-webkit-slider-thumb {
+  @apply size-5 appearance-none rounded-full border-2 border-white bg-primary-500;
+  box-shadow: 0 0 0 4px rgba(15, 159, 147, 0.2);
+}
+
+.range-input::-moz-range-thumb {
+  @apply size-5 rounded-full border-2 border-white bg-primary-500;
+}
+
+.check-row {
+  @apply flex cursor-pointer items-start gap-3 rounded-xl border border-transparent px-3 py-3 transition-colors duration-200 hover:border-stroke-2 hover:bg-background-1;
+}
+
+.check-row input {
+  @apply mt-0.5 size-5 shrink-0 cursor-pointer rounded accent-primary-500;
+}
+
+.check-row input:checked + span {
+  @apply text-secondary/40 line-through decoration-secondary/30;
+}
+
+.progress-track {
+  @apply h-2 w-full overflow-hidden rounded-full bg-secondary/10;
+}
+
+.progress-bar {
+  @apply h-full rounded-full transition-[width] duration-500;
+  background: linear-gradient(to right, var(--color-primary-500), var(--color-coral-400));
+}
+
+/* Team / founder portraits */
+.portrait {
+  @apply relative overflow-hidden rounded-3xl border border-stroke-2 bg-background-1;
+  box-shadow: 0 30px 70px -30px rgba(12, 18, 32, 0.35);
+}
+
+.portrait img {
+  @apply h-full w-full object-cover;
+}
+
+/* Calendly embed frame */
+.calendly-frame {
+  @apply overflow-hidden rounded-2xl border border-stroke-2 bg-white;
+  box-shadow: var(--shadow-3);
+}
+
+/* ---------------------------------------------------------
+   17. ANIMATIONS
+   --------------------------------------------------------- */
+
+@keyframes marquee-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes dot-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes typing-bounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+@keyframes wave-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  33% {
+    transform: translate3d(18px, -22px, 0);
+  }
+  66% {
+    transform: translate3d(-14px, 12px, 0);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-drift {
+  animation: drift 22s ease-in-out infinite;
+}
+
+.animate-drift-slow {
+  animation: drift 30s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 26s linear infinite;
+}
+
+/* Respect reduced-motion for every decorative loop */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track,
+  .typing span,
+  .wave i,
+  .animate-drift,
+  .animate-drift-slow,
+  .animate-spin-slow,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-pulse-glow,
+  .pulse-dot::after,
+  .mesh-gradient,
+  .hero-word {
+    animation: none !important;
+  }
+
+  .hero-word {
+    opacity: 0;
+  }
+
+  .hero-word:first-child {
+    opacity: 1;
+  }
+}

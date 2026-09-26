@@ -4,8 +4,9 @@
   "version": "2.1.2",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build && node post-build.js",
+    "pages": "node scripts/build-pages.js",
+    "dev": "node scripts/build-pages.js && vite --host 0.0.0.0",
+    "build": "node scripts/build-pages.js && node generate-sitemap.js && vite build && node post-build.js",
     "build:clean": "vite build && node post-build.js",
     "sitemap": "node generate-sitemap.js",
     "preview": "vite preview --host 0.0.0.0",

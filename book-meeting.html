@@ -2,27 +2,20 @@
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Book a Free 30-Min AI Strategy Call - Voxil AI</title>
+    <title>Book a Free AI Strategy Call | Voxil AI</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="overflow-x-hidden bg-white">
     <Component src="src/components/shared/header.htm" />
-    
     <main>
-      <Component src="src/components/pages/book-meeting/book-meeting.htm" />
-      
       <Component
-        src="src/components/shared/cta.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build custom AI workflows and agents"
-        description="Let's streamline your operations, cut costs, and scale your business using our custom AI integrations."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
+        src="src/components/shared/page-hero.htm"
+        accent="#ff6b35"
+        eyebrow="Free 30-minute call"
+        title="Book your free <span class='text-gradient-warm'>AI strategy call</span>"
+        lead="Pick a time that suits you. We'll map the agents, automations and integrations worth building first, and tell you honestly what isn't."
       />
+      <Component src="src/components/pages/book-meeting/content.htm" />
     </main>
-
     <Component src="src/components/shared/footer.htm" />
   </body>
 </html>

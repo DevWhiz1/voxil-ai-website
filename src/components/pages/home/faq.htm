@@ -1,0 +1,151 @@
+<!-- =========================
+Home, FAQ accordion (src/js/common/accordion.js)
+===========================-->
+<section class="section-soft section-pad section-seam">
+  <span class="orb bottom-0 -left-24 size-[380px]" style="--orb: #0f9f93; --orb-opacity: 0.18" aria-hidden="true"></span>
+
+  <div class="main-container relative z-10">
+    <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+      <div class="lg:sticky lg:top-28 lg:self-start">
+        <p data-reveal class="eyebrow-chip mb-5">
+          <span class="pulse-dot" style="--dot: #2fc4b6"></span>
+          Questions
+        </p>
+        <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">
+          The things people
+          <span class="text-gradient-teal">ask first</span>
+        </h2>
+        <p data-reveal class="text-tagline-2 mt-4 text-secondary/55">
+          Still unsure? Ask us directly, we answer honestly, including when the answer
+          is "you don't need this yet."
+        </p>
+        <a data-reveal href="/faq.html" class="link-arrow mt-5 text-primary-600 hover:text-primary-700">
+          Full FAQ
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+      <div data-accordion class="space-y-3">
+        <div class="faq-item is-open">
+          <button type="button" class="faq-trigger" aria-expanded="true">
+            <span>How much does a build cost?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              Most single-channel builds, one chatbot or one voice agent, properly
+              integrated, land between a few thousand and the low five figures.
+              Full SaaS products are scoped separately. You get a fixed price before
+              any work starts, so there's no hourly meter running.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span>What if the AI says something wrong to a customer?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              This is the right question to ask. We constrain agents to your approved
+              source material, define exactly which actions they may take unsupervised,
+              and make "I'll get a human" the default when confidence is low. Every
+              conversation is logged so you can audit what was said. The first weeks
+              run as a supervised pilot for precisely this reason.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span>Do we have to change our CRM or phone system?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              No. We build around your stack, not the other way round. We work with
+              HubSpot, Salesforce, GoHighLevel, Zendesk, Intercom, Twilio, Google
+              Calendar, Stripe, Shopify and most tools with an API. Where there's no
+              API, we build the bridge.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span>Who owns the code and the prompts?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              You do, repository, prompts, configuration and documentation. We don't
+              hold your system hostage in a platform you can only rent. If you want to
+              take it in-house or hand it to another team later, you can.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span>How long until it's actually live?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              Two to six weeks for most agent builds, depending on how many integrations
+              are involved and how quickly we can get access to your systems and content.
+              SaaS products typically run six to twelve weeks to first production release.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span>What happens after launch?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              Thirty days of tuning are included, real conversations always surface
+              edge cases the scope didn't. After that you can take it fully in-house,
+              or keep us on a monthly retainer for monitoring, tuning and new workflows.
+              There's no lock-in either way.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <span>Is our customer data safe?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5"><path d="M10 3.5a.75.75 0 0 1 .75.75v5h5a.75.75 0 0 1 0 1.5h-5v5a.75.75 0 0 1-1.5 0v-5h-5a.75.75 0 0 1 0-1.5h5v-5A.75.75 0 0 1 10 3.5Z"/></svg>
+            </span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              We scope data handling explicitly at the start: what's stored, where it
+              lives, how long it's retained, and which providers process it. For
+              regulated work, health or financial data, we'll tell you upfront what
+              the architecture needs to look like and what we can and can't commit to.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
