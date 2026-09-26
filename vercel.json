@@ -245,6 +245,51 @@
       "source": "/signup.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/contact-us-page.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-us.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/book-a-call.html",
+      "destination": "/book-meeting.html",
+      "permanent": true
+    },
+    {
+      "source": "/book-meeting",
+      "destination": "/book-meeting.html",
+      "permanent": true
     }
   ],
   "headers": [
