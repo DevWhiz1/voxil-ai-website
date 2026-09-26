@@ -80,6 +80,171 @@
       "source": "/case-study-details.html",
       "destination": "/case-studies/",
       "permanent": true
+    },
+    {
+      "source": "/pricing.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/process.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/why-choose-us.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/our-manifesto.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/team.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/team-details.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/career.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/career-details.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/customers.html",
+      "destination": "/case-studies/",
+      "permanent": true
+    },
+    {
+      "source": "/customer-details.html",
+      "destination": "/case-studies/",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories.html",
+      "destination": "/case-studies/",
+      "permanent": true
+    },
+    {
+      "source": "/use-case.html",
+      "destination": "/industries/",
+      "permanent": true
+    },
+    {
+      "source": "/brandkit.html",
+      "destination": "/resources/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/press.html",
+      "destination": "/resources/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/documentation.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/tutorial.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/glossary.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/whitepaper.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/whitepaper-details.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/affiliates.html",
+      "destination": "/for-agencies/",
+      "permanent": true
+    },
+    {
+      "source": "/referral-program.html",
+      "destination": "/for-agencies/",
+      "permanent": true
+    },
+    {
+      "source": "/affiliate-policy.html",
+      "destination": "/for-agencies/",
+      "permanent": true
+    },
+    {
+      "source": "/gdpr.html",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/security.html",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/legal.html",
+      "destination": "/terms-conditions.html",
+      "permanent": true
+    },
+    {
+      "source": "/refund-policy.html",
+      "destination": "/terms-conditions.html",
+      "permanent": true
+    },
+    {
+      "source": "/support.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/integration-circle.html",
+      "destination": "/services/api-integration/",
+      "permanent": true
+    },
+    {
+      "source": "/analytics.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/download.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/changelog.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/login.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/signup.html",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
