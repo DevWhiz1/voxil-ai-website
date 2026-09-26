@@ -10,7 +10,7 @@ import { seoData } from './src/seo-data.js';
 
 // Every .html file is a Vite entry: the hand-written pages at the root plus the
 // generated sections (services/, locations/, …) written by scripts/build-pages.js.
-const PAGE_DIRS = ['', 'services', 'locations', 'industries', 'blog', 'resources', 'for-agencies'];
+const PAGE_DIRS = ['', 'services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies'];
 
 const collectHtml = (dir, out) => {
   const abs = path.resolve(__dirname, dir);
@@ -120,7 +120,7 @@ const vendorMinifier = () => {
 };
 
 
-const SITE_URL = 'https://voxilai.tech';
+const SITE_URL = 'https://www.voxilai.tech';
 
 const escapeAttr = (value) => String(value).replace(/"/g, '&quot;');
 

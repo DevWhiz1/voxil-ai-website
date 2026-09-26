@@ -24,7 +24,7 @@ export default {
 
 <h2>How many small businesses use AI?</h2>
 ${statGrid(['uscc-40', 'sf-smb-75'])}
-<p>Most of that use is individual productivity: writing, summarising, research, social posts. Fewer small businesses have yet connected AI to customer-facing workflows, answering calls, qualifying leads, booking appointments, which is where the measurable revenue impact tends to be.</p>
+<p>Most of that use is individual productivity: writing, summarizing, research, social posts. Fewer small businesses have yet connected AI to customer-facing workflows, answering calls, qualifying leads, booking appointments, which is where the measurable revenue impact tends to be.</p>
 
 <h2>Time savings and productivity</h2>
 ${statGrid(['stlfed-5-4', 'automation-60-70', 'sf-28'], '#38bdf8')}

@@ -4,18 +4,18 @@ export default {
   slug: 'ai-customer-service-statistics',
   title: 'AI in Customer Service Statistics 2026: Automation, Agents & Customer Sentiment',
   metaTitle: 'AI in Customer Service Statistics 2026 | Voxil AI',
-  description: 'AI customer service statistics for 2026: Gartner forecasts, contact-centre productivity research, real deployment results and customer sentiment. Sourced and explained.',
+  description: 'AI customer service statistics for 2026: Gartner forecasts, contact-center productivity research, real deployment results and customer sentiment. Sourced and explained.',
   category: 'Statistics',
   date: '2026-04-08',
   updated: '2026-09-26',
   keywords: ['AI customer service statistics', 'AI in customer service', 'contact center AI statistics', 'customer service automation'],
-  excerpt: 'Analyst forecasts, contact-centre research, headline deployments and the customer-sentiment data that should shape how you design AI support.',
+  excerpt: 'Analyst forecasts, contact-center research, headline deployments and the customer-sentiment data that should shape how you design AI support.',
   takeaways: [
     'Gartner predicts agentic AI will resolve 80% of common service issues autonomously by 2029, with 30% lower operating costs.',
-    'Gartner forecast $80B in contact-centre labour savings from conversational AI in 2026.',
+    'Gartner forecast $80B in contact-center labor savings from conversational AI in 2026.',
     'AI assistance boosted support-agent productivity 14% on average, 34% for novices (NBER).',
     '64% of customers said they’d prefer companies didn’t use AI for service, trust is earned by resolution and easy escalation.',
-    'Successful programmes start narrow, integrate with real systems and keep humans in the loop.',
+    'Successful programs start narrow, integrate with real systems and keep humans in the loop.',
   ],
   services: ['ai-customer-support', 'ai-chatbots', 'ai-voice-agents', 'whatsapp-automation'],
   related: ['ai-chatbot-statistics', 'ai-voice-agent-statistics', 'ai-agents-vs-chatbots'],
@@ -24,7 +24,7 @@ export default {
 
 <h2>Analyst forecasts</h2>
 ${statGrid(['gartner-80-2029', 'gartner-80b', 'gartner-25-chatbots'])}
-<p>These are predictions, not measurements. But they indicate where vendors and large service organisations are investing, and therefore what customers will increasingly experience elsewhere.</p>
+<p>These are predictions, not measurements. But they indicate where vendors and large service organizations are investing, and therefore what customers will increasingly experience elsewhere.</p>
 
 <h2>Evidence from real deployments</h2>
 ${statGrid(['nber-14', 'klarna-2-3'], '#38bdf8')}
@@ -41,7 +41,7 @@ ${statGrid(['gartner-40-cancel', 'mit-95'], '#6adfd3')}
 
 <h2>A practical rollout plan</h2>
 <ol>
-  <li><strong>Analyse tickets</strong> to find the top five request types by volume.</li>
+  <li><strong>Analyze tickets</strong> to find the top five request types by volume.</li>
   <li><strong>Check resolvability</strong>: which of those can be fully resolved with data access (order status, booking changes, account questions)?</li>
   <li><strong>Run in shadow mode</strong>: AI drafts, humans approve, for one to two weeks.</li>
   <li><strong>Go live on one channel</strong>, usually chat or WhatsApp, then add voice.</li>

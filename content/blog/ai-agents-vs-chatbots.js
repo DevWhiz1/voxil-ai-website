@@ -14,7 +14,7 @@ export default {
     'A chatbot converses and answers questions; an AI agent pursues a goal by taking actions with tools.',
     'Most useful business systems today are "agentic chatbots", conversational, with a few well-scoped actions.',
     'Gartner predicts 33% of enterprise software will include agentic AI by 2028, up from under 1% in 2024.',
-    'Gartner also expects over 40% of agentic AI projects to be cancelled by 2027, scope and controls matter.',
+    'Gartner also expects over 40% of agentic AI projects to be canceled by 2027, scope and controls matter.',
     'Start narrow: one goal, a few tools, clear permissions and human escalation.',
   ],
   services: ['ai-chatbots', 'ai-chatbot-developer', 'n8n-automation', 'ai-automation-consultant'],

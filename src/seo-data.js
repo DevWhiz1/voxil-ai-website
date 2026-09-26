@@ -18,27 +18,6 @@ export const seoData = {
     title: 'Book a Free 30-Minute AI Strategy Call | Voxil AI',
     description: 'Schedule a free 30-minute call to map AI agents and automation opportunities for your business.',
   },
-  'case-study': {
-    title: 'AI Success Stories & Case Studies | Voxil AI',
-    description:
-      'See how Voxil AI designs and deploys custom AI agents and workflow automation to drive measurable growth.',
-  },
-  'case-study-healthcare': {
-    title: 'Healthcare AI Case Study | Voxil AI',
-    description: 'Patient intake automation with chat and voice agents for multi-location clinics.',
-  },
-  'case-study-ecommerce': {
-    title: 'Ecommerce AI Case Study | Voxil AI',
-    description: 'Support deflection and order assistance chatbot for a growing DTC brand.',
-  },
-  'case-study-finance': {
-    title: 'Finance AI Case Study | Voxil AI',
-    description: 'Automated lead qualification and CRM routing for a lending team.',
-  },
-  'case-study-real-estate': {
-    title: 'Real Estate AI Case Study | Voxil AI',
-    description: '24/7 listing inquiry agent that books showings into the CRM.',
-  },
   testimonial: {
     title: 'Client Testimonials | Voxil AI',
     description: 'Feedback from founders and operators who shipped AI systems with Voxil AI.',

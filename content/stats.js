@@ -44,9 +44,9 @@ const SRC = {
 
 export const STATS = {
   // --- Adoption -----------------------------------------------------------
-  'adoption-78': { value: '78%', label: 'of organisations use AI in at least one business function, up from 55% a year earlier.', src: SRC.mckinsey2025, cat: 'adoption' },
-  'genai-71': { value: '71%', label: 'of organisations say they regularly use generative AI in at least one business function.', src: SRC.mckinsey2025, cat: 'adoption' },
-  'genai-65-2024': { value: '65%', label: 'of organisations were regularly using gen AI in early 2024, nearly double the share ten months earlier.', src: SRC.mckinsey2024, cat: 'adoption' },
+  'adoption-78': { value: '78%', label: 'of organizations use AI in at least one business function, up from 55% a year earlier.', src: SRC.mckinsey2025, cat: 'adoption' },
+  'genai-71': { value: '71%', label: 'of organizations say they regularly use generative AI in at least one business function.', src: SRC.mckinsey2025, cat: 'adoption' },
+  'genai-65-2024': { value: '65%', label: 'of organizations were regularly using gen AI in early 2024, nearly double the share ten months earlier.', src: SRC.mckinsey2024, cat: 'adoption' },
   'ibm-42': { value: '42%', label: 'of enterprise-scale companies reported having actively deployed AI; another 40% were exploring or experimenting.', src: SRC.ibm2023, cat: 'adoption' },
   'wti-75': { value: '75%', label: 'of knowledge workers say they use generative AI at work.', src: SRC.msWti2024, cat: 'adoption' },
   'wti-byoai': { value: '78%', label: 'of AI users at work bring their own AI tools rather than company-provided ones.', src: SRC.msWti2024, cat: 'adoption' },
@@ -56,7 +56,7 @@ export const STATS = {
   // --- Investment & economics --------------------------------------------
   'us-invest-109': { value: '$109.1B', label: 'U.S. private investment in AI in 2024, far ahead of any other country.', src: SRC.stanford2025, cat: 'economy' },
   'genai-invest-33': { value: '$33.9B', label: 'global private investment in generative AI in 2024.', src: SRC.stanford2025, cat: 'economy' },
-  'genai-value-4t': { value: '$2.6-4.4T', label: 'in annual value generative AI could add to the global economy across the use cases analysed.', src: SRC.mckinseyGenAI, cat: 'economy' },
+  'genai-value-4t': { value: '$2.6-4.4T', label: 'in annual value generative AI could add to the global economy across the use cases analyzed.', src: SRC.mckinseyGenAI, cat: 'economy' },
   'automation-60-70': { value: '60-70%', label: 'of employees’ time is spent on activities that current gen AI and other technologies could potentially automate.', src: SRC.mckinseyGenAI, cat: 'economy' },
   'pwc-15t': { value: '$15.7T', label: 'potential contribution of AI to the global economy by 2030.', src: SRC.pwc, cat: 'economy' },
   'gs-gdp-7': { value: '7%', label: 'potential lift to global GDP from generative AI over a ten-year period.', src: SRC.goldman2023, cat: 'economy' },
@@ -68,8 +68,8 @@ export const STATS = {
 
   // --- Customer service ---------------------------------------------------
   'gartner-80-2029': { value: '80%', label: 'of common customer-service issues will be resolved autonomously by agentic AI by 2029, Gartner predicts, cutting operational costs by 30%.', src: SRC.gartnerCs2025, cat: 'service' },
-  'gartner-80b': { value: '$80B', label: 'reduction in contact-centre agent labour costs from conversational AI in 2026, forecast by Gartner.', src: SRC.gartnerCs2022, cat: 'service' },
-  'gartner-25-chatbots': { value: '25%', label: 'of organisations will use chatbots as their primary customer-service channel by 2027, Gartner predicted.', src: SRC.gartnerCs2022, cat: 'service' },
+  'gartner-80b': { value: '$80B', label: 'reduction in contact-center agent labor costs from conversational AI in 2026, forecast by Gartner.', src: SRC.gartnerCs2022, cat: 'service' },
+  'gartner-25-chatbots': { value: '25%', label: 'of organizations will use chatbots as their primary customer-service channel by 2027, Gartner predicted.', src: SRC.gartnerCs2022, cat: 'service' },
   'gartner-64-prefer': { value: '64%', label: 'of customers said they would prefer companies didn’t use AI for customer service, a reminder that design and escalation matter.', src: SRC.gartnerCs2024, cat: 'service' },
   'nber-14': { value: '14%', label: 'average productivity gain for customer-support agents given an AI assistant, and 34% for novice and lower-skilled agents.', src: SRC.nber2023, cat: 'service' },
   'klarna-2-3': { value: '2/3', label: 'of Klarna’s customer-service chats were handled by its AI assistant in its first month, 2.3 million conversations.', src: SRC.klarna2024, cat: 'service' },
@@ -77,8 +77,8 @@ export const STATS = {
   // --- Agents -------------------------------------------------------------
   'gartner-33-agentic': { value: '33%', label: 'of enterprise software applications will include agentic AI by 2028, up from less than 1% in 2024, Gartner predicts.', src: SRC.gartnerAgentic2024, cat: 'agents' },
   'gartner-15-decisions': { value: '15%', label: 'of day-to-day work decisions will be made autonomously through agentic AI by 2028, Gartner predicts.', src: SRC.gartnerAgentic2024, cat: 'agents' },
-  'gartner-40-cancel': { value: '40%+', label: 'of agentic AI projects will be cancelled by the end of 2027 due to cost, unclear value or weak risk controls, Gartner predicts.', src: SRC.gartnerAgentic2025, cat: 'agents' },
-  'mit-95': { value: '95%', label: 'of organisations studied reported no measurable P&L return from their generative-AI pilots, most value came from focused, integrated deployments.', src: SRC.mit2025, cat: 'agents' },
+  'gartner-40-cancel': { value: '40%+', label: 'of agentic AI projects will be canceled by the end of 2027 due to cost, unclear value or weak risk controls, Gartner predicts.', src: SRC.gartnerAgentic2025, cat: 'agents' },
+  'mit-95': { value: '95%', label: 'of organizations studied reported no measurable P&L return from their generative-AI pilots, most value came from focused, integrated deployments.', src: SRC.mit2025, cat: 'agents' },
   'conv-ai-market': { value: '$49.9B', label: 'projected conversational AI market by 2030, up from about $13.2B in 2024 (one analyst estimate).', src: SRC.mnmConvAI, cat: 'agents' },
 
   // --- Sales & leads ------------------------------------------------------

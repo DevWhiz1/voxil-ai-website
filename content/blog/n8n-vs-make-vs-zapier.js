@@ -49,18 +49,18 @@ ${table(
 <p>Make’s visual canvas handles branching, iteration, aggregation and data transformation elegantly, and its pricing is often more economical for complex, multi-step workflows. Scenario design matters: inefficient designs burn operations. We use Make for most mid-complexity business automations, see ${link('/services/make-automation/', 'Make.com automation')}.</p>
 
 <h2>n8n: control, code and AI agents</h2>
-<p>n8n is a fair-code platform you can self-host or use in the cloud. It combines a visual builder with real code nodes and has become a favourite for building AI agents with tools and memory. Self-hosted, there’s no per-task pricing, you pay for infrastructure and maintenance instead, and data stays on servers you control. We use n8n for high-volume workflows, sensitive data and agentic AI, see ${link('/services/n8n-automation/', 'n8n automation')}.</p>
+<p>n8n is a fair-code platform you can self-host or use in the cloud. It combines a visual builder with real code nodes and has become a favorite for building AI agents with tools and memory. Self-hosted, there’s no per-task pricing, you pay for infrastructure and maintenance instead, and data stays on servers you control. We use n8n for high-volume workflows, sensitive data and agentic AI, see ${link('/services/n8n-automation/', 'n8n automation')}.</p>
 
 <h2>Cost at scale: an example</h2>
 <p>Imagine a workflow that runs 20,000 times a month with 8 steps each. On a per-task or per-operation model, that’s on the order of 160,000 billable actions a month, enough to push you into higher tiers on Zapier and, depending on design, Make. On self-hosted n8n, the same volume runs on a modest server. For low-volume automations, the difference is negligible and ease of use wins.</p>
 
 <h2>How we choose per workflow</h2>
 <ol>
-  <li><strong>Volume:</strong> thousands of runs per day favours n8n or an efficient Make design.</li>
-  <li><strong>Complexity:</strong> branching and data transformation favour Make or n8n.</li>
-  <li><strong>Data sensitivity:</strong> regulated or confidential data favours self-hosted n8n.</li>
-  <li><strong>Who maintains it:</strong> non-technical owners favour Zapier or Make.</li>
-  <li><strong>AI agents:</strong> tool-using agents with memory favour n8n.</li>
+  <li><strong>Volume:</strong> thousands of runs per day favors n8n or an efficient Make design.</li>
+  <li><strong>Complexity:</strong> branching and data transformation favor Make or n8n.</li>
+  <li><strong>Data sensitivity:</strong> regulated or confidential data favors self-hosted n8n.</li>
+  <li><strong>Who maintains it:</strong> non-technical owners favor Zapier or Make.</li>
+  <li><strong>AI agents:</strong> tool-using agents with memory favor n8n.</li>
 </ol>
 
 <h2>Migrating between platforms</h2>
@@ -69,7 +69,7 @@ ${table(
   faqs: [
     { q: 'Is n8n better than Zapier?', a: 'For technical teams, high volume, AI agents or self-hosting, n8n is often better. For simple automations and non-technical users, Zapier is faster and easier.' },
     { q: 'Is Make cheaper than Zapier?', a: 'For many multi-step workflows, Make’s per-operation pricing works out cheaper than Zapier’s per-task pricing, but it depends on your volume and scenario design. Compare on your real usage.' },
-    { q: 'Can n8n be self-hosted for free?', a: 'n8n offers a self-hostable Community Edition under its fair-code licence. You still pay for hosting and maintenance, and some features are limited to paid plans.' },
+    { q: 'Can n8n be self-hosted for free?', a: 'n8n offers a self-hostable Community Edition under its fair-code license. You still pay for hosting and maintenance, and some features are limited to paid plans.' },
     { q: 'Which is best for AI agents?', a: 'All three now support AI steps. n8n currently offers the most flexible native agent building, with tools, memory and vector-store integrations.' },
   ],
 };

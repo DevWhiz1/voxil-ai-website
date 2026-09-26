@@ -29,7 +29,7 @@ ${table(
   [
     ['Conversation AI', 'Replies to SMS, web chat, Facebook, Instagram and WhatsApp messages', 'Instant lead response and booking by text'],
     ['Voice AI', 'Answers inbound calls with an AI agent', 'After-hours and overflow call answering'],
-    ['AI in workflows', 'AI steps that classify, extract, summarise or draft inside automations', 'Routing and personalisation'],
+    ['AI in workflows', 'AI steps that classify, extract, summarize or draft inside automations', 'Routing and personalization'],
     ['Content AI', 'Generates emails, posts and page copy', 'Marketing production'],
     ['Reviews AI', 'Suggests or automates review responses', 'Reputation management'],
   ],

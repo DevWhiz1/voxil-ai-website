@@ -35,7 +35,7 @@ ${statGrid(['hbr-7x', 'hbr-60x', 'lrm-100x', 'velocify-391'])}
 <p>You don’t need industry averages, you need four numbers from your own business:</p>
 <ol>
   <li><strong>Missed calls per month</strong> (from your phone system).</li>
-  <li><strong>Opportunity rate</strong>, share of those that were genuine new-business enquiries (not spam or existing customers).</li>
+  <li><strong>Opportunity rate</strong>, share of those that were genuine new-business inquiries (not spam or existing customers).</li>
   <li><strong>Close rate</strong>, share of answered opportunities that become customers.</li>
   <li><strong>Average job or customer value.</strong></li>
 </ol>

@@ -84,7 +84,7 @@ export default {
     whatIs: {
       title: 'An hour of planning saves a month of rebuilding',
       paras: [
-        'Most GHL problems are design problems: one pipeline doing the job of three, custom fields created ad hoc, snapshots that break on import, SaaS plans priced without cost modelling.',
+        'Most GHL problems are design problems: one pipeline doing the job of three, custom fields created ad hoc, snapshots that break on import, SaaS plans priced without cost modeling.',
         'Consulting sessions give you a blueprint, structure, naming, workflows, integrations, AI, pricing, that your team or ours can build from with confidence.',
       ],
     },
@@ -121,7 +121,7 @@ export default {
     faqs: [
       { q: 'Consultant or expert, what’s the difference?', a: `A consultant focuses on strategy and design; an expert focuses on building. We do both, use consulting for planning, then build yourself or hire us as your ${link('/services/ghl-expert/', 'GHL expert')}.` },
       { q: 'Do you help with GoHighLevel SaaS pricing?', a: 'Yes. We model your costs (plan, phone, email, AI usage) and help design plans and rebilling that protect margins.' },
-      { q: 'Can you review our existing account?', a: 'Yes, a consulting engagement often starts with an audit and prioritised recommendations.' },
+      { q: 'Can you review our existing account?', a: 'Yes, a consulting engagement often starts with an audit and prioritized recommendations.' },
       { q: 'Are sessions recorded?', a: 'Yes, and you receive written notes and the blueprint.' },
       { q: 'Do you consult outside GHL?', a: `Yes, see ${link('/services/ai-automation-consultant/', 'AI automation consulting')}.` },
     ],
@@ -218,7 +218,7 @@ export default {
       'Workflow, funnel and calendar changes',
       'Deliverability, A2P and phone troubleshooting',
       'Monthly account health report',
-      'Quarterly optimisation review',
+      'Quarterly optimization review',
     ],
     features: [
       { icon: 'wrench', title: 'Fast fixes', desc: 'Broken workflows, forms and integrations diagnosed and repaired.' },
@@ -243,7 +243,7 @@ export default {
     industries: ['med-spas', 'fitness-gyms', 'home-services', 'real-estate'],
     integrations: GHL_STACK,
     faqs: [
-      { q: 'How fast do you respond?', a: 'Response targets depend on your plan; urgent issues affecting lead flow are prioritised.' },
+      { q: 'How fast do you respond?', a: 'Response targets depend on your plan; urgent issues affecting lead flow are prioritized.' },
       { q: 'What if I need more hours one month?', a: 'Additional work can be quoted as a fixed project or added hours.' },
       { q: 'Can you support an account someone else built?', a: 'Yes. Onboarding includes an audit and documentation so we understand what exists.' },
       { q: 'Do you support agencies’ client accounts?', a: 'Yes, white-label, with your agency as the point of contact.' },
@@ -416,7 +416,7 @@ export default {
       'Workflows built for safe import',
       'Funnels, websites and forms',
       'Email and SMS template library',
-      'Custom values for fast personalisation',
+      'Custom values for fast personalization',
       'Install guide and onboarding checklist',
     ],
     features: [
@@ -436,7 +436,7 @@ export default {
     fit: [
       'Agencies serving a specific niche on GoHighLevel',
       'SaaS-mode agencies that need fast onboarding',
-      'Consultants productising their GHL builds',
+      'Consultants productizing their GHL builds',
       'Franchises deploying one system across locations',
     ],
     industries: ['roofing', 'med-spas', 'fitness-gyms', 'chiropractic', 'real-estate', 'hvac'],
@@ -445,7 +445,7 @@ export default {
       { q: 'What is included in a GHL snapshot?', a: 'Snapshots can include pipelines, workflows, funnels, websites, forms, surveys, calendars, templates, custom fields and values, tags and AI settings. They don’t include contacts, conversations or connected integrations.' },
       { q: 'Can I sell the snapshot?', a: 'Yes, custom snapshots we build for you are yours to use and resell.' },
       { q: 'Will workflows fire when the snapshot is loaded?', a: 'Not if built correctly. We design triggers and publishing states to avoid misfires on import.' },
-      { q: 'Can you update my existing snapshot?', a: 'Yes. We audit, fix and modernise existing snapshots.' },
+      { q: 'Can you update my existing snapshot?', a: 'Yes. We audit, fix and modernize existing snapshots.' },
       { q: 'Do you build snapshots for any niche?', a: 'Yes, we’ve built for home services, med spas, gyms, real estate, clinics and more.' },
     ],
     related: ['ghl-white-label-saas', 'ghl-expert', 'gohighlevel-automation', 'ghl-courses-onboarding'],
@@ -458,7 +458,7 @@ export default {
     h1: 'Launch your own SaaS on <span class="text-gradient-sky">GoHighLevel white label</span>',
     lead: 'Your brand, your pricing, your recurring revenue. We set up GoHighLevel SaaS mode end-to-end, branding, plans, rebilling, snapshots and onboarding, so you can sell software, not just services.',
     answer:
-      '<strong>GoHighLevel White Label SaaS</strong> lets agencies resell GoHighLevel as their own branded software. Using SaaS mode (on the Agency Pro plan), agencies set their own plans and prices, automatically provision sub-accounts when customers pay through Stripe, rebill usage like phone and email, and deliver a white-labelled web and mobile app.',
+      '<strong>GoHighLevel White Label SaaS</strong> lets agencies resell GoHighLevel as their own branded software. Using SaaS mode (on the Agency Pro plan), agencies set their own plans and prices, automatically provision sub-accounts when customers pay through Stripe, rebill usage like phone and email, and deliver a white-labeled web and mobile app.',
     facts: [
       { label: 'Plan needed', value: 'Agency Pro' },
       { label: 'Setup', value: '2-4 weeks' },
@@ -470,7 +470,7 @@ export default {
       title: 'From agency retainers to recurring software revenue',
       paras: [
         'Service retainers scale with headcount. Software scales with customers. GoHighLevel’s SaaS mode lets agencies package the platform, plus their own snapshots and expertise, into subscription plans under their own brand.',
-        'We handle the parts that decide whether a SaaS launch succeeds: plan design and margin modelling, white-label setup, Stripe configuration, niche snapshots, self-serve signup and automated onboarding that reduces churn in the first 30 days.',
+        'We handle the parts that decide whether a SaaS launch succeeds: plan design and margin modeling, white-label setup, Stripe configuration, niche snapshots, self-serve signup and automated onboarding that reduces churn in the first 30 days.',
       ],
     },
     included: [
@@ -482,8 +482,8 @@ export default {
       'Onboarding and support automations',
     ],
     features: [
-      { icon: 'tag', title: 'White-label branding', desc: 'Your domain, logo, colours and (optionally) branded mobile app.' },
-      { icon: 'currency', title: 'Pricing & rebilling', desc: 'Plans designed with cost modelling; phone, email and AI usage rebilled.' },
+      { icon: 'tag', title: 'White-label branding', desc: 'Your domain, logo, colors and (optionally) branded mobile app.' },
+      { icon: 'currency', title: 'Pricing & rebilling', desc: 'Plans designed with cost modeling; phone, email and AI usage rebilled.' },
       { icon: 'rocket', title: 'Automated provisioning', desc: 'New subscribers get an account with the right snapshot instantly.' },
       { icon: 'funnel', title: 'Signup funnel', desc: 'Sales page, checkout and trial flow for self-serve growth.' },
       { icon: 'academic', title: 'Onboarding', desc: 'Emails, tasks and training that get new users to value fast.' },
@@ -496,7 +496,7 @@ export default {
       { title: 'Launch', desc: 'Test purchases end-to-end, then go live.' },
     ],
     fit: [
-      'Agencies ready to productise their niche expertise',
+      'Agencies ready to productize their niche expertise',
       'Consultants who want recurring software revenue',
       'Communities and coaches selling tools to members',
       'Existing SaaS-mode agencies with low activation or high churn',
@@ -684,7 +684,7 @@ export default {
     fit: [
       'GoHighLevel users with few or broken workflows',
       'Service businesses losing leads to slow follow-up',
-      'Agencies standardising automation across clients',
+      'Agencies standardizing automation across clients',
       'Teams wanting AI replies inside GHL',
     ],
     industries: ['roofing', 'hvac', 'med-spas', 'chiropractic', 'solar', 'home-services'],

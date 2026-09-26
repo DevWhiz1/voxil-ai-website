@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const SITE_URL = 'https://voxilai.tech';
+const SITE_URL = 'https://www.voxilai.tech';
 
 // Pages deliberately kept out of the sitemap.
 //   404       - error page
@@ -40,7 +40,8 @@ const TIERS = [
     priority: '0.7',
     match: (url) =>
       url.startsWith('/blog/') ||
-      ['/about.html', '/case-study.html', '/case-study-ecommerce.html', '/case-study-finance.html', '/case-study-healthcare.html', '/case-study-real-estate.html', '/testimonial.html', '/faq.html'].includes(url),
+      url.startsWith('/case-studies/') ||
+      ['/about.html', '/testimonial.html', '/faq.html'].includes(url),
   },
   {
     changefreq: 'yearly',
@@ -58,7 +59,7 @@ const tierFor = (url) => {
 };
 
 // Folders written by scripts/build-pages.js; each page is <dir>/index.html.
-const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies'];
+const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies'];
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -108,7 +109,7 @@ GENERATED_DIRS.filter((d) => fs.existsSync(path.join(__dirname, d))).forEach(wal
 // which git tracks; the HTML itself is build output.
 const generatedLastmod = (file) => {
   const section = file.split('/')[0];
-  const sources = ['content/site.js', `scripts/templates/${{ blog: 'blog', resources: 'resources', 'for-agencies': 'agencies' }[section] ?? 'service'}.js`];
+  const sources = ['content/site.js', `scripts/templates/${{ blog: 'blog', resources: 'resources', 'for-agencies': 'agencies', 'case-studies': 'case-studies' }[section] ?? 'service'}.js`];
   if (section === 'blog') {
     const slug = file.split('/')[1];
     if (slug !== 'index.html') sources.push(`content/blog/${slug}.js`);

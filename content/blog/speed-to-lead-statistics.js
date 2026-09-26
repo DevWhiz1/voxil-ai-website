@@ -28,7 +28,7 @@ ${statGrid(['hbr-7x', 'hbr-60x', 'hbr-42h', 'hbr-23'], '#ff7a3d')}
 <p>More than a decade later, the specifics have aged but the pattern hasn’t: many businesses still respond in hours, some never respond, and the ones who respond fast win disproportionately.</p>
 
 <h2>The Lead Response Management study</h2>
-<p>An earlier study by Dr. James Oldroyd with InsideSales analysed call attempts at a much finer grain, minutes rather than hours.</p>
+<p>An earlier study by Dr. James Oldroyd with InsideSales analyzed call attempts at a much finer grain, minutes rather than hours.</p>
 ${statGrid(['lrm-100x', 'lrm-21x', 'velocify-391'])}
 ${callout('What it means', 'The steepest drop happens in the first few minutes. Responding in 5 minutes isn’t "a bit better" than 30, it’s a different outcome. For most teams, that level of speed is only consistently achievable with automation.', '#ff7a3d')}
 
@@ -51,7 +51,7 @@ ${table(
 
 <h2>How to respond to every lead in under a minute</h2>
 <ol>
-  <li><strong>Centralise lead capture</strong> so every source lands in one CRM, see ${link('/services/lead-capture-system/', 'lead capture systems')}.</li>
+  <li><strong>Centralize lead capture</strong> so every source lands in one CRM, see ${link('/services/lead-capture-system/', 'lead capture systems')}.</li>
   <li><strong>Trigger an instant first touch</strong> by SMS and email the moment a lead arrives.</li>
   <li><strong>Add an AI call or chat</strong> that qualifies and books, an ${link('/services/ai-sdr-system/', 'AI SDR')} or ${link('/services/ai-calling-bots/', 'AI calling bot')}.</li>
   <li><strong>Route hot leads to humans</strong> with a live transfer or instant alert.</li>
@@ -62,7 +62,7 @@ ${table(
 `,
   faqs: [
     { q: 'What is a good lead response time?', a: 'As fast as possible, ideally under five minutes, and under one minute for an automated first touch. Research shows the odds of contacting and qualifying a lead fall steeply after the first few minutes.' },
-    { q: 'What does speed-to-lead mean?', a: 'Speed-to-lead is the time between a prospect submitting an enquiry and your first meaningful contact with them.' },
+    { q: 'What does speed-to-lead mean?', a: 'Speed-to-lead is the time between a prospect submitting an inquiry and your first meaningful contact with them.' },
     { q: 'How can a small team improve speed-to-lead?', a: 'Automate the first touch (SMS, email, AI chat or call), route qualified leads to humans instantly, and follow up automatically, so response time no longer depends on someone being free.' },
     { q: 'Is the HBR speed-to-lead research still relevant?', a: 'The data is from 2011, but later studies and our own deployments show the same pattern: faster response wins. Treat the exact multipliers as directional and measure your own results.' },
   ],

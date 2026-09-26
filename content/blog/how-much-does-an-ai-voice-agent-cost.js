@@ -67,11 +67,11 @@ ${table(
   ],
   'Voice agent build cost ranges'
 )}
-${callout('How we price', 'Every Voxil AI build is a fixed price agreed before work starts, with usage passed through at cost. You own the configuration, prompts and documentation, no per-seat licence or lock-in.')}
+${callout('How we price', 'Every Voxil AI build is a fixed price agreed before work starts, with usage passed through at cost. You own the configuration, prompts and documentation, no per-seat license or lock-in.')}
 
 <h2>Hidden costs to watch for</h2>
 <ul>
-  <li><strong>Per-seat or per-agent licences</strong> on some SaaS "AI receptionist" products.</li>
+  <li><strong>Per-seat or per-agent licenses</strong> on some SaaS "AI receptionist" products.</li>
   <li><strong>Premium voice upcharges</strong> that double usage cost for marginal quality gains.</li>
   <li><strong>Long system prompts</strong> that inflate model costs on every turn.</li>
   <li><strong>Compliance add-ons</strong> (e.g. HIPAA options) on certain plans.</li>
@@ -84,7 +84,7 @@ ${callout('ROI formula', '<strong>Monthly value ≈ (recovered calls × opportun
 <p>Our ${link('/resources/lead-loss-calculator/', 'Lead Loss Calculator')} estimates the first half of that formula in under a minute. For the broader method, see ${link('/blog/ai-automation-roi-small-business/', 'How to Calculate AI Automation ROI')}.</p>
 
 <h2>Buy vs build</h2>
-<p>Off-the-shelf AI receptionist apps are cheaper to start but limited to their templates and integrations. A custom build costs more upfront, integrates with exactly your stack and has no per-seat licence. If your needs are standard, start with a product; if calls touch your CRM, scheduling rules and multiple systems, a custom agent usually wins on total cost within a year.</p>
+<p>Off-the-shelf AI receptionist apps are cheaper to start but limited to their templates and integrations. A custom build costs more upfront, integrates with exactly your stack and has no per-seat license. If your needs are standard, start with a product; if calls touch your CRM, scheduling rules and multiple systems, a custom agent usually wins on total cost within a year.</p>
 `,
   faqs: [
     { q: 'How much does an AI voice agent cost per minute?', a: 'All-in usage, platform, speech-to-text, language model, voice and telephony, commonly lands around $0.10 to $0.30+ per minute, depending on the providers and settings you choose.' },

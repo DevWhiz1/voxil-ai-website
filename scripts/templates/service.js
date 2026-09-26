@@ -188,7 +188,7 @@ export const renderService = (slug, c) => {
     description: plain(c.answer),
     url: `${SITE.url}${path}`,
     provider: { '@id': ORG_ID },
-    areaServed: ['United States', 'United Kingdom', 'Canada', 'Australia', 'United Arab Emirates', 'Pakistan'].map((name) => ({ '@type': 'Country', name })),
+    areaServed: ['United States', 'United Kingdom', 'Ireland', 'Netherlands', 'Germany', 'Canada', 'Australia', 'United Arab Emirates', 'Pakistan'].map((name) => ({ '@type': 'Country', name })),
     audience: { '@type': 'BusinessAudience', audienceType: plain(c.fit[0]) },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',

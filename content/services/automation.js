@@ -41,7 +41,7 @@ export default {
       { icon: 'globe', title: 'Multilingual', desc: 'Replies in the visitor’s language automatically, dozens supported.' },
     ],
     steps: [
-      { title: 'Audit & scope', desc: 'We review your content and top enquiries to decide what the bot should own.' },
+      { title: 'Audit & scope', desc: 'We review your content and top inquiries to decide what the bot should own.' },
       { title: 'Train & design', desc: 'Knowledge base, persona, conversation goals and guardrails built.' },
       { title: 'Integrate', desc: 'CRM, calendar, helpdesk and messaging channels connected and tested.' },
       { title: 'Launch & tune', desc: 'Go live, review transcripts weekly and improve answers continuously.' },
@@ -60,7 +60,7 @@ export default {
       ],
     },
     fit: [
-      'Websites with steady traffic but low enquiry conversion',
+      'Websites with steady traffic but low inquiry conversion',
       'Businesses answering the same questions by chat and email every day',
       'Brands whose customers prefer WhatsApp or Instagram DMs',
       'Teams that need after-hours lead capture and booking',
@@ -69,7 +69,7 @@ export default {
     integrations: ['OpenAI', 'Anthropic Claude', 'WhatsApp Business API', 'Instagram', 'Messenger', 'GoHighLevel', 'HubSpot', 'Salesforce', 'Intercom', 'Zendesk', 'Shopify', 'WordPress', 'Webflow', 'Calendly', 'Slack', 'Zapier', 'Make.com', 'n8n'],
     faqs: [
       { q: 'How much does a custom AI chatbot cost?', a: 'A focused chatbot with a knowledge base and CRM integration is a fixed-price build, plus low monthly usage costs for the AI model and hosting. More channels, languages and system integrations increase scope. We quote after a 30-minute call.' },
-      { q: 'Will the chatbot make things up?', a: 'We minimise that risk with retrieval from approved content only, explicit instructions to admit uncertainty, restricted actions and transcript review. For sensitive topics we route to a human by default.' },
+      { q: 'Will the chatbot make things up?', a: 'We minimize that risk with retrieval from approved content only, explicit instructions to admit uncertainty, restricted actions and transcript review. For sensitive topics we route to a human by default.' },
       { q: 'Can it work on WhatsApp and Instagram?', a: `Yes. We deploy the same assistant to WhatsApp via the official Business API, Instagram DMs and Facebook Messenger. See ${link('/services/whatsapp-automation/', 'WhatsApp automation')}.` },
       { q: 'Which AI model do you use?', a: 'We choose per project, typically models from OpenAI or Anthropic, balancing quality, speed, cost and data-handling requirements. You can switch models later without rebuilding.' },
       { q: 'Do I need a developer to maintain it?', a: 'No. You can update the knowledge base by editing documents or pages, and we offer optional monthly tuning. You also get full documentation and ownership.' },
@@ -175,7 +175,7 @@ export default {
       { icon: 'calendar', title: 'Bookings & reminders', desc: 'Book appointments in chat and send template reminders automatically.' },
       { icon: 'megaphone', title: 'Broadcast campaigns', desc: 'Segmented, opt-in broadcasts for offers, re-engagement and updates.' },
       { icon: 'users', title: 'Team inbox', desc: 'Multiple agents on one number with assignment and hand-off from AI.' },
-      { icon: 'currency', title: 'Payments & catalogues', desc: 'Share products and payment links directly in the conversation.' },
+      { icon: 'currency', title: 'Payments & catalogs', desc: 'Share products and payment links directly in the conversation.' },
     ],
     steps: [
       { title: 'Account & number', desc: 'Meta Business verification and WhatsApp Business Platform setup.' },
@@ -184,7 +184,7 @@ export default {
       { title: 'Launch & grow', desc: 'Go live, add ad flows and broadcasts, and tune from transcripts.' },
     ],
     fit: [
-      'Businesses where most enquiries arrive on WhatsApp',
+      'Businesses where most inquiries arrive on WhatsApp',
       'Brands running Click-to-WhatsApp ads on Facebook or Instagram',
       'Clinics, salons and real-estate teams booking via chat',
       'Companies serving the UK, Middle East, South Asia or Latin America',
@@ -257,7 +257,7 @@ export default {
       { q: 'Is GoHighLevel’s AI good enough on its own?', a: 'For many small businesses, yes, when it’s configured properly. For complex qualification, custom integrations or premium voice quality, we connect external agents (e.g. Vapi or Retell AI) that write back into GHL.' },
       { q: 'Does GoHighLevel AI cost extra?', a: 'GoHighLevel prices some AI features as add-ons or usage-based charges, and its pricing changes periodically. We check the current costs for your plan and model them against your lead volume before recommending a setup.' },
       { q: 'Can the AI book appointments in GHL calendars?', a: 'Yes. Both Conversation AI and Voice AI can book into GHL calendars when set up with the right calendar, availability and goals.' },
-      { q: 'Can you set this up for all my agency’s clients?', a: `Yes. We build the configuration once and package it as a ${link('/services/ghl-snapshot/', 'GHL snapshot')} for rollout, with per-client customisation.` },
+      { q: 'Can you set this up for all my agency’s clients?', a: `Yes. We build the configuration once and package it as a ${link('/services/ghl-snapshot/', 'GHL snapshot')} for rollout, with per-client customization.` },
       { q: 'Will it work with WhatsApp?', a: 'Yes, once WhatsApp is connected to your GHL account, Conversation AI can reply to WhatsApp messages alongside SMS and social DMs.' },
     ],
     related: ['gohighlevel-automation', 'ghl-expert', 'ai-voice-agents', 'ai-follow-up-system'],
@@ -266,29 +266,29 @@ export default {
   'ai-lead-generation': {
     title: 'AI Lead Generation Services | Find, Enrich & Qualify Leads | Voxil AI',
     description:
-      'AI lead generation systems that find target prospects, enrich data, personalise outreach, capture inbound leads and qualify them automatically, feeding your CRM with sales-ready opportunities.',
+      'AI lead generation systems that find target prospects, enrich data, personalize outreach, capture inbound leads and qualify them automatically, feeding your CRM with sales-ready opportunities.',
     h1: 'AI lead generation that <span class="text-gradient-teal">fills the pipeline</span>',
-    lead: 'Systems that find the right prospects, enrich and personalise at scale, capture every inbound enquiry and qualify it automatically, so your team talks only to people ready to buy.',
+    lead: 'Systems that find the right prospects, enrich and personalize at scale, capture every inbound inquiry and qualify it automatically, so your team talks only to people ready to buy.',
     answer:
-      '<strong>AI lead generation</strong> uses AI to find, enrich, engage and qualify potential customers. Typical systems combine prospect data sources, AI-written personalised outreach, lead magnets and chat or voice agents that capture and qualify inbound interest, with all leads scored and routed in your CRM.',
+      '<strong>AI lead generation</strong> uses AI to find, enrich, engage and qualify potential customers. Typical systems combine prospect data sources, AI-written personalized outreach, lead magnets and chat or voice agents that capture and qualify inbound interest, with all leads scored and routed in your CRM.',
     facts: [
       { label: 'Inbound + outbound', value: 'Both' },
       { label: 'Setup', value: '3-6 weeks' },
       { label: 'Data', value: 'Enriched' },
       { label: 'Output', value: 'Sales-ready leads' },
     ],
-    pills: ['Prospect research', 'Enrichment', 'Personalised outreach', 'Qualification'],
+    pills: ['Prospect research', 'Enrichment', 'Personalized outreach', 'Qualification'],
     whatIs: {
       title: 'More leads is easy. Better leads is the system.',
       paras: [
-        'Buying lists and blasting emails gets you volume and spam complaints. AI lead generation works when it combines tight targeting, genuinely relevant personalisation, strong inbound capture and fast qualification.',
-        'We design the whole system: who to target, where the data comes from, how outreach is personalised, how inbound leads are captured on your site, and how every lead is scored and routed, with deliverability and privacy rules respected throughout.',
+        'Buying lists and blasting emails gets you volume and spam complaints. AI lead generation works when it combines tight targeting, genuinely relevant personalization, strong inbound capture and fast qualification.',
+        'We design the whole system: who to target, where the data comes from, how outreach is personalized, how inbound leads are captured on your site, and how every lead is scored and routed, with deliverability and privacy rules respected throughout.',
       ],
     },
     included: [
       'ICP definition and data-source selection',
       'Enrichment and lead-scoring model',
-      'AI-personalised email and LinkedIn outreach',
+      'AI-personalized email and LinkedIn outreach',
       'Inbound capture: chat, forms, quizzes',
       'Instant qualification by chat, SMS or voice',
       'CRM routing and pipeline reporting',
@@ -296,7 +296,7 @@ export default {
     features: [
       { icon: 'search', title: 'Prospect research', desc: 'AI researches companies and contacts against your ICP criteria.' },
       { icon: 'database', title: 'Data enrichment', desc: 'Fills in firmographics, roles and signals so scoring is meaningful.' },
-      { icon: 'mail', title: 'Personalised outreach', desc: 'Relevant first lines and offers generated per prospect, reviewed by rules.' },
+      { icon: 'mail', title: 'Personalized outreach', desc: 'Relevant first lines and offers generated per prospect, reviewed by rules.' },
       { icon: 'funnel', title: 'Inbound capture', desc: 'Chatbots, quizzes and lead magnets that convert more of your traffic.' },
       { icon: 'bolt', title: 'Instant qualification', desc: 'New leads engaged in seconds and scored automatically.' },
       { icon: 'chart', title: 'Attribution', desc: 'See which sources and messages produce booked meetings and revenue.' },
@@ -309,7 +309,7 @@ export default {
     ],
     fit: [
       'B2B companies with a clear ideal customer profile',
-      'Local businesses that need more qualified inbound enquiries',
+      'Local businesses that need more qualified inbound inquiries',
       'Teams with good offers but inconsistent lead flow',
       'Sales teams drowning in low-quality leads',
     ],
@@ -328,11 +328,11 @@ export default {
   'ai-follow-up-system': {
     title: 'AI Follow-Up System | Automated Lead & Quote Follow-Up | Voxil AI',
     description:
-      'An AI follow-up system that texts, emails and calls leads automatically until they respond, follow up on quotes, no-shows and cold leads with personalised, multi-channel sequences.',
+      'An AI follow-up system that texts, emails and calls leads automatically until they respond, follow up on quotes, no-shows and cold leads with personalized, multi-channel sequences.',
     h1: 'An AI follow-up system that <span class="text-gradient-teal">never forgets a lead</span>',
-    lead: 'Most sales are lost to silence, not "no". Our AI follow-up system keeps every lead, quote and no-show warm across SMS, email and voice, personalised, persistent and polite, until they book or opt out.',
+    lead: 'Most sales are lost to silence, not "no". Our AI follow-up system keeps every lead, quote and no-show warm across SMS, email and voice, personalized, persistent and polite, until they book or opt out.',
     answer:
-      'An <strong>AI follow-up system</strong> automatically re-engages leads who haven’t responded, new enquiries, open quotes, missed appointments and old contacts. It sends personalised messages across SMS, email, WhatsApp and voice on a schedule, understands replies with AI, answers questions and books appointments, stopping as soon as the person responds or opts out.',
+      'An <strong>AI follow-up system</strong> automatically re-engages leads who haven’t responded, new inquiries, open quotes, missed appointments and old contacts. It sends personalized messages across SMS, email, WhatsApp and voice on a schedule, understands replies with AI, answers questions and books appointments, stopping as soon as the person responds or opts out.',
     facts: [
       { label: 'Channels', value: 'SMS · Email · Voice' },
       { label: 'Setup', value: '1-3 weeks' },
@@ -367,7 +367,7 @@ export default {
       { title: 'Map lead stages', desc: 'New, quoted, no-show, lost, past customer, each gets a strategy.' },
       { title: 'Write sequences', desc: 'Messages written in your voice with AI reply handling.' },
       { title: 'Connect CRM', desc: 'Triggers and stop-conditions wired to your pipeline.' },
-      { title: 'Launch & optimise', desc: 'Measure reply and booking rates; refine messaging.' },
+      { title: 'Launch & optimize', desc: 'Measure reply and booking rates; refine messaging.' },
     ],
     fit: [
       'Businesses that send quotes and wait for customers to call back',
@@ -381,7 +381,7 @@ export default {
       { q: 'Won’t automated follow-up annoy people?', a: 'Not when it is well-spaced, relevant and easy to stop. We design sequences that provide value, answers, reminders, useful information, and stop immediately on reply or opt-out.' },
       { q: 'Can it follow up by phone call too?', a: 'Yes. For leads with appropriate consent, an AI voice agent can make follow-up calls as one step in the sequence.' },
       { q: 'Does it work with my existing CRM?', a: 'Yes, GoHighLevel, HubSpot, Salesforce, Pipedrive, and field-service tools like Jobber, Housecall Pro and ServiceTitan.' },
-      { q: 'How is this different from an email drip?', a: 'Drips send the same messages regardless of what happens. The AI follow-up system reads replies, answers questions, books appointments and changes course based on the lead’s behaviour.' },
+      { q: 'How is this different from an email drip?', a: 'Drips send the same messages regardless of what happens. The AI follow-up system reads replies, answers questions, books appointments and changes course based on the lead’s behavior.' },
       { q: 'What about SMS compliance?', a: 'We build consent tracking, opt-out handling (STOP keywords), quiet hours and US 10DLC registration guidance into every SMS setup.' },
     ],
     related: ['ai-sdr-system', 'email-sms-marketing', 'crm-automation', 'ai-calling-bots'],
@@ -401,7 +401,7 @@ export default {
       { label: 'Vendor-neutral', value: 'Yes' },
       { label: 'Implementation', value: 'Optional' },
     ],
-    pills: ['Process audit', 'ROI modelling', 'Tool selection', 'Roadmap'],
+    pills: ['Process audit', 'ROI modeling', 'Tool selection', 'Roadmap'],
     whatIs: {
       title: 'Most AI projects fail on scoping, not technology',
       paras: [
@@ -419,7 +419,7 @@ export default {
     ],
     features: [
       { icon: 'search', title: 'Process discovery', desc: 'We map how work really happens, including the workarounds nobody documents.' },
-      { icon: 'calculator', title: 'ROI modelling', desc: 'Each opportunity sized by hours saved, revenue impact and build cost.' },
+      { icon: 'calculator', title: 'ROI modeling', desc: 'Each opportunity sized by hours saved, revenue impact and build cost.' },
       { icon: 'puzzle', title: 'Tool selection', desc: 'Honest comparisons of platforms, no-code, low-code or custom, for your context.' },
       { icon: 'shield', title: 'Risk & governance', desc: 'Data handling, accuracy controls and human oversight designed in.' },
       { icon: 'users', title: 'Change management', desc: 'Training and rollout plans so your team adopts what’s built.' },
@@ -428,7 +428,7 @@ export default {
     steps: [
       { title: 'Discovery', desc: 'Interviews, tool inventory and process walkthroughs.' },
       { title: 'Analysis', desc: 'Baseline metrics and opportunity scoring.' },
-      { title: 'Roadmap', desc: 'Prioritised plan with costs, timelines and quick wins.' },
+      { title: 'Roadmap', desc: 'Prioritized plan with costs, timelines and quick wins.' },
       { title: 'Pilot', desc: 'Optional: build the first automation and measure results.' },
     ],
     fit: [
@@ -454,7 +454,7 @@ export default {
     description:
       'Workflow automation services that eliminate repetitive work across sales, operations, finance and support, using Make.com, Zapier, n8n, GoHighLevel and custom AI steps.',
     h1: 'Workflow automation that <span class="text-gradient-teal">gives your team hours back</span>',
-    lead: 'We find the copy-paste, chase-up and data-entry work eating your week, and replace it with reliable automations, with AI steps where judgement used to be required.',
+    lead: 'We find the copy-paste, chase-up and data-entry work eating your week, and replace it with reliable automations, with AI steps where judgment used to be required.',
     answer:
       '<strong>Workflow automation</strong> is the use of software to run business processes automatically, moving data between apps, triggering tasks, sending notifications and making rule-based or AI-assisted decisions. It reduces manual work and errors in areas like lead handling, onboarding, invoicing, reporting and support.',
     facts: [
@@ -474,7 +474,7 @@ export default {
     included: [
       'Process mapping and automation design',
       'Build in Make.com, Zapier, n8n or code',
-      'AI steps: classify, extract, summarise, draft',
+      'AI steps: classify, extract, summarize, draft',
       'Error handling, retries and alerts',
       'Documentation and team walkthrough',
       'Optional monitoring retainer',
@@ -489,7 +489,7 @@ export default {
     ],
     steps: [
       { title: 'Find the drag', desc: 'Short interviews to list repetitive tasks and time spent.' },
-      { title: 'Prioritise', desc: 'Rank by hours saved, risk and build effort.' },
+      { title: 'Prioritize', desc: 'Rank by hours saved, risk and build effort.' },
       { title: 'Build & test', desc: 'Automations built with test data, error paths and alerts.' },
       { title: 'Hand over', desc: 'Docs, training and optional monitoring.' },
     ],
@@ -518,7 +518,7 @@ export default {
       { q: 'Which processes should we automate first?', a: 'Ones that are frequent, rule-based, time-consuming and low-risk if something goes wrong, lead routing, data sync, reporting and onboarding are common first wins.' },
       { q: 'Make, Zapier or n8n?', a: 'It depends on complexity, volume, budget and hosting needs. We recommend per workflow and often use more than one.' },
       { q: 'What happens when an automation breaks?', a: 'We build error handling, retries and alerts into every workflow, so failures are caught and reported instead of silently losing data.' },
-      { q: 'Can AI be part of the workflow?', a: 'Yes, classifying incoming requests, extracting data from documents, summarising calls and drafting replies are all common AI steps.' },
+      { q: 'Can AI be part of the workflow?', a: 'Yes, classifying incoming requests, extracting data from documents, summarizing calls and drafting replies are all common AI steps.' },
       { q: 'Do we need to change our tools?', a: 'Rarely. We automate around the tools you already use.' },
     ],
     related: ['make-automation', 'zapier-automation', 'n8n-automation', 'crm-automation'],
@@ -527,37 +527,37 @@ export default {
   'marketing-automation': {
     title: 'Marketing Automation Services | AI-Powered Campaigns & Nurture | Voxil AI',
     description:
-      'Marketing automation services: lead nurture, segmentation, lifecycle campaigns, attribution and AI-personalised content across email, SMS, WhatsApp and social, set up in your CRM.',
+      'Marketing automation services: lead nurture, segmentation, lifecycle campaigns, attribution and AI-personalized content across email, SMS, WhatsApp and social, set up in your CRM.',
     h1: 'Marketing automation that <span class="text-gradient-teal">turns clicks into customers</span>',
-    lead: 'Lifecycle campaigns, segmentation, nurture and attribution, built in your CRM, personalised with AI, and connected to sales so marketing finally gets credit for the revenue it drives.',
+    lead: 'Lifecycle campaigns, segmentation, nurture and attribution, built in your CRM, personalized with AI, and connected to sales so marketing finally gets credit for the revenue it drives.',
     answer:
-      '<strong>Marketing automation</strong> is software-driven delivery of marketing messages and actions based on customer behaviour, such as welcome sequences, lead nurturing, abandoned-cart reminders, re-engagement campaigns and lead scoring, across email, SMS, messaging and ads, with results tracked back to pipeline and revenue.',
+      '<strong>Marketing automation</strong> is software-driven delivery of marketing messages and actions based on customer behavior, such as welcome sequences, lead nurturing, abandoned-cart reminders, re-engagement campaigns and lead scoring, across email, SMS, messaging and ads, with results tracked back to pipeline and revenue.',
     facts: [
       { label: 'Setup', value: '2-5 weeks' },
       { label: 'Channels', value: 'Email · SMS · Ads' },
-      { label: 'Personalisation', value: 'AI-assisted' },
+      { label: 'Personalization', value: 'AI-assisted' },
       { label: 'Attribution', value: 'To revenue' },
     ],
     pills: ['Lifecycle campaigns', 'Lead scoring', 'Segmentation', 'Attribution'],
     whatIs: {
       title: 'The right message, triggered by what people actually do',
       paras: [
-        'Batch-and-blast campaigns treat every contact the same. Marketing automation responds to behaviour, a pricing page visit, a downloaded guide, a missed webinar, with the next most useful message.',
-        'We design the lifecycle from first touch to repeat purchase, build it in your CRM, use AI to personalise content at scale, and connect everything to sales so you can see which campaigns produce booked calls and revenue.',
+        'Batch-and-blast campaigns treat every contact the same. Marketing automation responds to behavior, a pricing page visit, a downloaded guide, a missed webinar, with the next most useful message.',
+        'We design the lifecycle from first touch to repeat purchase, build it in your CRM, use AI to personalize content at scale, and connect everything to sales so you can see which campaigns produce booked calls and revenue.',
       ],
     },
     included: [
       'Lifecycle and customer-journey map',
       'Segmentation and lead-scoring model',
       'Nurture, welcome and re-engagement sequences',
-      'Behavioural triggers and web tracking',
+      'Behavioral triggers and web tracking',
       'Ad audience sync and retargeting',
       'Attribution dashboard',
     ],
     features: [
       { icon: 'trending', title: 'Lifecycle journeys', desc: 'Welcome, nurture, conversion, onboarding and win-back flows.' },
-      { icon: 'users', title: 'Segmentation', desc: 'Dynamic segments by behaviour, interest, stage and value.' },
-      { icon: 'sparkles', title: 'AI personalisation', desc: 'Subject lines, content blocks and offers tailored per segment.' },
+      { icon: 'users', title: 'Segmentation', desc: 'Dynamic segments by behavior, interest, stage and value.' },
+      { icon: 'sparkles', title: 'AI personalization', desc: 'Subject lines, content blocks and offers tailored per segment.' },
       { icon: 'funnel', title: 'Lead scoring', desc: 'Engagement and fit scores that tell sales who to call first.' },
       { icon: 'megaphone', title: 'Ad sync', desc: 'Audiences synced to Meta and Google for retargeting and lookalikes.' },
       { icon: 'chart', title: 'Attribution', desc: 'Campaign performance tied to pipeline and revenue, not just opens.' },
@@ -578,9 +578,9 @@ export default {
     integrations: ['GoHighLevel', 'HubSpot', 'ActiveCampaign', 'Klaviyo', 'Mailchimp', 'Salesforce Marketing Cloud', 'Meta Ads', 'Google Ads', 'Google Analytics 4', 'Shopify', 'WordPress', 'Twilio', 'Zapier', 'Make.com'],
     faqs: [
       { q: 'Which platform should I use?', a: 'The one that fits your sales process. GoHighLevel suits local and service businesses; HubSpot suits B2B; Klaviyo suits ecommerce. We work in all of them.' },
-      { q: 'How is AI used in marketing automation?', a: 'For segmentation, predicting who is likely to convert, generating personalised content variations, optimising send times and summarising engagement for sales.' },
+      { q: 'How is AI used in marketing automation?', a: 'For segmentation, predicting who is likely to convert, generating personalized content variations, optimizing send times and summarizing engagement for sales.' },
       { q: 'Can you migrate our existing campaigns?', a: 'Yes. We audit what’s working, migrate it, and fix what isn’t during the move.' },
-      { q: 'How long until we see results?', a: 'Welcome and re-engagement flows often show results within weeks. Full lifecycle programmes compound over a few months.' },
+      { q: 'How long until we see results?', a: 'Welcome and re-engagement flows often show results within weeks. Full lifecycle programs compound over a few months.' },
       { q: 'Do you write the content?', a: 'Yes, we write sequences in your brand voice, with AI assisting and humans editing.' },
     ],
     related: ['email-sms-marketing', 'seo-paid-ads', 'crm-automation', 'lead-generation-funnel'],
@@ -589,11 +589,11 @@ export default {
   'email-sms-marketing': {
     title: 'Email & SMS Marketing Automation Services | Compliant Campaigns | Voxil AI',
     description:
-      'Email and SMS marketing automation: deliverability setup, 10DLC registration, automated sequences, broadcasts and AI-personalised copy that converts, built in GoHighLevel, Klaviyo, HubSpot and more.',
+      'Email and SMS marketing automation: deliverability setup, 10DLC registration, automated sequences, broadcasts and AI-personalized copy that converts, built in GoHighLevel, Klaviyo, HubSpot and more.',
     h1: 'Email & SMS marketing that <span class="text-gradient-teal">lands and converts</span>',
-    lead: 'From deliverability and 10DLC registration to automated sequences and broadcasts, we build email and SMS programmes that reach the inbox, respect the rules and drive bookings.',
+    lead: 'From deliverability and 10DLC registration to automated sequences and broadcasts, we build email and SMS programs that reach the inbox, respect the rules and drive bookings.',
     answer:
-      '<strong>Email and SMS marketing automation</strong> sends targeted, triggered messages, welcome series, reminders, promotions, follow-ups and re-engagement, to opted-in contacts. Done well, it requires proper deliverability setup (SPF, DKIM, DMARC), SMS registration (such as US A2P 10DLC), consent management and messages personalised to each segment.',
+      '<strong>Email and SMS marketing automation</strong> sends targeted, triggered messages, welcome series, reminders, promotions, follow-ups and re-engagement, to opted-in contacts. Done well, it requires proper deliverability setup (SPF, DKIM, DMARC), SMS registration (such as US A2P 10DLC), consent management and messages personalized to each segment.',
     facts: [
       { label: 'Setup', value: '1-3 weeks' },
       { label: 'Deliverability', value: 'SPF · DKIM · DMARC' },
@@ -605,7 +605,7 @@ export default {
       title: 'Two of the highest-ROI channels, when they reach people',
       paras: [
         'Email and SMS remain some of the most cost-effective marketing channels because you own the audience. But inbox providers and carriers have tightened the rules: bulk senders need authenticated domains, and US business texting requires 10DLC registration.',
-        'We set up the technical foundations correctly, then build the automations and campaigns on top, welcome series, appointment reminders, review requests, promotions and win-backs, with AI helping personalise copy for each segment.',
+        'We set up the technical foundations correctly, then build the automations and campaigns on top, welcome series, appointment reminders, review requests, promotions and win-backs, with AI helping personalize copy for each segment.',
       ],
     },
     included: [
@@ -621,14 +621,14 @@ export default {
       { icon: 'mail', title: 'Automated email', desc: 'Welcome, nurture, post-purchase and win-back flows that run themselves.' },
       { icon: 'bubble', title: 'Two-way SMS', desc: 'Conversational texts with AI replies and instant hand-off.' },
       { icon: 'star', title: 'Review requests', desc: 'Timed review asks that grow your Google rating.' },
-      { icon: 'users', title: 'Segmentation', desc: 'Right message to the right contacts based on behaviour and stage.' },
+      { icon: 'users', title: 'Segmentation', desc: 'Right message to the right contacts based on behavior and stage.' },
       { icon: 'chart', title: 'Reporting', desc: 'Delivery, engagement, bookings and revenue per campaign.' },
     ],
     steps: [
       { title: 'Foundations', desc: 'Domains, registrations, consent and list cleanup.' },
       { title: 'Strategy', desc: 'Sequences and broadcast calendar planned around your goals.' },
       { title: 'Build & write', desc: 'Templates, copy and automations created and tested.' },
-      { title: 'Launch & optimise', desc: 'Send, measure, A/B test and improve.' },
+      { title: 'Launch & optimize', desc: 'Send, measure, A/B test and improve.' },
     ],
     fit: [
       'Businesses whose emails land in spam or promotions',
@@ -651,9 +651,9 @@ export default {
   'seo-paid-ads': {
     title: 'SEO & Paid Ads for Service Businesses | SEO, AEO & PPC | Voxil AI',
     description:
-      'SEO, answer-engine optimisation (AEO) and paid ads management for service businesses, Google, Meta and local search campaigns connected to AI follow-up so every lead gets worked.',
+      'SEO, answer-engine optimization (AEO) and paid ads management for service businesses, Google, Meta and local search campaigns connected to AI follow-up so every lead gets worked.',
     h1: 'SEO & paid ads that feed an <span class="text-gradient-teal">automated pipeline</span>',
-    lead: 'Traffic is only half the job. We run SEO, AI-search optimisation and paid campaigns that bring qualified leads, and connect them to instant AI follow-up so your ad spend turns into booked appointments.',
+    lead: 'Traffic is only half the job. We run SEO, AI-search optimization and paid campaigns that bring qualified leads, and connect them to instant AI follow-up so your ad spend turns into booked appointments.',
     answer:
       '<strong>SEO and paid ads</strong> are the two main ways to get found online. SEO earns organic rankings in Google and visibility in AI answer engines through technical fixes, content and authority; paid ads buy immediate visibility on Google, Meta and other platforms. Combined with fast automated follow-up, they produce a predictable flow of leads.',
     facts: [
@@ -673,8 +673,8 @@ export default {
     included: [
       'Technical SEO audit and fixes',
       'Local SEO and Google Business Profile',
-      'Answer-engine (AEO) and AI-search (GEO) optimisation',
-      'Content plan and on-page optimisation',
+      'Answer-engine (AEO) and AI-search (GEO) optimization',
+      'Content plan and on-page optimization',
       'Google and Meta ads management',
       'Lead tracking tied to CRM outcomes',
     ],
@@ -695,13 +695,13 @@ export default {
     fit: [
       'Local service businesses competing in the map pack',
       'Companies spending on ads without clear cost-per-booking',
-      'Sites with traffic that doesn’t convert into enquiries',
+      'Sites with traffic that doesn’t convert into inquiries',
       'Brands that want to appear in AI answers and overviews',
     ],
     industries: ['roofing', 'hvac', 'law-firms', 'med-spas', 'solar', 'home-services'],
     integrations: ['Google Search Console', 'Google Analytics 4', 'Google Business Profile', 'Google Ads', 'Local Services Ads', 'Meta Ads', 'Ahrefs', 'Semrush', 'Screaming Frog', 'GoHighLevel', 'HubSpot', 'CallRail', 'Looker Studio'],
     faqs: [
-      { q: 'What is AEO and GEO?', a: 'Answer Engine Optimisation (AEO) structures content so it can be pulled directly into answers, featured snippets, voice assistants and AI Overviews. Generative Engine Optimisation (GEO) focuses on being cited by AI assistants like ChatGPT, Perplexity and Gemini. Both reward clear, factual, well-structured content with strong entity signals.' },
+      { q: 'What is AEO and GEO?', a: 'Answer Engine Optimization (AEO) structures content so it can be pulled directly into answers, featured snippets, voice assistants and AI Overviews. Generative Engine Optimization (GEO) focuses on being cited by AI assistants like ChatGPT, Perplexity and Gemini. Both reward clear, factual, well-structured content with strong entity signals.' },
       { q: 'How long does SEO take?', a: 'Technical fixes and local improvements can show results within weeks; competitive rankings usually take several months of consistent work. Paid ads can produce leads immediately.' },
       { q: 'Do you guarantee rankings?', a: 'No honest agency can guarantee rankings. We commit to the work, the transparency and the metrics, and we report on leads and revenue, not vanity positions.' },
       { q: 'Why connect ads to automation?', a: 'Lead response speed strongly affects conversion. Automated follow-up makes sure ad-generated leads are contacted in seconds, which protects your cost per acquisition.' },
@@ -713,11 +713,11 @@ export default {
   'lead-capture-system': {
     title: 'Lead Capture & Qualification Systems | Automated Lead Intake | Voxil AI',
     description:
-      'Automated lead capture systems that collect enquiries from every channel, score them, route them to the right rep and trigger instant follow-up, so no lead slips through.',
+      'Automated lead capture systems that collect inquiries from every channel, score them, route them to the right rep and trigger instant follow-up, so no lead slips through.',
     h1: 'Lead capture systems that <span class="text-gradient-teal">lose nothing</span>',
-    lead: 'Every enquiry, web form, call, chat, DM, ad lead, captured in one place, scored against your criteria, routed to the right person and acknowledged instantly.',
+    lead: 'Every inquiry, web form, call, chat, DM, ad lead, captured in one place, scored against your criteria, routed to the right person and acknowledged instantly.',
     answer:
-      'A <strong>lead capture system</strong> collects enquiries from every channel into one CRM, enriches and scores them, routes each lead to the right salesperson or workflow, and triggers an immediate response. It prevents leads from being lost between inboxes, spreadsheets and missed calls, and makes pipeline data reliable.',
+      'A <strong>lead capture system</strong> collects inquiries from every channel into one CRM, enriches and scores them, routes each lead to the right salesperson or workflow, and triggers an immediate response. It prevents leads from being lost between inboxes, spreadsheets and missed calls, and makes pipeline data reliable.',
     facts: [
       { label: 'Setup', value: '1-3 weeks' },
       { label: 'Sources', value: 'All channels' },
@@ -729,7 +729,7 @@ export default {
       title: 'Leads don’t go cold, they get lost',
       paras: [
         'In most businesses, leads arrive through half a dozen channels and live in as many places: a shared inbox, a spreadsheet, a phone’s voicemail, a Facebook page. Some are answered in minutes, some in days, some never.',
-        'We connect every source to one pipeline, apply scoring rules you can read and change, route leads by territory, service or round-robin, and trigger an instant acknowledgement so every enquirer knows they’ve been heard.',
+        'We connect every source to one pipeline, apply scoring rules you can read and change, route leads by territory, service or round-robin, and trigger an instant acknowledgment so every inquirer knows they’ve been heard.',
       ],
     },
     included: [
@@ -737,7 +737,7 @@ export default {
       'Forms, chat and call capture',
       'Scoring rules and enrichment',
       'Round-robin or rules-based routing',
-      'Instant acknowledgement and follow-up triggers',
+      'Instant acknowledgment and follow-up triggers',
       'Response-time and conversion reporting',
     ],
     features: [
@@ -745,7 +745,7 @@ export default {
       { icon: 'sliders', title: 'Readable scoring', desc: 'Rules your team understands, not a black box.' },
       { icon: 'users', title: 'Smart routing', desc: 'By territory, service, language, value or round-robin.' },
       { icon: 'bolt', title: 'Instant response', desc: 'Every lead acknowledged within seconds on their channel.' },
-      { icon: 'database', title: 'Deduplication', desc: 'Merges repeat enquiries so reps see one clean record.' },
+      { icon: 'database', title: 'Deduplication', desc: 'Merges repeat inquiries so reps see one clean record.' },
       { icon: 'chart', title: 'Speed-to-lead reporting', desc: 'Track response time and conversion by source and rep.' },
     ],
     steps: [
@@ -764,10 +764,10 @@ export default {
     integrations: ['GoHighLevel', 'HubSpot', 'Salesforce', 'Pipedrive', 'Zoho CRM', 'Facebook Lead Ads', 'Google Ads', 'Typeform', 'Gravity Forms', 'CallRail', 'Twilio', 'Slack', 'Zapier', 'Make.com'],
     faqs: [
       { q: 'What CRM should I use?', a: `If you don’t have one, we recommend based on your sales process, see ${link('/services/crm-setup/', 'CRM setup')}. If you do, we build around it.` },
-      { q: 'Can it capture phone leads?', a: 'Yes, with call tracking and optional AI answering, phone enquiries become CRM records automatically.' },
+      { q: 'Can it capture phone leads?', a: 'Yes, with call tracking and optional AI answering, phone inquiries become CRM records automatically.' },
       { q: 'How do you score leads?', a: 'By fit (who they are) and intent (what they did or said), using rules you approve and can adjust over time.' },
       { q: 'Can leads be routed to different branches?', a: 'Yes, by postcode or ZIP, service type, language or any field we capture.' },
-      { q: 'How quickly can leads be contacted?', a: 'Acknowledgement is instant. With an AI follow-up or voice agent, qualification can start within seconds too.' },
+      { q: 'How quickly can leads be contacted?', a: 'Acknowledgment is instant. With an AI follow-up or voice agent, qualification can start within seconds too.' },
     ],
     related: ['ai-lead-generation', 'crm-automation', 'ai-follow-up-system', 'ai-sdr-system'],
   },

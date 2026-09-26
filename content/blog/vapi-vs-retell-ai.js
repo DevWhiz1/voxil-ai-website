@@ -24,7 +24,7 @@ export default {
 <p>Vapi and Retell AI are two of the most popular platforms for building AI voice agents, software that answers and places phone calls with natural conversation. We’ve shipped production agents on both. This comparison reflects what we see in real builds, not a feature checklist. Platforms evolve quickly, so verify details like pricing and compliance options on each vendor’s site before committing.</p>
 
 <h2>The short answer</h2>
-${callout('Our rule of thumb', '<strong>Choose Vapi</strong> when you need deep customisation, custom tool logic, multi-assistant "squads", bring-your-own models and providers, or voice embedded in your own product. <strong>Choose Retell AI</strong> when you want a reliable phone agent live fast, with structured conversation flows, built-in knowledge bases and strong post-call analytics.', '#38bdf8')}
+${callout('Our rule of thumb', '<strong>Choose Vapi</strong> when you need deep customization, custom tool logic, multi-assistant "squads", bring-your-own models and providers, or voice embedded in your own product. <strong>Choose Retell AI</strong> when you want a reliable phone agent live fast, with structured conversation flows, built-in knowledge bases and strong post-call analytics.', '#38bdf8')}
 
 <h2>What each platform is</h2>
 <p><strong>Vapi</strong> is a developer platform that orchestrates the real-time voice pipeline, speech-to-text, a language model and text-to-speech, and exposes it through APIs, SDKs and a dashboard. You choose providers for each layer and extend assistants with tools (function calls to your servers), webhooks and multi-assistant workflows.</p>
@@ -64,7 +64,7 @@ ${table(
 </ul>
 
 <h2>Latency and naturalness</h2>
-<p>Both platforms can deliver natural, low-latency conversations. In practice, perceived latency depends more on your choices, the language model, voice provider, prompt length, tool-call speed and telephony region, than on the platform. We test candidate configurations with scripted calls before launch and optimise the slowest step.</p>
+<p>Both platforms can deliver natural, low-latency conversations. In practice, perceived latency depends more on your choices, the language model, voice provider, prompt length, tool-call speed and telephony region, than on the platform. We test candidate configurations with scripted calls before launch and optimize the slowest step.</p>
 
 <h2>Pricing: how to compare fairly</h2>
 <p>Both charge per minute, and both costs vary with the model, voice and telephony you choose. Compare <strong>all-in cost per minute</strong> for the same configuration, then multiply by your expected minutes. We walk through real calculations in ${link('/blog/how-much-does-an-ai-voice-agent-cost/', 'How Much Does an AI Voice Agent Cost?')}.</p>
@@ -74,7 +74,7 @@ ${table(
 
 <h2>How we choose for clients</h2>
 <ol>
-  <li><strong>Map the calls:</strong> how predictable are the paths? Predictable favours Retell flows; open-ended with heavy tool use favours Vapi.</li>
+  <li><strong>Map the calls:</strong> how predictable are the paths? Predictable favors Retell flows; open-ended with heavy tool use favors Vapi.</li>
   <li><strong>List integrations:</strong> more custom systems and branching logic tilts towards Vapi.</li>
   <li><strong>Consider who maintains it:</strong> in-house developers suit Vapi; operations teams often prefer Retell.</li>
   <li><strong>Prototype both</strong> when the choice is close, a day of testing beats a month of regret.</li>

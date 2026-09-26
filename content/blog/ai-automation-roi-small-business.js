@@ -20,7 +20,7 @@ export default {
   services: ['ai-automation-consultant', 'workflow-automation', 'ai-receptionist', 'ai-follow-up-system'],
   related: ['ai-small-business-statistics', 'how-much-does-an-ai-voice-agent-cost', 'speed-to-lead-statistics'],
   body: `
-<p>Most AI projects that disappoint don’t fail technically, they fail to show value. Research from MIT’s NANDA initiative found most organisations saw no measurable P&L return from their generative-AI pilots ${cite('mit-95')}. The fix isn’t more AI; it’s choosing work where the return is measurable, and measuring it. Here’s the method we use with clients.</p>
+<p>Most AI projects that disappoint don’t fail technically, they fail to show value. Research from MIT’s NANDA initiative found most organizations saw no measurable P&L return from their generative-AI pilots ${cite('mit-95')}. The fix isn’t more AI; it’s choosing work where the return is measurable, and measuring it. Here’s the method we use with clients.</p>
 
 <h2>Step 1: Pick a workflow with a measurable outcome</h2>
 <p>Good candidates have a clear before-and-after metric:</p>
@@ -40,7 +40,7 @@ ${callout('Revenue formula', '<strong>Recovered revenue / month ≈ recovered op
 <p>Speed matters here: research shows qualification odds fall steeply with slower response ${cite('hbr-7x')}, so faster response doesn’t just recover lost leads, it improves conversion on leads you already reach.</p>
 
 <h2>Step 4: Estimate the cost side</h2>
-${callout('Time-savings formula', '<strong>Monthly savings ≈ hours saved × fully loaded hourly cost</strong><br/>Only count savings you’ll actually realise, redeployed time or avoided hiring.')}
+${callout('Time-savings formula', '<strong>Monthly savings ≈ hours saved × fully loaded hourly cost</strong><br/>Only count savings you’ll actually realize, redeployed time or avoided hiring.')}
 ${statGrid(['stlfed-5-4', 'sf-28'], '#38bdf8')}
 
 <h2>Step 5: Add up the full cost</h2>
@@ -74,7 +74,7 @@ ${callout('ROI and payback', '<strong>Monthly ROI = (monthly value − monthly c
 <p>Compare the same metrics 30, 60 and 90 days after launch. Report both sides, revenue and time, and include the costs honestly. If a workflow isn’t paying back, fix or retire it.</p>
 `,
   faqs: [
-    { q: 'How do you calculate AI automation ROI?', a: 'Estimate monthly value (recovered revenue plus realised time savings), subtract monthly running costs, and divide by those costs. Payback period is the build cost divided by the monthly net value.' },
+    { q: 'How do you calculate AI automation ROI?', a: 'Estimate monthly value (recovered revenue plus realized time savings), subtract monthly running costs, and divide by those costs. Payback period is the build cost divided by the monthly net value.' },
     { q: 'What is a good payback period for AI automation?', a: 'Customer-facing automations like AI phone answering or speed-to-lead often pay back within weeks to a few months. Back-office automations can take longer unless they avoid a hire.' },
     { q: 'Why do many AI projects fail to show ROI?', a: 'Common reasons include choosing vague use cases, not integrating with real systems and not measuring a baseline. Research from MIT’s NANDA initiative found most gen-AI pilots showed no measurable P&L impact.' },
     { q: 'Which AI automation has the highest ROI for small businesses?', a: 'Usually the ones that recover lost revenue: answering missed calls, responding instantly to leads, reducing no-shows and following up on quotes.' },

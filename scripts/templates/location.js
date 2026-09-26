@@ -44,7 +44,7 @@ export const renderLocation = (slug, l) => {
   const industries = l.industries.map((s) => INDUSTRIES.find((i) => i.slug === s));
   const group = LOCATION_GROUPS.find((g) => g.key === meta.group);
   const nearby = ALL_LOCATIONS.filter((x) => x.slug !== slug && (x.group === meta.group || l.nearby?.includes(x.slug))).slice(0, 8);
-  const accent = meta.group === 'international' ? '#38bdf8' : '#2fc4b6';
+  const accent = meta.group.startsWith('us-') ? '#2fc4b6' : '#38bdf8';
   const place = l.shortName ?? meta.name;
 
   const body = [

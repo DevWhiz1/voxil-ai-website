@@ -13,8 +13,8 @@ export default {
   excerpt: 'How many people use AI chatbots, how businesses deploy them, what research says about productivity, and why a majority of customers remain wary.',
   takeaways: [
     'OpenAI reported around 800 million weekly ChatGPT users in October 2025, chatbots are now a mass-market interface.',
-    '71% of organisations regularly use generative AI in at least one function (McKinsey, 2025).',
-    'Gartner predicted 25% of organisations would use chatbots as their primary service channel by 2027.',
+    '71% of organizations regularly use generative AI in at least one function (McKinsey, 2025).',
+    'Gartner predicted 25% of organizations would use chatbots as their primary service channel by 2027.',
     'AI assistance raised support-agent productivity 14% on average, and 34% for novices (NBER).',
     'Most gen-AI pilots fail to show P&L impact; focused, integrated deployments are the exception that pays.',
   ],
@@ -52,7 +52,7 @@ ${table(
 
 <h2>The ROI reality check</h2>
 ${statGrid(['mit-95'], '#6adfd3')}
-<p>Research from MIT’s NANDA initiative found most organisations saw no measurable P&L return from generative-AI pilots ${cite('mit-95')}. The pattern behind the successes: a specific workflow, integration with real systems, and learning from real conversations. A chatbot that books appointments into your calendar and writes leads into your CRM has a measurable outcome. A chatbot that "answers questions" often doesn’t.</p>
+<p>Research from MIT’s NANDA initiative found most organizations saw no measurable P&L return from generative-AI pilots ${cite('mit-95')}. The pattern behind the successes: a specific workflow, integration with real systems, and learning from real conversations. A chatbot that books appointments into your calendar and writes leads into your CRM has a measurable outcome. A chatbot that "answers questions" often doesn’t.</p>
 
 <h2>What to measure if you deploy a chatbot</h2>
 <ul>
@@ -66,7 +66,7 @@ ${statGrid(['mit-95'], '#6adfd3')}
 `,
   faqs: [
     { q: 'How many people use AI chatbots?', a: 'Hundreds of millions weekly. OpenAI reported around 800 million weekly ChatGPT users in October 2025, and Pew Research found 34% of U.S. adults had used ChatGPT by 2025.' },
-    { q: 'Do chatbots reduce customer-service costs?', a: 'They can, by resolving routine requests without an agent. Gartner forecast $80 billion in contact-centre labour savings from conversational AI in 2026. Savings depend on resolution rate, not just chat volume.' },
+    { q: 'Do chatbots reduce customer-service costs?', a: 'They can, by resolving routine requests without an agent. Gartner forecast $80 billion in contact-center labor savings from conversational AI in 2026. Savings depend on resolution rate, not just chat volume.' },
     { q: 'Why do customers dislike chatbots?', a: 'Mostly because of bots that can’t answer or escalate. Grounding answers in approved content, letting the bot take real actions and offering an easy hand-off to a human address most complaints.' },
     { q: 'What is a good chatbot resolution rate?', a: 'It varies by industry and scope. Start with a narrow set of high-volume requests where the bot can fully resolve the issue, measure resolution weekly, and expand scope as the rate improves.' },
   ],

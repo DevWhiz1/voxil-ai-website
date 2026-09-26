@@ -1,21 +1,96 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    { "source": "/services.html", "destination": "/services/", "permanent": true },
-    { "source": "/ai-voice-agents.html", "destination": "/services/ai-voice-agents/", "permanent": true },
-    { "source": "/ai-chatbot-development.html", "destination": "/services/ai-chatbots/", "permanent": true },
-    { "source": "/ai-saas-development.html", "destination": "/services/ai-saas-development/", "permanent": true },
-    { "source": "/lead-capture-system.html", "destination": "/services/lead-capture-system/", "permanent": true },
-    { "source": "/service-details.html", "destination": "/services/", "permanent": true },
-    { "source": "/features.html", "destination": "/services/", "permanent": true },
-    { "source": "/integration.html", "destination": "/services/api-integration/", "permanent": true },
-    { "source": "/blog.html", "destination": "/blog/", "permanent": true },
-    { "source": "/blog-details.html", "destination": "/blog/", "permanent": true }
+    {
+      "source": "/services.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-voice-agents.html",
+      "destination": "/services/ai-voice-agents/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbot-development.html",
+      "destination": "/services/ai-chatbots/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-saas-development.html",
+      "destination": "/services/ai-saas-development/",
+      "permanent": true
+    },
+    {
+      "source": "/lead-capture-system.html",
+      "destination": "/services/lead-capture-system/",
+      "permanent": true
+    },
+    {
+      "source": "/service-details.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/features.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/integration.html",
+      "destination": "/services/api-integration/",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-details.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study.html",
+      "destination": "/case-studies/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-healthcare.html",
+      "destination": "/case-studies/healthcare-patient-intake/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-ecommerce.html",
+      "destination": "/case-studies/ecommerce-support-chatbot/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-finance.html",
+      "destination": "/case-studies/finance-lead-qualification/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-real-estate.html",
+      "destination": "/case-studies/real-estate-listing-agent/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-details.html",
+      "destination": "/case-studies/",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/llms.txt",
-      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     }
   ]
 }

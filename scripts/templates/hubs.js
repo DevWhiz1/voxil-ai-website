@@ -76,7 +76,7 @@ export const renderLocationsHub = () => {
     { name: 'Locations', url: path },
   ];
   const all = LOCATION_GROUPS.flatMap((g) => g.locations);
-  const title = 'Locations We Serve: AI Automation Agency for the US, UK, UAE, Canada & Australia | Voxil AI';
+  const title = 'Locations We Serve: AI Automation Agency for the US, UK, Europe, Canada & Australia | Voxil AI';
   const description = `Voxil AI serves businesses in ${all.length} markets, New York, Los Angeles, Chicago, Houston, Dallas, Miami and more across the US, plus the UK, Dubai/UAE, Canada, Australia and Pakistan.`;
   const faqs = [
     { q: 'Do you work with businesses outside these locations?', a: 'Yes. We’re remote-first and work with businesses anywhere; these pages cover markets where we have the most clients and local context.' },
@@ -86,12 +86,12 @@ export const renderLocationsHub = () => {
   const body = `
     ${hubHero({ crumbs, eyebrowText: `${all.length} markets`, h1: 'AI automation for businesses <span class="text-gradient-teal">wherever you are</span>', lead: 'Remote-first, working in your time zone, with local context on markets, languages and compliance rules for every region we serve.' })}
     <section class="section-soft section-pad-sm">
-      <div class="main-container relative z-10 grid gap-5 md:grid-cols-2">
+      <div class="main-container relative z-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         ${LOCATION_GROUPS.map(
           (g) => `
-        <div data-reveal class="glass-card glass-card-topline" style="--accent: ${g.key === 'international' ? '#38bdf8' : '#2fc4b6'}">
+        <div data-reveal class="glass-card glass-card-topline" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#2fc4b6'}">
           <div class="flex items-center gap-3">
-            <span class="icon-tile" style="--accent: ${g.key === 'international' ? '#38bdf8' : '#2fc4b6'}">${icon(g.key === 'international' ? 'globe' : 'pin')}</span>
+            <span class="icon-tile" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#2fc4b6'}">${icon(!g.key.startsWith('us-') ? 'globe' : 'pin')}</span>
             <h2 class="text-heading-6 font-semibold text-secondary">${g.title}</h2>
           </div>
           <ul class="mt-5 grid grid-cols-2 gap-2">

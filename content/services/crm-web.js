@@ -55,7 +55,7 @@ export default {
       rows: [
         ['GoHighLevel', 'Local & service businesses, agencies', 'All-in-one marketing + CRM + AI', 'Needs expert setup to stay clean'],
         ['HubSpot', 'B2B and inbound-led companies', 'Ease of use, marketing tools', 'Costs scale with seats and tiers'],
-        ['Salesforce', 'Complex, larger sales teams', 'Customisation, ecosystem', 'Admin overhead'],
+        ['Salesforce', 'Complex, larger sales teams', 'Customization, ecosystem', 'Admin overhead'],
         ['Pipedrive', 'Small sales teams', 'Simple visual pipeline', 'Lighter marketing features'],
         ['Zoho CRM', 'Budget-conscious teams', 'Value, Zoho suite', 'UI and integrations vary'],
       ],
@@ -97,7 +97,7 @@ export default {
       title: 'Your CRM should do the chasing',
       paras: [
         'Sales teams lose a large share of their week to admin, updating records, logging activity, chasing internal handoffs. CRM automation takes that work away and makes the pipeline self-updating.',
-        'We automate the repeatable steps and use AI where judgement helps: summarising calls into notes, extracting next steps, flagging stalled deals and drafting follow-ups for reps to approve.',
+        'We automate the repeatable steps and use AI where judgment helps: summarizing calls into notes, extracting next steps, flagging stalled deals and drafting follow-ups for reps to approve.',
       ],
     },
     included: [
@@ -112,7 +112,7 @@ export default {
       { icon: 'users', title: 'Smart assignment', desc: 'Round-robin, territory or capacity-based lead routing.' },
       { icon: 'clipboard', title: 'Auto tasks', desc: 'The next step is always created, no deal left without an owner or date.' },
       { icon: 'trending', title: 'Stage automation', desc: 'Deals move and trigger actions when criteria are met.' },
-      { icon: 'sparkles', title: 'AI notes', desc: 'Calls and emails summarised into the record automatically.' },
+      { icon: 'sparkles', title: 'AI notes', desc: 'Calls and emails summarized into the record automatically.' },
       { icon: 'clock', title: 'Stall alerts', desc: 'Managers alerted when deals sit too long in a stage.' },
       { icon: 'chart', title: 'Auto reporting', desc: 'Weekly pipeline digests delivered to Slack or email.' },
     ],
@@ -165,7 +165,7 @@ export default {
     included: [
       'Source audit and data-quality report',
       'Object and field mapping',
-      'Deduplication and normalisation',
+      'Deduplication and normalization',
       'Records, associations, notes and files',
       'Automation and report rebuilds',
       'Validation and cut-over plan',
@@ -229,7 +229,7 @@ export default {
       'Error handlers, retries and alerts',
       'AI modules (OpenAI, Claude)',
       'Custom HTTP/API connections',
-      'Operation-usage optimisation',
+      'Operation-usage optimization',
       'Documentation and handover',
     ],
     features: [
@@ -237,7 +237,7 @@ export default {
       { icon: 'shield', title: 'Error handling', desc: 'Break, resume and rollback directives with alerts on failure.' },
       { icon: 'sparkles', title: 'AI steps', desc: 'Classify, extract and draft with AI inside your scenarios.' },
       { icon: 'code', title: 'Any API', desc: 'HTTP modules and custom apps for tools without native modules.' },
-      { icon: 'currency', title: 'Cost optimisation', desc: 'Designs that minimise operations and keep plans affordable.' },
+      { icon: 'currency', title: 'Cost optimization', desc: 'Designs that minimize operations and keep plans affordable.' },
       { icon: 'document', title: 'Documentation', desc: 'Every scenario explained so your team can maintain it.' },
     ],
     steps: [
@@ -256,9 +256,9 @@ export default {
     integrations: ['Make.com', 'Google Workspace', 'Microsoft 365', 'Airtable', 'Notion', 'Slack', 'HubSpot', 'GoHighLevel', 'Shopify', 'Stripe', 'QuickBooks', 'Xero', 'OpenAI', 'Anthropic Claude', 'Webhooks'],
     faqs: [
       { q: 'Is Make.com better than Zapier?', a: `For complex, multi-step logic at volume, Make is often more capable and cost-effective. Zapier is simpler and has the largest app library. Compare them in our ${link('/blog/n8n-vs-make-vs-zapier/', 'n8n vs Make vs Zapier guide')}.` },
-      { q: 'Can you fix my existing Make scenarios?', a: 'Yes, audits, error handling, performance and cost optimisation.' },
+      { q: 'Can you fix my existing Make scenarios?', a: 'Yes, audits, error handling, performance and cost optimization.' },
       { q: 'Can Make.com use AI?', a: 'Yes, through modules for OpenAI, Anthropic and others, or via HTTP calls to any AI API.' },
-      { q: 'Who owns the scenarios?', a: 'You do, built in your Make organisation.' },
+      { q: 'Who owns the scenarios?', a: 'You do, built in your Make organization.' },
       { q: 'Can you migrate from Zapier to Make?', a: 'Yes, we rebuild Zaps as Make scenarios and often reduce costs in the process.' },
     ],
     related: ['zapier-automation', 'n8n-automation', 'workflow-automation', 'api-integration'],
@@ -299,7 +299,7 @@ export default {
       { icon: 'sliders', title: 'Paths & filters', desc: 'Conditional logic without wasted tasks.' },
       { icon: 'code', title: 'Webhooks', desc: 'Connect tools without native Zapier apps.' },
       { icon: 'sparkles', title: 'AI steps', desc: 'Summaries, classification and drafting inside Zaps.' },
-      { icon: 'currency', title: 'Task optimisation', desc: 'Audits that reduce task usage and plan costs.' },
+      { icon: 'currency', title: 'Task optimization', desc: 'Audits that reduce task usage and plan costs.' },
       { icon: 'document', title: 'Documentation', desc: 'A register of every Zap and what it does.' },
     ],
     steps: [
@@ -379,7 +379,7 @@ export default {
     industries: ['medical-clinics', 'law-firms', 'insurance', 'real-estate'],
     integrations: ['n8n', 'Docker', 'Kubernetes', 'AWS', 'Google Cloud', 'Hetzner', 'Postgres', 'Redis', 'OpenAI', 'Anthropic Claude', 'Ollama', 'Pinecone', 'Supabase', 'Slack', 'HubSpot', 'GoHighLevel', 'Webhooks'],
     faqs: [
-      { q: 'Is n8n free?', a: 'n8n offers a self-hosted Community Edition under its fair-code licence, plus paid cloud and enterprise plans. Self-hosting has infrastructure and maintenance costs but no per-execution pricing.' },
+      { q: 'Is n8n free?', a: 'n8n offers a self-hosted Community Edition under its fair-code license, plus paid cloud and enterprise plans. Self-hosting has infrastructure and maintenance costs but no per-execution pricing.' },
       { q: 'Is n8n good for AI agents?', a: 'Yes. n8n has native AI agent nodes with tools, memory and vector-store integrations, making it one of the most flexible platforms for building LLM agents.' },
       { q: 'Should I self-host or use n8n Cloud?', a: 'Self-host for data control and high volume; use Cloud to avoid maintenance. We help you decide.' },
       { q: 'Can you migrate from Zapier or Make to n8n?', a: 'Yes, we rebuild workflows in n8n, typically reducing running costs at volume.' },
@@ -422,7 +422,7 @@ export default {
       { icon: 'code', title: 'Any API', desc: 'REST, GraphQL, SOAP and webhooks, documented or not.' },
       { icon: 'shield', title: 'Secure', desc: 'Secrets management, least-privilege access and encrypted transport.' },
       { icon: 'refresh', title: 'Resilient', desc: 'Idempotent operations, retries and dead-letter queues.' },
-      { icon: 'server', title: 'Scalable', desc: 'Serverless or containerised services that scale with volume.' },
+      { icon: 'server', title: 'Scalable', desc: 'Serverless or containerized services that scale with volume.' },
       { icon: 'sparkles', title: 'AI integrations', desc: 'Connect LLMs, voice agents and vector stores to your systems.' },
       { icon: 'chart', title: 'Observable', desc: 'Structured logs, metrics and alerts for every sync.' },
     ],
@@ -453,11 +453,11 @@ export default {
   'sales-funnel-builder': {
     title: 'Sales Funnel Builder Services | High-Converting Funnels | Voxil AI',
     description:
-      'Done-for-you sales funnels: landing pages, offers, checkout, upsells, booking and automated follow-up, built in GoHighLevel, ClickFunnels, WordPress or custom, and optimised for conversion.',
+      'Done-for-you sales funnels: landing pages, offers, checkout, upsells, booking and automated follow-up, built in GoHighLevel, ClickFunnels, WordPress or custom, and optimized for conversion.',
     h1: 'Sales funnels that <span class="text-gradient-teal">convert and follow up</span>',
     lead: 'Offer, page, checkout, booking and follow-up, designed as one system. We build sales funnels that turn traffic into customers and keep working on the ones who don’t buy yet.',
     answer:
-      'A <strong>sales funnel</strong> is the sequence of pages and messages that takes a prospect from first visit to purchase, typically a landing page, offer, order form or booking step, upsells, and automated follow-up. A sales funnel builder designs, writes, builds and optimises that sequence to maximise conversion.',
+      'A <strong>sales funnel</strong> is the sequence of pages and messages that takes a prospect from first visit to purchase, typically a landing page, offer, order form or booking step, upsells, and automated follow-up. A sales funnel builder designs, writes, builds and optimizes that sequence to maximize conversion.',
     facts: [
       { label: 'Build time', value: '2-4 weeks' },
       { label: 'Copywriting', value: 'Included' },
@@ -492,7 +492,7 @@ export default {
       { title: 'Strategy', desc: 'Audience, offer and funnel map.' },
       { title: 'Copy & design', desc: 'Pages written and designed.' },
       { title: 'Build & connect', desc: 'Checkout, CRM and automations wired.' },
-      { title: 'Launch & optimise', desc: 'Go live, measure and test.' },
+      { title: 'Launch & optimize', desc: 'Go live, measure and test.' },
     ],
     fit: [
       'Coaches, consultants and course creators',
@@ -530,7 +530,7 @@ export default {
     whatIs: {
       title: 'Give value first. Capture intent. Follow up fast.',
       paras: [
-        'Most visitors aren’t ready to "book a call". A good lead generation funnel meets them where they are, with a useful resource, a personalised quiz or an instant estimate, and earns their contact details.',
+        'Most visitors aren’t ready to "book a call". A good lead generation funnel meets them where they are, with a useful resource, a personalized quiz or an instant estimate, and earns their contact details.',
         `Then speed matters. We connect every funnel to instant follow-up by SMS, email, chat or AI voice, so leads hear from you in seconds. Try our own ${link('/resources/lead-loss-calculator/', 'lead loss calculator')} to see this in action.`,
       ],
     },
@@ -544,7 +544,7 @@ export default {
     ],
     features: [
       { icon: 'document', title: 'Lead magnets', desc: 'Guides, checklists and templates your audience actually wants.' },
-      { icon: 'question', title: 'Quiz funnels', desc: 'Personalised results that segment and qualify leads.' },
+      { icon: 'question', title: 'Quiz funnels', desc: 'Personalized results that segment and qualify leads.' },
       { icon: 'calculator', title: 'Calculators', desc: 'Instant estimates and ROI tools that capture high-intent leads.' },
       { icon: 'calendar', title: 'Booking funnels', desc: 'Qualify and book consultations in one flow.' },
       { icon: 'bolt', title: 'Speed-to-lead', desc: 'Automated SMS, email or AI call within seconds.' },
@@ -554,10 +554,10 @@ export default {
       { title: 'Offer', desc: 'Pick the magnet or tool your audience values.' },
       { title: 'Build', desc: 'Pages, forms, quiz or calculator.' },
       { title: 'Automate', desc: 'Follow-up, scoring and routing.' },
-      { title: 'Drive traffic', desc: 'Ads, SEO or email, then optimise.' },
+      { title: 'Drive traffic', desc: 'Ads, SEO or email, then optimize.' },
     ],
     fit: [
-      'Service businesses needing more qualified enquiries',
+      'Service businesses needing more qualified inquiries',
       'Advertisers with high cost per lead',
       'B2B companies with long sales cycles',
       'Brands with traffic but few conversions',
@@ -566,7 +566,7 @@ export default {
     integrations: ['GoHighLevel', 'HubSpot', 'Typeform', 'Tally', 'ScoreApp', 'Outgrow', 'WordPress', 'Webflow', 'Meta Ads', 'Google Ads', 'Twilio', 'Zapier', 'Make.com'],
     faqs: [
       { q: 'What’s the best lead magnet for my business?', a: 'One that solves a specific, urgent problem for your ideal customer, for service businesses, instant estimates and calculators often outperform generic guides.' },
-      { q: 'Do quizzes really work?', a: 'Well-designed quizzes can convert well because they’re interactive and personalised, and they segment leads automatically.' },
+      { q: 'Do quizzes really work?', a: 'Well-designed quizzes can convert well because they’re interactive and personalized, and they segment leads automatically.' },
       { q: 'How fast should leads be followed up?', a: `As fast as possible, ideally within minutes. See our ${link('/blog/speed-to-lead-statistics/', 'speed-to-lead statistics')}.` },
       { q: 'Can the funnel connect to my CRM?', a: 'Yes, GoHighLevel, HubSpot, Salesforce and others.' },
       { q: 'Do you drive traffic?', a: 'We can run ads and SEO, or connect the funnel to your existing traffic.' },
@@ -581,7 +581,7 @@ export default {
     h1: 'Websites designed to <span class="text-gradient-teal">rank, convert and automate</span>',
     lead: 'Fast, beautiful, SEO- and AI-search-ready websites with booking, chat and CRM built in, so your site is your best salesperson, not just a brochure.',
     answer:
-      'Professional <strong>website design</strong> for service businesses combines conversion-focused design, fast performance, mobile-first layouts and technical SEO, including structured data for search and AI answer engines, with built-in lead capture, booking, chat and CRM integration so visitors become enquiries automatically.',
+      'Professional <strong>website design</strong> for service businesses combines conversion-focused design, fast performance, mobile-first layouts and technical SEO, including structured data for search and AI answer engines, with built-in lead capture, booking, chat and CRM integration so visitors become inquiries automatically.',
     facts: [
       { label: 'Timeline', value: '3-6 weeks' },
       { label: 'Performance', value: 'Core Web Vitals' },
@@ -592,8 +592,8 @@ export default {
     whatIs: {
       title: 'Your website is the first salesperson every lead meets',
       paras: [
-        'Most small-business sites are slow, generic and disconnected from the tools that follow up. Visitors leave without enquiring, and those who do fill a form wait hours for a reply.',
-        'We design sites around conversion and search: clear service pages, local and location pages, answer-first content, structured data, fast load times, plus AI chat, booking and CRM integration so every enquiry is captured and answered instantly.',
+        'Most small-business sites are slow, generic and disconnected from the tools that follow up. Visitors leave without inquiring, and those who do fill a form wait hours for a reply.',
+        'We design sites around conversion and search: clear service pages, local and location pages, answer-first content, structured data, fast load times, plus AI chat, booking and CRM integration so every inquiry is captured and answered instantly.',
       ],
     },
     included: [
@@ -606,7 +606,7 @@ export default {
     ],
     features: [
       { icon: 'desktop', title: 'Custom design', desc: 'On-brand, modern design, not a recycled template.' },
-      { icon: 'bolt', title: 'Fast by default', desc: 'Optimised for Core Web Vitals and mobile performance.' },
+      { icon: 'bolt', title: 'Fast by default', desc: 'Optimized for Core Web Vitals and mobile performance.' },
       { icon: 'search', title: 'SEO & AEO ready', desc: 'Semantic structure, schema and answer-first content.' },
       { icon: 'chat', title: 'AI chat', desc: 'A chatbot trained on your services captures leads 24/7.' },
       { icon: 'calendar', title: 'Online booking', desc: 'Visitors book directly into your calendar.' },
@@ -629,7 +629,7 @@ export default {
     faqs: [
       { q: 'How long does a website take?', a: 'Three to six weeks for most service-business sites, depending on page count and content readiness.' },
       { q: 'Which platform do you build on?', a: 'WordPress, Webflow, GoHighLevel or custom code, chosen for your needs, budget and who will maintain it.' },
-      { q: 'Will my site be optimised for AI search?', a: 'Yes, clean semantic HTML, structured data, answer-first content and entity consistency help AI Overviews and assistants understand and cite your business.' },
+      { q: 'Will my site be optimized for AI search?', a: 'Yes, clean semantic HTML, structured data, answer-first content and entity consistency help AI Overviews and assistants understand and cite your business.' },
       { q: 'Do you write the content?', a: 'Yes, copywriting is included, with your input on services and differentiators.' },
       { q: 'Can you redesign without losing rankings?', a: 'Yes, we map redirects, preserve URLs where possible and protect existing SEO value.' },
     ],
@@ -683,7 +683,7 @@ export default {
     fit: [
       'Founders validating an AI product idea',
       'Businesses turning internal AI tools into products',
-      'Agencies productising services as SaaS',
+      'Agencies productizing services as SaaS',
       'Startups needing senior engineering without hiring a team',
     ],
     industries: ['real-estate', 'insurance', 'law-firms', 'medical-clinics'],
@@ -691,7 +691,7 @@ export default {
     faqs: [
       { q: 'How long does it take to build an AI SaaS MVP?', a: 'Typically six to twelve weeks to a first production release, depending on scope.' },
       { q: 'Who owns the IP?', a: 'You do, code, designs, prompts and infrastructure.' },
-      { q: 'How do you control AI costs?', a: 'Model routing, caching, prompt optimisation, usage limits and per-customer cost tracking.' },
+      { q: 'How do you control AI costs?', a: 'Model routing, caching, prompt optimization, usage limits and per-customer cost tracking.' },
       { q: 'Can you work with our in-house team?', a: 'Yes, we can lead the build or augment your engineers.' },
       { q: 'Do you support after launch?', a: 'Yes, through ongoing development retainers or a structured handover to your team.' },
     ],

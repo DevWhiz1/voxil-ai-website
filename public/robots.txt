@@ -27,5 +27,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://voxilai.tech/sitemap.xml
-# LLM-friendly site map: https://voxilai.tech/llms.txt
+Sitemap: https://www.voxilai.tech/sitemap.xml
+# LLM-friendly site map: https://www.voxilai.tech/llms.txt

@@ -9,10 +9,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { hub as agencyHub, models as agencyModels } from '../content/agencies.js';
+import caseStudies from '../content/case-studies.js';
 import industries from '../content/industries.js';
 import locations from '../content/locations.js';
 import { AGENCY_PAGES, ALL_LOCATIONS, ALL_SERVICES, INDUSTRIES, LOCATION_GROUPS, RESOURCES, SERVICE_GROUPS, SITE } from '../content/site.js';
 import { renderAgencyHub, renderAgencyModel } from './templates/agencies.js';
+import { renderCaseStudiesHub, renderCaseStudy } from './templates/case-studies.js';
 import { renderBlogHub, renderPost } from './templates/blog.js';
 import { renderIndustriesHub, renderLocationsHub, renderServicesHub } from './templates/hubs.js';
 import { footerLinks, footerLocations, homeExplore, navDesktop, navMobile } from './templates/nav.js';
@@ -83,6 +85,12 @@ for (const a of AGENCY_PAGES) {
   write(`/for-agencies/${a.slug}/`, renderAgencyModel(a.slug, agencyModels[a.slug]));
 }
 
+// Drafts in content/case-studies.js are skipped until `draft` is removed.
+const publishedCaseStudies = caseStudies.filter((c) => !c.draft);
+resetDir('case-studies');
+write('/case-studies/', renderCaseStudiesHub(publishedCaseStudies));
+publishedCaseStudies.forEach((c) => write(`/case-studies/${c.slug}/`, renderCaseStudy(c, publishedCaseStudies)));
+
 resetDir('resources');
 write('/resources/', renderResourcesHub(posts));
 write('/resources/lead-loss-calculator/', renderCalculator());
@@ -107,7 +115,7 @@ const sortedPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date));
 const llms = [
   `# ${SITE.name}`,
   '',
-  '> Voxil AI is a remote-first AI automation agency that builds custom AI voice agents, AI receptionists, chatbots, WhatsApp automation, GoHighLevel and CRM automation for service businesses in the US, UK, Canada, Australia, the UAE and Pakistan. Projects are fixed-price; clients own the code and configuration.',
+  '> Voxil AI is a remote-first AI automation agency that builds custom AI voice agents, AI receptionists, chatbots, WhatsApp automation, GoHighLevel and CRM automation for service businesses in the US, UK, Europe (EU), Canada, Australia, the UAE and Pakistan. Projects are fixed-price; clients own the code and configuration.',
   '',
   `Contact: ${SITE.email} · Book a call: ${SITE.url}/book-meeting.html`,
   '',
@@ -116,7 +124,8 @@ const llms = [
   `- [For Agencies](${SITE.url}/for-agencies/): White label fulfillment partner program`,
   `- [All services](${SITE.url}/services/): ${ALL_SERVICES.length} AI automation services`,
   `- [About](${SITE.url}/about.html)`,
-  `- [Case studies](${SITE.url}/case-study.html)`,
+  `- [Case studies](${SITE.url}/case-studies/)`,
+  ...publishedCaseStudies.map((c) => `  - [${c.title}](${SITE.url}/case-studies/${c.slug}/): ${c.summary}`),
   `- [FAQ](${SITE.url}/faq.html)`,
   '',
   ...SERVICE_GROUPS.flatMap((g) => [`## Services: ${g.title}`, ...g.services.map((sv) => `- [${sv.name}](${SITE.url}/services/${sv.slug}/): ${sv.short}`), '']),

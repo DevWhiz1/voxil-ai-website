@@ -37,8 +37,8 @@ export default {
   <li>Answer every call on the first ring, including several at once.</li>
   <li>Answer FAQs: hours, location, services, pricing guidance, insurance accepted.</li>
   <li>Book, reschedule and cancel appointments in your scheduling tool.</li>
-  <li>Qualify new enquiries and capture details into your CRM.</li>
-  <li>Recognise urgent situations and transfer to a person or on-call line.</li>
+  <li>Qualify new inquiries and capture details into your CRM.</li>
+  <li>Recognize urgent situations and transfer to a person or on-call line.</li>
   <li>Speak multiple languages and switch automatically.</li>
 </ul>
 

@@ -3,10 +3,10 @@
 // all read from here, so a page added here is linked everywhere at once.
 
 export const SITE = {
-  url: 'https://voxilai.tech',
+  url: 'https://www.voxilai.tech',
   name: 'Voxil AI',
   email: 'info@voxilai.tech',
-  logo: 'https://voxilai.tech/images/shared/main-logo.svg',
+  logo: 'https://www.voxilai.tech/images/shared/main-logo.svg',
   ogImage: 'https://res.cloudinary.com/dxrr3gb42/image/upload/v1783155174/voxil_zwnian.png',
   sameAs: [
     'https://www.facebook.com/share/1Ec6E4n7f7/',
@@ -120,7 +120,7 @@ export const EXTRA_SERVICES = [
   { slug: 'gohighlevel-automation', name: 'GoHighLevel Automation', icon: 'layers', accent: '#38bdf8', group: 'ghl', short: 'End-to-end automation of your pipeline inside GoHighLevel.' },
   { slug: 'seo-paid-ads', name: 'SEO & Paid Ads', icon: 'search', accent: '#2fc4b6', group: 'automation', short: 'SEO, AEO and paid campaigns that feed your automated funnel.' },
   { slug: 'ai-saas-development', name: 'AI SaaS Development', icon: 'layers', accent: '#38bdf8', group: 'crm', short: 'Full AI product builds, UI, LLM, auth, billing and infra.' },
-  { slug: 'lead-capture-system', name: 'Lead Capture Systems', icon: 'bolt', accent: '#6adfd3', group: 'automation', short: 'Intake, scoring and routing so no enquiry slips through.' },
+  { slug: 'lead-capture-system', name: 'Lead Capture Systems', icon: 'bolt', accent: '#6adfd3', group: 'automation', short: 'Intake, scoring and routing so no inquiry slips through.' },
 ];
 
 export const ALL_SERVICES = [
@@ -176,13 +176,29 @@ export const LOCATION_GROUPS = [
     ],
   },
   {
+    key: 'uk-europe',
+    title: 'UK & Europe',
+    locations: [
+      { slug: 'united-kingdom', name: 'United Kingdom' },
+      { slug: 'london', name: 'London' },
+      { slug: 'manchester', name: 'Manchester' },
+      { slug: 'europe', name: 'Europe (EU)' },
+      { slug: 'ireland', name: 'Ireland' },
+      { slug: 'netherlands', name: 'Netherlands' },
+      { slug: 'germany', name: 'Germany' },
+    ],
+  },
+  {
     key: 'international',
     title: 'International',
     locations: [
-      { slug: 'united-kingdom', name: 'United Kingdom' },
-      { slug: 'dubai-uae', name: 'Dubai / UAE' },
       { slug: 'canada', name: 'Canada' },
+      { slug: 'toronto', name: 'Toronto' },
+      { slug: 'vancouver', name: 'Vancouver' },
       { slug: 'australia', name: 'Australia' },
+      { slug: 'sydney', name: 'Sydney' },
+      { slug: 'melbourne', name: 'Melbourne' },
+      { slug: 'dubai-uae', name: 'Dubai / UAE' },
       { slug: 'pakistan', name: 'Pakistan' },
     ],
   },

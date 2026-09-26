@@ -85,7 +85,7 @@ export const renderResourcesHub = (posts) => {
 };
 
 // ---------------------------------------------------------------------------
-// Lead Loss Calculator (behaviour in src/js/common/lead-loss-calculator.js)
+// Lead Loss Calculator (behavior in src/js/common/lead-loss-calculator.js)
 // ---------------------------------------------------------------------------
 const calcField = ({ id, label, hint, min, max, step, value, prefix = '', suffix = '' }) => `
               <div>
@@ -204,7 +204,7 @@ export const renderStatsHub = () => {
   const count = Object.keys(STATS).length;
 
   const faqs = [
-    { q: 'What percentage of companies use AI in 2026?', a: 'The most recent McKinsey State of AI survey found 78% of organisations use AI in at least one business function, and 71% regularly use generative AI.' },
+    { q: 'What percentage of companies use AI in 2026?', a: 'The most recent McKinsey State of AI survey found 78% of organizations use AI in at least one business function, and 71% regularly use generative AI.' },
     { q: 'How big is the AI market?', a: 'Estimates vary by definition. Grand View Research estimated the global AI market at about $279 billion in 2024, growing roughly 36% a year to 2030. Stanford’s AI Index reported $109.1 billion of U.S. private AI investment in 2024.' },
     { q: 'Will AI replace customer-service jobs?', a: 'AI is changing service work. Gartner predicts agentic AI will resolve 80% of common service issues autonomously by 2029, while research shows AI assistance raises agent productivity. The WEF expects net job growth globally by 2030, with significant role shifts.' },
     { q: 'How often is this page updated?', a: `We review it regularly and note the last update date at the top. Last updated ${SITE.updated}.` },
@@ -234,7 +234,7 @@ export const renderStatsHub = () => {
       accent: r.accent,
       h1: 'AI statistics 2026: <span class="text-gradient-teal">the numbers that matter</span>',
       lead: `${count} sourced statistics on AI adoption, investment, jobs, customer service, AI agents, speed-to-lead and small business, each with its original source and year.`,
-      answer: 'In 2026, AI is mainstream: <strong>78% of organisations use AI</strong> in at least one function (McKinsey), <strong>ChatGPT reached ~800M weekly users</strong> (OpenAI), and Gartner predicts agentic AI will resolve <strong>80% of common customer-service issues by 2029</strong>. Yet many pilots still fail to show ROI, focused, integrated deployments win.',
+      answer: 'In 2026, AI is mainstream: <strong>78% of organizations use AI</strong> in at least one function (McKinsey), <strong>ChatGPT reached ~800M weekly users</strong> (OpenAI), and Gartner predicts agentic AI will resolve <strong>80% of common customer-service issues by 2029</strong>. Yet many pilots still fail to show ROI, focused, integrated deployments win.',
       answerLabel: 'Summary',
       facts: [
         { label: 'Statistics', value: String(count) },
@@ -274,7 +274,7 @@ export const renderStatsHub = () => {
       <div class="main-container relative z-10 grid gap-6 lg:grid-cols-2">
         <div data-reveal class="glass-card">
           <h2 class="text-heading-6 font-semibold text-secondary">Methodology</h2>
-          <p class="text-tagline-2 mt-3 text-secondary/60">We include only figures published by the named organisation, quote them in the source’s own framing, and label forecasts as predictions. Where definitions differ between sources (e.g. market size), we say so. Figures are reviewed on a regular schedule; older but still widely referenced studies are marked with their year so you can judge recency.</p>
+          <p class="text-tagline-2 mt-3 text-secondary/60">We include only figures published by the named organization, quote them in the source’s own framing, and label forecasts as predictions. Where definitions differ between sources (e.g. market size), we say so. Figures are reviewed on a regular schedule; older but still widely referenced studies are marked with their year so you can judge recency.</p>
         </div>
         <div data-reveal class="glass-card">
           <h2 class="text-heading-6 font-semibold text-secondary">Cite this page</h2>
@@ -332,7 +332,7 @@ export const renderStatsHub = () => {
 };
 
 // ---------------------------------------------------------------------------
-// GHL Setup Checklist (behaviour in src/js/common/checklist.js)
+// GHL Setup Checklist (behavior in src/js/common/checklist.js)
 // ---------------------------------------------------------------------------
 const CHECKLIST = [
   { title: 'Account foundations', items: ['Business profile: legal name, address, time zone, logo', 'Users added with correct roles and permissions', 'Two-factor authentication enabled for all users', 'Custom domain / white-label domain connected', 'Business hours and holidays configured'] },
@@ -414,8 +414,8 @@ export const renderMediaKit = () => {
   const r = RESOURCES.find((x) => x.slug === 'media-kit');
   const path = resourceUrl(r.slug);
   const crumbs = crumbsFor(r.name, r.slug);
-  const title = 'Voxil AI Media Kit: Logos, Brand Colours & Company Boilerplate';
-  const description = 'Voxil AI media kit for press and partners: company boilerplate, logo files, brand colours, typography and press contact.';
+  const title = 'Voxil AI Media Kit: Logos, Brand Colors & Company Boilerplate';
+  const description = 'Voxil AI media kit for press and partners: company boilerplate, logo files, brand colors, typography and press contact.';
   const colors = [
     ['Teal 500', '#0f9f93'],
     ['Teal 400', '#2fc4b6'],
@@ -425,30 +425,30 @@ export const renderMediaKit = () => {
     ['Ink 850', '#0c1220'],
   ];
   const body = `
-    ${simpleHero({ crumbs, eyebrowText: 'Press & partners', accent: r.accent, h1: 'Voxil AI <span class="text-gradient-teal">media kit</span>', lead: 'Everything you need to write about or partner with Voxil AI: boilerplate, logos, colours and contacts.' })}
+    ${simpleHero({ crumbs, eyebrowText: 'Press & partners', accent: r.accent, h1: 'Voxil AI <span class="text-gradient-teal">media kit</span>', lead: 'Everything you need to write about or partner with Voxil AI: boilerplate, logos, colors and contacts.' })}
     <section class="section-soft section-pad-sm">
       <div class="main-container relative z-10 grid gap-5 lg:grid-cols-2">
         <div data-reveal class="glass-card">
           <h2 class="text-heading-6 font-semibold text-secondary">Boilerplate, short</h2>
           <p class="text-tagline-2 mt-3 text-secondary/70">Voxil AI is an AI automation agency that builds custom AI voice agents, chatbots and workflow automation for service businesses.</p>
           <h2 class="text-heading-6 mt-7 font-semibold text-secondary">Boilerplate, long</h2>
-          <p class="text-tagline-2 mt-3 text-secondary/70">Voxil AI designs and builds production AI systems for service businesses and agencies, AI receptionists and voice agents, website and WhatsApp chatbots, GoHighLevel and CRM automation, and custom AI software. The remote-first team works with clients across the United States, United Kingdom, Canada, Australia, the UAE and Pakistan, delivering fixed-scope projects that integrate with the tools clients already use. Clients own the code, prompts and configuration.</p>
+          <p class="text-tagline-2 mt-3 text-secondary/70">Voxil AI designs and builds production AI systems for service businesses and agencies, AI receptionists and voice agents, website and WhatsApp chatbots, GoHighLevel and CRM automation, and custom AI software. The remote-first team works with clients across the United States, United Kingdom, Europe, Canada, Australia, the UAE and Pakistan, delivering fixed-scope projects that integrate with the tools clients already use. Clients own the code, prompts and configuration.</p>
         </div>
         <div class="space-y-5">
           <div data-reveal class="glass-card">
             <h2 class="text-heading-6 font-semibold text-secondary">Logo</h2>
             <div class="mt-4 grid gap-3 sm:grid-cols-2">
               <div class="flex h-28 items-center justify-center rounded-2xl border border-stroke-2 bg-white px-6"><img src="/images/shared/main-logo.svg" alt="Voxil AI logo" class="h-20 w-auto" /></div>
-              <div class="flex h-28 items-center justify-center rounded-2xl border border-stroke-2 bg-background-1 px-6"><img src="/images/shared/main-logo.svg" alt="Voxil AI logo on light grey" class="h-20 w-auto" /></div>
+              <div class="flex h-28 items-center justify-center rounded-2xl border border-stroke-2 bg-background-1 px-6"><img src="/images/shared/main-logo.svg" alt="Voxil AI logo on light gray" class="h-20 w-auto" /></div>
             </div>
             <div class="mt-5 flex flex-wrap gap-2">
               <a href="/images/shared/main-logo.svg" download class="cta cta-sm cta-ghost">${icon('photo', 'size-4')}Logo (SVG)</a>
               <a href="/web-app-manifest-512x512.png" download class="cta cta-sm cta-ghost">${icon('photo', 'size-4')}App icon (PNG, 512px)</a>
             </div>
-            <p class="text-tagline-3 mt-4 text-secondary/45">Use the logo on white or light backgrounds. Please don’t recolour, stretch or add effects to it.</p>
+            <p class="text-tagline-3 mt-4 text-secondary/45">Use the logo on white or light backgrounds. Please don’t recolor, stretch or add effects to it.</p>
           </div>
           <div data-reveal class="glass-card">
-            <h2 class="text-heading-6 font-semibold text-secondary">Brand colours</h2>
+            <h2 class="text-heading-6 font-semibold text-secondary">Brand colors</h2>
             <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
               ${colors.map(([n, hex]) => `<div class="overflow-hidden rounded-xl border border-secondary/10"><div class="h-14" style="background:${hex}"></div><div class="bg-secondary/[0.03] px-3 py-2"><p class="text-tagline-3 font-semibold text-secondary">${n}</p><p class="text-tagline-3 font-mono text-secondary/50">${hex}</p></div></div>`).join('')}
             </div>

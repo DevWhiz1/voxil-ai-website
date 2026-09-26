@@ -64,7 +64,7 @@ const serviceSchema = ({ path, name, description, offers }) => ({
   url: `${SITE.url}${path}`,
   provider: { '@id': ORG_ID },
   audience: { '@type': 'BusinessAudience', audienceType: 'Marketing agencies and GoHighLevel agencies' },
-  areaServed: ['United States', 'United Kingdom', 'Canada', 'Australia', 'United Arab Emirates', 'Pakistan'].map((n) => ({ '@type': 'Country', name: n })),
+  areaServed: ['United States', 'United Kingdom', 'Ireland', 'Netherlands', 'Germany', 'Canada', 'Australia', 'United Arab Emirates', 'Pakistan'].map((n) => ({ '@type': 'Country', name: n })),
   ...(offers ? { hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Agency partner models', itemListElement: offers } } : {}),
 });
 

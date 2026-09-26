@@ -133,9 +133,9 @@ export const models = {
     fit: ['Agencies selling repeatable GoHighLevel packages', 'Teams whose delivery backlog is growing', 'Agencies adding AI agents to their offer', 'Owners still doing builds themselves at night'],
     notFit: ['Projects with no defined scope', 'Agencies wanting us to talk to clients directly'],
     faqs: [
-      { q: 'What can you fulfil white label?', a: 'GoHighLevel sub-account builds, pipelines, workflows, funnels, websites, calendars, reputation setups, CRM migrations, integrations and AI voice or chat agents.' },
+      { q: 'What can you fulfill white label?', a: 'GoHighLevel sub-account builds, pipelines, workflows, funnels, websites, calendars, reputation setups, CRM migrations, integrations and AI voice or chat agents.' },
       { q: 'How long does a typical build take?', a: 'Most single-client GoHighLevel builds take one to two weeks depending on scope. You get a delivery date with the quote.' },
-      { q: 'Can you build from our snapshot?', a: 'Yes. We can deploy and customise your existing snapshot, or build a new one you can reuse across clients.' },
+      { q: 'Can you build from our snapshot?', a: 'Yes. We can deploy and customize your existing snapshot, or build a new one you can reuse across clients.' },
       { q: 'What happens if the client wants changes?', a: 'A revision round is included. Larger changes are quoted separately so your margin stays predictable.' },
     ],
     related: ['ghl-expert', 'gohighlevel-automation', 'ghl-snapshot', 'sales-funnel-builder'],
@@ -158,7 +158,7 @@ export const models = {
       title: 'The consistency of a hire, without the hiring',
       paras: [
         'Freelancers change every project and have to relearn your clients each time. Hiring locally takes months and a lot of salary. A dedicated assistant gives you the same trained person every day, learning your clients, your snapshots and your standards.',
-        'Your assistant works inside your Slack and task board during the hours you choose, including overlap with US, UK, UAE or Australian time. Anything beyond routine work goes to our senior GoHighLevel engineers, so quality doesn’t depend on one person.',
+        'Your assistant works inside your Slack and task board during the hours you choose, including overlap with US, UK, European, UAE or Australian time. Anything beyond routine work goes to our senior GoHighLevel engineers, so quality doesn’t depend on one person.',
       ],
     },
     included: ['A dedicated, GHL-trained assistant', 'Onboarding to your accounts and SOPs', 'Work inside your Slack and task board', 'Senior engineer review on complex tasks', 'Weekly progress summary', 'Flexible hours, month to month'],

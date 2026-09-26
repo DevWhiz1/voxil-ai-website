@@ -40,13 +40,13 @@ export const navDesktop = () => `${HEADER_NOTE}
 <!-- Locations -->
 <div class="group mega-wide flex h-full items-center">
   ${megaTrigger('Locations', '/locations/')}
-  <div class="mega-panel w-[min(820px,calc(100vw-2.5rem))]">
+  <div class="mega-panel w-[min(1080px,calc(100vw-2.5rem))]">
     <div class="mega-inner">
-      <div class="grid grid-cols-4 gap-2 p-2">
+      <div class="grid grid-cols-5 gap-2 p-2">
         ${LOCATION_GROUPS.map(
           (g) => `
         <div>
-          <p class="mega-col-title">${icon(g.key === 'international' ? 'globe' : 'pin', 'size-4 text-primary-600')}${g.title}</p>
+          <p class="mega-col-title">${icon(g.key.startsWith('us-') ? 'pin' : 'globe', 'size-4 text-primary-600')}${g.title}</p>
           ${g.locations.map((l) => `<a href="${locationUrl(l.slug)}" class="mega-mini-link">${l.name}</a>`).join('\n          ')}
         </div>`
         ).join('')}
@@ -163,7 +163,7 @@ export const footerLinks = () => `${HEADER_NOTE}
   ${footCol('Company', [
     footLink('/for-agencies/', 'For Agencies'),
     footLink('/about.html', 'About'),
-    footLink('/case-study.html', 'Case Studies'),
+    footLink('/case-studies/', 'Case Studies'),
     footLink('/testimonial.html', 'Testimonials'),
     footLink('/faq.html', 'FAQ'),
     footLink('/contact.html', 'Contact'),

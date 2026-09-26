@@ -11,8 +11,8 @@ export default {
   keywords: ['answer engine optimization', 'generative engine optimization', 'AEO', 'GEO', 'get recommended by ChatGPT', 'AI Overviews SEO'],
   excerpt: 'Customers increasingly ask AI assistants for recommendations. Here’s how answer engines pick businesses to mention, and the practical steps that improve your odds.',
   takeaways: [
-    'AEO (answer engine optimisation) and GEO (generative engine optimisation) focus on being quoted or cited in AI answers.',
-    'AI systems favour clear, specific, well-structured content that directly answers questions.',
+    'AEO (answer engine optimization) and GEO (generative engine optimization) focus on being quoted or cited in AI answers.',
+    'AI systems favor clear, specific, well-structured content that directly answers questions.',
     'Consistent entity information (name, services, locations) across the web builds recognition.',
     'Structured data, reviews and third-party mentions strengthen trust signals.',
     'No one can guarantee AI recommendations, but the same work improves classic SEO too.',
@@ -66,7 +66,7 @@ ${table(
 <ul>
   <li>Fast, server-rendered HTML with meaningful headings.</li>
   <li>Don’t block reputable AI crawlers in robots.txt unless you intend to.</li>
-  <li>Keep an up-to-date sitemap and consider an <code>llms.txt</code> file summarising your key pages.</li>
+  <li>Keep an up-to-date sitemap and consider an <code>llms.txt</code> file summarizing your key pages.</li>
   <li>Show "last updated" dates on content that changes.</li>
 </ul>
 
@@ -77,8 +77,8 @@ ${callout('Be wary of guarantees', 'Anyone promising guaranteed ChatGPT recommen
 <p>We help service businesses with ${link('/services/seo-paid-ads/', 'SEO, AEO and GEO')} and build ${link('/services/website-design/', 'AI-search-ready websites')}.</p>
 `,
   faqs: [
-    { q: 'What is answer engine optimisation (AEO)?', a: 'AEO is structuring content so search engines and assistants can use it as a direct answer, in featured snippets, voice results and AI Overviews, through clear question-and-answer formatting, concise definitions and structured data.' },
-    { q: 'What is generative engine optimisation (GEO)?', a: 'GEO focuses on being cited or recommended in AI-generated answers from tools like ChatGPT, Perplexity and Gemini, by publishing clear, specific, authoritative content and building consistent entity signals across the web.' },
+    { q: 'What is answer engine optimization (AEO)?', a: 'AEO is structuring content so search engines and assistants can use it as a direct answer, in featured snippets, voice results and AI Overviews, through clear question-and-answer formatting, concise definitions and structured data.' },
+    { q: 'What is generative engine optimization (GEO)?', a: 'GEO focuses on being cited or recommended in AI-generated answers from tools like ChatGPT, Perplexity and Gemini, by publishing clear, specific, authoritative content and building consistent entity signals across the web.' },
     { q: 'Can I pay to be recommended by ChatGPT?', a: 'There is no general paid placement for organic ChatGPT recommendations. Visibility depends on the information available about your business and how models and search integrations use it.' },
     { q: 'Does schema markup help with AI search?', a: 'Structured data helps machines understand your content and is widely recommended for search. It isn’t a guarantee of AI citations, but it supports clearer entity and content understanding.' },
   ],
