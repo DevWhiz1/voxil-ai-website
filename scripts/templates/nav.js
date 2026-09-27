@@ -163,6 +163,7 @@ export const footerLinks = () => `${HEADER_NOTE}
   ])}
   ${footCol('Company', [
     footLink('/for-agencies/', 'For Agencies'),
+    footLink('/portfolio/', 'Portfolio'),
     footLink('/about.html', 'About'),
     footLink('/case-studies/', 'Case Studies'),
     footLink('/testimonial.html', 'Testimonials'),

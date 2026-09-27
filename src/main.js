@@ -12,3 +12,5 @@ import './js/common/tabs';
 import './js/common/lead-loss-calculator';
 import './js/common/checklist';
 import './js/common/toc';
+import './js/common/demo-chat';
+import './js/common/portfolio-demos';

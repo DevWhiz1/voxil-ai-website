@@ -41,6 +41,7 @@ const TIERS = [
     match: (url) =>
       url.startsWith('/blog/') ||
       url.startsWith('/case-studies/') ||
+      url.startsWith('/portfolio/') ||
       ['/about.html', '/testimonial.html', '/faq.html'].includes(url),
   },
   {
@@ -59,7 +60,7 @@ const tierFor = (url) => {
 };
 
 // Folders written by scripts/build-pages.js; each page is <dir>/index.html.
-const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies'];
+const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies', 'portfolio'];
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -100,7 +101,8 @@ const walk = (dir) => {
   for (const item of fs.readdirSync(path.join(__dirname, dir), { withFileTypes: true })) {
     const rel = `${dir}/${item.name}`;
     if (item.isDirectory()) walk(rel);
-    else if (item.name === 'index.html') generatedPages.push(rel);
+    // Pages marked noindex (the portfolio demo funnels) stay out of the sitemap.
+    else if (item.name === 'index.html' && !/<meta name="robots" content="noindex/.test(fs.readFileSync(path.join(__dirname, rel), 'utf8'))) generatedPages.push(rel);
   }
 };
 GENERATED_DIRS.filter((d) => fs.existsSync(path.join(__dirname, d))).forEach(walk);
@@ -109,7 +111,7 @@ GENERATED_DIRS.filter((d) => fs.existsSync(path.join(__dirname, d))).forEach(wal
 // which git tracks; the HTML itself is build output.
 const generatedLastmod = (file) => {
   const section = file.split('/')[0];
-  const sources = ['content/site.js', `scripts/templates/${{ blog: 'blog', resources: 'resources', 'for-agencies': 'agencies', 'case-studies': 'case-studies' }[section] ?? 'service'}.js`];
+  const sources = ['content/site.js', `scripts/templates/${{ blog: 'blog', resources: 'resources', 'for-agencies': 'agencies', 'case-studies': 'case-studies', portfolio: 'portfolio' }[section] ?? 'service'}.js`];
   if (section === 'blog') {
     const slug = file.split('/')[1];
     if (slug !== 'index.html') sources.push(`content/blog/${slug}.js`);

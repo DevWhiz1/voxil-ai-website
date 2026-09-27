@@ -118,6 +118,8 @@ async function optimizeHtml() {
     // Pages that opt out of indexing (e.g. 404) keep only their noindex tag.
     if (/<meta name="robots" content="noindex/.test(html)) {
       html = html.replace(/<meta name="robots" content="index[^"]*"\s*\/?>/, '');
+      // A noindex page should not also declare itself canonical or an hreflang alternate.
+      html = html.replace(/\s*<link rel="(?:canonical|alternate)" (?:hreflang="[^"]*" )?href="[^"]*"\s*\/?>/g, '');
     }
     const out = await minifyHtml(html, {
       collapseWhitespace: true,
