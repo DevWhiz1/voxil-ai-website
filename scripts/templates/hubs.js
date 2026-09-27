@@ -1,3 +1,4 @@
+import locationContent from '../../content/locations.js';
 import { ALL_SERVICES, EXTRA_SERVICES, INDUSTRIES, LOCATION_GROUPS, SERVICE_GROUPS, SITE, industryUrl, locationUrl, serviceUrl } from '../../content/site.js';
 import { arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, faqBlock, faqSchema, icon, linkCard, page, sectionHead, webPageSchema } from '../lib/ui.js';
 
@@ -120,7 +121,7 @@ export const renderLocationsHub = () => {
             international: 'Canada and Australia, plus the Gulf and Pakistan, with multilingual agents and local compliance.',
           }[g.key] ?? ''}</p>
           <ul class="mt-5 grid grid-cols-2 gap-2">
-            ${g.locations.map((l) => `<li><a href="${locationUrl(l.slug)}" class="group flex items-center justify-between rounded-xl border border-secondary/[0.07] bg-secondary/[0.03] px-4 py-3 text-tagline-2 text-secondary/75 transition hover:border-secondary/20 hover:bg-secondary/[0.07] hover:text-secondary">${l.name}${arrow('size-3.5 opacity-40 transition group-hover:translate-x-0.5 group-hover:opacity-80')}</a></li>`).join('')}
+            ${g.locations.map((l) => `<li><a href="${locationUrl(l.slug)}" class="group block rounded-xl border border-secondary/[0.07] bg-secondary/[0.03] px-4 py-3 transition hover:border-secondary/20 hover:bg-secondary/[0.07]"><span class="block text-tagline-2 font-medium text-secondary/85 group-hover:text-secondary">${l.name}</span><span class="block text-tagline-3 text-secondary/50">${locationContent[l.slug].tzShort} · ${locationContent[l.slug].languages}</span></a></li>`).join('')}
           </ul>
         </div>`
         ).join('')}

@@ -16,7 +16,7 @@ const SRC = {
   ibm2023: { name: 'IBM Global AI Adoption Index', year: 2023, url: 'https://newsroom.ibm.com/' },
   msWti2024: { name: 'Microsoft & LinkedIn, Work Trend Index', year: 2024, url: 'https://www.microsoft.com/en-us/worklab/work-trend-index' },
   pwc: { name: 'PwC, Sizing the Prize', year: 2017, url: 'https://www.pwc.com/gx/en/issues/artificial-intelligence/publications/artificial-intelligence-study.html' },
-  goldman2023: { name: 'Goldman Sachs Research', year: 2023, url: 'https://www.goldmansachs.com/insights' },
+  goldman2023: { name: 'Goldman Sachs Research', year: 2023, url: null }, // site returns 403 to crawlers
   wef2025: { name: 'World Economic Forum, Future of Jobs Report', year: 2025, url: 'https://www.weforum.org/publications/the-future-of-jobs-report-2025/' },
   gartnerCs2025: { name: 'Gartner press release', year: 2025, url: 'https://www.gartner.com/en/newsroom' },
   gartnerCs2022: { name: 'Gartner press release', year: 2022, url: 'https://www.gartner.com/en/newsroom' },

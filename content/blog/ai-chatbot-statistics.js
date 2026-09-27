@@ -19,7 +19,7 @@ export default {
     'Most gen-AI pilots fail to show P&L impact; focused, integrated deployments are the exception that pays.',
   ],
   services: ['ai-chatbots', 'ai-chatbot-developer', 'whatsapp-automation', 'ai-customer-support'],
-  related: ['ai-agents-vs-chatbots', 'ai-customer-service-statistics', 'ai-voice-agent-statistics'],
+  related: ['ai-agents-vs-chatbots', 'get-recommended-by-chatgpt', 'ai-voice-agent-statistics'],
   body: `
 <p>Chatbots went from a frustrating widget in the corner of a website to one of the most-used software interfaces in the world. Below are the statistics that best describe where they stand in 2026, for consumers, for businesses and for customer service, plus what the numbers mean if you’re considering one.</p>
 

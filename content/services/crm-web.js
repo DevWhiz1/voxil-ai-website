@@ -629,7 +629,7 @@ export default {
     faqs: [
       { q: 'How long does a website take?', a: 'Three to six weeks for most service-business sites, depending on page count and content readiness.' },
       { q: 'Which platform do you build on?', a: 'WordPress, Webflow, GoHighLevel or custom code, chosen for your needs, budget and who will maintain it.' },
-      { q: 'Will my site be optimized for AI search?', a: 'Yes, clean semantic HTML, structured data, answer-first content and entity consistency help AI Overviews and assistants understand and cite your business.' },
+      { q: 'Will my site be optimized for AI search?', a: 'Yes, clean semantic HTML, structured data, answer-first content and entity consistency help AI Overviews and assistants understand and cite your business. See our <a href="/blog/get-recommended-by-chatgpt/" class="text-primary-600 underline underline-offset-4">guide to getting recommended by ChatGPT</a>.' },
       { q: 'Do you write the content?', a: 'Yes, copywriting is included, with your input on services and differentiators.' },
       { q: 'Can you redesign without losing rankings?', a: 'Yes, we map redirects, preserve URLs where possible and protect existing SEO value.' },
     ],

@@ -666,7 +666,7 @@ export default {
     whatIs: {
       title: 'Search changed. Most SEO strategies didn’t.',
       paras: [
-        'People now find businesses through Google’s classic results, the local map pack, AI Overviews, and assistants like ChatGPT and Perplexity. Winning across all of them requires fast technical foundations, structured data, answer-first content and a consistent local presence.',
+        'People now find businesses through Google’s classic results, the local map pack, AI Overviews, and assistants like ChatGPT and Perplexity. Winning across all of them requires fast technical foundations, structured data, answer-first content and a consistent local presence. Our <a href="/blog/get-recommended-by-chatgpt/" class="text-primary-600 underline underline-offset-4">AEO and GEO guide</a> explains how.',
         'Paid ads fill the gap while organic grows. And because leads from any source convert better when contacted fast, we connect every campaign to automated follow-up, chatbots, SMS and AI calls, so no click is wasted.',
       ],
     },

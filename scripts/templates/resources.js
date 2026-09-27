@@ -174,17 +174,6 @@ export const renderCalculator = () => {
     body,
     schema: [
       webPageSchema({ path, title, description }),
-      {
-        '@context': 'https://schema.org',
-        '@type': 'WebApplication',
-        name: 'Lead Loss Calculator',
-        url: `${SITE.url}${path}`,
-        applicationCategory: 'BusinessApplication',
-        operatingSystem: 'Any (web browser)',
-        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-        provider: { '@id': ORG_ID },
-        description,
-      },
       breadcrumbSchema(crumbs),
       faqSchema(faqs),
     ],
@@ -443,7 +432,6 @@ export const renderMediaKit = () => {
             </div>
             <div class="mt-5 flex flex-wrap gap-2">
               <a href="/images/shared/main-logo.svg" download class="cta cta-sm cta-ghost">${icon('photo', 'size-4')}Logo (SVG)</a>
-              <a href="/web-app-manifest-512x512.png" download class="cta cta-sm cta-ghost">${icon('photo', 'size-4')}App icon (PNG, 512px)</a>
             </div>
             <p class="text-tagline-3 mt-4 text-secondary/45">Use the logo on white or light backgrounds. Please don’t recolor, stretch or add effects to it.</p>
           </div>

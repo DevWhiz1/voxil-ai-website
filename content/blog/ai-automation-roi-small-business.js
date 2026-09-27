@@ -18,7 +18,7 @@ export default {
     'Many gen-AI pilots fail to show P&L impact; tying automation to a measurable workflow avoids that.',
   ],
   services: ['ai-automation-consultant', 'workflow-automation', 'ai-receptionist', 'ai-follow-up-system'],
-  related: ['ai-small-business-statistics', 'how-much-does-an-ai-voice-agent-cost', 'speed-to-lead-statistics'],
+  related: ['ai-small-business-statistics', 'get-recommended-by-chatgpt', 'speed-to-lead-statistics'],
   body: `
 <p>Most AI projects that disappoint don’t fail technically, they fail to show value. Research from MIT’s NANDA initiative found most organizations saw no measurable P&L return from their generative-AI pilots ${cite('mit-95')}. The fix isn’t more AI; it’s choosing work where the return is measurable, and measuring it. Here’s the method we use with clients.</p>
 

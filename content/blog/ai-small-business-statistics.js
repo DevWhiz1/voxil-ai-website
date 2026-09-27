@@ -18,7 +18,7 @@ export default {
     'The best SMB returns come from customer-facing speed: answering calls, replying to leads, following up.',
   ],
   services: ['ai-automation-consultant', 'ai-receptionist', 'gohighlevel-automation', 'workflow-automation'],
-  related: ['ai-automation-roi-small-business', 'missed-call-statistics', 'ai-chatbot-statistics'],
+  related: ['ai-automation-roi-small-business', 'get-recommended-by-chatgpt', 'missed-call-statistics'],
   body: `
 <p>Large enterprises get most of the AI headlines, but small businesses have quietly become some of the fastest adopters, largely because AI tools are cheap to try and small teams feel admin overload most acutely. Here’s what the data shows.</p>
 
