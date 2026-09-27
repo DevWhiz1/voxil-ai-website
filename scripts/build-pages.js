@@ -139,7 +139,7 @@ const llms = [
   `- [For Agencies](${SITE.url}/for-agencies/): White label fulfillment partner program`,
   `- [All services](${SITE.url}/services/): ${ALL_SERVICES.length} AI automation services`,
   `- [About](${SITE.url}/about.html)`,
-  `- [Portfolio](${SITE.url}/portfolio/): Interactive demos of our funnels, live AI chatbot, AI calling bots, automations, SEO and ad creative`,
+  `- [Portfolio](${SITE.url}/portfolio/): Interactive demos of our funnels, live AI chatbot, AI calling bots, automations, SEO and ads`,
   `- [Case studies](${SITE.url}/case-studies/)`,
   ...publishedCaseStudies.map((c) => `  - [${c.title}](${SITE.url}/case-studies/${c.slug}/): ${c.summary}`),
   `- [FAQ](${SITE.url}/faq.html)`,

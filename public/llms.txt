@@ -9,7 +9,7 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [For Agencies](https://www.voxilai.tech/for-agencies/): White label fulfillment partner program
 - [All services](https://www.voxilai.tech/services/): 43 AI automation services
 - [About](https://www.voxilai.tech/about.html)
-- [Portfolio](https://www.voxilai.tech/portfolio/): Interactive demos of our funnels, live AI chatbot, AI calling bots, automations, SEO and ad creative
+- [Portfolio](https://www.voxilai.tech/portfolio/): Interactive demos of our funnels, live AI chatbot, AI calling bots, automations, SEO and ads
 - [Case studies](https://www.voxilai.tech/case-studies/)
   - [Patient intake automation for a multi-location clinic](https://www.voxilai.tech/case-studies/healthcare-patient-intake/): A multi-location clinic needed after-hours coverage without hiring a night desk.
   - [Support deflection chatbot for a DTC ecommerce brand](https://www.voxilai.tech/case-studies/ecommerce-support-chatbot/): A growing DTC brand was drowning in shipping and returns questions.

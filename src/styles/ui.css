@@ -1183,35 +1183,6 @@
   @apply rounded-lg bg-sky-50 px-3 py-2 text-tagline-3 font-medium text-sky-700;
 }
 
-.ad-card {
-  @apply overflow-hidden rounded-2xl border border-stroke-2 bg-white;
-  box-shadow: var(--shadow-1);
-}
-
-.ad-avatar {
-  @apply flex size-8 shrink-0 items-center justify-center rounded-full text-[11px] font-bold text-white;
-}
-
-.ad-visual {
-  @apply relative flex aspect-square flex-col justify-end gap-2 overflow-hidden p-5 text-white;
-  background:
-    radial-gradient(circle at 80% 15%, color-mix(in srgb, var(--f2) 90%, white) 0, transparent 45%),
-    linear-gradient(150deg, var(--f2), var(--f1) 70%);
-}
-
-.ad-kicker {
-  @apply self-start rounded-full bg-white/20 px-2.5 py-1 text-[11px] font-semibold tracking-[0.1em] uppercase backdrop-blur-sm;
-}
-
-.ad-head {
-  @apply text-heading-6 leading-tight font-semibold;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
-}
-
-.ad-cta {
-  @apply mt-3 flex items-center justify-center rounded-lg bg-secondary/[0.06] px-3 py-2 text-tagline-3 font-semibold text-secondary/80;
-}
-
 /* WhatsApp / Instagram mocks */
 .wa-bar {
   @apply flex items-center gap-3 px-4 py-3;

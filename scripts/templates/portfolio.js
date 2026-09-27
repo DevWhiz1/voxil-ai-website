@@ -350,52 +350,12 @@ const seoPanel = () => `
         </div>
       </div>`;
 
-const CREATIVES = [
-  { brand: 'Forge Fitness Studio', initials: 'FF', f1: '#c2410c', f2: '#fb923c', kicker: '7-day free pass', head: 'Your first week is on us', cap: 'Unlimited classes, a goal session and a coach who checks in. Limited spots this month.', cta: 'Claim pass' },
-  { brand: 'SunHarbor Solar', initials: 'SH', f1: '#a16207', f2: '#facc15', kicker: 'Free estimate', head: 'See what solar saves you', cap: 'Three quick questions, a personalized savings estimate and zero pressure.', cta: 'Get estimate' },
-  { brand: 'Lumière Aesthetics', initials: 'LA', f1: '#9d174d', f2: '#f9a8d4', kicker: 'Free consultation', head: 'Refreshed, not overdone', cap: 'Book a complimentary consultation with a licensed injector this week.', cta: 'Book now' },
-  { brand: 'Summit Peak Roofing', initials: 'SP', f1: '#7c2d12', f2: '#f97316', kicker: 'After the storm', head: 'Free roof inspection this week', cap: 'Photo report for your insurance claim and a clear repair plan.', cta: 'Book inspection' },
-];
-
-const creativePanel = () => `
-      <div data-tab-panel="creative" class="tab-panel" role="tabpanel" hidden>
-        <p class="text-tagline-2 mx-auto mb-8 max-w-2xl text-center text-secondary/60">
-          Ad concepts for the demo brands in our funnels. Every creative is written to match its landing page, so the promise in
-          the ad is the first thing the visitor sees after the click.
-        </p>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          ${CREATIVES.map(
-            (c) => `
-          <figure class="ad-card">
-            <div class="flex items-center gap-2.5 p-3">
-              <span class="ad-avatar" style="background: ${c.f1}">${c.initials}</span>
-              <span class="min-w-0"><span class="text-tagline-3 block font-semibold text-secondary">${esc(c.brand)}</span><span class="text-tagline-3 block text-secondary/40">Sponsored · demo</span></span>
-            </div>
-            <div class="ad-visual" style="--f1: ${c.f1}; --f2: ${c.f2}">
-              <span class="ad-kicker">${esc(c.kicker)}</span>
-              <span class="ad-head">${esc(c.head)}</span>
-            </div>
-            <figcaption class="p-3">
-              <p class="text-tagline-3 text-secondary/65">${esc(c.cap)}</p>
-              <span class="ad-cta">${esc(c.cta)}</span>
-            </figcaption>
-          </figure>`
-          ).join('')}
-        </div>
-        <div class="mt-8 grid gap-5 md:grid-cols-3">
-          ${featureCard({ title: 'Ad creative and copy', desc: 'Static and carousel concepts for Meta, Google and LinkedIn, with hooks tested against your offer.', icon: 'photo', accent: '#ff6b35' })}
-          ${featureCard({ title: 'Landing page copy', desc: 'Headlines, forms and FAQs that match the ad, answer objections and keep one clear next step.', icon: 'document', accent: '#0f9f93' })}
-          ${featureCard({ title: 'Email and SMS sequences', desc: 'Follow-up messages written for each stage of the funnel, from first reply to booked call.', icon: 'mail', accent: '#0284c7' })}
-        </div>
-      </div>`;
-
 const TABS = [
   ['websites', 'Websites &amp; Funnels'],
   ['calls', 'AI Calling Bots'],
   ['chatbots', 'Chatbots'],
   ['automation', 'Automation'],
   ['seo', 'SEO &amp; Ads'],
-  ['creative', 'Creative'],
 ];
 
 const PORTFOLIO_FAQS = [
@@ -432,7 +392,7 @@ export const renderPortfolio = (funnels) => {
   const path = '/portfolio/';
   const title = 'Portfolio: Funnels, AI Agents & Automations | Voxil AI';
   const description =
-    'Try our work: 12 industry funnel demos, a live AI chatbot, AI calling bot conversations, automation flows, SEO and ad creative from Voxil AI.';
+    'Try our work: 12 industry funnel demos, a live AI chatbot, AI calling bot conversations, automation flows and SEO and ads examples from Voxil AI.';
   const crumbs = [
     { name: 'Home', url: '/' },
     { name: 'Portfolio', url: path },
@@ -451,7 +411,7 @@ ${hero({
   facts: [
     { label: 'Funnel demos', value: String(funnels.length) },
     { label: 'AI chatbot', value: 'Live, try it' },
-    { label: 'Categories', value: '6' },
+    { label: 'Categories', value: '5' },
     { label: 'Built on', value: 'GHL, Make, n8n' },
   ],
   primary: 'Get a Funnel Like This',
@@ -474,7 +434,6 @@ ${callsPanel()}
 ${chatbotsPanel()}
 ${automationPanel()}
 ${seoPanel()}
-${creativePanel()}
       </div>
     </section>
 
