@@ -1,3 +1,4 @@
+import EXTRA from '../../content/locations-extra.js';
 import { ALL_LOCATIONS, INDUSTRIES, LOCATION_GROUPS, SITE, findService, industryUrl, locationUrl, serviceUrl } from '../../content/site.js';
 import {
   ORG_ID,
@@ -9,26 +10,17 @@ import {
   faqSchema,
   hero,
   icon,
-  linkCard,
+  featureCard,
   page,
   sectionHead,
-  stepsBlock,
   webPageSchema,
 } from '../lib/ui.js';
 
-// Questions every location answers; `unique` FAQs in the content file come first.
+// The one question every location answers; local FAQs from the content files come first.
 const sharedFaqs = (l) => [
   {
     q: `Do you have an office in ${l.name}?`,
     a: `Voxil AI is a remote-first agency. We serve ${l.name} businesses through video calls, shared workspaces and async updates, and schedule working sessions inside ${l.tzShort} business hours. Remote delivery keeps costs lower than a local agency while giving you the same senior team.`,
-  },
-  {
-    q: `How much does AI automation cost for businesses in ${l.name}?`,
-    a: 'Every build is a fixed-price project scoped on a free 30-minute call, plus any usage costs (AI model, telephony or messaging) passed through at cost. A single chatbot or voice agent is typically a few weeks of work; multi-system automation takes longer. You get the exact price in writing before any work starts.',
-  },
-  {
-    q: 'How fast can we go live?',
-    a: 'Most single-purpose systems, an AI receptionist, a chatbot or a follow-up system, go live in two to four weeks, including a supervised pilot on real traffic.',
   },
 ];
 
@@ -40,7 +32,8 @@ export const renderLocation = (slug, l) => {
     { name: 'Locations', url: '/locations/' },
     { name: meta.name, url: path },
   ];
-  const faqs = [...l.faqs, ...sharedFaqs({ name: l.shortName ?? meta.name, tzShort: l.tzShort })];
+  const local = EXTRA[slug] ?? {};
+  const faqs = [...l.faqs, ...(local.faq ? [local.faq] : []), ...sharedFaqs({ name: l.shortName ?? meta.name, tzShort: l.tzShort })];
   const industries = l.industries.map((s) => INDUSTRIES.find((i) => i.slug === s));
   const group = LOCATION_GROUPS.find((g) => g.key === meta.group);
   const nearby = ALL_LOCATIONS.filter((x) => x.slug !== slug && (x.group === meta.group || l.nearby?.includes(x.slug))).slice(0, 8);
@@ -93,47 +86,39 @@ export const renderLocation = (slug, l) => {
       </div>
     </section>`,
 
-    // --- Services -------------------------------------------------------
+    // --- Local use cases and services ------------------------------------
     `
     <section class="section-base section-pad section-seam">
       <span class="orb top-1/4 -right-24 size-[380px]" style="--orb: ${accent}; --orb-opacity: 0.14" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Most requested', dot: accent, title: `What ${place} businesses <span class="text-gradient-teal">automate first</span>`, lead: l.servicesLead })}
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          ${l.services
-            .map((s) => {
-              const r = findService(s);
-              return linkCard({ href: serviceUrl(s), title: r.name, desc: r.short, icon: r.icon, accent: r.accent });
-            })
-            .join('')}
-        </div>
-        <div data-reveal class="mt-8 text-center">
-          <a href="/services/" class="cta cta-md cta-ghost">See all 40+ services${arrow()}</a>
+        ${
+          local.useCases
+            ? `<div class="grid gap-4 md:grid-cols-3">
+          ${local.useCases.map((u) => featureCard({ ...u, accent })).join('')}
+        </div>`
+            : ''
+        }
+        <div data-reveal class="mt-8 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.03] p-6 md:p-8">
+          <p class="text-tagline-2 font-semibold text-secondary">Services ${place} clients start with</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            ${l.services.map((sv) => { const r = findService(sv); return chipLink(serviceUrl(sv), r.name, r.icon); }).join('')}
+            <a href="/services/" class="chip-link chip-link--accent"><span>All services</span>${arrow('size-3.5')}</a>
+          </div>
         </div>
       </div>
     </section>`,
 
-    // --- How we work + compliance --------------------------------------
+    // --- Compliance -------------------------------------------------------
     `
-    <section class="section-soft section-pad section-seam">
-      <span class="grid-field" aria-hidden="true"></span>
+    <section class="section-soft section-pad-sm section-seam">
       <div class="main-container relative z-10">
-        ${sectionHead({ eyebrowText: 'How we work', dot: accent, title: `Working with ${place} teams, <span class="text-gradient-warm">remotely and fast</span>`, center: true })}
-        ${stepsBlock({
-          accent,
-          steps: [
-            { title: 'Free scope call', desc: `A 30-minute call scheduled in ${l.tzShort} business hours to find your highest-ROI workflow.` },
-            { title: 'Fixed proposal', desc: 'A written scope, price and timeline within two business days, no hourly meter.' },
-            { title: 'Build & pilot', desc: 'Weekly demos, then a supervised pilot on real calls, chats or leads.' },
-            { title: 'Launch & tune', desc: '30 days of tuning included; optional monthly support after that.' },
-          ],
-        })}
-        <div data-reveal class="mt-10 grid gap-6 rounded-2xl border border-secondary/[0.09] bg-secondary/[0.03] p-6 md:grid-cols-[auto_1fr] md:items-start md:p-8">
+        <div data-reveal class="grid gap-6 rounded-2xl border border-secondary/[0.09] bg-white p-6 md:grid-cols-[auto_1fr] md:items-start md:p-8">
           <span class="icon-tile" style="--accent: ${accent}">${icon('shield')}</span>
           <div>
-            <h3 class="text-heading-6 font-semibold text-secondary">${l.compliance.title}</h3>
+            <h2 class="text-heading-6 font-semibold text-secondary">${l.compliance.title}</h2>
             <p class="text-tagline-2 mt-2 text-secondary/60">${l.compliance.text}</p>
-            <p class="text-tagline-3 mt-3 text-secondary/35">General information, not legal advice, confirm specifics with your counsel.</p>
+            <p class="text-tagline-3 mt-3 text-secondary/35">General information, not legal advice. Confirm specifics with your counsel.</p>
           </div>
         </div>
       </div>

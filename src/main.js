@@ -14,3 +14,5 @@ import './js/common/checklist';
 import './js/common/toc';
 import './js/common/demo-chat';
 import './js/common/portfolio-demos';
+import './js/common/blog-filter';
+import './js/common/resource-tools';

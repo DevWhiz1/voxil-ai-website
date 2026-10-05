@@ -60,7 +60,7 @@ Dark premium nav
 }
 
 .site-nav-link {
-  @apply text-tagline-2 relative rounded-lg px-2.5 py-2 font-medium whitespace-nowrap text-secondary/70 transition-colors duration-300 hover:text-secondary xl:px-3.5;
+  @apply text-tagline-2 relative rounded-lg px-2 py-2 font-medium whitespace-nowrap text-secondary/70 transition-colors duration-300 hover:text-secondary xl:px-3.5;
 }
 
 /* Underline grows from the centre on hover / current page. */

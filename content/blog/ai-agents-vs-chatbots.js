@@ -5,7 +5,7 @@ export default {
   title: 'AI Agents vs Chatbots: What’s the Difference and Which Do You Need?',
   metaTitle: 'AI Agents vs Chatbots: Key Differences (2026) | Voxil AI',
   description: 'AI agents vs chatbots explained: how they differ in autonomy, tools and memory, real business examples, risks, costs and how to decide which your business needs.',
-  category: 'Guides',
+  category: 'Chatbots & Automation',
   date: '2026-07-08',
   updated: '2026-09-26',
   keywords: ['AI agents vs chatbots', 'what is an AI agent', 'agentic AI', 'chatbot vs AI agent'],

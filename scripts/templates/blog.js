@@ -17,12 +17,22 @@ import {
   updatedLine,
 } from '../lib/ui.js';
 
+// Blog categories, in tab order. A post has one `category` and optional
+// `tags` naming extra categories it should also be listed under.
 export const CATEGORY_STYLE = {
-  Statistics: { accent: '#2fc4b6', icon: 'chart' },
-  Guides: { accent: '#ff7a3d', icon: 'book' },
-  Comparisons: { accent: '#38bdf8', icon: 'swap' },
-  Pricing: { accent: '#6adfd3', icon: 'currency' },
+  GoHighLevel: { accent: '#0284c7', icon: 'layers' },
+  'AI Calling Bots': { accent: '#ff7a3d', icon: 'phone' },
+  'Chatbots & Automation': { accent: '#2fc4b6', icon: 'chat' },
+  'Industry Guides': { accent: '#0f9f93', icon: 'building' },
+  'Lead Generation': { accent: '#ff6b35', icon: 'funnel' },
+  Statistics: { accent: '#38bdf8', icon: 'chart' },
+  Guides: { accent: '#6adfd3', icon: 'book' },
 };
+
+// URL hash for a topic tab, e.g. /blog/#ai-calling-bots
+export const topicSlug = (c) => slugify(c);
+
+const catsOf = (post) => [post.category, ...(post.tags ?? [])];
 
 const slugify = (s) =>
   plain(s)
@@ -43,10 +53,11 @@ const withToc = (html) => {
 
 export const readMinutes = (post) => Math.max(3, Math.round(plain(post.body).split(' ').length / 220));
 
-export const postCard = (post) => {
+export const postCard = (post, filterable = false) => {
   const style = CATEGORY_STYLE[post.category];
+  if (!style) throw new Error(`Unknown blog category "${post.category}" in ${post.slug}`);
   return `
-          <a href="/blog/${post.slug}/" data-reveal class="group glass-card glass-card-rail glass-card-bloom flex flex-col" style="--accent: ${style.accent}">
+          <a href="/blog/${post.slug}/"${filterable ? ` data-cats="${catsOf(post).map(slugify).join(' ')}"` : ''} data-reveal class="group glass-card glass-card-rail glass-card-bloom flex flex-col" style="--accent: ${style.accent}">
             <div class="flex items-center justify-between gap-3">
               <span class="pill-accent" style="--accent: ${style.accent}">${icon(style.icon, 'size-3.5')}${post.category}</span>
               <span class="text-tagline-3 text-secondary/40">${readMinutes(post)} min read</span>
@@ -160,7 +171,7 @@ ${html}
     <section class="section-base section-pad section-seam">
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Keep reading', title: 'Related <span class="text-gradient-teal">articles</span>' })}
-        <div class="grid gap-4 md:grid-cols-3">${related.map(postCard).join('')}</div>
+        <div class="grid gap-4 md:grid-cols-3">${related.map((p) => postCard(p)).join('')}</div>
       </div>
     </section>`;
 
@@ -202,6 +213,9 @@ export const renderBlogHub = (posts) => {
   const sorted = [...posts].sort((a, b) => (b.updated ?? b.date).localeCompare(a.updated ?? a.date));
   const featured = sorted.filter((p) => p.featured).slice(0, 2);
   const categories = Object.keys(CATEGORY_STYLE);
+  const countFor = (c) => sorted.filter((p) => catsOf(p).includes(c)).length;
+  const tab = (key, label, n, ic, active = false) =>
+    `<button type="button" class="tab-btn inline-flex items-center gap-2${active ? ' is-active' : ''}" data-blog-filter="${key}" aria-pressed="${active}">${ic ? icon(ic, 'size-4') : ''}${label}<span class="text-tagline-3 text-secondary/40">${n}</span></button>`;
 
   const body = `
     <section class="page-hero">
@@ -212,11 +226,13 @@ export const renderBlogHub = (posts) => {
         ${crumbsNav(crumbs)}
         <div class="mx-auto mt-8 max-w-3xl text-center">
           ${eyebrow('Voxil AI Blog')}
-          <h1 data-reveal class="text-heading-4 sm:text-heading-3 lg:text-heading-2 font-semibold tracking-tight text-secondary">AI statistics, guides & <span class="text-gradient-teal">honest comparisons</span></h1>
-          <p data-reveal class="text-tagline-1 mx-auto mt-5 max-w-2xl text-secondary/60 md:text-lg">Research-backed articles on AI voice agents, chatbots, automation and GoHighLevel, written by the team that builds them, with every statistic sourced.</p>
-          <div data-reveal class="mt-8 flex flex-wrap justify-center gap-2">
-            ${categories.map((c) => `<a href="#${slugify(c)}" class="chip-link">${icon(CATEGORY_STYLE[c].icon, 'size-4 text-primary-600')}<span>${c}</span></a>`).join('')}
-            <a href="/resources/ai-statistics-2026/" class="chip-link chip-link--accent"><span>AI Statistics 2026 hub</span>${arrow('size-3.5')}</a>
+          <h1 data-reveal class="text-heading-4 sm:text-heading-3 lg:text-heading-2 font-semibold tracking-tight text-secondary">GoHighLevel &amp; AI automation <span class="text-gradient-teal">guides</span></h1>
+          <p data-reveal class="text-tagline-1 mx-auto mt-5 max-w-2xl text-secondary/60 md:text-lg">Practical guides on GoHighLevel, AI calling bots (Vapi and Retell AI), chatbots and business automation, written by the team that builds them, with every statistic sourced.</p>
+          <div data-reveal class="mt-8 flex flex-wrap justify-center gap-3">
+            <span class="pill">${sorted.length} articles</span>
+            <span class="pill">${categories.length} topics</span>
+            <span class="pill">Sourced statistics</span>
+            <a href="/resources/" class="chip-link chip-link--accent"><span>Free tools &amp; checklists</span>${arrow('size-3.5')}</a>
           </div>
         </div>
       </div>
@@ -224,26 +240,29 @@ export const renderBlogHub = (posts) => {
 
     <section class="section-soft section-pad-sm">
       <div class="main-container relative z-10">
-        <div class="grid gap-4 md:grid-cols-2">${featured.map(postCard).join('')}</div>
+        <div class="grid gap-4 md:grid-cols-2">${featured.map((p) => postCard(p)).join('')}</div>
       </div>
     </section>
 
-    ${categories
-      .map((c) => {
-        const list = sorted.filter((p) => p.category === c);
-        if (!list.length) return '';
-        return `
-    <section class="section-base section-pad-sm section-seam" id="${slugify(c)}">
-      <div class="main-container relative z-10">
-        ${sectionHead({ eyebrowText: c, dot: CATEGORY_STYLE[c].accent, title: c === 'Statistics' ? 'AI <span class="text-gradient-teal">statistics</span>' : c === 'Guides' ? 'Practical <span class="text-gradient-warm">guides</span>' : c === 'Comparisons' ? 'Honest <span class="text-gradient-sky">comparisons</span>' : 'Pricing <span class="text-gradient-teal">breakdowns</span>' })}
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">${list.map(postCard).join('')}</div>
+    <section class="section-base section-pad-sm section-seam" id="articles">
+      <div class="main-container relative z-10" data-blog-filters>
+        <div class="mb-8 flex flex-wrap items-center justify-center gap-2.5" role="group" aria-label="Filter articles by topic">
+          ${tab('all', 'All articles', sorted.length, '', true)}
+          ${categories.map((c) => tab(slugify(c), c, countFor(c), CATEGORY_STYLE[c].icon)).join('\n          ')}
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">${sorted.map((p) => postCard(p, true)).join('')}</div>
+        <div class="mt-10 flex flex-col items-start justify-between gap-5 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.03] p-6 sm:flex-row sm:items-center md:p-8">
+          <div>
+            <p class="text-heading-6 font-semibold text-secondary">Ready to stop reading and start automating?</p>
+            <p class="text-tagline-2 mt-1.5 text-secondary/60">Book a free 30-minute call. We’ll map your biggest automation gaps and tell you what to build first.</p>
+          </div>
+          <a href="/book-meeting.html" class="cta cta-md cta-coral shrink-0">Book a free call${arrow()}</a>
+        </div>
       </div>
     </section>`;
-      })
-      .join('')}`;
 
-  const title = 'AI Automation Blog: Stats, Guides & Reviews | Voxil AI';
-  const description = 'Research-backed articles on AI voice agents, chatbots, automation, GoHighLevel and AI statistics for 2026, every figure sourced.';
+  const title = 'GoHighLevel & AI Automation Blog | Voxil AI';
+  const description = 'Free guides on GoHighLevel, AI calling bots (Vapi and Retell AI), chatbots, automation, industry playbooks and lead generation, with sourced statistics.';
   return page({
     path,
     title,

@@ -6,6 +6,7 @@ export default {
   metaTitle: 'AEO & GEO Guide: Get Recommended by ChatGPT | Voxil AI',
   description: 'A practical AEO and GEO guide for service businesses: how AI answer engines choose which businesses to mention, and the content, schema, entity and review signals that improve your chances.',
   category: 'Guides',
+  tags: ['Lead Generation'],
   date: '2026-08-12',
   updated: '2026-09-26',
   keywords: ['answer engine optimization', 'generative engine optimization', 'AEO', 'GEO', 'get recommended by ChatGPT', 'AI Overviews SEO'],

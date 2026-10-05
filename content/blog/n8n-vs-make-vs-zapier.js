@@ -5,7 +5,7 @@ export default {
   title: 'n8n vs Make vs Zapier (2026): Which Automation Platform Should You Use?',
   metaTitle: 'n8n vs Make vs Zapier 2026: Honest Comparison | Voxil AI',
   description: 'n8n vs Make.com vs Zapier compared by automation engineers: ease of use, pricing models, AI agent capabilities, self-hosting, scalability and which to choose for your business.',
-  category: 'Comparisons',
+  category: 'Chatbots & Automation',
   date: '2026-04-22',
   updated: '2026-09-26',
   featured: false,

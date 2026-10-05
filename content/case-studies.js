@@ -27,6 +27,8 @@
 //   stack: ['Retell AI', 'GoHighLevel', 'Google Calendar'],
 //   timeline: '3 weeks',
 //   date: '2026-09-01',
+//   process: [{ title, desc }, …],                 // four steps describing how this project ran
+//   fit: 'Who else this approach suits.',
 //   draft: true,                                    // drafts are not built
 // },
 
@@ -54,6 +56,13 @@ export default [
     stack: ['Voice agent', 'Web chat', 'Calendar integration'],
     timeline: null,
     date: '2026-03-01',
+    process: [
+      { title: 'Map the patient calls', desc: 'We reviewed which after-hours calls went to voicemail and sorted them into booking, rescheduling, routine questions and anything clinical or urgent.' },
+      { title: 'Build intake and booking', desc: 'Chat and voice agents were given approved answers for routine questions, structured intake fields and access to each location’s calendar.' },
+      { title: 'Pilot on overflow calls', desc: 'The agents first handled overflow and after-hours traffic only, while staff reviewed transcripts and tightened the rules for clinical hand-offs.' },
+      { title: 'Roll out across locations', desc: 'Every location went live with the same rules, and staff received a short guide to reviewing intake summaries each morning.' },
+    ],
+    fit: 'This approach suits any practice where the phones are busiest when the front desk is busiest, or where callers hit voicemail after hours. The key is clear routing for anything clinical, which we design with your team.',
     oldUrl: '/case-study-healthcare.html',
   },
   {
@@ -78,6 +87,13 @@ export default [
     stack: ['Chatbot', 'Order system integration', 'Helpdesk'],
     timeline: null,
     date: '2026-03-01',
+    process: [
+      { title: 'Sort the ticket backlog', desc: 'We grouped recent support tickets by topic and found that shipping, returns and order-status questions made up most of the volume.' },
+      { title: 'Connect live order data', desc: 'The chatbot was connected to the order system so it could look up real orders, instead of reciting help-center articles.' },
+      { title: 'Launch on one channel', desc: 'It went live on the website chat first, with every conversation logged and a one-click hand-off to an agent with the history attached.' },
+      { title: 'Expand and refine', desc: 'Answers and hand-off rules were refined from real transcripts before the bot was added to more entry points.' },
+    ],
+    fit: 'If your support volume rises with every ad campaign and most tickets are “where is my order?” or “how do I return this?”, a chatbot connected to live order data usually pays for itself quickly.',
     oldUrl: '/case-study-ecommerce.html',
   },
   {
@@ -102,6 +118,13 @@ export default [
     stack: ['Intake agent', 'Lead scoring', 'CRM integration'],
     timeline: null,
     date: '2026-03-01',
+    process: [
+      { title: 'Define a qualified applicant', desc: 'We worked with the sales team to write down the questions and answers that separate ready-to-talk applicants from long shots.' },
+      { title: 'Build the intake agent', desc: 'An intake agent was set up to ask those questions the moment a form arrived, at any hour, and record the answers as CRM fields.' },
+      { title: 'Score and route', desc: 'Scoring rules tagged each applicant by priority and pushed the best ones to the top of the team’s queue with an alert.' },
+      { title: 'Tune against outcomes', desc: 'Scores were compared with which applicants actually progressed, and the questions and weights were adjusted.' },
+    ],
+    fit: 'This works well for any sales team that receives more form leads than it can call quickly, especially when a few simple answers predict who is worth an immediate call.',
     oldUrl: '/case-study-finance.html',
   },
   {
@@ -126,6 +149,13 @@ export default [
     stack: ['Listing Q&A agent', 'Calendar booking', 'CRM integration'],
     timeline: null,
     date: '2026-03-01',
+    process: [
+      { title: 'Collect listing knowledge', desc: 'We gathered the questions buyers and renters ask most, from price and parking to pets and viewing times, and connected the listing data.' },
+      { title: 'Connect agent calendars', desc: 'Showing requests were linked to each agent’s calendar so the assistant could offer real times instead of promising a callback.' },
+      { title: 'Pilot on nights and weekends', desc: 'The assistant first covered evenings and weekends, when agents were least available, with every conversation logged in the CRM.' },
+      { title: 'Extend to all hours', desc: 'After reviewing transcripts with the agents, it was extended to answer inquiries at any hour, handing serious buyers to agents.' },
+    ],
+    fit: 'Any brokerage whose agents spend evenings answering the same listing questions, or whose weekend inquiries go cold by Monday, can use the same setup.',
     oldUrl: '/case-study-real-estate.html',
   },
 ];

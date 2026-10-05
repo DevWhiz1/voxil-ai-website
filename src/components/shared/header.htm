@@ -9,14 +9,14 @@ State classes are applied by src/js/common/header.js
     <nav class="hidden h-full items-center gap-0.5 self-stretch lg:flex" aria-label="Primary">
       <Component src="src/components/shared/generated/nav-desktop.htm" />
       <a href="/portfolio/" data-nav-link class="site-nav-link">Portfolio</a>
-      <a href="/case-studies/" data-nav-link class="site-nav-link hidden xl:inline-flex">Case Studies</a>
-      <a href="/about.html" data-nav-link class="site-nav-link hidden xl:inline-flex">About</a>
-      <a href="/contact.html" data-nav-link class="site-nav-link hidden xl:inline-flex">Contact</a>
+      <a href="/case-studies/" data-nav-link class="site-nav-link hidden 2xl:inline-flex">Case Studies</a>
+      <a href="/about.html" data-nav-link class="site-nav-link hidden 2xl:inline-flex">About</a>
+      <a href="/contact.html" data-nav-link class="site-nav-link hidden 2xl:inline-flex">Contact</a>
     </nav>
 
     <div class="hidden items-center gap-3 lg:flex">
       <a href="/book-meeting.html" class="cta cta-sm cta-coral">
-        Book a Free Call
+        <span class="xl:hidden">Book a Call</span><span class="hidden xl:inline">Book a Free Call</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
         </svg>

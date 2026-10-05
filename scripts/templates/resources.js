@@ -19,13 +19,13 @@ import {
   webPageSchema,
 } from '../lib/ui.js';
 
-const crumbsFor = (name, slug) => [
+export const crumbsFor = (name, slug) => [
   { name: 'Home', url: '/' },
   { name: 'Free Resources', url: '/resources/' },
   ...(slug ? [{ name, url: resourceUrl(slug) }] : []),
 ];
 
-const simpleHero = ({ crumbs, eyebrowText, accent, h1, lead }) => `
+export const simpleHero = ({ crumbs, eyebrowText, accent, h1, lead }) => `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
       <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: ${accent}; --orb-opacity: 0.28" aria-hidden="true"></span>
@@ -40,6 +40,8 @@ const simpleHero = ({ crumbs, eyebrowText, accent, h1, lead }) => `
       </div>
     </section>`;
 
+const NEW_RESOURCES = ['ai-roi-calculator', 'ai-readiness-assessment', 'ai-voice-agent-scripts', 'follow-up-templates', 'ai-automation-glossary'];
+
 // ---------------------------------------------------------------------------
 // Hub
 // ---------------------------------------------------------------------------
@@ -47,13 +49,14 @@ export const renderResourcesHub = (posts) => {
   const path = '/resources/';
   const crumbs = crumbsFor();
   const title = 'Free AI Automation Tools & Resources | Voxil AI';
-  const description = 'Free tools and resources for service businesses: Lead Loss Calculator, AI Statistics 2026, GoHighLevel setup checklist, media kit and research-backed guides.';
+  const description = 'Free AI automation tools: Lead Loss and ROI calculators, AI readiness assessment, voice agent scripts, follow-up templates, GHL checklist and glossary.';
   const body = `
     ${simpleHero({ crumbs, eyebrowText: 'Free resources', accent: '#2fc4b6', h1: 'Free tools to find your <span class="text-gradient-teal">biggest automation wins</span>', lead: 'Calculators, checklists and research we use with clients, free, no sign-up required.' })}
     <section class="section-soft section-pad">
       <div class="main-container relative z-10">
-        <div class="grid gap-4 sm:grid-cols-2">
-          ${RESOURCES.map((r) => linkCard({ href: resourceUrl(r.slug), title: r.name, desc: r.short, icon: r.icon, accent: r.accent, cta: 'Open', badge: r.slug === 'lead-loss-calculator' ? 'Most used' : undefined })).join('')}
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          ${RESOURCES.map((r) => linkCard({ href: resourceUrl(r.slug), title: r.name, desc: r.short, icon: r.icon, accent: r.accent, cta: 'Open', badge: r.slug === 'lead-loss-calculator' ? 'Most used' : NEW_RESOURCES.includes(r.slug) ? 'New' : undefined })).join('')}
+          ${linkCard({ href: '/book-meeting.html', title: 'Free AI Automation Audit', desc: 'A 30-minute call where we review your lead flow and tell you what to automate first. No obligation.', icon: 'calendar', accent: '#ff6b35', cta: 'Book a call' })}
         </div>
       </div>
     </section>
@@ -87,7 +90,7 @@ export const renderResourcesHub = (posts) => {
 // ---------------------------------------------------------------------------
 // Lead Loss Calculator (behavior in src/js/common/lead-loss-calculator.js)
 // ---------------------------------------------------------------------------
-const calcField = ({ id, label, hint, min, max, step, value, prefix = '', suffix = '' }) => `
+export const calcField = ({ id, label, hint, min, max, step, value, prefix = '', suffix = '' }) => `
               <div>
                 <div class="flex items-baseline justify-between gap-3">
                   <label for="${id}" class="field-label mb-0">${label}</label>

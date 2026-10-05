@@ -235,6 +235,11 @@ export const RESOURCES = [
   { slug: 'lead-loss-calculator', name: 'Lead Loss Calculator', icon: 'calculator', accent: '#ff7a3d', short: 'See how much revenue missed calls and slow follow-up cost you each month.' },
   { slug: 'ai-statistics-2026', name: 'AI Statistics 2026', icon: 'chart', accent: '#2fc4b6', short: 'Sourced AI adoption, customer-service, agent and speed-to-lead statistics.' },
   { slug: 'ghl-setup-checklist', name: 'GHL Setup Checklist', icon: 'clipboard', accent: '#38bdf8', short: 'The interactive checklist we use to launch every GoHighLevel account.' },
+  { slug: 'ai-roi-calculator', name: 'AI Automation ROI Calculator', icon: 'trending', accent: '#0f9f93', short: 'Estimate payback and 12-month ROI for AI automation, with industry presets.' },
+  { slug: 'ai-readiness-assessment', name: 'AI Readiness Assessment', icon: 'sliders', accent: '#ff6b35', short: 'Ten quick questions to see which automation to build first.' },
+  { slug: 'ai-voice-agent-scripts', name: 'AI Voice Agent Scripts', icon: 'mic', accent: '#ff7a3d', short: 'Copy-ready scripts for AI receptionists, speed-to-lead and reactivation calls.' },
+  { slug: 'follow-up-templates', name: 'Follow-Up Message Templates', icon: 'mail', accent: '#0284c7', short: 'SMS and email templates for instant replies, nurture, no-shows and reviews.' },
+  { slug: 'ai-automation-glossary', name: 'AI Automation Glossary', icon: 'book', accent: '#6adfd3', short: 'Plain-English definitions of AI, voice agent, CRM and GoHighLevel terms.' },
   { slug: 'media-kit', name: 'Media Kit', icon: 'photo', accent: '#6adfd3', short: 'Brand assets, boilerplate and facts for press and partners.' },
 ];
 export const resourceUrl = (slug) => `/resources/${slug}/`;

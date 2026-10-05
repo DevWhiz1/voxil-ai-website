@@ -870,12 +870,12 @@ export default {
     services: ['ai-receptionist', 'ai-voice-agents', 'ai-sdr-system', 'ai-follow-up-system', 'crm-automation', 'email-sms-marketing'],
     servicesLead: 'GTA businesses see the fastest returns from phone coverage and compliant follow-up.',
     compliance: {
-      title: 'PIPEDA, CASL and the National DNCL',
-      text: 'We design for PIPEDA, build CASL-compliant consent and unsubscribe handling into every email and SMS flow, and respect CRTC telemarketing rules and the National Do Not Call List for outbound calls.',
+      title: 'PIPEDA, Ontario’s PHIPA and CASL',
+      text: 'Ontario clinics and other health information custodians are covered by PHIPA, Ontario’s health privacy law, alongside federal PIPEDA for commercial activity. We keep health details out of messages, build CASL-compliant consent and unsubscribe handling into every email and SMS flow, and respect CRTC telemarketing rules and the National Do Not Call List.',
     },
     faqs: [
       { q: 'Can AI help Toronto real-estate teams?', a: 'Yes. Agents respond to listing and portal inquiries instantly, qualify buyers and renters, and book showings into agents’ calendars, all logged in your CRM.' },
-      { q: 'Is SMS follow-up allowed under CASL?', a: 'Yes, with valid consent, clear identification and an easy unsubscribe. We build consent tracking so you can prove it.' },
+      { q: 'Can Toronto clinics use AI booking under PHIPA?', a: 'Yes, with care. Booking agents collect only what’s needed to schedule, keep clinical details out of SMS and email, and use providers whose data handling fits your privacy obligations.' },
     ],
     schemaPlace: city('Toronto', 'Ontario'),
     nearby: ['canada', 'vancouver', 'new-york'],
@@ -926,11 +926,11 @@ export default {
     services: ['ai-receptionist', 'ai-phone-answering', 'gohighlevel-automation', 'ai-appointment-booking', 'ai-follow-up-system', 'website-design'],
     servicesLead: 'Sydney service businesses get the quickest wins from phone coverage and booking.',
     compliance: {
-      title: 'Privacy Act, Spam Act and Do Not Call Register',
-      text: 'We design for the Privacy Act 1988 and Australian Privacy Principles, build Spam Act 2003 consent and unsubscribe handling into email and SMS, and respect the Do Not Call Register for telemarketing calls.',
+      title: 'NSW call recording, privacy and spam rules',
+      text: 'In New South Wales, the Surveillance Devices Act 2007 generally prohibits recording a private conversation without the consent of the people in it, so our voice agents announce recording at the start of each call. We also design for the federal Privacy Act 1988, build Spam Act 2003 consent and unsubscribe handling into SMS and email, and respect the Do Not Call Register.',
     },
     faqs: [
-      { q: 'Do your voices sound Australian?', a: 'Yes. We use natural Australian English voices and tune for local suburbs and phrasing.' },
+      { q: 'Can AI voice agents record calls in NSW?', a: 'Yes, with consent. Under NSW law the agent tells callers the call is recorded at the start, and callers who object can continue without recording or ask for a person.' },
       { q: 'Can AI book jobs for Sydney tradies?', a: 'Yes. It captures the job, suburb and urgency, books into your job software or calendar, and texts you a summary so you never miss work while on the tools.' },
     ],
     schemaPlace: city('Sydney', 'New South Wales'),
@@ -954,12 +954,12 @@ export default {
     services: ['ai-receptionist', 'ai-appointment-booking', 'ai-phone-answering', 'gohighlevel-automation', 'email-sms-marketing', 'ai-chatbots'],
     servicesLead: 'Melbourne businesses usually start with booking and phone coverage.',
     compliance: {
-      title: 'Privacy Act, Spam Act and Do Not Call Register',
-      text: 'We design for the Privacy Act 1988 and Australian Privacy Principles, build Spam Act 2003 consent and unsubscribe handling into messaging, and respect the Do Not Call Register for telemarketing calls.',
+      title: 'Victorian privacy, health records and spam rules',
+      text: 'Clinics in Victoria handle health information under both the federal Privacy Act 1988 and Victoria’s Health Records Act 2001, so we keep clinical details out of SMS and limit what booking agents collect. Recording rules differ between states; in Victoria we still disclose recording up front as best practice. Spam Act 2003 consent and the Do Not Call Register apply to outreach.',
     },
     faqs: [
       { q: 'Can AI fill last-minute cancellations?', a: 'Yes. When an appointment is canceled, the agent can offer the slot to your waitlist automatically by SMS and book the first person who accepts.' },
-      { q: 'Do you work in Melbourne time?', a: 'Yes. We schedule live sessions in overlapping hours and keep work moving with async updates and recorded demos.' },
+      { q: 'Do you work in Melbourne time?', a: 'Yes. Kickoff and review calls are booked in AEST or AEDT, usually first thing in your morning, with recorded demos so your team can review builds whenever suits them.' },
     ],
     schemaPlace: city('Melbourne', 'Victoria'),
     nearby: ['australia', 'sydney'],

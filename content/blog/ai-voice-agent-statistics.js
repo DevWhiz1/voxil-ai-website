@@ -6,6 +6,7 @@ export default {
   metaTitle: 'AI Voice Agent Statistics 2026: Adoption & ROI | Voxil AI',
   description: 'The most important AI voice agent and conversational AI statistics for 2026: adoption, market size, customer-service impact, speed-to-lead, costs and regulation. Every source cited.',
   category: 'Statistics',
+  tags: ['AI Calling Bots'],
   date: '2026-02-10',
   updated: '2026-09-26',
   featured: true,

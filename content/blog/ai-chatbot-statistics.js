@@ -6,6 +6,7 @@ export default {
   metaTitle: 'AI Chatbot Statistics 2026: Usage, Adoption & ROI | Voxil AI',
   description: 'Key AI chatbot statistics for 2026: consumer usage, business adoption, customer-service impact, productivity research and the risks. Every figure sourced and explained.',
   category: 'Statistics',
+  tags: ['Chatbots & Automation'],
   date: '2026-03-04',
   updated: '2026-09-26',
   featured: true,

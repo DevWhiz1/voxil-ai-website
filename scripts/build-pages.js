@@ -21,6 +21,7 @@ import { renderIndustriesHub, renderLocationsHub, renderServicesHub } from './te
 import { footerLinks, footerLocations, homeExplore, navDesktop, navMobile } from './templates/nav.js';
 import { renderCalculator, renderChecklist, renderMediaKit, renderResourcesHub, renderStatsHub } from './templates/resources.js';
 import { renderIndustry } from './templates/industry.js';
+import { renderFollowUpTemplates, renderGlossary, renderReadiness, renderRoiCalculator, renderVoiceScripts } from './templates/resources-extra.js';
 import { chatKnowledge, renderFunnel, renderPortfolio } from './templates/portfolio.js';
 import { renderLocation } from './templates/location.js';
 import { renderService } from './templates/service.js';
@@ -64,18 +65,18 @@ for (const l of ALL_LOCATIONS) {
   write(`/locations/${l.slug}/`, renderLocation(l.slug, locations[l.slug]));
 }
 
-resetDir('industries');
-write('/industries/', renderIndustriesHub());
-for (const i of INDUSTRIES) {
-  if (!industries[i.slug]) throw new Error(`No content for industry: ${i.slug}`);
-  write(`/industries/${i.slug}/`, renderIndustry(i.slug, industries[i.slug]));
-}
-
 // Each blog file default-exports one post object.
 const posts = [];
 for (const file of fs.readdirSync(path.join(ROOT, 'content/blog')).filter((f) => f.endsWith('.js')).sort()) {
   posts.push((await import(path.join(ROOT, 'content/blog', file))).default);
 }
+resetDir('industries');
+write('/industries/', renderIndustriesHub());
+for (const i of INDUSTRIES) {
+  if (!industries[i.slug]) throw new Error(`No content for industry: ${i.slug}`);
+  write(`/industries/${i.slug}/`, renderIndustry(i.slug, industries[i.slug], posts));
+}
+
 resetDir('blog');
 write('/blog/', renderBlogHub(posts));
 posts.forEach((post) => write(`/blog/${post.slug}/`, renderPost(post, posts)));
@@ -112,13 +113,18 @@ write('/resources/lead-loss-calculator/', renderCalculator());
 write('/resources/ai-statistics-2026/', renderStatsHub());
 write('/resources/ghl-setup-checklist/', renderChecklist());
 write('/resources/media-kit/', renderMediaKit());
+write('/resources/ai-roi-calculator/', renderRoiCalculator());
+write('/resources/ai-readiness-assessment/', renderReadiness());
+write('/resources/ai-voice-agent-scripts/', renderVoiceScripts());
+write('/resources/follow-up-templates/', renderFollowUpTemplates());
+write('/resources/ai-automation-glossary/', renderGlossary());
 
 // ---------------------------------------------------------------------------
 // Navigation partials
 const partialDir = path.join(ROOT, 'src/components/shared/generated');
 fs.mkdirSync(partialDir, { recursive: true });
-fs.writeFileSync(path.join(partialDir, 'nav-desktop.htm'), navDesktop());
-fs.writeFileSync(path.join(partialDir, 'nav-mobile.htm'), navMobile());
+fs.writeFileSync(path.join(partialDir, 'nav-desktop.htm'), navDesktop(posts));
+fs.writeFileSync(path.join(partialDir, 'nav-mobile.htm'), navMobile(posts));
 fs.writeFileSync(path.join(partialDir, 'footer-links.htm'), footerLinks());
 fs.writeFileSync(path.join(partialDir, 'footer-locations.htm'), footerLocations());
 const featuredPosts = posts.filter((p) => p.featured).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 2);

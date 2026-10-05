@@ -6,6 +6,7 @@ export default {
   metaTitle: 'Missed Call Statistics 2026: Cost of Missed Calls | Voxil AI',
   description: 'Missed call statistics for small businesses, how many calls go unanswered, why speed matters, and a simple formula to calculate what missed calls cost you each month.',
   category: 'Statistics',
+  tags: ['Lead Generation', 'AI Calling Bots'],
   date: '2026-01-20',
   updated: '2026-09-26',
   keywords: ['missed call statistics', 'unanswered calls small business', 'cost of missed calls', 'missed call text back'],

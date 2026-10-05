@@ -87,15 +87,10 @@ export const renderCaseStudy = (cs, all) => {
         ${sectionHead({ eyebrowText: 'How we delivered it', dot: accent, title: 'From first call to <span class="text-gradient-warm">live system</span>', lead: `The ${cs.industryLabel.toLowerCase()} project followed the same four stages as every Voxil AI build, so the team could see progress every week and nothing went live untested.`, center: true })}
         ${stepsBlock({
           accent,
-          steps: [
-            { title: 'Scope the problem', desc: 'A short call to map where inquiries were being lost, which systems were involved and what a good outcome looked like.' },
-            { title: 'Build & integrate', desc: 'The agent was trained on approved business information and connected to the existing calendar, CRM and messaging tools.' },
-            { title: 'Supervised pilot', desc: 'It ran on a slice of real traffic first, with transcripts reviewed so answers, tone and hand-offs could be tuned.' },
-            { title: 'Launch & improve', desc: 'Full rollout with documentation for the team, followed by tuning based on real conversations.' },
-          ],
+          steps: cs.process,
         })}
         <div data-reveal class="mx-auto mt-10 max-w-3xl text-center">
-          <p class="text-tagline-1 text-secondary/70">Could the same approach work for your business? If your team answers the same questions every day, misses calls or leads after hours, or re-types data between tools, the answer is usually yes. We’ll tell you honestly on a free 30-minute call, including when a simpler fix would do.</p>
+          <p class="text-tagline-1 text-secondary/70">${cs.fit}</p>
         </div>
       </div>
     </section>`,
