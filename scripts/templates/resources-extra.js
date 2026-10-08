@@ -20,14 +20,14 @@ const relatedTools = (exclude) => `
       </div>
     </section>`;
 
-const ctaCard = (accent, title, text) => `
+export const ctaCard = (accent, title, text) => `
             <div class="glass-card" style="--accent: ${accent}">
               <p class="text-tagline-2 font-semibold text-secondary">${title}</p>
               <p class="text-tagline-3 mt-1 text-secondary/55">${text}</p>
               <a href="/book-meeting.html" class="cta cta-md cta-coral mt-4 w-full">Book a free strategy call${arrow()}</a>
             </div>`;
 
-const shell = ({ slug, title, description, h1, lead, eyebrowText = 'Free tool', body, faqs, extraSchema = [] }) => {
+export const shell = ({ slug, title, description, h1, lead, eyebrowText = 'Free tool', body, faqs, extraSchema = [] }) => {
   const r = meta(slug);
   const path = resourceUrl(slug);
   const crumbs = crumbsFor(r.name, slug);
@@ -336,6 +336,7 @@ export const renderVoiceScripts = () => {
         <div class="mx-auto mb-8 max-w-3xl rounded-2xl border border-secondary/[0.08] bg-white p-5 text-tagline-2 text-secondary/65">
           <strong class="text-secondary">How to use these:</strong> copy a script into your voice platform’s system prompt, replace the <code>{{placeholders}}</code>, connect your calendar and CRM tools, then test with at least twenty realistic calls before going live.
         </div>
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary text-center">Four copy-ready voice agent scripts</h2>
         <div class="grid gap-5 lg:grid-cols-2">
           ${VOICE_SCRIPTS.map((s) => copyBlock(s.id, s.title, s.desc, s.text)).join('')}
         </div>
@@ -412,6 +413,7 @@ export const renderFollowUpTemplates = () => {
         <div class="mx-auto mb-8 max-w-3xl rounded-2xl border border-secondary/[0.08] bg-white p-5 text-tagline-2 text-secondary/65">
           <strong class="text-secondary">Tip:</strong> keep SMS under about 160 characters where you can, include your business name, and add opt-out wording such as “Reply STOP to opt out” to your first message.
         </div>
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary text-center">Eight copy-ready follow-up templates</h2>
         <div class="grid gap-5 lg:grid-cols-2">
           ${FOLLOW_UPS.map((s) => copyBlock(s.id, s.title, s.desc, s.text)).join('')}
         </div>

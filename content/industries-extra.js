@@ -93,6 +93,7 @@ export default {
       { q: '“We already use an answering service.”', a: 'An AI intake agent can screen, book and update your case management system in real time, rather than just taking messages.' },
     ],
     calc: { calls: 200, value: 4000 },
+    guide: 'gohighlevel-law-firms',
   },
   'home-services': {
     segments: [
@@ -157,6 +158,7 @@ export default {
       { q: '“We already have booking software.”', a: 'We connect to it, so DMs, ads and texts flow into the same calendar and client record.' },
     ],
     calc: { calls: 250, value: 600 },
+    guide: 'ai-for-med-spas',
   },
   roofing: {
     segments: [
@@ -178,6 +180,7 @@ export default {
       { q: '“Our CRM is JobNimbus (or AccuLynx).”', a: 'We integrate with your roofing CRM so leads, appointments and statuses stay in sync.' },
     ],
     calc: { calls: 200, value: 9000 },
+    guide: 'gohighlevel-roofing-contractors',
   },
   solar: {
     segments: [
@@ -241,6 +244,7 @@ export default {
       { q: '“Our dispatchers handle this fine.”', a: 'During peaks they can’t. AI covers overflow and after-hours calls so dispatchers focus on scheduling.' },
     ],
     calc: { calls: 450, value: 650 },
+    guide: 'ai-for-hvac-companies',
   },
   chiropractic: {
     segments: [

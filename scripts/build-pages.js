@@ -11,7 +11,9 @@ import { fileURLToPath } from 'node:url';
 import { hub as agencyHub, models as agencyModels } from '../content/agencies.js';
 import caseStudies from '../content/case-studies.js';
 import industries from '../content/industries.js';
-import locations from '../content/locations.js';
+import baseLocations from '../content/locations.js';
+import moreIntlLocations from '../content/locations-more-intl.js';
+import moreLocations from '../content/locations-more.js';
 import portfolio from '../content/portfolio.js';
 import { AGENCY_PAGES, ALL_LOCATIONS, ALL_SERVICES, INDUSTRIES, LOCATION_GROUPS, RESOURCES, SERVICE_GROUPS, SITE } from '../content/site.js';
 import { renderAgencyHub, renderAgencyModel } from './templates/agencies.js';
@@ -21,6 +23,7 @@ import { renderIndustriesHub, renderLocationsHub, renderServicesHub } from './te
 import { footerLinks, footerLocations, homeExplore, navDesktop, navMobile } from './templates/nav.js';
 import { renderCalculator, renderChecklist, renderMediaKit, renderResourcesHub, renderStatsHub } from './templates/resources.js';
 import { renderIndustry } from './templates/industry.js';
+import { renderAutomationPicker, renderChatbotCostCalculator, renderPlatformPicker, renderPromptGenerator, renderSavingsCalculator, renderSmsCounter, renderSpeedScorecard, renderVoiceCostCalculator } from './templates/resources-tools.js';
 import { renderFollowUpTemplates, renderGlossary, renderReadiness, renderRoiCalculator, renderVoiceScripts } from './templates/resources-extra.js';
 import { chatKnowledge, renderFunnel, renderPortfolio } from './templates/portfolio.js';
 import { renderLocation } from './templates/location.js';
@@ -37,6 +40,8 @@ const loadDir = async (dir) => {
   }
   return merged;
 };
+
+const locations = { ...baseLocations, ...moreLocations, ...moreIntlLocations };
 
 const written = [];
 const write = (urlPath, html) => {
@@ -118,6 +123,14 @@ write('/resources/ai-readiness-assessment/', renderReadiness());
 write('/resources/ai-voice-agent-scripts/', renderVoiceScripts());
 write('/resources/follow-up-templates/', renderFollowUpTemplates());
 write('/resources/ai-automation-glossary/', renderGlossary());
+write('/resources/ai-voice-agent-cost-calculator/', renderVoiceCostCalculator());
+write('/resources/ai-agent-prompt-generator/', renderPromptGenerator());
+write('/resources/sms-character-counter/', renderSmsCounter());
+write('/resources/voice-ai-platform-picker/', renderPlatformPicker());
+write('/resources/automation-savings-calculator/', renderSavingsCalculator());
+write('/resources/ai-chatbot-cost-calculator/', renderChatbotCostCalculator());
+write('/resources/automation-platform-picker/', renderAutomationPicker());
+write('/resources/speed-to-lead-scorecard/', renderSpeedScorecard());
 
 // ---------------------------------------------------------------------------
 // Navigation partials

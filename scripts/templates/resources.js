@@ -40,7 +40,7 @@ export const simpleHero = ({ crumbs, eyebrowText, accent, h1, lead }) => `
       </div>
     </section>`;
 
-const NEW_RESOURCES = ['ai-roi-calculator', 'ai-readiness-assessment', 'ai-voice-agent-scripts', 'follow-up-templates', 'ai-automation-glossary'];
+const NEW_RESOURCES = ['automation-savings-calculator', 'ai-chatbot-cost-calculator', 'automation-platform-picker', 'speed-to-lead-scorecard'];
 
 // ---------------------------------------------------------------------------
 // Hub
@@ -54,6 +54,7 @@ export const renderResourcesHub = (posts) => {
     ${simpleHero({ crumbs, eyebrowText: 'Free resources', accent: '#2fc4b6', h1: 'Free tools to find your <span class="text-gradient-teal">biggest automation wins</span>', lead: 'Calculators, checklists and research we use with clients, free, no sign-up required.' })}
     <section class="section-soft section-pad">
       <div class="main-container relative z-10">
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary">Free tools, templates and checklists</h2>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           ${RESOURCES.map((r) => linkCard({ href: resourceUrl(r.slug), title: r.name, desc: r.short, icon: r.icon, accent: r.accent, cta: 'Open', badge: r.slug === 'lead-loss-calculator' ? 'Most used' : NEW_RESOURCES.includes(r.slug) ? 'New' : undefined })).join('')}
           ${linkCard({ href: '/book-meeting.html', title: 'Free AI Automation Audit', desc: 'A 30-minute call where we review your lead flow and tell you what to automate first. No obligation.', icon: 'calendar', accent: '#ff6b35', cta: 'Book a call' })}

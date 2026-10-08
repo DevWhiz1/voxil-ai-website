@@ -7,7 +7,7 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 ## Core pages
 - [Home](https://www.voxilai.tech/): Overview of Voxil AI services and approach
 - [For Agencies](https://www.voxilai.tech/for-agencies/): White label fulfillment partner program
-- [All services](https://www.voxilai.tech/services/): 43 AI automation services
+- [All services](https://www.voxilai.tech/services/): 53 AI automation services
 - [About](https://www.voxilai.tech/about.html)
 - [Portfolio](https://www.voxilai.tech/portfolio/): Interactive demos of our funnels, live AI chatbot, AI calling bots, automations, SEO and ads
 - [Case studies](https://www.voxilai.tech/case-studies/)
@@ -27,6 +27,11 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [Vapi AI Integration](https://www.voxilai.tech/services/vapi-ai-integration/): Production Vapi assistants wired to your CRM, calendar and tools.
 - [Retell AI Setup](https://www.voxilai.tech/services/retell-ai-setup/): Retell AI agents configured, tested and connected to your stack.
 - [AI Customer Support](https://www.voxilai.tech/services/ai-customer-support/): Voice and chat support that resolves routine tickets and escalates cleanly.
+- [AI Call Center](https://www.voxilai.tech/services/ai-call-center/): Voice agents that take routine and overflow calls at contact-center scale.
+- [Conversational IVR](https://www.voxilai.tech/services/conversational-ivr/): Replace phone menus with AI that understands and routes callers.
+- [Multilingual Voice Agents](https://www.voxilai.tech/services/multilingual-voice-agents/): Voice agents that answer and call in Spanish, French, Arabic and more.
+- [AI Lead Reactivation](https://www.voxilai.tech/services/ai-lead-reactivation/): Consent-based AI outreach that turns old leads into appointments.
+- [AI Call Analytics](https://www.voxilai.tech/services/ai-call-analytics/): Transcribe, summarize and score every call, human or AI.
 
 ## Services: AI & Automation
 - [AI Chatbots](https://www.voxilai.tech/services/ai-chatbots/): Website, WhatsApp and in-app chatbots trained on your business.
@@ -35,6 +40,11 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [GoHighLevel AI](https://www.voxilai.tech/services/gohighlevel-ai/): Conversation AI, Voice AI and AI workflows inside GoHighLevel.
 - [AI Lead Generation](https://www.voxilai.tech/services/ai-lead-generation/): AI systems that find, enrich, contact and qualify new leads.
 - [AI Follow-Up System](https://www.voxilai.tech/services/ai-follow-up-system/): Multi-channel follow-up that never forgets a lead or a quote.
+- [AI Agent Development](https://www.voxilai.tech/services/ai-agent-development/): Custom AI agents that use your tools and data to complete real work.
+- [Knowledge Base Chatbots](https://www.voxilai.tech/services/rag-chatbot-development/): RAG chatbots that answer from your documents, with citations.
+- [AI Document Processing](https://www.voxilai.tech/services/ai-document-processing/): Extract and validate data from invoices, forms and contracts.
+- [AI Email Automation](https://www.voxilai.tech/services/ai-email-automation/): An AI inbox assistant that triages, drafts and logs every email.
+- [Speed-to-Lead Automation](https://www.voxilai.tech/services/speed-to-lead-automation/): Reply to every new lead in seconds by call, SMS and email.
 - [AI Automation Consultant](https://www.voxilai.tech/services/ai-automation-consultant/): Strategy, audits and a roadmap for automating your operations.
 - [Workflow Automation](https://www.voxilai.tech/services/workflow-automation/): Remove repetitive work across sales, ops, finance and support.
 - [Marketing Automation](https://www.voxilai.tech/services/marketing-automation/): Campaigns, nurture and attribution that run themselves.
@@ -93,11 +103,19 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [Atlanta](https://www.voxilai.tech/locations/atlanta/) (US East)
 - [Miami](https://www.voxilai.tech/locations/miami/) (US East)
 - [Nashville](https://www.voxilai.tech/locations/nashville/) (US East)
+- [Boston](https://www.voxilai.tech/locations/boston/) (US East)
+- [Washington DC](https://www.voxilai.tech/locations/washington-dc/) (US East)
+- [Tampa](https://www.voxilai.tech/locations/tampa/) (US East)
+- [Orlando](https://www.voxilai.tech/locations/orlando/) (US East)
+- [Raleigh](https://www.voxilai.tech/locations/raleigh/) (US East)
 - [Chicago](https://www.voxilai.tech/locations/chicago/) (US Central)
 - [Dallas](https://www.voxilai.tech/locations/dallas/) (US Central)
 - [Houston](https://www.voxilai.tech/locations/houston/) (US Central)
 - [San Antonio](https://www.voxilai.tech/locations/san-antonio/) (US Central)
 - [Austin](https://www.voxilai.tech/locations/austin/) (US Central)
+- [Minneapolis](https://www.voxilai.tech/locations/minneapolis/) (US Central)
+- [Detroit](https://www.voxilai.tech/locations/detroit/) (US Central)
+- [Kansas City](https://www.voxilai.tech/locations/kansas-city/) (US Central)
 - [Los Angeles](https://www.voxilai.tech/locations/los-angeles/) (US West)
 - [San Francisco](https://www.voxilai.tech/locations/san-francisco/) (US West)
 - [San Jose](https://www.voxilai.tech/locations/san-jose/) (US West)
@@ -105,6 +123,10 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [Seattle](https://www.voxilai.tech/locations/seattle/) (US West)
 - [Phoenix](https://www.voxilai.tech/locations/phoenix/) (US West)
 - [Denver](https://www.voxilai.tech/locations/denver/) (US West)
+- [Las Vegas](https://www.voxilai.tech/locations/las-vegas/) (US West)
+- [Portland](https://www.voxilai.tech/locations/portland/) (US West)
+- [Salt Lake City](https://www.voxilai.tech/locations/salt-lake-city/) (US West)
+- [Sacramento](https://www.voxilai.tech/locations/sacramento/) (US West)
 - [United Kingdom](https://www.voxilai.tech/locations/united-kingdom/) (UK & Europe)
 - [London](https://www.voxilai.tech/locations/london/) (UK & Europe)
 - [Manchester](https://www.voxilai.tech/locations/manchester/) (UK & Europe)
@@ -112,14 +134,26 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [Ireland](https://www.voxilai.tech/locations/ireland/) (UK & Europe)
 - [Netherlands](https://www.voxilai.tech/locations/netherlands/) (UK & Europe)
 - [Germany](https://www.voxilai.tech/locations/germany/) (UK & Europe)
-- [Canada](https://www.voxilai.tech/locations/canada/) (International)
-- [Toronto](https://www.voxilai.tech/locations/toronto/) (International)
-- [Vancouver](https://www.voxilai.tech/locations/vancouver/) (International)
-- [Australia](https://www.voxilai.tech/locations/australia/) (International)
-- [Sydney](https://www.voxilai.tech/locations/sydney/) (International)
-- [Melbourne](https://www.voxilai.tech/locations/melbourne/) (International)
-- [Dubai / UAE](https://www.voxilai.tech/locations/dubai-uae/) (International)
-- [Pakistan](https://www.voxilai.tech/locations/pakistan/) (International)
+- [Berlin](https://www.voxilai.tech/locations/berlin/) (UK & Europe)
+- [Birmingham](https://www.voxilai.tech/locations/birmingham/) (UK & Europe)
+- [Edinburgh](https://www.voxilai.tech/locations/edinburgh/) (UK & Europe)
+- [France](https://www.voxilai.tech/locations/france/) (UK & Europe)
+- [Spain](https://www.voxilai.tech/locations/spain/) (UK & Europe)
+- [Canada](https://www.voxilai.tech/locations/canada/) (Canada)
+- [Toronto](https://www.voxilai.tech/locations/toronto/) (Canada)
+- [Vancouver](https://www.voxilai.tech/locations/vancouver/) (Canada)
+- [Montreal](https://www.voxilai.tech/locations/montreal/) (Canada)
+- [Calgary](https://www.voxilai.tech/locations/calgary/) (Canada)
+- [Ottawa](https://www.voxilai.tech/locations/ottawa/) (Canada)
+- [Australia](https://www.voxilai.tech/locations/australia/) (Australia & NZ)
+- [Sydney](https://www.voxilai.tech/locations/sydney/) (Australia & NZ)
+- [Melbourne](https://www.voxilai.tech/locations/melbourne/) (Australia & NZ)
+- [Brisbane](https://www.voxilai.tech/locations/brisbane/) (Australia & NZ)
+- [Perth](https://www.voxilai.tech/locations/perth/) (Australia & NZ)
+- [Adelaide](https://www.voxilai.tech/locations/adelaide/) (Australia & NZ)
+- [New Zealand](https://www.voxilai.tech/locations/new-zealand/) (Australia & NZ)
+- [Dubai / UAE](https://www.voxilai.tech/locations/dubai-uae/) (Middle East & Asia)
+- [Pakistan](https://www.voxilai.tech/locations/pakistan/) (Middle East & Asia)
 
 ## Free resources
 - [Lead Loss Calculator](https://www.voxilai.tech/resources/lead-loss-calculator/): See how much revenue missed calls and slow follow-up cost you each month.
@@ -129,10 +163,36 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [AI Readiness Assessment](https://www.voxilai.tech/resources/ai-readiness-assessment/): Ten quick questions to see which automation to build first.
 - [AI Voice Agent Scripts](https://www.voxilai.tech/resources/ai-voice-agent-scripts/): Copy-ready scripts for AI receptionists, speed-to-lead and reactivation calls.
 - [Follow-Up Message Templates](https://www.voxilai.tech/resources/follow-up-templates/): SMS and email templates for instant replies, nurture, no-shows and reviews.
+- [Voice Agent Cost Calculator](https://www.voxilai.tech/resources/ai-voice-agent-cost-calculator/): Monthly AI voice agent cost vs. a human receptionist, from your rates.
+- [AI Agent Prompt Generator](https://www.voxilai.tech/resources/ai-agent-prompt-generator/): Generate a structured system prompt for your voice agent or chatbot.
+- [SMS Segment Counter](https://www.voxilai.tech/resources/sms-character-counter/): Count characters, encoding and billed segments for any text message.
+- [Voice AI Platform Picker](https://www.voxilai.tech/resources/voice-ai-platform-picker/): Vapi, Retell AI or GoHighLevel Voice AI? Six questions, one answer.
+- [Automation Savings Calculator](https://www.voxilai.tech/resources/automation-savings-calculator/): Hours and dollars your business could save each year by automating tasks.
+- [AI Chatbot Cost Calculator](https://www.voxilai.tech/resources/ai-chatbot-cost-calculator/): Monthly chatbot cost from conversations, tokens and model prices.
+- [Automation Platform Picker](https://www.voxilai.tech/resources/automation-platform-picker/): Zapier, Make, n8n or GoHighLevel workflows? Find your best fit.
+- [Speed-to-Lead Scorecard](https://www.voxilai.tech/resources/speed-to-lead-scorecard/): Grade your lead response out of 100 and see what to fix first.
 - [AI Automation Glossary](https://www.voxilai.tech/resources/ai-automation-glossary/): Plain-English definitions of AI, voice agent, CRM and GoHighLevel terms.
 - [Media Kit](https://www.voxilai.tech/resources/media-kit/): Brand assets, boilerplate and facts for press and partners.
 
 ## Blog
+- [AI Agent Security and Privacy: A Practical Checklist for Businesses](https://www.voxilai.tech/blog/ai-agent-security-checklist/): A practical security and privacy checklist for AI chatbots, voice agents and AI agents: data minimization, access control, prompt injection, tool permissions, logging, vendors and compliance.
+- [AI Automation for Small Business: Where to Start, What to Automate and What to Avoid](https://www.voxilai.tech/blog/ai-automation-small-business-guide/): A practical starter guide to AI automation for small businesses: the highest-return first projects, a 90-day roadmap, tools, budgets, common mistakes and how to measure results.
+- [AI for HVAC Companies: 7 Automations That Win More Calls and Maintenance Plans](https://www.voxilai.tech/blog/ai-for-hvac-companies/): How HVAC companies use AI and automation: 24/7 emergency answering, triage, booking, estimate follow-up, maintenance plan sales, seasonal campaigns and integration with ServiceTitan or Housecall Pro.
+- [AI for Med Spas: Booking Automation, Instagram DMs and Client Retention](https://www.voxilai.tech/blog/ai-for-med-spas/): How med spas and aesthetics clinics use AI: instant Instagram and website replies, consultation booking with deposits, reminders, treatment-interval rebooking, reviews and privacy considerations.
+- [AI Receptionist vs Answering Service vs In-House Receptionist: Which Is Right for You?](https://www.voxilai.tech/blog/ai-receptionist-vs-answering-service/): An honest comparison of AI receptionists, live answering services and in-house receptionists: cost models, coverage, booking, call quality, caller experience and when to combine them.
+- [How to Set Up GoHighLevel Conversation AI: A Step-by-Step Walkthrough](https://www.voxilai.tech/blog/gohighlevel-conversation-ai-setup/): Step-by-step GoHighLevel Conversation AI setup: choosing channels and mode, writing bot instructions, building the knowledge base, appointment booking, hand-off rules, testing and launch.
+- [How to Connect Make.com and GoHighLevel: Webhooks, API and Real Examples](https://www.voxilai.tech/blog/make-gohighlevel-integration/): How to integrate Make.com with GoHighLevel: the HighLevel app, outbound and inbound webhooks, API authentication, five practical scenarios, error handling and when to use n8n instead.
+- [How to Reduce Appointment No-Shows with Automation: A Practical Playbook](https://www.voxilai.tech/blog/reduce-appointment-no-shows/): A step-by-step playbook to reduce no-shows: confirmation and reminder timing, two-way confirmations, deposits and policies, waitlists, no-show recovery and how to measure your show rate.
+- [A2P 10DLC Registration: How to Get Your Business Texts Approved (GoHighLevel & Twilio)](https://www.voxilai.tech/blog/a2p-10dlc-registration-guide/): How A2P 10DLC registration works for business texting in the US: brand and campaign registration, opt-in requirements, sample messages, common rejection reasons and how to fix them.
+- [Database Reactivation: How to Turn Old Leads into Booked Appointments](https://www.voxilai.tech/blog/database-reactivation-campaign-guide/): How to run a database reactivation campaign: cleaning and segmenting your CRM, checking consent, writing offers that get replies, using AI to handle conversations and measuring results.
+- [GoHighLevel for Law Firms: Client Intake, Follow-Up and AI Automation](https://www.voxilai.tech/blog/gohighlevel-law-firms/): How law firms use GoHighLevel and AI for client intake: 24/7 intake agents, case-type pipelines, consultation booking, follow-up, reviews and integration with case management, with confidentiality in mind.
+- [GoHighLevel for Roofing Contractors: Storm Leads, Inspections and Follow-Up](https://www.voxilai.tech/blog/gohighlevel-roofing-contractors/): How roofing contractors use GoHighLevel and AI: storm-surge call handling, inspection booking by territory, estimate follow-up, insurance claim intake, reviews and reactivation.
+- [15 GoHighLevel Workflow Examples Every Service Business Should Set Up](https://www.voxilai.tech/blog/gohighlevel-workflow-examples/): Fifteen practical GoHighLevel workflow examples with triggers, actions and stop conditions: lead response, booking, no-shows, reviews, reactivation, internal alerts and more.
+- [How to Build an AI Voice Agent for Your Business: A Step-by-Step Guide (2026)](https://www.voxilai.tech/blog/how-to-build-an-ai-voice-agent/): A practical guide to building an AI voice agent: choosing the use case and platform, writing the prompt, connecting calendars and CRM, telephony, compliance, testing and launch.
+- [How to Build an AI Agent in n8n: A Practical Tutorial for Business Automation](https://www.voxilai.tech/blog/n8n-ai-agent-tutorial/): Step-by-step n8n AI agent tutorial: triggers, the AI Agent node, models, memory, tools like calendars and CRMs, system prompts, error handling, testing and self-hosting.
+- [AI Calling and the TCPA: A Practical Compliance Guide for US Businesses (2026)](https://www.voxilai.tech/blog/tcpa-ai-calling-compliance/): What US businesses need to know before using AI voice agents and automated texts: TCPA consent, the FCC’s AI voice ruling, Do Not Call rules, calling hours, revocation and state laws.
+- [Voice Agent Prompt Engineering: How to Write Prompts for AI Phone Agents](https://www.voxilai.tech/blog/voice-agent-prompt-engineering/): How to write system prompts for AI voice agents: structure, tone for speech, conversation flow, tool instructions, guardrails, hand-offs and testing, with a template and common mistakes.
+- [How to Add an AI Chatbot to Your Website: Options, Costs and Setup (2026)](https://www.voxilai.tech/blog/website-ai-chatbot-guide/): A buyer’s guide to website AI chatbots: off-the-shelf vs GoHighLevel vs custom, what a good chatbot needs, costs, setup steps, data and privacy, and how to measure results.
 - [How AI Booking Bots Increase Appointment Rates and Cut No-Shows](https://www.voxilai.tech/blog/ai-booking-bots-appointment-rates/): Why AI booking bots book more appointments and reduce no-shows: instant response, 24/7 availability, frictionless scheduling and smart reminders, with examples by industry and how to measure results.
 - [How AI Lead Qualification Works, and Where It Beats Human Reps](https://www.voxilai.tech/blog/ai-lead-qualification/): How AI lead qualification works: frameworks, data capture, lead scoring and routing by voice, SMS and chat, where AI outperforms human reps, where it doesn’t, and how to roll it out.
 - [AI Voice Calling for Lead Generation: The Complete Guide (2026)](https://www.voxilai.tech/blog/ai-voice-calling-lead-generation/): How AI voice calling systems generate and qualify leads: inbound response, missed-call follow-up, outbound campaigns and reactivation, plus platforms, compliance, costs and a rollout plan.

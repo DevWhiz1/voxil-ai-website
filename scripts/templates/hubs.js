@@ -1,4 +1,6 @@
-import locationContent from '../../content/locations.js';
+import baseLocations from '../../content/locations.js';
+import moreIntlLocations from '../../content/locations-more-intl.js';
+import moreLocations from '../../content/locations-more.js';
 import { ALL_SERVICES, EXTRA_SERVICES, INDUSTRIES, LOCATION_GROUPS, SERVICE_GROUPS, SITE, industryUrl, locationUrl, serviceUrl } from '../../content/site.js';
 import { arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, faqBlock, faqSchema, icon, linkCard, page, sectionHead, webPageSchema } from '../lib/ui.js';
 
@@ -88,6 +90,8 @@ export const renderServicesHub = () => {
 };
 
 // ---------------------------------------------------------------------------
+const locationContent = { ...baseLocations, ...moreLocations, ...moreIntlLocations };
+
 export const renderLocationsHub = () => {
   const path = '/locations/';
   const crumbs = [
@@ -95,11 +99,11 @@ export const renderLocationsHub = () => {
     { name: 'Locations', url: path },
   ];
   const all = LOCATION_GROUPS.flatMap((g) => g.locations);
-  const title = 'AI Automation Agency Locations: US, UK & EU | Voxil AI';
-  const description = `Voxil AI serves businesses in ${all.length} markets, New York, Los Angeles, Chicago, Houston, Dallas, Miami and more across the US, plus the UK, Dubai/UAE, Canada, Australia and Pakistan.`;
+  const title = 'AI Automation Agency Locations: US, UK, EU & AU | Voxil AI';
+  const description = `Voxil AI serves businesses in ${all.length} markets across the US, UK, Europe, Canada, Australia, New Zealand, the UAE and Pakistan, with local languages and compliance.`;
   const faqs = [
     { q: 'Do you work with businesses outside these locations?', a: 'Yes. We’re remote-first and work with businesses anywhere; these pages cover markets where we have the most clients and local context.' },
-    { q: 'Do you have local offices?', a: 'No | Voxil AI is remote-first. We schedule working sessions in your time zone and deliver through video calls, shared workspaces and async updates.' },
+    { q: 'Do you have local offices?', a: 'No. Voxil AI is remote-first. We schedule working sessions in your time zone and deliver through video calls, shared workspaces and async updates.' },
     { q: 'Can your AI agents speak local languages?', a: 'Yes, including Spanish, French, Arabic, Urdu and many more, with local voices and spellings where relevant.' },
   ];
   const body = `
@@ -114,11 +118,13 @@ export const renderLocationsHub = () => {
             <h2 class="text-heading-6 font-semibold text-secondary">${g.title}</h2>
           </div>
           <p class="text-tagline-2 mt-3 text-secondary/65">${{
-            'us-east': 'New York to Miami: finance, healthcare, legal and real-estate teams across the Eastern time zone.',
-            'us-central': 'Chicago and Texas: operations-heavy businesses, home services and fast-growing metros in Central Time.',
-            'us-west': 'California to Colorado: tech companies, med spas, clinics and service businesses in Pacific and Mountain Time.',
-            'uk-europe': 'UK GDPR, PECR, the EU GDPR and the EU AI Act built in, with agents in English, German, Dutch and more.',
-            international: 'Canada and Australia, plus the Gulf and Pakistan, with multilingual agents and local compliance.',
+            'us-east': 'New York and Boston to Miami and Tampa: finance, healthcare, legal and real-estate teams in Eastern Time.',
+            'us-central': 'Chicago, the Twin Cities, Detroit, Kansas City and Texas: operations-heavy businesses and fast-growing metros.',
+            'us-west': 'California, the Pacific Northwest, Nevada, Utah and Colorado: tech, aesthetics, clinics and service businesses.',
+            'uk-europe': 'UK GDPR, PECR, the EU GDPR and the EU AI Act built in, with agents in English, German, French, Spanish, Dutch and more.',
+            canada: 'English and French service across Canada, designed around PIPEDA, provincial privacy laws, Quebec’s Law 25 and CASL.',
+            'australia-nz': 'Australian and Kiwi voices, with the Privacy Act, Spam Act, Do Not Call Register and New Zealand’s Privacy Act 2020.',
+            international: 'The Gulf and Pakistan, with WhatsApp-first agents in Arabic, Urdu, Hindi and English.',
           }[g.key] ?? ''}</p>
           <ul class="mt-5 grid grid-cols-2 gap-2">
             ${g.locations.map((l) => `<li><a href="${locationUrl(l.slug)}" class="group block rounded-xl border border-secondary/[0.07] bg-secondary/[0.03] px-4 py-3 transition hover:border-secondary/20 hover:bg-secondary/[0.07]"><span class="block text-tagline-2 font-medium text-secondary/85 group-hover:text-secondary">${l.name}</span><span class="block text-tagline-3 text-secondary/50">${locationContent[l.slug].tzShort} · ${locationContent[l.slug].languages}</span></a></li>`).join('')}
@@ -167,8 +173,11 @@ export const renderIndustriesHub = () => {
   const body = `
     ${hubHero({ crumbs, eyebrowText: `${INDUSTRIES.length} industries`, h1: 'AI automation built for <span class="text-gradient-teal">your industry</span>', lead: 'Every industry loses revenue in different places. These pages show where, and the systems we build to fix it.' })}
     <section class="section-soft section-pad-sm">
-      <div class="main-container relative z-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        ${INDUSTRIES.map((i) => linkCard({ href: industryUrl(i.slug), title: i.name, desc: blurbs[i.slug], icon: i.icon, accent: i.accent, cta: 'Explore' })).join('')}
+      <div class="main-container relative z-10">
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary">Choose your industry</h2>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          ${INDUSTRIES.map((i) => linkCard({ href: industryUrl(i.slug), title: i.name, desc: blurbs[i.slug], icon: i.icon, accent: i.accent, cta: 'Explore' })).join('')}
+        </div>
       </div>
     </section>
     ${hubIntro('Why industry matters in <span class="text-gradient-teal">AI automation</span>', [

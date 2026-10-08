@@ -159,6 +159,7 @@ export const renderCaseStudiesHub = (all) => {
     </section>
     <section class="section-soft section-pad-sm">
       <div class="main-container relative z-10">
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary">Client projects</h2>
         <div class="grid gap-5 md:grid-cols-2">${all.map(card).join('')}</div>
         <div data-reveal class="mt-10 max-w-3xl">
           <h2 class="text-heading-6 font-semibold text-secondary">How we write case studies</h2>

@@ -1,0 +1,422 @@
+// Additional location pages outside the US: UK & Europe, Australia & New
+// Zealand, and Canada. Same shape as content/locations-more.js.
+// Voxil AI is remote-first: never claim a local office or street address here.
+
+const city = (name, region) => ({ '@type': 'City', name, containedInPlace: { '@type': 'AdministrativeArea', name: region } });
+const country = (name) => ({ '@type': 'Country', name });
+
+export default {
+  // -------------------------------------------------------- UK & EUROPE
+  birmingham: {
+    description: 'AI automation agency serving Birmingham and the West Midlands: AI receptionists, voice agents, WhatsApp bots and CRM automation for trades, professional services, healthcare and property.',
+    lead: 'AI receptionists, WhatsApp automation and CRM workflows for Birmingham and West Midlands trades, professional firms, clinics and property businesses.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Birmingham and West Midlands businesses</strong>, from Colmore Row professional firms to Solihull clinics and Black Country trades. Agents answer every call and message, book appointments and log everything, designed around UK GDPR and PECR.',
+    tzShort: 'UK time (GMT/BST)',
+    languages: 'EN-GB · UR · PA',
+    pills: ['City Centre', 'Solihull', 'Sutton Coldfield', 'Black Country'],
+    marketTitle: 'The UK’s second city, and a big business region',
+    market: [
+      'Birmingham has a large professional-services sector, from law and accountancy to financial services, plus universities, hospitals and a strong manufacturing heritage across the wider West Midlands. Professional firms use AI intake and inbox automation to respond faster without growing headcount.',
+      'Trades and home-service businesses across the region face the familiar problem of calls arriving while the team is on site. AI answering and WhatsApp follow-up capture those inquiries and book them in. Many customers prefer Urdu or Punjabi, which multilingual agents handle naturally.',
+    ],
+    industries: ['home-services', 'law-firms', 'medical-clinics', 'real-estate', 'roofing', 'fitness-gyms'],
+    areas: ['City Centre', 'Jewellery Quarter', 'Edgbaston', 'Solihull', 'Sutton Coldfield', 'Wolverhampton', 'Coventry', 'West Bromwich'],
+    services: ['ai-receptionist', 'whatsapp-automation', 'multilingual-voice-agents', 'ai-email-automation', 'ai-follow-up-system', 'gohighlevel-automation'],
+    servicesLead: 'Phone coverage, WhatsApp and inbox automation are the quickest wins for West Midlands firms.',
+    compliance: {
+      title: 'UK GDPR, PECR and the TPS for West Midlands businesses',
+      text: 'Personal data is handled under UK GDPR and the Data Protection Act 2018, with the ICO as regulator. Marketing calls must be screened against the Telephone Preference Service (TPS) and Corporate TPS, and marketing texts and emails need consent under PECR. Our agents disclose recording and AI use at the start of calls.',
+    },
+    faqs: [
+      { q: 'Can the AI speak Urdu and Punjabi?', a: 'Yes. Agents can answer in Urdu and Punjabi as well as English, which helps businesses serving Birmingham’s South Asian communities.' },
+      { q: 'Do you screen against the TPS?', a: 'Yes. Any outbound marketing calls are checked against the TPS and Corporate TPS, and only made where the law allows.' },
+    ],
+    useCases: [
+      { icon: 'wrench', title: 'Trades across the Black Country', desc: 'Every missed call is answered or followed up on WhatsApp, and jobs are booked straight into the diary.' },
+      { icon: 'mail', title: 'Professional firm inboxes', desc: 'Law and accountancy firms triage shared inboxes and draft replies, with partners approving in one click.' },
+      { icon: 'heart', title: 'Private clinics in Solihull', desc: 'Clinics automate consultation booking and reminders while keeping clinical details out of messages.' },
+    ],
+    faq: { q: 'Do you work with businesses in Coventry and Wolverhampton?', a: 'Yes. We serve the whole West Midlands, including Coventry, Wolverhampton, Walsall and Dudley.' },
+    schemaPlace: city('Birmingham', 'England'),
+    nearby: ['london', 'manchester', 'united-kingdom'],
+  },
+
+  edinburgh: {
+    description: 'AI automation agency serving Edinburgh and Scotland: AI receptionists, voice agents, knowledge base chatbots and CRM automation for financial services, legal, tourism, healthcare and trades.',
+    lead: 'AI voice agents, knowledge base chatbots and automation for Edinburgh and Glasgow financial firms, solicitors, tourism operators, clinics and trades.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for Edinburgh and Scottish businesses</strong>, from financial-services firms and solicitors to festival-season tourism operators and Lothian trades, designed around UK GDPR and PECR.',
+    tzShort: 'UK time (GMT/BST)',
+    languages: 'EN-GB',
+    pills: ['Edinburgh', 'Leith', 'Glasgow', 'Lothians'],
+    marketTitle: 'Finance, festivals and Scottish service businesses',
+    market: [
+      'Edinburgh is one of the UK’s major financial-services centers, with investment managers, insurers and the professional firms around them. These teams handle document-heavy, regulated work where knowledge base chatbots, document processing and careful automation save hours every week.',
+      'Tourism peaks during the summer festival season, when hospitality and visitor businesses face a surge of questions and bookings. Across the Lothians and Glasgow, trades and clinics use AI answering so calls aren’t missed while staff are busy.',
+    ],
+    industries: ['law-firms', 'insurance', 'medical-clinics', 'home-services', 'real-estate', 'fitness-gyms'],
+    areas: ['Edinburgh City Centre', 'Leith', 'Glasgow', 'Livingston', 'Musselburgh', 'Dunfermline', 'Stirling', 'East Lothian'],
+    services: ['rag-chatbot-development', 'ai-document-processing', 'ai-receptionist', 'ai-chatbots', 'ai-follow-up-system', 'workflow-automation'],
+    servicesLead: 'Knowledge-heavy firms and seasonal businesses benefit most from these systems.',
+    compliance: {
+      title: 'UK data protection and Scottish professional rules',
+      text: 'UK GDPR and the Data Protection Act 2018 apply across Scotland, and PECR governs marketing calls, texts and emails. Solicitors and financial firms also have professional obligations around confidentiality and record-keeping, so we keep advice with qualified people and log every automated interaction.',
+    },
+    faqs: [
+      { q: 'Do your voice agents understand Scottish accents?', a: 'Yes. We test speech recognition with Scottish speakers before launch and tune vocabulary for local place names and terms.' },
+      { q: 'Can a chatbot answer from our policy documents?', a: 'Yes. Knowledge base chatbots answer only from approved documents, cite their sources and hand off when the documents don’t cover a question.' },
+    ],
+    useCases: [
+      { icon: 'document', title: 'Policy and procedure assistants', desc: 'Financial and legal teams search internal policies with a chatbot that cites the exact document.' },
+      { icon: 'calendar', title: 'Festival-season bookings', desc: 'Tourism and hospitality businesses answer booking questions instantly during August peaks.' },
+      { icon: 'wrench', title: 'Trades across the Lothians', desc: 'Calls are answered or texted back and jobs booked while the team is on site.' },
+    ],
+    faq: { q: 'Do you work with businesses in Glasgow?', a: 'Yes. We serve businesses across Scotland, including Glasgow, Stirling, Fife and the Lothians.' },
+    schemaPlace: city('Edinburgh', 'Scotland'),
+    nearby: ['manchester', 'united-kingdom', 'ireland'],
+  },
+
+  france: {
+    title: 'AI Automation Agency in France | Voxil AI',
+    description: 'AI automation for businesses in France: French-speaking AI voice agents, chatbots and WhatsApp automation for clinics, real estate, services and ecommerce, designed for GDPR and CNIL guidance.',
+    lead: 'French-speaking AI voice agents, chatbots and automation for businesses in Paris, Lyon, Marseille and across France, designed around GDPR and CNIL guidance.',
+    answer: 'Voxil AI builds <strong>French-speaking AI voice agents, chatbots and automation for businesses in France</strong>. Agents answer calls and messages in natural French, book appointments, qualify inquiries and log everything in your CRM, with data handling designed for GDPR.',
+    tzShort: 'Central European Time',
+    languages: 'FR · EN',
+    pills: ['Paris', 'Lyon', 'Marseille', 'Bordeaux'],
+    marketTitle: 'Customers expect service in French',
+    market: [
+      'French customers expect to be served in French, clearly and politely, whether they call, chat or message on WhatsApp. An AI agent that speaks natural French around the clock lets clinics, property agencies, service businesses and online stores respond instantly without staffing every hour.',
+      'France also takes data protection seriously, with the CNIL actively publishing guidance on AI and personal data. We design systems that collect only what’s necessary, explain AI use clearly and keep data in appropriate locations.',
+    ],
+    industries: ['medical-clinics', 'real-estate', 'home-services', 'med-spas', 'law-firms', 'fitness-gyms'],
+    areas: ['Paris & Île-de-France', 'Lyon', 'Marseille', 'Toulouse', 'Bordeaux', 'Nice', 'Lille', 'Nantes'],
+    services: ['multilingual-voice-agents', 'ai-receptionist', 'ai-chatbots', 'whatsapp-automation', 'ai-appointment-booking', 'rag-chatbot-development'],
+    servicesLead: 'French-language reception and messaging are where most French businesses start.',
+    compliance: {
+      title: 'GDPR, CNIL guidance and Bloctel',
+      text: 'Personal data is processed under GDPR, with the CNIL as the French supervisory authority. Telemarketing calls to consumers must respect the Bloctel opposition list, and France has been tightening consent rules for commercial calls. The EU AI Act adds transparency duties for chatbots and voice agents, so ours disclose that they are AI.',
+    },
+    faqs: [
+      { q: 'Does the AI speak natural French?', a: 'Yes. We use native-sounding French voices and test conversations with French speakers, including regional accents and formal or informal tone.' },
+      { q: 'Can we make outbound calls to French consumers?', a: 'Only within French rules: consumers on the Bloctel list must not receive unsolicited telemarketing, and consent requirements are strict. We focus outbound AI on customers who asked to be contacted.' },
+    ],
+    useCases: [
+      { icon: 'heart', title: 'Cabinet and clinic booking', desc: 'Practices take appointment requests in French by phone and chat, with reminders that reduce missed visits.' },
+      { icon: 'home', title: 'Agence immobilière inquiries', desc: 'Property agencies answer listing questions instantly and book visits with the right agent.' },
+      { icon: 'bubble', title: 'WhatsApp customer service', desc: 'Businesses answer questions and confirm orders on WhatsApp in French, day and night.' },
+    ],
+    faq: { q: 'Can data stay in the EU?', a: 'Yes. Where required, we select providers and configurations that keep personal data within the European Union.' },
+    schemaPlace: country('France'),
+    nearby: ['europe', 'spain', 'berlin'],
+  },
+
+  spain: {
+    title: 'AI Automation Agency in Spain | Voxil AI',
+    description: 'AI automation for businesses in Spain: Spanish-speaking AI voice agents, WhatsApp bots and chatbots for clinics, real estate, tourism and services, designed for GDPR, the AEPD and Spain’s consent rules for calls.',
+    lead: 'Spanish-speaking AI voice agents, WhatsApp automation and chatbots for businesses in Madrid, Barcelona, Valencia and across Spain.',
+    answer: 'Voxil AI builds <strong>Spanish-speaking AI voice agents, WhatsApp bots and automation for businesses in Spain</strong>. Agents answer customers in natural Spanish, and in English or other languages for international clients, book appointments and log every conversation, designed around GDPR and Spanish telecom rules.',
+    tzShort: 'Central European Time',
+    languages: 'ES · CA · EN',
+    pills: ['Madrid', 'Barcelona', 'Valencia', 'Málaga'],
+    marketTitle: 'WhatsApp-first customers and international visitors',
+    market: [
+      'In Spain, WhatsApp is the default way to contact many businesses, from clinics and dental practices to property agencies and restaurants. An AI agent that replies instantly on WhatsApp and by phone, in Spanish, meets customers where they already are.',
+      'Tourism and international property buyers add another layer: inquiries in English, German, French and other languages, often outside Spanish business hours. Multilingual agents handle them without extra staff, especially along the coasts and islands.',
+    ],
+    industries: ['real-estate', 'medical-clinics', 'med-spas', 'home-services', 'salons-beauty', 'fitness-gyms'],
+    areas: ['Madrid', 'Barcelona', 'Valencia', 'Seville', 'Málaga & Costa del Sol', 'Bilbao', 'Alicante', 'Balearic Islands'],
+    services: ['whatsapp-automation', 'multilingual-voice-agents', 'ai-receptionist', 'ai-chatbots', 'ai-appointment-booking', 'ai-follow-up-system'],
+    servicesLead: 'WhatsApp and multilingual reception deliver the fastest returns in Spain.',
+    compliance: {
+      title: 'GDPR, the AEPD and consent for commercial calls',
+      text: 'Personal data is handled under GDPR and Spain’s data protection law, supervised by the AEPD. Spain’s telecommunications law gives consumers the right not to receive unsolicited commercial calls without prior consent, so outbound AI calling is limited to contacts who agreed to it. The EU AI Act’s transparency duties also apply.',
+    },
+    faqs: [
+      { q: 'Can the AI speak Catalan?', a: 'Yes. Agents can respond in Catalan as well as Spanish and English, which suits businesses in Catalonia and the Balearic Islands.' },
+      { q: 'Can we call leads in Spain with AI?', a: 'Only with prior consent. Spanish law restricts unsolicited commercial calls, so we use AI calling for people who requested contact and for existing customers who agreed to it.' },
+    ],
+    useCases: [
+      { icon: 'home', title: 'International property buyers', desc: 'Agencies on the Costa del Sol answer buyers in English, German or Spanish and book viewings or video tours.' },
+      { icon: 'bubble', title: 'Clinic WhatsApp booking', desc: 'Dental and aesthetics clinics book appointments and send reminders through WhatsApp.' },
+      { icon: 'globe', title: 'Tourism and hospitality', desc: 'Visitor businesses answer questions in several languages around the clock.' },
+    ],
+    faq: { q: 'Do you work with businesses in the Canary Islands?', a: 'Yes. We work with businesses across mainland Spain and the islands, adjusting for the Canary Islands’ time zone.' },
+    schemaPlace: country('Spain'),
+    nearby: ['europe', 'france', 'berlin'],
+  },
+
+  berlin: {
+    description: 'AI automation agency serving Berlin: AI agents, voice agents, knowledge base chatbots and workflow automation for startups, scale-ups, practices and services, built for GDPR and the EU AI Act.',
+    lead: 'AI agents, knowledge base chatbots and voice automation for Berlin startups, scale-ups, medical practices and service businesses, in German and English.',
+    answer: 'Voxil AI builds <strong>AI agents, voice agents and automation for Berlin businesses</strong>, from Kreuzberg startups and Mitte scale-ups to Charlottenburg practices. We work in German and English, with GDPR, EU hosting options and EU AI Act transparency designed in.',
+    tzShort: 'Central European Time',
+    languages: 'DE · EN · TR',
+    pills: ['Mitte', 'Kreuzberg', 'Charlottenburg', 'Prenzlauer Berg'],
+    marketTitle: 'Europe’s startup capital, in two languages',
+    market: [
+      'Berlin’s startup and scale-up scene builds products in English and serves customers across Europe. Teams here want custom AI agents, internal knowledge assistants and automation that fits their engineering practices, with careful attention to data protection.',
+      'At the same time, Berlin’s practices, property managers and service businesses serve a highly international population. Agents that switch between German, English and Turkish make sure every caller and customer gets a clear answer.',
+    ],
+    industries: ['medical-clinics', 'real-estate', 'home-services', 'fitness-gyms', 'law-firms', 'salons-beauty'],
+    areas: ['Mitte', 'Kreuzberg', 'Friedrichshain', 'Prenzlauer Berg', 'Charlottenburg', 'Neukölln', 'Schöneberg', 'Potsdam'],
+    services: ['ai-agent-development', 'rag-chatbot-development', 'multilingual-voice-agents', 'ai-receptionist', 'n8n-automation', 'ai-email-automation'],
+    servicesLead: 'Startups begin with agents and knowledge tools; local businesses with multilingual reception.',
+    compliance: {
+      title: 'Berlin data protection and call recording',
+      text: 'Germany treats recording a conversation without consent as a criminal offence, so our agents only record with clear consent and offer an unrecorded option. GDPR applies to all processing, with Berlin’s data protection authority overseeing local businesses. Self-hosted n8n and EU-hosted models are available where data must stay in Germany or the EU.',
+    },
+    faqs: [
+      { q: 'Can you self-host AI workflows in the EU?', a: 'Yes. We deploy n8n and other components on EU or German infrastructure and choose model providers with EU data processing where required.' },
+      { q: 'Do your agents speak both German and English?', a: 'Yes, and they switch automatically. Turkish and other languages can be added for customer-facing agents.' },
+    ],
+    useCases: [
+      { icon: 'puzzle', title: 'AI agents for scale-ups', desc: 'Agents that triage support, enrich leads or prepare reports, built with evaluations and EU data handling.' },
+      { icon: 'server', title: 'Self-hosted automation', desc: 'n8n workflows and AI agents on EU infrastructure for teams that need full data control.' },
+      { icon: 'heart', title: 'Praxis appointment lines', desc: 'Medical practices answer appointment calls in German and English, reducing pressure on reception.' },
+    ],
+    faq: { q: 'Can you sign a data processing agreement (AVV)?', a: 'Yes. We sign data processing agreements and document the subprocessors used in each system.' },
+    schemaPlace: city('Berlin', 'Berlin'),
+    nearby: ['germany', 'europe', 'netherlands'],
+  },
+
+  // --------------------------------------------- AUSTRALIA & NEW ZEALAND
+  brisbane: {
+    description: 'AI automation agency serving Brisbane and South East Queensland: AI receptionists, voice agents and automation for tradies, construction, real estate, allied health and solar.',
+    lead: 'AI receptionists, voice agents and follow-up automation for Brisbane, Gold Coast and Sunshine Coast tradies, builders, real-estate agencies, clinics and solar installers.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Brisbane and South East Queensland businesses</strong>. Agents answer every call with a natural Australian voice, book jobs and appointments, and follow up automatically, designed around the Privacy Act and Spam Act.',
+    tzShort: 'AEST (no daylight saving)',
+    languages: 'EN-AU',
+    pills: ['Brisbane', 'Gold Coast', 'Sunshine Coast', 'Ipswich'],
+    marketTitle: 'Growth, construction and sunshine',
+    market: [
+      'South East Queensland is one of Australia’s fastest-growing regions, with major infrastructure and construction work ahead of the 2032 Olympic and Paralympic Games. Builders, trades and real-estate agencies face strong demand and busy phones.',
+      'Queensland also has very high rooftop solar uptake, and storm season brings surges of roofing and repair calls. AI answering, speed-to-lead and follow-up make sure those inquiries are captured and booked.',
+    ],
+    industries: ['home-services', 'roofing', 'solar', 'real-estate', 'medical-clinics', 'fitness-gyms'],
+    areas: ['Brisbane CBD', 'South Brisbane', 'Gold Coast', 'Sunshine Coast', 'Ipswich', 'Logan', 'Moreton Bay', 'Redland City'],
+    services: ['ai-receptionist', 'ai-phone-answering', 'speed-to-lead-automation', 'ai-follow-up-system', 'gohighlevel-automation', 'ai-appointment-booking'],
+    servicesLead: 'Call coverage and fast lead response pay off quickest for Queensland businesses.',
+    compliance: {
+      title: 'Queensland recording rules and national privacy law',
+      text: 'Queensland generally allows a party to a conversation to record it, but we still disclose recording at the start of each call as best practice. The federal Privacy Act 1988 and Australian Privacy Principles govern personal information, the Spam Act 2003 covers marketing messages, and telemarketing must respect the Do Not Call Register.',
+    },
+    faqs: [
+      { q: 'Does Queensland have daylight saving?', a: 'No. Queensland stays on AEST all year, so in summer it is an hour behind Sydney and Melbourne. We schedule sessions and set agent hours accordingly.' },
+      { q: 'Can AI book jobs for tradies on the Gold Coast?', a: 'Yes. The agent captures the job, suburb and urgency, books into your job software and texts you a summary.' },
+    ],
+    useCases: [
+      { icon: 'building', title: 'Storm-season repairs', desc: 'Roofers and restorers capture every damage call and book inspections by suburb.' },
+      { icon: 'sun', title: 'Solar and battery inquiries', desc: 'Installers qualify homeowners and book site assessments within minutes of an inquiry.' },
+      { icon: 'home', title: 'Busy property markets', desc: 'Agencies answer buyer and rental inquiries instantly and book inspections.' },
+    ],
+    faq: { q: 'Do you serve regional Queensland?', a: 'Yes. We work with businesses across Queensland, including Toowoomba, Cairns and Townsville.' },
+    schemaPlace: city('Brisbane', 'Queensland'),
+    nearby: ['sydney', 'australia', 'melbourne'],
+  },
+
+  perth: {
+    description: 'AI automation agency serving Perth and Western Australia: AI receptionists, voice agents and automation for trades, resources-sector suppliers, real estate, allied health and solar.',
+    lead: 'AI answering, voice agents and automation for Perth trades, resources-sector suppliers, real-estate agencies, clinics and solar installers, in WA time.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Perth and Western Australian businesses</strong>. Agents answer every call with a natural Australian voice, book jobs and appointments and log everything, working in AWST.',
+    tzShort: 'AWST',
+    languages: 'EN-AU',
+    pills: ['Perth CBD', 'Fremantle', 'Joondalup', 'Rockingham'],
+    marketTitle: 'A resources economy and a busy service sector',
+    market: [
+      'Western Australia’s mining and resources sector supports a large network of suppliers, contractors and service businesses. Those businesses handle quotes, orders and scheduling across long distances, where document and email automation save real time.',
+      'Perth’s households keep trades, solar installers, real-estate agencies and clinics busy. Because Perth is two or three hours behind the east coast, local businesses benefit from agents tuned to WA hours rather than Sydney’s.',
+    ],
+    industries: ['home-services', 'solar', 'real-estate', 'medical-clinics', 'roofing', 'fitness-gyms'],
+    areas: ['Perth CBD', 'Fremantle', 'Joondalup', 'Rockingham', 'Mandurah', 'Midland', 'Armadale', 'Scarborough'],
+    services: ['ai-receptionist', 'ai-document-processing', 'ai-email-automation', 'speed-to-lead-automation', 'ai-follow-up-system', 'ai-appointment-booking'],
+    servicesLead: 'Phone coverage and back-office automation lead the way for WA businesses.',
+    compliance: {
+      title: 'WA surveillance law and national privacy rules',
+      text: 'Western Australia has its own Surveillance Devices Act, so our agents disclose recording at the start of every call and record only with consent. The federal Privacy Act 1988, the Spam Act 2003 and the Do Not Call Register apply to personal data, marketing messages and telemarketing.',
+    },
+    faqs: [
+      { q: 'Do you work in Perth time?', a: 'Yes. Agents follow AWST business hours, and we schedule calls in your morning, which suits overlapping hours with our team.' },
+      { q: 'Can AI help resources-sector suppliers?', a: 'Yes. AI document processing and inbox automation handle purchase orders, quotes and supplier correspondence, with exceptions sent for review.' },
+    ],
+    useCases: [
+      { icon: 'document', title: 'Supplier paperwork', desc: 'Purchase orders, quotes and compliance documents are read and entered automatically.' },
+      { icon: 'wrench', title: 'Tradies in the northern suburbs', desc: 'Calls from Joondalup to Rockingham are answered and jobs booked while crews are working.' },
+      { icon: 'sun', title: 'Solar quote follow-up', desc: 'Installers respond to inquiries instantly and follow up with consent-based reminders.' },
+    ],
+    faq: { q: 'Do you serve regional WA?', a: 'Yes. We work with businesses across Western Australia, including the South West and regional centers.' },
+    schemaPlace: city('Perth', 'Western Australia'),
+    nearby: ['australia', 'adelaide', 'melbourne'],
+  },
+
+  adelaide: {
+    description: 'AI automation agency serving Adelaide and South Australia: AI receptionists, voice agents and automation for healthcare, trades, real estate, education and wine-region businesses.',
+    lead: 'AI receptionists, voice agents and booking automation for Adelaide clinics, trades, real-estate agencies, education providers and wine-region businesses.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Adelaide and South Australian businesses</strong>. Agents answer calls and messages with a natural Australian voice, book appointments and follow up, working in ACST.',
+    tzShort: 'ACST/ACDT',
+    languages: 'EN-AU',
+    pills: ['Adelaide CBD', 'Glenelg', 'Norwood', 'Adelaide Hills'],
+    marketTitle: 'Healthcare, education and growing industries',
+    market: [
+      'Adelaide has strong healthcare, education and defence-industry sectors, with clinics, training providers and specialist businesses handling steady inquiry volumes. AI receptionists and booking agents reduce pressure on small front-office teams.',
+      'Trades, real-estate agencies and businesses across the Barossa, McLaren Vale and Adelaide Hills serve customers who expect quick, friendly responses. AI answering and follow-up capture every inquiry, including from visitors and buyers interstate.',
+    ],
+    industries: ['medical-clinics', 'home-services', 'real-estate', 'fitness-gyms', 'solar', 'chiropractic'],
+    areas: ['Adelaide CBD', 'North Adelaide', 'Glenelg', 'Norwood', 'Port Adelaide', 'Mawson Lakes', 'Adelaide Hills', 'Barossa Valley'],
+    services: ['ai-receptionist', 'ai-appointment-booking', 'ai-chatbots', 'ai-follow-up-system', 'ai-phone-answering', 'email-sms-marketing'],
+    servicesLead: 'Reception and booking automation give Adelaide businesses the quickest wins.',
+    compliance: {
+      title: 'South Australian recording law and national privacy rules',
+      text: 'South Australia’s Surveillance Devices Act regulates recording private conversations, so our agents disclose recording up front and record only with consent. The federal Privacy Act 1988, the Spam Act 2003 and the Do Not Call Register apply across Australia.',
+    },
+    faqs: [
+      { q: 'Do you work in Adelaide’s half-hour time zone?', a: 'Yes. Agents follow ACST and ACDT business hours, and we schedule sessions to suit your team.' },
+      { q: 'Can AI help allied-health clinics?', a: 'Yes. Physio, chiro and psychology practices automate bookings, reminders and cancellations, with clinical questions routed to staff.' },
+    ],
+    useCases: [
+      { icon: 'heart', title: 'Allied-health bookings', desc: 'Clinics fill cancellations from a waitlist and send reminders that cut no-shows.' },
+      { icon: 'academic', title: 'Training provider inquiries', desc: 'Course questions about dates, fees and eligibility are answered instantly, with enrolments followed up.' },
+      { icon: 'calendar', title: 'Wine-region visitor bookings', desc: 'Cellar doors and tourism businesses answer booking questions from interstate visitors around the clock.' },
+    ],
+    faq: { q: 'Do you serve regional South Australia?', a: 'Yes. We work with businesses across South Australia, including the Barossa, Fleurieu Peninsula and regional centers.' },
+    schemaPlace: city('Adelaide', 'South Australia'),
+    nearby: ['melbourne', 'australia', 'perth'],
+  },
+
+  'new-zealand': {
+    title: 'AI Automation Agency in New Zealand | Voxil AI',
+    description: 'AI automation for New Zealand businesses: AI receptionists, voice agents, chatbots and CRM automation for trades, real estate, healthcare and tourism, designed for the Privacy Act 2020.',
+    lead: 'AI receptionists, voice agents and automation for Auckland, Wellington and Christchurch businesses, from tradies and real-estate agencies to clinics and tourism operators.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for New Zealand businesses</strong>. Agents answer calls and messages with natural voices tuned for Kiwi accents and place names, book jobs and appointments and follow up, designed around the Privacy Act 2020.',
+    tzShort: 'NZST/NZDT',
+    languages: 'EN-NZ',
+    pills: ['Auckland', 'Wellington', 'Christchurch', 'Tauranga'],
+    marketTitle: 'Small teams, big expectations',
+    market: [
+      'Most New Zealand businesses are small, owner-operated teams. The tradie answering the phone is also doing the job, and the clinic receptionist is also checking patients in. AI answering and booking agents make sure every inquiry is handled without adding staff.',
+      'Tourism operators and real-estate agencies serve visitors and buyers from overseas, often outside New Zealand business hours. Always-on agents answer questions and book in, whatever the time zone.',
+    ],
+    industries: ['home-services', 'real-estate', 'medical-clinics', 'roofing', 'fitness-gyms', 'salons-beauty'],
+    areas: ['Auckland', 'Wellington', 'Christchurch', 'Hamilton', 'Tauranga', 'Dunedin', 'Queenstown', 'Napier-Hastings'],
+    services: ['ai-receptionist', 'ai-phone-answering', 'ai-appointment-booking', 'ai-follow-up-system', 'gohighlevel-automation', 'ai-chatbots'],
+    servicesLead: 'Phone coverage and booking automation deliver the fastest returns for Kiwi businesses.',
+    compliance: {
+      title: 'Privacy Act 2020 and the Unsolicited Electronic Messages Act',
+      text: 'The Privacy Act 2020 and its Information Privacy Principles govern how personal information is collected and used, overseen by the Office of the Privacy Commissioner. Marketing texts and emails need consent under the Unsolicited Electronic Messages Act 2007. Our agents disclose recording and AI use clearly.',
+    },
+    faqs: [
+      { q: 'Do your voices understand Kiwi accents and place names?', a: 'Yes. We test with New Zealand speakers and add local place names, including te reo Māori place names, to the agent’s vocabulary.' },
+      { q: 'Can we send automated follow-up texts in New Zealand?', a: 'Yes, to people who consented to receive them, with clear sender identification and an easy unsubscribe, as the Unsolicited Electronic Messages Act requires.' },
+    ],
+    useCases: [
+      { icon: 'wrench', title: 'Tradies on the tools', desc: 'Missed calls get an instant text and AI answering books the job, so small teams don’t lose work.' },
+      { icon: 'globe', title: 'Tourism inquiries from overseas', desc: 'Operators in Queenstown and Rotorua answer international booking questions around the clock.' },
+      { icon: 'heart', title: 'Clinic reception', desc: 'Medical and allied-health practices automate bookings and reminders.' },
+    ],
+    faq: { q: 'Do you invoice in NZD?', a: 'Yes. New Zealand clients can be quoted and invoiced in New Zealand dollars.' },
+    schemaPlace: country('New Zealand'),
+    nearby: ['australia', 'sydney', 'brisbane'],
+  },
+
+  // -------------------------------------------------------------- CANADA
+  calgary: {
+    description: 'AI automation agency serving Calgary and Alberta: AI receptionists, voice agents and automation for energy-sector businesses, roofing, HVAC, real estate and home services, Alberta PIPA aware.',
+    lead: 'AI receptionists, voice agents and automation for Calgary energy-sector firms, roofers, HVAC companies, real-estate teams and home-service businesses.',
+    answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Calgary and Alberta businesses</strong>. Agents answer every call, triage hail and no-heat emergencies, book appointments and log everything, designed around Alberta’s PIPA and CASL.',
+    tzShort: 'Mountain Time',
+    languages: 'EN · FR · PA',
+    pills: ['Calgary', 'Airdrie', 'Cochrane', 'Okotoks'],
+    marketTitle: 'Hailstorms, cold snaps and an energy economy',
+    market: [
+      'Calgary is the center of Canada’s energy sector, with head offices, engineering firms and suppliers handling document-heavy, process-driven work. AI document processing and inbox automation remove hours of manual entry.',
+      'Calgary is also known for severe summer hailstorms and cold winter snaps. Roofers, restoration companies and HVAC businesses face sudden surges of urgent calls, and AI answering makes sure none of them reach voicemail.',
+    ],
+    industries: ['roofing', 'hvac', 'home-services', 'real-estate', 'insurance', 'medical-clinics'],
+    areas: ['Downtown Calgary', 'Beltline', 'NW Calgary', 'SE Calgary', 'Airdrie', 'Cochrane', 'Okotoks', 'Chestermere'],
+    services: ['ai-phone-answering', 'ai-receptionist', 'ai-document-processing', 'speed-to-lead-automation', 'ai-follow-up-system', 'crm-automation'],
+    servicesLead: 'Surge call coverage and document automation are the biggest wins in Calgary.',
+    compliance: {
+      title: 'Alberta PIPA and CASL',
+      text: 'Private-sector organizations in Alberta are covered by the province’s Personal Information Protection Act (PIPA), and CASL governs commercial texts and emails across Canada. Telemarketing follows CRTC rules and the National Do Not Call List. We build consent records and unsubscribe handling into every flow.',
+    },
+    faqs: [
+      { q: 'Can AI handle hailstorm call surges?', a: 'Yes. AI agents answer every call during a surge, capture address and damage details and book inspections by area.' },
+      { q: 'Does Alberta PIPA apply instead of PIPEDA?', a: 'For most private-sector activity within Alberta, yes. We design data handling to meet PIPA and, where relevant, federal requirements.' },
+    ],
+    useCases: [
+      { icon: 'building', title: 'Hail damage inspections', desc: 'Roofers book every inspection request after a storm without voicemail backlogs.' },
+      { icon: 'fire', title: 'Cold-snap furnace calls', desc: 'HVAC companies triage no-heat emergencies overnight and dispatch technicians fast.' },
+      { icon: 'document', title: 'Energy-sector paperwork', desc: 'Suppliers and engineering firms automate data entry from forms, quotes and invoices.' },
+    ],
+    faq: { q: 'Do you work with businesses in Edmonton?', a: 'Yes. We serve businesses across Alberta, including Edmonton, Red Deer and Lethbridge.' },
+    schemaPlace: city('Calgary', 'Alberta'),
+    nearby: ['vancouver', 'canada', 'denver'],
+  },
+
+  montreal: {
+    description: 'AI automation agency serving Montreal and Quebec: French-first AI voice agents, chatbots and automation for clinics, real estate, services and ecommerce, designed for Law 25 and Bill 96.',
+    lead: 'French-first AI voice agents, chatbots and automation for Montreal and Quebec businesses, designed around Law 25 and the Charter of the French Language.',
+    answer: 'Voxil AI builds <strong>French-first AI voice agents, chatbots and automation for Montreal and Quebec businesses</strong>. Agents serve customers in French by default and switch to English when asked, book appointments and log every conversation, with Law 25 privacy requirements designed in.',
+    tzShort: 'Eastern Time',
+    languages: 'FR · EN',
+    pills: ['Downtown Montreal', 'Laval', 'Longueuil', 'West Island'],
+    marketTitle: 'French first, bilingual by default',
+    market: [
+      'In Quebec, French is the language of commerce. Customers expect to be greeted and served in French, and the Charter of the French Language, strengthened by Bill 96, sets requirements for how businesses communicate. A French-first AI agent, with natural Quebec French, meets that expectation.',
+      'Montreal is also bilingual and international, with technology, AI research, gaming and healthcare sectors. Agents that switch smoothly between French and English serve every customer without separate teams for each language.',
+    ],
+    industries: ['medical-clinics', 'real-estate', 'home-services', 'law-firms', 'med-spas', 'fitness-gyms'],
+    areas: ['Downtown Montreal', 'Plateau-Mont-Royal', 'Laval', 'Longueuil', 'West Island', 'Brossard', 'Terrebonne', 'Gatineau'],
+    services: ['multilingual-voice-agents', 'ai-receptionist', 'conversational-ivr', 'ai-chatbots', 'ai-appointment-booking', 'rag-chatbot-development'],
+    servicesLead: 'French-first reception and routing are where Quebec businesses start.',
+    compliance: {
+      title: 'Law 25, Bill 96 and CASL',
+      text: 'Quebec’s Law 25 modernized private-sector privacy rules, with requirements for privacy officers, impact assessments and transparency about automated decisions. The Charter of the French Language requires that consumers can be served in French. CASL governs commercial texts and emails, and telemarketing follows CRTC rules.',
+    },
+    faqs: [
+      { q: 'Does the AI speak Quebec French?', a: 'Yes. We use voices and vocabulary suited to Quebec French, tested with local speakers, and switch to English when a caller prefers it.' },
+      { q: 'How does Law 25 affect AI agents?', a: 'It requires transparency, privacy governance and, for decisions made solely by automated processing, informing the person. We document data flows and configure agents to support your obligations.' },
+    ],
+    useCases: [
+      { icon: 'globe', title: 'French-first reception', desc: 'Every caller is greeted in French, with a seamless switch to English when they prefer.' },
+      { icon: 'heart', title: 'Clinic appointment lines', desc: 'Clinics automate booking and reminders in both languages, reducing phone pressure.' },
+      { icon: 'swap', title: 'Bilingual call routing', desc: 'A conversational IVR routes callers by intent and language to the right team.' },
+    ],
+    faq: { q: 'Do you serve Quebec City too?', a: 'Yes. We work with businesses across Quebec, including Quebec City, Sherbrooke and Gatineau.' },
+    schemaPlace: city('Montreal', 'Quebec'),
+    nearby: ['ottawa', 'toronto', 'canada'],
+  },
+
+  ottawa: {
+    description: 'AI automation agency serving Ottawa and Gatineau: bilingual AI voice agents, knowledge base chatbots and automation for tech companies, associations, clinics, real estate and home services.',
+    lead: 'Bilingual AI voice agents, knowledge base chatbots and automation for Ottawa tech firms, associations, clinics, real-estate teams and home-service businesses.',
+    answer: 'Voxil AI builds <strong>bilingual AI voice agents, chatbots and automation for Ottawa and Gatineau businesses</strong>. Agents serve callers in English or French, answer from your approved knowledge and book appointments, with PIPEDA, PHIPA and CASL requirements designed in.',
+    tzShort: 'Eastern Time',
+    languages: 'EN · FR',
+    pills: ['Downtown Ottawa', 'Kanata', 'Orléans', 'Gatineau'],
+    marketTitle: 'A bilingual capital with a tech hub',
+    market: [
+      'Ottawa combines the federal government, national associations and a technology cluster centered on Kanata. Organizations here handle large volumes of member and customer questions, often in both official languages, which makes bilingual agents and knowledge base chatbots especially useful.',
+      'Across Nepean, Orléans, Barrhaven and Gatineau, clinics, real-estate teams and home-service businesses face long winters and steady growth. AI answering and booking agents handle calls when staff can’t.',
+    ],
+    industries: ['medical-clinics', 'real-estate', 'home-services', 'hvac', 'law-firms', 'insurance'],
+    areas: ['Downtown Ottawa', 'Kanata', 'Orléans', 'Nepean', 'Barrhaven', 'Westboro', 'Gatineau', 'Stittsville'],
+    services: ['multilingual-voice-agents', 'rag-chatbot-development', 'ai-receptionist', 'ai-call-center', 'ai-appointment-booking', 'crm-automation'],
+    servicesLead: 'Bilingual service and knowledge tools are the biggest opportunities in the capital.',
+    compliance: {
+      title: 'PIPEDA, PHIPA, Quebec Law 25 and CASL',
+      text: 'Ottawa businesses fall under PIPEDA for commercial activity and PHIPA for Ontario health information, while customers in Gatineau bring Quebec’s Law 25 into scope. CASL governs commercial messages. We map which rules apply to each data flow and design consent, retention and disclosures accordingly.',
+    },
+    faqs: [
+      { q: 'Can agents serve both English and French callers?', a: 'Yes. Agents detect the caller’s language and respond in English or French, switching mid-call if needed.' },
+      { q: 'Do you work with national associations?', a: 'Yes. Member-service agents and knowledge base chatbots answer membership, event and resource questions in both official languages.' },
+    ],
+    useCases: [
+      { icon: 'users', title: 'Association member services', desc: 'Member questions about renewals, events and resources are answered in English or French around the clock.' },
+      { icon: 'document', title: 'Tech-company knowledge assistants', desc: 'Kanata teams search documentation and support content with a cited, permission-aware assistant.' },
+      { icon: 'fire', title: 'Winter HVAC demand', desc: 'Heating companies triage no-heat calls and book service across Ottawa and Gatineau.' },
+    ],
+    faq: { q: 'Do you serve Gatineau on the Quebec side?', a: 'Yes. We serve the whole National Capital Region, with French-first configurations for Quebec customers.' },
+    schemaPlace: city('Ottawa', 'Ontario'),
+    nearby: ['montreal', 'toronto', 'canada'],
+  },
+};

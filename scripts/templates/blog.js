@@ -240,12 +240,14 @@ export const renderBlogHub = (posts) => {
 
     <section class="section-soft section-pad-sm">
       <div class="main-container relative z-10">
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary">Featured guides</h2>
         <div class="grid gap-4 md:grid-cols-2">${featured.map((p) => postCard(p)).join('')}</div>
       </div>
     </section>
 
     <section class="section-base section-pad-sm section-seam" id="articles">
       <div class="main-container relative z-10" data-blog-filters>
+        <h2 class="text-heading-6 sm:text-heading-5 mb-6 text-center font-semibold tracking-tight text-secondary">Browse all articles by topic</h2>
         <div class="mb-8 flex flex-wrap items-center justify-center gap-2.5" role="group" aria-label="Filter articles by topic">
           ${tab('all', 'All articles', sorted.length, '', true)}
           ${categories.map((c) => tab(slugify(c), c, countFor(c), CATEGORY_STYLE[c].icon)).join('\n          ')}

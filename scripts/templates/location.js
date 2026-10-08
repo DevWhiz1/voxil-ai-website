@@ -32,7 +32,7 @@ export const renderLocation = (slug, l) => {
     { name: 'Locations', url: '/locations/' },
     { name: meta.name, url: path },
   ];
-  const local = EXTRA[slug] ?? {};
+  const local = EXTRA[slug] ?? { useCases: l.useCases, faq: l.faq };
   const faqs = [...l.faqs, ...(local.faq ? [local.faq] : []), ...sharedFaqs({ name: l.shortName ?? meta.name, tzShort: l.tzShort })];
   const industries = l.industries.map((s) => INDUSTRIES.find((i) => i.slug === s));
   const group = LOCATION_GROUPS.find((g) => g.key === meta.group);
