@@ -83,6 +83,12 @@ export const renderPost = (post, allPosts) => {
   const sources = sourcesIn(post.body);
   const extraSources = post.extraSources ?? [];
   const related = post.related.map((s) => allPosts.find((p) => p.slug === s)).filter(Boolean);
+  // Every other post in the same topic (category or tag), newest first, so
+  // each article gets incoming links from its whole topic cluster.
+  const moreInTopic = allPosts
+    .filter((p) => p.slug !== post.slug && !post.related.includes(p.slug) && catsOf(p).includes(post.category))
+    .sort((a, b) => (b.updated ?? b.date).localeCompare(a.updated ?? a.date) || a.title.localeCompare(b.title))
+    .slice(0, 10);
   const mins = readMinutes(post);
   const author = TEAM[post.author ?? 'abdul-moeez'];
 
@@ -172,6 +178,17 @@ ${html}
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Keep reading', title: 'Related <span class="text-gradient-teal">articles</span>' })}
         <div class="grid gap-4 md:grid-cols-3">${related.map((p) => postCard(p)).join('')}</div>
+        ${
+          moreInTopic.length
+            ? `<div data-reveal class="mt-10 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.03] p-6 md:p-8">
+          <h3 class="text-tagline-1 font-semibold text-secondary">More ${esc(post.category)} guides</h3>
+          <ul class="mt-4 grid gap-x-8 gap-y-2.5 md:grid-cols-2">
+            ${moreInTopic.map((p) => `<li><a href="/blog/${p.slug}/" class="link-arrow text-tagline-2 font-medium text-secondary/75 hover:text-primary-700">${p.title}</a></li>`).join('\n            ')}
+          </ul>
+          <a href="/blog/#${topicSlug(post.category)}" class="link-arrow mt-5 text-tagline-2 text-primary-600">All ${esc(post.category)} articles${arrow()}</a>
+        </div>`
+            : ''
+        }
       </div>
     </section>`;
 

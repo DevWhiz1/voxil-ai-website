@@ -20,7 +20,7 @@ export default {
     'GHL’s AI features and pricing change frequently, check current plan details before scaling.',
   ],
   services: ['gohighlevel-ai', 'gohighlevel-automation', 'ghl-expert', 'ghl-setup'],
-  related: ['vapi-vs-retell-ai', 'n8n-vs-make-vs-zapier', 'what-is-an-ai-receptionist'],
+  related: ['gohighlevel-conversation-ai-setup', 'vapi-vs-retell-ai', 'what-is-an-ai-receptionist'],
   body: `
 <p>GoHighLevel (GHL) has added AI across its platform, from bots that reply to texts and DMs to agents that answer calls and AI steps inside workflows. Configured well, they respond to every lead instantly and book appointments while you sleep. Configured badly, they give vague answers and never book. This guide covers what each feature does and how we set them up. GHL ships updates frequently, so feature names and pricing may change; check your account for current options.</p>
 

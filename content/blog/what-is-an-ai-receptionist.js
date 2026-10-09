@@ -18,7 +18,7 @@ export default {
     'The best rollouts start with after-hours and overflow calls, then expand.',
   ],
   services: ['ai-receptionist', 'ai-phone-answering', 'ai-appointment-booking', 'ai-voice-agents'],
-  related: ['how-much-does-an-ai-voice-agent-cost', 'missed-call-statistics', 'vapi-vs-retell-ai'],
+  related: ['ai-receptionist-vs-answering-service', 'how-much-does-an-ai-voice-agent-cost', 'missed-call-statistics'],
   body: `
 <p>An <strong>AI receptionist</strong> is a virtual front-desk agent that answers your business phone using conversational AI. It greets callers, answers common questions, books or reschedules appointments, takes messages and transfers urgent calls, around the clock, then sends your team a summary of each conversation.</p>
 

@@ -19,7 +19,7 @@ export default {
     'Many businesses use two: Zapier or Make for quick wins, n8n for heavy or sensitive workloads.',
   ],
   services: ['n8n-automation', 'make-automation', 'zapier-automation', 'workflow-automation'],
-  related: ['ai-automation-roi-small-business', 'ai-agents-vs-chatbots', 'gohighlevel-ai-guide'],
+  related: ['make-gohighlevel-integration', 'ai-agents-vs-chatbots', 'n8n-ai-agent-tutorial'],
   body: `
 <p>Zapier, Make (formerly Integromat) and n8n are the three automation platforms we’re asked about most. All three connect apps and automate workflows; they differ in who they’re built for, how they charge and how far you can push them. Pricing and features change often, so treat this as a framework and confirm current plans on each vendor’s site.</p>
 

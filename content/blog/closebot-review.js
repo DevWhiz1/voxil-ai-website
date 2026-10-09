@@ -18,7 +18,7 @@ export default {
     'Choose based on how complex your conversations and integrations are, and test on real leads.',
   ],
   services: ['ai-chatbots', 'gohighlevel-ai', 'ai-sdr-system', 'gohighlevel-automation'],
-  related: ['whatsapp-bot-gohighlevel', 'gohighlevel-ai-guide', 'ai-lead-qualification'],
+  related: ['gohighlevel-conversation-ai-setup', 'whatsapp-bot-gohighlevel', 'ai-lead-qualification'],
   body: `
 <p>Closebot is an AI chatbot built for businesses and agencies on GoHighLevel. Its pitch is simple: when a lead comes in, the bot texts them, qualifies them with natural conversation and books an appointment. We’ve worked with Closebot and its alternatives in client accounts. This review is balanced rather than promotional; features and pricing change, so check Closebot’s site for current details.</p>
 

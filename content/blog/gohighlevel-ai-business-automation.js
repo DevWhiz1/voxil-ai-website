@@ -19,7 +19,7 @@ export default {
     'Keep humans in the loop for pricing exceptions, complaints and anything sensitive.',
   ],
   services: ['gohighlevel-automation', 'gohighlevel-ai', 'make-automation', 'ai-calling-bots'],
-  related: ['ghl-crm-setup-small-business', 'automate-lead-follow-up-gohighlevel', 'n8n-vs-make-vs-zapier'],
+  related: ['make-gohighlevel-integration', 'ghl-crm-setup-small-business', 'automate-lead-follow-up-gohighlevel'],
   body: `
 <p>Most businesses automate in fragments: a Zapier here, a chatbot there, a reminder tool nobody remembers setting up. The result is a system that works until it doesn’t, and nobody knows why. This playbook lays out a complete architecture we use for service businesses, with GoHighLevel at the center and AI where conversations happen.</p>
 
