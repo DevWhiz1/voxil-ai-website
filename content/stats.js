@@ -32,7 +32,7 @@ const SRC = {
   velocify: { name: 'Velocify lead-response analysis', year: 2014, url: null },
   locals411: { name: '411 Locals small-business phone study', year: 2016, url: 'https://www.411locals.com/' },
   openai2025: { name: 'OpenAI (DevDay keynote)', year: 2025, url: 'https://openai.com/' },
-  pew2025: { name: 'Pew Research Center', year: 2025, url: 'https://www.pewresearch.org/' },
+  pew2025: { name: 'Pew Research Center', year: 2025, url: null }, // site returns 403 to crawlers
   uscc2024: { name: 'U.S. Chamber of Commerce, Empowering Small Business', year: 2024, url: 'https://www.uschamber.com/' },
   stlfed2025: { name: 'Federal Reserve Bank of St. Louis', year: 2025, url: 'https://www.stlouisfed.org/on-the-economy' },
   mit2025: { name: 'MIT NANDA, The GenAI Divide', year: 2025, url: 'https://nanda.media.mit.edu/' },
