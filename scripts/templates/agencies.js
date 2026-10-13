@@ -16,6 +16,7 @@ import {
   sectionHead,
   stepsBlock,
   webPageSchema,
+  deepDive,
 } from '../lib/ui.js';
 
 const MODEL_SLUGS = ['white-label-fulfillment', 'dedicated-ghl-va', 'white-label-support-desk', 'per-project-overflow'];
@@ -251,6 +252,8 @@ export const renderAgencyModel = (slug, c) => {
         </div>
       </div>
     </section>`,
+
+    deepDive(c.deepDive, accent),
 
     faqBlock({ faqs: c.faqs, title: `${meta.name}: <span class="text-gradient-teal">FAQ</span>` }),
     otherModels(slug),

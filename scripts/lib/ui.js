@@ -263,3 +263,21 @@ export const updatedLine = (date = SITE.updated) => {
   const label = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   return `<time datetime="${date}">${label}</time>`;
 };
+
+// Optional long-form section used on service, location and agency pages to
+// cover a topic in more depth: `{ eyebrow, title, paras: [html, ...] }`.
+export const deepDive = (d, accent = '#2fc4b6') =>
+  d
+    ? `
+    <section class="section-base section-pad section-seam">
+      <div class="main-container relative z-10">
+        <div class="mx-auto max-w-3xl">
+          ${eyebrow(d.eyebrow ?? 'In depth', accent)}
+          <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">${d.title}</h2>
+          <div class="prose-ink mt-6">
+            ${d.paras.map((p) => `<p>${p}</p>`).join('\n            ')}
+          </div>
+        </div>
+      </div>
+    </section>`
+    : '';

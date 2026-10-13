@@ -348,6 +348,15 @@ export default {
       { q: 'Does California require AI chatbots to disclose they are bots?', a: 'California’s bot-disclosure law requires clear disclosure when a bot is used to incentivize a purchase or influence a vote in online communications. We make disclosure explicit by default for all California clients.' },
       { q: 'Can AI book consultations for med spas?', a: 'Yes, from Instagram, website chat, WhatsApp or phone, directly into Boulevard, Vagaro, GoHighLevel or your booking tool, with deposit collection if you want it.' },
     ],
+    deepDive: {
+      eyebrow: "How we implement AI",
+      title: "AI automation solutions for Los Angeles businesses",
+      paras: [
+        "The best place to implement AI is wherever your team handles repetitive tasks: answering the same questions, booking and rescheduling, chasing quotes, entering data and invoice processing. We start a free consultation by mapping those workflows to identify where artificial intelligence saves the most time.",
+        "Then we choose the right automation tools for each job. AI voice agents and chatbots improve response times on calls and DMs; workflow automation handles data entry and reminders; integrations connect your CRM, calendar and accounting so nothing is retyped. Each AI automation solution is tested on real conversations before launch.",
+        "Los Angeles clients typically start with one high-volume workflow, measure the result for a month, then expand. See what’s possible with our <a href=\"/resources/automation-savings-calculator/\">automation savings calculator</a>."
+      ],
+    },
     schemaPlace: city('Los Angeles', 'California'),
     nearby: ['san-diego', 'san-francisco', 'phoenix'],
   },
@@ -379,6 +388,15 @@ export default {
       { q: 'Can you work inside our existing engineering process?', a: 'Yes, your repo, your CI, pull requests reviewed by your team, and your ticketing system.' },
       { q: 'Do you build evaluation pipelines for LLM features?', a: 'Yes. We create test sets and automated scoring for retrieval and answer quality, run on every change.' },
     ],
+    deepDive: {
+      eyebrow: "For Bay Area growth teams",
+      title: "AI marketing, AI sales and healthcare AI for the Bay Area",
+      paras: [
+        "Bay Area growth teams want data-driven systems, not another tool to manage. As an AI automation partner rather than a full-service digital marketing agency, we connect your ad campaigns, content strategies and CRM so every lead gets an instant, personal response and growth marketing decisions are based on booked meetings, not clicks.",
+        "For AI sales, we set up AI SDR software that qualifies inbound leads within seconds, answers questions and books meetings with your account executives. Teams track meetings booked, response times and pipeline created, and keep humans focused on the conversations that close.",
+        "For healthcare organizations, patient communication is often the bottleneck. Healthcare AI can handle booking, reminders, rescheduling and routine questions by phone and text, with clear hand-offs to staff for anything clinical, helping clinics deliver better digital experiences without adding front-desk headcount."
+      ],
+    },
     schemaPlace: city('San Francisco', 'California'),
     nearby: ['san-jose', 'los-angeles', 'seattle'],
   },
@@ -438,6 +456,15 @@ export default {
       { q: 'Can solar companies in San Diego use AI follow-up?', a: 'Yes, instant response to quote requests, qualification (roof, bill, ownership), and automated follow-up until the consultation is booked.' },
       { q: 'Is bilingual support included?', a: 'Yes. English and Spanish are standard for San Diego deployments.' },
     ],
+    deepDive: {
+      eyebrow: "AI consulting in San Diego",
+      title: "From AI strategy to working AI deployments",
+      paras: [
+        "Artificial intelligence consulting should end with something that works, not a slide deck. Our AI consulting services in San Diego start with an AI readiness assessment: we look at your calls, leads, data and workflows, list the AI use cases that could deliver measurable results, and rank them by value and effort.",
+        "Then we move to AI development. We build the agreed systems, connect them to your CRM, calendar and phone system, test them on real conversations and support them long-term. Typical AI deployments for San Diego businesses include AI receptionists for clinics, follow-up automation for real-estate teams and internal knowledge assistants for life-science companies.",
+        "Compared with many AI companies in San Diego, we focus on applied AI for operations rather than research or licensing a single product. We work with businesses across the United States, so you get a senior team and fixed-price projects without paying for a local office. Start with our free <a href=\"/resources/ai-readiness-assessment/\">AI readiness assessment</a>."
+      ],
+    },
     schemaPlace: city('San Diego', 'California'),
     nearby: ['los-angeles', 'phoenix', 'san-jose'],
   },

@@ -73,6 +73,10 @@ ${table(
 <h2>Data sync and migration considerations</h2>
 <p>If you run both platforms or move from one to the other, plan the data carefully. Decide which system owns each record type, map HubSpot properties to GoHighLevel custom fields, and avoid two-way syncs that overwrite each other. Middleware like Make.com or Zapier can sync contacts and deal stages, but every sync rule should have a clear direction and a way to resolve conflicts. Our ${link('/blog/make-gohighlevel-integration/', 'Make.com and GoHighLevel guide')} covers the patterns.</p>
 
+<h2>Records, sub-accounts and flat-rate pricing</h2>
+<p>HubSpot organizes data around contacts, companies, deals and tickets, with custom objects on higher tiers. That structure suits B2B sales and support teams that track accounts and service cases in detail. GoHighLevel focuses on contacts and opportunities, plus conversations, appointments and payments, which matches how service businesses work day to day.</p>
+<p>For agencies, the biggest structural difference is sub-accounts. GoHighLevel’s Unlimited and higher plans allow unlimited sub-accounts on flat-rate pricing, so an agency can run a separate, fully featured account for every client without paying per seat. HubSpot has no equivalent for managing many separate client businesses under one agency subscription.</p>
+
 <h2>Enterprise plans and scaling</h2>
 <p>HubSpot’s enterprise plans add advanced permissions, custom objects, sandboxes and reporting that larger organizations need, and its ecosystem of certified partners is large. GoHighLevel scales differently: agencies add sub-accounts for each client or location, and costs are driven mostly by usage rather than seats. If you expect to grow into a large sales organization with complex governance, compare HubSpot’s enterprise tiers carefully; if you expect to grow by adding locations or clients, GoHighLevel’s model is usually more economical.</p>
 

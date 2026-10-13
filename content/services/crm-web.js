@@ -494,6 +494,15 @@ export default {
       { title: 'Build & connect', desc: 'Checkout, CRM and automations wired.' },
       { title: 'Launch & optimize', desc: 'Go live, measure and test.' },
     ],
+    deepDive: {
+      eyebrow: "How we build funnels",
+      title: "A sales funnel built around your ideal customer",
+      paras: [
+        "Every sales funnel starts with the ideal customer: who they are, what problem brings them in and what makes them trust you. From there we design the marketing funnel step by step, from the ad or social media post that gets attention, to the landing page that makes one clear offer, to the booking or checkout step and the follow-up that turns visitors into paying customers.",
+        "A funnel is part of your sales process, not a replacement for it. We connect lead generation to your CRM, so every inquiry gets an instant reply, a reminder and a hand-off to your team, and we add nurture for people who aren’t ready yet. Existing customers get their own funnels too, for reviews, referrals and repeat purchases.",
+        "We work with service businesses across the United States, including <a href=\"/locations/houston/\">Houston</a>, <a href=\"/locations/dallas/\">Dallas</a> and <a href=\"/locations/atlanta/\">Atlanta</a>, and build to your marketing strategy rather than a template. Want to see what that looks like? Click through our <a href=\"/portfolio/\">demo funnels</a>, or read our <a href=\"/case-studies/\">case studies</a>."
+      ],
+    },
     fit: [
       'Coaches, consultants and course creators',
       'Service businesses selling packages or consultations',

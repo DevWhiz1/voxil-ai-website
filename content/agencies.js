@@ -206,6 +206,15 @@ export const models = {
       { title: 'Resolve tickets', desc: 'Diagnose, fix and reply in your agency’s name.' },
       { title: 'Prevent repeats', desc: 'Monthly report on recurring issues and fixes.' },
     ],
+    deepDive: {
+      eyebrow: "GoHighLevel white label support",
+      title: "An extra support team, invisible to your clients",
+      paras: [
+        "Most agencies don’t lose clients because of their marketing results; they lose them because support is slow. A white label support team that answers GoHighLevel tickets quickly, fixes the root cause and explains it clearly protects your retainers.",
+        "We act as your agency’s support team behind the scenes. Tickets arrive through your helpdesk, email or Slack, we diagnose and fix them in your clients’ accounts, and we write client-ready replies in your voice. Common requests include broken workflows, calendar and phone issues, A2P and email deliverability, funnel changes and integration errors.",
+        "Each month you get a summary of recurring issues, so you can fix problems at the source, such as a snapshot setting that causes the same ticket in every new account. See also our <a href=\"/services/ghl-support/\">GHL support</a> service for businesses, and <a href=\"/for-agencies/\">all agency partner options</a>."
+      ],
+    },
     fit: ['Agencies with many retained GHL clients', 'Teams losing hours to support requests', 'Agencies without a dedicated technical person', 'SaaS-mode agencies supporting subscribers'],
     notFit: ['Agencies with very few active clients', 'Requests for us to speak to clients by phone'],
     faqs: [

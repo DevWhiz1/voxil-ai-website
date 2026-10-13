@@ -316,6 +316,14 @@ export default {
       { icon: 'sparkles', title: 'Aesthetics consultations', desc: 'Med spas convert late-night Instagram and phone inquiries into booked consultations.' },
     ],
     faq: { q: 'Can the AI speak Tagalog?', a: 'Agents can respond in Tagalog for common requests, alongside English and Spanish, tested with native speakers before launch.' },
+    deepDive: {
+      eyebrow: "AI-powered, 24/7",
+      title: "Artificial intelligence for a city that never closes",
+      paras: [
+        "Las Vegas businesses can’t staff every hour, but customers call, message and book at every hour. AI-powered receptionists and chatbots close that gap: they answer instantly, book appointments, qualify leads and pass urgent cases to your team.",
+        "We build artificial intelligence systems around your peak patterns, from summer AC emergencies to convention weeks and holiday weekends, and connect them to the tools you already use. Every conversation is logged, so you can see exactly what customers ask and how quickly they were helped."
+      ],
+    },
     schemaPlace: city('Las Vegas', 'Nevada'),
     nearby: ['los-angeles', 'phoenix', 'salt-lake-city'],
   },

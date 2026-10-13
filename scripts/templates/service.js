@@ -18,6 +18,7 @@ import {
   sectionHead,
   stepsBlock,
   webPageSchema,
+  deepDive,
 } from '../lib/ui.js';
 
 // Cities featured in the "available in" strip on every service page.
@@ -102,6 +103,8 @@ export const renderService = (slug, c) => {
       </div>
     </section>`
       : '',
+
+    deepDive(c.deepDive, accent),
 
     // --- Who it's for + stack ------------------------------------------
     `

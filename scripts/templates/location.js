@@ -14,6 +14,7 @@ import {
   page,
   sectionHead,
   webPageSchema,
+  deepDive,
 } from '../lib/ui.js';
 
 // The one question every location answers; local FAQs from the content files come first.
@@ -108,6 +109,8 @@ export const renderLocation = (slug, l) => {
         </div>
       </div>
     </section>`,
+
+    deepDive(l.deepDive, accent),
 
     // --- Compliance -------------------------------------------------------
     `

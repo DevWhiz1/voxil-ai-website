@@ -121,6 +121,16 @@ export default {
       { title: 'Build & evaluate', desc: 'Iterate against an evaluation set until quality targets are met.' },
       { title: 'Ship & support', desc: 'Deploy, monitor and hand over, or keep us on retainer.' },
     ],
+    deepDive: {
+      eyebrow: "Hiring chatbot developers",
+      title: "What to look for when you hire chatbot developers",
+      paras: [
+        "Good chatbot developers combine three skills: conversation design, software engineering and practical machine learning knowledge. They care about the user experience as much as the model, so the bot answers clearly, admits when it doesn’t know and hands off to a person smoothly.",
+        "Ask candidates how they test accuracy, control costs and protect data. A strong answer includes evaluation sets of real questions, monitoring after launch and least-privilege access to your systems. A weak answer is a demo built on frequently asked questions with no plan for edge cases.",
+        "We offer flexible engagement models: a fixed-price project for a defined chatbot, a part-time retainer for ongoing improvements, or a dedicated, full-time developer for long-term roadmaps. Each includes senior review, documentation and handover, so you’re never dependent on one person.",
+        "Not sure what you need yet? Start with our <a href=\"/blog/website-ai-chatbot-guide/\">website chatbot guide</a> or estimate running costs with the <a href=\"/resources/ai-chatbot-cost-calculator/\">AI chatbot cost calculator</a>."
+      ],
+    },
     fit: [
       'SaaS companies adding an AI assistant to their product',
       'Companies with large document libraries or knowledge bases',

@@ -495,6 +495,16 @@ export default {
       { title: 'Build the product', desc: 'Snapshots, signup funnel and onboarding.' },
       { title: 'Launch', desc: 'Test purchases end-to-end, then go live.' },
     ],
+    deepDive: {
+      eyebrow: "Why agencies launch SaaS",
+      title: "Turning GoHighLevel white label SaaS into recurring revenue",
+      paras: [
+        "For many agencies, GoHighLevel white label SaaS is the step from selling projects to building recurring revenue streams. Instead of charging once for a setup, you charge every month for software your clients log into under your brand.",
+        "The best results come from a focused offer: one niche, one snapshot and a clear outcome, such as “missed-call recovery for dental practices.” A niche offer is easier to sell, easier to support and easier to price above the cost of the underlying platform.",
+        "SaaS also improves client retention. When a client’s leads, calendar, reviews and follow-up all run inside your platform, switching away becomes harder, and monthly results reports remind them of the value. Pair the software with light-touch support and onboarding, and churn drops further.",
+        "Read our step-by-step <a href=\"/blog/gohighlevel-saas-mode-setup/\">GoHighLevel SaaS mode setup guide</a>, or see how we set up <a href=\"/blog/gohighlevel-white-label-setup/\">white label branding</a> before launch."
+      ],
+    },
     fit: [
       'Agencies ready to productize their niche expertise',
       'Consultants who want recurring software revenue',
@@ -619,6 +629,16 @@ export default {
       { title: 'Start work', desc: 'Tasks via your board with senior review.' },
       { title: 'Scale', desc: 'Adjust hours as your needs grow.' },
     ],
+    deepDive: {
+      eyebrow: "GHL VA services",
+      title: "What a GoHighLevel virtual assistant does in a typical week",
+      paras: [
+        "Business owners and marketing agencies hire GHL VAs for one reason: to save time on the work that keeps GoHighLevel running smoothly but doesn’t need a senior engineer. A good High Level virtual assistant handles funnel and page edits, contact imports and clean-up, campaign scheduling, calendar changes, pipeline hygiene and weekly reporting.",
+        "Most clients start with 10 to 20 hours a week and adjust as the workload changes. Agencies with many sub-accounts often move to a full-time GHL virtual assistant who works only on their accounts, follows their processes and joins their Slack or project tools.",
+        "Price is usually set as an hourly rate or a monthly block of hours. Compare it with the true cost of doing the work yourself: if an owner spends five hours a week on GHL admin, that time is worth far more spent on sales or clients. Every VA we place is backed by senior GoHighLevel specialists who review complex changes, so quality doesn’t depend on one person.",
+        "If you also need ongoing fixes and improvements rather than daily tasks, see <a href=\"/services/ghl-support/\">GHL support</a>; for agencies who want a VA under their own brand, see our <a href=\"/for-agencies/dedicated-ghl-va/\">dedicated GHL assistant</a> program."
+      ],
+    },
     fit: [
       'Agency owners doing GHL admin themselves',
       'Businesses with a steady stream of small GHL tasks',
