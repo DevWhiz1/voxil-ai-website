@@ -180,9 +180,9 @@ export const models = {
   },
 
   'white-label-support-desk': {
-    title: 'White Label GoHighLevel Support Desk | Voxil AI',
-    description: 'A white label support desk for agencies: we handle your clients’ GoHighLevel, funnel, calendar and automation tickets in your name, fix root causes and report back in your channel.',
-    h1: 'A white label <span class="text-gradient-warm">support desk</span> for your clients',
+    title: 'GoHighLevel White Label Support Desk | Voxil AI',
+    description: 'GoHighLevel white label support for agencies: we handle your clients’ GoHighLevel, funnel, calendar and automation tickets in your name, fix root causes and report back in your channel.',
+    h1: 'GoHighLevel white label support <span class="text-gradient-warm">for your clients</span>',
     lead: 'We take the tickets your clients raise about their CRM, funnels, calendars and automations, so your team stops firefighting and gets back to billable work.',
     answer: 'A <strong>white label support desk</strong> handles your clients’ technical support requests under your agency’s name. Voxil AI diagnoses and fixes GoHighLevel, funnel, calendar, phone and automation issues in your accounts and reports back through your channels, so clients only ever see your agency.',
     facts: [

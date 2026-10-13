@@ -78,11 +78,11 @@ export default {
   },
 
   'ai-chatbot-developer': {
-    title: 'Hire an AI Chatbot Developer | LLM & RAG | Voxil AI',
+    title: 'Hire Chatbot Developers: AI, LLM & RAG Experts | Voxil AI',
     description:
-      'Hire experienced AI chatbot developers for custom LLM chatbots, RAG knowledge assistants, AI agents with tool calling and integrations. Fixed-price projects or dedicated monthly engagement.',
-    h1: 'Hire an AI chatbot developer who <span class="text-gradient-teal">ships to production</span>',
-    lead: 'Custom LLM chatbots, retrieval-augmented (RAG) assistants and tool-using AI agents, engineered with evaluation, security and cost control from day one, not bolted together from a template.',
+      'Hire chatbot developers with production experience: custom LLM chatbots, RAG knowledge assistants, AI agents with tool calling and integrations. Fixed-price or monthly engagement.',
+    h1: 'Hire chatbot developers who <span class="text-gradient-teal">ship AI to production</span>',
+    lead: 'When you hire chatbot developers from Voxil AI, you get custom LLM chatbots, retrieval-augmented (RAG) assistants and tool-using AI agents, engineered with evaluation, security and cost control from day one, not bolted together from a template.',
     answer:
       'An <strong>AI chatbot developer</strong> designs and builds conversational AI systems using large language models. The work spans prompt and conversation design, retrieval-augmented generation (RAG) over your documents, tool and API integrations, evaluation, security, hosting and monitoring, delivering a chatbot that is accurate, safe and maintainable.',
     facts: [

@@ -4,7 +4,7 @@ export default {
   slug: 'ai-chatbot-statistics',
   title: 'AI Chatbot Statistics 2026: Usage, Adoption & Business Impact',
   metaTitle: 'AI Chatbot Statistics 2026: Usage, Adoption & ROI | Voxil AI',
-  description: 'Key AI chatbot statistics for 2026: consumer usage, business adoption, customer-service impact, productivity research and the risks. Every figure sourced and explained.',
+  description: 'Chatbot statistics for 2026: usage, business adoption, conversational AI market size, customer-service impact and risks. Every chatbot stat sourced and explained.',
   category: 'Statistics',
   tags: ['Chatbots & Automation'],
   date: '2026-03-04',
@@ -27,6 +27,10 @@ export default {
 <h2>Consumer chatbot usage</h2>
 ${statGrid(['chatgpt-800m', 'pew-34'])}
 <p>Mass consumer use matters for businesses because it changes expectations. People who ask an AI assistant questions every day increasingly expect a website or WhatsApp line to answer in plain language, instantly, not to present a menu of buttons or a contact form.</p>
+
+<h2>Conversational AI market size</h2>
+<p>Chatbots are part of the wider conversational AI market, which also includes voice assistants and AI agents. Analyst estimates of the conversational AI market size vary with how the market is defined, but they consistently point to rapid growth. One estimate projects the conversational AI market at about $49.9 billion by 2030, up from roughly $13.2 billion in 2024 ${cite('conv-ai-market')}. Treat any single market-size figure as one analyst’s forecast rather than a fact; the direction of travel matters more than the exact number.</p>
+<p>For a business deciding whether to deploy a chatbot, these chatbot stats are context, not a business case. The useful numbers are your own: how many questions your team answers each week, how many inquiries arrive after hours and how many leads wait too long for a reply. Our ${link('/resources/ai-chatbot-cost-calculator/', 'AI chatbot cost calculator')} helps you set running costs against those numbers.</p>
 
 <h2>Business adoption</h2>
 ${statGrid(['genai-71', 'wti-75', 'uscc-40'], '#38bdf8')}

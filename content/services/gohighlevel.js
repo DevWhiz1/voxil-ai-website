@@ -129,11 +129,11 @@ export default {
   },
 
   'ghl-setup': {
-    title: 'GoHighLevel Setup Service | Full GHL Setup | Voxil AI',
+    title: 'GHL Setup Services | Complete GoHighLevel Setup | Voxil AI',
     description:
-      'Done-for-you GoHighLevel setup: domains, email and phone, A2P, pipelines, calendars, forms, workflows, funnels, reputation and AI, launched correctly the first time.',
-    h1: 'GoHighLevel setup, <span class="text-gradient-sky">done right the first time</span>',
-    lead: 'A complete, launch-ready GoHighLevel account, technical foundations, pipelines, automations, funnels and AI, configured around how your business actually sells.',
+      'GHL setup services, done for you: domains, email and phone, A2P, pipelines, calendars, forms, workflows, funnels, reputation and AI, launched correctly the first time.',
+    h1: 'GHL setup services, <span class="text-gradient-sky">done right the first time</span>',
+    lead: 'Our GHL setup services deliver a complete, launch-ready GoHighLevel account: technical foundations, pipelines, automations, funnels and AI, configured around how your business actually sells.',
     answer:
       '<strong>GoHighLevel setup</strong> is the process of configuring a new GHL account for a business: connecting domains, email sending and phone numbers, registering for A2P messaging, building pipelines, calendars, forms and workflows, setting up funnels or websites, reputation management and AI features, and importing existing contacts.',
     facts: [
@@ -454,8 +454,8 @@ export default {
   'ghl-white-label-saas': {
     title: 'GoHighLevel White Label SaaS Setup | Voxil AI',
     description:
-      'Launch your own branded SaaS on GoHighLevel SaaS mode: white-label domain and app, plans and pricing, Stripe rebilling, snapshots, onboarding automation and support workflows.',
-    h1: 'Launch your own SaaS on <span class="text-gradient-sky">GoHighLevel white label</span>',
+      'GoHighLevel white label SaaS setup: launch your branded software on SaaS mode with a white-label domain and app, plans, Stripe rebilling, snapshots and onboarding automation.',
+    h1: 'Launch your own <span class="text-gradient-sky">GoHighLevel white label SaaS</span>',
     lead: 'Your brand, your pricing, your recurring revenue. We set up GoHighLevel SaaS mode end-to-end, branding, plans, rebilling, snapshots and onboarding, so you can sell software, not just services.',
     answer:
       '<strong>GoHighLevel White Label SaaS</strong> lets agencies resell GoHighLevel as their own branded software. Using SaaS mode (on the Agency Pro plan), agencies set their own plans and prices, automatically provision sub-accounts when customers pay through Stripe, rebill usage like phone and email, and deliver a white-labeled web and mobile app.',
@@ -576,11 +576,11 @@ export default {
   },
 
   'ghl-virtual-assistant': {
-    title: 'GoHighLevel Virtual Assistant | Dedicated GHL VA | Voxil AI',
+    title: 'GHL Virtual Assistant | GoHighLevel VA Services | Voxil AI',
     description:
-      'Hire a dedicated GoHighLevel virtual assistant for daily builds, funnel edits, workflow tweaks, contact management, campaign scheduling and reporting, trained and supervised by GHL experts.',
-    h1: 'A GoHighLevel virtual assistant, <span class="text-gradient-sky">backed by experts</span>',
-    lead: 'A trained GHL assistant for the daily work, funnel edits, workflow tweaks, campaigns, imports, reporting, with senior GoHighLevel engineers reviewing anything complex.',
+      'Hire a GHL virtual assistant: our GHL VA services give you a trained GoHighLevel virtual assistant for builds, funnel edits, workflows, campaigns and reporting.',
+    h1: 'A GHL virtual assistant, <span class="text-gradient-sky">backed by GoHighLevel experts</span>',
+    lead: 'Our GHL VA services give you a trained GoHighLevel virtual assistant for the daily work: funnel edits, workflow tweaks, campaigns, imports and reporting, with senior GoHighLevel engineers reviewing anything complex.',
     answer:
       'A <strong>GoHighLevel virtual assistant</strong> is a remote team member trained in GHL who handles day-to-day platform tasks: building and editing funnels and pages, updating workflows, scheduling campaigns, managing contacts and pipelines, importing lists, preparing reports and supporting clients’ sub-accounts.',
     facts: [

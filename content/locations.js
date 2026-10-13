@@ -246,10 +246,11 @@ export default {
     market: [
       'Houston is home to the world’s largest medical complex and a vast network of clinics and practices around it, businesses where scheduling, reminders and intake consume enormous staff time.',
       'Heat and hurricane seasons make HVAC, roofing and restoration critical services, with call volumes that spike overnight. And Houston’s diversity means bilingual service is a must. AI agents answer every call in English or Spanish and scale instantly with demand.',
+      'Houston businesses running ads also use our sales funnel builds: landing pages, booking and checkout steps connected to instant follow-up, so paid traffic turns into booked jobs instead of abandoned forms.',
     ],
     industries: ['medical-clinics', 'hvac', 'roofing', 'law-firms', 'home-services', 'insurance'],
     areas: ['Downtown', 'Galleria / Uptown', 'Medical Center', 'The Woodlands', 'Katy', 'Sugar Land', 'Pearland', 'Cypress'],
-    services: ['ai-receptionist', 'ai-voice-agents', 'ai-phone-answering', 'ai-appointment-booking', 'ai-follow-up-system', 'ai-customer-support'],
+    services: ['ai-receptionist', 'ai-voice-agents', 'ai-phone-answering', 'ai-appointment-booking', 'ai-follow-up-system', 'ai-customer-support', 'sales-funnel-builder'],
     servicesLead: 'Call-heavy Houston businesses, clinics, HVAC and legal, see the fastest payback here.',
     compliance: {
       title: 'Texas privacy, healthcare and calling rules',
@@ -321,7 +322,9 @@ export default {
 
   // ------------------------------------------------------------- US WEST
   'los-angeles': {
-    description: 'AI automation agency serving Los Angeles: bilingual AI voice agents, chatbots, WhatsApp and CRM automation for med spas, real estate, entertainment, ecommerce and legal businesses.',
+    title: 'AI Automation Services in Los Angeles | Voxil AI',
+    h1: 'AI automation services in <span class="text-gradient-teal">Los Angeles</span>',
+    description: 'AI automation services in Los Angeles: bilingual AI voice agents, chatbots, WhatsApp and CRM automation for med spas, real estate, entertainment, ecommerce and legal businesses.',
     lead: 'Bilingual voice agents, chatbots and CRM automation for LA’s med-spa, real-estate, entertainment, ecommerce and legal businesses, California-compliant by design.',
     answer: 'Voxil AI builds <strong>bilingual AI voice agents, chatbots and CRM automation for Los Angeles businesses</strong>, from Beverly Hills med spas and Santa Monica brands to Pasadena law firms, configured for California’s bot-disclosure, recording and privacy laws.',
     tzShort: 'Pacific Time',
@@ -331,6 +334,7 @@ export default {
     market: [
       'LA’s aesthetics, med-spa and wellness market is among the most competitive in the world. Prospects inquire with several clinics at once, often late at night on Instagram, the clinic that replies and books first wins the consultation.',
       'Real estate, entertainment, DTC ecommerce and legal services share the same pattern: high-value leads, high expectations, and lots of after-hours inquiries. AI agents give every lead an instant, on-brand response in English or Spanish.',
+      'Our AI automation services in Los Angeles cover the full journey, from the first Instagram DM or phone call to booking, reminders, reviews and rebooking, so LA businesses stay responsive in a market where customers compare several options at once.',
     ],
     industries: ['med-spas', 'real-estate', 'salons-beauty', 'law-firms', 'fitness-gyms', 'solar'],
     areas: ['Downtown LA', 'Santa Monica', 'Beverly Hills', 'West Hollywood', 'Pasadena', 'Burbank', 'Long Beach', 'Irvine / OC'],
@@ -349,7 +353,9 @@ export default {
   },
 
   'san-francisco': {
-    description: 'AI automation and AI engineering for San Francisco Bay Area companies: AI agents, RAG chatbots, AI SaaS development, API and n8n automation, plus voice and CRM automation.',
+    title: 'AI Automation & AI SDR Agency in San Francisco | Voxil AI',
+    h1: 'AI automation, AI SDRs and AI marketing for the <span class="text-gradient-teal">Bay Area</span>',
+    description: 'AI automation for San Francisco Bay Area companies: AI SDR software setups, AI marketing automation, patient communication for clinics, AI agents, RAG chatbots and CRM automation.',
     lead: 'Senior AI engineering for Bay Area startups and scale-ups, agents, RAG, SaaS features and integrations, plus voice, chat and CRM automation for customer-facing teams.',
     answer: 'Voxil AI provides <strong>AI engineering and automation for San Francisco Bay Area companies</strong>: production AI agents, RAG chatbots, AI SaaS features, API integrations and self-hosted automation, delivered by a senior team that ships, at a fraction of Bay Area hiring costs.',
     tzShort: 'Pacific Time',
@@ -359,6 +365,7 @@ export default {
     market: [
       'The Bay Area is the center of AI development, and many local companies need extra senior hands to ship AI features, agents with tool calling, retrieval over large document sets, evaluation pipelines and cost controls. We slot into your repo and process.',
       'For go-to-market teams, AI SDRs and CRM automation help lean startups respond to inbound demand instantly and keep pipelines clean without adding ops headcount.',
+      'Bay Area teams come to us for three things beyond engineering help: AI SDR software that qualifies inbound leads and books meetings, AI marketing automation that connects ads, CRM and follow-up as an AI marketing agency partner, and patient communication systems for San Francisco clinics that handle booking, reminders and routine questions while keeping clinical conversations with staff.',
     ],
     industries: ['real-estate', 'law-firms', 'medical-clinics', 'insurance', 'fitness-gyms', 'med-spas'],
     areas: ['SoMa', 'Financial District', 'Mission', 'Oakland', 'Berkeley', 'Palo Alto', 'Walnut Creek', 'San Mateo'],
@@ -405,7 +412,9 @@ export default {
   },
 
   'san-diego': {
-    description: 'AI automation agency serving San Diego: bilingual AI receptionists, voice agents, chatbots and CRM automation for healthcare, biotech, real estate, hospitality and home-service businesses.',
+    title: 'AI Consulting Services in San Diego | Voxil AI',
+    h1: 'AI consulting services in San Diego, <span class="text-gradient-teal">from strategy to automation</span>',
+    description: 'AI consulting services in San Diego: AI receptionists, voice agents, chatbots and CRM automation for healthcare, biotech, real estate, hospitality and home-service businesses.',
     lead: 'Bilingual AI receptionists, voice agents and automation for San Diego’s healthcare, life-science, real-estate, hospitality and home-service businesses.',
     answer: 'Voxil AI builds <strong>bilingual AI receptionists, voice agents, chatbots and CRM automation for San Diego businesses</strong>, from La Jolla practices to North County contractors, California-compliant and live in weeks.',
     tzShort: 'Pacific Time',
@@ -415,6 +424,7 @@ export default {
     market: [
       'San Diego’s life-science and healthcare clusters create strong demand for patient intake, scheduling and support automation, and for secure internal AI tools in research-driven organizations.',
       'Hospitality, military-connected families and cross-border customers make bilingual, always-on service important. AI agents cover every hour and language without stretching your team.',
+      'Many AI companies in San Diego sell software licenses and leave the setup to you. Our AI consulting services in San Diego work the other way around: we start with your calls, leads and workflows, recommend what is worth automating, then build, integrate and tune the system for you on a fixed-price project.',
     ],
     industries: ['medical-clinics', 'real-estate', 'med-spas', 'home-services', 'solar', 'chiropractic'],
     areas: ['Downtown', 'La Jolla', 'Mission Valley', 'Carlsbad', 'Oceanside', 'Escondido', 'Chula Vista', 'El Cajon'],

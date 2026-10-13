@@ -284,7 +284,9 @@ export default {
 
   // ------------------------------------------------------------- US WEST
   'las-vegas': {
-    description: 'AI automation agency serving Las Vegas: AI receptionists, voice agents and chatbots for hospitality, personal-injury law, med spas, real estate and HVAC, built for 24/7 demand.',
+    title: 'AI Automation in Las Vegas | AI Voice Agents | Voxil AI',
+    h1: 'AI automation in Las Vegas, built for a <span class="text-gradient-teal">24-hour city</span>',
+    description: 'AI automation in Las Vegas: AI receptionists, voice agents and chatbots for hospitality, personal-injury law, med spas, real estate and HVAC, built for 24/7 demand.',
     lead: 'AI receptionists, intake agents and booking automation for Las Vegas hospitality, law firms, aesthetics clinics, real-estate teams and HVAC companies, a city that never closes.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Las Vegas businesses</strong>, from Strip-adjacent hospitality operators to Henderson clinics and Summerlin real-estate teams. Agents answer every call and message 24/7, qualify and book, with Nevada’s recording rules built in.',
     tzShort: 'Pacific Time',
@@ -294,6 +296,7 @@ export default {
     market: [
       'Las Vegas businesses serve visitors and residents around the clock. Hospitality, entertainment and service businesses receive inquiries at every hour, and personal-injury law firms compete intensely for every intake call.',
       'Desert summers make air conditioning essential, so HVAC companies handle urgent calls through the night. Med spas, aesthetics clinics and real-estate teams round out a market where instant response is the norm, not a bonus.',
+      'AI automation in Las Vegas has to work at 3am as well as at noon. We design every agent and workflow for round-the-clock traffic, holiday and convention peaks, and the bilingual customers Las Vegas businesses serve every day.',
     ],
     industries: ['law-firms', 'hvac', 'med-spas', 'real-estate', 'home-services', 'salons-beauty'],
     areas: ['The Strip', 'Henderson', 'Summerlin', 'North Las Vegas', 'Spring Valley', 'Enterprise', 'Paradise', 'Boulder City'],
