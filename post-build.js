@@ -135,6 +135,14 @@ async function optimizeHtml() {
   console.log(`Optimized ${files.length} HTML files: ${(before / 1024).toFixed(0)} KB -> ${(after / 1024).toFixed(0)} KB`);
 }
 
+// Build marker: lets scripts/indexnow.js wait until a deploy is live before
+// notifying search engines. Vercel sets VERCEL_GIT_COMMIT_SHA on git deploys.
+function writeBuildInfo() {
+  const info = { sha: process.env.VERCEL_GIT_COMMIT_SHA || 'local', builtAt: new Date().toISOString() };
+  fs.writeFileSync(path.join(__dirname, 'dist', 'build-info.json'), JSON.stringify(info));
+}
+
 // Run the script
 fixJavaScriptFile();
 await optimizeHtml();
+writeBuildInfo();

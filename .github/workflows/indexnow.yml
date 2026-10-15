@@ -1,0 +1,43 @@
+# Notifies IndexNow (Bing, Yandex, Seznam…) about changed pages after each
+# push to main, once Vercel has deployed it. Run it manually from the Actions
+# tab with "submit all" to send every URL in the sitemap.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Submit every URL in the sitemap
+        type: boolean
+        default: true
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Submit all sitemap URLs
+        if: github.event_name == 'workflow_dispatch' && inputs.all
+        run: node scripts/indexnow.js --all
+
+      - name: Submit pages changed in this push
+        if: github.event_name == 'push'
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          # A new branch or force push has no usable "before" commit; fall back to the parent.
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE="$(git rev-parse "$AFTER~1")"
+          fi
+          node scripts/indexnow.js --from "$BEFORE" --to "$AFTER" --wait
