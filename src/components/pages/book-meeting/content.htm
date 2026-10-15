@@ -8,7 +8,7 @@ Colors match the site: white background, ink text, teal accents.
   <div class="main-container relative z-10">
     <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-10">
       <!-- What to expect -->
-      <aside class="space-y-5 lg:sticky lg:top-28 lg:self-start">
+      <aside class="flex flex-col gap-5">
         <div data-reveal class="glass-card glass-card-topline" style="--accent: #0f9f93">
           <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">On the call</p>
           <ol class="mt-5 space-y-5">
@@ -36,7 +36,7 @@ Colors match the site: white background, ink text, teal accents.
           </ol>
         </div>
 
-        <div data-reveal class="glass-card">
+        <div data-reveal class="glass-card flex flex-1 flex-col">
           <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">You'll speak with</p>
           <div class="mt-4 space-y-4">
             <div class="flex items-center gap-3">
@@ -54,7 +54,7 @@ Colors match the site: white background, ink text, teal accents.
               </div>
             </div>
           </div>
-          <div class="hairline my-5"></div>
+          <div class="hairline my-5 lg:mt-auto"></div>
           <ul class="check-list" style="--accent: #0f9f93">
             <li class="text-tagline-2">30 minutes, free, no obligation</li>
             <li class="text-tagline-2">Video call at a time that suits you</li>
@@ -64,18 +64,30 @@ Colors match the site: white background, ink text, teal accents.
       </aside>
 
       <!-- Scheduler -->
-      <div data-reveal>
-      <div class="calendly-frame">
+      <div data-reveal class="flex flex-col">
+      <div class="calendly-frame flex flex-1 flex-col">
+        <!-- Loader overlay, removed by src/js/common/calendly-loader.js once the scheduler is ready.
+             It sits beside the widget, never inside it, because Calendly fills the widget element. -->
+        <div class="calendly-loader" data-calendly-loader role="status" aria-live="polite">
+          <div class="vx-cal-loader__card" aria-hidden="true">
+            <span class="vx-cal-skel w-2/5"></span>
+            <span class="vx-cal-skel w-3/5"></span>
+            <span class="vx-cal-skel vx-cal-skel--grid"></span>
+          </div>
+          <span class="vx-cal-spinner" aria-hidden="true"></span>
+          <p class="text-tagline-2 mt-4 font-medium text-secondary/70">Loading available times…</p>
+          <p class="text-tagline-3 mt-1 text-secondary/40">This usually takes a few seconds.</p>
+        </div>
         <div
           class="calendly-inline-widget w-full"
           data-url="https://calendly.com/ahmadbajwa3095?hide_gdpr_banner=1&background_color=ffffff&text_color=0c1220&primary_color=0f9f93"
           style="min-width: 320px; height: 760px"
         ></div>
+        <p class="text-tagline-3 border-t border-stroke-2 px-4 py-3 text-center text-secondary/55">
+          Calendar not loading?
+          <a href="https://calendly.com/ahmadbajwa3095" target="_blank" rel="noopener" class="font-semibold text-primary-700 underline underline-offset-4">Open it in a new tab</a>
+        </p>
       </div>
-      <p class="text-tagline-3 mt-4 text-center text-secondary/55">
-        Calendar not loading?
-        <a href="https://calendly.com/ahmadbajwa3095" target="_blank" rel="noopener" class="font-semibold text-primary-700 underline underline-offset-4">Open it in a new tab</a>
-      </p>
       </div>
     </div>
   </div>
