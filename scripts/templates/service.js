@@ -1,4 +1,4 @@
-import { ALL_LOCATIONS, INDUSTRIES, SITE, findService, industryUrl, locationUrl, serviceUrl } from '../../content/site.js';
+import { ALL_LOCATIONS, findService, INDUSTRIES, industryUrl, locationUrl, RESOURCES, resourceUrl, serviceUrl, SITE } from '../../content/site.js';
 import {
   ORG_ID,
   arrow,
@@ -24,7 +24,15 @@ import {
 // Cities featured in the "available in" strip on every service page.
 const FEATURED_LOCATIONS = ['new-york', 'los-angeles', 'chicago', 'houston', 'dallas', 'miami', 'atlanta', 'united-kingdom', 'dubai-uae', 'canada', 'australia'];
 
-export const renderService = (slug, c) => {
+// Free tools that fit each service group, linked from every service page.
+const GROUP_TOOLS = {
+  voice: ['ai-voice-agent-cost-calculator', 'voice-ai-platform-picker', 'ai-voice-agent-scripts'],
+  automation: ['ai-chatbot-cost-calculator', 'automation-savings-calculator', 'automation-platform-picker'],
+  ghl: ['ghl-setup-checklist', 'follow-up-templates', 'speed-to-lead-scorecard'],
+  crm: ['lead-loss-calculator', 'ai-roi-calculator', 'automation-platform-picker'],
+};
+
+export const renderService = (slug, c, posts = []) => {
   const meta = findService(slug);
   const accent = meta.accent;
   const path = serviceUrl(slug);
@@ -33,6 +41,13 @@ export const renderService = (slug, c) => {
     { name: 'Services', url: '/services/' },
     { name: meta.name, url: path },
   ];
+
+  // Articles that list this service, newest first.
+  const guides = posts
+    .filter((p) => p.services?.includes(slug))
+    .sort((a, b) => (b.updated ?? b.date).localeCompare(a.updated ?? a.date) || a.title.localeCompare(b.title))
+    .slice(0, 6);
+  const tools = (GROUP_TOOLS[meta.group] ?? []).map((t) => RESOURCES.find((r) => r.slug === t)).filter(Boolean);
 
   const industries = (c.industries ?? []).map((s) => INDUSTRIES.find((i) => i.slug === s)).filter(Boolean);
 
@@ -157,6 +172,38 @@ export const renderService = (slug, c) => {
       : '',
 
     faqBlock({ faqs: c.faqs, title: `${meta.name} <span class="text-gradient-teal">FAQ</span>` }),
+
+    // --- Guides and free tools ------------------------------------------
+    guides.length || tools.length
+      ? `
+    <section class="section-soft section-pad-sm section-seam">
+      <div class="main-container relative z-10">
+        <div class="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+          ${
+            guides.length
+              ? `<div data-reveal class="rounded-2xl border border-secondary/[0.08] bg-white p-6 md:p-8">
+            <h2 class="text-heading-6 font-semibold text-secondary">Guides on ${meta.name}</h2>
+            <ul class="mt-4 space-y-2.5">
+              ${guides.map((p) => `<li><a href="/blog/${p.slug}/" class="link-arrow text-tagline-2 font-medium text-secondary/75 hover:text-primary-700">${p.title}</a></li>`).join('\n              ')}
+            </ul>
+          </div>`
+              : '<div></div>'
+          }
+          ${
+            tools.length
+              ? `<div data-reveal class="rounded-2xl border border-secondary/[0.08] bg-white p-6 md:p-8">
+            <h2 class="text-heading-6 font-semibold text-secondary">Free tools</h2>
+            <ul class="mt-4 space-y-2.5">
+              ${tools.map((t) => `<li><a href="${resourceUrl(t.slug)}" class="link-arrow text-tagline-2 font-medium text-secondary/75 hover:text-primary-700">${t.name}</a></li>`).join('\n              ')}
+            </ul>
+            <a href="/resources/" class="link-arrow mt-4 text-tagline-2 text-primary-600">All free tools${arrow()}</a>
+          </div>`
+              : ''
+          }
+        </div>
+      </div>
+    </section>`
+      : '',
 
     // --- Related + locations -------------------------------------------
     `

@@ -22,43 +22,6 @@ const EXCLUDED = new Set([
   'integration-circle.html',
 ]);
 
-// changefreq + priority by tier. Anything unlisted falls back to DEFAULT_TIER.
-// Root pages are keyed by filename; generated sections by URL prefix.
-const TIERS = [
-  {
-    changefreq: 'weekly',
-    priority: '0.9',
-    match: (url) => url.startsWith('/services/') || url.startsWith('/for-agencies/') || ['/contact.html', '/book-meeting.html'].includes(url),
-  },
-  {
-    changefreq: 'weekly',
-    priority: '0.8',
-    match: (url) => url.startsWith('/locations/') || url.startsWith('/industries/') || url.startsWith('/resources/'),
-  },
-  {
-    changefreq: 'monthly',
-    priority: '0.7',
-    match: (url) =>
-      url.startsWith('/blog/') ||
-      url.startsWith('/case-studies/') ||
-      url.startsWith('/portfolio/') ||
-      ['/about.html', '/testimonial.html', '/faq.html'].includes(url),
-  },
-  {
-    changefreq: 'yearly',
-    priority: '0.3',
-    match: (url) => ['/privacy-policy.html', '/terms-conditions.html'].includes(url),
-  },
-];
-
-const DEFAULT_TIER = { changefreq: 'monthly', priority: '0.6' };
-const ROOT_TIER = { changefreq: 'daily', priority: '1.0' };
-
-const tierFor = (url) => {
-  const { changefreq, priority } = TIERS.find((t) => t.match(url)) ?? DEFAULT_TIER;
-  return { changefreq, priority };
-};
-
 // Folders written by scripts/build-pages.js; each page is <dir>/index.html.
 const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies', 'portfolio'];
 
@@ -107,30 +70,40 @@ const walk = (dir) => {
 };
 GENERATED_DIRS.filter((d) => fs.existsSync(path.join(__dirname, d))).forEach(walk);
 
-// Generated pages are dated by their content source (content/ + templates),
-// which git tracks; the HTML itself is build output.
-const generatedLastmod = (file) => {
-  const section = file.split('/')[0];
-  const sources = ['content/site.js', `scripts/templates/${{ blog: 'blog', resources: 'resources', 'for-agencies': 'agencies', 'case-studies': 'case-studies', portfolio: 'portfolio' }[section] ?? 'service'}.js`];
-  if (section === 'blog') {
-    const slug = file.split('/')[1];
-    if (slug !== 'index.html') sources.push(`content/blog/${slug}.js`);
+// Uncommitted edits are dated today.
+function isDirty(target) {
+  try {
+    return execFileSync('git', ['status', '--porcelain', '--', target], { cwd: __dirname, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim() !== '';
+  } catch {
+    return false;
   }
-  const dates = sources.map(gitDate).filter(Boolean);
-  return dates.length ? dates.sort().at(-1) : today;
-};
+}
+
+// Fallback when git history is unavailable (e.g. a shallow clone on the build
+// server): keep the date already recorded in the committed sitemap.
+const previous = new Map();
+const previousPath = path.join(__dirname, 'public', 'sitemap.xml');
+if (fs.existsSync(previousPath)) {
+  for (const m of fs.readFileSync(previousPath, 'utf8').matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) previous.set(m[1], m[2]);
+}
+
+// Generated pages are dated by their own committed HTML file. The page HTML
+// only changes when that page's content changes (shared header and footer are
+// included at build time), so each page gets its real last-modified date.
+const generatedLastmod = (file, loc) => (isDirty(file) ? today : gitDate(file) ?? previous.get(loc) ?? today);
 
 const entries = [
-  { loc: `${SITE_URL}/`, lastmod: lastmodFor('index.html'), ...ROOT_TIER },
-  ...rootPages.map((page) => ({ loc: `${SITE_URL}/${page}`, lastmod: lastmodFor(page), ...tierFor(`/${page}`) })),
+  { loc: `${SITE_URL}/`, lastmod: lastmodFor('index.html') },
+  ...rootPages.map((page) => ({ loc: `${SITE_URL}/${page}`, lastmod: lastmodFor(page) })),
   ...generatedPages.map((file) => {
-    const url = `/${file.replace(/index\.html$/, '')}`;
-    return { loc: `${SITE_URL}${url}`, lastmod: generatedLastmod(file), ...tierFor(url) };
+    const loc = `${SITE_URL}/${file.replace(/index\.html$/, '')}`;
+    return { loc, lastmod: generatedLastmod(file, loc) };
   }),
 ];
 
-// Highest priority first so the important URLs lead the file.
-entries.sort((a, b) => Number(b.priority) - Number(a.priority) || a.loc.localeCompare(b.loc));
+// Home page first, then alphabetical. Search engines ignore <priority> and
+// <changefreq>, so the sitemap only carries <loc> and a real <lastmod>.
+entries.sort((a, b) => (a.loc === `${SITE_URL}/` ? -1 : b.loc === `${SITE_URL}/` ? 1 : a.loc.localeCompare(b.loc)));
 
 const xml = [
   '<?xml version="1.0" encoding="UTF-8"?>',
@@ -140,8 +113,6 @@ const xml = [
       '  <url>',
       `    <loc>${e.loc}</loc>`,
       `    <lastmod>${e.lastmod}</lastmod>`,
-      `    <changefreq>${e.changefreq}</changefreq>`,
-      `    <priority>${e.priority}</priority>`,
       '  </url>',
     ].join('\n')
   ),

@@ -2,294 +2,305 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "voxilai.tech"
+        }
+      ],
+      "destination": "https://www.voxilai.tech/:path*",
+      "statusCode": 301
+    },
+    {
       "source": "/services.html",
       "destination": "/services/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ai-voice-agents.html",
       "destination": "/services/ai-voice-agents/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ai-chatbot-development.html",
       "destination": "/services/ai-chatbots/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/ai-saas-development.html",
       "destination": "/services/ai-saas-development/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/lead-capture-system.html",
       "destination": "/services/lead-capture-system/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service-details.html",
       "destination": "/services/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/features.html",
       "destination": "/services/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/integration.html",
       "destination": "/services/api-integration/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/blog.html",
       "destination": "/blog/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/blog-details.html",
       "destination": "/blog/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/case-study.html",
       "destination": "/case-studies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/case-study-healthcare.html",
       "destination": "/case-studies/healthcare-patient-intake/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/case-study-ecommerce.html",
       "destination": "/case-studies/ecommerce-support-chatbot/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/case-study-finance.html",
       "destination": "/case-studies/finance-lead-qualification/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/case-study-real-estate.html",
       "destination": "/case-studies/real-estate-listing-agent/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/case-study-details.html",
       "destination": "/case-studies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/pricing.html",
       "destination": "/services/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/process.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/why-choose-us.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/our-manifesto.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/team.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/team-details.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/career.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/career-details.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/customers.html",
       "destination": "/case-studies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/customer-details.html",
       "destination": "/case-studies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/success-stories.html",
       "destination": "/case-studies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/use-case.html",
       "destination": "/industries/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/brandkit.html",
       "destination": "/resources/media-kit/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/press.html",
       "destination": "/resources/media-kit/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/documentation.html",
       "destination": "/resources/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/tutorial.html",
       "destination": "/resources/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/glossary.html",
       "destination": "/resources/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/whitepaper.html",
       "destination": "/resources/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/whitepaper-details.html",
       "destination": "/resources/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/affiliates.html",
       "destination": "/for-agencies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/referral-program.html",
       "destination": "/for-agencies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/affiliate-policy.html",
       "destination": "/for-agencies/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/gdpr.html",
       "destination": "/privacy-policy.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/security.html",
       "destination": "/privacy-policy.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/legal.html",
       "destination": "/terms-conditions.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/refund-policy.html",
       "destination": "/terms-conditions.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/support.html",
       "destination": "/contact.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/integration-circle.html",
       "destination": "/services/api-integration/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/analytics.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/download.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/changelog.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/login.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/signup.html",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/contact-us-page.html",
       "destination": "/contact.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/contact-us.html",
       "destination": "/contact.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/contact-us",
       "destination": "/contact.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/contact",
       "destination": "/contact.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about-us.html",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about-us",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/about",
       "destination": "/about.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/book-a-call.html",
       "destination": "/book-meeting.html",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/book-meeting",
       "destination": "/book-meeting.html",
-      "permanent": true
+      "statusCode": 301
     }
   ],
   "headers": [

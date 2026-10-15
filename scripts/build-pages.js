@@ -54,13 +54,18 @@ const write = (urlPath, html) => {
 const resetDir = (dir) => fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
 
 // ---------------------------------------------------------------------------
+// Each blog file default-exports one post object.
+const posts = [];
+for (const file of fs.readdirSync(path.join(ROOT, 'content/blog')).filter((f) => f.endsWith('.js')).sort()) {
+  posts.push((await import(path.join(ROOT, 'content/blog', file))).default);
+}
 const services = await loadDir('content/services');
 
 resetDir('services');
 write('/services/', renderServicesHub());
 for (const s of ALL_SERVICES) {
   if (!services[s.slug]) throw new Error(`No content for service: ${s.slug}`);
-  write(`/services/${s.slug}/`, renderService(s.slug, services[s.slug]));
+  write(`/services/${s.slug}/`, renderService(s.slug, services[s.slug], posts));
 }
 
 resetDir('locations');
@@ -70,11 +75,6 @@ for (const l of ALL_LOCATIONS) {
   write(`/locations/${l.slug}/`, renderLocation(l.slug, locations[l.slug]));
 }
 
-// Each blog file default-exports one post object.
-const posts = [];
-for (const file of fs.readdirSync(path.join(ROOT, 'content/blog')).filter((f) => f.endsWith('.js')).sort()) {
-  posts.push((await import(path.join(ROOT, 'content/blog', file))).default);
-}
 resetDir('industries');
 write('/industries/', renderIndustriesHub());
 for (const i of INDUSTRIES) {

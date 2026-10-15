@@ -220,6 +220,7 @@ export const footerLocations = () => `${HEADER_NOTE}
     ${LOCATION_GROUPS.flatMap((g) => g.locations)
       .map((l) => `<a href="${locationUrl(l.slug)}">${l.name}</a>`)
       .join(' ')}
+    <a href="/locations/" class="font-semibold">All locations</a>
   </p>
 </div>
 `;
