@@ -4,7 +4,7 @@ export default {
   slug: 'ghl-crm-setup-small-business',
   title: 'GoHighLevel CRM Setup for Small Businesses: A Step-by-Step Guide (2026)',
   metaTitle: 'GoHighLevel CRM Setup for Small Business (2026) | Voxil AI',
-  description: 'How to set up GoHighLevel for a small business: pipelines, instant lead response, calendars, missed-call text-back, reviews and reactivation, in the order that pays off fastest.',
+  description: 'Set up GoHighLevel for a small business step by step: pipelines, instant lead response, calendars, missed-call text-back and reviews, in payback order.',
   category: 'GoHighLevel',
   author: 'ahmad-ali',
   date: '2026-10-06',

@@ -4,7 +4,7 @@ export default {
   slug: 'tcpa-ai-calling-compliance',
   title: 'AI Calling and the TCPA: A Practical Compliance Guide for US Businesses (2026)',
   metaTitle: 'AI Calling & TCPA Compliance Guide (2026) | Voxil AI',
-  description: 'What US businesses need to know before using AI voice agents and automated texts: TCPA consent, the FCC’s AI voice ruling, Do Not Call rules, calling hours, revocation and state laws.',
+  description: 'AI calling and the TCPA: consent rules, the FCC’s AI voice ruling, Do Not Call, calling hours and state laws US businesses must know before dialing.',
   category: 'Lead Generation',
   tags: ['AI Calling Bots'],
   author: 'abdul-moeez',

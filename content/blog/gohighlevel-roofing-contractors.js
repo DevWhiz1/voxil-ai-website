@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-roofing-contractors',
   title: 'GoHighLevel for Roofing Contractors: Storm Leads, Inspections and Follow-Up',
   metaTitle: 'GoHighLevel for Roofing Contractors (2026 Guide) | Voxil AI',
-  description: 'How roofing contractors use GoHighLevel and AI: storm-surge call handling, inspection booking by territory, estimate follow-up, insurance claim intake, reviews and reactivation.',
+  description: 'GoHighLevel for roofing contractors: storm-surge call handling, inspection booking by territory, estimate follow-up, claim intake and reviews.',
   category: 'Industry Guides',
   author: 'ahmad-ali',
   date: '2026-10-08',

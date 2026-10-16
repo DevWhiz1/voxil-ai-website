@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-saas-mode-setup',
   title: 'GoHighLevel SaaS Mode Setup: How Agencies Resell GHL as Their Own Software',
   metaTitle: 'GoHighLevel SaaS Mode Setup Guide | Voxil AI',
-  description: 'Step-by-step GoHighLevel SaaS mode setup: Agency Pro plan, Stripe connection, SaaS plans, usage rebilling, white label branding, onboarding automation and pricing strategy.',
+  description: 'GoHighLevel SaaS mode setup, step by step: Agency Pro plan, Stripe, SaaS plans, usage rebilling, white label branding and pricing strategy.',
   category: 'GoHighLevel',
   author: 'ahmad-ali',
   date: '2026-10-06',

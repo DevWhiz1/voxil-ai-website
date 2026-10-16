@@ -11,7 +11,7 @@ export default {
   // ------------------------------------------------------------- US EAST
   'new-york': {
     shortName: 'New York',
-    description: 'AI automation agency serving New York City businesses: AI voice agents, receptionists, chatbots, GoHighLevel and CRM automation for finance, real estate, legal and healthcare teams.',
+    description: 'New York AI automation agency: AI voice agents, receptionists and CRM automation for real estate, law firms, finance and healthcare. Free strategy call.',
     lead: 'AI receptionists, voice agents, chatbots and CRM automation for New York businesses that can’t afford to miss a call or let a lead wait, built by a senior team working in Eastern Time.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for New York businesses</strong>, from Manhattan law firms and brokerages to Brooklyn clinics and Long Island home-service companies. Systems integrate with your CRM and calendar and go live in two to four weeks.',
     tzShort: 'Eastern Time',
@@ -39,7 +39,7 @@ export default {
   },
 
   philadelphia: {
-    description: 'AI automation for Philadelphia businesses: AI receptionists, voice agents, chatbots and CRM automation for healthcare, legal, education and home-service teams across Greater Philadelphia.',
+    description: 'Philadelphia AI automation: AI receptionists, voice agents and CRM automation for healthcare practices, law firms and home-service teams. Free call.',
     lead: 'Voice agents, chatbots and automation for Philadelphia’s healthcare, legal, education and home-service businesses, built to handle volume without adding headcount.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and automations for Philadelphia businesses</strong>, from Center City practices to Main Line and South Jersey service companies. Every system integrates with your existing tools and includes a supervised pilot before full launch.',
     tzShort: 'Eastern Time',
@@ -67,7 +67,7 @@ export default {
   },
 
   charlotte: {
-    description: 'AI automation agency serving Charlotte, NC: AI voice agents, chatbots, AI SDR systems and CRM automation for financial services, insurance, real estate and home-service businesses.',
+    description: 'Charlotte AI automation agency: AI voice agents, AI SDRs and CRM automation for insurance, financial services, real estate and home services.',
     lead: 'AI SDRs, voice agents, chatbots and CRM automation for Charlotte’s financial services, insurance, real-estate and home-service businesses.',
     answer: 'Voxil AI builds <strong>AI voice agents, AI SDR systems and CRM automation for Charlotte businesses</strong>, helping banking, insurance, real-estate and home-service teams respond to every lead in seconds and keep pipelines moving without extra headcount.',
     tzShort: 'Eastern Time',
@@ -95,7 +95,7 @@ export default {
   },
 
   atlanta: {
-    description: 'AI automation agency serving Atlanta: AI receptionists, voice agents, chatbots, GoHighLevel and workflow automation for home services, real estate, logistics and healthcare businesses.',
+    description: 'AI automation agency in Atlanta: AI receptionists, voice agents and GoHighLevel automation for home services, real estate and healthcare. Free call.',
     lead: 'AI receptionists, voice agents, GoHighLevel automation and workflow systems for Atlanta’s home-service, real-estate, healthcare and logistics businesses.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and GoHighLevel automation for Atlanta businesses</strong> across Metro Atlanta, from Buckhead brokerages to Alpharetta clinics and Gwinnett home-service companies, integrated with your CRM and live in weeks.',
     tzShort: 'Eastern Time',
@@ -123,7 +123,7 @@ export default {
   },
 
   miami: {
-    description: 'Bilingual AI automation for Miami businesses: English and Spanish AI voice agents, WhatsApp chatbots, receptionists and CRM automation for real estate, med spas, hospitality and trade.',
+    description: 'Bilingual AI automation for Miami: English and Spanish AI voice agents and WhatsApp chatbots for real estate, med spas and hospitality. Free call.',
     lead: 'Bilingual English-Spanish voice agents, WhatsApp bots and CRM automation for Miami’s real-estate, med-spa, hospitality and international-trade businesses.',
     answer: 'Voxil AI builds <strong>bilingual AI voice agents, WhatsApp chatbots and CRM automation for Miami businesses</strong>. Agents switch between English and Spanish automatically, answer 24/7 and book directly into your calendar, ideal for South Florida’s international, always-on market.',
     tzShort: 'Eastern Time',
@@ -151,7 +151,8 @@ export default {
   },
 
   nashville: {
-    description: 'AI automation agency serving Nashville: AI receptionists, voice agents, chatbots and CRM automation for healthcare, home services, real estate, hospitality and entertainment businesses.',
+    title: 'Nashville AI Agency & Automation Services | Voxil AI',
+    description: 'Nashville AI agency: AI automation for small businesses, from AI receptionists and booking to CRM automation for clinics and home services. Free call.',
     lead: 'AI receptionists, voice agents and automation for Nashville’s healthcare, home-service, real-estate and hospitality businesses, growing as fast as the city.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and CRM automation for Nashville businesses</strong> in Middle Tennessee, helping practices, service companies and real-estate teams answer every inquiry and book appointments automatically.',
     tzShort: 'Central Time',
@@ -180,7 +181,8 @@ export default {
 
   // ---------------------------------------------------------- US CENTRAL
   chicago: {
-    description: 'AI automation agency serving Chicago: AI voice agents, chatbots, workflow and CRM automation for professional services, healthcare, logistics, real estate and home-service businesses.',
+    title: 'Chicago Business Automation & AI Consulting | Voxil AI',
+    description: 'Chicago business automation and AI consulting: workflow automation, AI voice agents and chatbots for professional services, healthcare and logistics.',
     lead: 'Voice agents, chatbots and workflow automation for Chicago’s professional-services, healthcare, logistics and home-service businesses, built with Illinois’ strict privacy rules in mind.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots, workflow and CRM automation for Chicago businesses</strong>, from Loop law firms and River North agencies to suburban clinics and contractors, designed around Illinois’ biometric and recording-consent laws.',
     tzShort: 'Central Time',
@@ -208,7 +210,8 @@ export default {
   },
 
   dallas: {
-    description: 'AI automation agency serving Dallas-Fort Worth: AI voice agents, AI SDR systems, chatbots, GoHighLevel and CRM automation for real estate, insurance, roofing, HVAC and corporate teams.',
+    title: 'AI Business Automation Dallas | AI Integration | Voxil AI',
+    description: 'AI business automation in Dallas-Fort Worth: AI integration, workflow automation, voice agents and AI SDRs for real estate, roofing and B2B teams.',
     lead: 'AI SDRs, voice agents, GoHighLevel and CRM automation for DFW’s real-estate, insurance, roofing, HVAC and corporate sales teams.',
     answer: 'Voxil AI builds <strong>AI voice agents, AI SDR systems and CRM automation for Dallas-Fort Worth businesses</strong>, from Uptown brokerages and Plano sales teams to roofing and HVAC companies across the Metroplex, integrated with your stack and live in weeks.',
     tzShort: 'Central Time',
@@ -236,7 +239,8 @@ export default {
   },
 
   houston: {
-    description: 'AI automation agency serving Houston: AI receptionists, voice agents, chatbots and CRM automation for healthcare, energy, home services, HVAC, roofing and legal businesses.',
+    title: 'Houston AI Voice Agents & AI Automation | Voxil AI',
+    description: 'Houston AI voice agents and automation consulting: bilingual AI receptionists, call handling and CRM automation for clinics, HVAC and law firms. Free call.',
     lead: 'AI receptionists, bilingual voice agents and automation for Houston’s healthcare, energy, home-service and legal businesses.',
     answer: 'Voxil AI builds <strong>AI receptionists, bilingual voice agents, chatbots and CRM automation for Houston businesses</strong>, from Texas Medical Center-area practices to HVAC, roofing and legal teams across Greater Houston, answering every call in English or Spanish, 24/7.',
     tzShort: 'Central Time',
@@ -265,7 +269,7 @@ export default {
   },
 
   'san-antonio': {
-    description: 'Bilingual AI automation for San Antonio businesses: English and Spanish AI receptionists, voice agents, chatbots and CRM automation for healthcare, home services, legal and hospitality.',
+    description: 'Bilingual AI automation for San Antonio: English and Spanish AI receptionists and voice agents for healthcare, home services and law firms.',
     lead: 'Bilingual AI receptionists, voice agents and automation for San Antonio’s healthcare, home-service, legal and hospitality businesses.',
     answer: 'Voxil AI builds <strong>bilingual AI receptionists, voice agents and automation for San Antonio businesses</strong>. Agents answer in English or Spanish, book appointments and follow up automatically, ideal for a city where bilingual service is the norm.',
     tzShort: 'Central Time',
@@ -293,7 +297,7 @@ export default {
   },
 
   austin: {
-    description: 'AI automation agency serving Austin: AI agents, chatbots, n8n and API automation, AI SaaS development and CRM automation for startups, tech companies and fast-growing service businesses.',
+    description: 'Austin AI automation agency: AI agents, chatbots, n8n and API automation for startups, tech companies and fast-growing service businesses. Free call.',
     lead: 'AI agents, SaaS builds, n8n and API automation for Austin startups, plus voice and chat automation for the service businesses keeping up with the city’s growth.',
     answer: 'Voxil AI builds <strong>AI agents, AI SaaS products, n8n workflows and CRM automation for Austin businesses</strong>, from Domain-area startups adding AI features to Round Rock and Cedar Park service companies automating calls and follow-up.',
     tzShort: 'Central Time',
@@ -322,9 +326,9 @@ export default {
 
   // ------------------------------------------------------------- US WEST
   'los-angeles': {
-    title: 'AI Automation Services in Los Angeles | Voxil AI',
+    title: 'AI Agency Los Angeles | AI Automation Services | Voxil AI',
     h1: 'AI automation services in <span class="text-gradient-teal">Los Angeles</span>',
-    description: 'AI automation services in Los Angeles: bilingual AI voice agents, chatbots, WhatsApp and CRM automation for med spas, real estate, entertainment, ecommerce and legal businesses.',
+    description: 'Los Angeles AI agency building AI voice agents, chatbots and automation for med spas, real estate and legal teams. Fixed price, live in 2-4 weeks.',
     lead: 'Bilingual voice agents, chatbots and CRM automation for LA’s med-spa, real-estate, entertainment, ecommerce and legal businesses, California-compliant by design.',
     answer: 'Voxil AI builds <strong>bilingual AI voice agents, chatbots and CRM automation for Los Angeles businesses</strong>, from Beverly Hills med spas and Santa Monica brands to Pasadena law firms, configured for California’s bot-disclosure, recording and privacy laws.',
     tzShort: 'Pacific Time',
@@ -362,9 +366,9 @@ export default {
   },
 
   'san-francisco': {
-    title: 'AI Automation & AI SDR Agency in San Francisco | Voxil AI',
+    title: 'AI Development & Consulting Company San Francisco | Voxil AI',
     h1: 'AI automation, AI SDRs and AI marketing for the <span class="text-gradient-teal">Bay Area</span>',
-    description: 'AI automation for San Francisco Bay Area companies: AI SDR software setups, AI marketing automation, patient communication for clinics, AI agents, RAG chatbots and CRM automation.',
+    description: 'San Francisco AI development and consulting: AI agent development, implementation and AI marketing automation for Bay Area teams. Free scoping call.',
     lead: 'Senior AI engineering for Bay Area startups and scale-ups, agents, RAG, SaaS features and integrations, plus voice, chat and CRM automation for customer-facing teams.',
     answer: 'Voxil AI provides <strong>AI engineering and automation for San Francisco Bay Area companies</strong>: production AI agents, RAG chatbots, AI SaaS features, API integrations and self-hosted automation, delivered by a senior team that ships, at a fraction of Bay Area hiring costs.',
     tzShort: 'Pacific Time',
@@ -402,7 +406,7 @@ export default {
   },
 
   'san-jose': {
-    description: 'AI automation for San Jose and Silicon Valley: AI agents, chatbots, API integration, AI SaaS development and workflow automation for tech companies and local service businesses.',
+    description: 'AI automation agency in San Jose and Silicon Valley: AI agents, chatbots, API integration and AI SaaS development for tech and local businesses.',
     lead: 'AI agents, integrations and workflow automation for Silicon Valley companies, and voice and chat automation for the South Bay businesses that serve them.',
     answer: 'Voxil AI builds <strong>AI agents, chatbots, API integrations and workflow automation for San Jose and Silicon Valley businesses</strong>, engineering-grade systems for tech teams and practical voice and chat automation for South Bay service providers.',
     tzShort: 'Pacific Time',
@@ -430,9 +434,9 @@ export default {
   },
 
   'san-diego': {
-    title: 'AI Consulting Services in San Diego | Voxil AI',
+    title: 'San Diego AI Consulting Services & Strategy | Voxil AI',
     h1: 'AI consulting services in San Diego, <span class="text-gradient-teal">from strategy to automation</span>',
-    description: 'AI consulting services in San Diego: AI receptionists, voice agents, chatbots and CRM automation for healthcare, biotech, real estate, hospitality and home-service businesses.',
+    description: 'San Diego AI consulting firm: AI strategy, readiness assessment and done-for-you AI agents, chatbots and automation. Fixed-price projects. Free call.',
     lead: 'Bilingual AI receptionists, voice agents and automation for San Diego’s healthcare, life-science, real-estate, hospitality and home-service businesses.',
     answer: 'Voxil AI builds <strong>bilingual AI receptionists, voice agents, chatbots and CRM automation for San Diego businesses</strong>, from La Jolla practices to North County contractors, California-compliant and live in weeks.',
     tzShort: 'Pacific Time',
@@ -470,7 +474,7 @@ export default {
   },
 
   seattle: {
-    description: 'AI automation agency serving Seattle: AI agents, chatbots, voice agents, workflow and CRM automation for tech, healthcare, professional services and home-service businesses.',
+    description: 'Seattle AI automation agency: AI agents, chatbots and voice agents for tech, healthcare and home services, deployed on AWS or Azure. Free call.',
     lead: 'AI agents, chatbots and workflow automation for Seattle’s tech, healthcare and professional-services companies, with Washington’s health-data and recording laws built in.',
     answer: 'Voxil AI builds <strong>AI agents, chatbots, voice agents and workflow automation for Seattle businesses</strong>, from South Lake Union tech teams to Bellevue clinics and Eastside contractors, designed around Washington’s privacy and recording-consent rules.',
     tzShort: 'Pacific Time',
@@ -498,7 +502,7 @@ export default {
   },
 
   phoenix: {
-    description: 'AI automation agency serving Phoenix: AI receptionists, voice agents, GoHighLevel and CRM automation for HVAC, solar, roofing, real estate and home-service businesses in the Valley.',
+    description: 'Phoenix AI automation agency: AI receptionists and voice agents for HVAC, solar, roofing and real estate, built for summer call surges. Free call.',
     lead: 'AI receptionists, voice agents and GoHighLevel automation for the Valley’s HVAC, solar, roofing, real-estate and home-service businesses.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, GoHighLevel and CRM automation for Phoenix-area businesses</strong>, helping HVAC, solar, roofing and real-estate teams across the Valley answer every call and book every job, even in peak summer.',
     tzShort: 'Mountain Standard Time',
@@ -526,7 +530,7 @@ export default {
   },
 
   denver: {
-    description: 'AI automation agency serving Denver: AI voice agents, chatbots, workflow and CRM automation for home services, healthcare, real estate, fitness and tech businesses along the Front Range.',
+    description: 'Denver AI automation agency: AI voice agents, chatbots and workflow automation for roofing, home services, healthcare and fitness. Free strategy call.',
     lead: 'Voice agents, chatbots and workflow automation for Denver and Front Range businesses, home services, healthcare, real estate, fitness and tech.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots, workflow and CRM automation for Denver businesses</strong> across the Front Range, from Cherry Creek practices to Boulder startups and Aurora contractors, with Colorado’s emerging AI rules in mind.',
     tzShort: 'Mountain Time',
@@ -558,7 +562,7 @@ export default {
     shortName: 'the UK',
     title: 'AI Automation Agency UK | Voice Agents & Chatbots | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">the United Kingdom</span>',
-    description: 'AI automation for UK businesses: AI voice agents, receptionists, WhatsApp chatbots, GoHighLevel and CRM automation, built for UK GDPR and PECR. Serving London, Manchester, Birmingham and beyond.',
+    description: 'AI automation for UK businesses: AI voice agents, receptionists and WhatsApp chatbots, built for UK GDPR and PECR. London to Manchester. Free call.',
     lead: 'AI receptionists, voice agents, WhatsApp bots and CRM automation for UK businesses, UK GDPR- and PECR-aware, with British voices and working sessions in UK hours.',
     answer: 'Voxil AI builds <strong>AI voice agents, receptionists, WhatsApp chatbots and CRM automation for UK businesses</strong>, in London, Manchester, Birmingham, Leeds, Glasgow and across the country, designed around UK GDPR, the Data Protection Act 2018 and PECR.',
     tzShort: 'UK time (GMT/BST)',
@@ -587,9 +591,9 @@ export default {
 
   'dubai-uae': {
     shortName: 'Dubai & the UAE',
-    title: 'AI Automation Agency Dubai & UAE | Arabic AI | Voxil AI',
+    title: 'Conversational AI & AI Voice Agents Dubai, UAE | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Dubai & the UAE</span>',
-    description: 'AI automation for Dubai and UAE businesses: Arabic and English AI voice agents, WhatsApp chatbots, CRM and GoHighLevel automation for real estate, clinics, hospitality and retail.',
+    description: 'Conversational AI in Dubai and the UAE: Arabic and English AI voice agents and WhatsApp chatbots for real estate, clinics and hospitality. Free call.',
     lead: 'Arabic and English voice agents, WhatsApp chatbots and CRM automation for real-estate, healthcare, hospitality and retail businesses in Dubai, Abu Dhabi and across the Emirates.',
     answer: 'Voxil AI builds <strong>Arabic-English AI voice agents, WhatsApp chatbots and CRM automation for businesses in Dubai and the UAE</strong>. Systems handle inquiries around the clock on WhatsApp and phone, qualify leads and book viewings or appointments, built with the UAE PDPL in mind.',
     tzShort: 'Gulf Standard Time',
@@ -620,7 +624,7 @@ export default {
     shortName: 'Canada',
     title: 'AI Automation Agency Canada | AI Voice Agents | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Canada</span>',
-    description: 'AI automation for Canadian businesses: English and French AI voice agents, receptionists, chatbots and CRM automation, built for PIPEDA, Quebec Law 25 and CASL. Toronto, Vancouver, Montreal and more.',
+    description: 'AI automation for Canadian businesses: English and French AI voice agents, receptionists and chatbots, built for PIPEDA, Law 25 and CASL. Free call.',
     lead: 'English and French voice agents, AI receptionists, chatbots and CRM automation for Canadian businesses, designed around PIPEDA, Quebec’s Law 25 and CASL.',
     answer: 'Voxil AI builds <strong>AI voice agents, receptionists, chatbots and CRM automation for Canadian businesses</strong> in Toronto, Vancouver, Montreal, Calgary, Ottawa and beyond, bilingual English-French where needed and compliant with Canada’s privacy and anti-spam laws.',
     tzShort: 'ET · CT · MT · PT',
@@ -649,9 +653,9 @@ export default {
 
   australia: {
     shortName: 'Australia',
-    title: 'AI Automation Agency Australia | AI Receptionists | Voxil AI',
+    title: 'AI Voice Agents Australia | AI Receptionists | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Australia</span>',
-    description: 'AI automation for Australian businesses: AI receptionists, voice agents, chatbots, GoHighLevel and CRM automation built for the Privacy Act, Spam Act and Do Not Call Register. Sydney, Melbourne, Brisbane, Perth.',
+    description: 'AI voice agents and AI receptionists for Australian businesses, with natural Australian voices. Privacy Act and Spam Act ready. Sydney to Perth. Free call.',
     lead: 'AI receptionists, voice agents, chatbots and GoHighLevel automation for Australian tradies, clinics, real-estate agencies and service businesses, with Australian voices and compliance built in.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and CRM automation for Australian businesses</strong> in Sydney, Melbourne, Brisbane, Perth, Adelaide and regional centers, with Australian-accented voices and systems designed around the Privacy Act, Spam Act and Do Not Call Register.',
     tzShort: 'AEST · ACST · AWST',
@@ -682,7 +686,7 @@ export default {
     shortName: 'Pakistan',
     title: 'AI Automation Agency Pakistan | Urdu AI Chatbots | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Pakistan</span>',
-    description: 'AI automation for Pakistani businesses: Urdu and English WhatsApp chatbots, AI voice agents, CRM and workflow automation for real estate, education, healthcare, ecommerce and exporters in Karachi, Lahore and Islamabad.',
+    description: 'AI automation in Pakistan: Urdu and English WhatsApp chatbots, AI voice agents and CRM automation for real estate, education and healthcare. Free call.',
     lead: 'Urdu-English WhatsApp chatbots, voice agents and CRM automation for Pakistan’s real-estate, education, healthcare, ecommerce and export businesses.',
     answer: 'Voxil AI builds <strong>Urdu and English WhatsApp chatbots, AI voice agents and CRM automation for businesses in Pakistan</strong>, in Karachi, Lahore, Islamabad and beyond, so inquiries on WhatsApp and phone are answered instantly and every lead is tracked.',
     tzShort: 'Pakistan Standard Time',
@@ -710,7 +714,7 @@ export default {
   },
   // ------------------------------------------------------------ UK & EUROPE
   london: {
-    description: 'AI automation agency serving London: AI receptionists, voice agents, WhatsApp chatbots, GoHighLevel and CRM automation for professional services, property, clinics and hospitality. UK GDPR and PECR aware.',
+    description: 'AI automation agency in London: AI receptionists, voice agents and WhatsApp chatbots for law firms, lettings, clinics and hospitality. UK GDPR ready.',
     lead: 'AI receptionists, voice agents, WhatsApp bots and CRM automation for London firms that can’t afford to miss a call, a viewing request or a new client inquiry.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, WhatsApp chatbots and CRM automation for London businesses</strong>, from City law firms and West End clinics to estate and lettings agents across Greater London, designed around UK GDPR and PECR and live in two to four weeks.',
     tzShort: 'UK time (GMT/BST)',
@@ -738,7 +742,8 @@ export default {
   },
 
   manchester: {
-    description: 'AI automation agency serving Manchester and the North West: AI receptionists, voice agents, chatbots, GoHighLevel and workflow automation for home services, professional services, clinics and digital businesses.',
+    title: 'AI Automation Agency Manchester | AI Agents | Voxil AI',
+    description: 'Manchester AI agency: AI receptionists, voice agents, WhatsApp bots and business automation for trades, clinics and professional firms. UK GDPR ready.',
     lead: 'AI receptionists, voice agents and workflow automation for Manchester businesses, from home-service trades to professional firms and fast-growing digital companies.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and workflow automation for Manchester and North West businesses</strong>, answering every call and inquiry instantly, booking jobs and appointments, and keeping your CRM up to date, all designed around UK GDPR and PECR.',
     tzShort: 'UK time (GMT/BST)',
@@ -769,7 +774,7 @@ export default {
     shortName: 'Europe',
     title: 'AI Automation Agency Europe | GDPR-Ready AI | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Europe</span>',
-    description: 'GDPR-ready AI automation for European businesses: multilingual AI voice agents, receptionists, WhatsApp chatbots and CRM automation, designed around GDPR and the EU AI Act. Serving Ireland, the Netherlands, Germany and across the EU.',
+    description: 'GDPR-ready AI automation for European businesses: multilingual AI voice agents, receptionists and WhatsApp chatbots, designed for the EU AI Act.',
     lead: 'Multilingual AI voice agents, receptionists, WhatsApp chatbots and CRM automation for European businesses, designed around GDPR and the EU AI Act from day one.',
     answer: 'Voxil AI builds <strong>GDPR-ready AI voice agents, chatbots and automation for businesses across the European Union</strong>. Agents speak your customers’ languages, disclose that they are AI as the EU AI Act requires, keep data handling documented, and connect to your CRM and calendar.',
     tzShort: 'CET · GMT · EET',
@@ -798,9 +803,9 @@ export default {
 
   ireland: {
     shortName: 'Ireland',
-    title: 'AI Automation Agency Ireland | AI Voice Agents | Voxil AI',
+    title: 'Conversational AI Consultancy Ireland | AI Agents | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Ireland</span>',
-    description: 'AI automation for Irish businesses: AI receptionists, voice agents, WhatsApp chatbots, GoHighLevel and CRM automation, GDPR-ready and serving Dublin, Cork, Galway and Limerick.',
+    description: 'Conversational AI consultants in Ireland: custom AI agents, voice agents and WhatsApp chatbots integrated with your systems, GDPR-ready. Dublin to Mayo.',
     lead: 'AI receptionists, voice agents, WhatsApp chatbots and CRM automation for Irish businesses, GDPR-ready and built for customers who expect a fast, friendly reply.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and CRM automation for businesses in Ireland</strong>, from Dublin clinics and law firms to trades and property businesses in Cork, Galway and Limerick, with GDPR-ready data handling and natural English voices.',
     tzShort: 'Irish time (GMT/IST)',
@@ -829,9 +834,9 @@ export default {
 
   netherlands: {
     shortName: 'the Netherlands',
-    title: 'AI Automation Agency Netherlands | Dutch AI | Voxil AI',
+    title: 'Conversational AI Consultants Netherlands | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">the Netherlands</span>',
-    description: 'AI automation for Dutch businesses: Dutch and English AI voice agents, WhatsApp chatbots, receptionists and CRM automation, GDPR-ready. Serving Amsterdam, Rotterdam, The Hague, Utrecht and Eindhoven.',
+    description: 'Conversational AI consultants for Dutch businesses: Dutch and English voice agents and WhatsApp chatbots, GDPR-ready. Amsterdam to Eindhoven. Free call.',
     lead: 'Dutch and English voice agents, WhatsApp chatbots and CRM automation for businesses in the Netherlands, GDPR-ready and built for WhatsApp-first customers.',
     answer: 'Voxil AI builds <strong>Dutch and English AI voice agents, WhatsApp chatbots and CRM automation for businesses in the Netherlands</strong>. Agents reply instantly on WhatsApp and phone, qualify inquiries, book appointments and connect to your CRM, with GDPR-ready data handling.',
     tzShort: 'Central European Time',
@@ -860,9 +865,9 @@ export default {
 
   germany: {
     shortName: 'Germany',
-    title: 'AI Automation Agency Germany | German AI Agents | Voxil AI',
+    title: 'Conversational AI Consultancy Germany | AI Agents | Voxil AI',
     h1: 'AI automation agency serving <span class="text-gradient-teal">Germany</span>',
-    description: 'GDPR-ready AI automation for German businesses: German and English AI voice agents, chatbots, receptionists and CRM automation built for strict data protection. Serving Berlin, Munich, Hamburg, Frankfurt and Cologne.',
+    description: 'Conversational AI consultants for German businesses: German-speaking voice agents, chatbots and AI agents, GDPR-ready with EU hosting options. Free call.',
     lead: 'German and English AI voice agents, chatbots and CRM automation for businesses in Germany, built for strict data protection and clear consent from the start.',
     answer: 'Voxil AI builds <strong>German and English AI voice agents, chatbots and CRM automation for businesses in Germany</strong>. Systems follow GDPR and German consent rules for calls and recording, disclose that they are AI, and connect to your CRM and calendar.',
     tzShort: 'Central European Time',
@@ -891,7 +896,7 @@ export default {
 
   // ------------------------------------------------ CANADA & AUSTRALIA CITIES
   toronto: {
-    description: 'AI automation agency serving Toronto and the GTA: AI receptionists, voice agents, chatbots, GoHighLevel and CRM automation for real estate, clinics, legal, finance and home services. PIPEDA and CASL aware.',
+    description: 'AI automation agency in Toronto and the GTA: AI receptionists, voice agents and CRM automation for real estate, clinics and law firms. CASL aware.',
     lead: 'AI receptionists, voice agents and CRM automation for Toronto and GTA businesses, from Bay Street firms to clinics, brokerages and home-service companies.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and CRM automation for Toronto and GTA businesses</strong>, answering every call and inquiry instantly, booking appointments and following up automatically, designed around PIPEDA and CASL.',
     tzShort: 'Eastern Time',
@@ -919,7 +924,7 @@ export default {
   },
 
   vancouver: {
-    description: 'AI automation agency serving Vancouver and the Lower Mainland: multilingual AI receptionists, voice agents, chatbots and CRM automation for real estate, clinics, tech and hospitality. BC PIPA and CASL aware.',
+    description: 'Vancouver AI automation agency: multilingual AI receptionists and voice agents for real estate, clinics and hospitality. BC PIPA and CASL aware.',
     lead: 'Multilingual AI receptionists, voice agents and CRM automation for Vancouver businesses, from real-estate teams and clinics to tech and hospitality.',
     answer: 'Voxil AI builds <strong>multilingual AI receptionists, voice agents, chatbots and CRM automation for Vancouver and Lower Mainland businesses</strong>, answering in English, Mandarin, Cantonese, Punjabi and more, and designed around BC privacy law and CASL.',
     tzShort: 'Pacific Time',
@@ -947,7 +952,7 @@ export default {
   },
 
   sydney: {
-    description: 'AI automation agency serving Sydney: AI receptionists, voice agents, chatbots, GoHighLevel and CRM automation for trades, clinics, real estate and professional services. Built for the Privacy Act, Spam Act and DNCR.',
+    description: 'AI automation agency in Sydney: AI receptionists and voice agents for tradies, clinics and real estate, with Australian voices. Privacy Act ready.',
     lead: 'AI receptionists, voice agents and GoHighLevel automation for Sydney tradies, clinics, real-estate agencies and professional firms, with Australian voices and compliance built in.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and CRM automation for Sydney businesses</strong>, from Parramatta trades to North Shore clinics and CBD firms, with Australian-accented voices and systems designed around the Privacy Act, Spam Act and Do Not Call Register.',
     tzShort: 'AEST/AEDT',
@@ -975,7 +980,7 @@ export default {
   },
 
   melbourne: {
-    description: 'AI automation agency serving Melbourne: AI receptionists, voice agents, chatbots, GoHighLevel and CRM automation for trades, healthcare, hospitality, education and real estate. Built for Australian privacy and spam rules.',
+    description: 'Melbourne AI automation agency: AI receptionists, voice agents and booking automation for clinics, trades, salons and fitness studios. Free call.',
     lead: 'AI receptionists, voice agents and CRM automation for Melbourne businesses, from trades and clinics to hospitality, education and real estate.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents, chatbots and CRM automation for Melbourne businesses</strong>, answering every call and inquiry instantly, booking appointments and jobs, and following up automatically, with Australian voices and compliance built in.',
     tzShort: 'AEST/AEDT',

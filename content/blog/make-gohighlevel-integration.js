@@ -4,7 +4,7 @@ export default {
   slug: 'make-gohighlevel-integration',
   title: 'How to Connect Make.com and GoHighLevel: Webhooks, API and Real Examples',
   metaTitle: 'Make.com + GoHighLevel Integration Guide | Voxil AI',
-  description: 'How to integrate Make.com with GoHighLevel: the HighLevel app, outbound and inbound webhooks, API authentication, five practical scenarios, error handling and when to use n8n instead.',
+  description: 'Connect Make.com and GoHighLevel: the HighLevel app, inbound and outbound webhooks, API auth, five real scenarios and error handling that works.',
   category: 'Chatbots & Automation',
   tags: ['GoHighLevel'],
   author: 'ahmad-ali',

@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-real-estate',
   title: 'GoHighLevel for Real Estate Agents: The Complete Automation Guide (2026)',
   metaTitle: 'GoHighLevel for Real Estate Agents (2026 Guide) | Voxil AI',
-  description: 'How to set up GoHighLevel for real estate: buyer and seller pipelines, instant portal lead response, AI ISA calls, showing booking, long-term nurture, listing alerts and Follow Up Boss integration.',
+  description: 'GoHighLevel for real estate agents: buyer and seller pipelines, instant portal lead response, AI ISA calls, showing booking and long-term nurture.',
   category: 'Industry Guides',
   author: 'ahmad-ali',
   date: '2026-10-06',

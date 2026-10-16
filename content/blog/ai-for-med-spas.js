@@ -4,7 +4,7 @@ export default {
   slug: 'ai-for-med-spas',
   title: 'AI for Med Spas: Booking Automation, Instagram DMs and Client Retention',
   metaTitle: 'AI for Med Spas: Booking, DMs & Retention | Voxil AI',
-  description: 'How med spas and aesthetics clinics use AI: instant Instagram and website replies, consultation booking with deposits, reminders, treatment-interval rebooking, reviews and privacy considerations.',
+  description: 'How med spas use AI: instant Instagram and website replies, consultation booking with deposits, reminders and treatment-interval rebooking.',
   category: 'Industry Guides',
   tags: ['Chatbots & Automation'],
   author: 'abdul-moeez',

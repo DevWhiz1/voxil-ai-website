@@ -4,7 +4,7 @@ export default {
   slug: 'database-reactivation-campaign-guide',
   title: 'Database Reactivation: How to Turn Old Leads into Booked Appointments',
   metaTitle: 'Database Reactivation Campaign Guide (2026) | Voxil AI',
-  description: 'How to run a database reactivation campaign: cleaning and segmenting your CRM, checking consent, writing offers that get replies, using AI to handle conversations and measuring results.',
+  description: 'Turn old leads into booked appointments: clean and segment your CRM, check consent, write offers that get replies and let AI handle the conversations.',
   category: 'Lead Generation',
   tags: ['GoHighLevel'],
   author: 'abdul-moeez',

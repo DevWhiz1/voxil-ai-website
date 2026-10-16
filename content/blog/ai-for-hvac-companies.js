@@ -4,7 +4,7 @@ export default {
   slug: 'ai-for-hvac-companies',
   title: 'AI for HVAC Companies: 7 Automations That Win More Calls and Maintenance Plans',
   metaTitle: 'AI for HVAC Companies: 7 Automations That Pay | Voxil AI',
-  description: 'How HVAC companies use AI and automation: 24/7 emergency answering, triage, booking, estimate follow-up, maintenance plan sales, seasonal campaigns and integration with ServiceTitan or Housecall Pro.',
+  description: '7 AI automations for HVAC companies: 24/7 emergency answering, triage, booking, estimate follow-up and maintenance plan sales. With ServiceTitan tips.',
   category: 'Industry Guides',
   author: 'abdul-moeez',
   date: '2026-10-09',

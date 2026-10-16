@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-dental-medical-clinic',
   title: 'GoHighLevel for Dental and Medical Clinics: Patient Booking Automation',
   metaTitle: 'GoHighLevel for Dental & Medical Clinics | Voxil AI',
-  description: 'How dental and medical clinics use GoHighLevel for new-patient booking, reminders, no-show recovery, recall campaigns, reviews and AI answering, plus HIPAA and privacy considerations.',
+  description: 'GoHighLevel for dental and medical clinics: new-patient booking, reminders, no-show recovery, recalls, reviews and AI answering, with HIPAA notes.',
   category: 'Industry Guides',
   author: 'ahmad-ali',
   date: '2026-10-06',

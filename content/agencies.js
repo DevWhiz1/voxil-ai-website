@@ -7,7 +7,7 @@ const link = (href, text) => `<a href="${href}" class="font-semibold text-primar
 export const hub = {
   title: 'White Label Fulfillment for Agencies | GHL & AI | Voxil AI',
   description:
-    'Voxil AI is a white label fulfillment partner for marketing agencies: GoHighLevel builds, AI voice agents, chatbots, funnels, websites and automations delivered under your brand, inside your accounts. Month to month.',
+    'White label fulfillment for marketing agencies: GoHighLevel builds, AI voice agents, chatbots and automations delivered under your brand. Month to month.',
   h1: 'Your agency’s <span class="text-gradient-teal">white label fulfillment partner</span>',
   lead: 'You sold the work. We build it under your brand, inside your accounts, and your client never hears our name. GoHighLevel, AI voice and chat agents, funnels, websites and automations.',
   answer:
@@ -98,7 +98,7 @@ export const hub = {
 export const models = {
   'white-label-fulfillment': {
     title: 'Done-for-You White Label GHL & AI Fulfillment | Voxil AI',
-    description: 'Done-for-you white label fulfillment for agencies: we build GoHighLevel systems, funnels, AI agents and automations under your brand, inside your client’s account, with a Loom handover you present as your own.',
+    description: 'White label fulfillment for agencies: we build GoHighLevel systems, funnels, AI agents and automations under your brand, with a handover you present.',
     h1: 'Done-for-you <span class="text-gradient-teal">white label fulfillment</span>',
     lead: 'You sell it, we build it. GoHighLevel systems, funnels, automations, websites and AI agents delivered under your brand, inside your client’s account.',
     answer: '<strong>Done-for-you white label fulfillment</strong> means your agency sells the project and Voxil AI builds it inside your client’s account under your brand. We deliver the complete system, test it, and hand over a Loom walkthrough and notes so your team presents it as its own work.',
@@ -143,7 +143,7 @@ export const models = {
 
   'dedicated-ghl-va': {
     title: 'Dedicated GHL Virtual Assistant for Agencies | Voxil AI',
-    description: 'Hire a dedicated, GoHighLevel-trained virtual assistant for your agency: daily GHL builds, edits, imports and reporting inside your accounts, reviewed by senior engineers. Month-to-month plans.',
+    description: 'Hire a dedicated GoHighLevel VA for your agency: daily GHL builds, edits, imports and reporting in your accounts, reviewed by senior engineers. Monthly.',
     h1: 'A dedicated <span class="text-gradient-sky">GoHighLevel assistant</span> for your agency',
     lead: 'A GHL-trained assistant working only your accounts, in your tools and on your schedule, with senior engineers reviewing anything complex.',
     answer: 'A <strong>dedicated GoHighLevel virtual assistant</strong> is a trained team member who works exclusively on your agency’s GHL accounts: building funnels and workflows, editing campaigns, importing contacts and preparing reports. With Voxil AI, complex work is reviewed by a senior engineer before it goes live.',
@@ -181,7 +181,7 @@ export const models = {
 
   'white-label-support-desk': {
     title: 'GoHighLevel White Label Support Desk | Voxil AI',
-    description: 'GoHighLevel white label support for agencies: we handle your clients’ GoHighLevel, funnel, calendar and automation tickets in your name, fix root causes and report back in your channel.',
+    description: 'GoHighLevel white label support for agencies: we resolve your clients’ GHL, funnel, calendar and automation tickets in your name and report back to you.',
     h1: 'GoHighLevel white label support <span class="text-gradient-warm">for your clients</span>',
     lead: 'We take the tickets your clients raise about their CRM, funnels, calendars and automations, so your team stops firefighting and gets back to billable work.',
     answer: 'A <strong>white label support desk</strong> handles your clients’ technical support requests under your agency’s name. Voxil AI diagnoses and fixes GoHighLevel, funnel, calendar, phone and automation issues in your accounts and reports back through your channels, so clients only ever see your agency.',
@@ -228,7 +228,7 @@ export const models = {
 
   'per-project-overflow': {
     title: 'Overflow Fulfillment for Agencies | White Label | Voxil AI',
-    description: 'Overflow fulfillment for agencies: one white label build, one fixed price, no retainer. GoHighLevel, WordPress, Shopify, CRM migrations and AI agents delivered under your brand.',
+    description: 'Overflow fulfillment for agencies: one white label build, one fixed price, no retainer. GoHighLevel, websites, CRM migrations and AI agents.',
     h1: 'Per-project <span class="text-gradient-teal">overflow fulfillment</span>',
     lead: 'One build, one fixed price, no retainer. For the month you sold more than you can staff, or a project outside your team’s usual stack.',
     answer: '<strong>Per-project overflow fulfillment</strong> lets an agency hand off a single project to a white label partner at a fixed price, with no ongoing commitment. Voxil AI builds it in your accounts under your brand, which makes it the lowest-risk way to test a fulfillment partner on real work.',
@@ -265,8 +265,8 @@ export const models = {
   },
 
   'white-label-ai-agents': {
-    title: 'White Label AI Voice Agents for Agencies | Voxil AI',
-    description: 'Resell custom AI voice agents and chatbots under your agency’s brand. Voxil AI builds white label Vapi and Retell AI voice agents, WhatsApp bots and chatbots connected to your clients’ GoHighLevel accounts.',
+    title: 'White Label AI Voice Agents You Can Resell | Voxil AI',
+    description: 'Resell custom AI voice agents under your brand. We build white label voice agents on Vapi and Retell AI, connected to your clients’ GHL. You set the price.',
     h1: 'White label <span class="text-gradient-teal">AI voice agents & chatbots</span> for agencies',
     lead: 'Add AI receptionists, calling bots and chatbots to your offer without building a team. We build them custom, under your brand, connected to your clients’ GoHighLevel accounts.',
     answer: '<strong>White label AI agents</strong> are AI voice agents and chatbots built by a partner and sold by your agency as its own. Voxil AI builds custom agents on Vapi, Retell AI and leading language models, connects them to your clients’ GoHighLevel or CRM, and supports them behind the scenes under your brand.',

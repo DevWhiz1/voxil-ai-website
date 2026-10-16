@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-fitness-studio',
   title: 'GoHighLevel for Fitness Studios: Member Acquisition and Retention Automation',
   metaTitle: 'GoHighLevel for Gyms & Fitness Studios | Voxil AI',
-  description: 'How gyms and fitness studios use GoHighLevel: trial funnels, instant ad-lead follow-up, AI booking, class reminders, no-show recovery, onboarding, retention and referral automation.',
+  description: 'GoHighLevel for gyms and fitness studios: trial funnels, instant ad-lead follow-up, class reminders, no-show recovery and member retention automation.',
   category: 'Industry Guides',
   author: 'ahmad-ali',
   date: '2026-10-06',

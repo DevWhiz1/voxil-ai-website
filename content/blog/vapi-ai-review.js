@@ -4,7 +4,7 @@ export default {
   slug: 'vapi-ai-review',
   title: 'Vapi AI Review (2026): Setup, Pricing, Strengths and Honest Limitations',
   metaTitle: 'Vapi AI Review 2026: Setup, Pricing & Limits | Voxil AI',
-  description: 'An honest Vapi AI review from a team that builds on it: how it works, setup steps, pricing model, voice quality and latency, GoHighLevel integration, use cases and limitations.',
+  description: 'An honest Vapi AI review from a team that builds on it: setup, pricing model, voice quality, latency, GoHighLevel integration and real limitations.',
   category: 'AI Calling Bots',
   author: 'abdul-moeez',
   date: '2026-10-06',

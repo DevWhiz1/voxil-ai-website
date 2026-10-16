@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-ai-guide',
   title: 'GoHighLevel AI Guide (2026): Conversation AI, Voice AI & AI Workflows Explained',
   metaTitle: 'GoHighLevel AI Guide 2026: Conversation AI | Voxil AI',
-  description: 'A practical guide to GoHighLevel AI: Conversation AI, Voice AI, AI workflow steps and when to extend GHL with external voice agents like Vapi or Retell, plus setup tips that actually get bookings.',
+  description: 'GoHighLevel AI explained: Conversation AI, Voice AI and AI workflows, when to add Vapi or Retell voice agents, and setup tips that actually get bookings.',
   category: 'GoHighLevel',
   tags: ['Chatbots & Automation'],
   author: 'ahmad-ali',

@@ -4,7 +4,7 @@ export default {
   slug: 'ai-automation-small-business-guide',
   title: 'AI Automation for Small Business: Where to Start, What to Automate and What to Avoid',
   metaTitle: 'AI Automation for Small Business: Where to Start | Voxil AI',
-  description: 'A practical starter guide to AI automation for small businesses: the highest-return first projects, a 90-day roadmap, tools, budgets, common mistakes and how to measure results.',
+  description: 'Where should a small business start with AI automation? The highest-return first projects, a 90-day roadmap, budgets and the mistakes to avoid.',
   category: 'Guides',
   tags: ['Chatbots & Automation'],
   author: 'abdul-moeez',

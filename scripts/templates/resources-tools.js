@@ -83,7 +83,7 @@ export const renderVoiceCostCalculator = () => {
   return shell({
     slug,
     title: 'AI Voice Agent Cost Calculator (Free) | Voxil AI',
-    description: 'Free AI voice agent cost calculator: estimate monthly cost, cost per call and per minute from your call volume and provider rates, and compare it with a human receptionist.',
+    description: 'Free AI voice agent cost calculator: monthly cost, cost per call and per minute from your volume and rates, compared with a human receptionist.',
     h1: 'AI Voice Agent <span class="text-gradient-teal">Cost Calculator</span>',
     lead: 'Estimate what an AI receptionist or calling agent costs to run each month, from your call volume and per-minute rates, and compare it with staffing the same hours.',
     body,
@@ -161,7 +161,7 @@ export const renderPromptGenerator = () => {
   return shell({
     slug,
     title: 'Free AI Agent Prompt Generator (Voice & Chat) | Voxil AI',
-    description: 'Free AI agent prompt generator: enter your business details and get a structured system prompt for a voice agent or chatbot, ready for Vapi, Retell AI or GoHighLevel.',
+    description: 'Free AI agent prompt generator: enter your business details and get a structured system prompt for a voice agent or chatbot. Works with Vapi and GHL.',
     h1: 'AI Agent <span class="text-gradient-teal">Prompt Generator</span>',
     lead: 'Answer a few questions about your business and get a structured system prompt for an AI receptionist, voice agent or chatbot. Copy it into Vapi, Retell AI or GoHighLevel.',
     body,
@@ -248,7 +248,7 @@ export const renderSmsCounter = () => {
   return shell({
     slug,
     title: 'SMS Character Counter & Segment Calculator | Voxil AI',
-    description: 'Free SMS character counter: see characters, GSM-7 or UCS-2 encoding, segments and campaign cost instantly, and find the characters that make your texts cost more.',
+    description: 'Free SMS character counter: see characters, GSM-7 or UCS-2 encoding, segments and campaign cost, and spot the characters that make texts cost more.',
     h1: 'SMS Character <span class="text-gradient-teal">&amp; Segment Counter</span>',
     lead: 'Paste a text message to see its length, encoding and number of billed segments, plus an estimated campaign cost. Spot the hidden characters that double your SMS bill.',
     body,
@@ -330,7 +330,7 @@ export const renderPlatformPicker = () => {
   return shell({
     slug,
     title: 'Voice AI Platform Picker: Vapi, Retell or GHL? | Voxil AI',
-    description: 'Free voice AI platform picker: answer six questions to see whether Vapi, Retell AI, GoHighLevel Voice AI or a custom build fits your AI receptionist or calling agent best.',
+    description: 'Free voice AI platform picker: six questions to see whether Vapi, Retell AI, GoHighLevel Voice AI or a custom build fits your voice agent best.',
     h1: 'Voice AI <span class="text-gradient-teal">Platform Picker</span>',
     lead: 'Vapi, Retell AI, GoHighLevel Voice AI or a custom build? Answer six quick questions and get an honest recommendation, with the reasons behind it.',
     body,
@@ -414,7 +414,7 @@ export const renderSavingsCalculator = () => {
   return shell({
     slug,
     title: 'Automation Time Savings Calculator (Free) | Voxil AI',
-    description: 'Free automation savings calculator: estimate the hours and money your business could save each year by automating follow-up, scheduling, data entry, invoicing and reporting.',
+    description: 'Free automation savings calculator: see how many hours and dollars you could save each year by automating follow-up, scheduling and data entry.',
     h1: 'Automation <span class="text-gradient-teal">Savings Calculator</span>',
     lead: 'List your repetitive tasks and see how many hours and dollars automation could give back each year, and which tasks to automate first.',
     body,
@@ -488,7 +488,7 @@ export const renderChatbotCostCalculator = () => {
   return shell({
     slug,
     title: 'AI Chatbot Cost Calculator: Token Costs | Voxil AI',
-    description: 'Free AI chatbot cost calculator: estimate monthly language model costs from conversations, tokens and per-token prices, including prompt caching and platform fees.',
+    description: 'Free AI chatbot cost calculator: estimate monthly model costs from conversations, tokens and per-token prices, including caching and platform fees.',
     h1: 'AI Chatbot <span class="text-gradient-teal">Cost Calculator</span>',
     lead: 'Estimate what an AI chatbot costs to run each month from your conversation volume, token usage and model prices, and see how caching and smaller models change the bill.',
     body,
@@ -571,7 +571,7 @@ export const renderAutomationPicker = () => {
   return shell({
     slug,
     title: 'Automation Platform Picker: Zapier, Make or n8n? | Voxil AI',
-    description: 'Free automation platform picker: answer six questions to see whether Zapier, Make.com, n8n or GoHighLevel workflows fit your team, workflows, volume and data needs.',
+    description: 'Free automation platform picker: answer six questions to see whether Zapier, Make.com, n8n or GoHighLevel workflows fit your team and workflows.',
     h1: 'Automation <span class="text-gradient-teal">Platform Picker</span>',
     lead: 'Zapier, Make.com, n8n or GoHighLevel workflows? Answer six quick questions about your team and workflows and get an honest recommendation.',
     body,
@@ -651,7 +651,7 @@ export const renderSpeedScorecard = () => {
   return shell({
     slug,
     title: 'Speed-to-Lead Scorecard: Grade Your Response | Voxil AI',
-    description: 'Free speed-to-lead scorecard: grade how fast and how persistently your business responds to new leads, and get prioritized fixes for response time, coverage and follow-up.',
+    description: 'Free speed-to-lead scorecard: grade how fast and persistently you respond to new leads out of 100, with prioritized fixes for each gap.',
     h1: 'Speed-to-Lead <span class="text-gradient-warm">Scorecard</span>',
     lead: 'Five quick questions grade how fast and how persistently you respond to new leads, with a score out of 100 and the specific fixes that would raise it most.',
     body,

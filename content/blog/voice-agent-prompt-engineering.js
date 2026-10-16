@@ -4,7 +4,7 @@ export default {
   slug: 'voice-agent-prompt-engineering',
   title: 'Voice Agent Prompt Engineering: How to Write Prompts for AI Phone Agents',
   metaTitle: 'Voice Agent Prompt Engineering: A Practical Guide | Voxil AI',
-  description: 'How to write system prompts for AI voice agents: structure, tone for speech, conversation flow, tool instructions, guardrails, hand-offs and testing, with a template and common mistakes.',
+  description: 'How to write prompts for AI voice agents: structure, speech-friendly tone, conversation flow, tool instructions, guardrails and hand-offs. With template.',
   category: 'AI Calling Bots',
   author: 'abdul-moeez',
   date: '2026-10-08',

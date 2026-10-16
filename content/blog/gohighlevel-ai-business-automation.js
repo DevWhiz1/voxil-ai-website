@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-ai-business-automation',
   title: 'Complete Business Automation with GoHighLevel + AI: The 2026 Playbook',
   metaTitle: 'Business Automation with GoHighLevel + AI (2026) | Voxil AI',
-  description: 'How to automate a service business end to end with GoHighLevel, AI calling bots, chatbots and Make.com or n8n: capture, respond, qualify, book, deliver, review and reactivate.',
+  description: 'Automate a service business end to end with GoHighLevel, AI calling bots, chatbots and Make.com or n8n: capture, qualify, book, deliver and review.',
   category: 'GoHighLevel',
   tags: ['Chatbots & Automation'],
   author: 'abdul-moeez',

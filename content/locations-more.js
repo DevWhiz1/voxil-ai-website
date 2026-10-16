@@ -10,7 +10,7 @@ const TCPA_SHORT = 'For outbound work, the TCPA applies to US numbers, and the F
 export default {
   // ------------------------------------------------------------- US EAST
   boston: {
-    description: 'AI automation agency serving Boston: AI receptionists, voice agents, chatbots and CRM automation for healthcare, biotech, higher education, legal and home-service businesses.',
+    description: 'Boston AI automation agency: AI receptionists, voice agents and knowledge assistants for healthcare, biotech, legal and home-service teams. Free call.',
     lead: 'AI receptionists, voice agents and workflow automation for Boston’s clinics, life-science companies, universities, law firms and home-service businesses.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Boston businesses</strong>, from Back Bay practices and Cambridge life-science teams to South Shore contractors. Systems connect to your calendar and CRM, follow Massachusetts consent and data-security rules, and go live in weeks.',
     tzShort: 'Eastern Time',
@@ -44,7 +44,7 @@ export default {
   },
 
   'washington-dc': {
-    description: 'AI automation for Washington DC businesses: AI receptionists, voice agents, chatbots and workflow automation for law firms, associations, contractors and healthcare across DC, Maryland and Virginia.',
+    description: 'AI automation in Washington DC: AI receptionists, voice agents and document automation for law firms, associations and contractors. Free call.',
     lead: 'AI voice agents, chatbots and workflow automation for DC-area law firms, associations, government contractors, clinics and service businesses.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents and automation for Washington DC businesses</strong> and organizations across Maryland and Northern Virginia. We design for each jurisdiction’s recording rules and the security expectations common in the region.',
     tzShort: 'Eastern Time',
@@ -78,7 +78,7 @@ export default {
   },
 
   tampa: {
-    description: 'AI automation agency serving Tampa Bay: AI receptionists, voice agents, speed-to-lead and CRM automation for roofing, home services, real estate, insurance and healthcare.',
+    description: 'Tampa Bay AI automation agency: AI receptionists, speed-to-lead and CRM automation for roofing, home services, insurance and real estate. Free call.',
     lead: 'AI answering, speed-to-lead and follow-up automation for Tampa Bay contractors, insurance agencies, real-estate teams and clinics, built for storm-season surges.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Tampa Bay businesses</strong>, from St. Petersburg real-estate teams to Brandon roofers and Clearwater clinics. Agents answer every call, qualify leads and book appointments, designed around Florida’s calling and recording rules.',
     tzShort: 'Eastern Time',
@@ -112,7 +112,7 @@ export default {
   },
 
   orlando: {
-    description: 'AI automation for Orlando businesses: bilingual AI receptionists, voice agents, chatbots and CRM automation for hospitality, vacation rentals, real estate, med spas and home services.',
+    description: 'AI automation in Orlando: bilingual AI receptionists, voice agents and chatbots for hospitality, vacation rentals, med spas and home services.',
     lead: 'Bilingual AI receptionists, chatbots and booking automation for Central Florida’s hospitality, vacation-rental, real-estate, aesthetics and home-service businesses.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Orlando and Central Florida businesses</strong>. Agents answer guests and customers in English, Spanish or Portuguese, book reservations and appointments, and log every conversation in your CRM.',
     tzShort: 'Eastern Time',
@@ -146,7 +146,7 @@ export default {
   },
 
   raleigh: {
-    description: 'AI automation agency serving Raleigh and the Research Triangle: AI voice agents, chatbots and workflow automation for tech, life sciences, healthcare, real estate and home services.',
+    description: 'Raleigh AI automation agency: AI agents, chatbots and workflow automation for Research Triangle tech, life sciences and home services. Free call.',
     lead: 'AI agents and automation for Research Triangle businesses, from Durham life-science teams and Cary tech firms to fast-growing home-service and real-estate companies.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for Raleigh, Durham and Chapel Hill businesses</strong>. We help tech and life-science teams ship internal AI tools, and help service businesses answer every lead as the region grows.',
     tzShort: 'Eastern Time',
@@ -181,7 +181,7 @@ export default {
 
   // ---------------------------------------------------------- US CENTRAL
   minneapolis: {
-    description: 'AI automation for Minneapolis and St. Paul businesses: AI receptionists, voice agents, chatbots and CRM automation for healthcare, medtech, HVAC, home services and professional firms.',
+    description: 'AI automation in Minneapolis and St. Paul: AI receptionists, voice agents and workflow automation for healthcare, HVAC and professional firms.',
     lead: 'AI receptionists, voice agents and automation for Twin Cities clinics, medtech companies, HVAC and home-service businesses and professional firms.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for Minneapolis and St. Paul businesses</strong>. Agents answer every call, triage winter emergencies, book appointments and log everything in your CRM, with data handling designed for Minnesota’s privacy law.',
     tzShort: 'Central Time',
@@ -215,7 +215,8 @@ export default {
   },
 
   detroit: {
-    description: 'AI automation agency serving Metro Detroit: AI receptionists, voice agents and workflow automation for manufacturing suppliers, law firms, healthcare, HVAC and home services.',
+    title: 'AI Automation Company in Metro Detroit | Voxil AI',
+    description: 'Metro Detroit AI automation company: AI receptionists, intake agents and document automation for suppliers, law firms and HVAC companies. Free call.',
     lead: 'AI voice agents, chatbots and workflow automation for Metro Detroit’s manufacturing suppliers, law firms, clinics and home-service companies.',
     answer: 'Voxil AI builds <strong>AI receptionists, voice agents and automation for Detroit-area businesses</strong>, from Troy and Southfield professional firms to Dearborn clinics and suburban HVAC companies. Systems answer every call, automate back-office work and connect to your existing tools.',
     tzShort: 'Eastern Time',
@@ -249,7 +250,7 @@ export default {
   },
 
   'kansas-city': {
-    description: 'AI automation for Kansas City businesses in Missouri and Kansas: AI call center automation, voice agents, chatbots and CRM automation for insurance, healthcare, home services and real estate.',
+    description: 'Kansas City AI automation: AI call center automation, voice agents and CRM workflows for insurance, healthcare, home services and real estate teams.',
     lead: 'AI call center automation, voice agents and CRM workflows for Kansas City insurance and financial firms, clinics, home-service companies and real-estate teams.',
     answer: 'Voxil AI builds <strong>AI voice agents, call center automation and workflow systems for Kansas City businesses</strong> on both sides of the state line. Agents handle routine and overflow calls, qualify leads and book appointments, with every call logged.',
     tzShort: 'Central Time',
@@ -286,7 +287,7 @@ export default {
   'las-vegas': {
     title: 'AI Automation in Las Vegas | AI Voice Agents | Voxil AI',
     h1: 'AI automation in Las Vegas, built for a <span class="text-gradient-teal">24-hour city</span>',
-    description: 'AI automation in Las Vegas: AI receptionists, voice agents and chatbots for hospitality, personal-injury law, med spas, real estate and HVAC, built for 24/7 demand.',
+    description: 'AI automation in Las Vegas: 24/7 AI receptionists, voice agents and chatbots for hospitality, injury law, med spas, real estate and HVAC. Free call.',
     lead: 'AI receptionists, intake agents and booking automation for Las Vegas hospitality, law firms, aesthetics clinics, real-estate teams and HVAC companies, a city that never closes.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Las Vegas businesses</strong>, from Strip-adjacent hospitality operators to Henderson clinics and Summerlin real-estate teams. Agents answer every call and message 24/7, qualify and book, with Nevada’s recording rules built in.',
     tzShort: 'Pacific Time',
@@ -329,7 +330,7 @@ export default {
   },
 
   portland: {
-    description: 'AI automation for Portland, Oregon businesses: AI receptionists, chatbots, voice agents and workflow automation for home services, healthcare, real estate and consumer brands.',
+    description: 'AI automation in Portland, Oregon: AI receptionists, chatbots and workflow automation for home services, healthcare and consumer brands. Free call.',
     lead: 'AI answering, chatbots and workflow automation for Portland-area home-service companies, clinics, real-estate teams and consumer brands.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Portland businesses</strong>, from Beaverton and Hillsboro companies to Lake Oswego clinics and Gresham contractors. Systems are designed around Oregon’s privacy law and integrate with the tools you use.',
     tzShort: 'Pacific Time',
@@ -363,7 +364,7 @@ export default {
   },
 
   'salt-lake-city': {
-    description: 'AI automation agency serving Salt Lake City and Utah: AI voice agents, chatbots and automation for tech, solar, home services, med spas and real estate, with Utah AI disclosure built in.',
+    description: 'Salt Lake City AI automation agency: AI voice agents, AI SDRs and chatbots for Utah tech, solar and home services, with AI disclosure built in.',
     lead: 'AI voice agents, chatbots and automation for Utah’s tech companies, solar installers, home-service businesses, med spas and real-estate teams.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for Salt Lake City and Utah businesses</strong>, from Silicon Slopes startups to Provo home-service companies. Systems include the AI disclosure Utah law expects, and connect to your CRM and calendar.',
     tzShort: 'Mountain Time',
@@ -397,7 +398,7 @@ export default {
   },
 
   sacramento: {
-    description: 'AI automation for Sacramento businesses: AI receptionists, voice agents, chatbots and CRM automation for healthcare, HVAC, solar, real estate and professional services, California-compliant.',
+    description: 'AI automation in Sacramento: AI receptionists, voice agents and speed-to-lead systems for HVAC, solar, healthcare and real estate. Free call.',
     lead: 'AI answering, voice agents and automation for Sacramento-area clinics, HVAC and solar companies, real-estate teams and professional firms.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for Sacramento and the Capital Region</strong>. Agents answer every call, qualify and book, with California’s bot disclosure, recording and privacy requirements built in.',
     tzShort: 'Pacific Time',

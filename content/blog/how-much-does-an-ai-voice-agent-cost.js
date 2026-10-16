@@ -3,8 +3,8 @@ import { callout, link, table } from '../../scripts/lib/content-helpers.js';
 export default {
   slug: 'how-much-does-an-ai-voice-agent-cost',
   title: 'How Much Does an AI Voice Agent Cost? Build Fees, Per-Minute Costs & ROI (2026)',
-  metaTitle: 'How Much Does an AI Voice Agent Cost in 2026? | Voxil AI',
-  description: 'AI voice agent pricing explained: one-time build costs, per-minute usage (platform, LLM, voice, telephony), monthly running costs by call volume, and how to calculate ROI.',
+  metaTitle: 'AI Voice Agent Pricing (2026): Cost Per Minute | Voxil AI',
+  description: 'AI voice agent pricing explained: real per-minute costs (platform, model, voice, telephony), build fees and monthly totals by call volume. Free calculator.',
   category: 'AI Calling Bots',
   date: '2026-02-24',
   updated: '2026-09-26',

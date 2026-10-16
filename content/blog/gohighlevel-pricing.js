@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-pricing',
   title: 'GoHighLevel Pricing 2026: Plans, Hidden Costs and Whether It’s Worth It',
   metaTitle: 'GoHighLevel Pricing 2026: Plans & Hidden Costs | Voxil AI',
-  description: 'GoHighLevel pricing explained: Starter, Unlimited and Agency Pro plans, usage costs for SMS, calls, email and AI, and how to decide whether GHL is worth it for your business or agency.',
+  description: 'GoHighLevel pricing 2026: Starter, Unlimited and Agency Pro plans, usage costs for SMS, calls, email and AI, and whether GHL is worth it for you.',
   category: 'GoHighLevel',
   author: 'ahmad-ali',
   date: '2026-10-06',

@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-insurance-agency',
   title: 'GoHighLevel for Insurance Agencies: Lead, Renewal and Cross-Sell Automation',
   metaTitle: 'GoHighLevel for Insurance Agencies: Automation | Voxil AI',
-  description: 'How insurance agencies use GoHighLevel: instant quote-lead response, AI qualification, renewal reminders, cross-sell and win-back campaigns, referrals and compliance considerations.',
+  description: 'GoHighLevel for insurance agencies: instant quote-lead response, AI qualification, renewal reminders, cross-sell and win-back campaigns.',
   category: 'Industry Guides',
   author: 'ahmad-ali',
   date: '2026-10-06',

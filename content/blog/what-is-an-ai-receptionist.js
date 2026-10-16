@@ -3,8 +3,8 @@ import { callout, cite, link, statGrid, table } from '../../scripts/lib/content-
 export default {
   slug: 'what-is-an-ai-receptionist',
   title: 'What Is an AI Receptionist? How It Works, Costs and When to Use One',
-  metaTitle: 'What Is an AI Receptionist? Complete 2026 Guide | Voxil AI',
-  description: 'What an AI receptionist is, how it works, what it can and can’t do, what it costs, and how to set one up for your business, with examples for clinics, law firms and home services.',
+  metaTitle: 'What Is an AI Receptionist? Is It Worth It? | Voxil AI',
+  description: 'What an AI receptionist does, what it costs, where it works best and when it is not worth it. Plain-English guide with examples for clinics and trades.',
   category: 'AI Calling Bots',
   date: '2026-01-14',
   updated: '2026-09-26',

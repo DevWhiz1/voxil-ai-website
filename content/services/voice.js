@@ -7,7 +7,7 @@ export default {
   'ai-calling-bots': {
     title: 'AI Calling Bots Built on Vapi & Retell AI | Voxil AI',
     description:
-      'Custom AI calling bots for inbound and outbound calls, lead qualification, reminders, reactivation and booking. Built on Vapi & Retell AI, integrated with your CRM.',
+      'Custom AI calling bots for inbound and outbound calls: lead qualification, reminders, reactivation and booking. Built on Vapi and Retell AI. Free call.',
     h1: 'AI calling bots that <span class="text-gradient-warm">pick up, qualify and book</span>',
     lead: 'We build inbound and outbound AI calling bots on Vapi and Retell AI that sound natural, follow your script, update your CRM and hand hot leads to a human in real time.',
     answer:
@@ -82,7 +82,7 @@ export default {
   'ai-voice-agents': {
     title: 'AI Voice Agent Development Services | Voxil AI',
     description:
-      'Custom AI voice agents that answer calls, qualify leads, book appointments and resolve support requests 24/7. Built on Vapi & Retell, integrated with your CRM.',
+      'Custom AI voice agents that answer calls, qualify leads, book appointments and handle support 24/7. Built on Vapi and Retell, synced to your CRM.',
     h1: 'AI voice agents that <span class="text-gradient-warm">sound human</span> and do real work',
     lead: 'Natural-sounding phone agents for inbound support, booking and outbound follow-up, latency-tuned, integrated with your systems, and designed with a human escape hatch at every step.',
     answer:
@@ -142,9 +142,8 @@ export default {
   },
 
   'ai-receptionist': {
-    title: 'AI Receptionist for Small Business | 24/7 | Voxil AI',
-    description:
-      'An AI receptionist that answers every call, books appointments, answers FAQs and routes urgent calls 24/7. Custom-built for your business and integrated with your calendar and CRM.',
+    title: 'AI Automated Receptionist for Small Business | Voxil AI',
+    description: 'An automated AI receptionist that answers every call 24/7, books appointments and routes urgent calls. Custom-built, live in 2-3 weeks. Book a free call.',
     h1: 'An AI receptionist that <span class="text-gradient-warm">never misses a call</span>',
     lead: 'Greets every caller in your business’s name, answers common questions, books appointments and forwards the urgent ones, day, night and weekend, for a fraction of the cost of another hire.',
     answer:
@@ -219,7 +218,7 @@ export default {
   'ai-phone-answering': {
     title: 'AI Phone Answering Service | 24/7 Answering | Voxil AI',
     description:
-      'AI phone answering that picks up every call in one ring, 24/7. Captures leads, answers FAQs, books jobs and texts you summaries. Stop losing customers to voicemail.',
+      'AI phone answering that picks up every call in one ring, 24/7: captures leads, answers FAQs, books jobs and texts you a summary. No more voicemail.',
     h1: 'AI phone answering: <span class="text-gradient-warm">every call, first ring</span>',
     lead: 'Missed calls are missed revenue. Our AI phone answering service picks up instantly, captures the caller’s details and intent, books what can be booked and alerts you to what can’t.',
     answer:
@@ -281,7 +280,7 @@ export default {
   'ai-appointment-booking': {
     title: 'AI Appointment Booking Agent | Voice & Chat | Voxil AI',
     description:
-      'AI appointment booking agents that schedule, reschedule and confirm appointments by phone, SMS, WhatsApp and web chat, synced with your calendar and CRM to cut no-shows.',
+      'AI appointment booking by phone, SMS, WhatsApp and chat. Agents schedule, reschedule and confirm in your calendar and CRM to cut no-shows. Free call.',
     h1: 'AI appointment booking that <span class="text-gradient-warm">fills your calendar</span>',
     lead: 'Let customers book, reschedule and confirm by phone, text, WhatsApp or chat, any hour, while automated reminders cut no-shows and your team stops playing phone tag.',
     answer:
@@ -343,7 +342,7 @@ export default {
   'ai-sdr-system': {
     title: 'AI SDR System | AI Sales Rep That Books Meetings | Voxil AI',
     description:
-      'An AI SDR system that responds to inbound leads in seconds, qualifies them over voice, SMS and email, follows up persistently and books meetings on your closers’ calendars.',
+      'An AI SDR system that replies to inbound leads in seconds, qualifies them by voice, SMS and email, and books meetings for your closers. Free call.',
     h1: 'An AI SDR that <span class="text-gradient-warm">books meetings</span> while you sleep',
     lead: 'Your AI sales development rep responds to every inbound lead in seconds, qualifies against your criteria, follows up for weeks without fatigue, and hands booked meetings to your closers.',
     answer:
@@ -405,7 +404,7 @@ export default {
   'vapi-ai-integration': {
     title: 'Vapi AI Integration & Development Agency | Voxil AI',
     description:
-      'Vapi AI developers who build production voice assistants: custom tools, function calling, squads, CRM and calendar integrations, telephony and monitoring. Fixed-price builds.',
+      'Vapi AI developers building production voice assistants: custom tools, squads, CRM and calendar integrations, telephony and monitoring. Fixed price.',
     h1: 'Vapi AI integration by <span class="text-gradient-warm">production voice engineers</span>',
     lead: 'We design, build and harden Vapi voice assistants, custom tool calls, multi-assistant squads, telephony, CRM and calendar integrations, so your demo becomes a system you can trust with real customers.',
     answer:
@@ -467,7 +466,7 @@ export default {
   'retell-ai-setup': {
     title: 'Retell AI Setup & Integration Experts | Voxil AI',
     description:
-      'Retell AI setup by specialists: agent design, conversation flows, knowledge bases, custom functions, phone numbers and CRM integrations. Launch reliable Retell voice agents fast.',
+      'Retell AI setup by specialists: agent design, conversation flows, knowledge bases, custom functions and CRM integrations. Launch voice agents fast.',
     h1: 'Retell AI setup that’s <span class="text-gradient-warm">ready for real callers</span>',
     lead: 'We configure Retell AI agents end-to-end, conversation flows, knowledge bases, custom functions, phone numbers and CRM integrations, and test them properly before your customers ever hear them.',
     answer:
@@ -529,7 +528,7 @@ export default {
   'ai-customer-support': {
     title: 'AI Customer Support Automation | Voice & Chat | Voxil AI',
     description:
-      'AI customer support agents that resolve routine tickets over chat, email and phone, integrate with Zendesk, Intercom and Gorgias, and escalate to humans with full context.',
+      'AI customer support agents resolve routine tickets over chat, email and phone, integrate with Zendesk or Intercom, and escalate to humans with context.',
     h1: 'AI customer support that <span class="text-gradient-warm">resolves, not deflects</span>',
     lead: 'AI agents that actually resolve routine requests, order status, bookings, account questions, how-tos, across chat, email and phone, and escalate the rest to your team with full context.',
     answer:

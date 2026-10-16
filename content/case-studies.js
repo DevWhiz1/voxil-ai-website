@@ -35,7 +35,8 @@
 export default [
   {
     slug: 'healthcare-patient-intake',
-    seoTitle: 'Clinic Patient Intake Automation | Case Study | Voxil AI',
+    seoTitle: 'AI Patient Intake for Clinics: Case Study | Voxil AI',
+    metaDescription: 'How a multi-location clinic used AI patient intake to book after-hours appointments without a night desk. See the setup, the tools and what changed.',
     title: 'Patient intake automation for a multi-location clinic',
     client: 'A multi-location clinic group',
     industry: 'medical-clinics',
@@ -67,6 +68,7 @@ export default [
   },
   {
     slug: 'ecommerce-support-chatbot',
+    metaDescription: 'How a DTC ecommerce brand used an AI support chatbot connected to order data to resolve shipping and returns questions automatically. See the setup.',
     seoTitle: 'DTC Ecommerce Support Chatbot | Case Study | Voxil AI',
     title: 'Support deflection chatbot for a DTC ecommerce brand',
     client: 'A growing direct-to-consumer brand',
@@ -98,6 +100,7 @@ export default [
   },
   {
     slug: 'finance-lead-qualification',
+    metaDescription: 'How a lending team used AI lead qualification to respond to applicants instantly and focus sales time on the ones ready to talk. See how it worked.',
     seoTitle: 'Lending Lead Qualification | Case Study | Voxil AI',
     title: 'Automated lead qualification for a lending team',
     client: 'A lending sales team',

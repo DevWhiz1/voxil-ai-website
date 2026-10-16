@@ -4,7 +4,7 @@ export default {
   slug: 'speed-to-lead-statistics',
   title: 'Speed-to-Lead Statistics: Why the First 5 Minutes Decide the Deal',
   metaTitle: 'Speed-to-Lead Statistics 2026 | Voxil AI',
-  description: 'Speed-to-lead and lead response time statistics from Harvard Business Review, the Lead Response Management study and more, plus how to respond to every lead in under a minute.',
+  description: 'Speed-to-lead statistics from Harvard Business Review and the Lead Response Management study, plus how to reply to every lead in under a minute.',
   category: 'Statistics',
   tags: ['Lead Generation'],
   date: '2026-01-28',

@@ -4,7 +4,7 @@ export default {
   slug: 'automate-lead-follow-up-gohighlevel',
   title: 'How to Automate Lead Follow-Up in GoHighLevel (So No Lead Goes Cold)',
   metaTitle: 'Automate Lead Follow-Up in GoHighLevel | Voxil AI',
-  description: 'A practical GoHighLevel follow-up system: instant reply, a 14-day multi-channel sequence, stop conditions, AI replies and reporting, with example timing and messages.',
+  description: 'Automate lead follow-up in GoHighLevel: instant reply, a 14-day multi-channel sequence, stop conditions and AI replies, with example timing and messages.',
   category: 'GoHighLevel',
   tags: ['Lead Generation'],
   author: 'ahmad-ali',

@@ -106,7 +106,7 @@ export const renderCalculator = () => {
   const path = resourceUrl(r.slug);
   const crumbs = crumbsFor(r.name, r.slug);
   const title = 'Lead Loss Calculator: Cost of Missed Calls | Voxil AI';
-  const description = 'Free lead loss calculator: estimate how much revenue your business loses each month to missed calls and unworked leads, and how much AI answering and follow-up could recover.';
+  const description = 'Free lead loss calculator: see how much revenue missed calls and unworked leads cost you each month, and how much AI answering could recover.';
   const faqs = [
     { q: 'How is lost revenue calculated?', a: 'Missed calls × share that are genuine new opportunities × your close rate × average customer value gives monthly revenue at risk. The recoverable figure applies the recovery rate you choose.' },
     { q: 'What recovery rate should I use?', a: 'Be conservative. Not every missed caller can be won back even with instant answering. We default to 60% for calls answered by AI instead of voicemail; adjust to your own experience.' },
@@ -192,7 +192,7 @@ export const renderStatsHub = () => {
   const path = resourceUrl(r.slug);
   const crumbs = crumbsFor(r.name, r.slug);
   const title = 'AI Statistics 2026: Adoption, Agents & Service | Voxil AI';
-  const description = 'A sourced collection of the most important AI statistics for 2026, adoption, investment, jobs, customer service, AI agents, speed-to-lead and small business, updated regularly.';
+  const description = 'AI statistics 2026: sourced figures on adoption, investment, jobs, customer service, AI agents, speed-to-lead and small business. Updated regularly.';
   const top = ['adoption-78', 'chatgpt-800m', 'us-invest-109', 'gartner-80-2029', 'gartner-33-agentic', 'hbr-7x', 'uscc-40', 'wef-net-78m', 'nber-14', 'gartner-40-cancel'];
   const count = Object.keys(STATS).length;
 
@@ -346,7 +346,7 @@ export const renderChecklist = () => {
   const crumbs = crumbsFor(r.name, r.slug);
   const total = CHECKLIST.reduce((n, s) => n + s.items.length, 0);
   const title = `GoHighLevel Setup Checklist: ${total} Steps | Voxil AI`;
-  const description = `The interactive ${total}-step GoHighLevel setup checklist we use for every client launch, deliverability, A2P, pipelines, calendars, automations, AI and reporting.`;
+  const description = `The free, interactive ${total}-step GoHighLevel setup checklist we use for every launch: A2P, deliverability, pipelines, automations, AI and reporting.`;
   const faqs = [
     { q: 'How long does it take to set up GoHighLevel properly?', a: 'Typically one to three weeks for a complete setup, depending on A2P registration approval times, domain changes and the number of automations.' },
     { q: 'What is the most commonly missed GHL setup step?', a: 'Email and SMS compliance: authenticated sending domains and A2P 10DLC registration. Skipping them leads to spam-foldered emails and filtered texts.' },

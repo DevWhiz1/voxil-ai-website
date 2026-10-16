@@ -4,7 +4,7 @@ export default {
   slug: 'whatsapp-bot-gohighlevel',
   title: 'How to Set Up a WhatsApp Business Bot with GoHighLevel (2026 Guide)',
   metaTitle: 'WhatsApp Business Bot with GoHighLevel (2026) | Voxil AI',
-  description: 'Step-by-step guide to a WhatsApp bot in GoHighLevel: connecting the WhatsApp Business API, message templates, the 24-hour window, AI replies, booking flows and CRM automation.',
+  description: 'Set up a WhatsApp Business bot in GoHighLevel: connect the API, templates, the 24-hour window, AI replies, booking flows and CRM automation.',
   category: 'Chatbots & Automation',
   author: 'abdul-moeez',
   date: '2026-10-06',

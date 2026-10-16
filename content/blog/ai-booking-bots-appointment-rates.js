@@ -4,7 +4,7 @@ export default {
   slug: 'ai-booking-bots-appointment-rates',
   title: 'How AI Booking Bots Increase Appointment Rates and Cut No-Shows',
   metaTitle: 'How AI Booking Bots Increase Appointment Rates | Voxil AI',
-  description: 'Why AI booking bots book more appointments and reduce no-shows: instant response, 24/7 availability, frictionless scheduling and smart reminders, with examples by industry and how to measure results.',
+  description: 'Why AI booking bots book more appointments and cut no-shows: instant replies, 24/7 booking and smart reminders, with examples and how to measure it.',
   category: 'AI Calling Bots',
   tags: ['Lead Generation'],
   author: 'abdul-moeez',

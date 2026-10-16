@@ -4,7 +4,7 @@ export default {
   slug: 'website-ai-chatbot-guide',
   title: 'How to Add an AI Chatbot to Your Website: Options, Costs and Setup (2026)',
   metaTitle: 'How to Add an AI Chatbot to Your Website (2026) | Voxil AI',
-  description: 'A buyer’s guide to website AI chatbots: off-the-shelf vs GoHighLevel vs custom, what a good chatbot needs, costs, setup steps, data and privacy, and how to measure results.',
+  description: 'How to add an AI chatbot to your website: off-the-shelf vs GoHighLevel vs custom, what good bots need, costs, setup steps and how to measure results.',
   category: 'Chatbots & Automation',
   tags: ['Lead Generation'],
   author: 'abdul-moeez',

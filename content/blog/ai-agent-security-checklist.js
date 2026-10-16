@@ -4,7 +4,7 @@ export default {
   slug: 'ai-agent-security-checklist',
   title: 'AI Agent Security and Privacy: A Practical Checklist for Businesses',
   metaTitle: 'AI Agent Security & Privacy Checklist | Voxil AI',
-  description: 'A practical security and privacy checklist for AI chatbots, voice agents and AI agents: data minimization, access control, prompt injection, tool permissions, logging, vendors and compliance.',
+  description: 'A practical AI agent security checklist: data minimization, access control, prompt injection, tool permissions, logging and vendor checks for chatbots.',
   category: 'Guides',
   tags: ['Chatbots & Automation'],
   author: 'abdul-moeez',

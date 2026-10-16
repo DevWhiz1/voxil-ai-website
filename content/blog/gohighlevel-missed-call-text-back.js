@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-missed-call-text-back',
   title: 'GoHighLevel Missed Call Text-Back: Set It Up in 10 Minutes',
   metaTitle: 'GoHighLevel Missed Call Text-Back Setup Guide | Voxil AI',
-  description: 'How to set up missed-call text-back in GoHighLevel: the workflow trigger, message templates, business-hours logic, follow-up steps, AI replies and the mistakes to avoid.',
+  description: 'Set up GoHighLevel missed-call text-back in 10 minutes: the workflow trigger, message templates, after-hours logic, AI replies and mistakes to avoid.',
   category: 'GoHighLevel',
   tags: ['Lead Generation'],
   author: 'ahmad-ali',

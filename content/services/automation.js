@@ -5,7 +5,7 @@ export default {
   'ai-chatbots': {
     title: 'AI Chatbot Development | Website & WhatsApp | Voxil AI',
     description:
-      'Custom AI chatbots for your website, WhatsApp, Instagram and Messenger, trained on your business, integrated with your CRM, and built to capture leads, book appointments and resolve support.',
+      'Custom AI chatbots for your website, WhatsApp and Instagram, trained on your business to capture leads, book appointments and answer support 24/7.',
     h1: 'AI chatbots trained on <span class="text-gradient-teal">your business</span>',
     lead: 'Branded assistants for your website, WhatsApp, Instagram and in-app, answering in your voice, qualifying visitors, booking appointments and handing to a human the moment it matters.',
     answer:
@@ -79,8 +79,7 @@ export default {
 
   'ai-chatbot-developer': {
     title: 'Hire Chatbot Developers: AI, LLM & RAG Experts | Voxil AI',
-    description:
-      'Hire chatbot developers with production experience: custom LLM chatbots, RAG knowledge assistants, AI agents with tool calling and integrations. Fixed-price or monthly engagement.',
+    description: 'Hire chatbot developers who ship to production: custom LLM chatbots, RAG assistants and AI agents with integrations. Fixed-price or monthly. Free call.',
     h1: 'Hire chatbot developers who <span class="text-gradient-teal">ship AI to production</span>',
     lead: 'When you hire chatbot developers from Voxil AI, you get custom LLM chatbots, retrieval-augmented (RAG) assistants and tool-using AI agents, engineered with evaluation, security and cost control from day one, not bolted together from a template.',
     answer:
@@ -150,9 +149,8 @@ export default {
   },
 
   'whatsapp-automation': {
-    title: 'WhatsApp Automation & AI Chatbots | Voxil AI',
-    description:
-      'WhatsApp Business API automation: AI WhatsApp chatbots, lead capture, appointment booking, broadcast campaigns and CRM integration. Official API setup, compliant templates and human hand-off.',
+    title: 'AI WhatsApp Automation & Chatbots for Business | Voxil AI',
+    description: 'AI WhatsApp automation on the official Business API: chatbots that answer, qualify and book appointments 24/7, synced to your CRM. Free strategy call.',
     h1: 'WhatsApp automation that <span class="text-gradient-teal">replies in seconds</span>',
     lead: 'Turn WhatsApp into your fastest sales and support channel, AI replies, lead qualification, bookings, reminders and broadcasts on the official Business API, all synced to your CRM.',
     answer:
@@ -214,7 +212,7 @@ export default {
   'gohighlevel-ai': {
     title: 'GoHighLevel AI Setup | Conversation & Voice AI | Voxil AI',
     description:
-      'GoHighLevel AI experts: set up Conversation AI, Voice AI, AI Agent Studio and AI-powered workflows in GHL to reply to leads instantly, book appointments and follow up automatically.',
+      'GoHighLevel AI setup: Conversation AI, Voice AI and AI workflows in GHL that reply to leads instantly, book appointments and follow up. Free call.',
     h1: 'GoHighLevel AI that <span class="text-gradient-teal">works your pipeline</span>',
     lead: 'We configure GoHighLevel’s native AI, Conversation AI, Voice AI, content AI and AI-driven workflows, and extend it with custom agents where GHL’s built-ins stop.',
     answer:
@@ -276,7 +274,7 @@ export default {
   'ai-lead-generation': {
     title: 'AI Lead Generation Services | Qualify Leads | Voxil AI',
     description:
-      'AI lead generation systems that find target prospects, enrich data, personalize outreach, capture inbound leads and qualify them automatically, feeding your CRM with sales-ready opportunities.',
+      'AI lead generation: find and enrich prospects, personalize outreach, capture inbound leads and qualify them automatically into your CRM. Free call.',
     h1: 'AI lead generation that <span class="text-gradient-teal">fills the pipeline</span>',
     lead: 'Systems that find the right prospects, enrich and personalize at scale, capture every inbound inquiry and qualify it automatically, so your team talks only to people ready to buy.',
     answer:
@@ -338,7 +336,7 @@ export default {
   'ai-follow-up-system': {
     title: 'AI Follow-Up System | Lead & Quote Follow-Up | Voxil AI',
     description:
-      'An AI follow-up system that texts, emails and calls leads automatically until they respond, follow up on quotes, no-shows and cold leads with personalized, multi-channel sequences.',
+      'An AI follow-up system that texts, emails and calls leads until they reply, chasing quotes, no-shows and cold leads with personal sequences. Free call.',
     h1: 'An AI follow-up system that <span class="text-gradient-teal">never forgets a lead</span>',
     lead: 'Most sales are lost to silence, not "no". Our AI follow-up system keeps every lead, quote and no-show warm across SMS, email and voice, personalized, persistent and polite, until they book or opt out.',
     answer:
@@ -400,7 +398,7 @@ export default {
   'ai-automation-consultant': {
     title: 'AI Automation Consultant | Strategy & Audits | Voxil AI',
     description:
-      'Hire an AI automation consultant to audit your processes, find the highest-ROI automation opportunities, choose the right tools and deliver a practical implementation roadmap.',
+      'Hire an AI automation consultant: process audit, highest-ROI opportunities, tool selection and a practical implementation roadmap. Book a free call.',
     h1: 'An AI automation consultant who <span class="text-gradient-teal">also builds</span>',
     lead: 'Strategy you can act on: we audit your workflows, quantify where AI and automation will pay back fastest, recommend the right tools, and, if you want, build it with you.',
     answer:
@@ -462,7 +460,7 @@ export default {
   'workflow-automation': {
     title: 'Workflow Automation Services for Business | Voxil AI',
     description:
-      'Workflow automation services that eliminate repetitive work across sales, operations, finance and support, using Make.com, Zapier, n8n, GoHighLevel and custom AI steps.',
+      'Workflow automation services that remove repetitive work across sales, ops, finance and support, using Make, Zapier, n8n, GoHighLevel and AI.',
     h1: 'Workflow automation that <span class="text-gradient-teal">gives your team hours back</span>',
     lead: 'We find the copy-paste, chase-up and data-entry work eating your week, and replace it with reliable automations, with AI steps where judgment used to be required.',
     answer:
@@ -537,7 +535,7 @@ export default {
   'marketing-automation': {
     title: 'Marketing Automation Services | AI Campaigns | Voxil AI',
     description:
-      'Marketing automation services: lead nurture, segmentation, lifecycle campaigns, attribution and AI-personalized content across email, SMS, WhatsApp and social, set up in your CRM.',
+      'Marketing automation services: lead nurture, segmentation, lifecycle campaigns and attribution across email, SMS and WhatsApp, set up in your CRM.',
     h1: 'Marketing automation that <span class="text-gradient-teal">turns clicks into customers</span>',
     lead: 'Lifecycle campaigns, segmentation, nurture and attribution, built in your CRM, personalized with AI, and connected to sales so marketing finally gets credit for the revenue it drives.',
     answer:
@@ -599,7 +597,7 @@ export default {
   'email-sms-marketing': {
     title: 'Email & SMS Marketing Automation Services | Voxil AI',
     description:
-      'Email and SMS marketing automation: deliverability setup, 10DLC registration, automated sequences, broadcasts and AI-personalized copy that converts, built in GoHighLevel, Klaviyo, HubSpot and more.',
+      'Email and SMS marketing automation: deliverability, 10DLC registration, automated sequences, broadcasts and copy that converts, in GoHighLevel and more.',
     h1: 'Email & SMS marketing that <span class="text-gradient-teal">lands and converts</span>',
     lead: 'From deliverability and 10DLC registration to automated sequences and broadcasts, we build email and SMS programs that reach the inbox, respect the rules and drive bookings.',
     answer:
@@ -661,7 +659,7 @@ export default {
   'seo-paid-ads': {
     title: 'SEO, AEO & Paid Ads for Service Businesses | Voxil AI',
     description:
-      'SEO, answer-engine optimization (AEO) and paid ads management for service businesses, Google, Meta and local search campaigns connected to AI follow-up so every lead gets worked.',
+      'SEO, answer-engine optimization (AEO) and Google and Meta ads for service businesses, connected to AI follow-up so every lead gets worked. Free audit.',
     h1: 'SEO & paid ads that feed an <span class="text-gradient-teal">automated pipeline</span>',
     lead: 'Traffic is only half the job. We run SEO, AI-search optimization and paid campaigns that bring qualified leads, and connect them to instant AI follow-up so your ad spend turns into booked appointments.',
     answer:
@@ -723,7 +721,7 @@ export default {
   'lead-capture-system': {
     title: 'Lead Capture & Qualification Systems | Voxil AI',
     description:
-      'Automated lead capture systems that collect inquiries from every channel, score them, route them to the right rep and trigger instant follow-up, so no lead slips through.',
+      'Automated lead capture systems that collect inquiries from every channel, score and route them, and trigger instant follow-up so no lead slips through.',
     h1: 'Lead capture systems that <span class="text-gradient-teal">lose nothing</span>',
     lead: 'Every inquiry, web form, call, chat, DM, ad lead, captured in one place, scored against your criteria, routed to the right person and acknowledged instantly.',
     answer:

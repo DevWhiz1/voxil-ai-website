@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-law-firms',
   title: 'GoHighLevel for Law Firms: Client Intake, Follow-Up and AI Automation',
   metaTitle: 'GoHighLevel for Law Firms: Intake & Automation | Voxil AI',
-  description: 'How law firms use GoHighLevel and AI for client intake: 24/7 intake agents, case-type pipelines, consultation booking, follow-up, reviews and integration with case management, with confidentiality in mind.',
+  description: 'GoHighLevel for law firms: 24/7 AI client intake, case-type pipelines, consultation booking, follow-up and case management integration.',
   category: 'Industry Guides',
   author: 'ahmad-ali',
   date: '2026-10-08',

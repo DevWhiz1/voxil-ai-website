@@ -8,7 +8,7 @@ const country = (name) => ({ '@type': 'Country', name });
 export default {
   // -------------------------------------------------------- UK & EUROPE
   birmingham: {
-    description: 'AI automation agency serving Birmingham and the West Midlands: AI receptionists, voice agents, WhatsApp bots and CRM automation for trades, professional services, healthcare and property.',
+    description: 'AI automation agency in Birmingham and the West Midlands: AI receptionists, voice agents and WhatsApp bots for trades, clinics and professional firms.',
     lead: 'AI receptionists, WhatsApp automation and CRM workflows for Birmingham and West Midlands trades, professional firms, clinics and property businesses.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Birmingham and West Midlands businesses</strong>, from Colmore Row professional firms to Solihull clinics and Black Country trades. Agents answer every call and message, book appointments and log everything, designed around UK GDPR and PECR.',
     tzShort: 'UK time (GMT/BST)',
@@ -42,7 +42,7 @@ export default {
   },
 
   edinburgh: {
-    description: 'AI automation agency serving Edinburgh and Scotland: AI receptionists, voice agents, knowledge base chatbots and CRM automation for financial services, legal, tourism, healthcare and trades.',
+    description: 'AI automation agency in Edinburgh and Scotland: AI receptionists, voice agents and knowledge base chatbots for finance, legal and tourism. Free call.',
     lead: 'AI voice agents, knowledge base chatbots and automation for Edinburgh and Glasgow financial firms, solicitors, tourism operators, clinics and trades.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and workflow automation for Edinburgh and Scottish businesses</strong>, from financial-services firms and solicitors to festival-season tourism operators and Lothian trades, designed around UK GDPR and PECR.',
     tzShort: 'UK time (GMT/BST)',
@@ -77,7 +77,7 @@ export default {
 
   france: {
     title: 'AI Automation Agency in France | Voxil AI',
-    description: 'AI automation for businesses in France: French-speaking AI voice agents, chatbots and WhatsApp automation for clinics, real estate, services and ecommerce, designed for GDPR and CNIL guidance.',
+    description: 'AI automation in France: French-speaking AI voice agents, chatbots and WhatsApp automation for clinics, real estate and services, GDPR-ready. Free call.',
     lead: 'French-speaking AI voice agents, chatbots and automation for businesses in Paris, Lyon, Marseille and across France, designed around GDPR and CNIL guidance.',
     answer: 'Voxil AI builds <strong>French-speaking AI voice agents, chatbots and automation for businesses in France</strong>. Agents answer calls and messages in natural French, book appointments, qualify inquiries and log everything in your CRM, with data handling designed for GDPR.',
     tzShort: 'Central European Time',
@@ -112,7 +112,7 @@ export default {
 
   spain: {
     title: 'AI Automation Agency in Spain | Voxil AI',
-    description: 'AI automation for businesses in Spain: Spanish-speaking AI voice agents, WhatsApp bots and chatbots for clinics, real estate, tourism and services, designed for GDPR, the AEPD and Spain’s consent rules for calls.',
+    description: 'AI automation in Spain: Spanish-speaking AI voice agents, WhatsApp bots and chatbots for clinics, real estate and tourism, GDPR-ready. Free call.',
     lead: 'Spanish-speaking AI voice agents, WhatsApp automation and chatbots for businesses in Madrid, Barcelona, Valencia and across Spain.',
     answer: 'Voxil AI builds <strong>Spanish-speaking AI voice agents, WhatsApp bots and automation for businesses in Spain</strong>. Agents answer customers in natural Spanish, and in English or other languages for international clients, book appointments and log every conversation, designed around GDPR and Spanish telecom rules.',
     tzShort: 'Central European Time',
@@ -146,7 +146,7 @@ export default {
   },
 
   berlin: {
-    description: 'AI automation agency serving Berlin: AI agents, voice agents, knowledge base chatbots and workflow automation for startups, scale-ups, practices and services, built for GDPR and the EU AI Act.',
+    description: 'Berlin AI automation agency: AI agents, voice agents and knowledge base chatbots in German and English, built for GDPR and the EU AI Act. Free call.',
     lead: 'AI agents, knowledge base chatbots and voice automation for Berlin startups, scale-ups, medical practices and service businesses, in German and English.',
     answer: 'Voxil AI builds <strong>AI agents, voice agents and automation for Berlin businesses</strong>, from Kreuzberg startups and Mitte scale-ups to Charlottenburg practices. We work in German and English, with GDPR, EU hosting options and EU AI Act transparency designed in.',
     tzShort: 'Central European Time',
@@ -181,7 +181,7 @@ export default {
 
   // --------------------------------------------- AUSTRALIA & NEW ZEALAND
   brisbane: {
-    description: 'AI automation agency serving Brisbane and South East Queensland: AI receptionists, voice agents and automation for tradies, construction, real estate, allied health and solar.',
+    description: 'AI automation agency in Brisbane and South East Queensland: AI receptionists and voice agents for tradies, builders, real estate and solar. Free call.',
     lead: 'AI receptionists, voice agents and follow-up automation for Brisbane, Gold Coast and Sunshine Coast tradies, builders, real-estate agencies, clinics and solar installers.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Brisbane and South East Queensland businesses</strong>. Agents answer every call with a natural Australian voice, book jobs and appointments, and follow up automatically, designed around the Privacy Act and Spam Act.',
     tzShort: 'AEST (no daylight saving)',
@@ -215,7 +215,7 @@ export default {
   },
 
   perth: {
-    description: 'AI automation agency serving Perth and Western Australia: AI receptionists, voice agents and automation for trades, resources-sector suppliers, real estate, allied health and solar.',
+    description: 'AI automation agency in Perth and Western Australia: AI receptionists, voice agents and document automation for trades, suppliers and solar firms.',
     lead: 'AI answering, voice agents and automation for Perth trades, resources-sector suppliers, real-estate agencies, clinics and solar installers, in WA time.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Perth and Western Australian businesses</strong>. Agents answer every call with a natural Australian voice, book jobs and appointments and log everything, working in AWST.',
     tzShort: 'AWST',
@@ -249,7 +249,7 @@ export default {
   },
 
   adelaide: {
-    description: 'AI automation agency serving Adelaide and South Australia: AI receptionists, voice agents and automation for healthcare, trades, real estate, education and wine-region businesses.',
+    description: 'AI automation agency for Adelaide and South Australia: AI receptionists, voice agents and booking automation for clinics, trades and real estate.',
     lead: 'AI receptionists, voice agents and booking automation for Adelaide clinics, trades, real-estate agencies, education providers and wine-region businesses.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Adelaide and South Australian businesses</strong>. Agents answer calls and messages with a natural Australian voice, book appointments and follow up, working in ACST.',
     tzShort: 'ACST/ACDT',
@@ -284,7 +284,7 @@ export default {
 
   'new-zealand': {
     title: 'AI Automation Agency in New Zealand | Voxil AI',
-    description: 'AI automation for New Zealand businesses: AI receptionists, voice agents, chatbots and CRM automation for trades, real estate, healthcare and tourism, designed for the Privacy Act 2020.',
+    description: 'AI automation for New Zealand businesses: AI receptionists and voice agents for trades, real estate and clinics, built for the Privacy Act 2020.',
     lead: 'AI receptionists, voice agents and automation for Auckland, Wellington and Christchurch businesses, from tradies and real-estate agencies to clinics and tourism operators.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for New Zealand businesses</strong>. Agents answer calls and messages with natural voices tuned for Kiwi accents and place names, book jobs and appointments and follow up, designed around the Privacy Act 2020.',
     tzShort: 'NZST/NZDT',
@@ -319,7 +319,7 @@ export default {
 
   // -------------------------------------------------------------- CANADA
   calgary: {
-    description: 'AI automation agency serving Calgary and Alberta: AI receptionists, voice agents and automation for energy-sector businesses, roofing, HVAC, real estate and home services, Alberta PIPA aware.',
+    description: 'Calgary AI automation agency: AI receptionists and voice agents for roofing, HVAC, real estate and energy-sector firms. Alberta PIPA aware. Free call.',
     lead: 'AI receptionists, voice agents and automation for Calgary energy-sector firms, roofers, HVAC companies, real-estate teams and home-service businesses.',
     answer: 'Voxil AI builds <strong>AI voice agents, chatbots and automation for Calgary and Alberta businesses</strong>. Agents answer every call, triage hail and no-heat emergencies, book appointments and log everything, designed around Alberta’s PIPA and CASL.',
     tzShort: 'Mountain Time',
@@ -353,7 +353,7 @@ export default {
   },
 
   montreal: {
-    description: 'AI automation agency serving Montreal and Quebec: French-first AI voice agents, chatbots and automation for clinics, real estate, services and ecommerce, designed for Law 25 and Bill 96.',
+    description: 'Montreal AI automation agency: French-first AI voice agents and chatbots for clinics, real estate and services, designed for Law 25 and Bill 96.',
     lead: 'French-first AI voice agents, chatbots and automation for Montreal and Quebec businesses, designed around Law 25 and the Charter of the French Language.',
     answer: 'Voxil AI builds <strong>French-first AI voice agents, chatbots and automation for Montreal and Quebec businesses</strong>. Agents serve customers in French by default and switch to English when asked, book appointments and log every conversation, with Law 25 privacy requirements designed in.',
     tzShort: 'Eastern Time',
@@ -387,7 +387,7 @@ export default {
   },
 
   ottawa: {
-    description: 'AI automation agency serving Ottawa and Gatineau: bilingual AI voice agents, knowledge base chatbots and automation for tech companies, associations, clinics, real estate and home services.',
+    description: 'Ottawa AI automation agency: bilingual English and French voice agents and knowledge base chatbots for tech firms, associations and clinics.',
     lead: 'Bilingual AI voice agents, knowledge base chatbots and automation for Ottawa tech firms, associations, clinics, real-estate teams and home-service businesses.',
     answer: 'Voxil AI builds <strong>bilingual AI voice agents, chatbots and automation for Ottawa and Gatineau businesses</strong>. Agents serve callers in English or French, answer from your approved knowledge and book appointments, with PIPEDA, PHIPA and CASL requirements designed in.',
     tzShort: 'Eastern Time',

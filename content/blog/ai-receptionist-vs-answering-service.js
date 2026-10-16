@@ -3,8 +3,8 @@ import { callout, cite, link, table } from '../../scripts/lib/content-helpers.js
 export default {
   slug: 'ai-receptionist-vs-answering-service',
   title: 'AI Receptionist vs Answering Service vs In-House Receptionist: Which Is Right for You?',
-  metaTitle: 'AI Receptionist vs Answering Service (2026) | Voxil AI',
-  description: 'An honest comparison of AI receptionists, live answering services and in-house receptionists: cost models, coverage, booking, call quality, caller experience and when to combine them.',
+  metaTitle: 'AI Receptionist vs Answering Service: Which Wins? | Voxil AI',
+  description: 'AI receptionist or answering service for after-hours calls? Compare cost, coverage, booking and caller experience, plus when to combine both. 2026 guide.',
   category: 'AI Calling Bots',
   author: 'abdul-moeez',
   date: '2026-10-09',

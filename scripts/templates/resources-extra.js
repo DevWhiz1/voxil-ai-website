@@ -129,7 +129,7 @@ export const renderRoiCalculator = () => {
   return shell({
     slug,
     title: 'AI Automation ROI Calculator (Free) | Voxil AI',
-    description: 'Free AI automation ROI calculator: estimate monthly gain, payback period and 12-month ROI from extra appointments and staff time saved, with industry examples.',
+    description: 'Free AI automation ROI calculator: estimate monthly gain, payback period and 12-month ROI from extra appointments and hours saved. Industry presets.',
     h1: 'AI Automation <span class="text-gradient-teal">ROI Calculator</span>',
     lead: 'Estimate what AI answering, follow-up and booking could return for your business: monthly gain, payback period and 12-month ROI. Runs in your browser; nothing is saved.',
     body,
@@ -206,7 +206,7 @@ export const renderReadiness = () => {
   return shell({
     slug,
     title: 'AI Readiness Assessment for Small Business | Voxil AI',
-    description: 'Free 10-question AI readiness assessment for service businesses: score your call answering, lead response, follow-up, booking and CRM, and get a prioritized automation plan.',
+    description: 'Free 10-question AI readiness assessment: score your call answering, lead response, follow-up and CRM, and get a prioritized automation plan.',
     h1: 'AI Readiness <span class="text-gradient-warm">Assessment</span>',
     lead: 'Ten quick yes-or-no questions to find out how ready your business is for AI automation, and which system to build first. Takes about a minute; nothing is saved.',
     body,
@@ -362,7 +362,7 @@ export const renderVoiceScripts = () => {
   return shell({
     slug,
     title: 'Free AI Voice Agent Script Templates | Voxil AI',
-    description: 'Free, copy-ready AI voice agent scripts: inbound AI receptionist, outbound speed-to-lead, appointment confirmation and reactivation, for Vapi, Retell AI and GoHighLevel Voice AI.',
+    description: 'Free AI voice agent scripts: inbound receptionist, outbound speed-to-lead, confirmation and reactivation calls. Copy-ready for Vapi, Retell and GHL.',
     eyebrowText: 'Free templates',
     h1: 'AI Voice Agent <span class="text-gradient-warm">Script Templates</span>',
     lead: 'Copy-ready prompts for the four calls service businesses automate most. Built for Vapi, Retell AI and GoHighLevel Voice AI, with the rules that keep agents on track.',
@@ -433,7 +433,7 @@ export const renderFollowUpTemplates = () => {
   return shell({
     slug,
     title: 'Free Lead Follow-Up SMS & Email Templates | Voxil AI',
-    description: 'Free follow-up message templates for service businesses: instant replies, nurture nudges, no-show recovery, reminders, review requests and reactivation, ready for GoHighLevel.',
+    description: 'Free follow-up templates for service businesses: instant replies, nurture nudges, no-show recovery, reminders and review requests. Ready for GHL.',
     eyebrowText: 'Free templates',
     h1: 'Follow-Up Message <span class="text-gradient-teal">Templates</span>',
     lead: 'Copy-ready SMS and email templates for every stage of lead follow-up, from the first reply to the review request. Works in GoHighLevel or any CRM.',
@@ -526,7 +526,7 @@ export const renderGlossary = () => {
   return shell({
     slug,
     title: 'AI Automation Glossary: Key Terms Explained | Voxil AI',
-    description: 'Plain-English glossary of AI automation terms: AI agents, voice agents, AI receptionists, GoHighLevel, CRM, A2P 10DLC, TCPA, AEO, GEO, Vapi, Retell AI, n8n and more.',
+    description: 'Plain-English AI automation glossary: AI agents, voice agents, AI receptionists, GoHighLevel, A2P 10DLC, TCPA, AEO, GEO, Vapi, n8n and more.',
     eyebrowText: 'Free resource',
     h1: 'AI Automation <span class="text-gradient-teal">Glossary</span>',
     lead: `${GLOSSARY.length} terms you’ll meet when automating a service business with AI, explained in plain English by the team that builds these systems.`,

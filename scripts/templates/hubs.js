@@ -50,7 +50,7 @@ export const renderServicesHub = () => {
     { name: 'Services', url: path },
   ];
   const title = 'AI Automation Services: Voice, Chat & GHL | Voxil AI';
-  const description = `Explore ${ALL_SERVICES.length} AI automation services, AI voice agents and receptionists, chatbots and WhatsApp bots, GoHighLevel setup and automation, CRM, funnels, websites and custom integrations.`;
+  const description = `Compare ${ALL_SERVICES.length} AI automation services: AI voice agents, receptionists, chatbots, GoHighLevel automation, CRM and integrations. Fixed price, free call.`;
   const faqs = [
     { q: 'Which service should I start with?', a: 'Start where revenue leaks most. For most service businesses that’s answering calls (AI receptionist) or responding to leads instantly (AI follow-up or SDR). We’ll recommend one on a free 30-minute call.' },
     { q: 'Can you combine several services?', a: 'Yes, most clients connect two or three: for example, an AI receptionist that books into GoHighLevel, with automated follow-up and review requests.' },
@@ -100,7 +100,7 @@ export const renderLocationsHub = () => {
   ];
   const all = LOCATION_GROUPS.flatMap((g) => g.locations);
   const title = 'AI Automation Agency Locations: US, UK, EU & AU | Voxil AI';
-  const description = `Voxil AI serves businesses in ${all.length} markets across the US, UK, Europe, Canada, Australia, New Zealand, the UAE and Pakistan, with local languages and compliance.`;
+  const description = `Voxil AI serves ${all.length} markets across the US, UK, Europe, Canada, Australia, New Zealand, the UAE and Pakistan, with local languages and compliance built in.`;
   const faqs = [
     { q: 'Do you work with businesses outside these locations?', a: 'Yes. We’re remote-first and work with businesses anywhere; these pages cover markets where we have the most clients and local context.' },
     { q: 'Do you have local offices?', a: 'No. Voxil AI is remote-first. We schedule working sessions in your time zone and deliver through video calls, shared workspaces and async updates.' },
@@ -155,7 +155,7 @@ export const renderIndustriesHub = () => {
     { name: 'Industries', url: path },
   ];
   const title = 'AI Automation by Industry | Voxil AI';
-  const description = 'AI automation built for real estate, gyms, insurance, law firms, home services, clinics, med spas, roofing, solar, salons, HVAC and chiropractic businesses.';
+  const description = 'AI automation by industry: real estate, gyms, insurance, law firms, home services, clinics, med spas, roofing, solar, salons, HVAC and chiropractic.';
   const blurbs = {
     'real-estate': 'Instant lead response, AI ISA calls and showing booking.',
     'fitness-gyms': 'Trial booking, no-show recovery and member retention.',

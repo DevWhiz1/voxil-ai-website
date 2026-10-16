@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-white-label-setup',
   title: 'GoHighLevel White Label Setup for Agencies: The Complete Guide',
   metaTitle: 'GoHighLevel White Label Setup for Agencies | Voxil AI',
-  description: 'How to white label GoHighLevel for your agency: custom app domain, branding, email sending domain, mobile app options, snapshots, sub-account onboarding and support.',
+  description: 'White label GoHighLevel for your agency: custom app domain, branding, email sending domain, mobile app options, snapshots and client onboarding.',
   category: 'GoHighLevel',
   author: 'ahmad-ali',
   date: '2026-10-06',

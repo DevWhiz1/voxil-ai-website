@@ -4,7 +4,7 @@ export default {
   slug: 'a2p-10dlc-registration-guide',
   title: 'A2P 10DLC Registration: How to Get Your Business Texts Approved (GoHighLevel & Twilio)',
   metaTitle: 'A2P 10DLC Registration Guide for GoHighLevel | Voxil AI',
-  description: 'How A2P 10DLC registration works for business texting in the US: brand and campaign registration, opt-in requirements, sample messages, common rejection reasons and how to fix them.',
+  description: 'How to get A2P 10DLC approved for business texting: brand and campaign registration, opt-in rules, sample messages and the rejections to avoid.',
   category: 'GoHighLevel',
   tags: ['Lead Generation'],
   author: 'ahmad-ali',

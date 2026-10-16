@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-conversation-ai-setup',
   title: 'How to Set Up GoHighLevel Conversation AI: A Step-by-Step Walkthrough',
   metaTitle: 'GoHighLevel Conversation AI Setup Guide | Voxil AI',
-  description: 'Step-by-step GoHighLevel Conversation AI setup: choosing channels and mode, writing bot instructions, building the knowledge base, appointment booking, hand-off rules, testing and launch.',
+  description: 'Set up GoHighLevel Conversation AI step by step: channels and mode, bot instructions, knowledge base, booking, hand-off rules, testing and launch.',
   category: 'GoHighLevel',
   tags: ['Chatbots & Automation'],
   author: 'ahmad-ali',

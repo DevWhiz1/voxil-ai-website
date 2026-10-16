@@ -4,7 +4,7 @@ export default {
   slug: 'retell-ai-review',
   title: 'Retell AI Review (2026): Setup, Pricing, Voice Quality and Use Cases',
   metaTitle: 'Retell AI Review 2026: Pricing, Voice & Setup | Voxil AI',
-  description: 'An honest Retell AI review: how it works, conversation flows, voice quality, pricing model, GoHighLevel integration, compliance options, strengths, limitations and best use cases.',
+  description: 'An honest Retell AI review: conversation flows, voice quality, pricing model, GoHighLevel integration, strengths, limits and the best use cases.',
   category: 'AI Calling Bots',
   author: 'abdul-moeez',
   date: '2026-10-06',

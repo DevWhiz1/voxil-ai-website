@@ -4,7 +4,7 @@ export default {
   slug: 'ai-voice-calling-lead-generation',
   title: 'AI Voice Calling for Lead Generation: The Complete Guide (2026)',
   metaTitle: 'AI Voice Calling for Lead Generation (2026) | Voxil AI',
-  description: 'How AI voice calling systems generate and qualify leads: inbound response, missed-call follow-up, outbound campaigns and reactivation, plus platforms, compliance, costs and a rollout plan.',
+  description: 'How AI voice calling generates and qualifies leads: instant callbacks, missed-call follow-up, outbound campaigns and reactivation, plus compliance tips.',
   category: 'AI Calling Bots',
   tags: ['Lead Generation'],
   author: 'abdul-moeez',

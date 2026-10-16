@@ -7,7 +7,7 @@ export default {
   'ghl-expert': {
     title: 'GoHighLevel Expert for Hire | GHL Builds & Fixes | Voxil AI',
     description:
-      'Hire a GoHighLevel expert to build pipelines, workflows, funnels, calendars and AI automations, or fix a messy GHL account. Fast turnaround, clean builds, full documentation.',
+      'Hire a GoHighLevel expert to build pipelines, workflows, funnels and AI automations, or fix a messy GHL account. Fast turnaround, full documentation.',
     h1: 'The GoHighLevel expert your account <span class="text-gradient-sky">has been waiting for</span>',
     lead: 'Pipelines that reflect reality, workflows that don’t double-fire, funnels that convert and AI that books, built cleanly and documented so your team can run it.',
     answer:
@@ -69,7 +69,7 @@ export default {
   'ghl-consultant': {
     title: 'GoHighLevel Consultant | GHL Strategy | Voxil AI',
     description:
-      'A GoHighLevel consultant for strategy and architecture: plan your GHL setup, agency offer, SaaS pricing, sub-account structure, automations and AI, before you build.',
+      'A GoHighLevel consultant for strategy and architecture: plan your GHL setup, agency offer, SaaS pricing, sub-accounts and automations before you build.',
     h1: 'A GoHighLevel consultant for <span class="text-gradient-sky">decisions that matter</span>',
     lead: 'Get the architecture right before you build: account structure, pipelines, SaaS plans, snapshots, integrations and AI, planned by people who build GHL every week.',
     answer:
@@ -131,7 +131,7 @@ export default {
   'ghl-setup': {
     title: 'GHL Setup Services | Complete GoHighLevel Setup | Voxil AI',
     description:
-      'GHL setup services, done for you: domains, email and phone, A2P, pipelines, calendars, forms, workflows, funnels, reputation and AI, launched correctly the first time.',
+      'GHL setup services, done for you: domains, phone, A2P, pipelines, calendars, workflows, funnels and AI, launched correctly the first time. Free call.',
     h1: 'GHL setup services, <span class="text-gradient-sky">done right the first time</span>',
     lead: 'Our GHL setup services deliver a complete, launch-ready GoHighLevel account: technical foundations, pipelines, automations, funnels and AI, configured around how your business actually sells.',
     answer:
@@ -193,7 +193,7 @@ export default {
   'ghl-support': {
     title: 'GoHighLevel Support & Maintenance | Voxil AI',
     description:
-      'Ongoing GoHighLevel support: fixes, new workflows, funnel edits, A2P and deliverability issues, reporting and monthly improvements, from a team that knows GHL inside out.',
+      'Ongoing GoHighLevel support: fixes, new workflows, funnel edits, A2P and deliverability issues, plus monthly improvements from GHL specialists.',
     h1: 'GoHighLevel support that <span class="text-gradient-sky">actually fixes things</span>',
     lead: 'A dedicated GHL team on call for fixes, changes and improvements, with clear response times, a monthly hours allowance and proactive health checks.',
     answer:
@@ -254,8 +254,7 @@ export default {
 
   'ghl-migration': {
     title: 'GoHighLevel Migration Service | Move to GHL | Voxil AI',
-    description:
-      'Migrate to GoHighLevel from HubSpot, ClickFunnels, Kajabi, Keap, ActiveCampaign, Mailchimp, Pipedrive and more, contacts, pipelines, funnels, automations and courses moved safely.',
+    description: 'Migrate to GoHighLevel from HubSpot, ClickFunnels, Kajabi, Keap or Pipedrive: contacts, pipelines, funnels and automations moved safely, with no data loss.',
     h1: 'Migrate to GoHighLevel <span class="text-gradient-sky">without losing a thing</span>',
     lead: 'Contacts, deals, tags, funnels, automations, courses and phone numbers moved into GHL with a tested cut-over plan, so your business never stops taking leads.',
     answer:
@@ -330,7 +329,7 @@ export default {
   'ghl-integration': {
     title: 'GoHighLevel Integrations | Connect GHL via API | Voxil AI',
     description:
-      'GoHighLevel integration services: connect GHL to accounting, scheduling, ecommerce, field-service, AI voice agents and custom apps using the GHL API, webhooks, Zapier, Make.com or n8n.',
+      'GoHighLevel integration services: connect GHL to accounting, scheduling, ecommerce, AI voice agents and custom apps via the API, webhooks, Make or n8n.',
     h1: 'GoHighLevel integrations that <span class="text-gradient-sky">keep data flowing</span>',
     lead: 'Connect GoHighLevel to the rest of your business, accounting, job management, ecommerce, voice AI and custom apps, with reliable, monitored integrations.',
     answer:
@@ -392,7 +391,7 @@ export default {
   'ghl-snapshot': {
     title: 'Custom GoHighLevel Snapshot Builder | Voxil AI',
     description:
-      'Custom GoHighLevel snapshots for agencies and niches, pipelines, workflows, funnels, calendars, templates and AI packaged for one-click deployment to new sub-accounts.',
+      'Custom GoHighLevel snapshots for agencies and niches: pipelines, workflows, funnels, calendars and AI packaged for one-click deployment to new accounts.',
     h1: 'Custom GoHighLevel snapshots that <span class="text-gradient-sky">deploy in one click</span>',
     lead: 'Package your best build, pipelines, workflows, funnels, templates and AI, into a snapshot you can deploy to every new client in minutes, with a setup guide that makes onboarding painless.',
     answer:
@@ -454,7 +453,7 @@ export default {
   'ghl-white-label-saas': {
     title: 'GoHighLevel White Label SaaS Setup | Voxil AI',
     description:
-      'GoHighLevel white label SaaS setup: launch your branded software on SaaS mode with a white-label domain and app, plans, Stripe rebilling, snapshots and onboarding automation.',
+      'GoHighLevel white label SaaS setup: launch branded software on SaaS mode with your domain, plans, Stripe rebilling, snapshots and automated onboarding.',
     h1: 'Launch your own <span class="text-gradient-sky">GoHighLevel white label SaaS</span>',
     lead: 'Your brand, your pricing, your recurring revenue. We set up GoHighLevel SaaS mode end-to-end, branding, plans, rebilling, snapshots and onboarding, so you can sell software, not just services.',
     answer:
@@ -526,7 +525,7 @@ export default {
   'ghl-courses-onboarding': {
     title: 'GoHighLevel Courses & Client Onboarding | Voxil AI',
     description:
-      'Build courses, memberships and communities in GoHighLevel, plus automated client onboarding, payment, contracts, forms, tasks and welcome sequences, that turns new buyers into active users.',
+      'Courses, memberships and communities in GoHighLevel, plus automated client onboarding: payments, contracts, forms and welcome sequences. Free call.',
     h1: 'GoHighLevel courses and onboarding that <span class="text-gradient-sky">get people started</span>',
     lead: 'Sell and deliver courses, memberships and communities inside GoHighLevel, and automate client onboarding from payment to kickoff, so every new customer starts strong.',
     answer:
@@ -588,7 +587,7 @@ export default {
   'ghl-virtual-assistant': {
     title: 'GHL Virtual Assistant | GoHighLevel VA Services | Voxil AI',
     description:
-      'Hire a GHL virtual assistant: our GHL VA services give you a trained GoHighLevel virtual assistant for builds, funnel edits, workflows, campaigns and reporting.',
+      'Hire a GHL virtual assistant: trained GoHighLevel VA services for builds, funnel edits, workflows, campaigns and reporting, backed by GHL experts.',
     h1: 'A GHL virtual assistant, <span class="text-gradient-sky">backed by GoHighLevel experts</span>',
     lead: 'Our GHL VA services give you a trained GoHighLevel virtual assistant for the daily work: funnel edits, workflow tweaks, campaigns, imports and reporting, with senior GoHighLevel engineers reviewing anything complex.',
     answer:
@@ -659,8 +658,7 @@ export default {
 
   'gohighlevel-automation': {
     title: 'GoHighLevel Automation Services | GHL Workflows | Voxil AI',
-    description:
-      'GoHighLevel automation services: speed-to-lead, missed-call text-back, nurture, reminders, reviews, reactivation and AI workflows built in GHL to convert more leads with less manual work.',
+    description: 'GoHighLevel automation services: speed-to-lead, missed-call text-back, nurture, reminders, reviews and AI workflows, built and tested for you. Free audit.',
     h1: 'GoHighLevel automation that <span class="text-gradient-sky">runs your pipeline</span>',
     lead: 'The workflows that turn GoHighLevel from a CRM into a revenue machine, instant lead response, missed-call text-back, nurture, reminders, reviews and reactivation, all built and tested for you.',
     answer:

@@ -4,7 +4,7 @@ export default {
   slug: 'vapi-vs-retell-ai',
   title: 'Vapi vs Retell AI (2026): Which Voice AI Platform Should You Build On?',
   metaTitle: 'Vapi vs Retell AI (2026): Honest Comparison | Voxil AI',
-  description: 'Vapi vs Retell AI compared by a team that builds on both, flexibility, conversation design, latency, integrations, compliance, pricing model and which to choose for your use case.',
+  description: 'Vapi vs Retell AI compared by a team that builds on both: flexibility, conversation design, latency, integrations, pricing and which to choose.',
   category: 'AI Calling Bots',
   date: '2026-03-18',
   updated: '2026-09-26',

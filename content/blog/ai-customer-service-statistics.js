@@ -4,7 +4,7 @@ export default {
   slug: 'ai-customer-service-statistics',
   title: 'AI in Customer Service Statistics 2026: Automation, Agents & Customer Sentiment',
   metaTitle: 'AI in Customer Service Statistics 2026 | Voxil AI',
-  description: 'AI customer service statistics for 2026: Gartner forecasts, contact-center productivity research, real deployment results and customer sentiment. Sourced and explained.',
+  description: 'AI customer service statistics for 2026: Gartner forecasts, contact-center productivity research, real deployments and customer sentiment, all sourced.',
   category: 'Statistics',
   date: '2026-04-08',
   updated: '2026-09-26',

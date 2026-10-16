@@ -4,7 +4,7 @@ export default {
   slug: 'instagram-dm-automation-gohighlevel',
   title: 'Instagram DM Automation with GoHighLevel: Turn Comments and DMs into Bookings',
   metaTitle: 'Instagram DM Automation with GoHighLevel | Voxil AI',
-  description: 'How to automate Instagram DMs with GoHighLevel: connecting Instagram, comment and story-reply triggers, keyword flows, AI replies, booking and the platform rules to follow.',
+  description: 'Automate Instagram DMs with GoHighLevel: comment and story-reply triggers, keyword flows, AI replies, booking and the Meta rules to follow.',
   category: 'Chatbots & Automation',
   tags: ['Lead Generation'],
   author: 'abdul-moeez',

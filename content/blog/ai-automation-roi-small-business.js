@@ -4,7 +4,7 @@ export default {
   slug: 'ai-automation-roi-small-business',
   title: 'How to Calculate AI Automation ROI for a Small Business (With Examples)',
   metaTitle: 'How to Calculate AI Automation ROI | Voxil AI',
-  description: 'A practical method to calculate the ROI of AI automation for small businesses, revenue recovered, hours saved, costs and payback period, with worked examples and a free calculator.',
+  description: 'How to calculate AI automation ROI for a small business: revenue recovered, hours saved, costs and payback period, with worked examples and a calculator.',
   category: 'Guides',
   tags: ['Lead Generation'],
   date: '2026-05-27',

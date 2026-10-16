@@ -3,8 +3,8 @@ import { callout, cite, link, statGrid, table } from '../../scripts/lib/content-
 export default {
   slug: 'ai-chatbot-statistics',
   title: 'AI Chatbot Statistics 2026: Usage, Adoption & Business Impact',
-  metaTitle: 'AI Chatbot Statistics 2026: Usage, Adoption & ROI | Voxil AI',
-  description: 'Chatbot statistics for 2026: usage, business adoption, conversational AI market size, customer-service impact and risks. Every chatbot stat sourced and explained.',
+  metaTitle: 'Chatbot Statistics 2026: Market Size & Usage | Voxil AI',
+  description: 'Sourced chatbot statistics for 2026: AI chatbot market size, how many people and businesses use chatbots, customer attitudes and ROI. Updated regularly.',
   category: 'Statistics',
   tags: ['Chatbots & Automation'],
   date: '2026-03-04',

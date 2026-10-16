@@ -4,7 +4,7 @@ export default {
   slug: 'how-to-build-an-ai-voice-agent',
   title: 'How to Build an AI Voice Agent for Your Business: A Step-by-Step Guide (2026)',
   metaTitle: 'How to Build an AI Voice Agent (2026 Guide) | Voxil AI',
-  description: 'A practical guide to building an AI voice agent: choosing the use case and platform, writing the prompt, connecting calendars and CRM, telephony, compliance, testing and launch.',
+  description: 'How to build an AI voice agent in 10 steps: pick the use case and platform, write the prompt, connect calendar and CRM, test hard and launch safely.',
   category: 'AI Calling Bots',
   author: 'abdul-moeez',
   date: '2026-10-08',

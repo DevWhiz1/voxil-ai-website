@@ -4,7 +4,7 @@ export default {
   slug: 'reduce-appointment-no-shows',
   title: 'How to Reduce Appointment No-Shows with Automation: A Practical Playbook',
   metaTitle: 'How to Reduce Appointment No-Shows (Playbook) | Voxil AI',
-  description: 'A step-by-step playbook to reduce no-shows: confirmation and reminder timing, two-way confirmations, deposits and policies, waitlists, no-show recovery and how to measure your show rate.',
+  description: 'How to reduce appointment no-shows: reminder timing, two-way confirmations, deposits, waitlists and no-show recovery, plus how to measure show rate.',
   category: 'Lead Generation',
   tags: ['GoHighLevel'],
   author: 'ahmad-ali',

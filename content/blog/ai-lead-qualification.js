@@ -4,7 +4,7 @@ export default {
   slug: 'ai-lead-qualification',
   title: 'How AI Lead Qualification Works, and Where It Beats Human Reps',
   metaTitle: 'How AI Lead Qualification Works (2026 Guide) | Voxil AI',
-  description: 'How AI lead qualification works: frameworks, data capture, lead scoring and routing by voice, SMS and chat, where AI outperforms human reps, where it doesn’t, and how to roll it out.',
+  description: 'How AI lead qualification works: questions, scoring and routing by voice, SMS and chat, where AI beats human reps, where it doesn’t, and how to start.',
   category: 'Lead Generation',
   tags: ['AI Calling Bots'],
   author: 'abdul-moeez',

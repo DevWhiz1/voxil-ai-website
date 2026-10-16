@@ -3,7 +3,7 @@
 export default {
   'ai-call-center': {
     title: 'AI Call Center Automation for Inbound & Outbound | Voxil AI',
-    description: 'AI call center automation: voice agents that handle overflow, after-hours and routine calls at contact-center scale, with live transfer, CRM logging and QA on every call.',
+    description: 'AI call center automation: voice agents take overflow, after-hours and routine calls at scale, with live transfer, CRM logging and QA on every call.',
     h1: 'AI call center automation that <span class="text-gradient-warm">scales without hiring</span>',
     lead: 'AI voice agents take the routine calls your contact center handles all day, order status, bookings, verification and FAQs, so your human agents spend their time on the conversations that need them.',
     answer: '<strong>AI call center automation</strong> uses voice agents to answer and place calls at contact-center volume. The AI resolves routine requests end to end, verifies callers, books and updates records through your systems, and transfers complex calls to human agents with a summary, so queues shrink and every call is logged.',
@@ -79,7 +79,7 @@ export default {
 
   'conversational-ivr': {
     title: 'Conversational AI IVR: Replace Phone Menus | Voxil AI',
-    description: 'Replace “press 1 for sales” with a conversational AI IVR that understands what callers say, routes them correctly and resolves simple requests without a queue.',
+    description: 'Replace “press 1 for sales” with a conversational AI IVR that understands callers, routes them correctly and resolves simple requests without a queue.',
     h1: 'A conversational IVR callers <span class="text-gradient-warm">don’t have to fight</span>',
     lead: 'Callers say what they need in their own words. The AI understands, answers simple requests itself and routes everything else to the right person, first time.',
     answer: 'A <strong>conversational AI IVR</strong> replaces touch-tone phone menus with natural speech. Instead of pressing numbers, callers explain why they’re calling; the AI identifies the intent, resolves simple requests such as hours or appointment changes, and routes other calls to the correct team with context attached.',
@@ -152,7 +152,7 @@ export default {
 
   'multilingual-voice-agents': {
     title: 'Multilingual AI Voice Agents (Spanish, French+) | Voxil AI',
-    description: 'Multilingual AI voice agents that answer and call customers in Spanish, French, German, Arabic, Urdu and more, switching language automatically, with natural local voices.',
+    description: 'Multilingual AI voice agents that answer and call customers in Spanish, French, German, Arabic, Urdu and more, switching language automatically.',
     h1: 'AI voice agents that speak <span class="text-gradient-warm">your customers’ language</span>',
     lead: 'Serve every caller in their own language, at any hour, without hiring bilingual staff for every shift. The agent detects the language and replies naturally.',
     answer: '<strong>Multilingual AI voice agents</strong> answer and place phone calls in several languages, detecting which one the caller speaks and switching automatically. They use the same knowledge, booking rules and CRM integration in every language, so Spanish, French or Arabic speakers get the same service as English speakers.',
@@ -214,7 +214,7 @@ export default {
 
   'ai-lead-reactivation': {
     title: 'AI Lead Reactivation: Revive Old Leads | Voxil AI',
-    description: 'AI database reactivation: re-engage old leads and past customers with consent-based AI calls, SMS and email, qualify who’s ready now and book them into your calendar.',
+    description: 'AI lead reactivation: re-engage old leads and past customers with consent-based AI calls, SMS and email, and book the ones ready now into your calendar.',
     h1: 'Turn your old leads into <span class="text-gradient-warm">booked appointments</span>',
     lead: 'Your CRM is full of people who once asked about your services. AI reactivation campaigns reach them with a relevant reason, find who’s ready now and book them in.',
     answer: '<strong>AI lead reactivation</strong> re-engages dormant leads and past customers in your CRM with personalized, consent-based outreach by AI voice, SMS and email. The AI handles replies, qualifies interest, books appointments and updates the CRM, so revenue comes from contacts you already paid to acquire.',

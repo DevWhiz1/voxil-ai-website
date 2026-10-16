@@ -4,7 +4,7 @@ export default {
   slug: 'n8n-ai-agent-tutorial',
   title: 'How to Build an AI Agent in n8n: A Practical Tutorial for Business Automation',
   metaTitle: 'How to Build an AI Agent in n8n (Tutorial) | Voxil AI',
-  description: 'Step-by-step n8n AI agent tutorial: triggers, the AI Agent node, models, memory, tools like calendars and CRMs, system prompts, error handling, testing and self-hosting.',
+  description: 'Build an AI agent in n8n, step by step: triggers, the AI Agent node, models, memory, tools like calendars and CRMs, error handling and self-hosting.',
   category: 'Chatbots & Automation',
   author: 'abdul-moeez',
   date: '2026-10-08',

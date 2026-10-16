@@ -116,7 +116,7 @@ export const renderCaseStudy = (cs, all) => {
   ].join('\n');
 
   const title = cs.seoTitle ?? `${cs.title} | Voxil AI`;
-  const description = `${cs.summary} ${cs.outcome}`.slice(0, 300);
+  const description = cs.metaDescription ?? `${cs.summary} ${cs.outcome}`.slice(0, 300);
   const article = {
     '@context': 'https://schema.org',
     '@type': 'Article',

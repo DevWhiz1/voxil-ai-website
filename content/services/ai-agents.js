@@ -3,7 +3,7 @@
 export default {
   'ai-agent-development': {
     title: 'Custom AI Agent Development for Business | Voxil AI',
-    description: 'Custom AI agent development: agents that use your tools and data to complete multi-step work, research, update systems, draft and route, with guardrails and human approval.',
+    description: 'Custom AI agent development: agents that use your tools and data to research, update systems and route work, with guardrails and human approval. Free call.',
     h1: 'Custom AI agents that <span class="text-gradient-teal">get work done</span>',
     lead: 'Not just chat. AI agents that read your data, use your tools and complete multi-step tasks, with clear limits on what they may do alone and when a person must approve.',
     answer: 'A <strong>custom AI agent</strong> is software that uses a language model to plan and complete tasks by calling tools such as your CRM, database, email or internal APIs. We design agents for specific jobs, like qualifying leads, preparing quotes or triaging tickets, with guardrails, logging and human approval for sensitive actions.',
@@ -76,7 +76,7 @@ export default {
 
   'rag-chatbot-development': {
     title: 'Knowledge Base AI Chatbot (RAG) Development | Voxil AI',
-    description: 'Knowledge base AI chatbots built with RAG: answers grounded in your documents, policies and help center, with source citations, access controls and accuracy testing.',
+    description: 'Knowledge base AI chatbots built with RAG: answers grounded in your documents and policies, with source citations and accuracy testing. Free call.',
     h1: 'An AI chatbot that answers from <span class="text-gradient-teal">your own documents</span>',
     lead: 'Policies, manuals, help articles and product specs become a chatbot that answers accurately, cites its sources and says “I don’t know” instead of guessing.',
     answer: 'A <strong>knowledge base AI chatbot</strong> uses retrieval-augmented generation (RAG): it searches your approved documents for the most relevant passages and uses them to write an answer, with citations. It keeps answers grounded in your content, can respect access permissions, and is used for customer support and internal knowledge.',
@@ -138,7 +138,7 @@ export default {
 
   'ai-document-processing': {
     title: 'AI Document Processing & Data Extraction | Voxil AI',
-    description: 'AI document processing: extract data from invoices, forms, contracts, applications and emails, validate it and push it into your CRM, accounting or database, with human review.',
+    description: 'AI document processing: extract and validate data from invoices, forms and contracts, then push it into your CRM or accounting, with human review.',
     h1: 'Stop retyping data from <span class="text-gradient-teal">documents</span>',
     lead: 'Invoices, applications, intake forms, contracts and emailed PDFs are read by AI, checked against your rules and entered into your systems, with people reviewing only the exceptions.',
     answer: '<strong>AI document processing</strong> uses AI to read documents such as invoices, forms, IDs, contracts and applications, extract the fields you need, validate them and send them to your CRM, accounting software or database. Low-confidence or unusual documents are routed to a person for review.',
@@ -200,7 +200,7 @@ export default {
 
   'ai-email-automation': {
     title: 'AI Email Automation & Inbox Assistant | Voxil AI',
-    description: 'AI email automation for shared inboxes: classify and route emails, draft accurate replies, extract details into your CRM and follow up automatically, with human approval.',
+    description: 'AI email automation for shared inboxes: triage, routing, accurate draft replies and CRM logging, with your approval before anything sends. Free call.',
     h1: 'An AI assistant for your <span class="text-gradient-teal">busiest inbox</span>',
     lead: 'Sales, support and booking inboxes are triaged, answered and logged automatically. Your team approves replies in one click, or lets routine ones send on their own.',
     answer: '<strong>AI email automation</strong> reads incoming emails in shared inboxes, classifies and routes them, drafts replies using your knowledge base and the customer’s history, extracts details into your CRM and schedules follow-ups. Replies can require human approval or send automatically for routine requests.',
@@ -262,7 +262,7 @@ export default {
 
   'speed-to-lead-automation': {
     title: 'Speed-to-Lead Automation: Reply in Seconds | Voxil AI',
-    description: 'Speed-to-lead automation: respond to every new lead within seconds by call, SMS and email, 24/7, qualify with AI and book appointments before competitors call back.',
+    description: 'Speed-to-lead automation: reply to every new lead within seconds by call, SMS and email, 24/7, then qualify and book them before competitors call.',
     h1: 'Reply to every lead <span class="text-gradient-teal">in seconds, not hours</span>',
     lead: 'The first business to respond usually wins the conversation. Speed-to-lead automation contacts every new inquiry within seconds, around the clock, and books the ready ones.',
     answer: '<strong>Speed-to-lead automation</strong> responds to new leads within seconds of an inquiry from a form, ad, call or chat. It sends an instant personalized text and email, places an AI or routed call, qualifies the lead and books an appointment, then alerts your team, so no lead waits while competitors respond.',

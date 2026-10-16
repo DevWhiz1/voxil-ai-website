@@ -4,7 +4,7 @@ export default {
   slug: 'gohighlevel-workflow-examples',
   title: '15 GoHighLevel Workflow Examples Every Service Business Should Set Up',
   metaTitle: '15 GoHighLevel Workflow Examples (With Triggers) | Voxil AI',
-  description: 'Fifteen practical GoHighLevel workflow examples with triggers, actions and stop conditions: lead response, booking, no-shows, reviews, reactivation, internal alerts and more.',
+  description: '15 GoHighLevel workflow examples with triggers, actions and stop conditions: lead response, booking, no-shows, reviews, reactivation and alerts.',
   category: 'GoHighLevel',
   author: 'ahmad-ali',
   date: '2026-10-08',
