@@ -175,6 +175,9 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [Media Kit](https://www.voxilai.tech/resources/media-kit/): Brand assets, boilerplate and facts for press and partners.
 
 ## Blog
+- [AI Document Processing: Automate Invoices, Forms and Intake](https://www.voxilai.tech/blog/ai-document-processing-guide/): How AI document processing turns invoices, forms, contracts and intake paperwork into clean data in your systems, with accuracy checks and human review.
+- [AI Email Automation: How to Triage, Draft and Route Your Inbox](https://www.voxilai.tech/blog/ai-email-automation-guide/): How AI email automation works: classify incoming mail, draft replies in your voice, route to the right person and update your CRM, with safe rollout steps.
+- [How to Choose an AI Automation Agency: 12 Questions to Ask](https://www.voxilai.tech/blog/how-to-choose-an-ai-automation-agency/): Hiring an AI automation agency? Ask these 12 questions about scope, ownership, data, testing, pricing and support before you sign, plus the red flags to avoid.
 - [AI Agent Security and Privacy: A Practical Checklist for Businesses](https://www.voxilai.tech/blog/ai-agent-security-checklist/): A practical AI agent security checklist: data minimization, access control, prompt injection, tool permissions, logging and vendor checks for chatbots.
 - [AI Automation for Small Business: Where to Start, What to Automate and What to Avoid](https://www.voxilai.tech/blog/ai-automation-small-business-guide/): Where should a small business start with AI automation? The highest-return first projects, a 90-day roadmap, budgets and the mistakes to avoid.
 - [AI for HVAC Companies: 7 Automations That Win More Calls and Maintenance Plans](https://www.voxilai.tech/blog/ai-for-hvac-companies/): 7 AI automations for HVAC companies: 24/7 emergency answering, triage, booking, estimate follow-up and maintenance plan sales. With ServiceTitan tips.

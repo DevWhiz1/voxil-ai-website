@@ -20,7 +20,7 @@ export const statTile = (id, accent = '#2fc4b6') => {
   const s = getStat(id);
   return `
             <figure class="stat-tile" style="--accent: ${accent}">
-              <div class="stat-tile__value" style="color: color-mix(in srgb, ${accent} 80%, #0c1220)">${s.value}</div>
+              <div class="stat-tile__value" style="color: color-mix(in srgb, ${accent} 65%, #0c1220)">${s.value}</div>
               <figcaption>
                 <div class="stat-tile__label">${s.label}</div>
                 ${sourceLink(s.src, 'stat-tile__source', id)}

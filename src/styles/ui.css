@@ -859,7 +859,7 @@
 
 .callout-title {
   @apply mb-2 text-tagline-3 font-semibold tracking-[0.14em] uppercase;
-  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 55%, #0c1220);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 45%, #0c1220);
 }
 
 .stat-tile {
