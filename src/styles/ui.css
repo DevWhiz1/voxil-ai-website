@@ -273,7 +273,8 @@
    --------------------------------------------------------- */
 
 .stat-block {
-  @apply relative;
+  /* <dt> label comes first in the DOM for valid <dl> markup; show the number on top */
+  @apply relative flex flex-col-reverse;
 }
 
 .stat-divided {
@@ -377,7 +378,7 @@
 .pill-accent {
   @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-tagline-3 font-semibold;
   background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
-  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 70%, #0c1220);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 55%, #0c1220);
   border: 1px solid color-mix(in srgb, var(--accent, var(--color-primary-400)) 28%, transparent);
 }
 
@@ -439,7 +440,7 @@
 }
 
 .faq-icon {
-  @apply mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border border-stroke-1 text-secondary/55 transition duration-400;
+  @apply mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border border-stroke-1 text-secondary/60 transition duration-400;
   transition-timing-function: var(--ease-out-expo);
 }
 
@@ -503,7 +504,7 @@
   @apply flex size-11 shrink-0 items-center justify-center rounded-full border-2 text-tagline-1 font-semibold;
   border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 45%, transparent);
   background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
-  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 70%, #0c1220);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 55%, #0c1220);
 }
 
 .stars {
@@ -531,7 +532,7 @@
 }
 
 .field-error {
-  @apply mt-1.5 text-tagline-3 text-coral-600;
+  @apply mt-1.5 text-tagline-3 text-coral-700;
 }
 
 /* ---------------------------------------------------------
@@ -596,7 +597,7 @@
    --------------------------------------------------------- */
 
 .logo-plate {
-  @apply flex h-11 shrink-0 items-center gap-2.5 text-tagline-1 font-semibold whitespace-nowrap text-secondary/40 transition-colors duration-300;
+  @apply flex h-11 shrink-0 items-center gap-2.5 text-tagline-1 font-semibold whitespace-nowrap text-secondary/60 transition-colors duration-300;
 }
 
 .marquee:hover .logo-plate,
@@ -634,7 +635,8 @@
 }
 
 .cta-coral {
-  @apply border-coral-500 bg-coral-500 text-white;
+  /* dark label: white on coral-500 is only 2.8:1 */
+  @apply border-coral-500 bg-coral-500 text-secondary;
   box-shadow: 0 10px 26px -10px rgba(255, 107, 53, 0.6);
 }
 
@@ -695,7 +697,7 @@
    --------------------------------------------------------- */
 
 .crumbs ol {
-  @apply flex flex-wrap items-center gap-x-2 gap-y-1 text-tagline-3 text-secondary/50;
+  @apply flex flex-wrap items-center gap-x-2 gap-y-1 text-tagline-3 text-secondary/60;
 }
 
 .crumbs li {
@@ -754,7 +756,7 @@
 }
 
 .data-table thead th {
-  @apply bg-background-1 text-tagline-3 font-semibold tracking-[0.1em] text-secondary/55 uppercase;
+  @apply bg-background-1 text-tagline-3 font-semibold tracking-[0.1em] text-secondary/60 uppercase;
 }
 
 .data-table thead th:nth-child(2) {
@@ -852,7 +854,7 @@
 
 .callout-title {
   @apply mb-2 text-tagline-3 font-semibold tracking-[0.14em] uppercase;
-  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 70%, #0c1220);
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 55%, #0c1220);
 }
 
 .stat-tile {
@@ -876,11 +878,11 @@
 
 .stat-tile__source,
 .prose-ink .stat-tile__source {
-  @apply mt-3 block text-tagline-3 font-normal text-secondary/45 no-underline transition-colors hover:text-primary-700;
+  @apply mt-3 block text-tagline-3 font-normal text-secondary/60 no-underline transition-colors hover:text-primary-700;
 }
 
 .toc-link {
-  @apply block border-l border-stroke-1 py-1.5 pl-4 text-tagline-3 text-secondary/55 transition-colors hover:border-primary-500/60 hover:text-secondary;
+  @apply block border-l border-stroke-1 py-1.5 pl-4 text-tagline-3 text-secondary/60 transition-colors hover:border-primary-500/60 hover:text-secondary;
 }
 
 .toc-link.is-active {
@@ -889,7 +891,7 @@
 
 /* Multi-column mega menus */
 .mega-col-title {
-  @apply mb-2 flex items-center gap-2 px-2 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase;
+  @apply mb-2 flex items-center gap-2 px-2 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase;
 }
 
 .mega-mini-link {
@@ -913,7 +915,7 @@
 }
 
 .mobile-group__title {
-  @apply pt-3 pb-1 pl-3 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/40 uppercase;
+  @apply pt-3 pb-1 pl-3 text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase;
 }
 
 /* Tool widgets (calculator, checklist) */
@@ -940,7 +942,7 @@
 }
 
 .check-row input:checked + span {
-  @apply text-secondary/40 line-through decoration-secondary/30;
+  @apply text-secondary/60 line-through decoration-secondary/30;
 }
 
 .progress-track {
@@ -958,11 +960,12 @@
 }
 
 .loc-strip {
-  @apply text-tagline-3 leading-relaxed text-secondary/45;
+  @apply text-tagline-3 leading-relaxed text-secondary/70;
 }
 
 .loc-strip a {
-  @apply transition-colors hover:text-secondary;
+  /* padding lifts each link to a 24px+ touch target */
+  @apply inline-block py-1 transition-colors hover:text-secondary;
 }
 
 .loc-strip a + a::before {
@@ -1208,7 +1211,7 @@
 }
 
 .flow-num {
-  @apply absolute top-2 right-3 text-[11px] font-semibold text-secondary/30;
+  @apply absolute top-2 right-3 text-[11px] font-semibold text-secondary/60;
 }
 
 @media (min-width: 1024px) {
@@ -1477,7 +1480,7 @@
 }
 
 .fn-error {
-  @apply mt-3 text-tagline-3 font-medium text-coral-600;
+  @apply mt-3 text-tagline-3 font-medium text-coral-700;
 }
 
 .fn-done {

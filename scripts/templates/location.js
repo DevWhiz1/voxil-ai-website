@@ -75,11 +75,11 @@ export const renderLocation = (slug, l) => {
           </div>
           <div class="space-y-4 self-start">
             <div data-reveal class="glass-card glass-card-topline" style="--accent: ${accent}">
-              <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Industries we automate in ${place}</p>
+              <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Industries we automate in ${place}</p>
               <div class="mt-4 flex flex-wrap gap-2">${industries.map((i) => chipLink(industryUrl(i.slug), i.name, i.icon)).join('')}</div>
             </div>
             <div data-reveal class="glass-card" style="--accent: ${accent}">
-              <p class="text-tagline-3 flex items-center gap-2 font-semibold tracking-[0.14em] text-secondary/45 uppercase">${icon('pin', 'size-4 text-primary-600')} Areas we serve</p>
+              <p class="text-tagline-3 flex items-center gap-2 font-semibold tracking-[0.14em] text-secondary/60 uppercase">${icon('pin', 'size-4 text-primary-600')} Areas we serve</p>
               <p class="text-tagline-2 mt-3 text-secondary/70">${l.areas.join(' · ')}</p>
             </div>
           </div>
@@ -121,7 +121,7 @@ export const renderLocation = (slug, l) => {
           <div>
             <h2 class="text-heading-6 font-semibold text-secondary">${l.compliance.title}</h2>
             <p class="text-tagline-2 mt-2 text-secondary/60">${l.compliance.text}</p>
-            <p class="text-tagline-3 mt-3 text-secondary/35">General information, not legal advice. Confirm specifics with your counsel.</p>
+            <p class="text-tagline-3 mt-3 text-secondary/60">General information, not legal advice. Confirm specifics with your counsel.</p>
           </div>
         </div>
       </div>

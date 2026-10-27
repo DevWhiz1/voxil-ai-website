@@ -127,7 +127,7 @@ export const renderLocationsHub = () => {
             international: 'The Gulf and Pakistan, with WhatsApp-first agents in Arabic, Urdu, Hindi and English.',
           }[g.key] ?? ''}</p>
           <ul class="mt-5 grid grid-cols-2 gap-2">
-            ${g.locations.map((l) => `<li><a href="${locationUrl(l.slug)}" class="group block rounded-xl border border-secondary/[0.07] bg-secondary/[0.03] px-4 py-3 transition hover:border-secondary/20 hover:bg-secondary/[0.07]"><span class="block text-tagline-2 font-medium text-secondary/85 group-hover:text-secondary">${l.name}</span><span class="block text-tagline-3 text-secondary/50">${locationContent[l.slug].tzShort} · ${locationContent[l.slug].languages}</span></a></li>`).join('')}
+            ${g.locations.map((l) => `<li><a href="${locationUrl(l.slug)}" class="group block rounded-xl border border-secondary/[0.07] bg-secondary/[0.03] px-4 py-3 transition hover:border-secondary/20 hover:bg-secondary/[0.07]"><span class="block text-tagline-2 font-medium text-secondary/85 group-hover:text-secondary">${l.name}</span><span class="block text-tagline-3 text-secondary/60">${locationContent[l.slug].tzShort} · ${locationContent[l.slug].languages}</span></a></li>`).join('')}
           </ul>
         </div>`
         ).join('')}

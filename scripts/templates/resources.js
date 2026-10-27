@@ -98,7 +98,7 @@ export const calcField = ({ id, label, hint, min, max, step, value, prefix = '',
                   <span class="text-tagline-2 font-semibold text-secondary">${prefix}<output data-out="${id}">${value}</output>${suffix}</span>
                 </div>
                 <input id="${id}" name="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${value}" class="range-input mt-3" data-calc-input />
-                <p class="text-tagline-3 mt-1.5 text-secondary/40">${hint}</p>
+                <p class="text-tagline-3 mt-1.5 text-secondary/60">${hint}</p>
               </div>`;
 
 export const renderCalculator = () => {
@@ -121,7 +121,7 @@ export const renderCalculator = () => {
       <div class="main-container relative z-10">
         <form class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]" data-lead-calc onsubmit="return false">
           <div class="glass-card space-y-7" style="--accent: ${r.accent}">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your numbers</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your numbers</p>
             ${calcField({ id: 'calls', label: 'Inbound calls & leads per month', hint: 'All calls and web/ad leads combined.', min: 20, max: 3000, step: 10, value: 400 })}
             ${calcField({ id: 'missed', label: 'Share missed or answered too late', hint: 'Unanswered calls, voicemails and leads not contacted within an hour.', min: 0, max: 80, step: 1, value: 25, suffix: '%' })}
             ${calcField({ id: 'opportunity', label: 'Share that are real new-business opportunities', hint: 'Exclude spam, existing customers and wrong numbers.', min: 5, max: 100, step: 1, value: 45, suffix: '%' })}
@@ -133,27 +133,27 @@ export const renderCalculator = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Revenue at risk</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Revenue at risk</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-warm" data-result="monthly">$0</p>
-                <p class="text-tagline-2 text-secondary/55">per month · <span class="font-semibold text-secondary" data-result="yearly">$0</span> per year</p>
+                <p class="text-tagline-2 text-secondary/60">per month · <span class="font-semibold text-secondary" data-result="yearly">$0</span> per year</p>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Recoverable with AI answering &amp; follow-up</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Recoverable with AI answering &amp; follow-up</p>
                 <p class="stat-num text-heading-4 mt-3 text-gradient-teal" data-result="recoverable">$0</p>
-                <p class="text-tagline-2 text-secondary/55">per month · <span class="font-semibold text-secondary" data-result="recoverableYearly">$0</span> per year</p>
+                <p class="text-tagline-2 text-secondary/60">per month · <span class="font-semibold text-secondary" data-result="recoverableYearly">$0</span> per year</p>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="lostLeads">0</p><p class="text-tagline-3 mt-1 text-secondary/50">missed opportunities / mo</p></div>
-              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="lostCustomers">0</p><p class="text-tagline-3 mt-1 text-secondary/50">lost customers / mo</p></div>
+              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="lostLeads">0</p><p class="text-tagline-3 mt-1 text-secondary/60">missed opportunities / mo</p></div>
+              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="lostCustomers">0</p><p class="text-tagline-3 mt-1 text-secondary/60">lost customers / mo</p></div>
             </div>
             <div class="glass-card" style="--accent: #ff7a3d">
               <p class="text-tagline-2 font-semibold text-secondary">Want to recover it?</p>
-              <p class="text-tagline-3 mt-1 text-secondary/55">We’ll map the fastest fix, usually AI answering, missed-call text-back or instant lead follow-up, on a free 30-minute call.</p>
+              <p class="text-tagline-3 mt-1 text-secondary/60">We’ll map the fastest fix, usually AI answering, missed-call text-back or instant lead follow-up, on a free 30-minute call.</p>
               <a href="/book-meeting.html" class="cta cta-md cta-coral mt-4 w-full">Book a free strategy call${arrow()}</a>
             </div>
           </div>
         </form>
-        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/35">Estimates only, based on the numbers you enter. Formula: calls × missed share × opportunity share × close rate × average value. Recoverable = revenue at risk × recovery share.</p>
+        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/60">Estimates only, based on the numbers you enter. Formula: calls × missed share × opportunity share × close rate × average value. Recoverable = revenue at risk × recovery share.</p>
       </div>
     </section>
 
@@ -247,7 +247,7 @@ export const renderStatsHub = () => {
           ${top
             .map((id, i) => {
               const s = STATS[id];
-              return `<li data-reveal class="flex gap-4 rounded-2xl border border-secondary/[0.09] bg-secondary/[0.03] p-5"><span class="step-num size-10 shrink-0 text-tagline-2">${i + 1}</span><div><p class="text-tagline-1 text-secondary/80"><strong class="text-secondary">${s.value}</strong> ${s.label}</p><p class="text-tagline-3 mt-1.5 text-secondary/40">${esc(s.src.name)}, ${s.src.year}</p></div></li>`;
+              return `<li data-reveal class="flex gap-4 rounded-2xl border border-secondary/[0.09] bg-secondary/[0.03] p-5"><span class="step-num size-10 shrink-0 text-tagline-2">${i + 1}</span><div><p class="text-tagline-1 text-secondary/80"><strong class="text-secondary">${s.value}</strong> ${s.label}</p><p class="text-tagline-3 mt-1.5 text-secondary/60">${esc(s.src.name)}, ${s.src.year}</p></div></li>`;
             })
             .join('')}
         </ol>
@@ -272,7 +272,7 @@ export const renderStatsHub = () => {
         <div data-reveal class="glass-card">
           <h2 class="text-heading-6 font-semibold text-secondary">Cite this page</h2>
           <p class="text-tagline-3 mt-3 rounded-xl border border-secondary/[0.08] bg-white/60 p-4 font-mono text-secondary/70">${esc(citeText)}</p>
-          <p class="text-tagline-3 mt-3 text-secondary/45">Please also cite the original source for any individual statistic.</p>
+          <p class="text-tagline-3 mt-3 text-secondary/60">Please also cite the original source for any individual statistic.</p>
         </div>
       </div>
     </section>
@@ -382,7 +382,7 @@ export const renderChecklist = () => {
         <div data-reveal class="mt-10 flex flex-col items-center justify-between gap-4 rounded-2xl border border-secondary/[0.09] bg-secondary/[0.03] p-6 text-center sm:flex-row sm:text-left md:p-8">
           <div>
             <p class="text-heading-6 font-semibold text-secondary">Rather have it done for you?</p>
-            <p class="text-tagline-2 mt-1 text-secondary/55">Our GHL experts complete every item on this list in one to three weeks.</p>
+            <p class="text-tagline-2 mt-1 text-secondary/60">Our GHL experts complete every item on this list in one to three weeks.</p>
           </div>
           <a href="/services/ghl-setup/" class="cta cta-md cta-teal shrink-0">See GHL setup service${arrow()}</a>
         </div>
@@ -437,14 +437,14 @@ export const renderMediaKit = () => {
             <div class="mt-5 flex flex-wrap gap-2">
               <a href="/images/shared/main-logo.svg" download class="cta cta-sm cta-ghost">${icon('photo', 'size-4')}Logo (SVG)</a>
             </div>
-            <p class="text-tagline-3 mt-4 text-secondary/45">Use the logo on white or light backgrounds. Please don’t recolor, stretch or add effects to it.</p>
+            <p class="text-tagline-3 mt-4 text-secondary/60">Use the logo on white or light backgrounds. Please don’t recolor, stretch or add effects to it.</p>
           </div>
           <div data-reveal class="glass-card">
             <h2 class="text-heading-6 font-semibold text-secondary">Brand colors</h2>
             <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-              ${colors.map(([n, hex]) => `<div class="overflow-hidden rounded-xl border border-secondary/10"><div class="h-14" style="background:${hex}"></div><div class="bg-secondary/[0.03] px-3 py-2"><p class="text-tagline-3 font-semibold text-secondary">${n}</p><p class="text-tagline-3 font-mono text-secondary/50">${hex}</p></div></div>`).join('')}
+              ${colors.map(([n, hex]) => `<div class="overflow-hidden rounded-xl border border-secondary/10"><div class="h-14" style="background:${hex}"></div><div class="bg-secondary/[0.03] px-3 py-2"><p class="text-tagline-3 font-semibold text-secondary">${n}</p><p class="text-tagline-3 font-mono text-secondary/60">${hex}</p></div></div>`).join('')}
             </div>
-            <p class="text-tagline-3 mt-4 text-secondary/45">Typeface: <span class="text-secondary/75">Sora</span> (Google Fonts).</p>
+            <p class="text-tagline-3 mt-4 text-secondary/60">Typeface: <span class="text-secondary/75">Sora</span> (Google Fonts).</p>
           </div>
           <div data-reveal class="glass-card">
             <h2 class="text-heading-6 font-semibold text-secondary">Press &amp; partnership contact</h2>

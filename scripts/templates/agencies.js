@@ -32,9 +32,9 @@ const fitBlock = (fit, notFit, title = 'Who this fits, <span class="text-gradien
             <div class="mt-5">${checkList(fit, '#0f9f93')}</div>
           </div>
           <div data-reveal class="glass-card glass-card-topline" style="--accent: #ff6b35">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-coral-600 uppercase">Not a fit if…</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-coral-700 uppercase">Not a fit if…</p>
             <ul class="mt-5 space-y-3">
-              ${notFit.map((n) => `<li class="flex gap-3 text-tagline-1 text-secondary/75"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-coral-50 text-coral-600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3" aria-hidden="true"><path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" /></svg></span>${n}</li>`).join('')}
+              ${notFit.map((n) => `<li class="flex gap-3 text-tagline-1 text-secondary/75"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-coral-50 text-coral-700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3" aria-hidden="true"><path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" /></svg></span>${n}</li>`).join('')}
             </ul>
           </div>
         </div>
@@ -162,8 +162,8 @@ export const renderAgencyHub = (c) => {
       <div class="main-container relative z-10">
         <div data-reveal class="glass-card grid items-center gap-6 md:grid-cols-[auto_1fr_auto] md:p-8">
           <div class="flex -space-x-4">
-            <img src="/abdulmoeez.jpeg" alt="Abdul Moeez" width="64" height="64" loading="lazy" class="size-16 rounded-2xl object-cover object-top ring-4 ring-white" />
-            <img src="/ahmadali.jpeg" alt="Ahmad Ali" width="64" height="64" loading="lazy" class="size-16 rounded-2xl object-cover object-top ring-4 ring-white" />
+            <img src="/images/team/abdulmoeez-160.webp" alt="Abdul Moeez" width="64" height="64" loading="lazy" class="size-16 rounded-2xl object-cover object-top ring-4 ring-white" />
+            <img src="/images/team/ahmadali-160.webp" alt="Ahmad Ali" width="64" height="64" loading="lazy" class="size-16 rounded-2xl object-cover object-top ring-4 ring-white" />
           </div>
           <div>
             <p class="text-heading-6 font-semibold text-secondary">Talk to the people who’ll build it</p>
@@ -219,7 +219,7 @@ export const renderAgencyModel = (slug, c) => {
             <div class="mt-6 space-y-4">${c.whatIs.paras.map((p) => `<p data-reveal class="text-tagline-1 text-secondary/70">${p}</p>`).join('')}</div>
           </div>
           <div data-reveal class="glass-card glass-card-topline self-start" style="--accent: ${accent}">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/50 uppercase">What’s included</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">What’s included</p>
             <div class="mt-5">${checkList(c.included, accent)}</div>
             <a href="/book-meeting.html" class="cta cta-md cta-teal mt-7 w-full">Get a fixed quote${arrow()}</a>
           </div>

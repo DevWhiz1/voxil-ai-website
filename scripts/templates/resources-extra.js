@@ -23,7 +23,7 @@ const relatedTools = (exclude) => `
 export const ctaCard = (accent, title, text) => `
             <div class="glass-card" style="--accent: ${accent}">
               <p class="text-tagline-2 font-semibold text-secondary">${title}</p>
-              <p class="text-tagline-3 mt-1 text-secondary/55">${text}</p>
+              <p class="text-tagline-3 mt-1 text-secondary/60">${text}</p>
               <a href="/book-meeting.html" class="cta cta-md cta-coral mt-4 w-full">Book a free strategy call${arrow()}</a>
             </div>`;
 
@@ -78,16 +78,16 @@ export const renderRoiCalculator = () => {
               <select id="roi-preset" class="field-input mt-2" data-roi-preset>
                 ${ROI_PRESETS.map((p) => `<option value="${p.key}" data-values='${JSON.stringify(p.v)}'>${p.label}</option>`).join('')}
               </select>
-              <p class="text-tagline-3 mt-1.5 text-secondary/40">Example starting values only. Adjust each number to match your business.</p>
+              <p class="text-tagline-3 mt-1.5 text-secondary/60">Example starting values only. Adjust each number to match your business.</p>
             </div>
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Extra revenue</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Extra revenue</p>
             ${calcField({ id: 'appointments', label: 'Extra appointments per month', hint: 'From faster response, after-hours answering and follow-up.', min: 0, max: 200, step: 1, value: d.appointments })}
             ${calcField({ id: 'close', label: 'Close rate on appointments', hint: 'Share of appointments that become paying customers.', min: 1, max: 100, step: 1, value: d.close, suffix: '%' })}
             ${calcField({ id: 'value', label: 'Average customer value', hint: 'First purchase, or lifetime value if you prefer.', min: 50, max: 20000, step: 50, value: d.value, prefix: '$' })}
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Time saved</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Time saved</p>
             ${calcField({ id: 'hours', label: 'Staff hours saved per week', hint: 'Calls, follow-up, data entry and scheduling handled by automation.', min: 0, max: 80, step: 1, value: d.hours })}
             ${calcField({ id: 'hourly', label: 'Loaded hourly cost of that time', hint: 'Wage plus overhead.', min: 10, max: 150, step: 1, value: d.hourly, prefix: '$' })}
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Costs</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Costs</p>
             ${calcField({ id: 'monthly', label: 'Monthly running cost', hint: 'Software, AI usage, SMS and support.', min: 0, max: 5000, step: 50, value: d.monthly, prefix: '$' })}
             ${calcField({ id: 'setup', label: 'One-time setup cost', hint: 'Build and integration fee.', min: 0, max: 30000, step: 250, value: d.setup, prefix: '$' })}
           </div>
@@ -95,24 +95,24 @@ export const renderRoiCalculator = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Estimated monthly gain</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Estimated monthly gain</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-teal" data-result="gain">$0</p>
-                <p class="text-tagline-2 text-secondary/55">net of running costs: <span class="font-semibold text-secondary" data-result="net">$0</span> per month</p>
+                <p class="text-tagline-2 text-secondary/60">net of running costs: <span class="font-semibold text-secondary" data-result="net">$0</span> per month</p>
                 <div class="hairline my-6"></div>
                 <div class="grid grid-cols-2 gap-4">
-                  <div><p class="text-tagline-3 text-secondary/45">Payback period</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="payback">0</p></div>
-                  <div><p class="text-tagline-3 text-secondary/45">12-month ROI</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="roi">0%</p></div>
+                  <div><p class="text-tagline-3 text-secondary/60">Payback period</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="payback">0</p></div>
+                  <div><p class="text-tagline-3 text-secondary/60">12-month ROI</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="roi">0%</p></div>
                 </div>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="revenue">$0</p><p class="text-tagline-3 mt-1 text-secondary/50">extra revenue / mo</p></div>
-              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="time">$0</p><p class="text-tagline-3 mt-1 text-secondary/50">time value / mo</p></div>
+              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="revenue">$0</p><p class="text-tagline-3 mt-1 text-secondary/60">extra revenue / mo</p></div>
+              <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="time">$0</p><p class="text-tagline-3 mt-1 text-secondary/60">time value / mo</p></div>
             </div>
             ${ctaCard(r.accent, 'Want a real estimate?', 'We’ll check your lead volume, response times and costs on a free call and give you an honest projection.')}
           </div>
         </form>
-        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/35">Estimates only, based on the numbers you enter. Monthly gain = appointments × close rate × value + hours × 4.33 × hourly cost. ROI = (12 × gain − setup − 12 × running cost) ÷ (setup + 12 × running cost).</p>
+        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/60">Estimates only, based on the numbers you enter. Monthly gain = appointments × close rate × value + hours × 4.33 × hourly cost. ROI = (12 × gain − setup − 12 × running cost) ÷ (setup + 12 × running cost).</p>
       </div>
     </section>
 
@@ -167,7 +167,7 @@ export const renderReadiness = () => {
       <div class="main-container relative z-10">
         <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]" data-quiz>
           <fieldset class="glass-card space-y-3" style="--accent: ${r.accent}">
-            <legend class="text-tagline-3 mb-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Tick everything that’s true today</legend>
+            <legend class="text-tagline-3 mb-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Tick everything that’s true today</legend>
             ${READINESS.map(
               (x, i) => `<label class="quiz-item"><input type="checkbox" data-quiz-item="${i}" /><span>${x.q}</span></label>`
             ).join('\n            ')}
@@ -175,12 +175,12 @@ export const renderReadiness = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your readiness score</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your readiness score</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-warm"><span data-quiz-score>0</span>/10</p>
                 <p class="text-tagline-1 mt-2 font-semibold text-secondary" data-quiz-tier>Start with the foundations</p>
                 <p class="text-tagline-2 mt-1 text-secondary/60" data-quiz-tier-text>Your biggest wins are basic: answering every call and replying to every lead fast.</p>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your next steps</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your next steps</p>
                 <ol class="quiz-fixes mt-3 space-y-2.5" data-quiz-fixes>
                   ${READINESS.map((x, i) => `<li data-quiz-fix="${i}">${x.fix}</li>`).join('\n                  ')}
                 </ol>
@@ -222,7 +222,7 @@ const copyBlock = (id, title, desc, text) => `
             <div class="flex items-start justify-between gap-3">
               <div>
                 <h3 class="text-heading-6 font-semibold text-secondary">${title}</h3>
-                <p class="text-tagline-3 mt-1 text-secondary/55">${desc}</p>
+                <p class="text-tagline-3 mt-1 text-secondary/60">${desc}</p>
               </div>
               <button type="button" class="cta cta-sm cta-ghost shrink-0" data-copy="${id}">${icon('copy', 'size-4')}<span data-copy-label>Copy</span></button>
             </div>

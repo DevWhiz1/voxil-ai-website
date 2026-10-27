@@ -22,7 +22,7 @@ const megaTrigger = (label, href) =>
 
 const megaFooter = (text, href, label) => `
       <div class="mt-2 flex items-center justify-between gap-4 rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3">
-        <p class="text-tagline-3 text-secondary/55">${text}</p>
+        <p class="text-tagline-3 text-secondary/60">${text}</p>
         <a href="${href}" class="link-arrow shrink-0 text-primary-600 hover:text-primary-700">${label}${arrow()}</a>
       </div>`;
 
@@ -120,7 +120,7 @@ export const navDesktop = (posts = []) => `${HEADER_NOTE}
         <div>
           <p class="mega-col-title">${icon('book', 'size-4')}Topics</p>
           ${blogTopics(posts)
-            .map((t) => `<a href="/blog/#${t.slug}" class="mega-mini-link"><span class="flex items-center justify-between gap-3"><span>${t.name}</span><span class="rounded-full bg-secondary/[0.05] px-2 text-tagline-3 text-secondary/45">${t.count}</span></span></a>`)
+            .map((t) => `<a href="/blog/#${t.slug}" class="mega-mini-link"><span class="flex items-center justify-between gap-3"><span>${t.name}</span><span class="rounded-full bg-secondary/[0.05] px-2 text-tagline-3 text-secondary/60">${t.count}</span></span></a>`)
             .join('\n          ')}
         </div>
         <div>
@@ -139,7 +139,7 @@ export const navDesktop = (posts = []) => `${HEADER_NOTE}
 // ---------------------------------------------------------------------------
 const mobileGroup = (title, inner, dot = '#2fc4b6') => `
 <details class="mobile-group" style="--dot: ${dot}">
-  <summary>${title}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-secondary/50 transition-transform duration-300" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></summary>
+  <summary>${title}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-secondary/60 transition-transform duration-300" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg></summary>
   <div class="pb-3">${inner}</div>
 </details>`;
 
@@ -170,7 +170,7 @@ const footLink = (href, label) =>
 
 const footCol = (title, links) => `
         <div>
-          <p class="text-tagline-3 mb-4 font-semibold tracking-[0.12em] text-secondary/40 uppercase">${title}</p>
+          <p class="text-tagline-3 mb-4 font-semibold tracking-[0.12em] text-secondary/60 uppercase">${title}</p>
           <ul class="space-y-2.5">${links.join('')}</ul>
         </div>`;
 
@@ -215,7 +215,7 @@ export const footerLinks = () => `${HEADER_NOTE}
 
 export const footerLocations = () => `${HEADER_NOTE}
 <div class="mt-12 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.025] p-5 md:p-6">
-  <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/40 uppercase">Locations we serve</p>
+  <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/70 uppercase">Locations we serve</p>
   <p class="loc-strip">
     ${LOCATION_GROUPS.flatMap((g) => g.locations)
       .map((l) => `<a href="${locationUrl(l.slug)}">${l.name}</a>`)
@@ -235,13 +235,13 @@ export const homeExplore = (posts) => `${HEADER_NOTE}
       <div>
         ${eyebrow('Industries')}
         <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">Built for <span class="text-gradient-teal">your industry</span></h2>
-        <p data-reveal class="text-tagline-2 mt-4 text-secondary/55">Every industry leaks revenue in different places. See where, and what we build to fix it.</p>
+        <p data-reveal class="text-tagline-2 mt-4 text-secondary/60">Every industry leaks revenue in different places. See where, and what we build to fix it.</p>
         <div data-reveal class="mt-6 flex flex-wrap gap-2">${INDUSTRIES.map((i) => chipLink(industryUrl(i.slug), i.name, i.icon)).join('')}</div>
       </div>
       <div>
         ${eyebrow('Locations', '#38bdf8')}
         <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">Serving businesses <span class="text-gradient-sky">worldwide</span></h2>
-        <p data-reveal class="text-tagline-2 mt-4 text-secondary/55">Remote-first, working in your time zone, with local context on languages and compliance.</p>
+        <p data-reveal class="text-tagline-2 mt-4 text-secondary/60">Remote-first, working in your time zone, with local context on languages and compliance.</p>
         <div data-reveal class="mt-6 flex flex-wrap gap-2">${LOCATION_GROUPS.flatMap((g) => g.locations).map((l) => chipLink(locationUrl(l.slug), l.name, 'pin')).join('')}</div>
       </div>
     </div>

@@ -78,7 +78,7 @@ export const renderService = (slug, c, posts = []) => {
             </div>
           </div>
           <div data-reveal class="glass-card glass-card-topline self-start" style="--accent: ${accent}">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">What's included</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">What's included</p>
             <div class="mt-5">${checkList(c.included, accent)}</div>
             <a href="/book-meeting.html" class="cta cta-md cta-teal mt-7 w-full">Get a fixed-price scope${arrow()}</a>
           </div>
@@ -133,7 +133,7 @@ export const renderService = (slug, c, posts = []) => {
             <div class="mt-6">${checkList(c.fit, accent)}</div>
             ${
               industries.length
-                ? `<p data-reveal class="text-tagline-3 mt-8 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Popular in</p>
+                ? `<p data-reveal class="text-tagline-3 mt-8 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Popular in</p>
             <div data-reveal class="mt-3 flex flex-wrap gap-2">${industries.map((i) => chipLink(industryUrl(i.slug), i.name, i.icon)).join('')}</div>`
                 : ''
             }
@@ -143,7 +143,7 @@ export const renderService = (slug, c, posts = []) => {
               <span class="icon-tile" style="--accent: ${accent}">${icon('puzzle')}</span>
               <div>
                 <h3 class="text-heading-6 font-semibold text-secondary">Works with your stack</h3>
-                <p class="text-tagline-3 text-secondary/50">No rip-and-replace. We integrate with what you already run.</p>
+                <p class="text-tagline-3 text-secondary/60">No rip-and-replace. We integrate with what you already run.</p>
               </div>
             </div>
             <div class="mt-6 flex flex-wrap gap-2">${c.integrations.map((t) => `<span class="pill">${t}</span>`).join('')}</div>

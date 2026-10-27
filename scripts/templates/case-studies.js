@@ -55,7 +55,7 @@ export const renderCaseStudy = (cs, all) => {
       <div class="main-container relative z-10">
         <div class="grid gap-5 lg:grid-cols-3">
           <div data-reveal class="glass-card glass-card-topline" style="--accent: #ff6b35">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-coral-600 uppercase">The challenge</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-coral-700 uppercase">The challenge</p>
             <p class="text-tagline-1 mt-3 text-secondary/75">${cs.challenge}</p>
           </div>
           <div data-reveal class="glass-card glass-card-topline" style="--accent: #0f9f93">

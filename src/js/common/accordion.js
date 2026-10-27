@@ -58,8 +58,13 @@ const initAccordions = () => {
       const trigger = item.querySelector('.faq-trigger, .faq-trigger-light');
       if (!trigger) return;
 
-      // Honour a server-rendered open state.
-      if (item.classList.contains('is-open')) openItem(item);
+      // Honour a server-rendered open state. It's already open, so rest it at
+      // `none` directly: measuring scrollHeight here would force a layout on load.
+      if (item.classList.contains('is-open')) {
+        trigger.setAttribute('aria-expanded', 'true');
+        const panel = item.querySelector('.faq-panel');
+        if (panel) panel.style.maxHeight = 'none';
+      }
 
       trigger.addEventListener('click', () => {
         const isOpen = item.classList.contains('is-open');

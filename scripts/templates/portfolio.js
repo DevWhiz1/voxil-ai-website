@@ -91,7 +91,7 @@ const callsPanel = () => `
                 <span class="icon-tile size-10 rounded-xl" style="--accent: #ff6b35">${icon('phone', 'size-5')}</span>
                 <div>
                   <p class="text-tagline-2 font-semibold text-secondary">Outbound speed-to-lead call</p>
-                  <p class="text-tagline-3 text-secondary/45">Sample conversation, demo roofing company</p>
+                  <p class="text-tagline-3 text-secondary/60">Sample conversation, demo roofing company</p>
                 </div>
               </div>
               <span class="pill-accent" style="--accent: #ff6b35"><span class="call-live-dot"></span>Demo call</span>
@@ -100,7 +100,7 @@ const callsPanel = () => `
             <div class="call-log mt-5 space-y-2.5 border-t border-secondary/[0.09] pt-4" aria-live="polite">
               ${CALL_LINES.map(
                 ([who, text]) =>
-                  `<p class="call-line text-tagline-2 text-secondary/60"><span class="font-semibold ${who === 'Agent' ? 'text-coral-600' : 'text-secondary/80'}">${who}:</span> ${esc(text)}</p>`
+                  `<p class="call-line text-tagline-2 text-secondary/60"><span class="font-semibold ${who === 'Agent' ? 'text-coral-700' : 'text-secondary/80'}">${who}:</span> ${esc(text)}</p>`
               ).join('\n              ')}
             </div>
             <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
@@ -115,7 +115,7 @@ const callsPanel = () => `
 
           <div class="space-y-5">
             <div class="glass-card">
-              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">What the bot does on this call</p>
+              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">What the bot does on this call</p>
               ${checkList(
                 [
                   'Calls the lead back within a minute of the form submission',
@@ -128,7 +128,7 @@ const callsPanel = () => `
               ).replace('class="check-list"', 'class="check-list mt-4"')}
             </div>
             <div class="glass-card">
-              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">Built with</p>
+              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">Built with</p>
               <div class="mt-4 flex flex-wrap gap-2">
                 ${['Retell AI', 'Vapi', 'Twilio', 'GoHighLevel', 'Google Calendar', 'Make.com'].map((t) => `<span class="pill">${t}</span>`).join('')}
               </div>
@@ -152,7 +152,7 @@ const chatWidget = ({ bot, title, subtitle, greeting, suggestions, cls = '' }) =
               <span class="chat-avatar">${icon('sparkles', 'size-4')}</span>
               <div class="min-w-0 flex-1">
                 <p class="text-tagline-2 font-semibold text-secondary">${title}</p>
-                <p class="text-tagline-3 flex items-center gap-1.5 text-secondary/45"><span class="chat-online"></span>${subtitle}</p>
+                <p class="text-tagline-3 flex items-center gap-1.5 text-secondary/60"><span class="chat-online"></span>${subtitle}</p>
               </div>
             </div>
             <div class="chat-log" data-chat-log aria-live="polite"></div>
@@ -178,11 +178,11 @@ const chatbotsPanel = () => `
               greeting: 'Hi! I’m the Voxil AI assistant. Ask me about AI voice agents, chatbots, GoHighLevel or automation, and I’ll point you to the right service.',
               suggestions: ['What do you build?', 'How much does an AI receptionist cost?', 'Do you work with GoHighLevel?'],
             })}
-            <p class="text-tagline-3 mt-3 text-secondary/45">A real AI chatbot trained on this website. Please don’t share sensitive personal information.</p>
+            <p class="text-tagline-3 mt-3 text-secondary/60">A real AI chatbot trained on this website. Please don’t share sensitive personal information.</p>
           </div>
 
           <div>
-            <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">WhatsApp Business bot</p>
+            <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">WhatsApp Business bot</p>
             <div class="mock-window">
               <div class="wa-bar">
                 <span class="wa-avatar">BS</span>
@@ -197,18 +197,18 @@ const chatbotsPanel = () => `
                 <p class="wa-out">Thanks! Confirmed at 42 Oak Street, 3:30pm. Reply RESCHEDULE any time to change it.</p>
               </div>
             </div>
-            <p class="text-tagline-3 mt-3 text-secondary/45">Sample conversation for a demo business.</p>
+            <p class="text-tagline-3 mt-3 text-secondary/60">Sample conversation for a demo business.</p>
           </div>
 
           <div>
-            <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">Instagram DM automation</p>
+            <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">Instagram DM automation</p>
             <div class="mock-window">
               <div class="ig-bar">
                 <span class="ig-avatar">LA</span>
-                <div><p class="text-tagline-2 font-semibold text-secondary">lumiere.aesthetics</p><p class="text-tagline-3 text-secondary/45">Instagram Direct, demo</p></div>
+                <div><p class="text-tagline-2 font-semibold text-secondary">lumiere.aesthetics</p><p class="text-tagline-3 text-secondary/60">Instagram Direct, demo</p></div>
               </div>
               <div class="space-y-2.5 p-4">
-                <p class="text-tagline-3 text-center text-secondary/40">Replied to your story</p>
+                <p class="text-tagline-3 text-center text-secondary/60">Replied to your story</p>
                 <p class="bubble-in">How much is lip filler? 😍</p>
                 <p class="ig-out">Thanks for reaching out! Treatments start with a free consultation so we can plan the right amount for you. Want to see this week’s openings?</p>
                 <p class="bubble-in">Yes please</p>
@@ -216,7 +216,7 @@ const chatbotsPanel = () => `
                 <div class="flex flex-wrap justify-end gap-2"><span class="pill">Wed 6pm</span><span class="pill">Sat 11am</span></div>
               </div>
             </div>
-            <p class="text-tagline-3 mt-3 text-secondary/45">Sample conversation for a demo business.</p>
+            <p class="text-tagline-3 mt-3 text-secondary/60">Sample conversation for a demo business.</p>
           </div>
         </div>
         <div class="mt-8 text-center">
@@ -241,7 +241,7 @@ const automationPanel = () => `
           <div class="mock-bar">
             <span class="mock-dot bg-primary-400/80"></span>
             <span class="mock-dot bg-secondary/25"></span>
-            <span class="text-tagline-3 ml-2 text-secondary/45">Speed-to-lead scenario · Make.com / n8n / GoHighLevel workflow</span>
+            <span class="text-tagline-3 ml-2 text-secondary/60">Speed-to-lead scenario · Make.com / n8n / GoHighLevel workflow</span>
           </div>
           <ol class="flow-grid p-5 md:p-7">
             ${FLOW.map(
@@ -251,7 +251,7 @@ const automationPanel = () => `
               <span class="icon-tile size-11 rounded-xl" style="--accent: ${n.accent}">${icon(n.icon, 'size-5')}</span>
               <span class="min-w-0">
                 <span class="text-tagline-2 block font-semibold text-secondary">${n.name}</span>
-                <span class="text-tagline-3 block text-secondary/50">${n.tool}</span>
+                <span class="text-tagline-3 block text-secondary/60">${n.tool}</span>
               </span>
             </li>`
             ).join('')}
@@ -285,20 +285,20 @@ const seoPanel = () => `
       <div data-tab-panel="seo" class="tab-panel" role="tabpanel" hidden>
         <div class="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
-            <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">Example: an optimized search result</p>
+            <p class="text-tagline-3 mb-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">Example: an optimized search result</p>
             <div class="mock-window">
               <div class="serp-bar">
                 <span class="serp-g" aria-hidden="true">G</span>
-                <span class="serp-q">${icon('search', 'size-4 text-secondary/40')}family doctor accepting new patients near me</span>
+                <span class="serp-q">${icon('search', 'size-4 text-secondary/60')}family doctor accepting new patients near me</span>
               </div>
               <div class="space-y-6 p-5 md:p-6">
                 <div>
-                  <p class="text-tagline-3 text-secondary/50"><span class="font-semibold text-secondary/70">Sponsored</span> · riversidefamilyclinic.example</p>
+                  <p class="text-tagline-3 text-secondary/60"><span class="font-semibold text-secondary/70">Sponsored</span> · riversidefamilyclinic.example</p>
                   <p class="serp-title">New Patients Welcome | Appointments This Week</p>
                   <p class="text-tagline-2 text-secondary/60">Book online in under a minute. Same-week visits, most insurance accepted.</p>
                 </div>
                 <div>
-                  <p class="text-tagline-3 text-secondary/50">riversidefamilyclinic.example › new-patients</p>
+                  <p class="text-tagline-3 text-secondary/60">riversidefamilyclinic.example › new-patients</p>
                   <p class="serp-title">Riverside Family Clinic: Family Doctors Accepting New Patients</p>
                   <p class="text-tagline-2 text-secondary/60">Family doctors for all ages. Book online, complete forms before you arrive and get reminders by text.</p>
                   <div class="mt-3 grid gap-2 sm:grid-cols-2">
@@ -306,28 +306,28 @@ const seoPanel = () => `
                     <span class="serp-link">Meet our doctors</span><span class="serp-link">New patient forms</span>
                   </div>
                   <div class="mt-3 divide-y divide-secondary/[0.08] rounded-xl border border-secondary/[0.08]">
-                    <p class="flex items-center justify-between px-4 py-2.5 text-tagline-2 text-secondary/70">Can I book for my child?<span class="text-secondary/35">${plus}</span></p>
-                    <p class="flex items-center justify-between px-4 py-2.5 text-tagline-2 text-secondary/70">Do you offer same-week visits?<span class="text-secondary/35">${plus}</span></p>
+                    <p class="flex items-center justify-between px-4 py-2.5 text-tagline-2 text-secondary/70">Can I book for my child?<span class="text-secondary/60">${plus}</span></p>
+                    <p class="flex items-center justify-between px-4 py-2.5 text-tagline-2 text-secondary/70">Do you offer same-week visits?<span class="text-secondary/60">${plus}</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <p class="text-tagline-3 mt-3 text-secondary/45">Illustration for a demo business: a paid ad plus an organic result with sitelinks and FAQ rich results from schema.</p>
+            <p class="text-tagline-3 mt-3 text-secondary/60">Illustration for a demo business: a paid ad plus an organic result with sitelinks and FAQ rich results from schema.</p>
           </div>
 
           <div class="space-y-5">
             <div class="glass-card">
-              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">Our own site, as of September 2026</p>
+              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">Our own site, as of September 2026</p>
               <dl class="mt-4 grid grid-cols-2 gap-3">
-                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/45">Semrush Site Health</dt><dd class="text-heading-6 font-semibold text-primary-700">100%</dd></div>
-                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/45">AI Search Health</dt><dd class="text-heading-6 font-semibold text-primary-700">100%</dd></div>
-                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/45">Structured data</dt><dd class="text-tagline-1 font-semibold text-secondary">Every page</dd></div>
-                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/45">llms.txt for AI</dt><dd class="text-tagline-1 font-semibold text-secondary">Published</dd></div>
+                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/60">Semrush Site Health</dt><dd class="text-heading-6 font-semibold text-primary-700">100%</dd></div>
+                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/60">AI Search Health</dt><dd class="text-heading-6 font-semibold text-primary-700">100%</dd></div>
+                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/60">Structured data</dt><dd class="text-tagline-1 font-semibold text-secondary">Every page</dd></div>
+                <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3"><dt class="text-tagline-3 text-secondary/60">llms.txt for AI</dt><dd class="text-tagline-1 font-semibold text-secondary">Published</dd></div>
               </dl>
-              <p class="text-tagline-3 mt-3 text-secondary/45">The same technical setup we ship for clients.</p>
+              <p class="text-tagline-3 mt-3 text-secondary/60">The same technical setup we ship for clients.</p>
             </div>
             <div class="glass-card">
-              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/45 uppercase">What we deliver</p>
+              <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase">What we deliver</p>
               ${checkList(
                 [
                   'Technical SEO: speed, schema, sitemaps, internal links',
@@ -565,8 +565,8 @@ export const renderFunnel = (f) => {
           <div class="fn-card" id="start">
             <form data-funnel-form novalidate>
               <div class="flex items-center justify-between gap-3">
-                <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/50 uppercase" data-step-label>Step 1 of ${steps}</p>
-                <p class="text-tagline-3 text-secondary/40">Takes 30 seconds</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.12em] text-secondary/60 uppercase" data-step-label>Step 1 of ${steps}</p>
+                <p class="text-tagline-3 text-secondary/60">Takes 30 seconds</p>
               </div>
               <div class="fn-progress mt-3" aria-hidden="true"><span data-progress style="width: ${Math.round(100 / steps)}%"></span></div>
               <div class="mt-6">
@@ -578,7 +578,7 @@ ${f.questions.map(question).join('')}
                     <label class="block"><span class="sr-only">Email</span><input class="fn-input" type="email" name="email" placeholder="Email address" autocomplete="email" required /></label>
                     <label class="block"><span class="sr-only">Phone</span><input class="fn-input" type="tel" name="phone" placeholder="Phone number" autocomplete="tel" /></label>
                   </div>
-                  <p class="text-tagline-3 mt-3 text-secondary/45">Demo form: nothing you type here is sent or stored.</p>
+                  <p class="text-tagline-3 mt-3 text-secondary/60">Demo form: nothing you type here is sent or stored.</p>
                 </fieldset>
                 <p class="fn-error" data-error hidden>Please choose an option to continue.</p>
               </div>
@@ -629,11 +629,11 @@ ${f.questions.map(question).join('')}
       <section class="section-soft py-16 md:py-20">
         <div class="main-container">
           <h2 class="text-heading-5 sm:text-heading-4 text-center font-semibold tracking-tight text-secondary">What customers say</h2>
-          <p class="text-tagline-3 mt-2 text-center text-secondary/45">Sample reviews written for this demo</p>
+          <p class="text-tagline-3 mt-2 text-center text-secondary/60">Sample reviews written for this demo</p>
           <div class="mt-10 grid gap-5 md:grid-cols-2">
             ${f.testimonials
               .map(
-                (t) => `<figure class="fn-panel"><p class="fn-stars" aria-hidden="true">★★★★★</p><blockquote class="text-tagline-1 mt-3 text-secondary/80">“${esc(t.quote)}”</blockquote><figcaption class="text-tagline-3 mt-4 text-secondary/50">${esc(t.name)}, ${esc(t.role)}</figcaption></figure>`
+                (t) => `<figure class="fn-panel"><p class="fn-stars" aria-hidden="true">★★★★★</p><blockquote class="text-tagline-1 mt-3 text-secondary/80">“${esc(t.quote)}”</blockquote><figcaption class="text-tagline-3 mt-4 text-secondary/60">${esc(t.name)}, ${esc(t.role)}</figcaption></figure>`
               )
               .join('\n            ')}
           </div>
@@ -644,7 +644,7 @@ ${f.questions.map(question).join('')}
         <div class="main-container grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
             <h2 class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">Questions, answered</h2>
-            <p class="text-tagline-2 mt-4 text-secondary/55">Still unsure? Ask our assistant in the chat bubble, it replies instantly.</p>
+            <p class="text-tagline-2 mt-4 text-secondary/60">Still unsure? Ask our assistant in the chat bubble, it replies instantly.</p>
           </div>
           <div data-accordion class="space-y-3">
             ${f.faqs
@@ -688,8 +688,8 @@ ${f.questions.map(question).join('')}
 
     <footer class="border-t border-secondary/[0.08] bg-white py-6">
       <div class="main-container flex flex-col items-center justify-between gap-2 sm:flex-row">
-        <p class="text-tagline-3 text-secondary/45">© 2026 ${esc(f.brand)} (fictional demo business)</p>
-        <p class="text-tagline-3 text-secondary/45">Demo funnel by <a href="/" class="font-medium text-secondary/70 hover:text-secondary">Voxil AI</a></p>
+        <p class="text-tagline-3 text-secondary/60">© 2026 ${esc(f.brand)} (fictional demo business)</p>
+        <p class="text-tagline-3 text-secondary/60">Demo funnel by <a href="/" class="font-medium text-secondary/70 hover:text-secondary">Voxil AI</a></p>
       </div>
     </footer>
 

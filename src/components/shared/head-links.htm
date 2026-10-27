@@ -28,9 +28,8 @@ Head links
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- Sora is self-hosted (see typography.css), so no third-party stylesheet blocks render -->
+<link rel="preload" href="/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="/src/styles/main.css" />
 <link rel="alternate" type="text/plain" title="LLM site map" href="/llms.txt" />
 

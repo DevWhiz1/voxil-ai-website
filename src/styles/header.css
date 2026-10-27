@@ -120,7 +120,7 @@ Dark premium nav
 }
 
 .mega-link__desc {
-  @apply mt-0.5 block text-tagline-3 text-secondary/55;
+  @apply mt-0.5 block text-tagline-3 text-secondary/60;
 }
 
 /* Wide mega panels: the trigger group is not positioned, so the panel

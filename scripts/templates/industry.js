@@ -42,16 +42,16 @@ const revenueCalc = ({ noun, calc, accent }) => `
           <div class="space-y-4 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Revenue at risk</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Revenue at risk</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-warm" data-result="monthly">$0</p>
-                <p class="text-tagline-2 text-secondary/55">per month · <span class="font-semibold text-secondary" data-result="yearly">$0</span> per year</p>
+                <p class="text-tagline-2 text-secondary/60">per month · <span class="font-semibold text-secondary" data-result="yearly">$0</span> per year</p>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Recoverable with AI answering and follow-up</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Recoverable with AI answering and follow-up</p>
                 <p class="stat-num text-heading-4 mt-3 text-gradient-teal" data-result="recoverable">$0</p>
-                <p class="text-tagline-2 text-secondary/55">per month, assuming 60% recovery</p>
+                <p class="text-tagline-2 text-secondary/60">per month, assuming 60% recovery</p>
               </div>
             </div>
-            <p class="text-tagline-3 text-secondary/45">Assumes half of missed contacts are genuine new opportunities. Estimates only; nothing you enter is saved. For every input, use the full <a href="/resources/lead-loss-calculator/" class="text-primary-600 underline underline-offset-4">Lead Loss Calculator</a>.</p>
+            <p class="text-tagline-3 text-secondary/60">Assumes half of missed contacts are genuine new opportunities. Estimates only; nothing you enter is saved. For every input, use the full <a href="/resources/lead-loss-calculator/" class="text-primary-600 underline underline-offset-4">Lead Loss Calculator</a>.</p>
           </div>
         </form>
       </div>
@@ -148,7 +148,7 @@ export const renderIndustry = (slug, base, posts = []) => {
             <span class="icon-tile" style="--accent: ${accent}">${icon('document')}</span>
             <div>
               <p class="text-tagline-2 font-semibold text-secondary">See it in practice</p>
-              <p class="text-tagline-3 text-secondary/55">${c.caseStudy.label}</p>
+              <p class="text-tagline-3 text-secondary/60">${c.caseStudy.label}</p>
             </div>
           </div>
           <a href="${c.caseStudy.href}" class="cta cta-md cta-ghost">Read the case study${arrow()}</a>

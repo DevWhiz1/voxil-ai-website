@@ -30,16 +30,16 @@ export const renderVoiceCostCalculator = () => {
       <div class="main-container relative z-10">
         <form class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]" data-voice-cost onsubmit="return false">
           <div class="glass-card space-y-7" style="--accent: ${r.accent}">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Call volume</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Call volume</p>
             ${calcField({ id: 'vc-calls', label: 'Calls handled per month', hint: 'Inbound and outbound calls the AI will take.', min: 50, max: 20000, step: 50, value: 800 })}
             ${calcField({ id: 'vc-length', label: 'Average call length (minutes)', hint: 'Booking and FAQ calls are often 2 to 4 minutes.', min: 1, max: 20, step: 0.5, value: 3 })}
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">AI cost per minute (example rates, use your provider’s)</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">AI cost per minute (example rates, use your provider’s)</p>
             ${calcField({ id: 'vc-platform', label: 'Platform fee per minute', hint: 'Orchestration fee charged by the voice AI platform.', min: 0, max: 0.3, step: 0.005, value: 0.05, prefix: '$' })}
             ${calcField({ id: 'vc-model', label: 'Language model and transcription per minute', hint: 'Varies widely by model; larger models cost more.', min: 0, max: 0.3, step: 0.005, value: 0.03, prefix: '$' })}
             ${calcField({ id: 'vc-voice', label: 'Voice (text-to-speech) per minute', hint: 'Premium voices cost more than standard ones.', min: 0, max: 0.3, step: 0.005, value: 0.04, prefix: '$' })}
             ${calcField({ id: 'vc-phone', label: 'Telephony per minute', hint: 'Carrier cost for the call itself.', min: 0, max: 0.1, step: 0.001, value: 0.015, prefix: '$' })}
             ${calcField({ id: 'vc-fixed', label: 'Fixed monthly costs', hint: 'Phone numbers, monitoring and support.', min: 0, max: 3000, step: 25, value: 150, prefix: '$' })}
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Human comparison</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Human comparison</p>
             ${calcField({ id: 'vc-hours', label: 'Hours of phone coverage per week', hint: 'Business hours only, or more for evenings and weekends.', min: 10, max: 168, step: 1, value: 50 })}
             ${calcField({ id: 'vc-wage', label: 'Hourly wage', hint: 'Receptionist or answering staff wage.', min: 10, max: 60, step: 1, value: 18, prefix: '$' })}
             ${calcField({ id: 'vc-overhead', label: 'Overhead on top of wage', hint: 'Taxes, benefits, training and management.', min: 0, max: 60, step: 1, value: 25, suffix: '%' })}
@@ -47,21 +47,21 @@ export const renderVoiceCostCalculator = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Estimated AI cost per month</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Estimated AI cost per month</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-teal" data-result="ai">$0</p>
-                <p class="text-tagline-2 text-secondary/55"><span class="font-semibold text-secondary" data-result="perCall">$0</span> per call · <span class="font-semibold text-secondary" data-result="perMin">$0</span> per minute all-in</p>
+                <p class="text-tagline-2 text-secondary/60"><span class="font-semibold text-secondary" data-result="perCall">$0</span> per call · <span class="font-semibold text-secondary" data-result="perMin">$0</span> per minute all-in</p>
                 <div class="hairline my-6"></div>
                 <div class="grid grid-cols-2 gap-4">
-                  <div><p class="text-tagline-3 text-secondary/45">Human coverage cost</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="human">$0</p></div>
-                  <div><p class="text-tagline-3 text-secondary/45">Monthly difference</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="diff">$0</p></div>
+                  <div><p class="text-tagline-3 text-secondary/60">Human coverage cost</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="human">$0</p></div>
+                  <div><p class="text-tagline-3 text-secondary/60">Monthly difference</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="diff">$0</p></div>
                 </div>
               </div>
             </div>
-            <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="minutes">0</p><p class="text-tagline-3 mt-1 text-secondary/50">AI minutes per month</p></div>
+            <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="minutes">0</p><p class="text-tagline-3 mt-1 text-secondary/60">AI minutes per month</p></div>
             ${ctaCard(r.accent, 'Want exact numbers?', 'We’ll price the platform, model, voice and telephony for your call types and give you a fixed build quote.')}
           </div>
         </form>
-        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/35">Estimates only. AI cost = calls × minutes × (platform + model + voice + telephony) + fixed costs. Human cost = hours per week × 4.33 × wage × (1 + overhead). Default rates are examples, not quotes; providers change pricing often.</p>
+        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/60">Estimates only. AI cost = calls × minutes × (platform + model + voice + telephony) + fixed costs. Human cost = hours per week × 4.33 × wage × (1 + overhead). Default rates are examples, not quotes; providers change pricing often.</p>
       </div>
     </section>
 
@@ -98,7 +98,7 @@ const field = (id, label, input, hint = '') => `
               <div>
                 <label for="${id}" class="field-label">${label}</label>
                 ${input}
-                ${hint ? `<p class="text-tagline-3 mt-1.5 text-secondary/40">${hint}</p>` : ''}
+                ${hint ? `<p class="text-tagline-3 mt-1.5 text-secondary/60">${hint}</p>` : ''}
               </div>`;
 
 export const renderPromptGenerator = () => {
@@ -118,7 +118,7 @@ export const renderPromptGenerator = () => {
       <div class="main-container relative z-10">
         <div class="grid gap-6 lg:grid-cols-2" data-prompt-gen>
           <form class="glass-card space-y-5" style="--accent: ${r.accent}" onsubmit="return false">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your business</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your business</p>
             ${field('pg-name', 'Business name', input('pg-name', 'e.g. BrightSpark Plumbing', 'BrightSpark Plumbing'))}
             ${field('pg-type', 'What kind of business?', input('pg-type', 'e.g. plumbing company in Austin, TX', 'plumbing company in Austin, TX'))}
             ${field('pg-channel', 'Channel', select('pg-channel', ['Phone (voice agent)', 'Website chat', 'SMS / WhatsApp']))}
@@ -133,7 +133,7 @@ export const renderPromptGenerator = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start">
             <div class="glass-card flex flex-col" style="--accent: ${r.accent}">
               <div class="flex items-center justify-between gap-3">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your system prompt</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your system prompt</p>
                 <button type="button" class="cta cta-sm cta-ghost shrink-0" data-copy="pg-output">${icon('copy', 'size-4')}<span data-copy-label>Copy</span></button>
               </div>
               <pre id="pg-output" class="template-text mt-4 max-h-[640px] overflow-y-auto" aria-live="polite"></pre>
@@ -198,21 +198,21 @@ export const renderSmsCounter = () => {
                 <input id="sms-rate" class="field-input mt-2" type="number" min="0" step="0.0001" value="0.0083" />
               </div>
             </div>
-            <p class="text-tagline-3 mt-2 text-secondary/40">Use your provider’s current per-segment rate; carrier fees may be added separately.</p>
+            <p class="text-tagline-3 mt-2 text-secondary/60">Use your provider’s current per-segment rate; carrier fees may be added separately.</p>
           </div>
           <div class="space-y-4" aria-live="polite">
             <div class="edge-card">
               <div class="grid grid-cols-2 gap-5 p-7 md:p-8">
-                <div><p class="text-tagline-3 text-secondary/45">Characters</p><p class="stat-num text-heading-4 mt-1 text-secondary" data-sms="chars">0</p></div>
-                <div><p class="text-tagline-3 text-secondary/45">Segments</p><p class="stat-num text-heading-4 mt-1 text-gradient-teal" data-sms="segments">0</p></div>
-                <div><p class="text-tagline-3 text-secondary/45">Encoding</p><p class="text-tagline-1 mt-1 font-semibold text-secondary" data-sms="encoding">GSM-7</p></div>
-                <div><p class="text-tagline-3 text-secondary/45">Left in segment</p><p class="text-tagline-1 mt-1 font-semibold text-secondary" data-sms="left">0</p></div>
-                <div class="col-span-2"><p class="text-tagline-3 text-secondary/45">Estimated campaign cost</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-sms="cost">$0</p></div>
+                <div><p class="text-tagline-3 text-secondary/60">Characters</p><p class="stat-num text-heading-4 mt-1 text-secondary" data-sms="chars">0</p></div>
+                <div><p class="text-tagline-3 text-secondary/60">Segments</p><p class="stat-num text-heading-4 mt-1 text-gradient-teal" data-sms="segments">0</p></div>
+                <div><p class="text-tagline-3 text-secondary/60">Encoding</p><p class="text-tagline-1 mt-1 font-semibold text-secondary" data-sms="encoding">GSM-7</p></div>
+                <div><p class="text-tagline-3 text-secondary/60">Left in segment</p><p class="text-tagline-1 mt-1 font-semibold text-secondary" data-sms="left">0</p></div>
+                <div class="col-span-2"><p class="text-tagline-3 text-secondary/60">Estimated campaign cost</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-sms="cost">$0</p></div>
               </div>
             </div>
             <div class="glass-card hidden" data-sms="warning-box" style="--accent: #ff6b35">
               <p class="text-tagline-2 font-semibold text-secondary">Characters forcing UCS-2 encoding</p>
-              <p class="text-tagline-2 mt-2 text-secondary/65">Replace these to fit more text per segment: <span class="font-semibold text-coral-600" data-sms="offenders"></span></p>
+              <p class="text-tagline-2 mt-2 text-secondary/65">Replace these to fit more text per segment: <span class="font-semibold text-coral-700" data-sms="offenders"></span></p>
             </div>
           </div>
         </div>
@@ -303,12 +303,12 @@ export const renderPlatformPicker = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Best fit for you</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Best fit for you</p>
                 <p class="text-heading-4 mt-3 font-semibold text-gradient-teal" data-picker-name></p>
                 <p class="text-tagline-2 mt-2 text-secondary/65" data-picker-why></p>
                 <a href="#" class="link-arrow mt-4 text-primary-600" data-picker-link>Learn more</a>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">All options, ranked</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">All options, ranked</p>
                 <ol class="mt-3 space-y-2" data-picker-rank></ol>
               </div>
             </div>
@@ -364,7 +364,7 @@ export const renderSavingsCalculator = () => {
       <div class="main-container relative z-10">
         <form class="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]" data-savings onsubmit="return false">
           <div class="glass-card" style="--accent: ${r.accent}">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your repetitive tasks</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your repetitive tasks</p>
             <div class="mt-4 space-y-4">
               ${TASKS.map(
                 ([name, hours, pct], i) => `
@@ -376,23 +376,23 @@ export const renderSavingsCalculator = () => {
               ).join('')}
             </div>
             <label class="mt-5 block"><span class="field-label">Loaded hourly cost of the people doing this work ($)</span><input id="sv-rate" class="field-input mt-2" type="number" min="5" max="300" value="30" /></label>
-            <p class="text-tagline-3 mt-1.5 text-secondary/40">Wage plus taxes, benefits and overhead.</p>
+            <p class="text-tagline-3 mt-1.5 text-secondary/60">Wage plus taxes, benefits and overhead.</p>
           </div>
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Hours you could save per year</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Hours you could save per year</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-teal" data-sv="hours">0</p>
-                <p class="text-tagline-2 text-secondary/55">worth <span class="font-semibold text-secondary" data-sv="value">$0</span> per year · <span class="font-semibold text-secondary" data-sv="fte">0</span> full-time equivalent</p>
+                <p class="text-tagline-2 text-secondary/60">worth <span class="font-semibold text-secondary" data-sv="value">$0</span> per year · <span class="font-semibold text-secondary" data-sv="fte">0</span> full-time equivalent</p>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Automate these first</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Automate these first</p>
                 <ol class="mt-3 space-y-2" data-sv="top"></ol>
               </div>
             </div>
             ${ctaCard(r.accent, 'Turn hours into a plan', 'We’ll map your top tasks to specific automations and give you a fixed-price proposal.')}
           </div>
         </form>
-        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/35">Estimates only. Annual hours saved = hours per week × automatable share × 52. Value = hours × hourly cost. Full-time equivalent = hours ÷ 2,080.</p>
+        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/60">Estimates only. Annual hours saved = hours per week × automatable share × 52. Value = hours × hourly cost. Full-time equivalent = hours ÷ 2,080.</p>
       </div>
     </section>
 
@@ -439,12 +439,12 @@ export const renderChatbotCostCalculator = () => {
       <div class="main-container relative z-10">
         <form class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]" data-chat-cost onsubmit="return false">
           <div class="glass-card space-y-7" style="--accent: ${r.accent}">
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Usage</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Usage</p>
             ${calcField({ id: 'cc-convos', label: 'Conversations per month', hint: 'Chats started on your website, WhatsApp or other channels.', min: 50, max: 50000, step: 50, value: 1000 })}
             ${calcField({ id: 'cc-msgs', label: 'Bot replies per conversation', hint: 'Booking and FAQ chats are often 4 to 8 replies.', min: 1, max: 30, step: 1, value: 6 })}
             ${calcField({ id: 'cc-in', label: 'Input tokens per reply', hint: 'Instructions + retrieved knowledge + history. Often 1,000 to 4,000.', min: 200, max: 20000, step: 100, value: 2000 })}
             ${calcField({ id: 'cc-out', label: 'Output tokens per reply', hint: 'A short reply is roughly 50 to 200 tokens.', min: 20, max: 1500, step: 10, value: 150 })}
-            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Prices (example rates, use your provider’s)</p>
+            <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Prices (example rates, use your provider’s)</p>
             ${calcField({ id: 'cc-pin', label: 'Input price per 1M tokens', hint: 'Small models cost far less than large ones.', min: 0, max: 30, step: 0.05, value: 3, prefix: '$' })}
             ${calcField({ id: 'cc-pout', label: 'Output price per 1M tokens', hint: 'Output usually costs several times more than input.', min: 0, max: 100, step: 0.5, value: 15, prefix: '$' })}
             ${calcField({ id: 'cc-cache', label: 'Share of input served from cache', hint: 'Prompt caching can cut the cost of repeated instructions.', min: 0, max: 90, step: 5, value: 0, suffix: '%' })}
@@ -453,20 +453,20 @@ export const renderChatbotCostCalculator = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Estimated monthly cost</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Estimated monthly cost</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-teal" data-result="total">$0</p>
-                <p class="text-tagline-2 text-secondary/55"><span class="font-semibold text-secondary" data-result="perConvo">$0</span> per conversation</p>
+                <p class="text-tagline-2 text-secondary/60"><span class="font-semibold text-secondary" data-result="perConvo">$0</span> per conversation</p>
                 <div class="hairline my-6"></div>
                 <div class="grid grid-cols-2 gap-4">
-                  <div><p class="text-tagline-3 text-secondary/45">Model usage</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="model">$0</p></div>
-                  <div><p class="text-tagline-3 text-secondary/45">Tokens per month</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="tokens">0</p></div>
+                  <div><p class="text-tagline-3 text-secondary/60">Model usage</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="model">$0</p></div>
+                  <div><p class="text-tagline-3 text-secondary/60">Tokens per month</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-result="tokens">0</p></div>
                 </div>
               </div>
             </div>
             ${ctaCard(r.accent, 'Want a chatbot that pays for itself?', 'We design prompts and retrieval to keep token costs low without hurting answer quality.')}
           </div>
         </form>
-        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/35">Estimates only. Cost = conversations × replies × (input tokens × input price × (1 − cache share × 0.9) + output tokens × output price) ÷ 1,000,000 + platform costs. Cached input is assumed to cost 10% of the normal rate; check your provider’s caching prices. Default prices are examples, not quotes.</p>
+        <p class="text-tagline-3 mx-auto mt-8 max-w-3xl text-center text-secondary/60">Estimates only. Cost = conversations × replies × (input tokens × input price × (1 − cache share × 0.9) + output tokens × output price) ÷ 1,000,000 + platform costs. Cached input is assumed to cost 10% of the normal rate; check your provider’s caching prices. Default prices are examples, not quotes.</p>
       </div>
     </section>
 
@@ -543,12 +543,12 @@ export const renderAutomationPicker = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Best fit for you</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Best fit for you</p>
                 <p class="text-heading-4 mt-3 font-semibold text-gradient-teal" data-picker-name></p>
                 <p class="text-tagline-2 mt-2 text-secondary/65" data-picker-why></p>
                 <a href="#" class="link-arrow mt-4 text-primary-600" data-picker-link>Learn more</a>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">All options, ranked</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">All options, ranked</p>
                 <ol class="mt-3 space-y-2" data-picker-rank></ol>
               </div>
             </div>
@@ -618,11 +618,11 @@ export const renderSpeedScorecard = () => {
           <div class="space-y-4 lg:sticky lg:top-28 lg:self-start" aria-live="polite">
             <div class="edge-card">
               <div class="p-7 md:p-8">
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Your speed-to-lead score</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Your speed-to-lead score</p>
                 <p class="stat-num text-heading-3 mt-3 text-gradient-warm"><span data-sc-score>0</span>/100</p>
                 <p class="text-tagline-1 mt-2 font-semibold text-secondary" data-sc-grade></p>
                 <div class="hairline my-6"></div>
-                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/45 uppercase">Biggest improvements</p>
+                <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Biggest improvements</p>
                 <ol class="quiz-fixes mt-3 space-y-2.5">
                   ${SCORE_QS.map((q) => `<li data-sc-fix="${q.id}">${q.fix}</li>`).join('\n                  ')}
                 </ol>

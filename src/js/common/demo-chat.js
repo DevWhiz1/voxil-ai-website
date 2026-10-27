@@ -98,7 +98,7 @@ const initChat = (root) => {
   const typing = () => {
     const p = document.createElement('p');
     p.className = 'bubble-in';
-    p.innerHTML = '<span class="typing" aria-label="Assistant is typing"><span></span><span></span><span></span></span>';
+    p.innerHTML = '<span class="typing" role="img" aria-label="Assistant is typing"><span></span><span></span><span></span></span>';
     log.appendChild(p);
     log.scrollTop = log.scrollHeight;
     return p;

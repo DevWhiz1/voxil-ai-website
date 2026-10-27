@@ -154,7 +154,7 @@ const initPicker = (root) => {
         const name = document.createElement('span');
         name.textContent = `${i + 1}. ${data[k].name}`;
         const score = document.createElement('span');
-        score.className = 'text-secondary/45';
+        score.className = 'text-secondary/60';
         score.textContent = `${n} pts`;
         li.append(name, score);
         return li;
@@ -207,7 +207,7 @@ const initSavings = (form) => {
           const a = document.createElement('span');
           a.textContent = `${i + 1}. ${x.name}`;
           const b = document.createElement('span');
-          b.className = 'shrink-0 text-secondary/50';
+          b.className = 'shrink-0 text-secondary/60';
           b.textContent = `${num.format(Math.round(x.saved))} h/yr`;
           li.append(a, b);
           return li;

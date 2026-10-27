@@ -60,12 +60,12 @@ export const postCard = (post, filterable = false) => {
           <a href="/blog/${post.slug}/"${filterable ? ` data-cats="${catsOf(post).map(slugify).join(' ')}"` : ''} data-reveal class="group glass-card glass-card-rail glass-card-bloom flex flex-col" style="--accent: ${style.accent}">
             <div class="flex items-center justify-between gap-3">
               <span class="pill-accent" style="--accent: ${style.accent}">${icon(style.icon, 'size-3.5')}${post.category}</span>
-              <span class="text-tagline-3 text-secondary/40">${readMinutes(post)} min read</span>
+              <span class="text-tagline-3 text-secondary/60">${readMinutes(post)} min read</span>
             </div>
             <h3 class="text-heading-6 mt-5 font-semibold text-secondary">${post.title}</h3>
             <p class="text-tagline-2 mt-2.5 flex-1 text-secondary/60">${post.excerpt}</p>
             <div class="mt-5 flex items-center justify-between">
-              <span class="text-tagline-3 text-secondary/40">${updatedLine(post.updated ?? post.date)}</span>
+              <span class="text-tagline-3 text-secondary/60">${updatedLine(post.updated ?? post.date)}</span>
               <span class="link-arrow" style="color: color-mix(in srgb, ${style.accent} 75%, #0c1220)">Read${arrow()}</span>
             </div>
           </a>`;
@@ -103,8 +103,8 @@ export const renderPost = (post, allPosts) => {
           ${eyebrow(post.category, style.accent)}
           <h1 data-reveal class="text-heading-4 sm:text-heading-3 lg:text-heading-2 font-semibold tracking-tight text-secondary">${post.title}</h1>
           <p data-reveal class="text-tagline-1 mt-5 max-w-3xl text-secondary/65 md:text-lg">${post.excerpt}</p>
-          <div data-reveal class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-tagline-3 text-secondary/50">
-            <span class="inline-flex items-center gap-2.5"><img src="${author.photo}" alt="${author.name}" width="28" height="28" class="size-7 rounded-full object-cover object-top ring-2 ring-white" /><span><span class="font-semibold text-secondary">${author.name}</span> · ${author.role}</span></span>
+          <div data-reveal class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-tagline-3 text-secondary/60">
+            <span class="inline-flex items-center gap-2.5"><img src="${author.avatar}" alt="${author.name}" width="28" height="28" class="size-7 rounded-full object-cover object-top ring-2 ring-white" /><span><span class="font-semibold text-secondary">${author.name}</span> · ${author.role}</span></span>
             <span>Published ${updatedLine(post.date)}</span>
             ${post.updated && post.updated !== post.date ? `<span>Updated ${updatedLine(post.updated)}</span>` : ''}
             <span>${mins} min read</span>
@@ -118,7 +118,7 @@ export const renderPost = (post, allPosts) => {
         <div class="grid gap-12 lg:grid-cols-[230px_1fr] xl:grid-cols-[250px_1fr_220px]">
           <aside class="hidden lg:block">
             <nav class="sticky top-28" aria-label="Table of contents">
-              <p class="mb-3 text-tagline-3 font-semibold tracking-[0.14em] text-secondary/40 uppercase">On this page</p>
+              <p class="mb-3 text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">On this page</p>
               ${toc.map((t) => `<a href="#${t.id}" class="toc-link" data-toc-link>${esc(t.text)}</a>`).join('\n              ')}
             </nav>
           </aside>
@@ -137,18 +137,18 @@ ${html}
               sources.length || extraSources.length
                 ? `<div class="mt-14 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.025] p-6">
               <h2 class="text-tagline-2 font-semibold text-secondary">Sources</h2>
-              <ol class="mt-4 list-decimal space-y-2 pl-5 text-tagline-3 text-secondary/55 marker:text-secondary/30">
+              <ol class="mt-4 list-decimal space-y-2 pl-5 text-tagline-3 text-secondary/60 marker:text-secondary/30">
                 ${[...sources, ...extraSources]
                   .map((s) => `<li>${s.url ? `<a href="${s.url}" target="_blank" rel="noopener" class="underline decoration-white/20 underline-offset-4 hover:text-primary-600">${esc(s.name)}</a>` : esc(s.name)}${s.year ? `, ${s.year}` : ''}</li>`)
                   .join('\n                ')}
               </ol>
-              <p class="mt-4 text-tagline-3 text-secondary/35">Figures are reported as published by each source. Forecasts are the source’s predictions, not guarantees. We review this article regularly; spot something outdated? <a href="mailto:${SITE.email}" class="underline underline-offset-4 hover:text-primary-600">Tell us</a>.</p>
+              <p class="mt-4 text-tagline-3 text-secondary/60">Figures are reported as published by each source. Forecasts are the source’s predictions, not guarantees. We review this article regularly; spot something outdated? <a href="mailto:${SITE.email}" class="underline underline-offset-4 hover:text-primary-600">Tell us</a>.</p>
             </div>`
                 : ''
             }
 
             <div class="mt-8 flex flex-col gap-5 rounded-2xl border border-secondary/[0.08] bg-secondary/[0.03] p-6 sm:flex-row sm:items-center">
-              <img src="${author.photo}" alt="${author.name}" width="64" height="64" class="size-16 shrink-0 rounded-2xl object-cover object-top" />
+              <img src="${author.avatar}" alt="${author.name}" width="64" height="64" class="size-16 shrink-0 rounded-2xl object-cover object-top" />
               <div class="flex-1">
                 <p class="text-tagline-2 font-semibold text-secondary">Written by ${author.name}, ${author.role}</p>
                 <p class="text-tagline-3 mt-1 text-secondary/60">${author.bio}</p>
@@ -159,7 +159,7 @@ ${html}
 
           <aside class="hidden xl:block">
             <div class="sticky top-28 space-y-3">
-              <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/40 uppercase">Related services</p>
+              <p class="text-tagline-3 font-semibold tracking-[0.14em] text-secondary/60 uppercase">Related services</p>
               ${post.services
                 .map((s) => {
                   const r = findService(s);
@@ -232,7 +232,7 @@ export const renderBlogHub = (posts) => {
   const categories = Object.keys(CATEGORY_STYLE);
   const countFor = (c) => sorted.filter((p) => catsOf(p).includes(c)).length;
   const tab = (key, label, n, ic, active = false) =>
-    `<button type="button" class="tab-btn inline-flex items-center gap-2${active ? ' is-active' : ''}" data-blog-filter="${key}" aria-pressed="${active}">${ic ? icon(ic, 'size-4') : ''}${label}<span class="text-tagline-3 text-secondary/40">${n}</span></button>`;
+    `<button type="button" class="tab-btn inline-flex items-center gap-2${active ? ' is-active' : ''}" data-blog-filter="${key}" aria-pressed="${active}">${ic ? icon(ic, 'size-4') : ''}${label}<span class="text-tagline-3 text-secondary/60">${n}</span></button>`;
 
   const body = `
     <section class="page-hero">

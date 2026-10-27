@@ -147,7 +147,7 @@ export const hero = ({ crumbs, eyebrowText, accent = '#2fc4b6', h1, lead, answer
 export const answerCard = ({ answer, facts = [], accent = '#2fc4b6', label = 'Quick answer' }) => `
           <aside data-reveal class="edge-card">
             <div class="answer-card p-6 md:p-8" style="--accent: ${accent}">
-              <p class="text-tagline-3 flex items-center gap-2 font-semibold tracking-[0.14em] text-secondary/50 uppercase">
+              <p class="text-tagline-3 flex items-center gap-2 font-semibold tracking-[0.14em] text-secondary/60 uppercase">
                 <span class="icon-tile size-8 rounded-lg" style="--accent: ${accent}">${icon('sparkles', 'size-4')}</span>
                 ${label}
               </p>
@@ -158,7 +158,7 @@ export const answerCard = ({ answer, facts = [], accent = '#2fc4b6', label = 'Qu
                       .map(
                         (f) => `
                 <div class="rounded-xl border border-secondary/[0.08] bg-secondary/[0.03] px-4 py-3">
-                  <dt class="text-tagline-3 text-secondary/45">${f.label}</dt>
+                  <dt class="text-tagline-3 text-secondary/60">${f.label}</dt>
                   <dd class="text-tagline-2 mt-0.5 font-semibold text-secondary">${f.value}</dd>
                 </div>`
                       )
@@ -206,7 +206,7 @@ export const faqBlock = ({ faqs, title = 'Frequently asked <span class="text-gra
           <div class="lg:sticky lg:top-28 lg:self-start">
             ${eyebrow(eyebrowText)}
             <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">${title}</h2>
-            <p data-reveal class="text-tagline-2 mt-4 text-secondary/55">${lead}</p>
+            <p data-reveal class="text-tagline-2 mt-4 text-secondary/60">${lead}</p>
             <a data-reveal href="/book-meeting.html" class="link-arrow mt-5 text-primary-600 hover:text-primary-700">Ask us directly${arrow()}</a>
           </div>
           <div data-accordion class="space-y-3">
