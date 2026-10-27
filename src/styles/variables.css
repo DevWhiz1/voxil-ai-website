@@ -3,8 +3,8 @@ Design tokens, quiet agency
 =========================== */
 @theme {
   /* =============== FONTS =============== */
-  --font-inter-tight: 'Sora', sans-serif;
-  --font-sora: 'Sora', sans-serif;
+  --font-inter-tight: 'Sora', 'Sora Fallback', sans-serif;
+  --font-sora: 'Sora', 'Sora Fallback', sans-serif;
 
   /* =============== COLORS =============== */
   /* Teal primary + coral energy (Growth Guild–inspired warmth, Voxil identity) */

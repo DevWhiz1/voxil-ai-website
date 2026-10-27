@@ -53,7 +53,11 @@ const initCounters = () => {
     { threshold: 0.4 }
   );
 
-  nodes.forEach((el) => observer.observe(el));
+  // Counters in the hero are on screen at load; leave their final value in
+  // place rather than resetting it to 0 after the first paint.
+  nodes.forEach((el) => {
+    if (!el.closest('main > section:first-child')) observer.observe(el);
+  });
 };
 
 if (document.readyState === 'loading') {

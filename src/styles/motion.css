@@ -37,6 +37,19 @@ main > section:first-child [data-reveal] {
   transition: none;
 }
 
+/* Decorative loops on the first screen hold still until the visitor interacts
+   (.motion-ready, set by js/utils/interaction.js), so the page is visually
+   complete as soon as it paints. */
+html:not(.motion-ready) main > section:first-child *,
+html:not(.motion-ready) main > section:first-child *::before,
+html:not(.motion-ready) main > section:first-child *::after {
+  animation: none !important;
+}
+
+html:not(.motion-ready) .hero-word:first-child {
+  opacity: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] {
     opacity: 1 !important;
@@ -132,16 +145,18 @@ Rotating hero word
   animation: word-cycle 9s ease-in-out infinite;
 }
 
+/* Offset by 8% of the cycle so the first word starts fully visible when
+   motion begins (it is already on screen before that). */
 .hero-word:nth-child(1) {
-  animation-delay: 0s;
+  animation-delay: -0.72s;
 }
 
 .hero-word:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 2.28s;
 }
 
 .hero-word:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 5.28s;
 }
 
 .mesh-gradient {

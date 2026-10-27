@@ -2,6 +2,7 @@ import { inject } from '@vercel/analytics';
 
 inject();
 
+import './js/utils/interaction';
 import './js/common/header';
 import './js/common/mobile-nav';
 import './js/common/contact-form';

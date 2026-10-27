@@ -455,6 +455,11 @@
   transition-timing-function: var(--ease-out-expo);
 }
 
+/* A server-rendered open item is open before JS runs, so nothing shifts on load */
+.is-open > .faq-panel {
+  max-height: none;
+}
+
 .faq-panel-inner {
   @apply px-5 pb-5 text-tagline-1 text-secondary/70 md:px-6;
 }
