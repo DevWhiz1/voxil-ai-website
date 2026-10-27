@@ -29,6 +29,14 @@ Motion + scroll reveal
   transform: scale(0.96);
 }
 
+/* The hero is the first thing painted and holds the LCP text, so it must not
+   wait for JS to fade it in. */
+main > section:first-child [data-reveal] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] {
     opacity: 1 !important;

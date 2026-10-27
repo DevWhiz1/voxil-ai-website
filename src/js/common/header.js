@@ -9,12 +9,17 @@ Header behaviour
 
 const SCROLL_OFFSET = 24;
 
+// Watches a SCROLL_OFFSET-tall sentinel at the top of the page instead of
+// reading window.scrollY, which forced a layout on load.
 const initScrollState = (header) => {
-  const apply = () => {
-    header.classList.toggle('is-scrolled', window.scrollY > SCROLL_OFFSET);
-  };
-  apply();
-  window.addEventListener('scroll', apply, { passive: true });
+  const sentinel = document.createElement('div');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = `position:absolute;top:0;left:0;width:1px;height:${SCROLL_OFFSET}px;pointer-events:none;`;
+  document.body.prepend(sentinel);
+
+  new IntersectionObserver(([entry]) => {
+    header.classList.toggle('is-scrolled', !entry.isIntersecting);
+  }).observe(sentinel);
 };
 
 const initProgress = () => {
@@ -26,7 +31,8 @@ const initProgress = () => {
     const ratio = max > 0 ? window.scrollY / max : 0;
     bar.style.transform = `scaleX(${Math.min(Math.max(ratio, 0), 1)})`;
   };
-  apply();
+  // First measure waits for the frame so it doesn't force a layout mid-load.
+  requestAnimationFrame(apply);
   window.addEventListener('scroll', apply, { passive: true });
   window.addEventListener('resize', apply);
 };
