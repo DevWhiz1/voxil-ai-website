@@ -105,7 +105,7 @@ export const renderCalculator = () => {
   const r = RESOURCES.find((x) => x.slug === 'lead-loss-calculator');
   const path = resourceUrl(r.slug);
   const crumbs = crumbsFor(r.name, r.slug);
-  const title = 'Lead Loss Calculator: Cost of Missed Calls | Voxil AI';
+  const title = 'Missed Call Calculator: What Lost Calls Cost | Voxil AI';
   const description = 'Free lead loss calculator: see how much revenue missed calls and unworked leads cost you each month, and how much AI answering could recover.';
   const faqs = [
     { q: 'How is lost revenue calculated?', a: 'Missed calls × share that are genuine new opportunities × your close rate × average customer value gives monthly revenue at risk. The recoverable figure applies the recovery rate you choose.' },

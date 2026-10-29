@@ -247,7 +247,7 @@ export default {
 
   'medical-clinics': {
     noun: 'medical practices',
-    title: 'AI for Medical Clinics | Patient Scheduling | Voxil AI',
+    title: 'AI Receptionist for Medical Offices & Clinics | Voxil AI',
     description: 'AI automation for medical clinics: AI receptionist, patient scheduling, reminders, intake forms and recall campaigns, HIPAA-aware. Free call.',
     h1: 'AI for medical clinics that <span class="text-gradient-teal">frees the front desk</span>',
     lead: 'An AI receptionist that answers every patient call, books and reschedules, sends reminders and handles routine questions, with HIPAA-aware architecture and a clear path to staff.',

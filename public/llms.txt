@@ -175,6 +175,8 @@ Contact: info@voxilai.tech · Book a call: https://www.voxilai.tech/book-meeting
 - [Media Kit](https://www.voxilai.tech/resources/media-kit/): Brand assets, boilerplate and facts for press and partners.
 
 ## Blog
+- [AI Receptionist for Dental Offices: Answer Every Call and Fill the Schedule](https://www.voxilai.tech/blog/ai-receptionist-for-dental-offices/): How an AI receptionist works in a dental office: new patient calls, booking, insurance questions, emergencies and recalls, plus HIPAA, integrations and costs.
+- [GoHighLevel AI Employee Pricing and Review (2026): $20, $50 or $97?](https://www.voxilai.tech/blog/gohighlevel-ai-employee-pricing/): GoHighLevel AI Employee pricing explained: Starter $20, Growth $50 and Unlimited $97 per sub-account, what each includes, pay-per-use rates and which plan pays off.
 - [AI Document Processing: Automate Invoices, Forms and Intake](https://www.voxilai.tech/blog/ai-document-processing-guide/): How AI document processing turns invoices, forms, contracts and intake paperwork into clean data in your systems, with accuracy checks and human review.
 - [AI Email Automation: How to Triage, Draft and Route Your Inbox](https://www.voxilai.tech/blog/ai-email-automation-guide/): How AI email automation works: classify incoming mail, draft replies in your voice, route to the right person and update your CRM, with safe rollout steps.
 - [How to Choose an AI Automation Agency: 12 Questions to Ask](https://www.voxilai.tech/blog/how-to-choose-an-ai-automation-agency/): Hiring an AI automation agency? Ask these 12 questions about scope, ownership, data, testing, pricing and support before you sign, plus the red flags to avoid.

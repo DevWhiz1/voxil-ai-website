@@ -9,7 +9,7 @@ export default {
   tags: ['Chatbots & Automation'],
   author: 'ahmad-ali',
   date: '2026-06-16',
-  updated: '2026-09-26',
+  updated: '2026-10-29',
   keywords: ['GoHighLevel AI', 'GHL Conversation AI', 'GoHighLevel Voice AI', 'GHL AI setup'],
   excerpt: 'What GoHighLevel’s AI features actually do, how to configure them so they book appointments, and when to extend GHL with external voice agents.',
   takeaways: [
@@ -73,7 +73,7 @@ ${callout('The most common mistake', 'Leaving the bot’s instructions generic (
 <p>See ${link('/services/gohighlevel-automation/', 'GoHighLevel automation')} for the core workflows every account should have, and our free ${link('/resources/ghl-setup-checklist/', 'GHL setup checklist')}.</p>
 
 <h2>Costs to plan for</h2>
-<p>GoHighLevel prices some AI features as add-ons or on usage, and agencies in SaaS mode can rebill usage to clients. Model expected message and call volumes before enabling AI across many sub-accounts.</p>
+<p>GoHighLevel sells AI as "AI Employee" plans per sub-account (Starter $20, Growth $50 or Unlimited $97 a month, as of October 2026) or on pay-per-use, and agencies on the $497 plan can rebill usage to clients. Model expected message and call volumes before enabling AI across many sub-accounts. Our ${link('/blog/gohighlevel-ai-employee-pricing/', 'AI Employee pricing breakdown')} shows the break-even maths for each plan.</p>
 `,
   faqs: [
     { q: 'What is GoHighLevel Conversation AI?', a: 'Conversation AI is GoHighLevel’s AI bot for text-based channels, SMS, web chat, Facebook, Instagram and WhatsApp, that can answer questions and book appointments into GHL calendars.' },

@@ -8,6 +8,7 @@ export default {
   category: 'GoHighLevel',
   author: 'ahmad-ali',
   date: '2026-10-06',
+  updated: '2026-10-29',
   keywords: ['GoHighLevel pricing', 'GHL pricing', 'GoHighLevel cost', 'GoHighLevel plans', 'is GoHighLevel worth it'],
   excerpt: 'The plan price is only part of the bill. Here’s what each GoHighLevel plan includes, which usage costs to budget for, and how to tell if it’s worth it for you.',
   takeaways: [
@@ -40,7 +41,7 @@ ${table(
 <ul>
   <li><strong>Phone and SMS (LC Phone):</strong> per-message and per-minute charges, plus a monthly cost per number. US texting also involves one-time A2P 10DLC registration fees.</li>
   <li><strong>Email (LC Email):</strong> charged per email sent, which adds up for large newsletters.</li>
-  <li><strong>AI features:</strong> Conversation AI, Voice AI, content AI and reviews AI are paid by usage or through an AI add-on subscription per sub-account.</li>
+  <li><strong>AI features:</strong> Conversation AI, Voice AI, content AI and reviews AI are paid by usage or through an AI Employee plan per sub-account: Starter $20, Growth $50 or Unlimited $97 a month. See our ${link('/blog/gohighlevel-ai-employee-pricing/', 'GoHighLevel AI Employee pricing guide')} for what each includes.</li>
   <li><strong>WhatsApp:</strong> a separate add-on subscription plus Meta’s conversation fees.</li>
   <li><strong>Optional add-ons:</strong> a white-label mobile app, HIPAA compliance and premium support tiers cost extra.</li>
 </ul>
