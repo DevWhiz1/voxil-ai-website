@@ -8,7 +8,7 @@ export default {
   category: 'Statistics',
   tags: ['Chatbots & Automation'],
   date: '2026-03-04',
-  updated: '2026-09-26',
+  updated: '2026-10-30',
   featured: true,
   keywords: ['AI chatbot statistics', 'chatbot adoption', 'ChatGPT usage statistics', 'chatbot ROI'],
   excerpt: 'How many people use AI chatbots, how businesses deploy them, what research says about productivity, and why a majority of customers remain wary.',
@@ -73,6 +73,8 @@ ${statGrid(['mit-95'], '#6adfd3')}
 `,
   faqs: [
     { q: 'How many people use AI chatbots?', a: 'Hundreds of millions weekly. OpenAI reported around 800 million weekly ChatGPT users in October 2025, and Pew Research found 34% of U.S. adults had used ChatGPT by 2025.' },
+    { q: 'How many companies use chatbots?', a: 'There is no single global count, but adoption is broad: McKinsey found 78% of organizations use AI in at least one business function and 71% regularly use generative AI, and Gartner predicted 25% of organizations would use chatbots as their primary customer-service channel by 2027. Among small businesses, the U.S. Chamber of Commerce reported 40% using generative AI in 2024.' },
+    { q: 'How big is the chatbot market?', a: 'Estimates vary by analyst and definition. One widely cited forecast puts the conversational AI market at about $13.2 billion in 2024, growing to around $49.9 billion by 2030. Treat market-size figures as directional, since methodologies differ.' },
     { q: 'Do chatbots reduce customer-service costs?', a: 'They can, by resolving routine requests without an agent. Gartner forecast $80 billion in contact-center labor savings from conversational AI in 2026. Savings depend on resolution rate, not just chat volume.' },
     { q: 'Why do customers dislike chatbots?', a: 'Mostly because of bots that can’t answer or escalate. Grounding answers in approved content, letting the bot take real actions and offering an easy hand-off to a human address most complaints.' },
     { q: 'What is a good chatbot resolution rate?', a: 'It varies by industry and scope. Start with a narrow set of high-volume requests where the bot can fully resolve the issue, measure resolution weekly, and expand scope as the rate improves.' },
