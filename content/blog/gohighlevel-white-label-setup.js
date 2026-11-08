@@ -71,6 +71,9 @@ ${callout('Snapshot tip', 'Leave client-specific values, like phone numbers, add
   <li>Building every client account by hand instead of from a snapshot.</li>
   <li>Forgetting A2P 10DLC registration for each client’s texting.</li>
 </ul>
+<h2>Add AI voice agents to your white label offer</h2>
+<p>Once the platform is branded, AI receptionists and calling agents are the easiest upsell. You can use GoHighLevel’s own Voice AI or custom agents on Retell and Vapi; our ${link('/blog/white-label-ai-voice-agents-guide/', 'white label AI voice agents guide')} compares the routes, costs and margins.</p>
+
 <p>Want your agency platform set up properly? Our ${link('/for-agencies/', 'agency partner program')} and ${link('/services/ghl-white-label-saas/', 'GHL white label SaaS service')} cover the full build.</p>
 `,
   faqs: [

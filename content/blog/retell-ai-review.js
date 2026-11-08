@@ -59,7 +59,7 @@ ${table(
   <li><strong>Conversation flows:</strong> predictable, auditable call paths.</li>
   <li><strong>Post-call analysis:</strong> structured data extracted from every call, visible to non-engineers.</li>
   <li><strong>Batch calling:</strong> useful for reminders and reactivation of opted-in contacts.</li>
-  <li><strong>Agency friendly:</strong> repeatable setups across many clients.</li>
+  <li><strong>Agency friendly:</strong> repeatable setups across many clients, a good base for ${link('/for-agencies/white-label-ai-agents/', 'white label AI voice agents')} sold under your own brand.</li>
 </ul>
 
 <h2>Limitations</h2>

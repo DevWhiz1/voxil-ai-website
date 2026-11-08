@@ -60,7 +60,7 @@ ${table(
   <li><strong>Speed to production:</strong> a well-scoped agent can go live quickly with fewer moving parts.</li>
   <li><strong>Predictable call paths:</strong> conversation flows make intake, verification and booking consistent.</li>
   <li><strong>Operational visibility:</strong> post-call analysis and dashboards that non-engineers can use.</li>
-  <li><strong>Agency deployments:</strong> repeatable setups across many clients.</li>
+  <li><strong>Agency deployments:</strong> repeatable setups across many clients. That makes it a practical base for ${link('/for-agencies/white-label-ai-agents/', 'white label AI voice agents')}.</li>
 </ul>
 
 <h2>Latency and naturalness</h2>

@@ -60,6 +60,8 @@ ${callout('Pricing tip', 'Generic “CRM plus funnels” software competes on pr
   <li>A task reminds your team to start A2P 10DLC registration for the new account.</li>
 </ol>
 
+<p>AI is the most profitable thing to rebill. If you want to add voice agents to your SaaS plans, read our ${link('/blog/white-label-ai-voice-agents-guide/', 'white label AI voice agents guide')} for pricing and margin maths.</p>
+
 <h2>Step 5: Support and retention</h2>
 <p>SaaS revenue is only recurring if clients stay. Plan for:</p>
 <ul>

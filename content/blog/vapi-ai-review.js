@@ -73,7 +73,7 @@ ${table(
   'Who Vapi is a good fit for'
 )}
 ${callout('Verdict', 'Vapi is excellent for custom, integration-heavy voice agents where control matters. If you want a reliable phone agent quickly without much engineering, compare it with Retell AI first.', '#ff7a3d')}
-<p>Read our ${link('/blog/retell-ai-review/', 'Retell AI review')} and ${link('/blog/vapi-vs-retell-ai/', 'Vapi vs Retell AI comparison')}, or see our ${link('/services/vapi-ai-integration/', 'Vapi integration service')}.</p>
+<p>Read our ${link('/blog/retell-ai-review/', 'Retell AI review')} and ${link('/blog/vapi-vs-retell-ai/', 'Vapi vs Retell AI comparison')}, or, if you’re an agency, see how we build ${link('/for-agencies/white-label-ai-agents/', 'white label AI voice agents')} on Vapi for resale. You can also see our ${link('/services/vapi-ai-integration/', 'Vapi integration service')}.</p>
 `,
   faqs: [
     { q: 'Is Vapi AI good?', a: 'Yes, for teams that need flexibility and deep integrations. It gives full control over models, voices and tools, though it takes more technical effort than more managed platforms.' },

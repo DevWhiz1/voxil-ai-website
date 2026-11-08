@@ -3,11 +3,11 @@ import { callout, link, table } from '../../scripts/lib/content-helpers.js';
 export default {
   slug: 'how-much-does-an-ai-voice-agent-cost',
   title: 'How Much Does an AI Voice Agent Cost? Build Fees, Per-Minute Costs & ROI (2026)',
-  metaTitle: 'AI Voice Agent Pricing (2026): Cost Per Minute | Voxil AI',
-  description: 'AI voice agent pricing explained: real per-minute costs (platform, model, voice, telephony), build fees and monthly totals by call volume. Free calculator.',
+  metaTitle: 'AI Voice Agent Pricing Per Minute: Vapi vs Retell (2026)',
+  description: 'AI voice agent pricing per minute in 2026: Retell, Vapi and GoHighLevel rates side by side, plus build fees and monthly totals by call volume. Free calculator.',
   category: 'AI Calling Bots',
   date: '2026-02-24',
-  updated: '2026-09-26',
+  updated: '2026-11-08',
   featured: true,
   keywords: ['AI voice agent cost', 'AI receptionist cost', 'voice AI pricing', 'cost per minute AI calls'],
   excerpt: 'A transparent breakdown of what AI voice agents cost, the one-time build, the per-minute usage stack, worked monthly examples and a simple ROI formula.',
@@ -42,6 +42,19 @@ ${table(
   'Voice agent usage cost layers'
 )}
 <p>Add them together and the <strong>all-in usage cost commonly lands somewhere around $0.10 to $0.30+ per minute</strong>. Premium voices, larger models, long prompts and international calls push it up; efficient configurations bring it down. Vendor pricing changes frequently, so always price your exact configuration.</p>
+
+<h2>Per-minute prices by platform (November 2026)</h2>
+<p>Here’s what the three platforms we build on publish on their own pricing pages, checked in November 2026. Each one bills the layers differently, so compare the all-in figure for your configuration, not the headline rate.</p>
+${table(
+  ['Platform', 'How it’s priced', 'Typical all-in cost'],
+  [
+    ['<a href="https://www.retellai.com/pricing" target="_blank" rel="noopener">Retell AI</a>', 'Voice infrastructure $0.055/min + voice from $0.015/min + LLM (e.g. $0.008/min for GPT 5 mini up to $0.064/min for Claude 5.5 Sonnet) + telephony $0.015/min. No platform fee.', 'Retell quotes $0.07-$0.31/min; its own example is $0.11/min'],
+    ['<a href="https://vapi.ai/pricing" target="_blank" rel="noopener">Vapi</a>', 'Hosting $0.05/min + transcriber, model and voice passed through at provider cost + telephony billed by the carrier (e.g. Twilio $0.008/min inbound, $0.014/min outbound).', 'Vapi estimates $82-$129 for 1,000 minutes (about $0.08-$0.13/min)'],
+    [link('/blog/gohighlevel-ai-employee-pricing/', 'GoHighLevel Voice AI'), 'Pay-per-use: engine $0.045/min + voice from $0.015/min, or the Unlimited AI Employee plan at $97 per sub-account per month. Phone charges extra on every plan.', 'About $0.06/min plus phone charges on pay-per-use'],
+  ],
+  'AI voice agent per-minute pricing by platform, from each vendor’s pricing page (November 2026)'
+)}
+<p>Add-ons change the picture: Retell charges extra for features such as knowledge bases, denoising and PII removal, Vapi charges $2,000 a month for HIPAA compliance, and every platform charges for extra concurrent calls beyond the included limit.</p>
 
 <h2>Monthly running cost examples</h2>
 ${table(
@@ -82,6 +95,8 @@ ${callout('How we price', 'Every Voxil AI build is a fixed price agreed before w
 <p>Voice agents pay back by recovering calls and leads you currently lose, and by freeing staff time.</p>
 ${callout('ROI formula', '<strong>Monthly value ≈ (recovered calls × opportunity rate × close rate × average job value) + staff hours saved × hourly cost</strong><br/>Compare against monthly usage plus the build cost spread over 12 months.', '#ff7a3d')}
 <p>Our ${link('/resources/lead-loss-calculator/', 'Lead Loss Calculator')} estimates the first half of that formula in under a minute. For the broader method, see ${link('/blog/ai-automation-roi-small-business/', 'How to Calculate AI Automation ROI')}.</p>
+
+${callout('Reselling voice AI?', `Agencies pricing AI receptionists for clients should read our ${link('/blog/white-label-ai-voice-agents-guide/', 'white label AI voice agents guide')}, which covers cost layers, packaging and margins.`)}
 
 <h2>Buy vs build</h2>
 <p>Off-the-shelf AI receptionist apps are cheaper to start but limited to their templates and integrations. A custom build costs more upfront, integrates with exactly your stack and has no per-seat license. If your needs are standard, start with a product; if calls touch your CRM, scheduling rules and multiple systems, a custom agent usually wins on total cost within a year.</p>

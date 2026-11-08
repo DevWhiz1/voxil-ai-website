@@ -93,7 +93,7 @@ ${table(
 <ul>
   <li><strong>Mostly chat, light voice (under ~500 minutes):</strong> pay-per-use usually wins. Set spend alerts.</li>
   <li><strong>Busy phone line or premium voices:</strong> Unlimited is predictable and removes the risk of the AI pausing mid-month.</li>
-  <li><strong>Agency reselling AI:</strong> you need the $497 plan to rebill AI usage. Starter ($20) then covers the assistants and Content AI cheaply, with chat and voice rebilled at cost plus your markup.</li>
+  <li><strong>Agency reselling AI:</strong> you need the $497 plan to rebill AI usage (or see our ${link('/blog/white-label-ai-voice-agents-guide/', 'white label voice AI guide')} for other routes). Starter ($20) then covers the assistants and Content AI cheaply, with chat and voice rebilled at cost plus your markup.</li>
   <li><strong>Growth ($50):</strong> makes sense mainly if your team uses Ask AI, AI Studio and Managed Agents heavily, because the included 100 minutes and 1,000 replies are worth only a few dollars at pay-per-use rates.</li>
 </ul>
 

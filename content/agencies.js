@@ -266,7 +266,7 @@ export const models = {
 
   'white-label-ai-agents': {
     title: 'White Label AI Voice Agents You Can Resell | Voxil AI',
-    description: 'Resell custom AI voice agents under your brand. We build white label voice agents on Vapi and Retell AI, connected to your clients’ GHL. You set the price.',
+    description: 'White label AI voice agents and AI receptionists your agency resells as its own: custom voice AI on Vapi, Retell AI or GHL, connected to client CRMs.',
     h1: 'White label <span class="text-gradient-teal">AI voice agents & chatbots</span> for agencies',
     lead: 'Add AI receptionists, calling bots and chatbots to your offer without building a team. We build them custom, under your brand, connected to your clients’ GoHighLevel accounts.',
     answer: '<strong>White label AI agents</strong> are AI voice agents and chatbots built by a partner and sold by your agency as its own. Voxil AI builds custom agents on Vapi, Retell AI and leading language models, connects them to your clients’ GoHighLevel or CRM, and supports them behind the scenes under your brand.',
@@ -282,6 +282,7 @@ export const models = {
       paras: [
         'Self-serve white label AI platforms make it easy to launch a generic bot, and easy for your clients to find the same thing cheaper. Custom agents, designed around each client’s calls, calendar and CRM, are what clients actually keep paying for.',
         'We handle the hard parts: conversation design, voice and latency tuning, booking logic, CRM and GoHighLevel integration, testing on real calls and ongoing tuning. You sell it, set the price and own the relationship.',
+        `Comparing a white label voice AI platform, GoHighLevel Voice AI and custom builds? Our ${link('/blog/white-label-ai-voice-agents-guide/', 'white label AI voice agents guide')} sets out the costs per minute, pricing models and margins for each.`,
       ],
     },
     included: ['Conversation design per client', 'Voice agents on Vapi or Retell AI', 'Chat and WhatsApp agents', 'GoHighLevel and CRM integration', 'Supervised pilot and tuning', 'Reusable templates for your niche'],
