@@ -12,6 +12,8 @@ export const SITE = {
     'https://www.facebook.com/share/1Ec6E4n7f7/',
     'https://www.instagram.com/voxilai/',
     'https://www.linkedin.com/company/voxilai/',
+    'https://clutch.co/profile/voxil-ai',
+    'https://www.crunchbase.com/organization/voxil-ai',
   ],
   // Shown as "Last updated" on generated pages and used as dateModified.
   updated: '2026-09-26',
