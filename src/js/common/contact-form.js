@@ -3,6 +3,8 @@ Contact Form Handler
 Handles validation, submission via fetch, and UI feedback
 =========================== */
 
+import { track } from '../utils/track';
+
 const API_URL = import.meta.env.VITE_API_URL;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -78,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await res.json();
 
       if (res.ok && data.success) {
+        track('form_submit', { form: 'contact' });
         showFormMessage('Your message has been sent successfully! We\'ll get back to you soon.', 'success');
         form.reset();
       } else {

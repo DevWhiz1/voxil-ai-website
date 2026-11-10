@@ -4,6 +4,7 @@ inject();
 
 import './js/utils/interaction';
 import './js/utils/ads';
+import './js/utils/track';
 import './js/common/header';
 import './js/common/mobile-nav';
 import './js/common/contact-form';

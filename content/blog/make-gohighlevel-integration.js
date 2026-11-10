@@ -3,8 +3,8 @@ import { callout, link, table } from '../../scripts/lib/content-helpers.js';
 export default {
   slug: 'make-gohighlevel-integration',
   title: 'How to Connect Make.com and GoHighLevel: Webhooks, API and Real Examples',
-  metaTitle: 'Make.com + GoHighLevel Integration Guide | Voxil AI',
-  description: 'Connect Make.com and GoHighLevel: the HighLevel app, inbound and outbound webhooks, API auth, five real scenarios and error handling that works.',
+  metaTitle: 'Make.com GoHighLevel Integration: 5 Scenarios | Voxil AI',
+  description: 'Connect Make.com and GoHighLevel: the HighLevel app vs webhooks vs API, five real automation scenarios, error handling, costs, and when to use Zapier or n8n.',
   category: 'Chatbots & Automation',
   tags: ['GoHighLevel'],
   author: 'ahmad-ali',

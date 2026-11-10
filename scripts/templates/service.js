@@ -21,6 +21,38 @@ import {
   deepDive,
 } from '../lib/ui.js';
 
+// GoHighLevel hub: ghl-setup is the main GoHighLevel page. The overlapping
+// specialist pages point to it (banner + first related link) and the hub links
+// back to each, so ranking signals concentrate on one page instead of seven.
+const GHL_HUB = 'ghl-setup';
+const GHL_SPOKES = ['ghl-consultant', 'ghl-expert', 'ghl-support', 'ghl-integration', 'gohighlevel-ai', 'gohighlevel-automation'];
+
+const ghlHubBanner = () => `
+    <section class="section-base pt-10 pb-2">
+      <div class="main-container relative z-10">
+        <a href="${serviceUrl(GHL_HUB)}" data-reveal class="group flex flex-col gap-3 rounded-2xl border border-primary-600/25 bg-primary-50 p-5 transition hover:border-primary-600/50 sm:flex-row sm:items-center sm:justify-between md:p-6">
+          <span>
+            <span class="text-tagline-3 font-semibold tracking-[0.12em] text-primary-700 uppercase">Part of our GoHighLevel services</span>
+            <span class="text-tagline-1 mt-1 block font-semibold text-secondary">Start with GoHighLevel setup: the full build, from sub-account to automations</span>
+          </span>
+          <span class="link-arrow shrink-0 text-primary-700">See GoHighLevel setup${arrow()}</span>
+        </a>
+      </div>
+    </section>`;
+
+const ghlSpokesSection = () => `
+    <section class="section-soft section-pad section-seam" id="ghl-services">
+      <div class="main-container relative z-10">
+        ${sectionHead({ eyebrowText: 'GoHighLevel services', title: 'Specialist <span class="text-gradient-teal">GoHighLevel help</span>', lead: 'Need one part rather than a full setup? These services cover a specific job.' })}
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          ${GHL_SPOKES.map((s) => {
+            const r = findService(s);
+            return linkCard({ href: serviceUrl(s), title: r.name, desc: r.short, icon: r.icon, accent: r.accent });
+          }).join('')}
+        </div>
+      </div>
+    </section>`;
+
 // Cities featured in the "available in" strip on every service page.
 const FEATURED_LOCATIONS = ['new-york', 'los-angeles', 'chicago', 'houston', 'dallas', 'miami', 'atlanta', 'united-kingdom', 'dubai-uae', 'canada', 'australia'];
 
@@ -62,6 +94,8 @@ export const renderService = (slug, c, posts = []) => {
       facts: c.facts,
       pills: c.pills,
     }),
+
+    GHL_SPOKES.includes(slug) ? ghlHubBanner() : '',
 
     // --- What it is + what's included ---------------------------------
     `
@@ -120,6 +154,8 @@ export const renderService = (slug, c, posts = []) => {
       : '',
 
     deepDive(c.deepDive, accent),
+
+    slug === GHL_HUB ? ghlSpokesSection() : '',
 
     // --- Who it's for + stack ------------------------------------------
     `
@@ -211,7 +247,7 @@ export const renderService = (slug, c, posts = []) => {
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Keep exploring', dot: accent, title: 'Related <span class="text-gradient-teal">services</span>', lead: 'Most clients combine two or three of these into one connected system.' })}
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          ${c.related
+          ${(GHL_SPOKES.includes(slug) ? [GHL_HUB, ...c.related.filter((s) => s !== GHL_HUB)].slice(0, 4) : c.related)
             .map((s) => {
               const r = findService(s);
               return linkCard({ href: serviceUrl(s), title: r.name, desc: r.short, icon: r.icon, accent: r.accent });

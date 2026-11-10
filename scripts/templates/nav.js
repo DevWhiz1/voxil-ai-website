@@ -18,7 +18,7 @@ const FOOTER_SERVICES = [
   ['ai-receptionist', 'AI Receptionist'],
   ['ai-calling-bots', 'AI Calling Bots'],
   ['ai-chatbots', 'AI Chatbots'],
-  ['gohighlevel-automation', 'GoHighLevel Automation'],
+  ['ghl-setup', 'GoHighLevel Setup'],
   ['whatsapp-automation', 'WhatsApp Automation'],
   ['website-design', 'Websites & Funnels'],
 ];
@@ -38,8 +38,9 @@ export const footerLinks = () => `${HEADER_NOTE}
   ${footCol('Resources', [...FOOTER_RESOURCES.map(([s, l]) => footLink(resourceUrl(s), l)), footLink('/blog/', 'Blog'), footLink('/resources/', 'All free tools')])}
   ${footCol('Company', [
     footLink('/about.html', 'About us'),
-    footLink('/for-agencies/', 'For agencies'),
+    footLink('/for-agencies/', 'White label'),
     footLink('/portfolio/', 'Portfolio'),
+    footLink('/pricing/', 'Pricing'),
     footLink('/case-studies/', 'Case studies'),
     footLink('/faq.html', 'FAQ'),
     footLink('/contact.html', 'Contact'),

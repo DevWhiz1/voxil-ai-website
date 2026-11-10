@@ -25,7 +25,7 @@ const jsonLd = (data) =>
 // ---------------------------------------------------------------------------
 // Page shell
 // ---------------------------------------------------------------------------
-export const page = ({ path, title, description, body, schema = [] }) => `<!doctype html>
+export const page = ({ path, title, description, body, schema = [], sharedCta = true }) => `<!doctype html>
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
@@ -39,7 +39,7 @@ export const page = ({ path, title, description, body, schema = [] }) => `<!doct
     <Component src="src/components/shared/header.htm" />
     <main>
 ${body}
-      <Component src="src/components/shared/cta.htm" />
+      ${sharedCta ? '<Component src="src/components/shared/cta.htm" />' : ''}
     </main>
     <Component src="src/components/shared/footer.htm" />
   </body>
@@ -109,9 +109,9 @@ export const eyebrow = (text, dot = '#1d8fe1', light = false) =>
     ? `<p data-reveal class="eyebrow-chip-light mb-5"><span class="size-1.5 rounded-full" style="background:${dot}"></span>${text}</p>`
     : `<p data-reveal class="eyebrow-chip mb-5"><span class="pulse-dot" style="--dot: ${dot}"></span>${text}</p>`;
 
-export const ctaButtons = (primary = 'Book a Free Strategy Call', secondary = { label: 'See pricing & scope', href: '/contact.html' }) => `
+export const ctaButtons = (primary = 'Book a Free Strategy Call', secondary = { label: 'See pricing & scope', href: '/pricing/' }, primaryHref = '/book-meeting.html', primaryCta) => `
             <div data-reveal class="mt-8 flex flex-wrap items-center gap-3">
-              <a href="/book-meeting.html" class="cta cta-lg cta-coral">${primary}${arrow()}</a>
+              <a href="${primaryHref}" class="cta cta-lg cta-coral"${primaryCta ? ` data-cta="${primaryCta}"` : ''}>${primary}${arrow()}</a>
               ${secondary ? `<a href="${secondary.href}" class="cta cta-lg cta-ghost">${secondary.label}</a>` : ''}
             </div>`;
 
@@ -120,7 +120,7 @@ export const ctaButtons = (primary = 'Book a Free Strategy Call', secondary = { 
  * `answer` is the 40-60 word direct answer answer-engines quote; `facts` are
  * short label/value pairs shown under it.
  */
-export const hero = ({ crumbs, eyebrowText, accent = '#1d8fe1', h1, lead, answer, answerLabel = 'Quick answer', facts = [], pills = [], primary, secondary }) => `
+export const hero = ({ crumbs, eyebrowText, accent = '#1d8fe1', h1, lead, answer, answerLabel = 'Quick answer', facts = [], pills = [], primary, secondary, primaryHref, primaryCta }) => `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
       ${heroDecor()}
@@ -134,7 +134,7 @@ export const hero = ({ crumbs, eyebrowText, accent = '#1d8fe1', h1, lead, answer
             ${eyebrow(eyebrowText, accent)}
             <h1 data-reveal class="text-heading-4 sm:text-heading-3 lg:text-heading-2 font-semibold tracking-tight text-secondary">${h1}</h1>
             <p data-reveal class="text-tagline-1 mt-5 max-w-2xl text-secondary/65 md:text-lg">${lead}</p>
-            ${ctaButtons(primary, secondary)}
+            ${ctaButtons(primary, secondary, primaryHref, primaryCta)}
             ${
               pills.length
                 ? `<div data-reveal class="mt-8 flex flex-wrap gap-2">${pills.map((p) => `<span class="pill">${p}</span>`).join('')}</div>`
@@ -268,18 +268,22 @@ export const updatedLine = (date = SITE.updated) => {
 
 // Optional long-form section used on service, location and agency pages to
 // cover a topic in more depth: `{ eyebrow, title, paras: [html, ...] }`.
-export const deepDive = (d, accent = '#1d8fe1') =>
-  d
-    ? `
-    <section class="section-base section-pad section-seam">
+// Long-form prose section. Pass one section or a list of them; each can carry
+// an id (for in-page links) and extra HTML (tables, lists) after its paragraphs.
+export const deepDive = (d, accent = '#1d8fe1') => {
+  if (!d) return '';
+  if (Array.isArray(d)) return d.map((x, i) => deepDive({ ...x, tint: i % 2 === 1 }, accent)).join('');
+  return `
+    <section class="${d.tint ? 'section-soft' : 'section-base'} section-pad section-seam"${d.id ? ` id="${d.id}"` : ''}>
       <div class="main-container relative z-10">
         <div class="mx-auto max-w-3xl">
           ${eyebrow(d.eyebrow ?? 'In depth', accent)}
           <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">${d.title}</h2>
           <div class="prose-ink mt-6">
-            ${d.paras.map((p) => `<p>${p}</p>`).join('\n            ')}
+            ${(d.paras ?? []).map((p) => `<p>${p}</p>`).join('\n            ')}
           </div>
+          ${d.html ?? ''}
         </div>
       </div>
-    </section>`
-    : '';
+    </section>`;
+};

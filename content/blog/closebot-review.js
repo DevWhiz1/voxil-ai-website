@@ -3,8 +3,8 @@ import { callout, link, table } from '../../scripts/lib/content-helpers.js';
 export default {
   slug: 'closebot-review',
   title: 'Closebot Review (2026): AI Chatbot for GoHighLevel, Pros, Cons and Alternatives',
-  metaTitle: 'Closebot Review (2026): Pros, Cons & Verdict | Voxil AI',
-  description: 'An honest Closebot review for GoHighLevel agencies: what it does well, where it falls short, its pricing model and the best alternatives. Read first.',
+  metaTitle: 'Closebot Reviews 2026: Pros, Cons, Pricing | Voxil AI',
+  description: 'Closebot reviews for 2026: how the AI appointment setter works with GoHighLevel, setup, pricing model, pros and cons, and the best Closebot alternatives.',
   category: 'Chatbots & Automation',
   author: 'abdul-moeez',
   date: '2026-10-06',

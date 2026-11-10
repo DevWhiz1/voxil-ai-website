@@ -1,17 +1,18 @@
 // For Agencies: white label partner hub and partner-model pages.
-// Target keywords: white label fulfillment for agencies, white label GoHighLevel
+// Target keywords: white label AI automation agency, white label AI agency,
+// white label AI automation services, white label fulfillment for agencies, white label GoHighLevel
 // fulfillment, GoHighLevel fulfillment team, white label AI voice agents for
 // agencies, white label GHL support, GHL virtual assistant for agencies.
 const link = (href, text) => `<a href="${href}" class="font-semibold text-primary-700 underline underline-offset-4">${text}</a>`;
 
 export const hub = {
-  title: 'White Label Fulfillment for Agencies | GHL & AI | Voxil AI',
+  title: 'White Label AI Automation Agency | GHL Fulfillment',
   description:
-    'White label fulfillment for marketing agencies: GoHighLevel builds, AI voice agents, chatbots and automations delivered under your brand. Month to month.',
-  h1: 'Your agency’s <span class="text-gradient-teal">white label fulfillment partner</span>',
+    'White label AI automation services for agencies: AI voice agents, chatbots and GoHighLevel fulfillment built in your accounts, under your brand. Month to month.',
+  h1: 'Your agency’s <span class="text-gradient-teal">white label AI automation partner</span>',
   lead: 'You sold the work. We build it under your brand, inside your accounts, and your client never hears our name. GoHighLevel, AI voice and chat agents, funnels, websites and automations.',
   answer:
-    '<strong>Voxil AI is a white label fulfillment partner for marketing agencies.</strong> We build and run GoHighLevel systems, AI voice agents, chatbots, funnels, websites and automations under your brand and inside your accounts, through four partner models: done-for-you fulfillment, a dedicated GHL assistant, a white label support desk and per-project overflow.',
+    '<strong>Voxil AI is a white label AI agency and fulfillment partner for marketing agencies.</strong> We build and run GoHighLevel systems, AI voice agents, chatbots, funnels, websites and automations under your brand and inside your accounts, through four partner models: done-for-you fulfillment, a dedicated GHL assistant, a white label support desk and per-project overflow.',
   facts: [
     { label: 'Partner models', value: 'Four' },
     { label: 'Platform depth', value: 'GoHighLevel + AI' },

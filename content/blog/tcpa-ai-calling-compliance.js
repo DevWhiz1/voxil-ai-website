@@ -3,8 +3,8 @@ import { callout, cite, link, table } from '../../scripts/lib/content-helpers.js
 export default {
   slug: 'tcpa-ai-calling-compliance',
   title: 'AI Calling and the TCPA: A Practical Compliance Guide for US Businesses (2026)',
-  metaTitle: 'AI Calling & TCPA Compliance Guide (2026) | Voxil AI',
-  description: 'AI calling and the TCPA: consent rules, the FCC’s AI voice ruling, Do Not Call, calling hours and state laws US businesses must know before dialing.',
+  metaTitle: 'TCPA Rules for AI Calling (2026): Consent & FCC Ruling',
+  description: 'Can you use AI to call leads? TCPA consent rules, the FCC\'s 2024 AI voice ruling, Do Not Call, calling hours and state laws, explained for US businesses.',
   category: 'Lead Generation',
   tags: ['AI Calling Bots'],
   author: 'abdul-moeez',

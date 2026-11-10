@@ -319,7 +319,8 @@
   @apply relative z-10 flex size-13 items-center justify-center rounded-full border text-tagline-1 font-semibold transition duration-400;
   border-color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 40%, transparent);
   background: color-mix(in srgb, var(--accent, var(--color-primary-400)) 12%, white);
-  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 72%, #0c1220);
+  /* 55% keeps step numbers at 4.5:1+ even on the lightest accents */
+  color: color-mix(in srgb, var(--accent, var(--color-primary-400)) 55%, #0c1220);
   transition-timing-function: var(--ease-out-expo);
 }
 
@@ -1778,4 +1779,50 @@
 
 .team-values__icon svg {
   @apply size-5;
+}
+
+/* Inline links in the home hero paragraph */
+.hero-link {
+  @apply font-semibold text-primary-700 underline decoration-primary-600/40 underline-offset-4 transition-colors hover:text-primary-800 hover:decoration-primary-600;
+}
+
+/* Pricing page: plan badge, middle-plan highlight, guarantee box, timeline */
+.pricing-badge {
+  @apply ml-1 inline-block rounded-full bg-coral-500 px-2 py-0.5 align-middle text-[11px] font-semibold tracking-normal text-white normal-case;
+}
+
+.pricing-table th:nth-child(3),
+.pricing-table td:nth-child(3) {
+  @apply bg-primary-50;
+}
+
+.pricing-guarantee {
+  @apply rounded-3xl border-2 border-primary-600/40 bg-white p-6 md:p-8;
+  box-shadow: 0 24px 50px -30px rgba(7, 105, 180, 0.45);
+}
+
+.pricing-timeline {
+  @apply relative space-y-5 border-l-2 border-primary-600/25 pl-6;
+}
+
+.pricing-timeline li {
+  @apply relative text-tagline-1 text-secondary/80;
+}
+
+.pricing-timeline li::before {
+  content: '';
+  @apply absolute top-1.5 -left-[31px] size-3 rounded-full bg-primary-600 ring-4 ring-primary-50;
+}
+
+.pricing-timeline li span {
+  @apply block text-tagline-3 font-semibold tracking-[0.12em] text-primary-700 uppercase;
+}
+
+/* White label proof placeholders */
+.proof-card {
+  @apply rounded-2xl border border-dashed border-primary-600/40 bg-primary-50/60 p-6;
+}
+
+.proof-card__tag {
+  @apply inline-block rounded-full bg-white px-2.5 py-1 text-tagline-3 font-semibold tracking-[0.1em] text-primary-700 uppercase;
 }

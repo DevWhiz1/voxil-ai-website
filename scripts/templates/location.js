@@ -25,6 +25,11 @@ const sharedFaqs = (l) => [
   },
 ];
 
+// Location pages kept as primary (per the Nov 2026 Search Console review); their
+// opening paragraph says plainly that we work remotely, so no page implies a
+// local office.
+const PRIMARY_LOCATIONS = ['pakistan', 'germany', 'chicago', 'los-angeles', 'netherlands', 'new-york', 'san-jose', 'australia', 'san-diego', 'nashville', 'san-francisco', 'dallas', 'dubai-uae', 'ireland', 'united-kingdom'];
+
 export const renderLocation = (slug, l) => {
   const meta = ALL_LOCATIONS.find((x) => x.slug === slug);
   const path = locationUrl(slug);
@@ -47,7 +52,7 @@ export const renderLocation = (slug, l) => {
       eyebrowText: `${meta.name} · ${group.title}`,
       accent,
       h1: l.h1 ?? `AI automation agency serving <span class="text-gradient-teal">${place}</span>`,
-      lead: l.lead,
+      lead: PRIMARY_LOCATIONS.includes(slug) ? `${l.lead} We work with clients here remotely.` : l.lead,
       answer: l.answer,
       answerLabel: 'At a glance',
       facts: [

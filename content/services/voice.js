@@ -1,6 +1,18 @@
 // AI Voice & Calls, service page content.
 // Each entry follows the shape documented in scripts/templates/service.js.
 
+const a = (href, text) => `<a href="${href}">${text}</a>`;
+
+// Simple table for guide sections (same markup as dataTable in scripts/lib/ui.js).
+const guideTable = (caption, head, rows) => `
+          <div class="data-table-wrap mt-6">
+            <table class="data-table">
+              <caption class="sr-only">${caption}</caption>
+              <thead><tr>${head.map((h) => `<th scope="col">${h}</th>`).join('')}</tr></thead>
+              <tbody>${rows.map((r) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row">${c}</th>` : `<td>${c}</td>`)).join('')}</tr>`).join('')}</tbody>
+            </table>
+          </div>`;
+
 const VOICE_STACK = ['Vapi', 'Retell AI', 'Twilio', 'Telnyx', 'ElevenLabs', 'Deepgram', 'OpenAI', 'Anthropic Claude', 'GoHighLevel', 'HubSpot', 'Salesforce', 'Google Calendar', 'Calendly', 'Cal.com', 'Zapier', 'Make.com', 'n8n'];
 
 export default {
@@ -185,18 +197,100 @@ export default {
       { title: 'Go full-time', desc: 'Expand to all calls once you’re happy, with monthly tuning.' },
     ],
     compare: {
-      title: 'AI receptionist vs. <span class="text-gradient-warm">human receptionist</span>',
-      lead: 'Most clients use both: the AI handles volume and after-hours; people handle the moments that need a human.',
-      head: ['', 'AI receptionist', 'Human receptionist', 'Answering service'],
+      title: 'AI receptionist vs. answering service, <span class="text-gradient-warm">live receptionist and voicemail</span>',
+      lead: 'Most clients use a mix: the AI receptionist handles volume and after-hours calls; people handle the moments that need a human.',
+      head: ['', 'AI receptionist', 'Live receptionist', 'Answering service', 'Voicemail'],
       rows: [
-        ['Hours covered', '24/7/365', 'Business hours', '24/7'],
-        ['Simultaneous calls', 'Unlimited', 'One', 'Several'],
-        ['Books into your calendar', 'Yes, automatically', 'Yes', 'Usually messages only'],
-        ['Knows your business in depth', 'Yes (trained on your content)', 'Yes', 'Scripted'],
-        ['Sick days / turnover', 'None', 'Yes', 'Varies'],
-        ['Best at', 'Volume, consistency, after-hours', 'Empathy, complex judgment', 'Basic overflow'],
+        ['Hours covered', '24/7/365', 'Business hours', '24/7', '24/7'],
+        ['Simultaneous calls', 'Many at once', 'One', 'Several', 'Unlimited, but nobody answers'],
+        ['Books into your calendar', 'Yes, automatically', 'Yes', 'Usually takes a message', 'No'],
+        ['Knows your business in depth', 'Yes, trained on your content', 'Yes', 'Follows a script', 'No'],
+        ['Caller gets an answer now', 'Yes', 'Yes, if free', 'Partly', 'No, waits for a call back'],
+        ['Cost model', 'Setup fee + per-minute usage', 'Salary and benefits', 'Per minute or per call', 'Free'],
+        ['Best at', 'Volume, consistency, after-hours', 'Empathy, complex judgment', 'Basic overflow', 'Nothing urgent'],
       ],
     },
+    deepDive: [
+      {
+        id: 'how-it-works',
+        eyebrow: 'How it works',
+        title: 'How an AI receptionist works, call by call',
+        paras: [
+          'An <strong>AI receptionist</strong> is a voice agent connected to your phone line. Calls are forwarded to it, all the time, after hours or only when your line is busy, so you keep your existing number.',
+        ],
+        html: `
+          <ol class="mt-6 list-decimal space-y-3 pl-5 text-tagline-1 text-secondary/80">
+            <li><strong>Answers on the first ring</strong> in your business’s name, with a natural voice.</li>
+            <li><strong>Understands what the caller wants</strong>, in their own words: a booking, a question, a quote, a complaint or an emergency.</li>
+            <li><strong>Answers from your own information</strong>: services, prices you approve, hours, service area and policies.</li>
+            <li><strong>Takes action</strong>: books or reschedules in your calendar, saves the caller’s details in your customer list, or sends a payment or intake link by text.</li>
+            <li><strong>Hands off when it should</strong>: emergencies and anything sensitive go straight to a person, with a summary.</li>
+            <li><strong>Reports back</strong>: you get a summary of every call by text, email or Slack.</li>
+          </ol>`,
+      },
+      {
+        id: 'outbound',
+        eyebrow: 'Inbound and outbound',
+        title: 'AI voice agents for outbound calls too',
+        paras: [
+          'The same AI that answers your phone can also make calls: calling new web leads back within a minute, confirming appointments, reminding no-shows, and getting back in touch with past customers. Every call outcome is saved to your customer list automatically.',
+          `Outbound calling has extra rules: consent, calling hours and clear AI disclosure. Read our ${a('/blog/tcpa-ai-calling-compliance/', 'TCPA guide for AI calling')} before calling leads, and see ${a('/blog/ai-voice-calling-lead-generation/', 'AI voice calling for lead generation')} for the playbook.`,
+        ],
+      },
+      {
+        id: 'small-business',
+        eyebrow: 'For small businesses',
+        title: 'AI receptionist for small business',
+        paras: [
+          'Small businesses feel missed calls the most. The owner is on a job, the front desk is with a customer, or it’s after five, and the caller simply rings the next business on Google. An AI receptionist for small business closes that gap without adding a salary.',
+          'It suits businesses that book by phone and lose money when calls go unanswered: clinics, law firms, home services, salons, med spas and agencies. Start with after-hours and overflow calls, keep your team on the phone during the day, and expand once you trust it.',
+          `Want to see what missed calls cost you today? Try the ${a('/resources/lead-loss-calculator/', 'missed call calculator')}.`,
+        ],
+      },
+      {
+        id: 'cost',
+        eyebrow: 'Pricing',
+        title: 'How much does an AI receptionist cost?',
+        paras: [
+          'Our AI receptionist plans start at a $200 setup fee and $97 per month. Prices are in USD.',
+        ],
+        html: `${guideTable('AI receptionist plans in USD', ['Plan', 'Setup (one time)', 'Monthly', 'Voice calls'], [
+          ['Starter', '$200', '$97 per month', 'Not included'],
+          ['Never-Miss-A-Job (trades)', '$497', '$197 per month', 'Not included'],
+          ['Never-Miss-A-Job (dental clinics)', '$697', '$297 per month', 'Not included'],
+          ['AI Voice Receptionist', '$697', '$297 per month', '$0.40 per minute of calls the AI answers'],
+        ])}
+          <p class="mt-4 text-tagline-2 text-secondary/75">Missed-call texts and booking links do not use call minutes. See ${a('/pricing/', 'full AI receptionist pricing')}, including what each plan includes and our 30-day guarantee.</p>`,
+      },
+      {
+        id: 'free',
+        eyebrow: 'Free options',
+        title: 'Is there a free AI receptionist?',
+        paras: [
+          'Some phone apps include a free AI answering feature, and most voice platforms offer free trial credits. They are fine for testing, but they rarely book into your real calendar, follow your rules for urgent calls or sound like your business, and minutes run out quickly.',
+          'We don’t offer a free plan. What we do offer is a free 30-minute call to map your calls and tell you honestly whether an AI receptionist will pay for itself in your business.',
+        ],
+      },
+      {
+        id: 'industries',
+        eyebrow: 'By industry',
+        title: 'AI receptionist by industry',
+        paras: [
+          `Every industry has different calls. A clinic needs ${a('/blog/ai-patient-intake/', 'patient intake')} and insurance questions handled; a ${a('/blog/ai-receptionist-for-law-firms/', 'law firm needs legal intake')} and conflict checks; a ${a('/blog/ai-receptionist-for-dental-offices/', 'dental office')} needs new-patient booking and recall; home services need emergency dispatch.`,
+          `See how it works for ${a('/industries/medical-clinics/', 'medical clinics')}, ${a('/industries/law-firms/', 'law firms')}, ${a('/industries/home-services/', 'home services')}, ${a('/industries/hvac/', 'HVAC')}, ${a('/industries/med-spas/', 'med spas')} and ${a('/industries/salons-beauty/', 'salons')}.`,
+        ],
+      },
+      {
+        id: 'worth-it',
+        eyebrow: 'The decision',
+        title: 'Is an AI receptionist worth it?',
+        paras: [
+          'It is worth it when missed or slow-answered calls cost you real customers. If a single booked job or new patient is worth more than a month of usage, the maths usually works within weeks.',
+          'It is not worth it if most of your calls need judgement, negotiation or emotional support, or if you get only a handful of calls a week. In those cases a live receptionist or a simple answering service may be the better fit.',
+          `Still comparing options? Read ${a('/blog/ai-receptionist-vs-answering-service/', 'AI receptionist vs answering service')} and ${a('/blog/what-is-an-ai-receptionist/', 'what an AI receptionist is')}.`,
+        ],
+      },
+    ],
     fit: [
       'Clinics, law firms and agencies that book by phone',
       'Home-service businesses that get calls while on job sites',
@@ -211,6 +305,11 @@ export default {
       { q: 'Can it book directly into my scheduling software?', a: 'Yes, if your software has an API or integration, Google Calendar, Outlook, Calendly, Cal.com, GoHighLevel, Jobber, Housecall Pro and many practice-management tools. If yours doesn’t, we can send booking requests for one-click approval.' },
       { q: 'What if a caller has an emergency?', a: 'We define emergency keywords and scenarios with you. The receptionist transfers those calls immediately to a live number, or dispatches your on-call contact by SMS and call, and tells the caller what happens next.' },
       { q: 'Can I keep my current number?', a: 'Yes. Most clients simply forward calls, all the time, after hours only, or when the line is busy, so nothing changes for callers.' },
+      { q: 'Is there a free AI receptionist?', a: 'Some phone apps and voice platforms offer free trials or limited free features, which are useful for testing. They rarely book into your real calendar or follow your escalation rules. We do not offer a free plan, but the first 30-minute strategy call is free.' },
+      { q: 'What does an AI receptionist cost per call?', a: 'Missed-call texts and booking links are included in the monthly price. With the AI Voice Receptionist, calls cost $0.40 per minute while the AI is on the call, so a two-minute call costs $0.80.' },
+      { q: 'Are there setup fees?', a: 'Yes, a one-time setup fee of $200, $497 or $697 depending on the plan. See the full plans on our pricing page.' },
+      { q: 'AI receptionist or answering service: which is better?', a: 'An AI receptionist answers instantly, books into your calendar and costs far less per call; an answering service uses people and handles unusual calls better. Many businesses use the AI for volume and after-hours, with a person as backup.' },
+      { q: 'Is an AI receptionist worth it for a small business?', a: 'Usually, if you lose customers to missed or slow-answered calls and one new booking is worth more than a month of usage. It is less worthwhile if you receive only a few calls a week.' },
     ],
     related: ['ai-phone-answering', 'ai-appointment-booking', 'ai-voice-agents', 'ai-customer-support'],
   },

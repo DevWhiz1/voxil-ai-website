@@ -21,7 +21,9 @@ import { renderAgencyHub, renderAgencyModel } from './templates/agencies.js';
 import { renderCaseStudiesHub, renderCaseStudy } from './templates/case-studies.js';
 import { renderBlogHub, renderPost } from './templates/blog.js';
 import { renderIndustriesHub, renderLocationsHub, renderServicesHub } from './templates/hubs.js';
+import { renderPricing } from './templates/pricing.js';
 import { footerLinks, footerLocations } from './templates/nav.js';
+import { homeWhiteLabel } from './templates/home.js';
 import { renderCalculator, renderChecklist, renderMediaKit, renderResourcesHub, renderStatsHub } from './templates/resources.js';
 import { renderIndustry } from './templates/industry.js';
 import { renderAutomationPicker, renderChatbotCostCalculator, renderPlatformPicker, renderPromptGenerator, renderSavingsCalculator, renderSmsCounter, renderSpeedScorecard, renderVoiceCostCalculator } from './templates/resources-tools.js';
@@ -64,6 +66,7 @@ const services = await loadDir('content/services');
 
 resetDir('services');
 write('/services/', renderServicesHub());
+write('/pricing/', renderPricing());
 for (const s of ALL_SERVICES) {
   if (!services[s.slug]) throw new Error(`No content for service: ${s.slug}`);
   write(`/services/${s.slug}/`, renderService(s.slug, services[s.slug], posts));
@@ -139,6 +142,7 @@ const partialDir = path.join(ROOT, 'src/components/shared/generated');
 fs.mkdirSync(partialDir, { recursive: true });
 fs.writeFileSync(path.join(partialDir, 'footer-links.htm'), footerLinks());
 fs.writeFileSync(path.join(partialDir, 'footer-locations.htm'), footerLocations());
+fs.writeFileSync(path.join(partialDir, 'home-white-label.htm'), homeWhiteLabel());
 fs.writeFileSync(path.join(partialDir, 'brand-mark.htm'), brandMark());
 fs.writeFileSync(path.join(partialDir, 'brand-mark-flat.htm'), brandMarkFlat());
 fs.writeFileSync(path.join(partialDir, 'hero-lines.htm'), heroLines());

@@ -55,6 +55,33 @@ const otherModels = (current) => `
       </div>
     </section>`;
 
+// Proof for agencies. Placeholders until real material exists: sample items are
+// labelled "Sample", and no client results are claimed. Replace each item with
+// the real demo, screenshot and result when available.
+const proofBlock = () => `
+    <section class="section-base section-pad section-seam" id="proof">
+      <div class="main-container relative z-10">
+        ${sectionHead({ eyebrowText: 'See it in action', title: 'What you’ll be <span class="text-gradient-teal">selling</span>', lead: 'Hear the AI answer a call, see what your clients see, and talk to us about results.' })}
+        <div class="grid gap-4 md:grid-cols-3">
+          <div data-reveal class="proof-card">
+            <span class="proof-card__tag">Demo</span>
+            <p class="text-heading-6 mt-4 font-semibold text-secondary">Demo call recording</p>
+            <p class="text-tagline-2 mt-2 text-secondary/70">A recorded demo call is coming soon. Ask for a live test number on a partner call and hear the AI answer as your client’s business.</p>
+          </div>
+          <div data-reveal class="proof-card">
+            <span class="proof-card__tag">Sample</span>
+            <p class="text-heading-6 mt-4 font-semibold text-secondary">Sample client dashboard</p>
+            <p class="text-tagline-2 mt-2 text-secondary/70">A sample of the call log and weekly report your clients receive under your brand. Screenshot coming soon.</p>
+          </div>
+          <div data-reveal class="proof-card">
+            <span class="proof-card__tag">Results</span>
+            <p class="text-heading-6 mt-4 font-semibold text-secondary">Partner results</p>
+            <p class="text-tagline-2 mt-2 text-secondary/70">Now onboarding our first partner agencies.</p>
+          </div>
+        </div>
+      </div>
+    </section>`;
+
 const serviceSchema = ({ path, name, description, offers }) => ({
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -174,6 +201,7 @@ export const renderAgencyHub = (c) => {
       </div>
     </section>`,
 
+    proofBlock(),
     faqBlock({ faqs: c.faqs, title: 'White label partner <span class="text-gradient-teal">FAQ</span>', lead: 'What agencies ask before handing us their first project.' }),
   ].join('\n');
 
@@ -255,6 +283,7 @@ export const renderAgencyModel = (slug, c) => {
 
     deepDive(c.deepDive, accent),
 
+    slug === 'white-label-ai-agents' ? proofBlock() : '',
     faqBlock({ faqs: c.faqs, title: `${meta.name}: <span class="text-gradient-teal">FAQ</span>` }),
     otherModels(slug),
   ].join('\n');

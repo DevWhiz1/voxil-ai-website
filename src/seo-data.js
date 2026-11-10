@@ -2,7 +2,7 @@ export const seoData = {
   index: {
     title: 'Voxil AI: AI Automation Agency & Custom AI Agents',
     description:
-      'Voxil AI is an AI automation agency building custom AI agents, AI voice agents and automation for service businesses. Fixed price from $2,500. Free call.',
+      'Voxil AI is an AI automation agency building custom AI agents, AI voice agents and automation for service businesses. Fixed-price projects. Free call.',
   },
   about: {
     title: 'About Voxil AI | Meet Abdul Moeez & the Team',

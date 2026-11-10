@@ -3,8 +3,8 @@ import { callout, link, table } from '../../scripts/lib/content-helpers.js';
 export default {
   slug: 'gohighlevel-conversation-ai-setup',
   title: 'How to Set Up GoHighLevel Conversation AI: A Step-by-Step Walkthrough',
-  metaTitle: 'GoHighLevel Conversation AI Setup Guide | Voxil AI',
-  description: 'Set up GoHighLevel Conversation AI step by step: channels and mode, bot instructions, knowledge base, booking, hand-off rules, testing and launch.',
+  metaTitle: 'GoHighLevel Conversation AI Setup: 8 Steps | Voxil AI',
+  description: 'Set up GoHighLevel Conversation AI in 8 steps: choose the mode, write bot instructions, build the knowledge base, enable booking, set hand-off rules and test.',
   category: 'GoHighLevel',
   tags: ['Chatbots & Automation'],
   author: 'ahmad-ali',

@@ -193,8 +193,10 @@ export const renderStatsHub = () => {
   const r = RESOURCES.find((x) => x.slug === 'ai-statistics-2026');
   const path = resourceUrl(r.slug);
   const crumbs = crumbsFor(r.name, r.slug);
-  const title = 'AI Statistics 2026: Adoption, Agents & Service | Voxil AI';
-  const description = 'AI statistics 2026: sourced figures on adoption, investment, jobs, customer service, AI agents, speed-to-lead and small business. Updated regularly.';
+  // Rounded down to the nearest ten so the title stays true as stats are added.
+  const statCount = `${Math.floor(Object.keys(STATS).length / 10) * 10}+`;
+  const title = `${statCount} AI Statistics for 2026: Adoption, Market & Jobs`;
+  const description = `${statCount} sourced AI statistics for 2026: AI adoption, market size, investment, jobs, AI agents and customer service. Every figure links to its original source.`;
   const top = ['adoption-78', 'chatgpt-800m', 'us-invest-109', 'gartner-80-2029', 'gartner-33-agentic', 'hbr-7x', 'uscc-40', 'wef-net-78m', 'nber-14', 'gartner-40-cancel'];
   const count = Object.keys(STATS).length;
 
@@ -347,8 +349,8 @@ export const renderChecklist = () => {
   const path = resourceUrl(r.slug);
   const crumbs = crumbsFor(r.name, r.slug);
   const total = CHECKLIST.reduce((n, s) => n + s.items.length, 0);
-  const title = `GoHighLevel Setup Checklist: ${total} Steps | Voxil AI`;
-  const description = `The free, interactive ${total}-step GoHighLevel setup checklist we use for every launch: A2P, deliverability, pipelines, automations, AI and reporting.`;
+  const title = `Free GoHighLevel Setup Checklist (${total} Steps) | Voxil AI`;
+  const description = `Free, interactive ${total}-step GoHighLevel setup checklist: A2P 10DLC, email deliverability, pipelines, calendars, automations, AI and reporting. Tick off each step.`;
   const faqs = [
     { q: 'How long does it take to set up GoHighLevel properly?', a: 'Typically one to three weeks for a complete setup, depending on A2P registration approval times, domain changes and the number of automations.' },
     { q: 'What is the most commonly missed GHL setup step?', a: 'Email and SMS compliance: authenticated sending domains and A2P 10DLC registration. Skipping them leads to spam-foldered emails and filtered texts.' },

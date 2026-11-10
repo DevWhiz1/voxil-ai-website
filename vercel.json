@@ -94,7 +94,7 @@
     },
     {
       "source": "/pricing.html",
-      "destination": "/services/",
+      "destination": "/pricing/",
       "statusCode": 301
     },
     {

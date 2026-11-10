@@ -23,7 +23,7 @@ const EXCLUDED = new Set([
 ]);
 
 // Folders written by scripts/build-pages.js; each page is <dir>/index.html.
-const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies', 'portfolio'];
+const GENERATED_DIRS = ['services', 'locations', 'industries', 'blog', 'resources', 'for-agencies', 'case-studies', 'portfolio', 'pricing'];
 
 const today = new Date().toISOString().slice(0, 10);
 
