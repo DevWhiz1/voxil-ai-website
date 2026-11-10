@@ -53,9 +53,10 @@ Head links
 <link rel="stylesheet" href="/src/styles/main.css" />
 <link rel="alternate" type="text/plain" title="LLM site map" href="/llms.txt" />
 
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1553070913460255"
-     crossorigin="anonymous"></script>
+<!-- Google AdSense: account verification. The ad script itself is loaded after
+     the visitor's first interaction (src/js/utils/ads.js) so ads never slow the
+     first paint or shift the page while it loads. -->
+<meta name="google-adsense-account" content="ca-pub-1553070913460255" />
 
 <!-- Site-wide entity data. Page-specific schema is added by each page. -->
 <script type="application/ld+json">

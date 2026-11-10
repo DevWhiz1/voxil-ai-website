@@ -1611,8 +1611,9 @@
 }
 
 .hero-visual__glow {
-  @apply pointer-events-none absolute inset-[14%] rounded-full blur-3xl;
-  background: radial-gradient(circle, rgba(7, 105, 180, 0.22), rgba(29, 143, 225, 0.12) 55%, transparent 72%);
+  /* soft radial gradient; no CSS blur, which is expensive to paint on phones */
+  @apply pointer-events-none absolute inset-[6%] rounded-full;
+  background: radial-gradient(circle, rgba(7, 105, 180, 0.2), rgba(29, 143, 225, 0.1) 45%, transparent 70%);
 }
 
 /* The mark is tilted in 3D; its extrusion is drawn as stacked SVG layers */
@@ -1624,12 +1625,11 @@
 .hero-mark__svg {
   @apply h-full w-full;
   transform: rotateY(-16deg) rotateX(10deg) rotateZ(-2deg);
-  filter: drop-shadow(0 30px 40px rgba(5, 52, 107, 0.28));
 }
 
 .hero-mark__shadow {
-  @apply pointer-events-none absolute bottom-[12%] left-1/2 h-[5%] w-[46%] -translate-x-1/2 rounded-[50%] blur-xl;
-  background: rgba(12, 18, 32, 0.18);
+  @apply pointer-events-none absolute bottom-[10%] left-1/2 h-[9%] w-[56%] -translate-x-1/2 rounded-[50%];
+  background: radial-gradient(closest-side, rgba(12, 18, 32, 0.22), transparent);
 }
 
 .hero-tile {
@@ -1706,7 +1706,6 @@
 .hero-corner-mark__svg {
   @apply h-full w-full;
   transform: rotateY(-18deg) rotateX(10deg) rotateZ(-4deg);
-  filter: drop-shadow(0 20px 26px rgba(5, 52, 107, 0.22));
 }
 
 /* Home growth band: deep logo-blue panel with white headline stats */
