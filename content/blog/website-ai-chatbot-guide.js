@@ -80,7 +80,7 @@ ${table(
 <p>Costs fall into three parts: the platform or build, ongoing AI usage and maintenance. Off-the-shelf tools range from free tiers to monthly subscriptions. Custom chatbots involve a one-time build plus usage and optional support. For most small businesses, usage costs are modest compared with the value of a single extra booking a week. Our ${link('/resources/ai-roi-calculator/', 'ROI calculator')} helps you weigh it.</p>
 
 <h2>Privacy and compliance</h2>
-${callout('Good defaults', 'Tell visitors they’re chatting with an AI, collect only the data you need, keep sensitive details (health, payment) out of chat unless there’s a secure process, and mention the chatbot in your privacy policy. Some places, such as California, have specific bot disclosure rules.', '#2fc4b6')}
+${callout('Good defaults', 'Tell visitors they’re chatting with an AI, collect only the data you need, keep sensitive details (health, payment) out of chat unless there’s a secure process, and mention the chatbot in your privacy policy. Some places, such as California, have specific bot disclosure rules.', '#1d8fe1')}
 
 <h2>How to measure success</h2>
 <ul>

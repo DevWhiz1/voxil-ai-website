@@ -47,7 +47,7 @@ ${table(
   <li>Choose <strong>OAuth 2.0</strong> authentication, create the connection and sign in to approve access for one sub-account.</li>
   <li>Add the tool to your agent and test with simple read-only questions first.</li>
 </ol>
-${callout('Check before you rely on it', 'As of October 2026, HighLevel’s MCP documentation lists client-specific endpoints for Claude, ChatGPT and other OpenAI-compatible clients, and Cursor, but not Microsoft Copilot. Test the connection and the OAuth sign-in in a sandbox sub-account. If it won’t complete, use option 2.', '#ff7a3d')}
+${callout('Check before you rely on it', 'As of October 2026, HighLevel’s MCP documentation lists client-specific endpoints for Claude, ChatGPT and other OpenAI-compatible clients, and Cursor, but not Microsoft Copilot. Test the connection and the OAuth sign-in in a sandbox sub-account. If it won’t complete, use option 2.', '#1d8fe1')}
 
 <h2>Option 2: Build a custom connector to the HighLevel API</h2>
 <p>This is the dependable route for a production agent. You define exactly which actions Copilot can take, such as "find contact by phone", "create opportunity" or "get free calendar slots".</p>

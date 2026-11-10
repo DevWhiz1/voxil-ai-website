@@ -54,7 +54,7 @@ ${table(
   <li><strong>Capture contact details</strong> so you can send reminders by SMS or email.</li>
   <li><strong>Confirm and remind</strong> through your normal appointment workflows.</li>
 </ol>
-${callout('Pricing questions', 'Most DMs ask about price. Give a helpful, honest range or explain what affects the price, then offer a consultation. Bots that dodge the question entirely lose trust fast.', '#2fc4b6')}
+${callout('Pricing questions', 'Most DMs ask about price. Give a helpful, honest range or explain what affects the price, then offer a consultation. Bots that dodge the question entirely lose trust fast.', '#1d8fe1')}
 
 <h2>Keyword flows vs AI replies</h2>
 <p>Keyword flows are predictable and ideal for campaigns: “Comment GLOW for the offer.” AI replies handle everything else, like questions about treatments, availability or parking. Most accounts use both: keywords for promotions and AI for real conversation, with a hand-off to staff for anything sensitive. You can see an example Instagram DM conversation in our ${link('/portfolio/', 'portfolio')}.</p>

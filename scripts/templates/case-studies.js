@@ -1,7 +1,8 @@
+import { heroDecor } from '../lib/brand.js';
 import { ALL_LOCATIONS, INDUSTRIES, SITE, findService, industryUrl, serviceUrl } from '../../content/site.js';
 import { ORG_ID, arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, hero, icon, linkCard, page, sectionHead, stepsBlock, updatedLine, webPageSchema } from '../lib/ui.js';
 
-const ACCENTS = ['#0f9f93', '#ff6b35', '#0284c7', '#2fc4b6'];
+const ACCENTS = ['#0769b4', '#0769b4', '#0284c7', '#1d8fe1'];
 export const caseStudyUrl = (slug) => (slug ? `/case-studies/${slug}/` : '/case-studies/');
 
 const card = (cs, i) =>
@@ -54,13 +55,13 @@ export const renderCaseStudy = (cs, all) => {
     <section class="section-soft section-pad section-seam">
       <div class="main-container relative z-10">
         <div class="grid gap-5 lg:grid-cols-3">
-          <div data-reveal class="glass-card glass-card-topline" style="--accent: #ff6b35">
+          <div data-reveal class="glass-card glass-card-topline" style="--accent: #0769b4">
             <p class="text-tagline-3 font-semibold tracking-[0.14em] text-coral-700 uppercase">The challenge</p>
             <p class="text-tagline-1 mt-3 text-secondary/75">${cs.challenge}</p>
           </div>
-          <div data-reveal class="glass-card glass-card-topline" style="--accent: #0f9f93">
+          <div data-reveal class="glass-card glass-card-topline" style="--accent: #0769b4">
             <p class="text-tagline-3 font-semibold tracking-[0.14em] text-primary-700 uppercase">What we built</p>
-            <div class="mt-4">${checkList(cs.solution, '#0f9f93')}</div>
+            <div class="mt-4">${checkList(cs.solution, '#0769b4')}</div>
           </div>
           <div data-reveal class="glass-card glass-card-topline" style="--accent: #0284c7">
             <p class="text-tagline-3 font-semibold tracking-[0.14em] text-sky-700 uppercase">The result</p>
@@ -147,7 +148,8 @@ export const renderCaseStudiesHub = (all) => {
   const body = `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
-      <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: #0f9f93; --orb-opacity: 0.3" aria-hidden="true"></span>
+      ${heroDecor()}
+      <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: #0769b4; --orb-opacity: 0.3" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${crumbsNav(crumbs)}
         <div class="mx-auto mt-8 max-w-3xl text-center">

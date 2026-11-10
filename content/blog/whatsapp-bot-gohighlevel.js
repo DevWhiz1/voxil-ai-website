@@ -45,7 +45,7 @@ ${table(
   ],
   'WhatsApp Business API messaging windows'
 )}
-${callout('Design tip', 'Build your WhatsApp flows around conversations the customer starts: click-to-WhatsApp ads, a website button or a QR code in your shop. Templates are for reminders and re-engagement, not cold outreach.', '#2fc4b6')}
+${callout('Design tip', 'Build your WhatsApp flows around conversations the customer starts: click-to-WhatsApp ads, a website button or a QR code in your shop. Templates are for reminders and re-engagement, not cold outreach.', '#1d8fe1')}
 
 <h2>Flows worth building</h2>
 <ul>

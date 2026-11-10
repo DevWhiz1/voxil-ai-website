@@ -88,13 +88,13 @@ const callsPanel = () => `
           <div class="mock-window p-5 md:p-6" data-call-demo>
             <div class="flex flex-wrap items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <span class="icon-tile size-10 rounded-xl" style="--accent: #ff6b35">${icon('phone', 'size-5')}</span>
+                <span class="icon-tile size-10 rounded-xl" style="--accent: #0769b4">${icon('phone', 'size-5')}</span>
                 <div>
                   <p class="text-tagline-2 font-semibold text-secondary">Outbound speed-to-lead call</p>
                   <p class="text-tagline-3 text-secondary/60">Sample conversation, demo roofing company</p>
                 </div>
               </div>
-              <span class="pill-accent" style="--accent: #ff6b35"><span class="call-live-dot"></span>Demo call</span>
+              <span class="pill-accent" style="--accent: #0769b4"><span class="call-live-dot"></span>Demo call</span>
             </div>
             <div class="mt-5">${wave()}</div>
             <div class="call-log mt-5 space-y-2.5 border-t border-secondary/[0.09] pt-4" aria-live="polite">
@@ -124,7 +124,7 @@ const callsPanel = () => `
                   'Books the inspection and sends an SMS confirmation',
                   'Writes a summary and the outcome to the CRM',
                 ],
-                '#ff6b35'
+                '#0769b4'
               ).replace('class="check-list"', 'class="check-list mt-4"')}
             </div>
             <div class="glass-card">
@@ -137,8 +137,8 @@ const callsPanel = () => `
         </div>
 
         <div class="mt-8 grid gap-5 md:grid-cols-3">
-          ${featureCard({ title: 'Inbound qualifier', desc: 'Answers every call on the first ring, asks your qualifying questions, and books or transfers the caller to the right person.', icon: 'phone', accent: '#0f9f93' })}
-          ${featureCard({ title: 'Outbound appointment setter', desc: 'Calls new leads within seconds of a form, ad or quiz, qualifies them and books straight into your calendar.', icon: 'calendar', accent: '#ff6b35' })}
+          ${featureCard({ title: 'Inbound qualifier', desc: 'Answers every call on the first ring, asks your qualifying questions, and books or transfers the caller to the right person.', icon: 'phone', accent: '#0769b4' })}
+          ${featureCard({ title: 'Outbound appointment setter', desc: 'Calls new leads within seconds of a form, ad or quiz, qualifies them and books straight into your calendar.', icon: 'calendar', accent: '#0769b4' })}
           ${featureCard({ title: 'Follow-up and reactivation agent', desc: 'Calls no-shows, stale quotes and old leads on a schedule, and hands warm replies to your team.', icon: 'refresh', accent: '#0284c7' })}
         </div>
         <div class="mt-8 text-center">
@@ -225,14 +225,14 @@ const chatbotsPanel = () => `
       </div>`;
 
 const FLOW = [
-  { name: 'New lead', tool: 'Form, ad or quiz', icon: 'funnel', accent: '#0f9f93' },
+  { name: 'New lead', tool: 'Form, ad or quiz', icon: 'funnel', accent: '#0769b4' },
   { name: 'Instant email', tool: 'Personalized welcome', icon: 'mail', accent: '#0284c7' },
   { name: 'SMS in 60 seconds', tool: 'Twilio or LC Phone', icon: 'bubble', accent: '#0284c7' },
   { name: 'Wait 5 minutes', tool: 'Delay', icon: 'clock', accent: '#64748b' },
-  { name: 'Replied?', tool: 'Filter: stop if yes', icon: 'sliders', accent: '#ff6b35' },
-  { name: 'AI voice call', tool: 'Retell AI or Vapi', icon: 'phone', accent: '#ff6b35' },
-  { name: 'Update CRM', tool: 'Stage, tags, notes', icon: 'database', accent: '#0f9f93' },
-  { name: 'Book appointment', tool: 'Calendar + reminders', icon: 'calendar', accent: '#0f9f93' },
+  { name: 'Replied?', tool: 'Filter: stop if yes', icon: 'sliders', accent: '#0769b4' },
+  { name: 'AI voice call', tool: 'Retell AI or Vapi', icon: 'phone', accent: '#0769b4' },
+  { name: 'Update CRM', tool: 'Stage, tags, notes', icon: 'database', accent: '#0769b4' },
+  { name: 'Book appointment', tool: 'Calendar + reminders', icon: 'calendar', accent: '#0769b4' },
 ];
 
 const automationPanel = () => `
@@ -336,7 +336,7 @@ const seoPanel = () => `
                   'Google and Meta ads that feed an automated follow-up funnel',
                   'Monthly reporting on rankings, leads and booked calls',
                 ],
-                '#0f9f93'
+                '#0769b4'
               ).replace('class="check-list"', 'class="check-list mt-4"')}
             </div>
           </div>
@@ -402,7 +402,7 @@ export const renderPortfolio = (funnels) => {
 ${hero({
   crumbs,
   eyebrowText: 'Portfolio',
-  accent: '#0f9f93',
+  accent: '#0769b4',
   h1: 'Our work, built so you can <span class="text-gradient-teal">click through it</span>',
   lead: 'Open a complete industry funnel, talk to a live AI chatbot, watch an AI calling bot book an appointment and see the automation that runs behind it all.',
   answer:
@@ -441,16 +441,16 @@ ${seoPanel()}
       <div class="main-container relative z-10">
         ${sectionHead({
           eyebrowText: 'Inside every build',
-          dot: '#ff6b35',
+          dot: '#0769b4',
           title: 'What each funnel <span class="text-gradient-warm">includes</span>',
           lead: 'The page is the part you see. The value is in the system behind it, which is what we set up for every client.',
         })}
         <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          ${featureCard({ title: 'Conversion-focused page', desc: 'One offer, one clear next step, a multi-step form that qualifies without feeling like paperwork, and a fast mobile layout.', icon: 'desktop', accent: '#0f9f93' })}
-          ${featureCard({ title: 'Instant follow-up', desc: 'Email and SMS within a minute of every submission, then an AI call if the lead does not reply.', icon: 'bolt', accent: '#ff6b35' })}
+          ${featureCard({ title: 'Conversion-focused page', desc: 'One offer, one clear next step, a multi-step form that qualifies without feeling like paperwork, and a fast mobile layout.', icon: 'desktop', accent: '#0769b4' })}
+          ${featureCard({ title: 'Instant follow-up', desc: 'Email and SMS within a minute of every submission, then an AI call if the lead does not reply.', icon: 'bolt', accent: '#0769b4' })}
           ${featureCard({ title: 'AI assistant', desc: 'A chatbot trained on the business that answers questions and books appointments day and night.', icon: 'chat', accent: '#0284c7' })}
-          ${featureCard({ title: 'CRM pipeline', desc: 'Every lead lands in a pipeline stage with source, answers and conversation history attached.', icon: 'database', accent: '#0f9f93' })}
-          ${featureCard({ title: 'Booking and reminders', desc: 'Live calendar booking with confirmations and reminders that cut no-shows.', icon: 'calendar', accent: '#ff6b35' })}
+          ${featureCard({ title: 'CRM pipeline', desc: 'Every lead lands in a pipeline stage with source, answers and conversation history attached.', icon: 'database', accent: '#0769b4' })}
+          ${featureCard({ title: 'Booking and reminders', desc: 'Live calendar booking with confirmations and reminders that cut no-shows.', icon: 'calendar', accent: '#0769b4' })}
           ${featureCard({ title: 'Reporting', desc: 'A dashboard for leads, response time, bookings and revenue by source, so you know what is working.', icon: 'chart', accent: '#0284c7' })}
         </div>
       </div>

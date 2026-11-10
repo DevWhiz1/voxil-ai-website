@@ -157,9 +157,9 @@ export const renderService = (slug, c, posts = []) => {
       ? `
     <section class="section-base section-pad-sm section-seam">
       <div class="main-container relative z-10">
-        <div data-reveal class="flex flex-col items-start justify-between gap-4 rounded-2xl border border-primary-500/25 p-6 sm:flex-row sm:items-center md:p-8" style="background: linear-gradient(150deg, #ecfdfb 0%, #ffffff 60%, #fff4ef 100%)">
+        <div data-reveal class="flex flex-col items-start justify-between gap-4 rounded-2xl border border-primary-500/25 p-6 sm:flex-row sm:items-center md:p-8" style="background: linear-gradient(150deg, #eef6fd 0%, #ffffff 60%, #eef6fd 100%)">
           <div class="flex items-center gap-4">
-            <span class="icon-tile" style="--accent: #0f9f93">${icon('briefcase')}</span>
+            <span class="icon-tile" style="--accent: #0769b4">${icon('briefcase')}</span>
             <div>
               <p class="text-heading-6 font-semibold text-secondary">Running an agency? We deliver ${meta.name} white label.</p>
               <p class="text-tagline-2 mt-1 text-secondary/65">Built under your brand, inside your accounts. Your client never hears our name.</p>

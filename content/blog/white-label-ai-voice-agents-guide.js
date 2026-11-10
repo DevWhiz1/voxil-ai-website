@@ -68,7 +68,7 @@ ${table(
   <li><strong>Keep usage rebillable.</strong> Run voice and phone costs on an account you can pass through with a margin, so heavy users don’t eat your profit.</li>
   <li><strong>Add a usage tier.</strong> Include a sensible minute allowance and charge for overage, rather than “unlimited”.</li>
 </ul>
-${callout('Margin check', 'Before quoting, multiply the client’s expected monthly call minutes by your all-in per-minute cost (voice + telephony), add your support time, then set the retainer at a margin you’d be happy with even in a busy month.', '#ff7a3d')}
+${callout('Margin check', 'Before quoting, multiply the client’s expected monthly call minutes by your all-in per-minute cost (voice + telephony), add your support time, then set the retainer at a margin you’d be happy with even in a busy month.', '#1d8fe1')}
 
 <h2>What to look for in a white label partner</h2>
 <ol>

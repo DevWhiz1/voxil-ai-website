@@ -22,7 +22,7 @@ export default {
   body: `
 <p>An AI voice agent is software that answers or places phone calls, holds a natural conversation and takes actions, such as booking an appointment or updating your CRM. Building a demo takes an afternoon. Building one that callers trust and that actually saves your team time takes a more careful process. This guide walks through that process step by step, from choosing the first use case to launching and improving it.</p>
 
-${callout('The short version', 'Choose one call type → define success → design the conversation → pick a platform → connect tools → set up telephony and compliance → test hard → launch on overflow → review and expand.', '#ff7a3d')}
+${callout('The short version', 'Choose one call type → define success → design the conversation → pick a platform → connect tools → set up telephony and compliance → test hard → launch on overflow → review and expand.', '#1d8fe1')}
 
 <h2>Step 1: Choose one call type to automate first</h2>
 <p>The most common mistake is trying to automate every call at once. Start with a single call type that is frequent, repetitive and has a clear outcome. Good first candidates:</p>

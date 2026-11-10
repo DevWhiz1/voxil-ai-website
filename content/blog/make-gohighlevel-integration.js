@@ -57,7 +57,7 @@ ${table(
 <p>A scheduled scenario pulls pipeline and appointment data from GHL each morning, combines it with ad spend from Google and Meta, and posts a summary to Slack or a Google Sheet dashboard.</p>
 
 <h2>Reliability: the part most setups skip</h2>
-${callout('Build for failure', 'APIs time out, data arrives malformed and apps change. A scenario that works in testing will eventually fail in production. Plan for it before it touches customers.', '#2fc4b6')}
+${callout('Build for failure', 'APIs time out, data arrives malformed and apps change. A scenario that works in testing will eventually fail in production. Plan for it before it touches customers.', '#1d8fe1')}
 <ul>
   <li><strong>Error handlers:</strong> add retry, ignore or rollback routes to modules that call external APIs.</li>
   <li><strong>Alerts:</strong> send failures to Slack or email with the record ID so someone can fix them.</li>

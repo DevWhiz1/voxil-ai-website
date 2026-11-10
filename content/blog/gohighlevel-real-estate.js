@@ -61,7 +61,7 @@ ${table(
   <li><strong>Check-ins</strong> every few weeks with a simple question: “Still planning to move this spring?”</li>
   <li><strong>Home anniversary and equity updates</strong> for past clients, which drive referrals and repeat business.</li>
 </ul>
-${callout('Keep it human', 'Long-term nurture works when it reads like a note from an agent, not a newsletter. Short, relevant and easy to reply to.', '#0f9f93')}
+${callout('Keep it human', 'Long-term nurture works when it reads like a note from an agent, not a newsletter. Short, relevant and easy to reply to.', '#0769b4')}
 
 <h2>Listing inquiry chatbot</h2>
 <p>Add a chatbot to listing pages and WhatsApp that answers questions about price, features and availability, then books viewings. We built exactly this for a brokerage; see the ${link('/case-studies/real-estate-listing-agent/', 'real estate listing agent case study')}.</p>

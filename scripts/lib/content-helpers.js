@@ -16,7 +16,7 @@ const sourceLink = (src, cls = '', id = '') =>
 // Inline citation for prose: "(McKinsey, The State of AI, 2025)"
 export const cite = (id) => `(${sourceLink(getStat(id).src, '', id)})`;
 
-export const statTile = (id, accent = '#2fc4b6') => {
+export const statTile = (id, accent = '#1d8fe1') => {
   const s = getStat(id);
   return `
             <figure class="stat-tile" style="--accent: ${accent}">
@@ -31,7 +31,7 @@ export const statTile = (id, accent = '#2fc4b6') => {
 export const statGrid = (ids, accent) =>
   `<div class="grid gap-3 sm:grid-cols-2">${ids.map((id) => statTile(id, accent)).join('')}</div>`;
 
-export const callout = (title, body, accent = '#2fc4b6') =>
+export const callout = (title, body, accent = '#1d8fe1') =>
   `<div class="callout" style="--accent: ${accent}"><div class="callout-title">${title}</div><div class="text-tagline-2 text-secondary/75">${body}</div></div>`;
 
 export const table = (head, rows, caption) => dataTable({ head, rows, caption });

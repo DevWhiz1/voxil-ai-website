@@ -46,7 +46,7 @@ ${table(
 ${callout('Agentic chatbots', 'The most valuable systems we build sit in between: a conversational front end with a small number of well-defined actions, check availability, book, create a lead, look up an order, transfer to a human. Narrow permissions keep risk low; real actions create real value.')}
 
 <h2>Where agentic AI is heading</h2>
-${statGrid(['gartner-33-agentic', 'gartner-15-decisions', 'gartner-40-cancel'], '#6adfd3')}
+${statGrid(['gartner-33-agentic', 'gartner-15-decisions', 'gartner-40-cancel'], '#6bb3ec')}
 <p>Both forecasts are true at once: agentic AI is spreading quickly, and many projects will fail ${cite('gartner-40-cancel')}. The failures cluster around vague goals, too much autonomy too early and missing controls.</p>
 
 <h2>Examples by business type</h2>

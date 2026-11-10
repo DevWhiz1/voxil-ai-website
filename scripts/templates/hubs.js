@@ -1,3 +1,4 @@
+import { heroDecor } from '../lib/brand.js';
 import baseLocations from '../../content/locations.js';
 import moreIntlLocations from '../../content/locations-more-intl.js';
 import moreLocations from '../../content/locations-more.js';
@@ -7,8 +8,9 @@ import { arrow, breadcrumbSchema, checkList, crumbsNav, eyebrow, faqBlock, faqSc
 const hubHero = ({ crumbs, eyebrowText, h1, lead, chips = '' }) => `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
-      <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: #0f9f93; --orb-opacity: 0.3" aria-hidden="true"></span>
-      <span class="orb top-1/4 -right-20 size-[360px] animate-drift-slow" style="--orb: #ff6b35; --orb-opacity: 0.2" aria-hidden="true"></span>
+      ${heroDecor()}
+      <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: #0769b4; --orb-opacity: 0.3" aria-hidden="true"></span>
+      <span class="orb top-1/4 -right-20 size-[360px] animate-drift-slow" style="--orb: #0769b4; --orb-opacity: 0.2" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${crumbsNav(crumbs)}
         <div class="mx-auto mt-8 max-w-3xl text-center">
@@ -30,7 +32,7 @@ const hubIntro = (title, paras, points) => `
           <h2 data-reveal class="text-heading-5 sm:text-heading-4 font-semibold tracking-tight text-secondary">${title}</h2>
           ${paras.map((p) => `<p data-reveal class="text-tagline-1 mt-4 text-secondary/70">${p}</p>`).join('')}
         </div>
-        <div data-reveal class="glass-card glass-card-topline self-start" style="--accent: #0f9f93">${checkList(points, '#0f9f93')}</div>
+        <div data-reveal class="glass-card glass-card-topline self-start" style="--accent: #0769b4">${checkList(points, '#0769b4')}</div>
       </div>
     </section>`;
 
@@ -75,6 +77,8 @@ export const renderServicesHub = () => {
       </div>
     </section>`
     ).join('')}
+    <Component src="src/components/pages/services/capabilities.htm" />
+    <Component src="src/components/pages/services/tools.htm" />
     ${hubIntro('How our AI automation services <span class="text-gradient-teal">fit together</span>', [
       'Every service on this page solves one part of the same problem: customers reach out, and the business needs to answer, qualify, book and follow up without losing anyone along the way. Voice agents and AI receptionists cover the phone. Chatbots and WhatsApp automation cover messaging. GoHighLevel and CRM automation keep every lead and appointment in one pipeline, and funnels and websites bring new leads in.',
       'Most clients start with the service that fixes their biggest leak, usually missed calls or slow lead response, then connect the rest over time. Everything is built inside the tools you already use, priced as a fixed project, and owned by you when it goes live.',
@@ -112,9 +116,9 @@ export const renderLocationsHub = () => {
       <div class="main-container relative z-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         ${LOCATION_GROUPS.map(
           (g) => `
-        <div data-reveal class="glass-card glass-card-topline" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#2fc4b6'}">
+        <div data-reveal class="glass-card glass-card-topline" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#1d8fe1'}">
           <div class="flex items-center gap-3">
-            <span class="icon-tile" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#2fc4b6'}">${icon(!g.key.startsWith('us-') ? 'globe' : 'pin')}</span>
+            <span class="icon-tile" style="--accent: ${!g.key.startsWith('us-') ? '#38bdf8' : '#1d8fe1'}">${icon(!g.key.startsWith('us-') ? 'globe' : 'pin')}</span>
             <h2 class="text-heading-6 font-semibold text-secondary">${g.title}</h2>
           </div>
           <p class="text-tagline-2 mt-3 text-secondary/65">${{

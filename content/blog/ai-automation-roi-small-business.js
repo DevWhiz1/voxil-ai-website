@@ -37,7 +37,7 @@ export default {
 <p>Pull at least four weeks of data: missed calls from your phone system, lead timestamps from your CRM, hours from time tracking or a simple team estimate. Without a baseline, you’ll be arguing about anecdotes later.</p>
 
 <h2>Step 3: Estimate the revenue side</h2>
-${callout('Revenue formula', '<strong>Recovered revenue / month ≈ recovered opportunities × close rate × average value</strong><br/>Where recovered opportunities = calls or leads that were lost (or answered too slowly) and will now be handled.', '#ff7a3d')}
+${callout('Revenue formula', '<strong>Recovered revenue / month ≈ recovered opportunities × close rate × average value</strong><br/>Where recovered opportunities = calls or leads that were lost (or answered too slowly) and will now be handled.', '#1d8fe1')}
 <p>Speed matters here: research shows qualification odds fall steeply with slower response ${cite('hbr-7x')}, so faster response doesn’t just recover lost leads, it improves conversion on leads you already reach.</p>
 
 <h2>Step 4: Estimate the cost side</h2>

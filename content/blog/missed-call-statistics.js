@@ -24,7 +24,7 @@ export default {
 <p>For service businesses, the phone is still where a large share of high-intent customers make contact. Someone with a burst pipe, a broken AC unit or a legal problem doesn’t fill in a form and wait, they call, and if nobody answers, they call someone else. Here’s what the data says about missed calls, and how to calculate what they cost you.</p>
 
 <h2>How many calls go unanswered?</h2>
-${statGrid(['locals-62'], '#ff7a3d')}
+${statGrid(['locals-62'], '#1d8fe1')}
 <p>The exact share varies by industry, season and staffing, and this study is several years old, but in our experience auditing call logs, owner-operated businesses routinely miss a meaningful share of calls during busy periods, lunch and after hours. The best source is your own phone system: most providers show answered versus missed calls.</p>
 
 <h2>Why callers don’t wait</h2>
@@ -40,7 +40,7 @@ ${statGrid(['hbr-7x', 'hbr-60x', 'lrm-100x', 'velocify-391'])}
   <li><strong>Close rate</strong>, share of answered opportunities that become customers.</li>
   <li><strong>Average job or customer value.</strong></li>
 </ol>
-${callout('The formula', '<strong>Monthly revenue lost ≈ missed calls × opportunity rate × close rate × average value</strong><br/>Example: 120 missed calls × 40% opportunities × 30% close rate × $450 average job ≈ <strong>$6,480 per month</strong>, or roughly $78,000 a year.', '#ff7a3d')}
+${callout('The formula', '<strong>Monthly revenue lost ≈ missed calls × opportunity rate × close rate × average value</strong><br/>Example: 120 missed calls × 40% opportunities × 30% close rate × $450 average job ≈ <strong>$6,480 per month</strong>, or roughly $78,000 a year.', '#1d8fe1')}
 <p>Try it with your own numbers in our free ${link('/resources/lead-loss-calculator/', 'Lead Loss Calculator')}.</p>
 
 <h2>Where missed calls come from</h2>

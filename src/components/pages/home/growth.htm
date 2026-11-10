@@ -1,0 +1,59 @@
+<!-- =========================
+Home, growth band with headline stats.
+Figures are counts from the site itself (content/site.js, services/,
+content/blog/) and the areaServed list in head-links.htm. Update them
+when those change.
+===========================-->
+<section class="section-base pt-4 pb-16 md:pb-24">
+  <div class="main-container relative z-10">
+    <div data-reveal class="growth-band">
+      <span class="growth-band__mark" aria-hidden="true">
+        <Component src="src/components/shared/generated/brand-mark-flat.htm" />
+      </span>
+
+      <div class="relative grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-end">
+        <div>
+          <h2 class="text-heading-5 sm:text-heading-4 lg:text-heading-3 font-bold tracking-tight text-white">
+            Automation built for real growth
+          </h2>
+          <p class="text-tagline-1 mt-4 max-w-2xl text-white/80 md:text-lg">
+            From your first AI chatbot to a full AI receptionist and workflow
+            system, we design, build and support automation that answers every
+            customer, follows up on every lead and gives your team its time back.
+          </p>
+        </div>
+        <div class="lg:justify-self-end">
+          <a href="/services/" class="cta cta-md cta-light">
+            See what we build
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <dl class="growth-band__stats relative">
+        <div class="growth-band__stat">
+          <dt>AI automation services</dt>
+          <dd><span data-count="50" data-suffix="+">50+</span></dd>
+        </div>
+        <div class="growth-band__stat">
+          <dt>Industries served</dt>
+          <dd><span data-count="12">12</span></dd>
+        </div>
+        <div class="growth-band__stat">
+          <dt>Markets served</dt>
+          <dd><span data-count="7">7</span></dd>
+        </div>
+        <div class="growth-band__stat">
+          <dt>Free guides &amp; tools</dt>
+          <dd><span data-count="80" data-suffix="+">80+</span></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>

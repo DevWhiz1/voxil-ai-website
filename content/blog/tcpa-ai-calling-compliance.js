@@ -21,7 +21,7 @@ export default {
   services: ['ai-calling-bots', 'ai-lead-reactivation', 'speed-to-lead-automation', 'ai-follow-up-system'],
   related: ['ai-voice-calling-lead-generation', 'a2p-10dlc-registration-guide', 'database-reactivation-campaign-guide'],
   body: `
-${callout('Important', 'This article is general information to help you ask the right questions, not legal advice. TCPA litigation is active and rules change. Have a qualified attorney review your consent language and outreach before launching automated calling or texting.', '#ff6b35')}
+${callout('Important', 'This article is general information to help you ask the right questions, not legal advice. TCPA litigation is active and rules change. Have a qualified attorney review your consent language and outreach before launching automated calling or texting.', '#0769b4')}
 
 <p>AI voice agents and automated texts are powerful tools for responding to leads and re-engaging customers. In the United States, they are also regulated by the Telephone Consumer Protection Act (TCPA) and the FCC’s rules under it. Violations can be expensive: the TCPA allows statutory damages of $500 per violation, up to $1,500 if willful, and class actions are common. Here is how the main rules apply to AI calling.</p>
 

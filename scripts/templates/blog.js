@@ -1,3 +1,4 @@
+import { heroDecor } from '../lib/brand.js';
 import { SITE, TEAM, findService, serviceUrl } from '../../content/site.js';
 import { sourcesIn } from '../lib/content-helpers.js';
 import {
@@ -21,12 +22,12 @@ import {
 // `tags` naming extra categories it should also be listed under.
 export const CATEGORY_STYLE = {
   GoHighLevel: { accent: '#0284c7', icon: 'layers' },
-  'AI Calling Bots': { accent: '#ff7a3d', icon: 'phone' },
-  'Chatbots & Automation': { accent: '#2fc4b6', icon: 'chat' },
-  'Industry Guides': { accent: '#0f9f93', icon: 'building' },
-  'Lead Generation': { accent: '#ff6b35', icon: 'funnel' },
+  'AI Calling Bots': { accent: '#1d8fe1', icon: 'phone' },
+  'Chatbots & Automation': { accent: '#1d8fe1', icon: 'chat' },
+  'Industry Guides': { accent: '#0769b4', icon: 'building' },
+  'Lead Generation': { accent: '#0769b4', icon: 'funnel' },
   Statistics: { accent: '#38bdf8', icon: 'chart' },
-  Guides: { accent: '#6adfd3', icon: 'book' },
+  Guides: { accent: '#6bb3ec', icon: 'book' },
 };
 
 // URL hash for a topic tab, e.g. /blog/#ai-calling-bots
@@ -93,10 +94,11 @@ export const renderPost = (post, allPosts) => {
   const author = TEAM[post.author ?? 'abdul-moeez'];
 
   const body = `
-    <section class="page-hero !pb-12 md:!pb-16">
+    <section class="page-hero page-hero--compact !pb-12 md:!pb-16">
       <span class="grid-field" aria-hidden="true"></span>
+      ${heroDecor()}
       <span class="orb -top-28 left-[10%] size-[420px] animate-drift" style="--orb: ${style.accent}; --orb-opacity: 0.26" aria-hidden="true"></span>
-      <span class="orb top-1/3 -right-24 size-[360px] animate-drift-slow" style="--orb: #ff6b35; --orb-opacity: 0.16" aria-hidden="true"></span>
+      <span class="orb top-1/3 -right-24 size-[360px] animate-drift-slow" style="--orb: #0769b4; --orb-opacity: 0.16" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${crumbsNav(crumbs)}
         <div class="mt-8 max-w-4xl">
@@ -237,8 +239,9 @@ export const renderBlogHub = (posts) => {
   const body = `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
-      <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: #0f9f93; --orb-opacity: 0.3" aria-hidden="true"></span>
-      <span class="orb top-1/4 -right-20 size-[360px] animate-drift-slow" style="--orb: #ff6b35; --orb-opacity: 0.2" aria-hidden="true"></span>
+      ${heroDecor()}
+      <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: #0769b4; --orb-opacity: 0.3" aria-hidden="true"></span>
+      <span class="orb top-1/4 -right-20 size-[360px] animate-drift-slow" style="--orb: #0769b4; --orb-opacity: 0.2" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${crumbsNav(crumbs)}
         <div class="mx-auto mt-8 max-w-3xl text-center">

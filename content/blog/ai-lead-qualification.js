@@ -63,7 +63,7 @@ ${table(
   <li>Relationship selling where trust is the product.</li>
   <li>Situations outside the rules the AI was given.</li>
 </ul>
-${callout('The best setup', 'AI handles the first conversation and the data; humans handle the conversations that close. Clear hand-off rules, with the full transcript attached, make the combination feel seamless to the lead.', '#ff6b35')}
+${callout('The best setup', 'AI handles the first conversation and the data; humans handle the conversations that close. Clear hand-off rules, with the full transcript attached, make the combination feel seamless to the lead.', '#0769b4')}
 
 <h2>Voice, SMS or chat?</h2>
 <p>Use the channel the lead chose. Form leads respond well to an instant call followed by a text. Ad leads on mobile often prefer SMS or DMs. Website visitors prefer chat. A good system uses one set of questions and scoring rules across all three. See ${link('/blog/ai-voice-calling-lead-generation/', 'our AI voice calling guide')} for phone-specific design.</p>

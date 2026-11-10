@@ -22,7 +22,7 @@ export default {
 <p>AI automation is now one of the most crowded services online. Some agencies build reliable systems that pay for themselves; others resell a template and a slick demo. If you are about to hire one, <strong>the questions you ask before signing matter more than the tools they use.</strong> Here are the twelve we would ask in your position.</p>
 
 <h2>Why choosing well matters</h2>
-${statGrid(['mit-95', 'gartner-40-cancel'], '#2fc4b6')}
+${statGrid(['mit-95', 'gartner-40-cancel'], '#1d8fe1')}
 <p>The failure rate is real. An MIT study found most generative-AI pilots produced no measurable P&L return ${cite('mit-95')}, and Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 because of cost, unclear value or weak risk controls ${cite('gartner-40-cancel')}. The difference is rarely the model. It is scope, integration and follow-through, which is exactly what you are hiring an agency for.</p>
 
 <h2>Scope and fit</h2>

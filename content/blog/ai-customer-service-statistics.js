@@ -32,11 +32,11 @@ ${statGrid(['nber-14', 'klarna-2-3'], '#38bdf8')}
 <p>Klarna’s early announcement showed what full automation can do at scale ${cite('klarna-2-3')}. Its later emphasis on keeping human service available shows the other half of the story.</p>
 
 <h2>Customer sentiment</h2>
-${statGrid(['gartner-64-prefer'], '#ff7a3d')}
-${callout('Design implication', 'Customers aren’t against fast answers, they’re against being trapped. Put a clear route to a human in every AI channel, pass context on hand-off, and never make customers repeat themselves. Measure satisfaction for AI-resolved and escalated conversations separately.', '#ff7a3d')}
+${statGrid(['gartner-64-prefer'], '#1d8fe1')}
+${callout('Design implication', 'Customers aren’t against fast answers, they’re against being trapped. Put a clear route to a human in every AI channel, pass context on hand-off, and never make customers repeat themselves. Measure satisfaction for AI-resolved and escalated conversations separately.', '#1d8fe1')}
 
 <h2>Why many AI service projects stall</h2>
-${statGrid(['gartner-40-cancel', 'mit-95'], '#6adfd3')}
+${statGrid(['gartner-40-cancel', 'mit-95'], '#6bb3ec')}
 <p>The common failure modes are predictable: automating too broadly on day one, no access to the systems needed to actually resolve requests, and no baseline to prove value. The fix is equally predictable, pick the highest-volume request types, connect the agent to the data it needs, and track resolution rate weekly.</p>
 
 <h2>A practical rollout plan</h2>

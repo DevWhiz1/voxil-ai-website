@@ -70,7 +70,7 @@ ${table(
   ],
   'Closebot vs GoHighLevel Conversation AI vs custom agents'
 )}
-${callout('How we choose', 'For straightforward SMS qualification in GoHighLevel, Closebot or native Conversation AI are both reasonable. When the bot needs to check external systems, handle several channels with one brain, or work alongside an AI voice agent, a custom agent is usually worth it.', '#2fc4b6')}
+${callout('How we choose', 'For straightforward SMS qualification in GoHighLevel, Closebot or native Conversation AI are both reasonable. When the bot needs to check external systems, handle several channels with one brain, or work alongside an AI voice agent, a custom agent is usually worth it.', '#1d8fe1')}
 
 <h2>Who should use Closebot</h2>
 <p>Agencies and service businesses on GoHighLevel that generate steady lead volume from ads or forms and want leads qualified and booked by text quickly. If your conversations are complex or you need voice and chat working together, compare it with a ${link('/services/ai-chatbots/', 'custom AI chatbot')} or ${link('/services/gohighlevel-ai/', 'GoHighLevel AI')} setup first.</p>

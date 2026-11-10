@@ -61,7 +61,7 @@ ${table(
 <h2>Caller experience</h2>
 <p>Callers care about three things: getting an answer quickly, being understood and getting their problem moved forward. A well-built AI receptionist scores highly on the first and third. On the second, quality depends on design: short turns, natural voice, honest disclosure and an easy route to a person. Customer attitudes are mixed; in one Gartner survey, 64% of customers said they would prefer companies didn’t use AI for customer service ${cite('gartner-64-prefer')}, which is why we always design a clear hand-off rather than trapping callers with a bot.</p>
 
-${callout('Our recommendation for most service businesses', 'Keep people for the moments that need them, and let AI handle volume and off-hours. A typical setup: staff answer during business hours, the AI receptionist takes overflow when lines are busy, and it covers evenings, weekends and holidays, booking appointments and escalating emergencies.', '#ff7a3d')}
+${callout('Our recommendation for most service businesses', 'Keep people for the moments that need them, and let AI handle volume and off-hours. A typical setup: staff answer during business hours, the AI receptionist takes overflow when lines are busy, and it covers evenings, weekends and holidays, booking appointments and escalating emergencies.', '#1d8fe1')}
 
 <h2>Which is right for you?</h2>
 ${table(

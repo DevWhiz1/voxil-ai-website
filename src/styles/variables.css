@@ -7,25 +7,29 @@ Design tokens, quiet agency
   --font-sora: 'Sora', 'Sora Fallback', sans-serif;
 
   /* =============== COLORS =============== */
-  /* Teal primary + coral energy (Growth Guild–inspired warmth, Voxil identity) */
-  --color-primary-50: #ecfdfb;
-  --color-primary-100: #d0f7f2;
-  --color-primary-200: #a3efe6;
-  --color-primary-300: #6adfd3;
-  --color-primary-400: #2fc4b6;
-  --color-primary-500: #0f9f93;
-  --color-primary-600: #0d7f76;
-  --color-primary-700: #0f6560;
-  --color-primary-800: #11514e;
+  /* Logo blues. The "primary" and "coral" names are historical (the site was
+     teal and orange); both scales now carry the Voxil logo blues
+     (#0769b4 / #013e83) so existing utility classes keep working. */
+  --color-primary-50: #eef6fd;
+  --color-primary-100: #d6e9fa;
+  --color-primary-200: #a9d2f4;
+  --color-primary-300: #6bb3ec;
+  --color-primary-400: #1d8fe1;
+  --color-primary-500: #0b74c4;
+  --color-primary-600: #0769b4;
+  --color-primary-700: #05589a;
+  --color-primary-800: #013e83;
 
-  --color-coral-50: #fff4ef;
-  --color-coral-100: #ffe4d6;
-  --color-coral-200: #ffc4a8;
-  --color-coral-300: #ff9b6b;
-  --color-coral-400: #ff7a3d;
-  --color-coral-500: #ff6b35;
-  --color-coral-600: #e84e1a;
-  --color-coral-700: #c2410c;
+  /* "coral" accent scale now carries the logo blues (#0769b4 / #013e83); the
+     name is kept so existing utility classes keep working */
+  --color-coral-50: #eef6fd;
+  --color-coral-100: #d6e9fa;
+  --color-coral-200: #a9d2f4;
+  --color-coral-300: #6bb3ec;
+  --color-coral-400: #1d8fe1;
+  --color-coral-500: #0769b4;
+  --color-coral-600: #05589a;
+  --color-coral-700: #013e83;
 
   --color-sky-400: #38bdf8;
   --color-sky-500: #0ea5e9;
@@ -84,7 +88,7 @@ Design tokens, quiet agency
   --color-gradient-1: linear-gradient(135deg, #3bb8b0 0%, #e8ebe9 100%);
   --color-gradient-2: linear-gradient(135deg, #f9eb57 0%, #f99988 100%);
   --color-gradient-3: linear-gradient(135deg, #83e7ee 0%, #f9eb57 100%);
-  --color-gradient-4: linear-gradient(135deg, #0f766e 0%, #23eed6 100%);
+  --color-gradient-4: linear-gradient(135deg, #013e83 0%, #1d8fe1 100%);
   --color-gradient-5: linear-gradient(
     165deg,
     rgba(255, 255, 255, 0.5) 0.51%,
@@ -159,8 +163,8 @@ Design tokens, quiet agency
   /* ==========Dark premium easing + glow shadows========== */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
-  --shadow-glow-teal: 0 0 0 1px rgba(47, 196, 182, 0.18), 0 18px 60px -18px rgba(15, 159, 147, 0.55);
-  --shadow-glow-coral: 0 0 0 1px rgba(255, 107, 53, 0.2), 0 18px 60px -18px rgba(255, 107, 53, 0.5);
+  --shadow-glow-teal: 0 0 0 1px rgba(29, 143, 225, 0.18), 0 18px 60px -18px rgba(7, 105, 180, 0.55);
+  --shadow-glow-coral: 0 0 0 1px rgba(7, 105, 180, 0.2), 0 18px 60px -18px rgba(7, 105, 180, 0.5);
   --shadow-glow-sky: 0 0 0 1px rgba(56, 189, 248, 0.2), 0 18px 60px -18px rgba(14, 165, 233, 0.5);
   --shadow-ink-1: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-ink-2: 0 18px 50px -12px rgba(0, 0, 0, 0.7);

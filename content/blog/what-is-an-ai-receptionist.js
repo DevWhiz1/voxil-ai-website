@@ -43,7 +43,7 @@ export default {
 </ul>
 
 <h2>What it shouldn’t do</h2>
-${callout('Guardrails matter', 'A good AI receptionist knows its limits. It should not give medical, legal or financial advice, make promises outside your policies, or guess at account-specific details. It should disclose that it’s an AI when asked and make reaching a human easy.', '#ff7a3d')}
+${callout('Guardrails matter', 'A good AI receptionist knows its limits. It should not give medical, legal or financial advice, make promises outside your policies, or guess at account-specific details. It should disclose that it’s an AI when asked and make reaching a human easy.', '#1d8fe1')}
 <p>Customer sentiment makes this essential, many customers are wary of AI in service ${cite('gartner-64-prefer')}, and trust is earned by quick resolution and easy escalation.</p>
 
 <h2>AI receptionist vs. alternatives</h2>
@@ -60,7 +60,7 @@ ${table(
 )}
 
 <h2>Who benefits most</h2>
-${statGrid(['locals-62'], '#ff7a3d')}
+${statGrid(['locals-62'], '#1d8fe1')}
 <p>If a meaningful share of your calls goes unanswered, an AI receptionist is usually the quickest win. It’s especially valuable for ${link('/industries/medical-clinics/', 'medical clinics')}, ${link('/industries/law-firms/', 'law firms')}, ${link('/industries/home-services/', 'home-service businesses')}, ${link('/industries/med-spas/', 'med spas')} and ${link('/industries/chiropractic/', 'chiropractors')}, anyone whose staff can’t always pick up.</p>
 
 <h2>How much does an AI receptionist cost?</h2>

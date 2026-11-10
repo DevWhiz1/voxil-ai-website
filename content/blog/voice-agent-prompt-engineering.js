@@ -52,7 +52,7 @@ ${table(
 
 <h2>1. Role and goal</h2>
 <p>Be specific. “You are a helpful assistant” gives the model nothing to work with. Compare:</p>
-${callout('Better', '“You are Ava, the phone receptionist for BrightSpark Plumbing in Austin, Texas. Your goal is to book the caller into the right service appointment, or take an urgent message if it is an emergency.”', '#ff7a3d')}
+${callout('Better', '“You are Ava, the phone receptionist for BrightSpark Plumbing in Austin, Texas. Your goal is to book the caller into the right service appointment, or take an urgent message if it is an emergency.”', '#1d8fe1')}
 
 <h2>2. Tone and speech style</h2>
 <p>Describe the personality, then add concrete speaking rules:</p>

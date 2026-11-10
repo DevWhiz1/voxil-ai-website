@@ -1,3 +1,4 @@
+import { heroDecor } from './brand.js';
 // Markup helpers for generated pages. Every helper returns an HTML string built
 // from the dark-premium primitives in src/styles/ui.css, so generated pages
 // look identical to the hand-written home page.
@@ -103,7 +104,7 @@ export const crumbsNav = (crumbs) => `
           </ol>
         </nav>`;
 
-export const eyebrow = (text, dot = '#2fc4b6', light = false) =>
+export const eyebrow = (text, dot = '#1d8fe1', light = false) =>
   light
     ? `<p data-reveal class="eyebrow-chip-light mb-5"><span class="size-1.5 rounded-full" style="background:${dot}"></span>${text}</p>`
     : `<p data-reveal class="eyebrow-chip mb-5"><span class="pulse-dot" style="--dot: ${dot}"></span>${text}</p>`;
@@ -119,11 +120,12 @@ export const ctaButtons = (primary = 'Book a Free Strategy Call', secondary = { 
  * `answer` is the 40-60 word direct answer answer-engines quote; `facts` are
  * short label/value pairs shown under it.
  */
-export const hero = ({ crumbs, eyebrowText, accent = '#2fc4b6', h1, lead, answer, answerLabel = 'Quick answer', facts = [], pills = [], primary, secondary }) => `
+export const hero = ({ crumbs, eyebrowText, accent = '#1d8fe1', h1, lead, answer, answerLabel = 'Quick answer', facts = [], pills = [], primary, secondary }) => `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
+      ${heroDecor()}
       <span class="orb -top-28 left-[8%] size-[420px] animate-drift" style="--orb: ${accent}; --orb-opacity: 0.28" aria-hidden="true"></span>
-      <span class="orb top-1/3 -right-24 size-[380px] animate-drift-slow" style="--orb: #ff6b35; --orb-opacity: 0.18" aria-hidden="true"></span>
+      <span class="orb top-1/3 -right-24 size-[380px] animate-drift-slow" style="--orb: #0769b4; --orb-opacity: 0.18" aria-hidden="true"></span>
 
       <div class="main-container relative z-10">
         ${crumbsNav(crumbs)}
@@ -144,7 +146,7 @@ export const hero = ({ crumbs, eyebrowText, accent = '#2fc4b6', h1, lead, answer
       </div>
     </section>`;
 
-export const answerCard = ({ answer, facts = [], accent = '#2fc4b6', label = 'Quick answer' }) => `
+export const answerCard = ({ answer, facts = [], accent = '#1d8fe1', label = 'Quick answer' }) => `
           <aside data-reveal class="edge-card">
             <div class="answer-card p-6 md:p-8" style="--accent: ${accent}">
               <p class="text-tagline-3 flex items-center gap-2 font-semibold tracking-[0.14em] text-secondary/60 uppercase">
@@ -169,21 +171,21 @@ export const answerCard = ({ answer, facts = [], accent = '#2fc4b6', label = 'Qu
             </div>
           </aside>`;
 
-export const sectionHead = ({ eyebrowText, dot = '#2fc4b6', title, lead, center = false, light = false, id }) => `
+export const sectionHead = ({ eyebrowText, dot = '#1d8fe1', title, lead, center = false, light = false, id }) => `
         <div class="${center ? 'mx-auto text-center' : ''} mb-12 max-w-2xl md:mb-14"${id ? ` id="${id}"` : ''}>
           ${eyebrowText ? eyebrow(eyebrowText, dot, light) : ''}
           <h2 data-reveal class="text-heading-5 sm:text-heading-4 lg:text-heading-3 font-semibold tracking-tight ${light ? 'text-secondary' : 'text-secondary'}">${title}</h2>
           ${lead ? `<p data-reveal class="text-tagline-1 mt-4 ${light ? 'text-secondary/65' : 'text-secondary/60'}">${lead}</p>` : ''}
         </div>`;
 
-export const featureCard = ({ title, desc, icon: ic = 'sparkles', accent = '#2fc4b6', cls = '' }) => `
+export const featureCard = ({ title, desc, icon: ic = 'sparkles', accent = '#1d8fe1', cls = '' }) => `
           <div data-reveal class="group glass-card glass-card-rail glass-card-bloom ${cls}" style="--accent: ${accent}">
             <span class="icon-tile" style="--accent: ${accent}">${icon(ic)}</span>
             <h3 class="text-heading-6 mt-5 font-semibold text-secondary">${title}</h3>
             <p class="text-tagline-2 mt-2.5 text-secondary/60">${desc}</p>
           </div>`;
 
-export const linkCard = ({ href, title, desc, icon: ic = 'sparkles', accent = '#2fc4b6', cta = 'Learn more', badge }) => `
+export const linkCard = ({ href, title, desc, icon: ic = 'sparkles', accent = '#1d8fe1', cta = 'Learn more', badge }) => `
           <a href="${href}" data-reveal class="group glass-card glass-card-rail glass-card-bloom flex flex-col" style="--accent: ${accent}">
             <div class="flex items-start justify-between gap-3">
               <span class="icon-tile" style="--accent: ${accent}">${icon(ic)}</span>
@@ -200,7 +202,7 @@ export const chipLink = (href, label, ic) =>
 
 export const faqBlock = ({ faqs, title = 'Frequently asked <span class="text-gradient-teal">questions</span>', lead = 'Straight answers to what buyers ask us most. Don\'t see yours? Ask on a free call.', eyebrowText = 'FAQ' }) => `
     <section class="section-soft section-pad section-seam" id="faq">
-      <span class="orb bottom-0 -left-24 size-[380px]" style="--orb: #0f9f93; --orb-opacity: 0.16" aria-hidden="true"></span>
+      <span class="orb bottom-0 -left-24 size-[380px]" style="--orb: #0769b4; --orb-opacity: 0.16" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div class="lg:sticky lg:top-28 lg:self-start">
@@ -230,7 +232,7 @@ export const faqBlock = ({ faqs, title = 'Frequently asked <span class="text-gra
     </section>`;
 
 // Vertical numbered steps on a dark band.
-export const stepsBlock = ({ steps, accent = '#2fc4b6' }) => `
+export const stepsBlock = ({ steps, accent = '#1d8fe1' }) => `
           <ol class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             ${steps
               .map(
@@ -244,7 +246,7 @@ export const stepsBlock = ({ steps, accent = '#2fc4b6' }) => `
               .join('')}
           </ol>`;
 
-export const checkList = (items, accent = '#2fc4b6', light = false) =>
+export const checkList = (items, accent = '#1d8fe1', light = false) =>
   `<ul class="${light ? 'check-list-light space-y-3' : 'check-list'}" style="--accent: ${accent}">${items.map((i) => `<li>${i}</li>`).join('')}</ul>`;
 
 export const dataTable = ({ head, rows, caption }) => `
@@ -266,7 +268,7 @@ export const updatedLine = (date = SITE.updated) => {
 
 // Optional long-form section used on service, location and agency pages to
 // cover a topic in more depth: `{ eyebrow, title, paras: [html, ...] }`.
-export const deepDive = (d, accent = '#2fc4b6') =>
+export const deepDive = (d, accent = '#1d8fe1') =>
   d
     ? `
     <section class="section-base section-pad section-seam">

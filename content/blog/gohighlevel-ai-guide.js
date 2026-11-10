@@ -47,7 +47,7 @@ ${table(
   <li><strong>Start in suggestive mode</strong> if you’re nervous: AI drafts, staff approve, then switch to auto-pilot.</li>
 </ol>
 
-${callout('The most common mistake', 'Leaving the bot’s instructions generic ("You are a helpful assistant for our business"). The best-performing bots have specific instructions, a clear booking goal, and examples of how to handle the five objections your team hears most.', '#ff7a3d')}
+${callout('The most common mistake', 'Leaving the bot’s instructions generic ("You are a helpful assistant for our business"). The best-performing bots have specific instructions, a clear booking goal, and examples of how to handle the five objections your team hears most.', '#1d8fe1')}
 
 <h2>Voice AI in GHL</h2>
 <p>GHL’s Voice AI can answer inbound calls, capture details and book appointments into GHL calendars. It’s an excellent fit for after-hours and overflow answering inside a GHL-based business. Configure the greeting, knowledge, booking calendar and transfer rules, then review call summaries daily at first.</p>

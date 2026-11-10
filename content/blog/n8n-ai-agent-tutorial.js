@@ -44,7 +44,7 @@ ${table(
 
 <h2>Step 3: Configure the AI Agent node</h2>
 <p>Add the AI Agent node and connect a chat model credential. Then write the system message. Keep it focused:</p>
-${callout('Example system message', '“You are the website assistant for Northgate Realty. Answer questions using only the knowledge base tool. If a visitor wants to talk to an agent, collect their name, email and preferred time, check availability with the calendar tool and book it. If you don’t know an answer, say so and offer to book a call. Be brief and friendly.”', '#2fc4b6')}
+${callout('Example system message', '“You are the website assistant for Northgate Realty. Answer questions using only the knowledge base tool. If a visitor wants to talk to an agent, collect their name, email and preferred time, check availability with the calendar tool and book it. If you don’t know an answer, say so and offer to book a call. Be brief and friendly.”', '#1d8fe1')}
 
 <h2>Step 4: Add memory</h2>
 <p>Attach a memory sub-node so the agent remembers the last several messages in a conversation, keyed by session ID. For longer-lived context, such as returning customers, store conversation summaries in a database and look them up with a tool instead of keeping everything in memory.</p>

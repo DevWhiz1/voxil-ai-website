@@ -210,7 +210,7 @@ export const renderSmsCounter = () => {
                 <div class="col-span-2"><p class="text-tagline-3 text-secondary/60">Estimated campaign cost</p><p class="stat-num text-heading-5 mt-1 text-secondary" data-sms="cost">$0</p></div>
               </div>
             </div>
-            <div class="glass-card hidden" data-sms="warning-box" style="--accent: #ff6b35">
+            <div class="glass-card hidden" data-sms="warning-box" style="--accent: #0769b4">
               <p class="text-tagline-2 font-semibold text-secondary">Characters forcing UCS-2 encoding</p>
               <p class="text-tagline-2 mt-2 text-secondary/65">Replace these to fit more text per segment: <span class="font-semibold text-coral-700" data-sms="offenders"></span></p>
             </div>

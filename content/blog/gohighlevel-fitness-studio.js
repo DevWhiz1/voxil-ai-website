@@ -52,7 +52,7 @@ ${table(
 
 <h2>5. Onboarding new members</h2>
 <p>The first month decides whether a new member builds a habit. Automate check-ins at day 3, 7, 14 and 30, suggest classes that match their goal and celebrate milestones such as their tenth visit.</p>
-${callout('Retention beats acquisition', 'Every member you keep is one less you need to replace with paid ads. A small improvement in retention often outweighs a big improvement in lead volume.', '#0f9f93')}
+${callout('Retention beats acquisition', 'Every member you keep is one less you need to replace with paid ads. A small improvement in retention often outweighs a big improvement in lead volume.', '#0769b4')}
 
 <h2>6. Win-back before they cancel</h2>
 <p>If your gym software tracks check-ins, sync attendance to GoHighLevel. When a member hasn’t visited in 10 to 14 days, a coach sends a personal-sounding check-in. Catching the slide early is far easier than reversing a cancellation.</p>

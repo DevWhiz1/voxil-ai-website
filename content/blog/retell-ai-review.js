@@ -74,7 +74,7 @@ ${table(
 
 <h2>Compliance</h2>
 <p>If you handle healthcare data, check Retell’s current compliance options and agreements for your plan. For outbound calling in the US, TCPA consent rules apply to AI voices regardless of platform; see ${link('/blog/ai-voice-calling-lead-generation/', 'our AI calling guide')} for details.</p>
-${callout('Verdict', 'Retell AI is our usual pick when a business needs a dependable phone agent for predictable calls, live fast, with analytics the operations team can actually use.', '#ff7a3d')}
+${callout('Verdict', 'Retell AI is our usual pick when a business needs a dependable phone agent for predictable calls, live fast, with analytics the operations team can actually use.', '#1d8fe1')}
 <p>Compare it with our ${link('/blog/vapi-ai-review/', 'Vapi AI review')}, or let us handle it through our ${link('/services/retell-ai-setup/', 'Retell AI setup service')}.</p>
 `,
   faqs: [

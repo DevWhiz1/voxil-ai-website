@@ -148,12 +148,12 @@ export const STATS = {
 };
 
 export const STAT_CATEGORIES = [
-  { key: 'adoption', title: 'AI adoption', icon: 'trending', accent: '#2fc4b6' },
+  { key: 'adoption', title: 'AI adoption', icon: 'trending', accent: '#1d8fe1' },
   { key: 'economy', title: 'Investment, economy & jobs', icon: 'currency', accent: '#38bdf8' },
-  { key: 'service', title: 'AI in customer service', icon: 'bubble', accent: '#ff7a3d' },
-  { key: 'agents', title: 'AI agents & conversational AI', icon: 'sparkles', accent: '#6adfd3' },
-  { key: 'sales', title: 'Sales, leads & speed-to-lead', icon: 'bolt', accent: '#ff7a3d' },
-  { key: 'smb', title: 'Small business & marketing', icon: 'building', accent: '#2fc4b6' },
+  { key: 'service', title: 'AI in customer service', icon: 'bubble', accent: '#1d8fe1' },
+  { key: 'agents', title: 'AI agents & conversational AI', icon: 'sparkles', accent: '#6bb3ec' },
+  { key: 'sales', title: 'Sales, leads & speed-to-lead', icon: 'bolt', accent: '#1d8fe1' },
+  { key: 'smb', title: 'Small business & marketing', icon: 'building', accent: '#1d8fe1' },
   { key: 'regulation', title: 'Regulation', icon: 'shield', accent: '#38bdf8' },
 ];
 

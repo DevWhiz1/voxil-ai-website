@@ -29,7 +29,7 @@ const FEATURED_LOCATIONS = ['new-york', 'los-angeles', 'chicago', 'houston', 'da
 const revenueCalc = ({ noun, calc, accent }) => `
     <section class="section-soft section-pad section-seam" id="estimate">
       <div class="main-container relative z-10">
-        ${sectionHead({ eyebrowText: 'Revenue estimate', dot: '#ff7a3d', title: 'What slow response may be <span class="text-gradient-warm">costing you</span>', lead: `Adjust the numbers to match your business. Starting values are examples for ${noun}, not benchmarks.` })}
+        ${sectionHead({ eyebrowText: 'Revenue estimate', dot: '#1d8fe1', title: 'What slow response may be <span class="text-gradient-warm">costing you</span>', lead: `Adjust the numbers to match your business. Starting values are examples for ${noun}, not benchmarks.` })}
         <form class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]" data-lead-calc onsubmit="return false">
           <div class="glass-card space-y-7" style="--accent: ${accent}">
             ${calcField({ id: 'calls', label: 'Calls and leads per month', hint: 'Phone calls plus web, ad and social inquiries.', min: 20, max: 3000, step: 10, value: calc.calls })}
@@ -89,12 +89,12 @@ export const renderIndustry = (slug, base, posts = []) => {
       <span class="top-glow" aria-hidden="true"></span>
       <span class="dot-field" aria-hidden="true"></span>
       <div class="main-container relative z-10">
-        ${sectionHead({ eyebrowText: 'The problem', dot: '#ff7a3d', title: c.painTitle, lead: c.painLead })}
+        ${sectionHead({ eyebrowText: 'The problem', dot: '#1d8fe1', title: c.painTitle, lead: c.painLead })}
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           ${c.pains
             .map(
               (p) => `
-          <div data-reveal class="glass-card glass-card-topline" style="--accent: #ff7a3d">
+          <div data-reveal class="glass-card glass-card-topline" style="--accent: #1d8fe1">
             <p class="text-heading-6 font-semibold text-secondary">${p.title}</p>
             <p class="text-tagline-2 mt-2.5 text-secondary/60">${p.desc}</p>
           </div>`
@@ -192,12 +192,12 @@ export const renderIndustry = (slug, base, posts = []) => {
       ? `
     <section class="section-soft section-pad section-seam">
       <div class="main-container relative z-10">
-        ${sectionHead({ eyebrowText: 'Real talk', dot: '#ff7a3d', title: 'What owners ask us <span class="text-gradient-warm">before they start</span>', lead: 'Honest answers to the pushback we hear most.' })}
+        ${sectionHead({ eyebrowText: 'Real talk', dot: '#1d8fe1', title: 'What owners ask us <span class="text-gradient-warm">before they start</span>', lead: 'Honest answers to the pushback we hear most.' })}
         <div class="grid gap-4 md:grid-cols-3">
           ${c.objections
             .map(
               (o) => `
-          <div data-reveal class="glass-card glass-card-topline" style="--accent: #ff7a3d">
+          <div data-reveal class="glass-card glass-card-topline" style="--accent: #1d8fe1">
             <h3 class="text-heading-6 font-semibold text-secondary">${o.q}</h3>
             <p class="text-tagline-2 mt-2.5 text-secondary/60">${o.a}</p>
           </div>`

@@ -22,7 +22,7 @@ export default {
   related: ['ai-voice-calling-lead-generation', 'what-is-an-ai-receptionist', 'gohighlevel-dental-medical-clinic'],
   body: `
 <p>An AI booking bot is a voice or chat agent that turns an inquiry into a confirmed appointment in your calendar, without a person in the loop. Businesses that deploy them well typically see more inquiries become appointments and fewer appointments end in no-shows. This article explains why, so you can judge what to expect for your own business.</p>
-${callout('A note on numbers', 'You’ll see vendors quote dramatic percentage lifts. Results depend heavily on your starting point: a business that already answers every call in seconds will gain less than one that sends half its calls to voicemail. Always measure against your own baseline.', '#ff7a3d')}
+${callout('A note on numbers', 'You’ll see vendors quote dramatic percentage lifts. Results depend heavily on your starting point: a business that already answers every call in seconds will gain less than one that sends half its calls to voicemail. Always measure against your own baseline.', '#1d8fe1')}
 
 <h2>Why AI books more appointments</h2>
 <h3>1. It answers instantly</h3>

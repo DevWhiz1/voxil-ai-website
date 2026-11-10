@@ -425,8 +425,8 @@ export const renderFollowUpTemplates = () => {
         ${sectionHead({ eyebrowText: 'Put them to work', title: 'Where each template <span class="text-gradient-teal">fits</span>', lead: 'These templates map to the follow-up cadence in our GoHighLevel guide.' })}
         <div class="grid gap-4 md:grid-cols-3">
           ${linkCard({ href: '/blog/automate-lead-follow-up-gohighlevel/', title: 'The 14-day follow-up cadence', desc: 'When to send each message, on which channel, and the stop conditions you need.', icon: 'refresh', accent: '#0284c7', cta: 'Read the guide' })}
-          ${linkCard({ href: '/blog/gohighlevel-missed-call-text-back/', title: 'Missed-call text-back', desc: 'The ten-minute GoHighLevel workflow that texts every missed caller.', icon: 'phone', accent: '#ff7a3d', cta: 'Read the guide' })}
-          ${linkCard({ href: '/services/ai-follow-up-system/', title: 'Done-for-you follow-up', desc: 'We build, test and monitor the full system, with AI replies.', icon: 'bolt', accent: '#0f9f93', cta: 'See the service' })}
+          ${linkCard({ href: '/blog/gohighlevel-missed-call-text-back/', title: 'Missed-call text-back', desc: 'The ten-minute GoHighLevel workflow that texts every missed caller.', icon: 'phone', accent: '#1d8fe1', cta: 'Read the guide' })}
+          ${linkCard({ href: '/services/ai-follow-up-system/', title: 'Done-for-you follow-up', desc: 'We build, test and monitor the full system, with AI replies.', icon: 'bolt', accent: '#0769b4', cta: 'See the service' })}
         </div>
       </div>
     </section>`;

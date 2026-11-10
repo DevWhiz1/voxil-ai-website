@@ -51,7 +51,7 @@ ${table(
   ],
   'What you can and can’t export from GoHighLevel'
 )}
-${callout('Save files, not links', 'Export downloads are time-limited. Save every CSV straight to your own storage, and screenshot or document anything that doesn’t export before you cancel.', '#ff7a3d')}
+${callout('Save files, not links', 'Export downloads are time-limited. Save every CSV straight to your own storage, and screenshot or document anything that doesn’t export before you cancel.', '#1d8fe1')}
 
 <h2>Phone numbers and texting</h2>
 <p>Numbers are where migrations go wrong. If customers know your number, you’ll want to port it to the new provider rather than replace it. Ask GoHighLevel support and your new provider about the porting process and timing before you start.</p>

@@ -48,16 +48,16 @@ ${statGrid(['adoption-78', 'genai-71', 'sf-any-ai-85', 'sf-agentic-66', 'ms-agen
 <p>Adoption is often informal, though. Microsoft and LinkedIn found most AI users at work bring their own tools ${cite('wti-byoai')}. For customer-facing chatbots that’s a problem: a bot talking to your customers needs approved content, guardrails and integration with your CRM, not an employee’s personal subscription.</p>
 
 <h2>Chatbots in customer service</h2>
-${statGrid(['sf-cases-50', 'sf-value-70', 'sf-routine-20', 'nber-14', 'klarna-2-3', 'gartner-25-chatbots', 'gartner-pressure-91', 'zd-copilot-73'], '#ff7a3d')}
+${statGrid(['sf-cases-50', 'sf-value-70', 'sf-routine-20', 'nber-14', 'klarna-2-3', 'gartner-25-chatbots', 'gartner-pressure-91', 'zd-copilot-73'], '#1d8fe1')}
 <p>Service teams expect AI to handle half of all cases by 2027, up from 30% today ${cite('sf-cases-50')}, and 70% of organizations using AI service agents report measurable value within 60 days ${cite('sf-value-70')}. Klarna’s assistant, which handled two-thirds of service chats in its first month ${cite('klarna-2-3')}, became the headline example. The company later said it would keep human agents available alongside AI, which is the more useful lesson: automation works best as the fast lane, not the only lane.</p>
 
 <h2>Chatbot forecasts and market size</h2>
-${statGrid(['conv-ai-market', 'mm-agents-52b', 'gartner-80-2029', 'gartner-80b', 'zd-80-75', 'gartner-33-agentic'], '#6adfd3')}
+${statGrid(['conv-ai-market', 'mm-agents-52b', 'gartner-80-2029', 'gartner-80b', 'zd-80-75', 'gartner-33-agentic'], '#6bb3ec')}
 <p>Chatbots are part of the wider conversational AI market, which also includes voice assistants and AI agents. Market-size estimates vary with how each analyst defines the market, so treat any single figure as one forecast rather than a fact. One estimate projects the conversational AI market at about $49.9 billion by 2030, up from roughly $13.2 billion in 2024 ${cite('conv-ai-market')}; another projects the AI agents market at $52.6 billion by 2030 ${cite('mm-agents-52b')}. The direction of travel matters more than the exact number.</p>
 
 <h2>What customers think about chatbots</h2>
-${statGrid(['zd-24-7-74', 'gartner-64-prefer', 'qualtrics-human-50', 'sf-know-ai-75', 'sf-escalation-45', 'zd-repeat-74', 'zd-explain-95', 'qualtrics-1in5'], '#ff7a3d')}
-${callout('What these numbers say together', 'Customers want instant, around-the-clock answers, but they don’t want to be trapped. 45% are more likely to use an AI agent when there’s a clear path to a human, and three in four want to know when they’re talking to AI. Bots that disclose themselves, remember context and hand off cleanly avoid most of the complaints behind the 64%.', '#ff7a3d')}
+${statGrid(['zd-24-7-74', 'gartner-64-prefer', 'qualtrics-human-50', 'sf-know-ai-75', 'sf-escalation-45', 'zd-repeat-74', 'zd-explain-95', 'qualtrics-1in5'], '#1d8fe1')}
+${callout('What these numbers say together', 'Customers want instant, around-the-clock answers, but they don’t want to be trapped. 45% are more likely to use an AI agent when there’s a clear path to a human, and three in four want to know when they’re talking to AI. Bots that disclose themselves, remember context and hand off cleanly avoid most of the complaints behind the 64%.', '#1d8fe1')}
 
 <h2>Rule-based bots vs. LLM chatbots</h2>
 ${table(
@@ -74,7 +74,7 @@ ${table(
 <p>Vendor-reported results show what well-built LLM agents can reach: Intercom says its Fin agent averages a 76% resolution rate across more than 12,000 customers ${cite('fin-76')} and resolves about 2 million conversations a week ${cite('fin-2m')}. These are the vendor’s own figures, so treat them as a ceiling rather than a typical result.</p>
 
 <h2>The ROI reality check</h2>
-${statGrid(['mit-95', 'gartner-40-cancel', 'forrester-third', 'sf-security-51'], '#6adfd3')}
+${statGrid(['mit-95', 'gartner-40-cancel', 'forrester-third', 'sf-security-51'], '#6bb3ec')}
 <p>Research from MIT’s NANDA initiative found most organizations saw no measurable P&L return from generative-AI pilots ${cite('mit-95')}, and Forrester predicts a third of companies will harm customer experiences with frustrating AI self-service in 2026 ${cite('forrester-third')}. The pattern behind the successes: a specific workflow, integration with real systems, and learning from real conversations. A chatbot that books appointments into your calendar and writes leads into your CRM has a measurable outcome. A chatbot that "answers questions" often doesn’t.</p>
 
 <h2>What to measure if you deploy a chatbot</h2>

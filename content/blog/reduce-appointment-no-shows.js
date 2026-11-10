@@ -54,7 +54,7 @@ ${table(
 <p>If rescheduling requires a phone call during office hours, many people simply don’t show up. A link or text conversation that offers available slots removes that friction, and most clients prefer rescheduling to letting you down.</p>
 
 <h2>Step 5: Use deposits and policies where they fit</h2>
-${callout('Apply policies fairly', 'Deposits and cancellation fees work best for high-value or long appointments, such as consultations, treatments or estimates requiring travel. State the policy clearly at booking, remind clients of it, and apply it consistently but kindly. Check any rules that apply to your profession.', '#ff6b35')}
+${callout('Apply policies fairly', 'Deposits and cancellation fees work best for high-value or long appointments, such as consultations, treatments or estimates requiring travel. State the policy clearly at booking, remind clients of it, and apply it consistently but kindly. Check any rules that apply to your profession.', '#0769b4')}
 
 <h2>Step 6: Fill cancellations from a waitlist</h2>
 <p>When someone cancels or reschedules, automatically text clients on a waitlist for that service or provider, and book the first to accept. A cancellation two days out becomes a filled slot instead of a gap.</p>

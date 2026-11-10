@@ -38,14 +38,14 @@ ${statGrid(['conv-ai-market', 'gartner-33-agentic'], '#38bdf8')}
 
 <h2>Customer-service impact</h2>
 <p>Customer service is the most mature use case for voice and chat agents, and it’s where analysts are most bullish.</p>
-${statGrid(['gartner-80-2029', 'gartner-80b', 'nber-14', 'gartner-64-prefer'], '#ff7a3d')}
+${statGrid(['gartner-80-2029', 'gartner-80b', 'nber-14', 'gartner-64-prefer'], '#1d8fe1')}
 <p>Two findings are worth holding together. Research on AI assistance in contact centers found a 14% average productivity gain for agents, and much larger gains for newer staff ${cite('nber-14')}. At the same time, a Gartner survey found 64% of customers would prefer companies didn’t use AI for service ${cite('gartner-64-prefer')}. The gap between those numbers is design: agents that resolve the request quickly, admit what they don’t know and hand off cleanly are welcomed; agents that trap callers in loops are not.</p>
 
 ${callout('Our take from production', 'The deployments that customers like are narrow and competent: answer every call instantly, handle the five request types that make up most volume, and transfer everything else with a summary. Broad "do everything" agents are where the complaints come from.')}
 
 <h2>Speed-to-lead: the strongest case for voice AI</h2>
 <p>For sales-driven businesses, the most compelling numbers aren’t about AI at all, they’re about response time.</p>
-${statGrid(['hbr-7x', 'lrm-100x', 'locals-62'], '#ff7a3d')}
+${statGrid(['hbr-7x', 'lrm-100x', 'locals-62'], '#1d8fe1')}
 <p>A human team can’t call every lead within five minutes at 9pm on a Saturday. A voice agent can. That’s why ${link('/services/ai-calling-bots/', 'AI calling bots')} and ${link('/services/ai-sdr-system/', 'AI SDR systems')} often pay back faster than support deployments. Read more in our ${link('/blog/speed-to-lead-statistics/', 'speed-to-lead statistics')}.</p>
 
 <h2>What voice agents cost</h2>
@@ -65,7 +65,7 @@ ${table(
 <p>We break down real numbers, with worked examples, in ${link('/blog/how-much-does-an-ai-voice-agent-cost/', 'How Much Does an AI Voice Agent Cost?')}.</p>
 
 <h2>Risk and regulation</h2>
-${statGrid(['gartner-40-cancel', 'fcc-ai-voice'], '#6adfd3')}
+${statGrid(['gartner-40-cancel', 'fcc-ai-voice'], '#6bb3ec')}
 <p>Gartner expects a large share of agentic AI projects to be canceled because of cost, unclear value or weak controls ${cite('gartner-40-cancel')}. The antidote is the boring stuff: a narrow first use case, a measurable baseline, and guardrails. On regulation, US businesses should note that the FCC’s 2024 ruling brings AI-voice calls under TCPA consent rules ${cite('fcc-ai-voice')}, inbound agents are straightforward, outbound calling needs documented consent.</p>
 
 <h2>How to use these numbers</h2>

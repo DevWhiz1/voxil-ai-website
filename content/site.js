@@ -49,7 +49,7 @@ export const SERVICE_GROUPS = [
   {
     key: 'voice',
     title: 'AI Voice & Calls',
-    accent: '#ff7a3d',
+    accent: '#1d8fe1',
     icon: 'phone',
     services: [
       { slug: 'ai-calling-bots', name: 'AI Calling Bots', icon: 'signal', short: 'Outbound and inbound calling bots built on Vapi and Retell AI.' },
@@ -71,7 +71,7 @@ export const SERVICE_GROUPS = [
   {
     key: 'automation',
     title: 'AI & Automation',
-    accent: '#2fc4b6',
+    accent: '#1d8fe1',
     icon: 'sparkles',
     services: [
       { slug: 'ai-chatbots', name: 'AI Chatbots', icon: 'chat', short: 'Website, WhatsApp and in-app chatbots trained on your business.' },
@@ -112,7 +112,7 @@ export const SERVICE_GROUPS = [
   {
     key: 'crm',
     title: 'CRM, Funnels & Web',
-    accent: '#6adfd3',
+    accent: '#6bb3ec',
     icon: 'database',
     services: [
       { slug: 'crm-setup', name: 'CRM Setup', icon: 'database', short: 'A CRM configured around how your team actually sells.' },
@@ -132,9 +132,9 @@ export const SERVICE_GROUPS = [
 // Services that exist as pages but sit outside the four nav columns.
 export const EXTRA_SERVICES = [
   { slug: 'gohighlevel-automation', name: 'GoHighLevel Automation', icon: 'layers', accent: '#38bdf8', group: 'ghl', short: 'End-to-end automation of your pipeline inside GoHighLevel.' },
-  { slug: 'seo-paid-ads', name: 'SEO & Paid Ads', icon: 'search', accent: '#2fc4b6', group: 'automation', short: 'SEO, AEO and paid campaigns that feed your automated funnel.' },
+  { slug: 'seo-paid-ads', name: 'SEO & Paid Ads', icon: 'search', accent: '#1d8fe1', group: 'automation', short: 'SEO, AEO and paid campaigns that feed your automated funnel.' },
   { slug: 'ai-saas-development', name: 'AI SaaS Development', icon: 'layers', accent: '#38bdf8', group: 'crm', short: 'Full AI product builds, UI, LLM, auth, billing and infra.' },
-  { slug: 'lead-capture-system', name: 'Lead Capture Systems', icon: 'bolt', accent: '#6adfd3', group: 'automation', short: 'Intake, scoring and routing so no inquiry slips through.' },
+  { slug: 'lead-capture-system', name: 'Lead Capture Systems', icon: 'bolt', accent: '#6bb3ec', group: 'automation', short: 'Intake, scoring and routing so no inquiry slips through.' },
 ];
 
 export const ALL_SERVICES = [
@@ -263,18 +263,18 @@ export const locationUrl = (slug) => `/locations/${slug}/`;
 // Industries
 // ---------------------------------------------------------------------------
 export const INDUSTRIES = [
-  { slug: 'real-estate', name: 'Real Estate', icon: 'home', accent: '#2fc4b6' },
-  { slug: 'fitness-gyms', name: 'Fitness & Gym', icon: 'fire', accent: '#ff7a3d' },
+  { slug: 'real-estate', name: 'Real Estate', icon: 'home', accent: '#1d8fe1' },
+  { slug: 'fitness-gyms', name: 'Fitness & Gym', icon: 'fire', accent: '#1d8fe1' },
   { slug: 'insurance', name: 'Insurance', icon: 'shield', accent: '#38bdf8' },
-  { slug: 'law-firms', name: 'Legal / Law Firm', icon: 'scale', accent: '#6adfd3' },
-  { slug: 'home-services', name: 'Home Services', icon: 'wrench', accent: '#ff7a3d' },
-  { slug: 'medical-clinics', name: 'Medical / Clinics', icon: 'heart', accent: '#2fc4b6' },
+  { slug: 'law-firms', name: 'Legal / Law Firm', icon: 'scale', accent: '#6bb3ec' },
+  { slug: 'home-services', name: 'Home Services', icon: 'wrench', accent: '#1d8fe1' },
+  { slug: 'medical-clinics', name: 'Medical / Clinics', icon: 'heart', accent: '#1d8fe1' },
   { slug: 'med-spas', name: 'Med Spa', icon: 'sparkles', accent: '#38bdf8' },
-  { slug: 'roofing', name: 'Roofing', icon: 'building', accent: '#6adfd3' },
-  { slug: 'solar', name: 'Solar', icon: 'sun', accent: '#ff7a3d' },
-  { slug: 'salons-beauty', name: 'Salon & Beauty', icon: 'scissors', accent: '#2fc4b6' },
+  { slug: 'roofing', name: 'Roofing', icon: 'building', accent: '#6bb3ec' },
+  { slug: 'solar', name: 'Solar', icon: 'sun', accent: '#1d8fe1' },
+  { slug: 'salons-beauty', name: 'Salon & Beauty', icon: 'scissors', accent: '#1d8fe1' },
   { slug: 'hvac', name: 'HVAC', icon: 'bolt', accent: '#38bdf8' },
-  { slug: 'chiropractic', name: 'Chiropractic', icon: 'user', accent: '#6adfd3' },
+  { slug: 'chiropractic', name: 'Chiropractic', icon: 'user', accent: '#6bb3ec' },
 ];
 export const industryUrl = (slug) => `/industries/${slug}/`;
 
@@ -282,23 +282,23 @@ export const industryUrl = (slug) => `/industries/${slug}/`;
 // Free resources
 // ---------------------------------------------------------------------------
 export const RESOURCES = [
-  { slug: 'lead-loss-calculator', name: 'Lead Loss Calculator', icon: 'calculator', accent: '#ff7a3d', short: 'See how much revenue missed calls and slow follow-up cost you each month.' },
-  { slug: 'ai-statistics-2026', name: 'AI Statistics 2026', icon: 'chart', accent: '#2fc4b6', short: 'Sourced AI adoption, customer-service, agent and speed-to-lead statistics.' },
+  { slug: 'lead-loss-calculator', name: 'Lead Loss Calculator', icon: 'calculator', accent: '#1d8fe1', short: 'See how much revenue missed calls and slow follow-up cost you each month.' },
+  { slug: 'ai-statistics-2026', name: 'AI Statistics 2026', icon: 'chart', accent: '#1d8fe1', short: 'Sourced AI adoption, customer-service, agent and speed-to-lead statistics.' },
   { slug: 'ghl-setup-checklist', name: 'GHL Setup Checklist', icon: 'clipboard', accent: '#38bdf8', short: 'The interactive checklist we use to launch every GoHighLevel account.' },
-  { slug: 'ai-roi-calculator', name: 'AI Automation ROI Calculator', icon: 'trending', accent: '#0f9f93', short: 'Estimate payback and 12-month ROI for AI automation, with industry presets.' },
-  { slug: 'ai-readiness-assessment', name: 'AI Readiness Assessment', icon: 'sliders', accent: '#ff6b35', short: 'Ten quick questions to see which automation to build first.' },
-  { slug: 'ai-voice-agent-scripts', name: 'AI Voice Agent Scripts', icon: 'mic', accent: '#ff7a3d', short: 'Copy-ready scripts for AI receptionists, speed-to-lead and reactivation calls.' },
+  { slug: 'ai-roi-calculator', name: 'AI Automation ROI Calculator', icon: 'trending', accent: '#0769b4', short: 'Estimate payback and 12-month ROI for AI automation, with industry presets.' },
+  { slug: 'ai-readiness-assessment', name: 'AI Readiness Assessment', icon: 'sliders', accent: '#0769b4', short: 'Ten quick questions to see which automation to build first.' },
+  { slug: 'ai-voice-agent-scripts', name: 'AI Voice Agent Scripts', icon: 'mic', accent: '#1d8fe1', short: 'Copy-ready scripts for AI receptionists, speed-to-lead and reactivation calls.' },
   { slug: 'follow-up-templates', name: 'Follow-Up Message Templates', icon: 'mail', accent: '#0284c7', short: 'SMS and email templates for instant replies, nurture, no-shows and reviews.' },
   { slug: 'ai-voice-agent-cost-calculator', name: 'Voice Agent Cost Calculator', icon: 'calculator', accent: '#0284c7', short: 'Monthly AI voice agent cost vs. a human receptionist, from your rates.' },
-  { slug: 'ai-agent-prompt-generator', name: 'AI Agent Prompt Generator', icon: 'sparkles', accent: '#0f9f93', short: 'Generate a structured system prompt for your voice agent or chatbot.' },
-  { slug: 'sms-character-counter', name: 'SMS Segment Counter', icon: 'bubble', accent: '#ff7a3d', short: 'Count characters, encoding and billed segments for any text message.' },
-  { slug: 'voice-ai-platform-picker', name: 'Voice AI Platform Picker', icon: 'sliders', accent: '#6adfd3', short: 'Vapi, Retell AI or GoHighLevel Voice AI? Six questions, one answer.' },
-  { slug: 'automation-savings-calculator', name: 'Automation Savings Calculator', icon: 'clock', accent: '#0f9f93', short: 'Hours and dollars your business could save each year by automating tasks.' },
+  { slug: 'ai-agent-prompt-generator', name: 'AI Agent Prompt Generator', icon: 'sparkles', accent: '#0769b4', short: 'Generate a structured system prompt for your voice agent or chatbot.' },
+  { slug: 'sms-character-counter', name: 'SMS Segment Counter', icon: 'bubble', accent: '#1d8fe1', short: 'Count characters, encoding and billed segments for any text message.' },
+  { slug: 'voice-ai-platform-picker', name: 'Voice AI Platform Picker', icon: 'sliders', accent: '#6bb3ec', short: 'Vapi, Retell AI or GoHighLevel Voice AI? Six questions, one answer.' },
+  { slug: 'automation-savings-calculator', name: 'Automation Savings Calculator', icon: 'clock', accent: '#0769b4', short: 'Hours and dollars your business could save each year by automating tasks.' },
   { slug: 'ai-chatbot-cost-calculator', name: 'AI Chatbot Cost Calculator', icon: 'calculator', accent: '#0284c7', short: 'Monthly chatbot cost from conversations, tokens and model prices.' },
-  { slug: 'automation-platform-picker', name: 'Automation Platform Picker', icon: 'puzzle', accent: '#ff7a3d', short: 'Zapier, Make, n8n or GoHighLevel workflows? Find your best fit.' },
-  { slug: 'speed-to-lead-scorecard', name: 'Speed-to-Lead Scorecard', icon: 'bolt', accent: '#ff6b35', short: 'Grade your lead response out of 100 and see what to fix first.' },
-  { slug: 'ai-automation-glossary', name: 'AI Automation Glossary', icon: 'book', accent: '#6adfd3', short: 'Plain-English definitions of AI, voice agent, CRM and GoHighLevel terms.' },
-  { slug: 'media-kit', name: 'Media Kit', icon: 'photo', accent: '#6adfd3', short: 'Brand assets, boilerplate and facts for press and partners.' },
+  { slug: 'automation-platform-picker', name: 'Automation Platform Picker', icon: 'puzzle', accent: '#1d8fe1', short: 'Zapier, Make, n8n or GoHighLevel workflows? Find your best fit.' },
+  { slug: 'speed-to-lead-scorecard', name: 'Speed-to-Lead Scorecard', icon: 'bolt', accent: '#0769b4', short: 'Grade your lead response out of 100 and see what to fix first.' },
+  { slug: 'ai-automation-glossary', name: 'AI Automation Glossary', icon: 'book', accent: '#6bb3ec', short: 'Plain-English definitions of AI, voice agent, CRM and GoHighLevel terms.' },
+  { slug: 'media-kit', name: 'Media Kit', icon: 'photo', accent: '#6bb3ec', short: 'Brand assets, boilerplate and facts for press and partners.' },
 ];
 export const resourceUrl = (slug) => `/resources/${slug}/`;
 
@@ -306,10 +306,10 @@ export const resourceUrl = (slug) => `/resources/${slug}/`;
 // For Agencies: the white label partner hub and one page per partner model.
 // ---------------------------------------------------------------------------
 export const AGENCY_PAGES = [
-  { slug: 'white-label-fulfillment', name: 'Done-for-you fulfillment', icon: 'rocket', accent: '#0f9f93', short: 'You sell it, we build it under your brand, inside your client’s account.' },
+  { slug: 'white-label-fulfillment', name: 'Done-for-you fulfillment', icon: 'rocket', accent: '#0769b4', short: 'You sell it, we build it under your brand, inside your client’s account.' },
   { slug: 'dedicated-ghl-va', name: 'Dedicated GHL assistant', icon: 'user', accent: '#0284c7', short: 'A GoHighLevel-trained assistant working only your accounts, on your schedule.' },
-  { slug: 'white-label-support-desk', name: 'White label support desk', icon: 'question', accent: '#ff6b35', short: 'We handle your clients’ CRM, funnel and automation tickets in your name.' },
-  { slug: 'per-project-overflow', name: 'Per-project overflow', icon: 'layers', accent: '#6adfd3', short: 'One build, one fixed price, no retainer. For the month you sold too much.' },
-  { slug: 'white-label-ai-agents', name: 'White label AI agents', icon: 'mic', accent: '#2fc4b6', short: 'Custom AI voice and chat agents your agency resells as its own.' },
+  { slug: 'white-label-support-desk', name: 'White label support desk', icon: 'question', accent: '#0769b4', short: 'We handle your clients’ CRM, funnel and automation tickets in your name.' },
+  { slug: 'per-project-overflow', name: 'Per-project overflow', icon: 'layers', accent: '#6bb3ec', short: 'One build, one fixed price, no retainer. For the month you sold too much.' },
+  { slug: 'white-label-ai-agents', name: 'White label AI agents', icon: 'mic', accent: '#1d8fe1', short: 'Custom AI voice and chat agents your agency resells as its own.' },
 ];
 export const agencyUrl = (slug) => (slug ? `/for-agencies/${slug}/` : '/for-agencies/');

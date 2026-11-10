@@ -24,7 +24,7 @@ export default {
 <p>Zapier, Make (formerly Integromat) and n8n are the three automation platforms we’re asked about most. All three connect apps and automate workflows; they differ in who they’re built for, how they charge and how far you can push them. Pricing and features change often, so treat this as a framework and confirm current plans on each vendor’s site.</p>
 
 <h2>The short answer</h2>
-${callout('Quick recommendation', '<strong>Zapier</strong> for simple automations and non-technical teams. <strong>Make</strong> for complex visual workflows where cost per operation matters. <strong>n8n</strong> for high volume, AI agents, custom code or when data must stay on your infrastructure.', '#2fc4b6')}
+${callout('Quick recommendation', '<strong>Zapier</strong> for simple automations and non-technical teams. <strong>Make</strong> for complex visual workflows where cost per operation matters. <strong>n8n</strong> for high volume, AI agents, custom code or when data must stay on your infrastructure.', '#1d8fe1')}
 
 <h2>Side-by-side comparison</h2>
 ${table(

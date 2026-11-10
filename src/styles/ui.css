@@ -35,9 +35,9 @@
 .page-hero {
   @apply relative overflow-hidden pt-32 pb-16 text-secondary md:pt-40 md:pb-24;
   background:
-    radial-gradient(120% 80% at 10% 0%, rgba(47, 196, 182, 0.14) 0%, transparent 55%),
-    radial-gradient(90% 70% at 100% 20%, rgba(255, 107, 53, 0.08) 0%, transparent 60%),
-    linear-gradient(180deg, #f3faf9 0%, #ffffff 100%);
+    radial-gradient(120% 80% at 10% 0%, rgba(29, 143, 225, 0.14) 0%, transparent 55%),
+    radial-gradient(90% 70% at 100% 20%, rgba(7, 105, 180, 0.08) 0%, transparent 60%),
+    linear-gradient(180deg, #f3f8fd 0%, #ffffff 100%);
 }
 
 /* Standard vertical rhythm for every band */
@@ -131,14 +131,24 @@
 }
 
 .text-gradient-teal {
-  background: linear-gradient(105deg, #14b8a6 0%, #0f9f93 45%, #0d7f76 100%);
+  /* logo blues, same as .text-gradient-brand */
+  background: linear-gradient(105deg, #1d8fe1 0%, #0769b4 45%, #013e83 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-brand {
+  /* logo blues: #0769b4 to #013e83 */
+  background: linear-gradient(105deg, #1d8fe1 0%, #0769b4 45%, #013e83 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-gradient-warm {
-  background: linear-gradient(105deg, #ff8a4c 0%, #ff6b35 50%, #e84e1a 100%);
+  /* the site accent is now the logo blue, same as .text-gradient-brand */
+  background: linear-gradient(105deg, #1d8fe1 0%, #0769b4 45%, #013e83 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -214,7 +224,7 @@
 /* Gradient-border card: 1px teal-to-coral edge, white fill */
 .edge-card {
   @apply relative overflow-hidden rounded-2xl p-px transition duration-400;
-  background: linear-gradient(150deg, rgba(47, 196, 182, 0.55) 0%, rgba(12, 18, 32, 0.06) 40%, rgba(12, 18, 32, 0.06) 62%, rgba(255, 107, 53, 0.45) 100%);
+  background: linear-gradient(150deg, rgba(29, 143, 225, 0.55) 0%, rgba(12, 18, 32, 0.06) 40%, rgba(12, 18, 32, 0.06) 62%, rgba(7, 105, 180, 0.45) 100%);
   box-shadow: var(--shadow-2);
   transition-timing-function: var(--ease-out-expo);
 }
@@ -533,7 +543,7 @@
 .field-input:focus,
 .field-input-light:focus {
   @apply border-primary-500/60;
-  box-shadow: 0 0 0 4px rgba(15, 159, 147, 0.12);
+  box-shadow: 0 0 0 4px rgba(7, 105, 180, 0.12);
 }
 
 .field-error {
@@ -639,55 +649,45 @@
   @apply text-tagline-1 px-6 py-3.5;
 }
 
-.cta-coral {
-  /* dark label: white on coral-500 is only 2.8:1 */
-  @apply border-coral-500 bg-coral-500 text-secondary;
-  box-shadow: 0 10px 26px -10px rgba(255, 107, 53, 0.6);
+/* One button colour across the site: the logo blue. The older variant names
+   (coral, teal, ink) are kept as aliases so existing markup stays valid. */
+.cta-coral,
+.cta-teal,
+.cta-ink {
+  /* logo blue; white label is 5.7:1 */
+  @apply border-coral-500 bg-coral-500 text-white;
+  box-shadow: 0 10px 26px -10px rgba(7, 105, 180, 0.6);
 }
 
-.cta-coral:hover {
-  @apply -translate-y-0.5 border-coral-600 bg-coral-600;
-  box-shadow: 0 16px 36px -12px rgba(255, 107, 53, 0.7);
+.cta-coral:hover,
+.cta-teal:hover,
+.cta-ink:hover {
+  @apply -translate-y-0.5 border-coral-700 bg-coral-700;
+  box-shadow: 0 16px 36px -12px rgba(7, 105, 180, 0.7);
 }
 
-.cta-teal {
-  @apply border-primary-500 bg-primary-500 text-white;
-  box-shadow: 0 10px 26px -10px rgba(15, 159, 147, 0.55);
-}
-
-.cta-teal:hover {
-  @apply -translate-y-0.5 border-primary-600 bg-primary-600;
-  box-shadow: 0 16px 36px -12px rgba(15, 159, 147, 0.7);
-}
-
-/* Outline button on light surfaces */
+/* Secondary button on light surfaces: white with logo-blue text and border */
 .cta-ghost,
 .cta-outline {
-  @apply border-stroke-1 bg-white text-secondary shadow-1;
+  @apply border-coral-500/40 bg-white text-coral-700 shadow-1;
 }
 
 .cta-ghost:hover,
 .cta-outline:hover {
-  @apply -translate-y-0.5 border-secondary/25;
+  @apply -translate-y-0.5 border-coral-500 bg-coral-50;
   box-shadow: var(--shadow-2);
 }
 
-.cta-white {
-  @apply border-white bg-white text-secondary;
+/* Button on dark (navy) panels: white with logo-navy text */
+.cta-white,
+.cta-light {
+  @apply border-white bg-white text-coral-700;
   box-shadow: 0 10px 30px -12px rgba(12, 18, 32, 0.3);
 }
 
-.cta-white:hover {
-  @apply -translate-y-0.5 bg-coral-50;
-}
-
-.cta-ink {
-  @apply border-secondary bg-secondary text-white;
-  box-shadow: 0 10px 30px -12px rgba(12, 18, 32, 0.5);
-}
-
-.cta-ink:hover {
-  @apply -translate-y-0.5 border-ink-800 bg-ink-800;
+.cta-white:hover,
+.cta-light:hover {
+  @apply -translate-y-0.5 border-coral-50 bg-coral-50;
 }
 
 .cta[disabled],
@@ -931,7 +931,7 @@
 
 .range-input::-webkit-slider-thumb {
   @apply size-5 appearance-none rounded-full border-2 border-white bg-primary-500;
-  box-shadow: 0 0 0 4px rgba(15, 159, 147, 0.2);
+  box-shadow: 0 0 0 4px rgba(7, 105, 180, 0.2);
 }
 
 .range-input::-moz-range-thumb {
@@ -959,23 +959,85 @@
   background: linear-gradient(to right, var(--color-primary-500), var(--color-coral-400));
 }
 
-/* Footer link lists and the "Locations we serve" strip */
+/* Footer: light panel with a logo-blue accent line along the top */
+.site-footer {
+  @apply relative overflow-hidden border-t border-stroke-2 text-secondary;
+  background: #f7f9fc;
+}
+
+.site-footer::before {
+  content: '';
+  @apply absolute inset-x-0 top-0 h-1;
+  background: linear-gradient(90deg, #013e83 0%, #0769b4 50%, #1d8fe1 100%);
+}
+
+.footer-heading {
+  @apply text-tagline-3 mb-4 font-semibold tracking-[0.12em] text-secondary uppercase;
+}
+
 .footer-link {
-  @apply text-tagline-2 text-secondary/60 transition-colors hover:text-secondary;
+  /* py-0.5 keeps each link a comfortable touch target */
+  @apply text-tagline-2 inline-block py-0.5 text-secondary/70 transition-colors hover:text-primary-600;
 }
 
-.loc-strip {
-  @apply text-tagline-3 leading-relaxed text-secondary/70;
+.footer-link--icon {
+  @apply inline-flex items-center gap-2.5;
 }
 
-.loc-strip a {
-  /* padding lifts each link to a 24px+ touch target */
-  @apply inline-block py-1 transition-colors hover:text-secondary;
+.footer-link--icon svg {
+  @apply text-primary-600;
 }
 
-.loc-strip a + a::before {
-  content: '·';
-  @apply mx-1.5 text-secondary/20;
+.footer-social {
+  @apply flex size-10 items-center justify-center rounded-xl border border-stroke-2 bg-white text-secondary/75 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary-600/40 hover:text-primary-600;
+}
+
+.footer-locations {
+  @apply mt-14 rounded-2xl border border-stroke-2 bg-white;
+}
+
+.footer-locations summary {
+  @apply flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-tagline-2 font-semibold text-secondary md:px-6;
+}
+
+.footer-locations summary::-webkit-details-marker {
+  display: none;
+}
+
+.footer-locations summary svg {
+  @apply transition-transform duration-300;
+}
+
+.footer-locations[open] summary svg {
+  @apply rotate-180;
+}
+
+.footer-locations[open] {
+  @apply pb-6;
+}
+
+.footer-locations > :not(summary) {
+  @apply mx-5 md:mx-6;
+}
+
+.footer-locations__grid {
+  @apply grid grid-cols-2 gap-x-6 gap-y-6 border-t border-stroke-2 pt-6 sm:grid-cols-3 lg:grid-cols-4;
+}
+
+.footer-locations__group {
+  @apply text-tagline-3 mb-2 font-semibold tracking-[0.1em] text-secondary/80 uppercase;
+}
+
+.footer-locations__grid .footer-link {
+  @apply text-tagline-3 py-1;
+}
+
+.site-footer__bar {
+  @apply mt-10 flex flex-col items-start justify-between gap-4 border-t border-stroke-2 pt-6 text-tagline-3 text-secondary/70 sm:flex-row sm:items-center;
+}
+
+.site-footer__bar .footer-link {
+  @apply text-tagline-3;
 }
 
 /* Team / founder portraits */
@@ -1142,17 +1204,8 @@
   .animate-float-delayed,
   .animate-pulse-glow,
   .pulse-dot::after,
-  .mesh-gradient,
-  .hero-word {
+  .mesh-gradient {
     animation: none !important;
-  }
-
-  .hero-word {
-    opacity: 0;
-  }
-
-  .hero-word:first-child {
-    opacity: 1;
   }
 }
 
@@ -1304,7 +1357,7 @@
 }
 
 .chat-online {
-  @apply inline-block size-2 rounded-full bg-emerald-500;
+  @apply inline-block size-2 rounded-full bg-primary-400;
 }
 
 .chat-log {
@@ -1531,7 +1584,7 @@
 }
 
 .quiz-item input {
-  @apply mt-0.5 size-4 shrink-0 accent-[#ff6b35];
+  @apply mt-0.5 size-4 shrink-0 accent-[#0769b4];
 }
 
 .quiz-item:has(input:checked) {
@@ -1548,4 +1601,190 @@
 
 .template-text {
   @apply flex-1 overflow-x-auto rounded-xl border border-stroke-2 bg-background-1 p-4 font-sans text-tagline-3 leading-relaxed whitespace-pre-wrap text-secondary/75;
+}
+
+/* ---------------------------------------------------------
+   HOME HERO VISUAL: 3D Voxil mark, tool tiles and line art
+   --------------------------------------------------------- */
+.hero-visual {
+  @apply relative mx-auto aspect-square w-full;
+}
+
+.hero-visual__glow {
+  @apply pointer-events-none absolute inset-[14%] rounded-full blur-3xl;
+  background: radial-gradient(circle, rgba(7, 105, 180, 0.22), rgba(29, 143, 225, 0.12) 55%, transparent 72%);
+}
+
+/* The mark is tilted in 3D; its extrusion is drawn as stacked SVG layers */
+.hero-mark {
+  @apply absolute inset-[13%] flex items-center justify-center;
+  perspective: 900px;
+}
+
+.hero-mark__svg {
+  @apply h-full w-full;
+  transform: rotateY(-16deg) rotateX(10deg) rotateZ(-2deg);
+  filter: drop-shadow(0 30px 40px rgba(5, 52, 107, 0.28));
+}
+
+.hero-mark__shadow {
+  @apply pointer-events-none absolute bottom-[12%] left-1/2 h-[5%] w-[46%] -translate-x-1/2 rounded-[50%] blur-xl;
+  background: rgba(12, 18, 32, 0.18);
+}
+
+.hero-tile {
+  @apply absolute flex items-center justify-center rounded-2xl border border-stroke-2 bg-white;
+  width: var(--s);
+  height: var(--s);
+  box-shadow: 0 14px 30px -12px rgba(12, 18, 32, 0.25);
+}
+
+@media (max-width: 639px) {
+  .hero-tile {
+    width: calc(var(--s) * 0.78);
+    height: calc(var(--s) * 0.78);
+  }
+}
+
+.hero-tile svg {
+  width: 52%;
+  height: 52%;
+}
+
+.hero-chip {
+  @apply absolute inline-flex items-center gap-2 rounded-full border border-stroke-2 bg-white px-3.5 py-1.5 text-tagline-3 font-semibold whitespace-nowrap text-secondary;
+  box-shadow: 0 12px 26px -12px rgba(12, 18, 32, 0.25);
+}
+
+.hero-chip::before {
+  content: '';
+  @apply size-2 rounded-full;
+  background: var(--dot);
+}
+
+.hero-lines {
+  @apply pointer-events-none absolute bottom-0 left-0 h-[110px] w-full md:h-[160px];
+  fill: none;
+  stroke: rgba(7, 105, 180, 0.32);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hero-lines .hero-lines__b {
+  stroke: rgba(7, 105, 180, 0.28);
+}
+
+.hero-lines .hero-lines__c {
+  stroke: rgba(29, 143, 225, 0.3);
+}
+
+/* Inner-page heroes: smaller line art and a 3D mark in the top corner */
+.page-hero {
+  @apply pb-24 md:pb-32;
+}
+
+.page-hero .hero-lines {
+  @apply h-[70px] md:h-[110px];
+}
+
+/* Shown beside the content where the right side is free (posts, centred
+   heroes); hidden when the hero already has an answer card on the right. */
+.hero-corner-mark {
+  @apply pointer-events-none absolute top-1/2 right-[4%] mt-8 hidden size-[240px] -translate-y-1/2 xl:block 2xl:right-[8%] 2xl:size-[280px];
+  perspective: 800px;
+}
+
+.page-hero:has(.answer-card) .hero-corner-mark,
+.page-hero:has(.edge-card) .hero-corner-mark {
+  display: none;
+}
+
+.page-hero--compact .hero-lines {
+  display: none;
+}
+
+.hero-corner-mark__svg {
+  @apply h-full w-full;
+  transform: rotateY(-18deg) rotateX(10deg) rotateZ(-4deg);
+  filter: drop-shadow(0 20px 26px rgba(5, 52, 107, 0.22));
+}
+
+/* Home growth band: deep logo-blue panel with white headline stats */
+.growth-band {
+  @apply relative overflow-hidden rounded-3xl px-6 py-10 text-white sm:px-10 md:px-14 md:py-14;
+  background:
+    radial-gradient(70% 90% at 100% 0%, rgba(29, 143, 225, 0.45) 0%, transparent 60%),
+    linear-gradient(135deg, #013e83 0%, #052d63 100%);
+  box-shadow: 0 40px 80px -40px rgba(1, 62, 131, 0.6);
+}
+
+.growth-band__mark {
+  @apply pointer-events-none absolute -right-10 -bottom-16 size-[260px] opacity-15 md:size-[340px];
+}
+
+.growth-band__mark svg {
+  @apply h-full w-full;
+}
+
+.growth-band__stats {
+  @apply mt-10 grid grid-cols-2 gap-y-8 border-t border-white/15 pt-8 md:mt-12 md:grid-cols-4 md:pt-10;
+}
+
+.growth-band__stat {
+  @apply flex flex-col-reverse justify-end px-0 md:px-6 md:first:pl-0;
+}
+
+.growth-band__stat + .growth-band__stat {
+  @apply md:border-l md:border-white/15;
+}
+
+.growth-band__stat dd {
+  @apply text-heading-3 font-bold tracking-tight text-white md:text-heading-2;
+  font-variant-numeric: tabular-nums;
+}
+
+.growth-band__stat dt {
+  @apply text-tagline-2 mt-1 font-medium text-white/80;
+}
+
+
+/* Home team: equal cards with matching photo frames */
+.team-card {
+  @apply flex flex-col overflow-hidden rounded-3xl border border-stroke-2 bg-white transition duration-300 hover:-translate-y-1;
+  box-shadow: 0 24px 50px -30px rgba(12, 18, 32, 0.3);
+}
+
+/* Frame colour is the flat studio grey of Ahmad's photo (#989c9b), so both
+   portraits read as one shoot */
+.team-card__photo {
+  @apply relative aspect-[5/4] overflow-hidden bg-[#989c9b];
+}
+
+.team-card__photo img {
+  @apply h-full w-full object-cover object-top;
+}
+
+
+.team-card__body {
+  @apply flex flex-1 flex-col p-6 md:p-7;
+}
+
+.team-card__role {
+  @apply text-tagline-2 mt-1 font-semibold text-coral-700;
+}
+
+.team-values {
+  @apply grid gap-4 rounded-3xl border border-stroke-2 bg-white/80 p-5 sm:grid-cols-3 md:p-6;
+}
+
+.team-values li {
+  @apply flex items-start gap-3;
+}
+
+.team-values__icon {
+  @apply flex size-10 shrink-0 items-center justify-center rounded-xl bg-coral-50 text-coral-700;
+}
+
+.team-values__icon svg {
+  @apply size-5;
 }

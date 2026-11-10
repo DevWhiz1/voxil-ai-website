@@ -35,7 +35,7 @@ export default {
 </ul>
 
 <h2>Step 2: Check consent and contact rules</h2>
-${callout('Do this first', 'Only contact people you’re allowed to contact, through the channels they consented to. In the US, automated texts and AI-voice calls generally need prior express consent, and marketing messages need written consent. Remove anyone who opted out or is on applicable do-not-call lists. The UK, EU, Canada and Australia have their own rules.', '#ff6b35')}
+${callout('Do this first', 'Only contact people you’re allowed to contact, through the channels they consented to. In the US, automated texts and AI-voice calls generally need prior express consent, and marketing messages need written consent. Remove anyone who opted out or is on applicable do-not-call lists. The UK, EU, Canada and Australia have their own rules.', '#0769b4')}
 <p>Our ${link('/blog/tcpa-ai-calling-compliance/', 'TCPA guide')} explains the US rules in more detail. If consent is unclear for part of your list, email may be the only appropriate channel for those contacts.</p>
 
 <h2>Step 3: Segment the list</h2>

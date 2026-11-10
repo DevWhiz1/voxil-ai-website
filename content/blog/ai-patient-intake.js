@@ -49,7 +49,7 @@ ${table(
 <p>Uploaded insurance cards and referral letters can be read automatically with ${link('/blog/ai-document-processing-guide/', 'AI document processing')}, so staff only check the fields the AI is unsure about.</p>
 
 <h2>What should stay with your staff</h2>
-${callout('The safety line', 'AI collects information, books and routes. It never diagnoses, gives medical advice or decides whether symptoms are serious enough to wait. Your triage protocol decides which keywords and answers trigger an immediate transfer or alert.', '#ff7a3d')}
+${callout('The safety line', 'AI collects information, books and routes. It never diagnoses, gives medical advice or decides whether symptoms are serious enough to wait. Your triage protocol decides which keywords and answers trigger an immediate transfer or alert.', '#1d8fe1')}
 <ul>
   <li>Clinical questions and symptom assessment.</li>
   <li>Urgent or emergency calls, transferred immediately.</li>

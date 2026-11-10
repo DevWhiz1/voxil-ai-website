@@ -93,7 +93,7 @@ ${callout('How we price', 'Every Voxil AI build is a fixed price agreed before w
 
 <h2>How to calculate ROI</h2>
 <p>Voice agents pay back by recovering calls and leads you currently lose, and by freeing staff time.</p>
-${callout('ROI formula', '<strong>Monthly value ≈ (recovered calls × opportunity rate × close rate × average job value) + staff hours saved × hourly cost</strong><br/>Compare against monthly usage plus the build cost spread over 12 months.', '#ff7a3d')}
+${callout('ROI formula', '<strong>Monthly value ≈ (recovered calls × opportunity rate × close rate × average job value) + staff hours saved × hourly cost</strong><br/>Compare against monthly usage plus the build cost spread over 12 months.', '#1d8fe1')}
 <p>Our ${link('/resources/lead-loss-calculator/', 'Lead Loss Calculator')} estimates the first half of that formula in under a minute. For the broader method, see ${link('/blog/ai-automation-roi-small-business/', 'How to Calculate AI Automation ROI')}.</p>
 
 ${callout('Reselling voice AI?', `Agencies pricing AI receptionists for clients should read our ${link('/blog/white-label-ai-voice-agents-guide/', 'white label AI voice agents guide')}, which covers cost layers, packaging and margins.`)}

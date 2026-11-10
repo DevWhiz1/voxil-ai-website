@@ -34,7 +34,7 @@ ${table(
   ],
   'Business automation architecture with GoHighLevel and AI'
 )}
-${callout('One rule', 'Every system writes back to GoHighLevel. If an AI agent books a job or Make.com creates an invoice, the contact record shows it. One timeline per customer is what makes automation debuggable.', '#2fc4b6')}
+${callout('One rule', 'Every system writes back to GoHighLevel. If an AI agent books a job or Make.com creates an invoice, the contact record shows it. One timeline per customer is what makes automation debuggable.', '#1d8fe1')}
 
 <h2>Stage 1: Capture every lead</h2>
 <p>Connect every source into GoHighLevel: website forms, Facebook and Google lead forms, landing pages, phone calls, chat widgets and DMs. Tag the source on entry so you can measure cost per booked appointment by channel later.</p>

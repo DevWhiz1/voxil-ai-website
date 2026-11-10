@@ -57,7 +57,7 @@ ${table(
 <p>Reviews drive roofing leads more than almost anything else. When a job is marked complete, send a thank-you and a review request with one link, and a single reminder if it isn’t clicked.</p>
 
 <h2>7. Stay busy between storms</h2>
-${callout('Smoothing the cycle', 'Your past customers and old leads are your best source of work in quiet months: annual inspection reminders, gutter and maintenance offers, and check-ins with homeowners who got estimates but never decided.', '#0f9f93')}
+${callout('Smoothing the cycle', 'Your past customers and old leads are your best source of work in quiet months: annual inspection reminders, gutter and maintenance offers, and check-ins with homeowners who got estimates but never decided.', '#0769b4')}
 <p>A ${link('/blog/database-reactivation-campaign-guide/', 'database reactivation campaign')} can turn old estimates into booked inspections, as long as you have appropriate consent to contact them.</p>
 
 <h2>8. Integrate your roofing software</h2>

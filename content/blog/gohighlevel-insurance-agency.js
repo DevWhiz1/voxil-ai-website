@@ -32,7 +32,7 @@ export default {
   <li><strong>30 days:</strong> offer a quick review call; book directly into an agent’s calendar.</li>
   <li><strong>7 days:</strong> a final reminder with what to expect.</li>
 </ol>
-${callout('Why it matters', 'Clients who hear from their agent before renewal feel looked after. Clients who only hear about a price increase start shopping.', '#0f9f93')}
+${callout('Why it matters', 'Clients who hear from their agent before renewal feel looked after. Clients who only hear about a price increase start shopping.', '#0769b4')}
 
 <h2>Engine 3: Cross-sell</h2>
 <p>Tag policy types on each contact. Households with auto but not home or renters coverage receive a short, relevant message offering a bundle review. Life events captured in conversations, such as a new home or new driver, trigger timely offers.</p>

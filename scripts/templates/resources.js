@@ -1,3 +1,4 @@
+import { heroDecor } from '../lib/brand.js';
 import { RESOURCES, SITE, TEAM, resourceUrl } from '../../content/site.js';
 import { STATS, STAT_CATEGORIES } from '../../content/stats.js';
 import { sourcesIn, statTile } from '../lib/content-helpers.js';
@@ -28,8 +29,9 @@ export const crumbsFor = (name, slug) => [
 export const simpleHero = ({ crumbs, eyebrowText, accent, h1, lead }) => `
     <section class="page-hero">
       <span class="grid-field" aria-hidden="true"></span>
+      ${heroDecor()}
       <span class="orb -top-28 left-[12%] size-[400px] animate-drift" style="--orb: ${accent}; --orb-opacity: 0.28" aria-hidden="true"></span>
-      <span class="orb top-1/4 -right-20 size-[360px] animate-drift-slow" style="--orb: #ff6b35; --orb-opacity: 0.18" aria-hidden="true"></span>
+      <span class="orb top-1/4 -right-20 size-[360px] animate-drift-slow" style="--orb: #0769b4; --orb-opacity: 0.18" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${crumbsNav(crumbs)}
         <div class="mx-auto mt-8 max-w-3xl text-center">
@@ -51,13 +53,13 @@ export const renderResourcesHub = (posts) => {
   const title = 'Free AI Automation Tools & Resources | Voxil AI';
   const description = 'Free AI automation tools: Lead Loss and ROI calculators, AI readiness assessment, voice agent scripts, follow-up templates, GHL checklist and glossary.';
   const body = `
-    ${simpleHero({ crumbs, eyebrowText: 'Free resources', accent: '#2fc4b6', h1: 'Free tools to find your <span class="text-gradient-teal">biggest automation wins</span>', lead: 'Calculators, checklists and research we use with clients, free, no sign-up required.' })}
+    ${simpleHero({ crumbs, eyebrowText: 'Free resources', accent: '#1d8fe1', h1: 'Free tools to find your <span class="text-gradient-teal">biggest automation wins</span>', lead: 'Calculators, checklists and research we use with clients, free, no sign-up required.' })}
     <section class="section-soft section-pad">
       <div class="main-container relative z-10">
         <h2 class="text-heading-6 sm:text-heading-5 mb-6 font-semibold tracking-tight text-secondary">Free tools, templates and checklists</h2>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           ${RESOURCES.map((r) => linkCard({ href: resourceUrl(r.slug), title: r.name, desc: r.short, icon: r.icon, accent: r.accent, cta: 'Open', badge: r.slug === 'lead-loss-calculator' ? 'Most used' : NEW_RESOURCES.includes(r.slug) ? 'New' : undefined })).join('')}
-          ${linkCard({ href: '/book-meeting.html', title: 'Free AI Automation Audit', desc: 'A 30-minute call where we review your lead flow and tell you what to automate first. No obligation.', icon: 'calendar', accent: '#ff6b35', cta: 'Book a call' })}
+          ${linkCard({ href: '/book-meeting.html', title: 'Free AI Automation Audit', desc: 'A 30-minute call where we review your lead flow and tell you what to automate first. No obligation.', icon: 'calendar', accent: '#0769b4', cta: 'Book a call' })}
         </div>
       </div>
     </section>
@@ -146,7 +148,7 @@ export const renderCalculator = () => {
               <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="lostLeads">0</p><p class="text-tagline-3 mt-1 text-secondary/60">missed opportunities / mo</p></div>
               <div class="stat-card-ink"><p class="stat-num text-heading-5 text-secondary" data-result="lostCustomers">0</p><p class="text-tagline-3 mt-1 text-secondary/60">lost customers / mo</p></div>
             </div>
-            <div class="glass-card" style="--accent: #ff7a3d">
+            <div class="glass-card" style="--accent: #1d8fe1">
               <p class="text-tagline-2 font-semibold text-secondary">Want to recover it?</p>
               <p class="text-tagline-3 mt-1 text-secondary/60">We’ll map the fastest fix, usually AI answering, missed-call text-back or instant lead follow-up, on a free 30-minute call.</p>
               <a href="/book-meeting.html" class="cta cta-md cta-coral mt-4 w-full">Book a free strategy call${arrow()}</a>
@@ -160,7 +162,7 @@ export const renderCalculator = () => {
     <section class="section-base section-pad section-seam">
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Why it matters', title: 'Speed and coverage <span class="text-gradient-warm">decide who wins the job</span>', lead: 'Research on lead response shows how steeply the odds fall with delay.' })}
-        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">${['hbr-7x', 'lrm-100x', 'locals-62', 'hbr-23'].map((id) => statTile(id, '#ff7a3d')).join('')}</div>
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">${['hbr-7x', 'lrm-100x', 'locals-62', 'hbr-23'].map((id) => statTile(id, '#1d8fe1')).join('')}</div>
         <div data-reveal class="mt-8 flex flex-wrap justify-center gap-3">
           <a href="/services/ai-phone-answering/" class="chip-link">${icon('phone', 'size-4 text-primary-600')}<span>AI Phone Answering</span></a>
           <a href="/services/ai-follow-up-system/" class="chip-link">${icon('refresh', 'size-4 text-primary-600')}<span>AI Follow-Up System</span></a>
@@ -289,7 +291,7 @@ export const renderStatsHub = () => {
             ['/blog/missed-call-statistics/', 'Missed call statistics', 'phone'],
             ['/blog/ai-small-business-statistics/', 'AI small business statistics', 'building'],
           ]
-            .map(([href, t, ic]) => linkCard({ href, title: t, desc: 'Sourced figures with context on what they mean for your business.', icon: ic, accent: '#2fc4b6', cta: 'Read' }))
+            .map(([href, t, ic]) => linkCard({ href, title: t, desc: 'Sourced figures with context on what they mean for your business.', icon: ic, accent: '#1d8fe1', cta: 'Read' }))
             .join('')}
         </div>
       </div>
@@ -410,9 +412,9 @@ export const renderMediaKit = () => {
   const title = 'Voxil AI Media Kit: Logos, Colors & Boilerplate';
   const description = 'Voxil AI media kit for press and partners: company boilerplate, logo files, brand colors, typography and press contact.';
   const colors = [
-    ['Teal 500', '#0f9f93'],
-    ['Teal 400', '#2fc4b6'],
-    ['Coral 500', '#ff6b35'],
+    ['Teal 500', '#0769b4'],
+    ['Teal 400', '#1d8fe1'],
+    ['Coral 500', '#0769b4'],
     ['Sky 400', '#38bdf8'],
     ['Ink 950', '#05080f'],
     ['Ink 850', '#0c1220'],

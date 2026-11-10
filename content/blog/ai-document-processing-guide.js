@@ -43,7 +43,7 @@ ${table(
   ],
   'Template OCR vs AI document processing'
 )}
-${callout('The key idea', 'Accuracy is managed, not assumed. Every extraction gets a confidence level and passes through validation rules, and only clean, confident results go straight into your systems.', '#ff7a3d')}
+${callout('The key idea', 'Accuracy is managed, not assumed. Every extraction gets a confidence level and passes through validation rules, and only clean, confident results go straight into your systems.', '#1d8fe1')}
 
 <h2>Good first use cases</h2>
 <ul>
@@ -57,7 +57,7 @@ ${callout('The key idea', 'Accuracy is managed, not assumed. Every extraction ge
 <h2>What results to expect</h2>
 <p>The gains come from removing retyping and the errors that come with it, not from replacing your accounts or admin team. They spend their time on exceptions and judgement calls instead of data entry. Research supports the size of the opportunity: McKinsey estimates that current generative AI and related technologies could automate activities that take up 60-70% of employees’ time ${cite('automation-60-70')}.</p>
 <p>The research also warns about how projects fail. An MIT study found 95% of organisations saw no measurable P&L return from their generative-AI pilots, with most value coming from focused, integrated deployments ${cite('mit-95')}. Document processing is a good fit precisely because it is narrow, measurable and connected straight into existing systems.</p>
-${statGrid(['automation-60-70', 'mit-95'], '#ff7a3d')}
+${statGrid(['automation-60-70', 'mit-95'], '#1d8fe1')}
 
 <h2>How to roll it out safely</h2>
 <ol>

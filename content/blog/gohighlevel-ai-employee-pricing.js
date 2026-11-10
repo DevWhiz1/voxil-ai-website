@@ -23,7 +23,7 @@ export default {
   body: `
 <p>"AI Employee" is HighLevel’s name for the bundle of AI tools inside GoHighLevel: the chat bot that replies to texts and DMs, the voice agent that answers calls, AI review replies, content generation and the in-app assistants. The pricing has changed several times, and most write-ups are already out of date. This guide uses <a href="${GHL_PRICING}" target="_blank" rel="noopener">HighLevel’s own AI pricing article</a> as of 29 October 2026, and adds the maths you need to pick a plan.</p>
 
-${callout('Prices change often', 'HighLevel updates AI pricing regularly. Treat the figures below as a snapshot and check the AI Suite billing page in your agency account before you quote clients.', '#ff7a3d')}
+${callout('Prices change often', 'HighLevel updates AI pricing regularly. Treat the figures below as a snapshot and check the AI Suite billing page in your agency account before you quote clients.', '#1d8fe1')}
 
 <h2>What the AI Employee includes</h2>
 <ul>

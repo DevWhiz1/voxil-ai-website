@@ -49,7 +49,7 @@ ${table(
   ],
   'AI voice calling vs human SDRs'
 )}
-${callout('Our view', 'AI is best at the first conversation: fast, consistent qualification and booking. Humans are best at the conversations that close. The highest-performing teams use both.', '#ff7a3d')}
+${callout('Our view', 'AI is best at the first conversation: fast, consistent qualification and booking. Humans are best at the conversations that close. The highest-performing teams use both.', '#1d8fe1')}
 
 <h2>What to look for in a platform</h2>
 <ul>

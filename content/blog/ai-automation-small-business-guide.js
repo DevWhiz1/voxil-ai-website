@@ -73,7 +73,7 @@ ${table(
 <p>Expect three kinds of cost: software subscriptions, usage (messages, call minutes, AI tokens) and setup, either your time or a partner’s fee. Compare them with the value of recovered leads and saved hours using our ${link('/resources/ai-roi-calculator/', 'ROI calculator')}. Start with projects that pay back within weeks, then reinvest.</p>
 
 <h2>Common mistakes</h2>
-${callout('Why many AI projects stall', 'MIT’s 2025 research reported that 95% of organizations studied saw no measurable P&L return from their generative-AI pilots; value came from focused, integrated deployments. Small businesses avoid that trap by tying every project to a specific workflow and metric.', '#6adfd3')}
+${callout('Why many AI projects stall', 'MIT’s 2025 research reported that 95% of organizations studied saw no measurable P&L return from their generative-AI pilots; value came from focused, integrated deployments. Small businesses avoid that trap by tying every project to a specific workflow and metric.', '#6bb3ec')}
 <p>That finding ${cite('mit-95')} matches what we see. The most common mistakes:</p>
 <ul>
   <li>Buying a tool before defining the problem it should solve.</li>

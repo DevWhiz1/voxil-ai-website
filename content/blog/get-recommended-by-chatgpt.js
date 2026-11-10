@@ -71,7 +71,7 @@ ${table(
   <li>Show "last updated" dates on content that changes.</li>
 </ul>
 
-${callout('Be wary of guarantees', 'Anyone promising guaranteed ChatGPT recommendations is overselling. AI answers vary by user, location, phrasing and time. Focus on the fundamentals above, they compound across Google, AI Overviews and assistants alike.', '#ff7a3d')}
+${callout('Be wary of guarantees', 'Anyone promising guaranteed ChatGPT recommendations is overselling. AI answers vary by user, location, phrasing and time. Focus on the fundamentals above, they compound across Google, AI Overviews and assistants alike.', '#1d8fe1')}
 
 <h2>7. Measure what you can</h2>
 <p>Track referral traffic from AI assistants in your analytics, monitor branded search, and periodically ask the major assistants the questions your customers ask, noting whether and how you appear. Combine this with classic SEO metrics in Search Console.</p>

@@ -46,12 +46,12 @@ ${table(
 )}
 
 <h2>Why instant replies matter</h2>
-${statGrid(['zd-24-7-74', 'hbr-7x', 'meta-threads-1b', 'locals-62'], '#ff7a3d')}
+${statGrid(['zd-24-7-74', 'hbr-7x', 'meta-threads-1b', 'locals-62'], '#1d8fe1')}
 <p>Beauty clients book where they already are: Meta reports more than a billion active conversation threads with business accounts every day across its messaging apps ${cite('meta-threads-1b')}. And they expect a quick answer, since 74% of consumers now expect 24/7 service because of AI ${cite('zd-24-7-74')}. A lead contacted within an hour is far more likely to convert than one left waiting ${cite('hbr-7x')}.</p>
 
 <h2>Instagram DMs: the biggest opportunity</h2>
 <p>For many artists, Instagram is the main booking channel. An AI assistant can reply to DMs and comment keywords ("PRICE", "BOOK"), ask which service the client wants, share available times and book them, all inside the conversation. Our ${link('/blog/instagram-dm-automation-gohighlevel/', 'Instagram DM automation guide')} shows how this works with GoHighLevel.</p>
-${callout('Sound like you', 'Train the assistant on your real replies, service menu and policies. Clients shouldn’t feel a jump in tone between the AI and you. And tell them it’s an assistant: nearly three in four consumers want to know when they’re talking to AI.', '#ff7a3d')}
+${callout('Sound like you', 'Train the assistant on your real replies, service menu and policies. Clients shouldn’t feel a jump in tone between the AI and you. And tell them it’s an assistant: nearly three in four consumers want to know when they’re talking to AI.', '#1d8fe1')}
 
 <h2>Cut no-shows with deposits and reminders</h2>
 <ol>

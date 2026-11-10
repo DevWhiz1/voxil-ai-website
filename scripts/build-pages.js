@@ -5,6 +5,7 @@
 // Output folders (services/, locations/, …) are fully owned by this script and
 // are wiped on each run, edit content/, never the generated HTML.
 import fs from 'node:fs';
+import { brandMark, brandMarkFlat, heroDecor, heroLines } from './lib/brand.js';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -20,7 +21,7 @@ import { renderAgencyHub, renderAgencyModel } from './templates/agencies.js';
 import { renderCaseStudiesHub, renderCaseStudy } from './templates/case-studies.js';
 import { renderBlogHub, renderPost } from './templates/blog.js';
 import { renderIndustriesHub, renderLocationsHub, renderServicesHub } from './templates/hubs.js';
-import { footerLinks, footerLocations, homeExplore, navDesktop, navMobile } from './templates/nav.js';
+import { footerLinks, footerLocations } from './templates/nav.js';
 import { renderCalculator, renderChecklist, renderMediaKit, renderResourcesHub, renderStatsHub } from './templates/resources.js';
 import { renderIndustry } from './templates/industry.js';
 import { renderAutomationPicker, renderChatbotCostCalculator, renderPlatformPicker, renderPromptGenerator, renderSavingsCalculator, renderSmsCounter, renderSpeedScorecard, renderVoiceCostCalculator } from './templates/resources-tools.js';
@@ -133,15 +134,15 @@ write('/resources/automation-platform-picker/', renderAutomationPicker());
 write('/resources/speed-to-lead-scorecard/', renderSpeedScorecard());
 
 // ---------------------------------------------------------------------------
-// Navigation partials
+// Shared partials
 const partialDir = path.join(ROOT, 'src/components/shared/generated');
 fs.mkdirSync(partialDir, { recursive: true });
-fs.writeFileSync(path.join(partialDir, 'nav-desktop.htm'), navDesktop(posts));
-fs.writeFileSync(path.join(partialDir, 'nav-mobile.htm'), navMobile(posts));
 fs.writeFileSync(path.join(partialDir, 'footer-links.htm'), footerLinks());
 fs.writeFileSync(path.join(partialDir, 'footer-locations.htm'), footerLocations());
-const featuredPosts = posts.filter((p) => p.featured).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 2);
-fs.writeFileSync(path.join(partialDir, 'home-explore.htm'), homeExplore(featuredPosts));
+fs.writeFileSync(path.join(partialDir, 'brand-mark.htm'), brandMark());
+fs.writeFileSync(path.join(partialDir, 'brand-mark-flat.htm'), brandMarkFlat());
+fs.writeFileSync(path.join(partialDir, 'hero-lines.htm'), heroLines());
+fs.writeFileSync(path.join(partialDir, 'hero-decor.htm'), heroDecor());
 
 // ---------------------------------------------------------------------------
 // llms.txt, a plain-text map of the site for AI assistants and crawlers.

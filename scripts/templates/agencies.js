@@ -27,11 +27,11 @@ const fitBlock = (fit, notFit, title = 'Who this fits, <span class="text-gradien
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Fit check', title, lead })}
         <div class="grid gap-5 md:grid-cols-2">
-          <div data-reveal class="glass-card glass-card-topline" style="--accent: #0f9f93">
+          <div data-reveal class="glass-card glass-card-topline" style="--accent: #0769b4">
             <p class="text-tagline-3 font-semibold tracking-[0.14em] text-primary-700 uppercase">A good fit if…</p>
-            <div class="mt-5">${checkList(fit, '#0f9f93')}</div>
+            <div class="mt-5">${checkList(fit, '#0769b4')}</div>
           </div>
-          <div data-reveal class="glass-card glass-card-topline" style="--accent: #ff6b35">
+          <div data-reveal class="glass-card glass-card-topline" style="--accent: #0769b4">
             <p class="text-tagline-3 font-semibold tracking-[0.14em] text-coral-700 uppercase">Not a fit if…</p>
             <ul class="mt-5 space-y-3">
               ${notFit.map((n) => `<li class="flex gap-3 text-tagline-1 text-secondary/75"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-coral-50 text-coral-700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3" aria-hidden="true"><path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" /></svg></span>${n}</li>`).join('')}
@@ -78,7 +78,7 @@ export const renderAgencyHub = (c) => {
   ];
 
   const body = [
-    hero({ crumbs, eyebrowText: 'For Agencies', accent: '#0f9f93', h1: c.h1, lead: c.lead, answer: c.answer, answerLabel: 'Partner snapshot', facts: c.facts, pills: c.pills, primary: 'Book a free partner call', secondary: { label: 'See the partner models', href: '#models' } }),
+    hero({ crumbs, eyebrowText: 'For Agencies', accent: '#0769b4', h1: c.h1, lead: c.lead, answer: c.answer, answerLabel: 'Partner snapshot', facts: c.facts, pills: c.pills, primary: 'Book a free partner call', secondary: { label: 'See the partner models', href: '#models' } }),
 
     `
     <section class="section-soft section-pad" id="models">
@@ -91,9 +91,9 @@ export const renderAgencyHub = (c) => {
             return linkCard({ href: agencyUrl(s), title: m.name, desc: m.short, icon: m.icon, accent: m.accent, cta: 'See how it works' });
           }).join('')}
         </div>
-        <div data-reveal class="mt-5 flex flex-col items-start justify-between gap-4 rounded-2xl border border-primary-500/25 p-6 sm:flex-row sm:items-center md:p-7" style="background: linear-gradient(150deg, #ecfdfb 0%, #ffffff 60%, #fff4ef 100%)">
+        <div data-reveal class="mt-5 flex flex-col items-start justify-between gap-4 rounded-2xl border border-primary-500/25 p-6 sm:flex-row sm:items-center md:p-7" style="background: linear-gradient(150deg, #eef6fd 0%, #ffffff 60%, #eef6fd 100%)">
           <div class="flex items-center gap-4">
-            <span class="icon-tile" style="--accent: #2fc4b6">${icon('mic')}</span>
+            <span class="icon-tile" style="--accent: #1d8fe1">${icon('mic')}</span>
             <div>
               <p class="text-heading-6 font-semibold text-secondary">Sell AI voice agents and chatbots as your own</p>
               <p class="text-tagline-2 mt-1 text-secondary/65">Custom Vapi and Retell agents connected to your clients’ GoHighLevel accounts.</p>
@@ -135,7 +135,7 @@ export const renderAgencyHub = (c) => {
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Scope', title: 'What we take <span class="text-gradient-teal">off your plate</span>', lead: 'The work agencies hand us most, all delivered under your brand.' })}
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          ${c.scope.map((s, i) => linkCard({ href: s.href, title: s.title, desc: s.desc, icon: s.icon, accent: ['#0f9f93', '#2fc4b6', '#ff6b35', '#0284c7', '#6adfd3', '#0f9f93'][i], cta: 'See the service' })).join('')}
+          ${c.scope.map((s, i) => linkCard({ href: s.href, title: s.title, desc: s.desc, icon: s.icon, accent: ['#0769b4', '#1d8fe1', '#0769b4', '#0284c7', '#6bb3ec', '#0769b4'][i], cta: 'See the service' })).join('')}
         </div>
       </div>
     </section>`,
@@ -145,7 +145,7 @@ export const renderAgencyHub = (c) => {
       <span class="grid-field" aria-hidden="true"></span>
       <div class="main-container relative z-10">
         ${sectionHead({ eyebrowText: 'Getting started', title: 'How a partnership <span class="text-gradient-warm">starts</span>', lead: 'Low risk by design: judge us on one real project first.', center: true })}
-        ${stepsBlock({ steps: c.steps, accent: '#0f9f93' })}
+        ${stepsBlock({ steps: c.steps, accent: '#0769b4' })}
       </div>
     </section>`,
 

@@ -49,7 +49,7 @@ ${table(
 )}
 
 <h2>Ethics and confidentiality</h2>
-${callout('Guardrails every firm should set', 'The AI must not give legal advice, predict outcomes or quote fees beyond what you approve. It should tell callers it is an AI assistant, that the call does not create an attorney-client relationship, and avoid collecting detailed confidential facts until your conflict check is cleared.', '#ff7a3d')}
+${callout('Guardrails every firm should set', 'The AI must not give legal advice, predict outcomes or quote fees beyond what you approve. It should tell callers it is an AI assistant, that the call does not create an attorney-client relationship, and avoid collecting detailed confidential facts until your conflict check is cleared.', '#1d8fe1')}
 <ul>
   <li><strong>Supervision:</strong> treat the AI like non-lawyer staff. An attorney should approve its scripts and review its output.</li>
   <li><strong>Confidentiality:</strong> choose vendors with business terms that exclude training on your data, encrypt recordings and transcripts, and restrict access.</li>

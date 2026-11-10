@@ -44,7 +44,7 @@ ${table(
   'SMB AI use cases'
 )}
 
-${statGrid(['locals-62', 'litmus-36'], '#ff7a3d')}
+${statGrid(['locals-62', 'litmus-36'], '#1d8fe1')}
 
 ${callout('The small-business advantage', 'Small businesses can deploy customer-facing AI in weeks, without committees. The constraint is usually time to set it up properly, which is why a narrow, well-built first project beats a dozen half-configured tools.')}
 

@@ -21,7 +21,7 @@ export default {
   related: ['ai-booking-bots-appointment-rates', 'what-is-an-ai-receptionist', 'gohighlevel-missed-call-text-back'],
   body: `
 <p>Dental and medical practices depend on a steady flow of new patients and on existing patients returning on schedule. Both suffer when the front desk is overloaded: calls go to voicemail, recall lists go untouched and no-shows leave gaps in the schedule. GoHighLevel can automate much of that work, as long as patient data is handled carefully.</p>
-${callout('Privacy first', 'This guide covers marketing and scheduling automation. If you’re a US practice handling protected health information (PHI), use a HIPAA-compliant configuration with a signed BAA, keep clinical details out of SMS and email, and get advice from your compliance officer. This is not legal advice.', '#0f9f93')}
+${callout('Privacy first', 'This guide covers marketing and scheduling automation. If you’re a US practice handling protected health information (PHI), use a HIPAA-compliant configuration with a signed BAA, keep clinical details out of SMS and email, and get advice from your compliance officer. This is not legal advice.', '#0769b4')}
 
 <h2>1. Never miss a new-patient call</h2>
 <p>New patients often call during your busiest hours. A widely cited study found 62% of calls to small businesses went unanswered ${cite('locals-62')}. Combine two systems: ${link('/blog/gohighlevel-missed-call-text-back/', 'missed-call text-back')} so every missed caller gets an immediate text, and an ${link('/services/ai-receptionist/', 'AI receptionist')} that answers overflow and after-hours calls, books new-patient visits and routes urgent calls.</p>

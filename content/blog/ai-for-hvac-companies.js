@@ -67,7 +67,7 @@ ${table(
 <p>Send “technician on the way” texts when a job is dispatched, and a review request when it’s completed. Both reduce “where is the tech?” calls and build the reviews that drive future leads.</p>
 
 <h2>Integrating with your field-service software</h2>
-${callout('Keep your system of record', 'ServiceTitan, Housecall Pro, Jobber and FieldEdge stay in charge of dispatch, jobs and invoicing. AI answering and CRM automation connect to them through native integrations or Make.com, so bookings and job statuses stay in sync.', '#0f9f93')}
+${callout('Keep your system of record', 'ServiceTitan, Housecall Pro, Jobber and FieldEdge stay in charge of dispatch, jobs and invoicing. AI answering and CRM automation connect to them through native integrations or Make.com, so bookings and job statuses stay in sync.', '#0769b4')}
 
 <h2>Where to start</h2>
 <p>If you only do two things this season, add AI answering with emergency escalation and an instant response to web leads. Then add estimate follow-up and maintenance agreement automation. Estimate the value with our ${link('/resources/lead-loss-calculator/', 'Lead Loss Calculator')}, see our ${link('/industries/hvac/', 'AI for HVAC companies page')} or try the ${link('/portfolio/hvac-funnel/', 'HVAC demo funnel')}.</p>

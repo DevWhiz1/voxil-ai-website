@@ -50,7 +50,8 @@ const initCurrentLink = () => {
 
   document.querySelectorAll('[data-nav-link]').forEach((link) => {
     const target = normalise(new URL(link.getAttribute('href') || '/', window.location.origin).pathname);
-    if (target !== '/' && (current === target || current.startsWith(target))) {
+    // Home is current only on the home page; other links also cover their section.
+    if (target === '/' ? current === '/' : current === target || current.startsWith(target)) {
       link.classList.add('is-current');
       if (current === target) link.setAttribute('aria-current', 'page');
     }

@@ -25,13 +25,13 @@ export default {
 
 <h2>The Harvard Business Review study</h2>
 <p>In 2011, HBR published an audit of how quickly companies responded to web leads, alongside data on how response time affected qualification.</p>
-${statGrid(['hbr-7x', 'hbr-60x', 'hbr-42h', 'hbr-23'], '#ff7a3d')}
+${statGrid(['hbr-7x', 'hbr-60x', 'hbr-42h', 'hbr-23'], '#1d8fe1')}
 <p>More than a decade later, the specifics have aged but the pattern hasn’t: many businesses still respond in hours, some never respond, and the ones who respond fast win disproportionately.</p>
 
 <h2>The Lead Response Management study</h2>
 <p>An earlier study by Dr. James Oldroyd with InsideSales analyzed call attempts at a much finer grain, minutes rather than hours.</p>
 ${statGrid(['lrm-100x', 'lrm-21x', 'velocify-391'])}
-${callout('What it means', 'The steepest drop happens in the first few minutes. Responding in 5 minutes isn’t "a bit better" than 30, it’s a different outcome. For most teams, that level of speed is only consistently achievable with automation.', '#ff7a3d')}
+${callout('What it means', 'The steepest drop happens in the first few minutes. Responding in 5 minutes isn’t "a bit better" than 30, it’s a different outcome. For most teams, that level of speed is only consistently achievable with automation.', '#1d8fe1')}
 
 <h2>Why human teams struggle with speed-to-lead</h2>
 ${statGrid(['sf-28'], '#38bdf8')}

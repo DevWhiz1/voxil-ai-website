@@ -22,7 +22,7 @@ export default {
   body: `
 <p>For many law firms, especially personal injury, family, criminal defense and immigration practices, the first conversation decides whether a prospective client hires you. People in stressful situations call several firms and choose the one that answers, listens and makes the next step clear. GoHighLevel, combined with an AI intake agent, helps firms respond instantly and consistently while attorneys focus on legal work.</p>
 
-${callout('Professional responsibility', 'This guide covers marketing and intake operations. Follow your jurisdiction’s rules of professional conduct on advertising, solicitation, confidentiality and supervision of non-lawyer assistance, including AI tools. Intake systems should never give legal advice.', '#0f9f93')}
+${callout('Professional responsibility', 'This guide covers marketing and intake operations. Follow your jurisdiction’s rules of professional conduct on advertising, solicitation, confidentiality and supervision of non-lawyer assistance, including AI tools. Intake systems should never give legal advice.', '#0769b4')}
 
 <h2>Why intake speed matters for law firms</h2>
 <p>Research on lead response across industries is consistent: the longer you wait, the less likely you are to reach and qualify the prospect. Firms that contacted leads within an hour were far more likely to qualify them than those waiting a day or more ${cite('hbr-60x')}. In legal services, where prospects often contact several firms, slow intake usually means the matter goes elsewhere.</p>

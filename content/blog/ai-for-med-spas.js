@@ -33,7 +33,7 @@ export default {
 </ul>
 <p>We cover the setup in ${link('/blog/instagram-dm-automation-gohighlevel/', 'Instagram DM automation with GoHighLevel')}.</p>
 
-${callout('Medical boundaries', 'The assistant should never assess suitability, recommend treatments for a medical condition or discuss individual health details. Those questions belong in a consultation with a licensed provider, and the assistant should say so kindly.', '#0f9f93')}
+${callout('Medical boundaries', 'The assistant should never assess suitability, recommend treatments for a medical condition or discuss individual health details. Those questions belong in a consultation with a licensed provider, and the assistant should say so kindly.', '#0769b4')}
 
 <h2>2. Consultation booking with deposits</h2>
 <p>High-value appointments justify a small deposit or card-on-file policy to reduce no-shows. Automate it: when a consultation or treatment is booked, send a secure payment link for the deposit and your cancellation policy. Unpaid deposits after a set time trigger a reminder, then release the slot.</p>
