@@ -1646,20 +1646,12 @@
   }
 }
 
-.hero-tile svg {
-  width: 52%;
-  height: 52%;
-}
-
-.hero-chip {
-  @apply absolute inline-flex items-center gap-2 rounded-full border border-stroke-2 bg-white px-3.5 py-1.5 text-tagline-3 font-semibold whitespace-nowrap text-secondary;
-  box-shadow: 0 12px 26px -12px rgba(12, 18, 32, 0.25);
-}
-
-.hero-chip::before {
-  content: '';
-  @apply size-2 rounded-full;
-  background: var(--dot);
+/* --art lets logos with built-in padding fill the tile like the others */
+.hero-tile svg,
+.hero-tile img {
+  width: var(--art, 52%);
+  height: var(--art, 52%);
+  object-fit: contain;
 }
 
 .hero-lines {
