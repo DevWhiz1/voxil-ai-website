@@ -458,5 +458,12 @@ export const renderMediaKit = () => {
         </div>
       </div>
     </section>`;
-  return page({ path, title, description, body, schema: [webPageSchema({ path, title, description }), breadcrumbSchema(crumbs)] });
+  return page({
+    path,
+    title,
+    description,
+    body,
+    robots: 'noindex, follow',
+    schema: [webPageSchema({ path, title, description }), breadcrumbSchema(crumbs)],
+  });
 };

@@ -25,13 +25,13 @@ const jsonLd = (data) =>
 // ---------------------------------------------------------------------------
 // Page shell
 // ---------------------------------------------------------------------------
-export const page = ({ path, title, description, body, schema = [], sharedCta = true }) => `<!doctype html>
+export const page = ({ path, title, description, body, schema = [], sharedCta = true, robots }) => `<!doctype html>
 <html lang="en">
   <head>
     <Component src="src/components/shared/head-links.htm" />
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}" />
-    <link rel="canonical" href="${SITE.url}${path}" />
+    ${robots ? `<meta name="robots" content="${esc(robots)}" />\n    ` : ''}<link rel="canonical" href="${SITE.url}${path}" />
     ${schema.map(jsonLd).join('\n    ')}
   </head>
   <body class="overflow-x-hidden bg-white">

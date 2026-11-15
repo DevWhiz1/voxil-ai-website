@@ -25,12 +25,28 @@ const sharedFaqs = (l) => [
   },
 ];
 
-// Location pages kept as primary (per the Nov 2026 Search Console review); their
-// opening paragraph says plainly that we work remotely, so no page implies a
-// local office.
-const PRIMARY_LOCATIONS = ['pakistan', 'germany', 'chicago', 'los-angeles', 'netherlands', 'new-york', 'san-jose', 'australia', 'san-diego', 'nashville', 'san-francisco', 'dallas', 'dubai-uae', 'ireland', 'united-kingdom'];
+// Indexable location pages only. Secondary city pages stay live for users who
+// land on them, but are noindex so they do not look like a thin doorway set.
+export const PRIMARY_LOCATIONS = [
+  'pakistan',
+  'germany',
+  'chicago',
+  'los-angeles',
+  'netherlands',
+  'new-york',
+  'san-jose',
+  'australia',
+  'san-diego',
+  'nashville',
+  'san-francisco',
+  'dallas',
+  'dubai-uae',
+  'ireland',
+  'united-kingdom',
+];
 
 export const renderLocation = (slug, l) => {
+  const isPrimary = PRIMARY_LOCATIONS.includes(slug);
   const meta = ALL_LOCATIONS.find((x) => x.slug === slug);
   const path = locationUrl(slug);
   const crumbs = [
@@ -52,7 +68,7 @@ export const renderLocation = (slug, l) => {
       eyebrowText: `${meta.name} · ${group.title}`,
       accent,
       h1: l.h1 ?? `AI automation agency serving <span class="text-gradient-teal">${place}</span>`,
-      lead: PRIMARY_LOCATIONS.includes(slug) ? `${l.lead} We work with clients here remotely.` : l.lead,
+      lead: isPrimary ? `${l.lead} We work with clients here remotely.` : l.lead,
       answer: l.answer,
       answerLabel: 'At a glance',
       facts: [
@@ -174,6 +190,7 @@ export const renderLocation = (slug, l) => {
     title,
     description: l.description,
     body,
+    robots: isPrimary ? undefined : 'noindex, follow',
     schema: [webPageSchema({ path, title, description: l.description }), serviceSchema, breadcrumbSchema(crumbs), faqSchema(faqs)],
   });
 };

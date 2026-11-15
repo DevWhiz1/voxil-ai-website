@@ -106,12 +106,12 @@ export const renderLocationsHub = () => {
   const title = 'AI Automation Agency Locations: US, UK, EU & AU | Voxil AI';
   const description = `Voxil AI serves ${all.length} markets across the US, UK, Europe, Canada, Australia, New Zealand, the UAE and Pakistan, with local languages and compliance built in.`;
   const faqs = [
-    { q: 'Do you work with businesses outside these locations?', a: 'Yes. We’re remote-first and work with businesses anywhere; these pages cover markets where we have the most clients and local context.' },
+    { q: 'Do you work with businesses outside these locations?', a: 'Yes. We’re remote-first and work with businesses anywhere. Primary market pages go deeper on local industries, languages and compliance; we still deliver the same way for clients outside that list.' },
     { q: 'Do you have local offices?', a: 'No. Voxil AI is remote-first. We schedule working sessions in your time zone and deliver through video calls, shared workspaces and async updates.' },
     { q: 'Can your AI agents speak local languages?', a: 'Yes, including Spanish, French, Arabic, Urdu and many more, with local voices and spellings where relevant.' },
   ];
   const body = `
-    ${hubHero({ crumbs, eyebrowText: `${all.length} markets`, h1: 'AI automation for businesses <span class="text-gradient-teal">wherever you are</span>', lead: 'Remote-first, working in your time zone, with local context on markets, languages and compliance rules for every region we serve.' })}
+    ${hubHero({ crumbs, eyebrowText: `Primary markets + regional coverage`, h1: 'AI automation for businesses <span class="text-gradient-teal">wherever you are</span>', lead: 'Remote-first, working in your time zone. We publish in-depth pages for our primary markets and keep regional pages for local context, languages and compliance.' })}
     <section class="section-soft section-pad-sm">
       <div class="main-container relative z-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         ${LOCATION_GROUPS.map(

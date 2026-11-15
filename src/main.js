@@ -3,6 +3,7 @@ import { inject } from '@vercel/analytics';
 inject();
 
 import './js/utils/interaction';
+import './js/common/cookie-consent';
 import './js/utils/ads';
 import './js/utils/track';
 import './js/common/header';

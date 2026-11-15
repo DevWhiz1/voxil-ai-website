@@ -19,23 +19,32 @@ export const seoData = {
     description: 'Schedule a free 30-minute call to map AI agents and automation opportunities for your business.',
   },
   testimonial: {
-    title: 'Client Testimonials | Voxil AI',
-    description: 'Feedback from founders and operators who shipped AI systems with Voxil AI.',
+    title: 'Client Testimonials & Reviews | Voxil AI Agency',
+    description:
+      'Feedback from founders and operators who shipped AI voice, chat and CRM systems with Voxil AI, plus links to third-party reviews.',
   },
   faq: {
-    title: 'AI Automation FAQ | Voxil AI',
-    description: 'Answers about pricing, timelines, integrations, and support for Voxil AI projects.',
+    title: 'AI Automation FAQ: Pricing, Timelines & Support | Voxil AI',
+    description:
+      'Clear answers about Voxil AI pricing, project timelines, integrations, ownership, support and how our fixed-scope AI automation engagements work.',
   },
   'privacy-policy': {
-    title: 'Privacy Policy | Voxil AI',
-    description: 'How Voxil AI collects and uses information on our website.',
+    title: 'Privacy Policy: Data, Cookies & AdSense | Voxil AI',
+    description:
+      'How Voxil AI collects and uses information on voxilai.tech, including analytics, contact forms, cookie choices and Google AdSense when you consent.',
   },
   'terms-conditions': {
-    title: 'Terms & Conditions | Voxil AI',
-    description: 'Terms of use for the Voxil AI website and services.',
+    title: 'Terms & Conditions for Using Voxil AI Website',
+    description:
+      'Terms of use for the Voxil AI website, free tools and service descriptions. Project work is covered by a separate written agreement.',
+  },
+  advertising: {
+    title: 'Advertising & Sponsored Content Disclosure | Voxil AI',
+    description:
+      'How Google AdSense appears on voxilai.tech, how we keep editorial content independent, and how you can control personalized advertising.',
   },
   404: {
-    title: 'Page Not Found | Voxil AI',
-    description: 'The page you requested could not be found.',
+    title: 'Page Not Found | Return to Voxil AI Home',
+    description: 'The page you requested could not be found. Return to Voxil AI for AI automation services, guides and free tools.',
   },
 };
