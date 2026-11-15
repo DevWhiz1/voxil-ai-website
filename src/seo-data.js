@@ -31,7 +31,7 @@ export const seoData = {
   'privacy-policy': {
     title: 'Privacy Policy: Data, Cookies & AdSense | Voxil AI',
     description:
-      'How Voxil AI collects and uses information on voxilai.tech, including analytics, contact forms, cookie choices and Google AdSense when you consent.',
+      'How Voxil AI collects and uses information on voxilai.tech, including analytics, contact forms, cookies and Google AdSense advertising.',
   },
   'terms-conditions': {
     title: 'Terms & Conditions for Using Voxil AI Website',
@@ -41,7 +41,7 @@ export const seoData = {
   advertising: {
     title: 'Advertising & Sponsored Content Disclosure | Voxil AI',
     description:
-      'How Google AdSense appears on voxilai.tech, how we keep editorial content independent, and how you can control personalized advertising.',
+      'How Google AdSense appears on voxilai.tech, how we keep editorial content independent, and how to manage Google ad personalization.',
   },
   404: {
     title: 'Page Not Found | Return to Voxil AI Home',
